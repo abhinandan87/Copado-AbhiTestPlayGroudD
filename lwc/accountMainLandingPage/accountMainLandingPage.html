@@ -1,0 +1,74 @@
+<template>
+    <template if:true={connectionSuccess}>
+        <!-- Account Header -->
+        <c-account-main-header record-name={accountMap.Name}
+                               record-ultimate-parent={accountMap.SP_CIQ_Ultimate_Parent_Name__c}
+                               header-logo={headerLogo}>
+        </c-account-main-header>
+        <lightning-tabset variant="scoped" class="boxBorder">
+            <!-- Summary -->
+            <lightning-tab label="Summary" id="summary">
+                <template if:true={isLoaded}>
+                    <c-summary-main-tab divisions={divisionRecords} account-map={accountMap}></c-summary-main-tab>
+                    <template if:true={hasFootnote}>
+                        <div class="slds-text-body_small slds-align-bottom slds-p-around_small">
+                            *{label.footnoteMessage}
+                        </div>
+                    </template>
+                </template>
+            </lightning-tab>
+
+            <!-- Hierarchy Tab -->
+            <lightning-tab label="Hierarchy" id="hierarchy">
+                <c-hierarchy-main-tab account-map={accountMap}></c-hierarchy-main-tab>
+            </lightning-tab>
+
+            <!-- Pipeline Tab  -->
+            <lightning-tab label="Pipeline" id="pipeline">
+                <c-pipeline-main-tab account-id={accountMap.Id}></c-pipeline-main-tab>
+            </lightning-tab>
+
+            <!-- Activity Tab -->
+            <lightning-tab label="Activity" id="activity">
+                <c-activity-tab account-id={accountMap.Id}></c-activity-tab>
+            </lightning-tab>
+
+        </lightning-tabset>
+        <template if:true={lastSyncedDateExists}>
+            <div class="slds-text-body_regular slds-align_absolute-center"
+                 style='text-overflow: ellipsis; overflow: hidden;'>
+                Last Updated Date: {lastSyncedDate}
+            </div>
+        </template>
+    </template>
+
+    <!-- Spinner -->
+    <template if:true={isPageLoading}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </div>
+    </template>
+        
+
+    <template if:false={connectionSuccess}>
+        <template if:false={isPageLoading}>
+            <template if:false={connectionError}>
+                <div class="slds-illustration slds-illustration_large" aria-hidden="true">
+                    <img src="/img/chatter/OpenRoad.svg" class="slds-illustration__svg" alt=""/>
+                    <div class="slds-text-color_weak">
+                        <h3 class="slds-text-heading_medium">This account is not linked to the Customer Insights org.</h3>
+                    </div>
+                </div>
+            </template>
+            <template if:true={connectionError}>
+                <div class="slds-illustration slds-illustration_large" aria-hidden="true">
+                    <img src="/img/chatter/OpenRoad.svg" class="slds-illustration__svg" alt=""/>
+                    <div class="slds-text-color_weak">
+                        <h3 class="slds-text-heading_medium">Error establishing connection to Customer 360 org - please log a ticket in ServiceNow</h3>
+                    </div>
+                </div>
+            </template>
+        </template>
+    </template>
+
+</template>

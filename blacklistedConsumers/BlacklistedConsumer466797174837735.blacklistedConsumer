@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>true</blockedByApiWhitelisting>
+    <consumerKey>3MVG9KI2HHAq33RyCZpi2gHDbiyZAkqJIF9Kt52xrYQvbSawFoo45YLew3a6e57_YPVkEcqDZXNbC2pAkwXE_</consumerKey>
+    <consumerName>Salesforce SSO to GitLab.com (Production)</consumerName>
+    <masterLabel>BlacklistedConsumer466797174829686</masterLabel>
+</BlacklistedConsumer>

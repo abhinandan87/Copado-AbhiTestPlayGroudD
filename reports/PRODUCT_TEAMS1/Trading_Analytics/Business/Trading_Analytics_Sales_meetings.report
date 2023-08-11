@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CASE</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Activity.CommentsPreview__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Trading Analytics - Sales meetings</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Alessio Evangelista,Allison Li,Andrew Innes,Mateja Spat,Annabelle Shrieves,Banri Kobayashi,Brian Pash,Cameron Watts,Daniela Suarez,David Del Zotto,Giulia Ferrari,Heloise Bernard,Jack Farrelly,Jake Elkins,Jillian Hurley,Jonathan Chen,Karen King,Kevin Tapley,Kudzai Phiri,Mark Stephens,Michael Lucas,Michael Waite,Noam Shefi,Paige Pierce,Quinn McCabe,Robert Lewis,Sahil Virmani,Sam Elphick,Shintaro Toba,Siamak Mashoof,Stuart Cornock,Tim Hlavacek,Toshita Chettranda,Vicki Wong,Vishal Kapadia,Michael Richter,Bill O&apos;Shea,Christophe WhiteThomson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Call,Client Visit,Customer Call,In person meeting,Meeting,Meetings,Online customer meeting,Proposal Acceptance Call,Report Generation,Training</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>IHS Markit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>TCA,605,606,RTS28,RTS 28,RegOne,PRIIPS,MSA,Trading Analytics,Transaction Cost Analysis,BestEx,MTA</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>DUE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TASK_TYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Trading Analytics - Sales meetings</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <endDate>2022-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-12-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Customer Support.Featured:General</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>General</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>No description has been defined for this topic.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Customer Support.Featured:Goldfire</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Goldfire</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>No description has been defined for this topic.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Customer Support.Featured:Kingdom</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Kingdom</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>No description has been defined for this topic.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Customer Support.Navigational:All Articles</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>All Articles</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>General topic to include all knowledge articles.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Customer Support.Navigational:General</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>General</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>No description has been defined for this topic.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Customer Support.Navigational:Goldfire</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Goldfire</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>No description has been defined for this topic.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Customer Support.Navigational:Kingdom</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Kingdom</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription>No description has been defined for this topic.</topicDescription>
+    </managedTopic>
+</ManagedTopics>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Carolin Martinez Diaz,Dianne Jeong,James Mcloughin,Natalie Pou,Jessie Liu,Jeremy Brunelle,Victoria Tang,Kawaljeet Singh Sudan,Abhishek Dixit,Robert Schweikert,Khushboo Nagpal,Mahima Sharma,Benit Kurian,Luca Colelli Riano,Anna Kuznetsova,Chau Ting Lau,Greg Chalmers,Venkata Kiran Thammina,Yeongseon Cho,sudhanshu fuloria,Shao-Fan Yang,Milo Hong,Roland Gonzales,Charles Branch,Jamie Bennett,Poonam Singh,Muhammad asif Zafar,Prithvindra Maganti,Gaurav Srivastav,Jessie Wang,Ankur Saxena,Divesh Singh,Shumei Fu,Sivaramakrishna Kamma,Wilson Lee,Somesh Sinha,Vandita Agarwal,Rishabh Kumar</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Anitha</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseAuditHistory</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

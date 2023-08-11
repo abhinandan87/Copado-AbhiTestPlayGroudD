@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Related Opportunity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Related Opportunities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Annualised 1st Year Amount --></label>
+        <name>Annualised1stYearAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>CloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>CreatedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique Id for legacy records --></help>
+        <label><!-- LegacyIDUnique --></label>
+        <name>LegacyIDUnique__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id from the legacy system --></help>
+        <label><!-- LegacyID --></label>
+        <name>LegacyID__c</name>
+    </fields>
+    <fields>
+        <help><!-- System from which the record was migrated --></help>
+        <label><!-- LegacySystem --></label>
+        <name>LegacySystem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Link --></label>
+        <name>MeetingLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Note --></label>
+        <name>MeetingNote__c</name>
+        <relationshipLabel><!-- Related Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Meetings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Owner Alias --></label>
+        <name>OwnerAlias__c</name>
+    </fields>
+    <fields>
+        <label><!-- PKID RelOpp --></label>
+        <name>PKIDRelOpp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- When --></label>
+        <name>When__c</name>
+    </fields>
+    <fields>
+        <label><!-- Where --></label>
+        <name>Where__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

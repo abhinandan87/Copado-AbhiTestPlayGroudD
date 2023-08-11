@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Integrated Reporting | Projects</name>
+    <queueMembers>
+        <users>
+            <user>andrew.shanaghy@ihsmarkit.com</user>
+            <user>daniel.gualtieri@ihsmarkit.com</user>
+            <user>darren.ko@ihsmarkit.com</user>
+            <user>junseok.kim@ihsmarkit.com</user>
+            <user>khaiqing.goh@ihsmarkit.com</user>
+            <user>mizael.poh@ihsmarkit.com</user>
+            <user>pingleong.ng@ihsmarkit.com</user>
+            <user>pooisan.lim@ihsmarkit.com</user>
+            <user>shelvylestarichandr@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

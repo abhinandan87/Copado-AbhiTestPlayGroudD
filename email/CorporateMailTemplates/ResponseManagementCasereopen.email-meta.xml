@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC1-5156: Email for Response Management - Case Reopen - Auto-Response</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Response Management Case reopen</name>
+    <style>none</style>
+    <subject>IHS Markit Case {!Case.CaseNumber} - Reopened</subject>
+    <textOnly>Response Management Team – Acknowledgement of Query Receipt – Salesforce Ticket ID: {!Case.CaseNumber}
+
+Thank you for contacting the IHS Markit Response Management Team, we have reopened your request.
+
+This request is currently being reviewed by one of our analysts and will get back to you in due course.
+
+Please note, our standard turnaround for follow-up requests is two weeks.
+
+Kind regards,
+IHS Markit Response Management Team
+
+{!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

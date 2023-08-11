@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Energy | Content | Data Delivery</name>
+    <queueMembers>
+        <users>
+            <user>akhil.ramdoyal@ihsmarkit.com</user>
+            <user>dallas.anderson@ihsmarkit.com</user>
+            <user>ethan.cervo@ihsmarkit.com</user>
+            <user>german.aravena@ihsmarkit.com</user>
+            <user>mathew.knopp@ihsmarkit.com</user>
+            <user>raj.sehgal@spglobal.com.prod</user>
+            <user>shona.dorwart@ihsmarkit.com</user>
+            <user>teresa.pagalilauan@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

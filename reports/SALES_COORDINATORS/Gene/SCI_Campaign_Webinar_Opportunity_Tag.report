@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ProfitCenter__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.CampaignInfluence$Campaign.CampaignNumber__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.CampaignInfluence$Campaign</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Owner</field>
+    </columns>
+    <currency>USD</currency>
+    <description>26 Oct - Requested by Lew on all SCI Webinar PC Code Tag</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.CampaignInfluence$Campaign.CampaignNumber__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PC019795,PC020844,PC020834</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SCI Campaign / Webinar_Opportunity Tag</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Campaign_Influence__c</reportType>
+    <roleHierarchyFilter>Sales209978_1</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

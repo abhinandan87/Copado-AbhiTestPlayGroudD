@@ -1,0 +1,49 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+            <lightning-combobox name="Time Frames" variant="label-inline" label="Time Frame:" options={timeFrames}
+                                value={selectedFrame} onchange={onTimeFrameChange}></lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-12 slds-large-size_1-of-12"></div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+            <lightning-combobox name="Probability" variant="label-inline" label="Probability:" options={probability}
+                                value={selectedProbability} onchange={onProbabilityChange}></lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-12 slds-large-size_1-of-12"></div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+            <c-multi-select-picklist options={productFamilies}
+                                     value={selectedProductFamilies}
+                                     onvaluechange={onProductFamilyChange}
+                                     label="Division:"
+                                     all-option-value={allOption}
+                                     -e-s-g-option-value={ESGOption}
+                                     label-tooltip={divisionTooltip}>
+            </c-multi-select-picklist>
+        </div>
+    </div>
+    <br/>
+
+    <template if:false={displayPipeline}>
+        <div class="slds-illustration slds-illustration_large" aria-hidden="true">
+            <img src="/img/chatter/OpenRoad.svg" class="slds-illustration__svg" alt=""/>
+            <div class="slds-text-color_weak">
+                <h3 class="slds-text-heading_medium">No Results Returned</h3>
+            </div>
+        </div>
+        <p></p>
+    </template>
+    <!-- To display the chart -->
+    <template if:true={displayPipeline}>
+        <div data-id="chartBox" class="chartBox">
+            <canvas class="barChart"></canvas>
+        </div>    
+
+            <!-- To display Show More button -->
+            <div class="slds-float_right">
+                <template if:true={showMore}>
+                    <lightning-button variant="base" label="Show More" onclick={showMoreRecords}></lightning-button>
+                </template>
+            </div>
+            <br/><br/>            
+    </template>
+</template>

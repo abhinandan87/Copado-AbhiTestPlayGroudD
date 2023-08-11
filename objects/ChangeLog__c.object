@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>ChangeLogRecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>ChangeLog</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ChangeLog</fullName>
+        <fields>Name</fields>
+        <fields>WorkRequestForm__c</fields>
+        <fields>RequestStatus__c</fields>
+        <fields>OwnerId</fields>
+        <fields>Programmer__c</fields>
+        <label>ChangeLog</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object is used for WRF-POLK. Object to track all Work Request change log data.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>ChangeDescription__c</fullName>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <label>Change Description</label>
+        <length>32768</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ChangeDocumentedBy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <label>Change Documented By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Change_Logs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CreateDate__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <label>Create Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IsApproved__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( OR(ISPICKVAL( RequestStatus__c ,&apos;Approved&apos;),ISPICKVAL( RequestStatus__c ,&apos;Approved without Job&apos;)),true,false )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Approved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LegacyIDUnique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>SFDC1-7046: Legacy ID Unique field is a concatenation of the source system name and a source system record id to ensure record is uniquely identified.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This field store the concatenation of the source system name and a source system record id to ensure the record is uniquely identified.</inlineHelpText>
+        <label>LegacyIDUnique</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <description>This field is used for data integration to store legacy system id in WRF POLK application.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This field is used for data integration to store legacy system id in WRF POLK application.</inlineHelpText>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyReference__c</fullName>
+        <description>SFDC1-7046: Legacy Reference field is a friendly system reference to the source record.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This is a friendly system reference to the source record.</inlineHelpText>
+        <label>LegacyReference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacySystem__c</fullName>
+        <description>SFDC1-7046: Legacy System field is a picklist that represents the original system the record came from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the CRM system the source record came from</inlineHelpText>
+        <label>LegacySystem</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LegacySystem</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NegotiatedDate__c</fullName>
+        <description>Change Log Approvers will use this field to populate data in PLC job</description>
+        <externalId>false</externalId>
+        <label>Negotiated Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Owner__c</fullName>
+        <description>Formula field for Owner so that end user can&apos;t change owner manually</description>
+        <externalId>false</externalId>
+        <formula>If( BEGINS(Owner:User.Id, &apos;005&apos;)  ,HYPERLINK(&quot;/&quot; &amp;OwnerId, Owner:User.FirstName +&apos; &apos;+ Owner:User.LastName,&apos;_self&apos;),
+HYPERLINK(&quot;/lightning/setup/Queues/page?address=%2Fp%2Fown%2FQueue%2Fd%3Fid%3D&quot; &amp;  Owner:Queue.Id  ,  Owner:Queue.QueueName ,&apos;_self&apos;))</formula>
+        <label>Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PLCJob__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <label>PLC Job</label>
+        <referenceTo>PLCJob__c</referenceTo>
+        <relationshipLabel>Change Logs</relationshipLabel>
+        <relationshipName>ChangeLogs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PLCStartDate__c</fullName>
+        <description>Start Date of PLC Job, to be auto populated to PLC on Approval</description>
+        <externalId>false</externalId>
+        <label>PLC Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ProductionComments__c</fullName>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <label>Production Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Programmer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <label>Programmer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Change_Logs1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RequestStatus__c</fullName>
+        <description>Picklist value of Status for Work request form</description>
+        <externalId>false</externalId>
+        <label>Request Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Approval Pending</fullName>
+                    <default>false</default>
+                    <label>Approval Pending</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Approved without Job</fullName>
+                    <default>false</default>
+                    <label>Approved without Job</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RevisedRequestDate__c</fullName>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <label>Revised Request Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SubmittedDateTime__c</fullName>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <label>Submitted Date/Time</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Team1__c</fullName>
+        <description>Field is used for Change Log approvers to input PLC job Programmers team data</description>
+        <externalId>false</externalId>
+        <label>Programmer&apos;s Team</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aftersales-Chrysler</fullName>
+                    <default>false</default>
+                    <label>Aftersales-Chrysler</label>
+                </value>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>false</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>ESS-Delivery</fullName>
+                    <default>false</default>
+                    <label>ESS-Delivery</label>
+                </value>
+                <value>
+                    <fullName>Forecasting</fullName>
+                    <default>false</default>
+                    <label>Forecasting</label>
+                </value>
+                <value>
+                    <fullName>MCM-Analytics</fullName>
+                    <default>false</default>
+                    <label>MCM-Analytics</label>
+                </value>
+                <value>
+                    <fullName>MCM-Marketing Databases</fullName>
+                    <default>false</default>
+                    <label>MCM-Marketing Databases</label>
+                </value>
+                <value>
+                    <fullName>MCM-Market Research</fullName>
+                    <default>false</default>
+                    <label>MCM-Market Research</label>
+                </value>
+                <value>
+                    <fullName>MCM-Target Marketing Services</fullName>
+                    <default>false</default>
+                    <label>MCM-Target Marketing Services</label>
+                </value>
+                <value>
+                    <fullName>MEL-Delivery</fullName>
+                    <default>false</default>
+                    <label>MEL-Delivery</label>
+                </value>
+                <value>
+                    <fullName>MR-Aftermarket</fullName>
+                    <default>false</default>
+                    <label>MR-Aftermarket</label>
+                </value>
+                <value>
+                    <fullName>MR-Commercial</fullName>
+                    <default>false</default>
+                    <label>MR-Commercial</label>
+                </value>
+                <value>
+                    <fullName>MR-Loyalty</fullName>
+                    <default>false</default>
+                    <label>MR-Loyalty</label>
+                </value>
+                <value>
+                    <fullName>MR-Market Reporting BI</fullName>
+                    <default>false</default>
+                    <label>MR-Market Reporting BI</label>
+                </value>
+                <value>
+                    <fullName>MR-Network Management</fullName>
+                    <default>false</default>
+                    <label>MR-Network Management</label>
+                </value>
+                <value>
+                    <fullName>Planning Solutions</fullName>
+                    <default>false</default>
+                    <label>Planning Solutions</label>
+                </value>
+                <value>
+                    <fullName>PolkConnect Analytics</fullName>
+                    <default>false</default>
+                    <label>PolkConnect Analytics</label>
+                </value>
+                <value>
+                    <fullName>PolkConnect System</fullName>
+                    <default>false</default>
+                    <label>PolkConnect System</label>
+                </value>
+                <value>
+                    <fullName>VIN-Recall</fullName>
+                    <default>false</default>
+                    <label>VIN-Recall</label>
+                </value>
+                <value>
+                    <fullName>VIN-VIN Decoders</fullName>
+                    <default>false</default>
+                    <label>VIN-VIN Decoders</label>
+                </value>
+                <value>
+                    <fullName>VIN-VVS</fullName>
+                    <default>false</default>
+                    <label>VIN-VVS</label>
+                </value>
+                <value>
+                    <fullName>Visualization Team</fullName>
+                    <default>false</default>
+                    <label>Visualization Team</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WRStatus__c</fullName>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <formula>text(WorkRequestForm__r.RequestStatus__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>WR Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WorkRequestForm__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is used for WRF-POLK.</description>
+        <externalId>false</externalId>
+        <label>Work Request Form</label>
+        <referenceTo>WorkRequestForm__c</referenceTo>
+        <relationshipLabel>Change Logs</relationshipLabel>
+        <relationshipName>ChangeLogs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Change Log</label>
+    <listViews>
+        <fullName>APACWRF_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>APAC WRF</label>
+        <queue>APACWRF</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>AustraliaWRF_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Australia WRF</label>
+        <queue>AustraliaWRF</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Autonews_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Autonews</label>
+        <queue>Autonews</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CanadaProduction_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Canada</label>
+        <queue>Canada</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Canada_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Canada</label>
+        <queue>Canada</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EuropeanWRF_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>European WRF</label>
+        <queue>EuropeanWRF</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>JeffAllen_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Jeff Allen</label>
+        <queue>JeffAllen</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MCMAnalytics_ChangeLog</fullName>
+        <columns>NAME</columns>
+        <columns>ProductionComments__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>Status__c</columns>
+        <columns>WorkRequestForm__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>PAS</label>
+        <queue>MCMAnalytics</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MarketReportingAnalytics_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Analytics</label>
+        <queue>MarketReportingAnalytics</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MarketReportingCAP_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Market Reporting - CAP</label>
+        <queue>MarketReportingCAP</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MarketReportingLoyalty_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Market Reporting - Loyalty</label>
+        <queue>MarketReportingLoyalty</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MarketReportingOEMStat_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Market Reporting - OEM Stat</label>
+        <queue>MarketReportingOEMStat</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>PlanningSolutions_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Planning Solutions</label>
+        <queue>PlanningSolutions</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>PolkConnectAnalytics_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>PolkConnect Analytics</label>
+        <queue>PolkConnectAnalytics</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>PolkConnectSystem_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>PolkConnect System</label>
+        <queue>PolkConnectSystem</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>SalesforceSupport_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Salesforce Support</label>
+        <queue>SalesforceSupport</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>VFACTS_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>VFACTS</label>
+        <queue>VFACTS</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>VINtelligenceRecall_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Recall</label>
+        <queue>VINtelligenceRecall</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>VINtelligenceSWS_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>VIN Solutions</label>
+        <queue>VINtelligenceSWS</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Visualization_ChangeLog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Visualization</label>
+        <queue>Visualization</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>CL-{000000}</displayFormat>
+        <label>Change Log Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Change Logs</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Change_Log</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>ChangeLog</compactLayoutAssignment>
+        <description>Approval Pending status will not be there inthis record type</description>
+        <label>Change Log</label>
+        <picklistValues>
+            <picklist>LegacySystem__c</picklist>
+            <values>
+                <fullName>Agri_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDNEnergy_Ctele</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cappitech_Hubspot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fekete_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goldfire_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHS Markit_Salesforce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHS_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IPREO_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOC_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kingdom_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEA_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Markit_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCM_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polk_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMT_MSCRM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RequestStatus__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved without Job</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Team1__c</picklist>
+            <values>
+                <fullName>APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aftersales-Chrysler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESS-Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forecasting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCM-Analytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCM-Market Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCM-Marketing Databases</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCM-Target Marketing Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEL-Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MR-Aftermarket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MR-Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MR-Loyalty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MR-Market Reporting BI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MR-Network Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planning Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PolkConnect Analytics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PolkConnect System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIN-Recall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIN-VIN Decoders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIN-VVS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualization Team</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>ApprovalPendingNottoSubmitted</fullName>
+        <active>true</active>
+        <description>Approval Pending can&apos;t be moved to submitted or to Draft</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ChangeLog__c, $Setup.SystemMutedValidationRules__c.All__c ), False,AND($Permission.WRApprover,
+ISPICKVAL(PRIORVALUE(RequestStatus__c), &apos;Approval Pending&apos;),
+OR(ISPICKVAL(RequestStatus__c,&apos;Submitted&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Draft&apos;)
+)
+)
+)</errorConditionFormula>
+        <errorMessage>Status can&apos;t be moved to Draft or Submitted from Approval Pending status.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ErrorForApprovalPending</fullName>
+        <active>true</active>
+        <description>Error when draft or rejected is moved to Approval Pending</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ChangeLog__c, $Setup.SystemMutedValidationRules__c.All__c ), False,AND($Permission.WRApprover,
+AND(
+OR(ISPICKVAL(PRIORVALUE(RequestStatus__c), &apos;Draft&apos;) ,ISPICKVAL(PRIORVALUE(RequestStatus__c), &apos;Rejected&apos;)), 
+ISPICKVAL(RequestStatus__c,&apos;Approval Pending&apos;)
+)
+)
+)</errorConditionFormula>
+        <errorMessage>You can&apos;t move the status to Approval pending from Draft or Rejected status.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ErrorForApprovedStatusFromRejected</fullName>
+        <active>true</active>
+        <description>Shouldn&apos;t move status directly from rejected to approved.</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ChangeLog__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND($Permission.WRApprover,
+OR(ISPICKVAL(RequestStatus__c,&apos;Approved&apos;),ISPICKVAL(RequestStatus__c,&apos;Approval Pending&apos;), ISPICKVAL(RequestStatus__c,&apos;Approved without Job&apos;)  ),
+ISPICKVAL(PRIORVALUE(RequestStatus__c), &apos;Rejected&apos;)))</errorConditionFormula>
+        <errorMessage>Status can&apos;t be moved to Approved or Approved without Job from Rejected</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ErrorForNonApprovers</fullName>
+        <active>true</active>
+        <description>Users without Approve permission must not be able to change the request status other than draft or submitted</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ChangeLog__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(NOT($Permission.WRApprover) ,
+OR(
+AND(
+ISPICKVAL(PRIORVALUE(RequestStatus__c), &apos;Draft&apos;) , 
+OR(ISPICKVAL(RequestStatus__c,&apos;Rejected&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved without Job&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approval Pending&apos;)
+)
+),
+AND(
+ISPICKVAL(PRIORVALUE(RequestStatus__c), &apos;Submitted&apos;) , 
+OR(ISPICKVAL(RequestStatus__c,&apos;Rejected&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved without Job&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approval Pending&apos;)
+)
+),
+AND(
+ISPICKVAL(PRIORVALUE(RequestStatus__c), &apos;Approval Pending&apos;) , 
+OR(ISPICKVAL(RequestStatus__c,&apos;Rejected&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved without Job&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Submitted&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Draft&apos;)
+)
+),
+ISCHANGED( ProductionComments__c)
+)
+)
+)</errorConditionFormula>
+        <errorMessage>You are not authorized to make this change as you are not an approver.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NewRecordStatusDraftOrSubmitted</fullName>
+        <active>true</active>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ChangeLog__c, $Setup.SystemMutedValidationRules__c.All__c ), False,ISBLANK(Id) &amp;&amp; OR (ISPICKVAL(RequestStatus__c,&apos;Rejected&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved without Job&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approval Pending&apos;)))</errorConditionFormula>
+        <errorMessage>You are not authorized to change to this Request Status.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ProductionCommentsRequiredToReject</fullName>
+        <active>true</active>
+        <description>Production Comments is required to reject the change log</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ChangeLog__c, $Setup.SystemMutedValidationRules__c.All__c ), 
+False,
+AND(ISPICKVAL(RequestStatus__c ,&quot;Rejected&quot;), OR(ISPICKVAL(PRIORVALUE(RequestStatus__c) , &quot;Submitted&quot;),ISPICKVAL(PRIORVALUE(RequestStatus__c) ,&quot;Approval Pending&quot;),ISPICKVAL(PRIORVALUE(RequestStatus__c) ,&quot;Rejected&quot;))  ,
+OR(ISBLANK(ProductionComments__c), ISNULL(ProductionComments__c) ) ,  $Permission.WRApprover ,!ISBLANK(Id)))</errorConditionFormula>
+        <errorMessage>Production comments are required when rejecting a Change Log.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RejectedLogtoSubmitOrDraft</fullName>
+        <active>true</active>
+        <description>Rejected Log Must be moved to Submitted or Draft</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ChangeLog__c, $Setup.SystemMutedValidationRules__c.All__c ), False,AND(ISPICKVAL(PRIORVALUE(RequestStatus__c),&quot;Rejected&quot;),
+ISPICKVAL(RequestStatus__c,&apos;Approved&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved without Job&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approval Pending&apos;)))</errorConditionFormula>
+        <errorMessage>Please update the status to Submitted or Draft from Rejected.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RequeststatustoSubmitfromDraft</fullName>
+        <active>true</active>
+        <description>Request status must be moved to Submit from Draft</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ChangeLog__c, $Setup.SystemMutedValidationRules__c.All__c ), False,ISPICKVAL(PRIORVALUE(RequestStatus__c), &apos;Draft&apos;) &amp;&amp;   OR(ISPICKVAL(RequestStatus__c,&apos;Rejected&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approved without Job&apos;),
+ISPICKVAL(RequestStatus__c,&apos;Approval Pending&apos;)
+) &amp;&amp; $Permission.WRApprover)</errorConditionFormula>
+        <errorMessage>Please move the Request Status to Submitted.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SubmittedRecordtoDraft</fullName>
+        <active>true</active>
+        <description>Submitted or Approval Pending change log must not be moved directly to draft</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ChangeLog__c, $Setup.SystemMutedValidationRules__c.All__c ), 
+False,
+ISPICKVAL( RequestStatus__c ,&apos;Draft&apos;) &amp;&amp;  
+ISPICKVAL( PRIORVALUE(RequestStatus__c) ,&apos;Submitted&apos;))</errorConditionFormula>
+        <errorMessage>Change Log can&apos;t be moved back to Draft.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

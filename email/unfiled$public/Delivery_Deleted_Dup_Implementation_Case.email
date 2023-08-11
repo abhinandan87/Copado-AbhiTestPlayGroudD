@@ -1,0 +1,16 @@
+Hello {!Case.LastModifiedBy},
+
+The following implementation case has been (Closed-Resolved) (Deleted), however, proof of delivery has not been attached. Implementation cases require a proof of delivery uploaded in the “Proof of Delivery” related list before they can be closed.
+
+Case # {!Case.CaseNumber}
+{!Case.Link}
+
+We are unable to invoice the client without this. Please attach it as soon as possible. 
+
+For more information, please review the following video link on implementation cases and proof of delivery starting at time marker 26:20.
+
+Video: https://infocorp365.sharepoint.com/sites/communities/groups/32/Pages/Blog/Service%20-%20Implementation%20and%20Onboarding.aspx
+
+Kind Regards,
+IHS Markit
+Global Delivery

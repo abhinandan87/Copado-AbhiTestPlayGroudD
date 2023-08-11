@@ -123,6 +123,15 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>PKIDOrderItem__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>OrI{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID OrderItem</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
         <fullName>Product2Id</fullName>
         <type>Lookup</type>
     </fields>
@@ -132,6 +141,11 @@
     <fields>
         <fullName>Quantity</fullName>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>QuoteLineItemId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ServiceDate</fullName>

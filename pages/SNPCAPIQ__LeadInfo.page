@@ -1,0 +1,8 @@
+<apex:page standardController="Lead" extensions="SNPCAPIQ.LeadInfoController" title="S&P Capital IQ Details">
+
+    <c:IncludeResources_v1 ></c:IncludeResources_v1>
+
+    <!-- Updated by Khawaja Awais on 03/22/2021 : User story # 3365249 [MI APP] Design- MI Corporate Profile click-through -->
+    <c:CompanyInfo sfObject="{!sObj}" companyIdProp="{!companyId}" isFullScreenProp="{!isFullScreen}" 
+        accountModel="{!acModel}" miCompanyIdProp="{!miCompanyId}"/>
+</apex:page>

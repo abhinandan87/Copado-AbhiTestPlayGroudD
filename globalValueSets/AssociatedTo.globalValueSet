@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Base Chemicals/Alchemy</fullName>
+        <default>false</default>
+        <label>Base Chemicals/Alchemy</label>
+    </customValue>
+    <customValue>
+        <fullName>Divested</fullName>
+        <default>false</default>
+        <label>Divested</label>
+    </customValue>
+    <customValue>
+        <fullName>IHS Markit</fullName>
+        <default>false</default>
+        <label>IHS Markit</label>
+    </customValue>
+    <customValue>
+        <fullName>Indices/Dragonfly</fullName>
+        <default>false</default>
+        <label>Indices/Dragonfly</label>
+    </customValue>
+    <customValue>
+        <fullName>Mserv/Osttra</fullName>
+        <default>false</default>
+        <label>Mserv/Osttra</label>
+    </customValue>
+    <customValue>
+        <fullName>SPGI</fullName>
+        <default>false</default>
+        <label>SPGI</label>
+    </customValue>
+    <customValue>
+        <fullName>Migrated ENR Record</fullName>
+        <default>false</default>
+        <label>Migrated ENR Record</label>
+    </customValue>
+    <customValue>
+        <fullName>OPIS/Bobcat</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OPIS/Bobcat</label>
+    </customValue>
+    <description>SFDC-5551: Creating Associated To values to categorize the records &amp; data can be used for reporting</description>
+    <masterLabel>Associated To</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

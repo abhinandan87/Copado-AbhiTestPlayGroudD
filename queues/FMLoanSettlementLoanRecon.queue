@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Loan Settlement | Loan Recon</name>
+    <queueMembers>
+        <users>
+            <user>ami.rahman@ihsmarkit.com</user>
+            <user>ashley.clark@ihsmarkit.com</user>
+            <user>atul.verma@ihsmarkit.com</user>
+            <user>robert.fiore@ihsmarkit.com.prod</user>
+            <user>christopher.bosworth@ihsmarkit.com</user>
+            <user>christopher.ghobashy@ihsmarkit.com</user>
+            <user>curan.brah@ihsmarkit.com</user>
+            <user>daniel.trejo@ihsmarkit.com</user>
+            <user>genevieve.paganini@ihsmarkit.com</user>
+            <user>gina.giraldo@ihsmarkit.com</user>
+            <user>gregory.deely@ihsmarkit.com</user>
+            <user>james.morgan@ihsmarkit.com.prod</user>
+            <user>john.colombini@ihsmarkit.com</user>
+            <user>joseph.lentz@ihsmarkit.com</user>
+            <user>jozefina.lekutanovic@ihsmarkit.com</user>
+            <user>lisa.ochse-hofle@ihsmarkit.com</user>
+            <user>nareeya.sullivan@ihsmarkit.com</user>
+            <user>rajat.mishra@ihsmarkit.com</user>
+            <user>ritika.nain@ihsmarkit.com</user>
+            <user>shane.durgana@ihsmarkit.com.prod</user>
+            <user>somya.taneja@ihsmarkit.com</user>
+            <user>stacey-ann.nicholas@ihsmarkit.com.prod</user>
+            <user>vismayra.estevez@ihsmarkit.com</user>
+            <user>yolanda.schmidt@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

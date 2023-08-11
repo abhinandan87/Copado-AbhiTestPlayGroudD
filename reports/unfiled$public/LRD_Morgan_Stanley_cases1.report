@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT.ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Morgan Stanley</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | Loan Settlement | Loan Ref Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Prateek Motan,Manjeet Kaur,Rahul Bajaj,Dhanishtha Rajan,Mudit Sarna,Ruchika Gupta,kunal asiwal,rahul sharma,suchita goel,spencer bradley,Sagar Kataria,Manasvi Pathak,Anjleen Kaur Kalra,Ankit Vasudeva,Harsh Pandey,Kajal Jaiswal,austin teague,priti agarwal,garima bisht,shivendu srivastava,vipin gupta,sneha khosla,mayank bhatia,sumit kumar mishra,mohit saini,praveen kumar,blake lee,michael english,mason addy,matthew luce,FM | Loan Ref Data | New Deals,FM | Loan Ref Data | Data Documentation,FM | Loan Ref Data | fax shells,FM | Loan Ref Data | MWSO,FM | Loan Ref Data | New Asset Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AdditionalCaseFields__c.IssueType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Asset Setup - New Deals</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LRD: Morgan Stanley cases</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseCustomEntity$AdditionalCaseFields__c@AdditionalCaseFields__c.Country__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-09-01</startDate>
+    </timeFrameFilter>
+</Report>

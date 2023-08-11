@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-2530- Send Email when Contract Attachment record is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Notify Contract onwner when Contract Attachment is created</name>
+    <style>none</style>
+    <subject>New Purchase Order Required for {!Contract.ContractNumber}</subject>
+    <textOnly>Please attach the new purchase order for contract: {!Contract.ContractNumber}
+
+The new document needs to be uploaded in a new system-created Contract Attachment record: {!ContractAttachment__c.Name}  
+
+To view the Contract Attachment record, Click here 
+
+Thanks, 
+Order Management Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

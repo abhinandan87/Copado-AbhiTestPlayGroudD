@@ -2,13 +2,493 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Sample Cases</fullName>
+        <fullName>Access</fullName>
         <default>false</default>
-        <label>Sample Cases</label>
+        <label>Access</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Access Request</fullName>
+        <default>false</default>
+        <label>Access Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Address Change</fullName>
+        <default>false</default>
+        <label>Address Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Admin &amp; Data Security</fullName>
+        <default>false</default>
+        <label>Admin &amp; Data Security</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ADO</fullName>
+        <default>false</default>
+        <label>ADO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Application/Technical Support</fullName>
+        <default>false</default>
+        <label>Application/Technical Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Auto Renewal Stopped change</fullName>
+        <default>false</default>
+        <label>Auto Renewal Stopped change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Billing</fullName>
+        <default>false</default>
+        <label>Billing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancel</fullName>
+        <default>false</default>
+        <label>Cancel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancellation</fullName>
+        <default>false</default>
+        <label>Cancellation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Channel Partner</fullName>
+        <default>false</default>
+        <label>Channel Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Lost Renewal</fullName>
+        <default>false</default>
+        <label>Closed Lost Renewal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Won Auto Renewal</fullName>
+        <default>false</default>
+        <label>Closed Won Auto Renewal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Configuration &amp; Data Management</fullName>
+        <default>false</default>
+        <label>Configuration &amp; Data Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Administration</fullName>
+        <default>false</default>
+        <label>Contact Administration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Continuation</fullName>
+        <default>false</default>
+        <label>Continuation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Assistance</fullName>
+        <default>false</default>
+        <label>Contract Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Change</fullName>
+        <default>false</default>
+        <label>Contract Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Management</fullName>
+        <default>false</default>
+        <label>Contract Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Signatories</fullName>
+        <default>false</default>
+        <label>Contract Signatories</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contractual Change</fullName>
+        <default>false</default>
+        <label>Contractual Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer/Internal Requests</fullName>
+        <default>false</default>
+        <label>Customer/Internal Requests</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Care</fullName>
+        <default>false</default>
+        <label>Customer Care</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Data Pull</fullName>
+        <default>false</default>
+        <label>Customer Data Pull</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Master Data</fullName>
+        <default>false</default>
+        <label>Customer Master Data</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data</fullName>
+        <default>false</default>
+        <label>Data</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Governance</fullName>
+        <default>false</default>
+        <label>Data Governance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data loader</fullName>
+        <default>false</default>
+        <label>Data loader</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Missing/In Error</fullName>
+        <default>false</default>
+        <label>Data Missing/In Error</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Procedure Explanation</fullName>
+        <default>false</default>
+        <label>Data Procedure Explanation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DDQ</fullName>
+        <default>false</default>
+        <label>DDQ</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downgrade</fullName>
+        <default>false</default>
+        <label>Downgrade</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Duplicate Case in CRM</fullName>
+        <default>false</default>
+        <label>Duplicate Case in CRM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Einstein Analytics</fullName>
+        <default>false</default>
+        <label>Einstein Analytics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email Template</fullName>
+        <default>false</default>
+        <label>Email Template</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email-to-Case</fullName>
+        <default>false</default>
+        <label>Email-to-Case</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Enhancement Request</fullName>
+        <default>false</default>
+        <label>Enhancement Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Enhancement Request/Modification</fullName>
+        <default>false</default>
+        <label>Enhancement Request/Modification</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Export Report</fullName>
+        <default>false</default>
+        <label>Export Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance Forms</fullName>
+        <default>false</default>
+        <label>Finance Forms</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Functionality</fullName>
+        <default>false</default>
+        <label>General Functionality</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Inquiry</fullName>
+        <default>false</default>
+        <label>General Inquiry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inner Year PO Required</fullName>
+        <default>false</default>
+        <label>Inner Year PO Required</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invoice</fullName>
+        <default>false</default>
+        <label>Invoice</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invoice Change</fullName>
+        <default>false</default>
+        <label>Invoice Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>JIRA</fullName>
+        <default>false</default>
+        <label>JIRA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead Assistance</fullName>
+        <default>false</default>
+        <label>Lead Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>License &amp; Product Management</fullName>
+        <default>false</default>
+        <label>License &amp; Product Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Login/Permission Issue</fullName>
+        <default>false</default>
+        <label>Login/Permission Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lost Renewal Product</fullName>
+        <default>false</default>
+        <label>Lost Renewal Product</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Migration</fullName>
+        <default>false</default>
+        <label>Migration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Misc.</fullName>
+        <default>false</default>
+        <label>Misc.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Contract</fullName>
+        <default>false</default>
+        <label>New Contract</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Renewal Product</fullName>
+        <default>false</default>
+        <label>New Renewal Product</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Non-Issue (client recalled issue)</fullName>
+        <default>false</default>
+        <label>Non-Issue (client recalled issue)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Notifications</fullName>
+        <default>false</default>
+        <label>Notifications</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OM Error</fullName>
+        <default>false</default>
+        <label>OM Error</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opportunity Assistance</fullName>
+        <default>false</default>
+        <label>Opportunity Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Page Layout/Records Types</fullName>
+        <default>false</default>
+        <label>Page Layout/Records Types</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pricing</fullName>
+        <default>false</default>
+        <label>Pricing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Processing Request</fullName>
+        <default>false</default>
+        <label>Processing Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Assistance</fullName>
+        <default>false</default>
+        <label>Product Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Limitation/Enhancement Request</fullName>
+        <default>false</default>
+        <label>Product Limitation/Enhancement Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Products</fullName>
+        <default>false</default>
+        <label>Products</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposals/Presentation</fullName>
+        <default>false</default>
+        <label>Proposals/Presentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Questionnaire</fullName>
+        <default>false</default>
+        <label>Questionnaire</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Queue/View Creation</fullName>
+        <default>false</default>
+        <label>Queue/View Creation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Record Add/Update</fullName>
+        <default>false</default>
+        <label>Record Add/Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Replaced</fullName>
+        <default>false</default>
+        <label>Replaced</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reports/Dashboard</fullName>
+        <default>false</default>
+        <label>Reports/Dashboard</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reports / Dashboards</fullName>
+        <default>false</default>
+        <label>Reports / Dashboards</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RFI</fullName>
+        <default>false</default>
+        <label>RFI</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RFP</fullName>
+        <default>false</default>
+        <label>RFP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RFP / RFQ</fullName>
+        <default>false</default>
+        <label>RFP / RFQ</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Risk Reporting</fullName>
+        <default>false</default>
+        <label>Risk Reporting/Audits</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rules</fullName>
+        <default>false</default>
+        <label>Rules</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales/Business Error</fullName>
+        <default>false</default>
+        <label>Sales/Business Error</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Assistance/Coordinator</fullName>
+        <default>false</default>
+        <label>Sales Assistance/Coordinator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Claims</fullName>
+        <default>false</default>
+        <label>Sales Claims</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales OPs</fullName>
+        <default>false</default>
+        <label>Sales OPs</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Support</fullName>
+        <default>false</default>
+        <label>Sales Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Scheduled Termination</fullName>
+        <default>false</default>
+        <label>Scheduled Termination</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Security Setting</fullName>
+        <default>false</default>
+        <label>Security Setting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Survey Request</fullName>
+        <default>false</default>
+        <label>Survey Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Issues</fullName>
+        <default>false</default>
+        <label>System Issues</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tax</fullName>
+        <default>false</default>
+        <label>Tax</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training &amp; Documentation</fullName>
+        <default>false</default>
+        <label>Training &amp; Documentation</label>
     </standardValue>
     <standardValue>
         <fullName>Trial</fullName>
         <default>false</default>
         <label>Trial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unscheduled Termination</fullName>
+        <default>false</default>
+        <label>Unscheduled Termination</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Upgrade</fullName>
+        <default>false</default>
+        <label>Upgrade</label>
+    </standardValue>
+    <standardValue>
+        <fullName>User Administration</fullName>
+        <default>false</default>
+        <label>User Administration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Validation Rules</fullName>
+        <default>false</default>
+        <label>Validation Rules</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vendor Problems</fullName>
+        <default>false</default>
+        <label>Vendor Problems</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Voice of Customer</fullName>
+        <default>false</default>
+        <label>Voice of Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WF/PB/Trigger</fullName>
+        <default>false</default>
+        <label>WF/PB/Trigger</label>
     </standardValue>
 </StandardValueSet>

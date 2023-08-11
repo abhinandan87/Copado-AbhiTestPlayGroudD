@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-2349: Permission Set that enables the generation Redline Documents - DocGen download to word</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>DocGen Redline</label>
+</PermissionSet>

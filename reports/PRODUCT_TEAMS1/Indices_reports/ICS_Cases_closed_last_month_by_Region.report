@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_94801487</developerName>
+        <masterLabel>CST Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Aishna Jain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shefali Chawla</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deepak Karumuthil</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deepak Srivastav</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samuel Abraham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rashi Dungale</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kartikey Bisht</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tanvi Arora</sourceValue>
+            </sourceValues>
+            <value>India</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Esma Agzanay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melanie Mladenova</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kinnerey Patel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Safiya Murray</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Suneet Raniga</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Anton Stienen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sherry Lau</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Momoi Suda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eri Hasumoto</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tracey Bookall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evan Gerlack</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gary Ge</sourceValue>
+            </sourceValues>
+            <value>US</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Securities Finance-Equity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Esma Agzanay,Suneet Raniga,Sherry Lau,Deepak Karumuthil,Aishna Jain,Anton Stienen,Shefali Chawla,Eri Hasumoto,Melanie Mladenova,Deepak Srivastav,Gary Ge,Samuel Abraham,Rashi Dungale,Tanvi Arora,Kinnerey Patel,Momoi Suda,Evan Gerlack,Safiya Murray,Kartikey Bisht</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Email,Phone,Web Chat</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>New,In Progress,On Hold</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_94801487</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ICS Cases closed last month by Region</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

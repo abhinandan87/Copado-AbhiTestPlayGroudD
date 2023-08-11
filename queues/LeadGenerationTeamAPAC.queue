@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Lead Generation Team - APAC</name>
+    <queueMembers>
+        <users>
+            <user>amelie.chan@ihsmarkit.com</user>
+            <user>andrew.innes@ihsmarkit.com</user>
+            <user>banri.kobayashi@ihsmarkit.com</user>
+            <user>jacqueline.truhol@ihsmarkit.com</user>
+            <user>noam.shefi@ihsmarkit.com</user>
+            <user>vincent.huang@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

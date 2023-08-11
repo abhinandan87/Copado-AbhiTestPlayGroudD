@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>[VENDOR ORDERING ITSELF]-IHS Markit Assessment Referral-Requesting Customer Name</name>
+    <style>none</style>
+    <subject>[VENDOR ORDERING ITSELF] - IHS Markit Assessment Referral - Requesting Customer Name</subject>
+    <textOnly>Dear (Referred customer name),
+
+Thank you for your interest in purchasing a KY3P® Express assessment for your own organization through SecurityScorecard.
+
+Please note these reports are typically purchased by companies looking to risk assess their third-party suppliers. They are intended for internal use and not for distribution to your clients.
+
+KY3P® Express assessments are based on externally available information, and as such present the view outside parties have of your organization.
+
+As a first step, please confirm your product or service offering which you are interested in the assessment for, as well as any specific locations, and we will confirm this against our offering.
+
+If you would like to speak with a member of our product team to discuss our assessments, or have any other questions, please reach out to us at the contact details below.
+
+We look forward to working with you.
+
+Best Regards,
+
+KY3P Customer Services Team
+
+KY3P Hotline US: + 1 844 210 KY3P (5937)
+KY3P UK: + 44 207 113 KY3P (5937)
+Email:SSCReferrals@ihsmarkit.com.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

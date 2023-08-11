@@ -1,0 +1,92 @@
+<template>
+    <!-- Header -->
+    <div class="slds-grid slds-card icondiv">
+        <div class="slds-media__figure">
+            <lightning-icon icon-name="standard:product" size="medium"></lightning-icon>
+        </div>
+        <div class="slds-media__body">
+            <div class="slds-line-height_reset">
+                Add Products
+            </div> 
+            <h1 class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate" title="Legal Entity">
+                <b>Legal Entity:
+                    <template if:true = {oppy}>
+                        {legalEntityName}
+                    </template>
+                </b>
+            </h1>
+        </div>
+    </div>
+
+    <!--Display Spinner while saving the details-->
+    <template if:true={showSpinner}>
+        <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+    </template>
+
+    <!-- Error Message -->
+    <template if:true={noOPSforProduct}>
+        <div class="slds-notify slds-notify_alert slds-alert_error" role="alert">
+            <span class="slds-assistive-text">info</span>
+            <h2 data-id="noOPS"> {label.NoOPSforContractStartDate}
+            </h2>
+        </div>
+    </template>
+
+    <template if:false={noOPSforProduct}>
+        <!-- Global Values --> 
+        <div>   
+            <!--Need to change name of opsWrapper to listOPSWrapper -->
+            <template if:true={oppyWrapper}>
+                <c-opportunity-Product-Global-Values get-ops-wrapper={oppyWrapper} oppy={oppy} recordids={recordId} mode="Add"></c-opportunity-Product-Global-Values>  
+            </template>
+        </div>
+
+        <!-- Collapsed/Expand Filter and Product List --> 
+        <div class="slds-grid slds-wrap containerDiv"> 
+            <!-- Collapse Filter -->
+            <div data-id="collapsedFilter">
+                <div class="slds-card collapsedDiv">  
+                    <!--<div class="containerdiv"> -->
+                        <div  onclick={handleFilterDisplay}> <!-- class="utilitydiv" -->
+                            <lightning-icon icon-name="utility:right" size="x-small" class="slds-m-top_medium"></lightning-icon>
+                        </div> 
+                <!-- </div> -->
+                </div> 
+            </div> 
+            <!-- Expand Filter -->
+            <div class="slds-col" data-id="expandFilter">  
+                <div class="slds-card expanddiv">
+                    <div>
+                        <lightning-icon icon-name="standard:calibration" size="small"></lightning-icon>
+                    </div>
+                    <div>
+                        <h2><span class="slds-text-heading_small slds-truncate"><b>Filters</b></span></h2>
+                    </div>
+                    <div class="utilitydiv" onclick={handleFilterDisplay}>
+                        <lightning-icon icon-name="utility:left" size="x-small"></lightning-icon>
+                    </div>
+                    <c-opportunity-Product-Filter mode="Add"></c-opportunity-Product-Filter>  
+                </div>
+            </div>
+            <!-- Product List -->
+            <div class="slds-col" data-id="prodList">
+                <template if:true={oppyWrapper}>
+                    <c-opportunity-Add-Product-List record-id={recordId} ops-wrapper={oppyWrapper} input-legal-entity={legalEntityId} onstopspinner={stopSpinner} onerrormsg={handleErrorMsg}></c-opportunity-Add-Product-List>
+                </template>
+            </div>    
+
+        </div>
+    </template>
+    <!--Footer-->
+    <div class="slds-var-m-bottom_x-large slds-docked-form-footer">
+        <lightning-layout horizontal-align="space" vertical-align="top" >
+            <lightning-button class="slds-var-m-right_small" variant="brand" label="Back" icon-name="utility:chevronleft" icon-position="left" onclick={changeLegalEntity} ></lightning-button>
+            <lightning-button class="slds-var-m-right_small" variant="brand" label="Save" icon-name="utility:save" icon-position="right" onclick={saveProducts} disabled={disableSave}></lightning-button>
+            <lightning-button variant="brand" label="Cancel" icon-name="utility:close" icon-position="right" onclick={cancelChanges} ></lightning-button>
+        </lightning-layout>
+        <lightning-layout horizontal-align="space" vertical-align="top" >
+            <lightning-layout-item></lightning-layout-item>
+            <lightning-layout-item></lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

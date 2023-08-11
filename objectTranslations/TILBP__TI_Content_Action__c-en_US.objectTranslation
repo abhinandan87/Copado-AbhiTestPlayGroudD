@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Company --></label>
+        <name>TILBP__Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course --></label>
+        <name>TILBP__Course__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>TILBP__SFContact__c</name>
+        <relationshipLabel><!-- TI Content Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TI Content --></label>
+        <name>TILBP__SFContent__c</name>
+        <relationshipLabel><!-- TI Content Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>TILBP__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- TI ID --></label>
+        <name>TILBP__TIID__c</name>
+    </fields>
+    <fields>
+        <label><!-- TI ID (DEPRECATED) --></label>
+        <name>TILBP__TI_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timestamp --></label>
+        <name>TILBP__Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TILBP__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>TILBP__User__c</name>
+    </fields>
+</CustomObjectTranslation>

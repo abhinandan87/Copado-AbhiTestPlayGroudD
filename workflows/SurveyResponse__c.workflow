@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CorporateEmailAlert</fullName>
+        <description>CorporateEmailAlert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CustomerExperienceTeam</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>no-replycrm@ihsmarkit.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CSCustomerCare/CorporateSurveyHotAlert</template>
+    </alerts>
+    <alerts>
+        <fullName>EmailAlertToSurveyResponseOwner</fullName>
+        <description>EmailAlertToSurveyResponseOwner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-replycrm@ihsmarkit.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CSCustomerCare/CorporateSurveyHotAlert</template>
+    </alerts>
+    <alerts>
+        <fullName>FSAHotAlertEmailTemplate</fullName>
+        <description>FSAHotAlertEmailTemplate</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CustomerExperienceTeam</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>no-replycrm@ihsmarkit.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CSCustomerCare/FSASurveyResponseTemplate</template>
+    </alerts>
+    <alerts>
+        <fullName>SurveyResponseEscalationEmailAfter30DaysHotAlert</fullName>
+        <description>Survey Response Escalation Email After 30 Days Hot Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-replycrm@ihsmarkit.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CSCustomerCare/SurveyResponseEscalationEmailAfter30DaysHotAlert</template>
+    </alerts>
+    <alerts>
+        <fullName>SurveyResponseHotAlert</fullName>
+        <description>SFDC1-1895: An email from Salesforce informing user when a survey response requires a hot alert follow up to Case Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CaseOwnerEmailId__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CSCustomerCare/SurveyResponseHotAlert</template>
+    </alerts>
+    <alerts>
+        <fullName>SurveyResponseReminderEmailToOwnerAfter15DaysHotAlert</fullName>
+        <description>Survey Response Reminder Email To Owner After 15 Days Hot Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-replysfdc@ihsmarkit.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CSCustomerCare/SurveyResponseReminderEmailAfter15DaysHotAlert</template>
+    </alerts>
+    <alerts>
+        <fullName>SurveyResponseReminderEmailToOwnerAfter25DaysHotAlert</fullName>
+        <description>Survey Response Reminder Email To Owner After 25 Days Hot Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-replysfdc@ihsmarkit.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CSCustomerCare/SurveyResponseReminderEmailAfter25DaysHotAlert</template>
+    </alerts>
+    <alerts>
+        <fullName>TrainingHotAlertToSurveyResponseOwner</fullName>
+        <description>SFDC-4091: TrainingHotAlertToSurveyResponseOwner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-replycrm@ihsmarkit.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CSCustomerCare/FSASurveyResponseTemplate</template>
+    </alerts>
+    <alerts>
+        <fullName>TransactionalEmailAlert</fullName>
+        <description>TransactionalEmailAlert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CustomerExperienceTeam</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>no-replycrm@ihsmarkit.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CSCustomerCare/CustomerCareHotAlert</template>
+    </alerts>
+    <alerts>
+        <fullName>TransactionalHotAlertToSurveyResponseOwner</fullName>
+        <description>SFDC-4091: EmailAlertToSurveyResponseOwner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no-replycrm@ihsmarkit.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CSCustomerCare/CustomerCareHotAlert</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>AlertStatusFieldUpdate</fullName>
+        <description>SFDC-242 Hot Alert Generation</description>
+        <field>AlertStatus__c</field>
+        <literalValue>New</literalValue>
+        <name>AlertStatusFieldUpdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AlertTypeFieldUpdate</fullName>
+        <description>SFDC-242 Hot Alert Generation</description>
+        <field>AlertType__c</field>
+        <literalValue>Hot Alert</literalValue>
+        <name>AlertTypeFieldUpdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateAlertStatusFieldToAssigned</fullName>
+        <description>SFDC-4091: Update alert status to Assigned when Owner is changed to Individual Assignee</description>
+        <field>AlertStatus__c</field>
+        <literalValue>Assigned</literalValue>
+        <name>UpdateAlertStatusFieldToAssigned</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateFieldWithCaseOwnerEmail</fullName>
+        <description>SFDC1-1895: Update Field With Case Owner Email</description>
+        <field>CaseOwnerEmailId__c</field>
+        <formula>Case__r.Owner:User.Email</formula>
+        <name>Update Field With Case Owner Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateOwnerForNeutralAndComendation</fullName>
+        <description>SFDC-4091: Update Owner of Corporate SR</description>
+        <field>OwnerId</field>
+        <lookupValue>CustomerExperienceQueue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Owner For Neutral And Comendation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateOwnerOfCorpSurveyResponse</fullName>
+        <description>SFDC-4091 - Update Owner of Survey Response</description>
+        <field>OwnerId</field>
+        <lookupValue>CustomerExperienceQueue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Owner Of Corp Survey Response</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateOwnerOfTrainingSurveyResponse</fullName>
+        <description>SFDC-4091 - Update Owner of Survey Response</description>
+        <field>OwnerId</field>
+        <lookupValue>CustomerExperienceQueue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Owner Of Training Survey Response</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateOwnerOfTransSurveyResponse</fullName>
+        <description>SFDC-4091 - Update Owner of Survey Response</description>
+        <field>OwnerId</field>
+        <lookupValue>CustomerExperienceQueue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Owner Of Trans Survey Response</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateResolvedDateToToday</fullName>
+        <description>SFDC-4407 - Update Resolved Date field</description>
+        <field>ResolvedDate__c</field>
+        <formula>IF(OR(ISPICKVAL(AlertStatus__c,&apos;Closed - Resolved with Customer&apos;),ISPICKVAL(AlertStatus__c,&apos;Closed - No Action Required&apos;),ISPICKVAL(AlertStatus__c,&apos;Closed - Unable to Reach Customer&apos;)), Today(), Null)</formula>
+        <name>Update Resolved Date To Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateTrainingAlertStatusFieldToAssigned</fullName>
+        <description>SFDC-4091: Update alert status to Assigned when Owner is changed to Individual Assignee</description>
+        <field>AlertStatus__c</field>
+        <literalValue>Assigned</literalValue>
+        <name>UpdateTrainingAlertStatusFieldToAssigned</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateTransAlertStatusFieldToAssigned</fullName>
+        <description>SFDC-4091: Update alert status to Assigned when Owner is changed to Individual Assignee</description>
+        <field>AlertStatus__c</field>
+        <literalValue>Assigned</literalValue>
+        <name>UpdateTransAlertStatusFieldToAssigned</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Alert_Status_Field</fullName>
+        <field>AlertStatus__c</field>
+        <literalValue>Closed - No Action Required</literalValue>
+        <name>Update Alert Status Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>CorporateSurveyResponseHotAlert</fullName>
+        <actions>
+            <name>CorporateEmailAlert</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>UpdateOwnerOfCorpSurveyResponse</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 ) AND 5</booleanFilter>
+        <criteriaItems>
+            <field>SurveyResponse__c.NPSScore__c</field>
+            <operation>lessOrEqual</operation>
+            <value>4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.ProductsServicesMeetNeed__c</field>
+            <operation>lessOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.ExperienceQuestion__c</field>
+            <operation>lessOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.LikelihoodToRenew__c</field>
+            <operation>lessOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Corporate</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CorporateSurveyResponseOwnerAssignment</fullName>
+        <actions>
+            <name>EmailAlertToSurveyResponseOwner</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>UpdateAlertStatusFieldToAssigned</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>SFDC-4091: Trigger an email alert to the new owner of Survey Response</description>
+        <formula>AND(RecordType.DeveloperName = &apos;Corporate&apos;, ISCHANGED(OwnerId),  ISPICKVAL( AlertType__c , &apos;Hot Alert&apos;), OR( ISPICKVAL( AlertStatus__c , &apos;New&apos;), ISPICKVAL(AlertStatus__c , &apos;In-Progress&apos;)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HotAlertGeneration</fullName>
+        <actions>
+            <name>AlertStatusFieldUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>AlertTypeFieldUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>SFDC-242 Hot Alert generation</description>
+        <formula>CESScore__c  &lt; 4</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>NeutralAndCommendationCorporateSurveyResponse</fullName>
+        <actions>
+            <name>UpdateOwnerForNeutralAndComendation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>SurveyResponse__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Corporate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.AlertType__c</field>
+            <operation>equals</operation>
+            <value>Neutral</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.AlertType__c</field>
+            <operation>equals</operation>
+            <value>Commendation</value>
+        </criteriaItems>
+        <description>SFDC-4091: Update the Owner of Survey Response to &apos;Customer Experience Team&apos; Queue when Alert type of Corporate Survey is either &apos;Neutral&apos; or &apos;Commendation&apos;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>TrainingSurveyResponseHotAlert</fullName>
+        <actions>
+            <name>FSAHotAlertEmailTemplate</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>UpdateOwnerOfTrainingSurveyResponse</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>SurveyResponse__c.TrainingMetNeeds__c</field>
+            <operation>lessOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.NPSScore__c</field>
+            <operation>lessOrEqual</operation>
+            <value>4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Training</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>TrainingSurveyResponseOwnerAssignment</fullName>
+        <actions>
+            <name>TrainingHotAlertToSurveyResponseOwner</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>UpdateTrainingAlertStatusFieldToAssigned</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>SFDC-4091: Trigger an email alert to the new owner of Survey Response</description>
+        <formula>AND(RecordType.DeveloperName = &apos;Training&apos;, ISCHANGED(OwnerId),  ISPICKVAL( AlertType__c , &apos;Hot Alert&apos;), OR( ISPICKVAL( AlertStatus__c , &apos;New&apos;), ISPICKVAL(AlertStatus__c , &apos;In-Progress&apos;)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TransactionalSurveyResponseHotAlert</fullName>
+        <actions>
+            <name>TransactionalEmailAlert</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>UpdateOwnerOfTransSurveyResponse</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 ) AND 6</booleanFilter>
+        <criteriaItems>
+            <field>SurveyResponse__c.NPSScore__c</field>
+            <operation>lessOrEqual</operation>
+            <value>4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.TESScore__c</field>
+            <operation>lessOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.RSSScore__c</field>
+            <operation>lessOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.CESScore__c</field>
+            <operation>lessOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.LikelihoodToRenew__c</field>
+            <operation>lessOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SurveyResponse__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Transactional</value>
+        </criteriaItems>
+        <description>SFDC-4091: Send the Hot alert email for Transactional Survey Response</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>TransactionalSurveyResponseOwnerAssignment</fullName>
+        <actions>
+            <name>TransactionalHotAlertToSurveyResponseOwner</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>UpdateTransAlertStatusFieldToAssigned</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>SFDC-4091: Trigger an email alert to the new owner of Survey Response</description>
+        <formula>AND(RecordType.DeveloperName = &apos;CustomerCare&apos;, ISCHANGED(OwnerId),  ISPICKVAL( AlertType__c , &apos;Hot Alert&apos;), OR( ISPICKVAL( AlertStatus__c , &apos;New&apos;), ISPICKVAL(AlertStatus__c , &apos;In-Progress&apos;)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>UpdateAlertStatusWhenAlertTypeIsNotHotAlert</fullName>
+        <actions>
+            <name>Update_Alert_Status_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(OR(ISPICKVAL(AlertType__c,&apos;Neutral&apos;),ISPICKVAL(AlertType__c,&apos;Commendation&apos;)),OR(RecordType.DeveloperName = &apos;Training&apos;,RecordType.DeveloperName = &apos;CustomerCare&apos;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>UpdateResolvedDateWhenAlertStatusUpdatedToResolved</fullName>
+        <actions>
+            <name>UpdateResolvedDateToToday</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>SFDC-4407 - Update Resolved Date field when Hot alert status updated to Resolved</description>
+        <formula>AND(ISPICKVAL(AlertType__c, &apos;Hot Alert&apos;),OR(ISNEW(),ISCHANGED(AlertStatus__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

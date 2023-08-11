@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>In person meeting</fullName>
+        <default>false</default>
+        <label>In person meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Meeting</fullName>
+        <default>false</default>
+        <label>Internal Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Online customer meeting</fullName>
+        <default>false</default>
+        <label>Online customer meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal Accepted meeting</fullName>
+        <default>false</default>
+        <label>Proposal Accepted meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal Delivery meeting</fullName>
+        <default>false</default>
+        <label>Proposal Delivery meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BAU</fullName>
+        <default>false</default>
+        <label>BAU</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Triage</fullName>
+        <default>false</default>
+        <label>Triage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mentoring</fullName>
+        <default>false</default>
+        <label>Mentoring</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Visit</fullName>
+        <default>false</default>
+        <label>Client Visit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Management Tasks</fullName>
+        <default>false</default>
+        <label>Management Tasks</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Report Generation</fullName>
+        <default>false</default>
+        <label>Report Generation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Miscellaneous</fullName>
+        <default>false</default>
+        <label>Miscellaneous</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Work</fullName>
+        <default>false</default>
+        <label>Project Work</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Training</fullName>
+        <default>false</default>
+        <label>Internal Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meetings</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Quarterly Check In</fullName>
+        <default>false</default>
+        <label>Quarterly Check In</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>false</default>
+        <label>Call</label>
+    </standardValue>
+</StandardValueSet>

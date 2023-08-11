@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>[STANDARD FIRST RESPONSE]IHS Markit Assessment Referral-Requesting Customer Name</name>
+    <style>none</style>
+    <subject>[VENDOR ORDERING ITSELF] - IHS Markit Assessment Referral - Requesting Customer Name</subject>
+    <textOnly>Dear (Referred customer name),
+
+Thank you for registering your interest in purchasing an assessment for (Vendor name) through SecurityScorecard.
+
+KY3P Assessment Services offers a range of assessment options to our customers. The report you have expressed an interest in is our Express Assessment. This will contain data from multiple sources, including SecurityScorecard, with observations included from a market leading audit firm.
+
+As a first step, please confirm the product or service offering that (vendor name) provides your firm which you are interested in the assessment for, as well as any specific locations for the vendor, and we will confirm this against our offering.
+
+For all queries related to the referral, please respond to SSCReferrals@ihsmarkit.com or contact our hotline below.
+
+If you are interested in hearing more about the solutions KY3P can provide, we would be happy to arrange a call with our specialists.
+
+We look forward to working with you.
+
+Best Regards,
+
+KY3P Customer Services Team
+
+KY3P Hotline US: + 1 844 210 KY3P (5937)
+KY3P UK: + 44 207 113 KY3P (5937)</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

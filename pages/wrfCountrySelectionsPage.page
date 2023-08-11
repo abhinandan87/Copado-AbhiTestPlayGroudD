@@ -1,0 +1,22 @@
+<apex:page showHeader="false" standardController="WorkRequestForm__c" sidebar="false">
+    <apex:includeLightning />
+    <div>
+        <p class="slds-truncate slds-text-heading_large">Name:{!WorkRequestForm__c.Name}</p>
+        <p class="slds-truncate slds-text-heading_large">Request Type:{!$CurrentPage.parameters.requestType}</p>
+    </div>
+    <div id="LightningComponentid" style="width=100%" />
+
+    <script>
+        $Lightning.use("c:wrfCountrySelectionsApp", function () {
+            $Lightning.createComponent("c:wrfCountryGridViewPrint",
+                {
+                    recordId: "{!JSENCODE(WorkRequestForm__c.Id)}",
+                    requestType: "{!JSENCODE($CurrentPage.parameters.requestType)}"
+                },
+                "LightningComponentid",
+                function (cmp) {
+                    console.log('LWC Componenet added in VF page');
+                });
+        });
+    </script>
+</apex:page>

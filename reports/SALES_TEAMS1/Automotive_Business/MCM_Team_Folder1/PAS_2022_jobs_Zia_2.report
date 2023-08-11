@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>JobTask__c.AssignedTo__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.JobName__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.NegotiatedDate__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.DateTimeOfDelivery__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.JobStatus__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.JobType__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>MCM Team Completed Jobs</description>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>JobTask__c.AssignedTo__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brooke Holmes,Joseph Berges,Beverly Craggs,Brendan Olech,Debby Shelton,Delon Fulford,Jackie Swift,Lynn VanWulfen,Ritika Jain,Sachin Kumar,Siddharth Pillai</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PLCJob__c.DateTimeOfDelivery__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2022 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PAS 2022 jobs_Zia_2</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$PLCJob__c$JobTask__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>JobTask__c.AssignedTo__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>PLCJob__c.CycleStart__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

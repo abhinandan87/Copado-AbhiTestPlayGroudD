@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_OWNER</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>field_key</field>
+    </columns>
+    <columns>
+        <field>OLDVAL</field>
+    </columns>
+    <columns>
+        <field>NEWVAL</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case Owner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NEWVAL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LRC |  Response Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>FM | All Japanese Client Queries,FM | DS Match,FM | MSERV,FM | MSERV Client Services,FM | MSERV FX,FM | MSERV Regulatory Reporting,FM | MSERV TradeServ FX,FM | MW | All Other,FM | MW | Book Updates,FM | MW | Clearing,FM | MW | CPS Onboarding,FM | MW | High Priority,FM | MW | L1,FM | MW | Password Reset,FM | MW | Reports,FM | MW | Static Data,FM | MW | User Clones Static Conf.,FM | MW | User Deactivations,FM | MW | User Setup,FM | Trade Processing,FM | Unassigned,FM | TSERV Client Services,FM | MSERV UAT - UNASSIGNED,FM | MSERV UAT | BAU,FM | MSERV UAT | Projects,FM | MSERV FX | UAT,FM | MSERV UAT | DSM NCM,FM | MW| Onboarding</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SERV - Response Mgmt Case</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseAuditHistory</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Report Export Template(to be shared with user))</name>
+    <style>none</style>
+    <subject>Report Export Permisison</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+To receive access to export data from Salesforce.
+
+Please provide the approval from your MD/ED and let us know the &quot;Business reason&quot; for the export permission.
+
+Please complete the Salesforce GDPR training in workday to get the access to the export report permission set in the salesforce.
+
+Workday Training Link.
+
+Feel free to reach out to us in case of any doubts.
+
+Regards,
+{!Case.OwnerFullName},
+Salesforce Configuration Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

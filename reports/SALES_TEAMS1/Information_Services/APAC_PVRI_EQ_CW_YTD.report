@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_98655561</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>PROD_SPLIT_MEMBER_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Andrew Innes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Waite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Stephens</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sahil Virmani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Craig Brothers</sourceValue>
+            </sourceValues>
+            <value>Australia</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Vincent Huang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Tapley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Allison Li</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hyewon Song</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juliet Zhang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Will Li</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rocky Cheung</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Wong2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pearleen Tan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Wenruo Wang</sourceValue>
+            </sourceValues>
+            <value>NE Asia</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Noam Shefi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Satish Chandra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Toshita Chettranda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vicki Wong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vishal Kapadia</sourceValue>
+            </sourceValues>
+            <value>SE Asia</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Shintaro Toba</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Banri Kobayashi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emi Kakumaru</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michitomo Yamakita</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yukari Sasaki</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sayoko Yoshida</sourceValue>
+            </sourceValues>
+            <value>Japan</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesSpecialists__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.SalesNewPrice__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.RCNew__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.RCPriceIncrease__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>PROD_SPLIT_PERCENTAGE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.SubBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>PROD_SPLIT_MEMBER_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.AccountManagers__c</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <field>OpportunitySplit.SalesRegion__c</field>
+    </columns>
+    <columns>
+        <field>OpportunitySplit.SplitRegion__c</field>
+    </columns>
+    <columns>
+        <field>Product2.AAG__c</field>
+    </columns>
+    <columns>
+        <field>PROD_SPLIT_TYPE</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>OpportunityLineItem.SalesNewPrice__c.CONVERT*PROD_SPLIT_PERCENTAGE</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Sales-New&amp;Price (converted) * Percent</description>
+        <developerName>CDF1</developerName>
+        <label>Split Sales-New&amp;Price (converted)</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND ((4 AND 6) OR 5) AND 7 AND 8</booleanFilter>
+        <criteriaItems>
+            <column>PROD_SPLIT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sales Specialists</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HASOPPLINEITEM</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Place Holder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Opportunity.Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SalesNewPrice__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.BusinessLine2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pricing Valuations and Reference,Indices,Equities Info,Equities Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunitySplit.SalesRegion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>APAC</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Product2.BusinessLine2__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_98655561</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>APAC PVRI/EQ CW YTD</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityProductSplit</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2022-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-12-01</startDate>
+    </timeFrameFilter>
+</Report>

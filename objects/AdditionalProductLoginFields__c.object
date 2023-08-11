@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>AdditionalProductLoginFieldsRecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFDC1-7972 This is a separate object created for capturing additional product login fields which are more specific to the product requirement. Many of these fields are originated from L-Markit.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>BloombergSN__c</fullName>
+        <description>SFDC1-4386 ID for permissioning Bloomberg terminal (by serial number)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Update Field as per user&apos;s S/N on bloomberg terminal (by serial number)</inlineHelpText>
+        <label>Bloomberg S/N</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BloombergUUID__c</fullName>
+        <description>SFDC1-4386 Unique Identification code per user in Bloomberg for permissioning purposes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique Identification code per user in Bloomberg for permissioning purposes. Check bbg terminal for the user&apos;s UUID and update.</inlineHelpText>
+        <label>Bloomberg UUID</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DataOnboardingContact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC1-4386 Flag to identify the user as an MSF onboarding contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tick the field if contact is providing us with MSF data</inlineHelpText>
+        <label>Data Onboarding Contact</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DatafeedDeliveryContact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC1-4386 Specifies if client is receiving data feed from the firm</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tick field if the client is required to be notified for any datafeed updates</inlineHelpText>
+        <label>Datafeed Delivery Contact</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FileDeliveryContact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC1-4386 Specifies if contact for MSF client data if discrepancies found in data received</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Flag contact for MSF client data if discrepancies found in data received</inlineHelpText>
+        <label>File Delivery Contact</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ITContact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC1-4386 Flag IT contact for assistance with toolkit installation, datafeed setups, and client onboarding</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Flag IT contact for assistance with toolkit installation, datafeed setups, and client onboarding</inlineHelpText>
+        <label>IT Contact</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LastToolkitLogonDate__c</fullName>
+        <description>SFDC1-4667 Specifies when a user last logged into Toolkit</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies when a user last logged into Toolkit. Populated via integration</inlineHelpText>
+        <label>Last Toolkit Logon Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <description>Legacy Id field for Additional product login fields. It will be same as parent product login . Creating as part of migration exercise</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Legacy Id field from source system</inlineHelpText>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MSFASegment__c</fullName>
+        <description>SFDC1-4386 Choose the most relevant option from the drop-down, this is provided by sales, which segments the user according to the industry within which they operate</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the most relevant option from the drop-down, this is provided by sales, which segments the user according to the industry within which they operate</inlineHelpText>
+        <label>MSFA Segment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Academic</fullName>
+                    <default>false</default>
+                    <label>Academic</label>
+                </value>
+                <value>
+                    <fullName>Asset Manager</fullName>
+                    <default>false</default>
+                    <label>Asset Manager</label>
+                </value>
+                <value>
+                    <fullName>Beneficial Owner</fullName>
+                    <default>false</default>
+                    <label>Beneficial Owner</label>
+                </value>
+                <value>
+                    <fullName>Borrower</fullName>
+                    <default>false</default>
+                    <label>Borrower</label>
+                </value>
+                <value>
+                    <fullName>Broker</fullName>
+                    <default>false</default>
+                    <label>Broker</label>
+                </value>
+                <value>
+                    <fullName>Central Bank</fullName>
+                    <default>false</default>
+                    <label>Central Bank</label>
+                </value>
+                <value>
+                    <fullName>Compliance</fullName>
+                    <default>false</default>
+                    <label>Compliance</label>
+                </value>
+                <value>
+                    <fullName>Corporate/IR</fullName>
+                    <default>false</default>
+                    <label>Corporate/IR</label>
+                </value>
+                <value>
+                    <fullName>Corporate Broker</fullName>
+                    <default>false</default>
+                    <label>Corporate Broker</label>
+                </value>
+                <value>
+                    <fullName>Hedge Fund</fullName>
+                    <default>false</default>
+                    <label>Hedge Fund</label>
+                </value>
+                <value>
+                    <fullName>Lender</fullName>
+                    <default>false</default>
+                    <label>Lender</label>
+                </value>
+                <value>
+                    <fullName>Markit Group</fullName>
+                    <default>false</default>
+                    <label>Markit Group</label>
+                </value>
+                <value>
+                    <fullName>Media</fullName>
+                    <default>false</default>
+                    <label>Media</label>
+                </value>
+                <value>
+                    <fullName>Prop Desk</fullName>
+                    <default>false</default>
+                    <label>Prop Desk</label>
+                </value>
+                <value>
+                    <fullName>Quant Group</fullName>
+                    <default>false</default>
+                    <label>Quant Group</label>
+                </value>
+                <value>
+                    <fullName>Regulator</fullName>
+                    <default>false</default>
+                    <label>Regulator</label>
+                </value>
+                <value>
+                    <fullName>Research</fullName>
+                    <default>false</default>
+                    <label>Research</label>
+                </value>
+                <value>
+                    <fullName>Risk</fullName>
+                    <default>false</default>
+                    <label>Risk</label>
+                </value>
+                <value>
+                    <fullName>Sales Trading</fullName>
+                    <default>false</default>
+                    <label>Sales Trading</label>
+                </value>
+                <value>
+                    <fullName>Third Party</fullName>
+                    <default>false</default>
+                    <label>Third Party</label>
+                </value>
+                <value>
+                    <fullName>Underlying Client</fullName>
+                    <default>false</default>
+                    <label>Underlying Client</label>
+                </value>
+                <value>
+                    <fullName>Vendor</fullName>
+                    <default>false</default>
+                    <label>Vendor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProductLogin__c</fullName>
+        <description>SFDC1-6347: Parent of Additional Product Login Information.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Parent of Additional Product Login Information.</inlineHelpText>
+        <label>Product Login</label>
+        <referenceTo>ProductLogin__c</referenceTo>
+        <relationshipLabel>Additional Product Login Fields</relationshipLabel>
+        <relationshipName>AdditionalProductLoginFields</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SignOffContact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC1-4386 Used by content ops to identify a client who can sign off the data submitted to MSF on behalf of their organization</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by content ops to identify a client who can sign off the data submitted to MSF on behalf of their organization</inlineHelpText>
+        <label>Sign Off Contact</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ToolkitVersion__c</fullName>
+        <description>SFDC1-4667 The version of the Toolkit</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The version of the Toolkit</inlineHelpText>
+        <label>Toolkit Version</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TrialProduct__c</fullName>
+        <description>SFDC1-4386 Dependent on the trial tick box, (becomes mandatory once Trial tick box is flagged). Shows the combination MSF products on trial at any given point in time (real time).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Dependent on the trial tick box, (becomes mandatory once Trial tick box is flagged). Shows the combination MSF products on trial at any given point in time (real time).</inlineHelpText>
+        <label>Trial Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account Manager Data</fullName>
+                    <default>false</default>
+                    <label>Account Manager Data</label>
+                </value>
+                <value>
+                    <fullName>Benchmarking Data</fullName>
+                    <default>false</default>
+                    <label>Benchmarking Data</label>
+                </value>
+                <value>
+                    <fullName>Bloomberg without Retail Fee</fullName>
+                    <default>false</default>
+                    <label>Bloomberg without Retail Fee</label>
+                </value>
+                <value>
+                    <fullName>Bloomberg with Retail Fee</fullName>
+                    <default>false</default>
+                    <label>Bloomberg with Retail Fee</label>
+                </value>
+                <value>
+                    <fullName>Buyside Toolkit without Retail Fee</fullName>
+                    <default>false</default>
+                    <label>Buyside Toolkit without Retail Fee</label>
+                </value>
+                <value>
+                    <fullName>Buyside Toolkit with Retail Fee</fullName>
+                    <default>false</default>
+                    <label>Buyside Toolkit with Retail Fee</label>
+                </value>
+                <value>
+                    <fullName>Capital IQ without Retail Fee</fullName>
+                    <default>false</default>
+                    <label>Capital IQ without Retail Fee</label>
+                </value>
+                <value>
+                    <fullName>Capital IQ with Retail Fee</fullName>
+                    <default>false</default>
+                    <label>Capital IQ with Retail Fee</label>
+                </value>
+                <value>
+                    <fullName>Capital IQ Xpressfeed</fullName>
+                    <default>false</default>
+                    <label>Capital IQ Xpressfeed</label>
+                </value>
+                <value>
+                    <fullName>Datafeed - S/FTP</fullName>
+                    <default>false</default>
+                    <label>Datafeed - S/FTP</label>
+                </value>
+                <value>
+                    <fullName>Datafeed - WTC</fullName>
+                    <default>false</default>
+                    <label>Datafeed - WTC</label>
+                </value>
+                <value>
+                    <fullName>Deltix</fullName>
+                    <default>false</default>
+                    <label>Deltix</label>
+                </value>
+                <value>
+                    <fullName>Direct Edge</fullName>
+                    <default>false</default>
+                    <label>Direct Edge</label>
+                </value>
+                <value>
+                    <fullName>Dividend Data</fullName>
+                    <default>false</default>
+                    <label>Dividend Data</label>
+                </value>
+                <value>
+                    <fullName>DX Open</fullName>
+                    <default>false</default>
+                    <label>DX Open</label>
+                </value>
+                <value>
+                    <fullName>Evaluation Explorer</fullName>
+                    <default>false</default>
+                    <label>Evaluation Explorer</label>
+                </value>
+                <value>
+                    <fullName>FactSet without Retail Fee</fullName>
+                    <default>false</default>
+                    <label>FactSet without Retail Fee</label>
+                </value>
+                <value>
+                    <fullName>FactSet with Retail Fee</fullName>
+                    <default>false</default>
+                    <label>FactSet with Retail Fee</label>
+                </value>
+                <value>
+                    <fullName>International Index Explorer</fullName>
+                    <default>false</default>
+                    <label>International Index Explorer</label>
+                </value>
+                <value>
+                    <fullName>iPhone Buyside</fullName>
+                    <default>false</default>
+                    <label>iPhone Buyside</label>
+                </value>
+                <value>
+                    <fullName>iPhone Sellside</fullName>
+                    <default>false</default>
+                    <label>iPhone Sellside</label>
+                </value>
+                <value>
+                    <fullName>iPhone Sellside SF</fullName>
+                    <default>false</default>
+                    <label>iPhone Sellside SF</label>
+                </value>
+                <value>
+                    <fullName>iPhone Wholesale</fullName>
+                    <default>false</default>
+                    <label>iPhone Wholesale</label>
+                </value>
+                <value>
+                    <fullName>PBPX</fullName>
+                    <default>false</default>
+                    <label>PBPX</label>
+                </value>
+                <value>
+                    <fullName>Performance Explorer</fullName>
+                    <default>false</default>
+                    <label>Performance Explorer</label>
+                </value>
+                <value>
+                    <fullName>Performance Explorer - Lite</fullName>
+                    <default>false</default>
+                    <label>Performance Explorer - Lite</label>
+                </value>
+                <value>
+                    <fullName>Performance Explorer - Sign Off</fullName>
+                    <default>false</default>
+                    <label>Performance Explorer - Sign Off</label>
+                </value>
+                <value>
+                    <fullName>Risk Explorer</fullName>
+                    <default>false</default>
+                    <label>Risk Explorer</label>
+                </value>
+                <value>
+                    <fullName>Sellside Toolkit</fullName>
+                    <default>false</default>
+                    <label>Sellside Toolkit</label>
+                </value>
+                <value>
+                    <fullName>SS Securities Finance Toolkit</fullName>
+                    <default>false</default>
+                    <label>SS Securities Finance Toolkit</label>
+                </value>
+                <value>
+                    <fullName>Toolkit ETP Data</fullName>
+                    <default>false</default>
+                    <label>Toolkit ETP Data</label>
+                </value>
+                <value>
+                    <fullName>Toolkit EVB Data</fullName>
+                    <default>false</default>
+                    <label>Toolkit EVB Data</label>
+                </value>
+                <value>
+                    <fullName>Toolkit Public Disclosure Data</fullName>
+                    <default>false</default>
+                    <label>Toolkit Public Disclosure Data</label>
+                </value>
+                <value>
+                    <fullName>Toolkit Repo Contributor Data</fullName>
+                    <default>false</default>
+                    <label>Toolkit Repo Contributor Data</label>
+                </value>
+                <value>
+                    <fullName>Toolkit Repo Non Contributor Data</fullName>
+                    <default>false</default>
+                    <label>Toolkit Repo Non Contributor Data</label>
+                </value>
+                <value>
+                    <fullName>Transaction Explorer</fullName>
+                    <default>false</default>
+                    <label>Transaction Explorer</label>
+                </value>
+                <value>
+                    <fullName>TRQA</fullName>
+                    <default>false</default>
+                    <label>TRQA</label>
+                </value>
+                <value>
+                    <fullName>UK Index Explorer</fullName>
+                    <default>false</default>
+                    <label>UK Index Explorer</label>
+                </value>
+                <value>
+                    <fullName>Web Portal Buyside without Retail Fee</fullName>
+                    <default>false</default>
+                    <label>Web Portal Buyside without Retail Fee</label>
+                </value>
+                <value>
+                    <fullName>Web Portal Buyside with Retail fee</fullName>
+                    <default>false</default>
+                    <label>Web Portal Buyside with Retail fee</label>
+                </value>
+                <value>
+                    <fullName>Web Portal Sellside Non-SF</fullName>
+                    <default>false</default>
+                    <label>Web Portal Sellside Non-SF</label>
+                </value>
+                <value>
+                    <fullName>Web Portal SS Securities Finance</fullName>
+                    <default>false</default>
+                    <label>Web Portal SS Securities Finance</label>
+                </value>
+                <value>
+                    <fullName>Web Portal Wholesale</fullName>
+                    <default>false</default>
+                    <label>Web Portal Wholesale</label>
+                </value>
+                <value>
+                    <fullName>Wholesale Toolkit</fullName>
+                    <default>false</default>
+                    <label>Wholesale Toolkit</label>
+                </value>
+                <value>
+                    <fullName>WRDS</fullName>
+                    <default>false</default>
+                    <label>WRDS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Username__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>SFDC1-6785 Username or Login name for this user. This is copied over from Product Login via workflow</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Unique username or login name for this user automatically copied over from Product Login via workflow</inlineHelpText>
+        <label>Username</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Additional Product Login Fields</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Additional Product Login Fields Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Additional Product Login Fields</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>ProductLogin__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TrialProduct__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>BloombergSN__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>BloombergUUID__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ProductLogin__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TrialProduct__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>BloombergSN__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>BloombergUUID__c</lookupPhoneDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>MSFASegmentIsRequiredForMSFCustomerCare</fullName>
+        <active>true</active>
+        <description>SFDC-190 Make the field MSFA segment picklist as required for Customer care agents</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.AdditionalProductLoginFields__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND( ISPICKVAL(MSFASegment__c,&apos;&apos;),
+     $Permission.ProductLoginAccess,
+     NOT(ISNEW())
+)
+)</errorConditionFormula>
+        <errorDisplayField>MSFASegment__c</errorDisplayField>
+        <errorMessage>Please select a value on MSFA Segment field</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

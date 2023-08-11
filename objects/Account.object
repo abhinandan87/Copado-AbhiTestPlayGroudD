@@ -228,6 +228,17 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>BillingAddress</fields>
+        <fields>Status__c</fields>
+        <fields>InstitutionType__c</fields>
+        <fields>OwnerId</fields>
+        <fields>ParentId</fields>
+        <fields>UltimateParent__c</fields>
+        <label>Account Compact Layout</label>
+    </compactLayouts>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
@@ -4597,16 +4608,124 @@ Parent.Parent.Parent.Parent.Name
     <listViews>
         <fullName>AllAccounts</fullName>
         <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.SITE</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>GlobalUltimateAccount__c</columns>
         <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>SNPCAPIQ__CapitalIQCompanyId_txt__c</field>
+            <operation>contains</operation>
+            <value>*</value>
+        </filters>
         <label>All Accounts</label>
     </listViews>
     <listViews>
+        <fullName>AllAccountsWaitingForValidation</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>GlobalUltimateAccount__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>DataGovernanceStatus__c</field>
+            <operation>notEqual</operation>
+            <value>Approved</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <label>All Accounts waiting for validation</label>
+    </listViews>
+    <listViews>
+        <fullName>AllAccountswhereIamontheTeam</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Team</filterScope>
+        <label>All Accounts where I am on the Team</label>
+    </listViews>
+    <listViews>
+        <fullName>AllActiveAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>GlobalUltimateAccount__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>OpportunityCount__c</columns>
+        <columns>OpenOpportunityCount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <label>All Active Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>AllInactiveAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>GlobalUltimateAccount__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>InactiveInvalid,InactiveOutOfBusiness</value>
+        </filters>
+        <label>All Inactive Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Accounts_Approved</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>GlobalUltimateAccount__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>DataGovernanceStatus__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <label>All Accounts Approved</label>
+    </listViews>
+    <listViews>
+        <fullName>Cascade</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>GlobalUltimateAccount__c</columns>
+        <columns>ComplianceRestriction__c</columns>
+        <columns>ComplianceRestrictionException__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>startsWith</operation>
+            <value>cascade</value>
+        </filters>
+        <label>Cascade</label>
+    </listViews>
+    <listViews>
         <fullName>MyAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>GlobalUltimateAccount__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
         <filterScope>Mine</filterScope>
         <label>My Accounts</label>
     </listViews>
@@ -4625,6 +4744,43 @@ Parent.Parent.Parent.Parent.Name
             <value>THIS_WEEK</value>
         </filters>
         <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Org_Account_Hierarchy</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Status__c</columns>
+        <columns>Relationship__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>AccountActiveContractsCount__c</columns>
+        <columns>OpenOpportunityCount__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Org_Account_Hierarchy</label>
+    </listViews>
+    <listViews>
+        <fullName>VP_Securities</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>VP  Securities</label>
+    </listViews>
+    <listViews>
+        <fullName>whitney_test</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>whitney test</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
@@ -4665,6 +4821,204 @@ Parent.Parent.Parent.Parent.Name
         <searchResultsAdditionalFields>ACCOUNT.CREATED_DATE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>AccountSubTypeValueRequired</fullName>
+        <active>true</active>
+        <description>SFDC1-4380 if &quot;Global Alliance&quot; is selected in the &quot;Account Type&quot; field the user is required to select a value from the &quot;Account Sub Type&quot; picklist.
+SFDC1-10675:Change value from &quot;Global Alliance&quot; to &quot;Channel Partner&quot;.</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+ISPICKVAL(Type, &apos;Channel Partner&apos;)
+&amp;&amp; ISBLANK(AccountSubType__c)
+)</errorConditionFormula>
+        <errorDisplayField>AccountSubType__c</errorDisplayField>
+        <errorMessage>Account Sub Type is required if Account Type is &quot;Channel Partner&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BillingAddressIsRequired</fullName>
+        <active>true</active>
+        <description>SFDC1-2235 validate Account&apos;s Billing Address and pop up error if it&apos;s missing</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+ISBLANK(BillingStreet)
+|| ISBLANK(BillingCity)
+|| ISBLANK(BillingCountry)
+)</errorConditionFormula>
+        <errorMessage>Account&apos;s address fields (Street, City and Country) are required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BlockCreatingAccount</fullName>
+        <active>true</active>
+        <description>SFDC1-684 Restrict the creation of Accounts to System Admin and Data Governance.
+SFDC1-10617 add logic to include Account Governance permission</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+ISNEW()
+&amp;&amp; $Profile.Name &lt;&gt; &quot;IHSMarkit Data Governance&quot;
+&amp;&amp; $Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp; NOT($Permission.AccountGovernance)
+)</errorConditionFormula>
+        <errorMessage>Only Customer Master Data Team or System Administrator can create account. Please either select an existing account or request one from the Lead page.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BlockNameUpdateForNonDataGovernance</fullName>
+        <active>true</active>
+        <description>SFDC1-2056 &amp; SFDC1-7981 Account Name and Status field should be locked down for all account, only Data Governance and System Admin should be able to edit these field.
+SFDC1-10617 add logic to include Account Governance permission</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+(ISCHANGED(Name) || ISCHANGED(Status__c))
+&amp;&amp; $Profile.Name &lt;&gt; &quot;IHSMarkit Data Governance&quot; 
+&amp;&amp; $Profile.Name &lt;&gt; &quot;IHSMarkit System Admin&quot;
+&amp;&amp; $Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp; NOT($Permission.AccountGovernance)
+)</errorConditionFormula>
+        <errorMessage>Only Customer Master Data Team and System Admin can edit Account Name and Status fields.Please either select an existing account or request one from the Lead page.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BlockProhibitedCountry</fullName>
+        <active>true</active>
+        <description>SFDC1-383 Do not allow an Account record to be created if the Account&apos;s country is a Prohibited Country</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(
+NOT(CONTAINS($User.FirstName + &apos; &apos;+ $User.LastName, $Label.BatchAdminUserName)),
+VLOOKUP( $ObjectType.Country__c.Fields.IsProhibited__c ,  $ObjectType.Country__c.Fields.Name ,  BillingCountry )
+)
+)</errorConditionFormula>
+        <errorDisplayField>BillingCountry</errorDisplayField>
+        <errorMessage>Due to U.S. export controls and sanctions restrictions, Account records cannot be created for the selected country.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>DataGovernanceStatusApproved</fullName>
+        <active>true</active>
+        <description>SFDC1-2259 make sure Data Governance&apos;s required fields are populated before Account Governance Status could be changed to &apos;Approved&apos;.
+SFDC1-8169 Website is no longer required because this data is not always provided.
+SFDC1-8977 Rename Label</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+ISPICKVAL(DataGovernanceStatus__c, &quot;Approved&quot;)
+&amp;&amp;
+(
+   ISPICKVAL(Type, &quot;&quot;)
+|| ISPICKVAL(Priority__c, &quot;&quot;)
+)
+)</errorConditionFormula>
+        <errorMessage>Account Type and Priority are required for Customer Master Data Status to be set to &quot;Approved&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>DataGovernanceStatusApprovedInactive</fullName>
+        <active>true</active>
+        <description>SFDC1-5259 prevents an account from having Account Governance Status of Approved and Account Status of &quot;Invalid Inactive&quot;. SFDC1-8977: Renaming Data Governance Status to Account Governance Status</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+ISPICKVAL(DataGovernanceStatus__c, &quot;Approved&quot;)
+&amp;&amp;
+(ISPICKVAL(Status__c, &quot;InactiveInvalid&quot;) || 
+ ISPICKVAL(Status__c, &quot;InactiveLifecycle&quot;))
+)</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Account record cannot have Customer Master Data Status of &quot;Approved&quot; if the Status is &quot;Inactive - Invalid&quot; and &quot;Inactive - Lifecycle&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ExternalOrgTypeUpdatePermission</fullName>
+        <active>true</active>
+        <description>SFDC-2311 ExternalOrgType field editable by sales ops, system admin and Account Owner
+SFDC-3534 Adding Data governance profile and removing Sales ops</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(
+    ISCHANGED(ExternalOrgType__c),
+    $User.Id &lt;&gt; OwnerId,
+    NOT(CONTAINS($Profile.Name, &quot;System Admin&quot;)),
+    NOT(CONTAINS($Profile.Name, &quot;Data Governance&quot;))
+)
+)</errorConditionFormula>
+        <errorDisplayField>ExternalOrgType__c</errorDisplayField>
+        <errorMessage>Only editable by data governance, system admin and Account Owner</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>InstitutionTypeRequired</fullName>
+        <active>true</active>
+        <description>SFDC-2311 &amp; 2312 Institution Type is required if External Org Type is selected</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+ISPICKVAL(ExternalOrgType__c, &apos;&apos;) = false
+&amp;&amp; ISPICKVAL(InstitutionType__c, &apos;&apos;)
+)</errorConditionFormula>
+        <errorDisplayField>InstitutionType__c</errorDisplayField>
+        <errorMessage>Institution Type is required if External Org Type is selected</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>InstitutionTypeSubTypeEditPermission</fullName>
+        <active>true</active>
+        <description>SFDC-2312 Instituion Type field editable by sales ops, system admin and Account Owner
+SFDC-3534 Adding Data governance profile and removing Sales ops</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(
+    OR(
+        ISCHANGED(InstitutionType__c),
+        ISCHANGED(InstitutionSubType__c)
+    ),
+    $User.Id &lt;&gt; OwnerId,
+    NOT(CONTAINS($Profile.Name, &quot;System Admin&quot;)),
+    NOT(CONTAINS($Profile.Name, &quot;Data Governance&quot;))
+)
+)</errorConditionFormula>
+        <errorMessage>Institution Type &amp; Institution Sub-Type fields editable by data governance, system admin and Account Owner</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>LID__Check_Company_Id_Value</fullName>
+        <active>true</active>
+        <description>Throws an exception message if the company id contains non-numerics</description>
+        <errorConditionFormula>AND(
+	(LID__LinkedIn_Company_Id__c &lt;&gt; NULL),
+	NOT(ISNUMBER(LID__LinkedIn_Company_Id__c))
+)</errorConditionFormula>
+        <errorDisplayField>LID__LinkedIn_Company_Id__c</errorDisplayField>
+        <errorMessage>CompanyId should be a numeric value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>StateOfIncorporationIsRequiredForUS</fullName>
+        <active>true</active>
+        <description>SFDC1-4360 if &quot;United States&quot; is selected in the &quot;Incorporated In&quot; field then &quot;State of Incorporation&quot; is mandatory.</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+IncorporatedIn__r.CountryCode__c = &apos;US&apos;
+&amp;&amp; ISBLANK(TEXT(StateOfIncorporation__c))
+)</errorConditionFormula>
+        <errorDisplayField>IncorporatedIn__c</errorDisplayField>
+        <errorMessage>If &quot;Incorporated In&quot; country is &quot;United States&quot;, please select &quot;State of Incorporation&quot; as it is mandatory.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ValidatedAccountFields</fullName>
+        <active>true</active>
+        <description>Once validated (DataGovernanceStatus = &quot;Approved&quot;), all account fields except &quot;Description&quot; and &quot;Formerly Known As&quot; are only editable by Data Governance or System Administrator.</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Account__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+ISPICKVAL(DataGovernanceStatus__c, &quot;Approved&quot;)
+&amp;&amp; $Profile.Name &lt;&gt; &quot;IHSMarkit Data Governance&quot; 
+&amp;&amp; $Profile.Name &lt;&gt; &quot;IHSMarkit System Admin&quot;
+&amp;&amp; $Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp; NOT(CONTAINS($Profile.Name,&apos;IHSMarkit Legal&apos;))
+&amp;&amp; NOT($Permission.AccountGovernance)
+&amp;&amp; NOT($User.Alias = &quot;autocln&quot;) &amp;&amp;
+(ISCHANGED(AlternateNameTradingName__c)
+|| ISCHANGED(Status__c)
+|| ISCHANGED(VATTaxID__c)
+)
+)</errorConditionFormula>
+        <errorMessage>Only Customer Master Data Team and System Admin can edit an Account. Please click the Account Assistance button for help from the Customer Master Data Team.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>AccountAssistanceNew</fullName>
+        <availability>online</availability>
+        <description>IHSMUS-5177540 Project Everest</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Account Assistance</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://spglobal.service-now.com/spg?id=sc_cat_item&amp;sys_id=b97248b01b6e1d14966da977bc4bcb13</url>
+    </webLinks>
     <webLinks>
         <fullName>AltavistaNews</fullName>
         <availability>online</availability>
@@ -4761,6 +5115,120 @@ Parent.Parent.Parent.Parent.Name
         <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
     </webLinks>
     <webLinks>
+        <fullName>Loop__LOOP</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>800</height>
+        <linkType>url</linkType>
+        <masterLabel>Create PDF</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loop?eid={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1000</height>
+        <linkType>url</linkType>
+        <masterLabel>Deprecated LM</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loopmerge?eid={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1200</height>
+        <linkType>url</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__looplus?eid={!Account.Id}&amp;sessionId={!$Api.Session_ID}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Deprecated Mass LM</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/apex/loop__loopmerge?eid={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>sidebar</openType>
+        <page>Loop__massAccountDdp</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>SNPCAPIQ__Enrich_from_Cap_IQ</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Enrich from S&amp;P Capital IQ</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/{!IF(TEXT(Account.SNPCAPIQ__CapitalIQCompanyID__c)==&apos;&apos;, &apos;SNPCAPIQ__AccountEnrichment&apos;, &apos;SNPCAPIQ__AccountEnrich&apos;)}?id={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SNPCAPIQ__Unlink_from_Cap_IQ</fullName>
+        <availability>online</availability>
+        <description>Clear CapitalIQCompanyID__c and Ultimate_Parent_Company_ID__c fields.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Unlink from S&amp;P Capital IQ</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} //adds the proper code for inclusion of AJAX toolkit
+
+var account = new sforce.SObject(&quot;Account&quot;);
+account.id = &apos;{!Account.Id}&apos;; //set Record Id here, potentially get it from the URL ?id= param
+
+var quoteLines = sforce.connection.query(&quot;SELECT SNPCAPIQ__CapitalIQCompanyID__c FROM Account WHERE ID = &apos;{!Account.Id}&apos; limit 1&quot;);
+records = quoteLines.getArray(&quot;records&quot;);
+  for (var i=0; i&lt; records.length; i++) {
+    var record = records[i];
+  }
+
+if(record.SNPCAPIQ__CapitalIQCompanyID__c!=null){
+if(confirm(&apos;Are you sure that you want to unlink this record from S&amp;P Capital IQ?&apos;)){
+account.SNPCAPIQ__CapitalIQCompanyID__c = null;
+account.SNPCAPIQ__Ultimate_Parent_Company_ID__c= null;
+
+result = sforce.connection.update([account]); 
+
+if (result &amp;&amp; result.length){ 
+for (var i = 0; i &lt; result.length; i++){ 
+var res = result[i]; 
+if (res &amp;&amp; res.success == &apos;true&apos;){ 
+window.location.reload(); //to reload the window and show the updated values
+} else { 
+var es = res.getArray(&quot;errors&quot;); 
+alert(es[0].message); 
+} 
+}}
+}}
+else{
+alert(&apos;This record is not linked to S&amp;P Capital IQ.&apos;)
+}</url>
+    </webLinks>
+    <webLinks>
         <fullName>YahooMaps</fullName>
         <availability>online</availability>
         <displayType>link</displayType>
@@ -4778,5 +5246,97 @@ Parent.Parent.Parent.Parent.Name
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
         <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that will be linked to the Account.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)}
+DocuSign_CreateEnvelope();</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Verify_with_DNB</fullName>
+        <availability>online</availability>
+        <description>This button will initiate DnBs Pre-Contract Risk Screening linked to the Opportunity</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Verify with D&amp;B</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)}
+        
+{!REQUIRESCRIPT(&apos;//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js&apos;)} 
+{!REQUIRESCRIPT(&apos;//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js&apos;)} 
+
+var html = &apos;&lt;div id=&quot;dialog&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&apos;;
+
+var $g = jQuery.noConflict();
+
+var address = &apos;&lt;iframe id=&quot;dnbContent&quot; width=&quot;700&quot; height=&quot;730&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; frameborder=&quot;0&quot; src=&quot;&apos;+DocuSign_GetVerifyWithDnb(&apos;account&apos;)+&apos;&quot;&gt;&lt;/iframe&gt;&apos;;
+		
+$g(function() { 
+
+	$g(&apos;head&apos;).append(&apos;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://code.jquery.com/ui/1.11.4/themes/redmond/jquery-ui.css&quot;/&gt;&apos;);
+
+	if($g(&apos;#dialog&apos;).length == 0) {
+		$g(&apos;body&apos;).append(html); 
+	}
+	$g(&quot;#dialog&quot;).dialog({ 
+		autoOpen: true, 
+		modal: true, 
+		width: 700,
+		height: 783,
+		open: function(event, ui) {
+		  if($g(&apos;#myNewImage&apos;).length == 0) {
+		     $g(&quot;.ui-dialog-titlebar&quot;).append(&quot;&lt;img src=&apos;&quot;+getDnbLogo()+&quot;&apos; id=&apos;myNewImage&apos; /&gt;&quot;);
+		  }
+		  $g(&apos;.ui-widget-overlay&apos;).bind(&apos;click&apos;,function(){
+    			$g(&apos;#dialog&apos;).dialog(&quot;close&quot;);
+		  });
+		}
+	})
+	if($g(&apos;#dnbContent&apos;).length == 0) {
+		$g(&apos;#dialog&apos;).append(address); 
+	}
+
+
+	$g(&quot;.ui-dialog-title&quot;).hide();
+	$g(&quot;#dialog&quot;).css(&apos;padding&apos;, &apos;0px&apos;);
+	$g(&quot;.ui-widget-header&quot;).attr(&apos;style&apos;, &apos;padding-top:5px; padding-right:5px; padding-left:10px;padding-bottom:5px; border-radius:0px; background: #005172;border:0px;margin:auto;&apos;);
+	$g(&quot;.ui-button-text&quot;).css(&apos;padding&apos;, &apos;0&apos;);
+	$g(&quot;.ui-icon-closethick&quot;).attr(&apos;style&apos;, &apos;background-color:#005172; width:19px; height:19px; margin-top:-10px; margin-left:-10px;&apos;);
+	$g(&quot;.ui-dialog-titlebar-close&quot;).attr(&apos;style&apos;, &apos;border-radius:0px; padding:0px; width:18px; height:18px; border:0px;&apos;);
+	$g(&quot;.ui-dialog&quot;).css(&apos;z-index&apos;, &apos;10000&apos;);
+	$g(&quot;.ui-dialog&quot;).css(&apos;border-radius&apos;, &apos;0px&apos;);
+});</url>
+    </webLinks>
+    <webLinks>
+        <fullName>slackv2__Send_to_Slack</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Send to Slack</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.slackv2__Setup_Settings__c.slackv2__Namespace_Api__c}sendToSlack?recordId={!CASESAFEID (Account.Id)}&amp;objectApiName=Account</url>
+    </webLinks>
+    <webLinks>
+        <fullName>slackv2__Slack_Alerts</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Slack Alerts</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.slackv2__Setup_Settings__c.slackv2__Namespace_Api__c}slackAlerts?recordId={!CASESAFEID (Account.Id)}&amp;objectApiName=Account</url>
     </webLinks>
 </CustomObject>

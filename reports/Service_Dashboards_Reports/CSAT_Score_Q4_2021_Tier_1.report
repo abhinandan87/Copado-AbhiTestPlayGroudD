@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>SurveyResponse__c.CESScore__c:SUM/7*100</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Customer Satisfaction</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>SurveyResponse__c.CESScore__c:AVG/7*100</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Team Summary</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SurveyResponse__c.CSATScore__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>GBP</currency>
+    <customDetailFormulas>
+        <calculatedFormula>SurveyResponse__c.CSATScore__c/7*100</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>CSAT %</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ann Shee Hong,Aaron Ching,Aaron Tang,Aman Kumar,Anmol Singh,Bo Yuan Ng,Chayan Bhattacharjee,Devrach Atawnia,Esma Agzanay,Farah Razali,Felisha Anne Johnson,Gautam Pant,Girryrajen Veeramuthu,Haqimi Ashaari,Hashi Khalid Mohamad,Hye-Won Choi,Janet Holmes-Boone,Jason Mitchell,Jennifer Begel,Joanne Ooi,Kanika Garg,Kent Choong,Kevin Lim,Kinnerey Patel,Kok Han Lee,Ling Lim,Mark Quejado,Mehar Banu Mohamed Salib,Melanie Mladenova,Miaoyin Ng,Michael Don,Mika Sakurai,Mohd Rusdi Rahim,Momoi Suda,Najah Nadhira Binti Dorohid,Nicholas Teo,Paul Hughes,Pooja P Nair,Rashi Dungale,Safiya Murray,Samuel Abraham,Soo Ling Chaiyasu,Syarwanni Mustafa,Tanvi Arora,Tee Huang Cheah,Theresa Tracy Alawangsa,Varun Bhutani,Vera Rasa,Zi Yun Lim</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_CASE_OWNER_ALIAS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ahong,Aaron,atang,akuma,asing,bng,cbhat,dataw,eagza,FRazali,fjohn,gpant,gveer,HAshaari,nkhal,HyeWon,JHolmes-,jmitc,JBegel,jooi,kgarg,KChoong,KLim,Kpat,khlee,llim,mquejado,Mehar,mmlad,mng,michael,msaku,mrahi,MSud,NN,nteo,PHughes3,pp na,RDun,smurr,sabra,schai,smust,Taro,TeeHuang,talaw,vbhut,VRasa,ZiYun</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SurveyResponse__c.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.SurveyVersion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.CaseOwner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CSAT Score | Q4 2021 Tier 1</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <endDate>2021-11-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-08-24</startDate>
+    </timeFrameFilter>
+</Report>

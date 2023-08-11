@@ -1,0 +1,22 @@
+<html>
+ <head> 
+  <title></title> 
+ </head> 
+ <body style="height: auto; min-height: auto;">
+  <span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Dear {{{Recipient.FirstName}}},<br /> <br /> Thank you for contacting Customer Care at IHS Markit.<br /> <br /> Please use the below link to reset your password using our self-service process:<br /> <a href="https://products.markit.com/home/resetPasswordRequest.jsp"><span style="color:#2ecc71;">https://products.markit.com/home/resetPasswordRequest.jsp</span></a><span style="color:#2ecc71;"> </span><br /> <br /> Your username is:&nbsp;{{{Case.ContactEmail__c}}}<br /> <br /> <br /> Your password must be at least 8 characters long and include:<br /> - one upper case letter<br /> - one lower case letter<br /> - one number&nbsp;<br /> - one symbol.</span></span> 
+  <br /> 
+  <br /> Your password is - &nbsp;&lt;JKHJHKJNLJHIUY&gt;&nbsp; 
+  <br /> 
+  <br /> 
+  <br /> 
+  <span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Please ensure you delete your cookies, history and cache before resetting your password. Avoid using auto-fill functionality and instead manually type your username.<br /> <br /> Should you require any further assistance, please feel free to contact us at support@ihsmarkit.com.<br /> <br /> <img src="https://ihsmarkit.my.salesforce.com/servlet/servlet.ImageServer?id=0151B000003qkjV&amp;oid=00D0P000000Dfwd&amp;lastMod=1582564485000" /> Kind regards,<br /> <b>{{{Sender.Name}}}</b></span></span> 
+  <div style="box-sizing: border-box; font-family: &quot;Segoe UI&quot;, system-ui, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+    Email: 
+   <a href="mailto:MSF-Support@ihsmarkit.com">MSF-Support@ihsmarkit.com</a> 
+  </div> 
+  <span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">IHS Markit |Customer Care<br /> Japan +81 3 6262 1887 | Singapore +65 6922 4210 | EMEA 00800 6275 4800 | USA +1 877 762-7548</span></span> 
+  <br /> 
+  <img alt="Pic2" src="https://ihsmarkit.my.salesforce.com/file-asset-public/Pic2?oid=00D0P000000Dfwd" style="max-width: 652.2883575439453px" title="Pic2" /> 
+  <span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><a href="mailto:support@ihsmarkit.com"><span style="color:#2ecc71;">Email </span></a><span style="color:#2ecc71;"> | </span><a href="https://products.markit.com/home/login.jsp?rTo=SUPPORT"><span style="color:#2ecc71;">Support Portal</span></a><span style="color:#2ecc71;"> | </span><a href="https://ihsmarkit.secure.force.com/customers/apex/LiveChatPreChat?endpoint=https%3A%2F%2Ffvi6.la4-c2-phx.salesforceliveagent.com%2Fcontent%2Fs%2Fchat%3Flanguage%3Den_US%26org_id%3D00D0P000000Dfwd%26deployment_id%3D5720P000000fxd1%26sid%3D423ba104-9595-461b-b985-9ab3ddd4c47f%23deployment_id%3D5720P000000fxd1%26org_id%3D00D0P000000Dfwd%26button_id%3D5730P000000fxed%26session_id%3D423ba104-9595-461b-b985-9ab3ddd4c47f"><span style="color:#2ecc71;">Live Chat</span></a></span></span>
+ </body>
+</html>

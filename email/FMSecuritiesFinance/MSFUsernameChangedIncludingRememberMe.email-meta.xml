@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC1-3378 MSF Username Changed Including Remember Me</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MSF Username Changed Including Remember Me</name>
+    <style>none</style>
+    <subject>Your IHS Markit Customer Care Case {!Case.CaseNumber} - Your Data Explorers Username has changed</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Please note that your username for logging into IHS Markit&apos;s Securities Finance products has now changed.
+
+Your username is: (enter username here);
+
+IMPORTANT NOTE: The username is case sensitive and your password has not been changed on this occasion. All usernames and passwords are case sensitive.
+
+Please click on the following links to access:
+
+- DX Open
+- Risk Explorer
+- SF One
+
+If you have previously ticked the &apos;Remember Me&apos; box when logging in to any Securities Finance Web application, you may need to clear cache and delete cookies in your web browser.
+
+If you are unable to clear your cache and cookies please contact your internal IT team. Once you have done this you can login using the above username.
+
+If you require any further assistance, please do not hesitate to  contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

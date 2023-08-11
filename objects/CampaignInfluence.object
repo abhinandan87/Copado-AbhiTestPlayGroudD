@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCampaignInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCampaignInfluence</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCampaignInfluence</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <inlineHelpText>The ID of the associated campaign.</inlineHelpText>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <inlineHelpText>The ID of the contact on the associated opportunity.</inlineHelpText>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenueShare__c</fullName>
+        <description>Expected Revenue Share field for Campaign Influence Object</description>
+        <externalId>false</externalId>
+        <formula>(Influence*Opportunity.Amount)*Opportunity.Probability</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Expected Revenue Share</inlineHelpText>
+        <label>Expected Revenue Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Influence</fullName>
+        <inlineHelpText>The percentage of the associated opportunity’s Amount field attributed to the associated campaign.</inlineHelpText>
+    </fields>
+    <fields>
+        <fullName>LegacyIDUnique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>SFDC-2170 Legacy Reference Fields needed for Campaign Influence</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This field store the concatenation of the source system name and a source system record id to ensure the record is uniquely identified.</inlineHelpText>
+        <label>LegacyIDUnique</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <description>SFDC-2170 Legacy Reference Fields needed for Campaign Influence</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Source system record id</inlineHelpText>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyReference__c</fullName>
+        <description>SFDC-2170 Legacy Reference Fields needed for Campaign Influence</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This is a friendly system reference to the source record</inlineHelpText>
+        <label>LegacyReference</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacySystem__c</fullName>
+        <description>SFDC-2170 Legacy Reference Fields needed for Campaign Influence</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the CRM system the source record came from</inlineHelpText>
+        <label>LegacySystem</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LegacySystem</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ModelId</fullName>
+        <inlineHelpText>The ID of the campaign influence model associated with the record.</inlineHelpText>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <inlineHelpText>The ID of the associated opportunity.</inlineHelpText>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PKIDCampaignInfluence__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>CmI{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID CampaignInfluence</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>RevenueShare</fullName>
+        <inlineHelpText>The amount of revenue from the associated opportunity attributed to the associated campaign.</inlineHelpText>
+    </fields>
+    <listViews>
+        <fullName>CampaignInfluence</fullName>
+        <filterScope>Everything</filterScope>
+        <label>CampaignInfluence</label>
+        <sharedTo />
+    </listViews>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

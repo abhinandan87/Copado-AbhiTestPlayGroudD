@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Division Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Division Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter the API name of the formula field that includes the division&apos;s ACV scale color conditional formatting. --></help>
+        <label><!-- ACV Color Field --></label>
+        <name>ACV_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the divisional scale ACV field that should be displayed. --></help>
+        <label><!-- ACV Field Name --></label>
+        <name>ACV_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Chart --></label>
+        <name>Disable_Chart__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the division name as it should be displayed. --></help>
+        <label><!-- Display Name --></label>
+        <name>Display_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- ESG Amount Field --></label>
+        <name>ESG_Amount_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the field that links the divisional account manager to the account. --></help>
+        <label><!-- Manager Field Name --></label>
+        <name>Manager_Field_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the formula field for the division&apos;s NPS color conditional formatting. --></help>
+        <label><!-- NPS Color Field --></label>
+        <name>NPS_Color_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the divisional NPS score field. --></help>
+        <label><!-- NPS Field Name --></label>
+        <name>NPS_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Amount Field --></label>
+        <name>Opportunity_Amount_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the order number. The number controls where the divisional card is displayed in ascending order. --></help>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the division&apos;s Salesforce organization ID. --></help>
+        <label><!-- Org ID --></label>
+        <name>Org_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Record ID Field Name --></label>
+        <name>Salesforce_Record_ID_Field_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the hex code for the stack. Ex: FF0000. --></help>
+        <label><!-- Stack Color --></label>
+        <name>Stack_Color__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter order value greater than 0. --></errorMessage>
+        <name>Division_Order_Greaterthan_Zero</name>
+    </validationRules>
+</CustomObjectTranslation>

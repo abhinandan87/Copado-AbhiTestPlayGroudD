@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>true</blockedByApiWhitelisting>
+    <consumerKey>3MVG99OxTyEMCQ3j4iAcUkgGC.TXzU5NUNI6IC_1ugTgt0_eLiYU4FC2.NRn9htUmh2uIfNM.13BM33aZClit</consumerKey>
+    <consumerName>CData Connector</consumerName>
+    <masterLabel>BlacklistedConsumer2440546323461788</masterLabel>
+</BlacklistedConsumer>

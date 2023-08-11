@@ -1,0 +1,25 @@
+Dear {!Contact.FirstName},
+
+Thank you for contacting the IHS Automotive Global Product Help Desk.
+
+We are writing to confirm that we have extended the deadline for event list submission until this Thursday at 17:30.
+
+Should you have any further questions, please do not hesitate to contact us again and reference Case # {!Case.CaseNumber}.
+
+Kind regards,
+
+{!User.FirstName} {!User.LastName}
+IHS Automotive Help Desk
+01727733800 
+automotive_support@ihsmarkit.com
+www.ihs.com
+
+Your query was logged under Case # {!Case.CaseNumber} with the following description:
+
+--------------------------------------------------------------------------
+
+{!Case.Description}
+
+--------------------------------------------------------------------------
+
+{!Case.Thread_Id}

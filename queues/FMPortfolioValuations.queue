@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Portfolio Valuations</name>
+    <queueMembers>
+        <users>
+            <user>cristina.grigore@ihsmarkit.com</user>
+            <user>david.scott@ihsmarkit.com</user>
+            <user>du.tran@ihsmarkit.com</user>
+            <user>hiroshi.tanase@ihsmarkit.com</user>
+            <user>jacquesvan.zijl@ihsmarkit.com</user>
+            <user>laura.misher@ihsmarkit.com</user>
+            <user>loretta.au@inactive.markit.com</user>
+            <user>michael.bird@ihsmarkit.com</user>
+            <user>minqiang.kwek@ihsmarkit.com</user>
+            <user>nosheen.amir-ebrahimi@ihsmarkit.com</user>
+            <user>richard.earl@ihsmarkit.com</user>
+            <user>tasha.gonska@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>PD | Partner-Inquiries</name>
+    <queueMembers>
+        <users>
+            <user>andrew.wallace@ihsmarkit.com</user>
+            <user>aya.harb@ihsmarkit.com</user>
+            <user>fred.filler@ihsmarkit.com</user>
+            <user>ian.johns@ihsmarkit.com</user>
+            <user>marta.leeperriard@ihsmarkit.com</user>
+            <user>sameh.shalaby@ihsmarkit.com</user>
+            <user>shahid.rahamatullah@ihsmarkit.com</user>
+            <user>shannon.schuster@ihsmarkit.com</user>
+            <user>simon.alcock@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Finance Contract Signatories | UK</name>
+    <queueMembers>
+        <users>
+            <user>ajay.kumar2@ihsmarkit.com</user>
+            <user>anshul.mangla@ihsmarkit.com</user>
+            <user>brijesh.gupta@ihsmarkit.com</user>
+            <user>chander.kant@ihsmarkit.com</user>
+            <user>miranda.vaughan@ihsmarkit.com</user>
+            <user>mukesh.kinger@ihsmarkit.com</user>
+            <user>natalie.vooght@markit.com.prod</user>
+            <user>nitin.bagga2@ihsmarkit.com</user>
+            <user>niyeta.gupta@ihsmarkit.com</user>
+            <user>stacey.hammel@markit.com.prod</user>
+            <user>stephen.beevor@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

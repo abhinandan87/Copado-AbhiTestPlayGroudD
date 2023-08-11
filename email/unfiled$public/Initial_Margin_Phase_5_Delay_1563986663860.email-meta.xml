@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to promote our statement re: the Initial Margin regulatory relief and our related IM capabilities.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Initial Margin Phase 5 Delay</name>
+    <style>none</style>
+    <subject>Monitoring Your Initial Margin Exposure</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

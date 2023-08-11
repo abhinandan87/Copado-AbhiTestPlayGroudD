@@ -1,0 +1,33 @@
+<aura:component implements="lightning:isUrlAddressable" access="global" >
+    <lightning:messageChannel type="SelectedProductsList__c" onMessage="{!c.handleSelectedProducts}"/>
+    <lightning:messageChannel type="LegalProductsList__c" onMessage="{!c.handleLegalProducts}"/>
+    <lightning:messageChannel type="AddProductsList__c" onMessage="{!c.handleAddProducts}"/>
+    
+    <aura:attribute name="selectedProdList" type="Object"/>
+    <aura:attribute name="filterProdList" type="Object"/>
+    <aura:attribute name="legProdList" type="Object"/>
+    <aura:attribute name="legalEntityId" type="String"/>
+    <aura:attribute name="showComponent" type="String"/>
+    <aura:attribute name="legalEntityName" type="String"/>
+    <aura:attribute name="screenMode" type="String"/>   
+    <aura:attribute name="productsRemoved" type="Boolean" default="false"/>
+    <aura:attribute name="recId" type="String" default=""/>
+    <aura:attribute name="quickActionName" type="String" default=""/>
+    <aura:attribute name="pageReference" type="Object" />    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    <aura:handler name="change" value="{!v.pageReference}" action="{!c.changePageRef}" />
+   
+    <aura:if isTrue="{!v.showComponent == 'EditOppProductButton'}">
+        <c:opportunityEditProductContainer recordId="{!v.recId}"/>
+    </aura:if>     
+    <aura:if isTrue="{!v.showComponent == 'AddOppProductButton'}">
+        <c:opportunitySearchProductContainer recordId="{!v.recId}" filterProductsList="{!v.filterProdList}"/>
+    </aura:if> 
+    <aura:if isTrue="{!v.showComponent == 'LegalEntity'}">       
+        <c:legalEntitySelection recordId="{!v.recId}" selectedProdList="{!v.selectedProdList}" mode="{!v.screenMode}" productsRemoved="{!v.productsRemoved}"/>
+    </aura:if> 
+    <aura:if isTrue="{!v.showComponent == 'OpportunityAddProductContainer'}">       
+        <c:opportunityAddProductContainer recordId="{!v.recId}" selProductsList="{!v.legProdList}" legalEntityName="{!v.legalEntityName}" legalEntityId="{!v.legalEntityId}"/>
+    </aura:if> 
+  
+</aura:component>

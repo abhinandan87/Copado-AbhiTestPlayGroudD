@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | OTC Derivatives Data</name>
+    <queueMembers>
+        <users>
+            <user>deepak.kohli@ihsmarkit.com</user>
+            <user>elaine.li@markit.com.prod</user>
+            <user>gil.shefi@ihsmarkit.com</user>
+            <user>itai.kedar@ihsmarkit.com</user>
+            <user>james.jiang@markit.com.prod</user>
+            <user>jean-paul.forget@ihsmarkit.com</user>
+            <user>jeff.matskin@ihsmarkit.com</user>
+            <user>kashyap.sheth@ihsmarkit.com</user>
+            <user>michael.stone@ihsmarkit.com</user>
+            <user>michael.carey@ihsmarkit.com</user>
+            <user>pradeepkumar.singh@ihsmarkit.com</user>
+            <user>pranit.chettri@ihsmarkit.com</user>
+            <user>prerit@ihsmarkit.com</user>
+            <user>puru.kawatra@ihsmarkit.com</user>
+            <user>ravi.tiwari@markit.com.prod</user>
+            <user>ravinder.vohra@ihsmarkit.com</user>
+            <user>simon.cheung@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

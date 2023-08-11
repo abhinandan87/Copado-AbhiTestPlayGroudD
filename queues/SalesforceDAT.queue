@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Salesforce DAT</name>
+    <queueMembers>
+        <users>
+            <user>akshay.dogra@ihsmarkit.com</user>
+            <user>alia.geiger@ihsmarkit.com</user>
+            <user>christine.hotz@ihsmarkit.com</user>
+            <user>christopher.ghobashy@ihsmarkit.com</user>
+            <user>deborah.marchand@ihsmarkit.com</user>
+            <user>kayley.hunt@ihsmarkit.com</user>
+            <user>rohit.reddy@ihsmarkit.com</user>
+            <user>melanie.aris@ihsmarkit.com</user>
+            <user>paras.dhingra@ihsmarkit.com</user>
+            <user>tommy.aarts@ihsmarkit.com</user>
+            <user>twan.vanderloo@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

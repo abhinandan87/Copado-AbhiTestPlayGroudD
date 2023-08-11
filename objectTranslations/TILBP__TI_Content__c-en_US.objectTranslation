@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Asset --></label>
+        <name>TILBP__Asset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>TILBP__Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Type --></label>
+        <name>TILBP__ContentType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course End Date --></label>
+        <name>TILBP__CourseEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Group --></label>
+        <name>TILBP__CourseGroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Start Date --></label>
+        <name>TILBP__CourseStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created At --></label>
+        <name>TILBP__CreatedAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>TILBP__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Children --></label>
+        <name>TILBP__HasChildren__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kind --></label>
+        <name>TILBP__Kind__c</name>
+        <picklistValues>
+            <masterLabel>courseGroup</masterLabel>
+            <translation><!-- courseGroup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Price In Cents --></label>
+        <name>TILBP__PriceInCents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sku --></label>
+        <name>TILBP__Sku__c</name>
+    </fields>
+    <fields>
+        <label><!-- Slug --></label>
+        <name>TILBP__Slug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TILBP__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggested Retail Price In Cents --></label>
+        <name>TILBP__SuggestedRetailPriceInCents__c</name>
+    </fields>
+    <fields>
+        <label><!-- TI ID --></label>
+        <name>TILBP__TI_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated At --></label>
+        <name>TILBP__UpdatedAt__c</name>
+    </fields>
+</CustomObjectTranslation>

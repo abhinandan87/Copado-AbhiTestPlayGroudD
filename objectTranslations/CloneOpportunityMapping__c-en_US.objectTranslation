@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CloneOpportunityMapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CloneOpportunityMapping</value>
+    </caseValues>
+    <fields>
+        <help><!-- Check if you want field to be copied during clone process --></help>
+        <label><!-- Copy During Clone --></label>
+        <name>CopyDuringClone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if you want to copy this field during Currency change --></help>
+        <label><!-- Copy During Currency Change --></label>
+        <name>CopyDuringCurrencyChange__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

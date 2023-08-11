@@ -1,0 +1,10 @@
+.content{
+    word-wrap:break-word; /*old browsers*/
+    overflow-wrap:break-word;
+  }
+  table{
+    width:100%; /*must be set (to any value)*/
+  }
+  .overflow-wrap{
+    max-width:1px;
+  }

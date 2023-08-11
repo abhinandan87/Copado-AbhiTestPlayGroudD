@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>RocketDocs Salesforce Connector 2.0: Container for the project synced from RocketDocs.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>AccountCity__c</fullName>
+        <externalId>false</externalId>
+        <label>Account City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountCountry__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountState__c</fullName>
+        <externalId>false</externalId>
+        <label>Account State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountStreet__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountZip__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Zip</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityOwnerEmail__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Owner Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityOwnerHRTitle__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Owner HR Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityOwnerMobileNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Owner Mobile Number</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityOwnerPhoneNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Owner Phone Number</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityOwnerTitle__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Owner Title</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Owner_Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Owner Department</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimaryContactEmail__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimaryContactFirstName__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact First Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimaryContactFullName__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimaryContactPhone__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>PrimaryContactTitle__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Account_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: Text name value of the the related parent account</description>
+        <externalId>false</externalId>
+        <formula>RocketDocs__Opportunity__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Due_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: Indicates when the user expects a response from the proposal team.</description>
+        <externalId>false</externalId>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Last_Integration_Details__c</fullName>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: Last custom status code and messages from the RocketDocs system integration</description>
+        <externalId>false</externalId>
+        <label>Last Integration Details</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Last_Integration_Message__c</fullName>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: last REST status code and messages from the RocketDocs system integration</description>
+        <externalId>false</externalId>
+        <label>Last Integration Message</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Last_Sent_to_RocketDocs__c</fullName>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: Last date stamp when data was transferred sucessfully from SFDC to RocketDocs</description>
+        <externalId>false</externalId>
+        <label>Last Sent to RocketDocs</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Last_Updated_by_RocketDocs__c</fullName>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: Last date stamp when data was transferred sucessfully from RocketDocs to SFDC</description>
+        <externalId>false</externalId>
+        <label>Last Updated by RocketDocs</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Notes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: Provide notes for the Initial Proposal Request</description>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>2000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: Main proposal request container associated to an Opportunity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RocketDocs Salesforce Connector 2.0: Lookup to the Opportunity. There should only be one active Proposal Request associated to an Opportunity at any given time.</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>RocketDocs Requests</relationshipLabel>
+        <relationshipName>RocketDocs_Proposal_Requests</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Proposal_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: Proposal Type designated within RocketDocs after the proposal has been approved and created</description>
+        <externalId>false</externalId>
+        <label>Proposal Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Sent_to_RocketDocs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: Boolean to indicate if this record has successfully initiated integration with Rocketdocs</description>
+        <externalId>false</externalId>
+        <label>Sent to RocketDocs</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: RocketDocs will provide a status of the proposal request</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>RocketDocs Request</label>
+    <listViews>
+        <fullName>RocketDocs__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RDR-{0000000}</displayFormat>
+        <label>RocketDocs Request Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>RocketDocs Requests</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>RocketDocs__Closed_Proposal_Request</fullName>
+        <active>true</active>
+        <description>RocketDocs Salesforce Connector 2.0: Record type when a proposal request is closed or completed</description>
+        <label>Closed Request</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>RocketDocs__Open_Proposal_Request</fullName>
+        <active>true</active>
+        <description>RocketDocs Salesforce Connector 2.0: Default Record Type for Open Proposal Requests</description>
+        <label>Open Request</label>
+    </recordTypes>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>RocketDocs__Cancel_Proposal_Request_VF</fullName>
+        <availability>online</availability>
+        <description>RocketDocs Salesforce Connector 2.0: Cancel proposal button that can be used as a page button on SFDC classic layout or as a lightning action on a lightning layout</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Cancel Proposal Request</masterLabel>
+        <openType>sidebar</openType>
+        <page>RocketDocs__CancelProposal</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>RocketDocs__Generate_Document_VF</fullName>
+        <availability>online</availability>
+        <description>Opens the configured RapidDocs environment in a new tab with the current Proposal Request Id.</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Generate Document</masterLabel>
+        <openType>newWindow</openType>
+        <page>RocketDocs__GenerateDocument</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>RocketDocs__Get_Proposal_Updates_VF</fullName>
+        <availability>online</availability>
+        <description>RocketDocs Salesforce Connector 2.0: Get proposal updates button that can be used as a page button on SFDC classic layout or as a lightning action on a lightning layout</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Get Updates</masterLabel>
+        <openType>sidebar</openType>
+        <page>RocketDocs__GetProposalUpdates</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>RocketDocs__Send_Proposal_VF</fullName>
+        <availability>online</availability>
+        <description>RocketDocs Salesforce Connector 2.0: Send proposal button that can be used as a page button on SFDC classic layout or as a lightning action on a lightning layout</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send to RocketDocs</masterLabel>
+        <openType>sidebar</openType>
+        <page>RocketDocs__SendProposal</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

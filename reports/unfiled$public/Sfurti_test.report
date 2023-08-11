@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Case.Subtype__c</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF((Hour(timevalue(CREATED_DATE)) - Hour(timevalue(&quot;00:00:00.000&quot;)) + ((Minute(timevalue(CREATED_DATE)) - Minute(timevalue(&quot;00:00:00.000&quot;)))/60)) &lt; 6, &quot;12AM - 6AM&quot;, (IF ((Hour(timevalue(CREATED_DATE)) - Hour(timevalue(&quot;00:00:00.000&quot;)) + ((Minute(timevalue(CREATED_DATE)) - Minute(timevalue(&quot;00:00:00.000&quot;)))/60)) &lt;12, &quot;6AM - 12PM&quot;,(IF ((Hour(timevalue(CREATED_DATE)) - Hour(timevalue(&quot;00:00:00.000&quot;)) + ((Minute(timevalue(CREATED_DATE)) - Minute(timevalue(&quot;00:00:00.000&quot;)))/60)) &lt;18, &quot;12PM - 6PM&quot;,&quot;6PM-12AM&quot;)))))</calculatedFormula>
+        <dataType>Text</dataType>
+        <description>Created Time</description>
+        <developerName>CDF1</developerName>
+        <label>Created Time Test</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sarita Monga,Ashu Chanana,Natasha Chaudhary,Kuldeep Thakur,Xi Chen,Shikha Bhardwaj,Surbhi Kalra,Bhawana Jain,Jangdim GD,Sharon Basils Balakrishnan,Candice Jing er Tan,Mai Adachi,Mohamad AlDafaee,Daniel Flores-Choto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | MSERV FX</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.Component__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FXBA</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Sfurti test</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_PREVFY</interval>
+    </timeFrameFilter>
+</Report>

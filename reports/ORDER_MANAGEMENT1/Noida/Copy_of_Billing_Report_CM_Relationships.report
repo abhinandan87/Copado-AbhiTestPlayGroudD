@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contract.LiveCMClients__c</field>
+    </columns>
+    <columns>
+        <field>CMRelationship__c.AccountStatus__c</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalAccountFields__c.MRMRelationshipManager__c</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalAccountFields__c.AccountReference__c</field>
+    </columns>
+    <columns>
+        <field>CMRelationship__c.BillingStartDate__c</field>
+    </columns>
+    <columns>
+        <field>CMRelationship__c.BillingEndDate__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Billing Report (Commission manager)</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of Billing Report (CM Relationships</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractCustomEntity$CMRelationship__c@CMRelationship__c.Client__c</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>START_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

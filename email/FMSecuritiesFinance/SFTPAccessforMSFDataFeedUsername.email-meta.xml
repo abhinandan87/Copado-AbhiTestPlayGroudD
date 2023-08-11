@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Your Access to IHS Markit’s Securities Finance Data Feed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SFTP Access for MSF Data Feed – Username</name>
+    <style>none</style>
+    <subject>[Case#{!Case.CaseNumber}] Your Access to IHS Markit’s Securities Finance Data Feed</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Welcome to your access to IHS Markit’s Securities Finance Data Feed.
+
+&lt;Description of the reports that were setup&gt;
+
+Please find below the SFTP setup details required in order to connect to our server and pull the data files.
+
+Host: sftp.sf.ihsmarkit.com(Browser disabled, FTP client only)
+Port : 22
+Username: &lt;XXXXXXXX&gt;
+
+Note: All usernames and passwords are case sensitive. For security reasons, the password will be provided in a separate email.
+
+&lt;Description of the Folder Structure&gt;
+
+Folder Structure:
+&lt;Screenshot of Folder Structure&gt;
+
+Data dictionary can be found in the root folder.
+
+&lt;Sales Person Name&gt;, copied on this email, is your sales representative and will serve as the main point of contact during this period for any queries and questions you may have.
+
+If you require any technical assistance, please do not hesitate to  contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+S&amp;P Global | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

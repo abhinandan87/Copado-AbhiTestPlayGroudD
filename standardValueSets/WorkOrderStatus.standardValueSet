@@ -3,43 +3,25 @@
     <groupingStringEnum>WorkStatusCategory</groupingStringEnum>
     <sorted>false</sorted>
     <standardValue>
-        <fullName>New</fullName>
+        <fullName>Proposed</fullName>
         <default>true</default>
-        <label>New</label>
+        <label>Proposed</label>
         <groupingString>New</groupingString>
     </standardValue>
     <standardValue>
-        <fullName>In Progress</fullName>
+        <fullName>Confirmed</fullName>
         <default>false</default>
-        <label>In Progress</label>
+        <label>Confirmed</label>
         <groupingString>InProgress</groupingString>
     </standardValue>
     <standardValue>
-        <fullName>On Hold</fullName>
+        <fullName>Delivered</fullName>
         <default>false</default>
-        <label>On Hold</label>
-        <groupingString>OnHold</groupingString>
-    </standardValue>
-    <standardValue>
-        <fullName>Completed</fullName>
-        <default>false</default>
-        <label>Completed</label>
+        <label>Delivered</label>
         <groupingString>Completed</groupingString>
     </standardValue>
     <standardValue>
-        <fullName>Closed</fullName>
-        <default>false</default>
-        <label>Closed</label>
-        <groupingString>Closed</groupingString>
-    </standardValue>
-    <standardValue>
-        <fullName>Cannot Complete</fullName>
-        <default>false</default>
-        <label>Cannot Complete</label>
-        <groupingString>CannotComplete</groupingString>
-    </standardValue>
-    <standardValue>
-        <fullName>Canceled</fullName>
+        <fullName>Cancelled</fullName>
         <default>false</default>
         <label>Canceled</label>
         <groupingString>Canceled</groupingString>

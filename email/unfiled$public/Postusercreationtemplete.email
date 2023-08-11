@@ -1,0 +1,36 @@
+Dear {!Contact.FirstName},
+<br>
+<br>
+This email is in response to your request for accessing Salesforce.
+<br>
+<br>
+You have been granted a salesforce license.
+<br>
+<br>
+You must activate this login within 24 hours of receiving this email.
+<br>
+<br>
+What you must do?<br>
+To activate your Salesforce license please follow these instructions while logging in:
+<br>
+<br>
+1.    Open Google Chrome and navigate to  https://ihsmarkit.my.salesforce.com
+<br>
+<br>
+2.    Login with Single Sign-On by entering your Username and password - this will be the same as your IHS Markit email and the Desktop password you use to login
+<br>
+<br>
+IHS Markit Salesforce Helpdesk contact details<br>
+Please reach out to Salesforce Helpdesk for any further queries or assistance at salesforce@ihsmarkit.com. 
+<br>
+<br>
+For training material, you can visit the links below:
+ <a href= "https://infocorp365.sharepoint.com/sites/infonet/corporatepages/Pages/CorporatePages/VUORJ5BOBsAwFxl43ySw/0133c7c8-8acf-433a-a06c-ec787a7adf2c.aspx"> Training Link</a>.
+<br>
+<br>
+​​​​​​​We work proactively in resolving all the salesforce-related queries of our users.
+<br>
+<br>
+Kind regards,<br>
+{!Case.OwnerFullName}<br>
+Salesforce Configuration Team

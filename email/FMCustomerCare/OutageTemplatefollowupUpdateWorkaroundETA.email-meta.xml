@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>&quot;To be used as a follow up response to customers who inquire about an ongoing outage.   Only use one of the 4 mentioned options basis the situation&quot;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Outage Template follow up (Update/Workaround/ETA)</name>
+    <style>none</style>
+    <subject>Outage Template follow up (Update/Workaround/ETA)</subject>
+    <textOnly>Dear {!Case.Contact},
+
+We would like to provide you with an update to the intermitent system availability with {!Case.Product}.
+
+Our technical and development teams have identified the root cause issue and are working to have this resolved urgently.  They have provided us an ETA for a resolution of  Hours. We will provide a further update as soon as we have any more information.
+
+Our technical and development teams are investigating to resolve this urgently.  There is currently no ETA for a resolution but we will provide a further update as soon as we have any additional information.
+
+Our technical and development teams have provided a temporary workaround for this issue . They have provided us an ETA for a resolution of  Hours. We will provide a further update as soon as we have any more information.
+
+Our technical and development teams have provided a temporary workaround for this issue . There is currently no ETA for a resolution but we will provide a further update as soon as we have any additional information.
+
+We apologise for any inconvenience caused and thank you for your patience.
+
+If you require any further assistance, please do not hesitate to contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit |Customer Care
+Support Portal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

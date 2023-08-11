@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.FirstYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(Opportunity.LegalEntity__c=&quot;IHS Markit Global Sarl&quot;, OpportunityLineItem.FirstYear__c.CONVERT,
+
+IF(Opportunity.OpportunityRecordType__c=&quot;New Business&quot;, 
+	CASE(Opportunity.ChannelPartner__c, 
+		&quot;NATIONAL CONSULTING BUREAU&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;National Consulting Bureau&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES (TWOS)&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES LLC&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ADVANCED CONSTRUCTION TECHNOLOGY SERVICES - QATAR&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Services Lebanon&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Service Company KSA LLC&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Banhill Nigeria Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Bateman Watling &amp; Associates (Pty) Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;BATEMAN WATLING &amp; ASSOCIATES&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Cadoc SARL&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;MERCURY PAS LIMITED&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ONLINE BILGI HIZMETLERI EGITIM VE YAYINCILIK SANAYI TICARET AS&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Teldan Information Systems Ltd&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Alex Centre for Multimedia &amp; Libraries&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Logiser Sa&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+	OpportunityLineItem.FirstYear__c.CONVERT), 
+
+	CASE(Opportunity.BillToClientName__c, 
+		&quot;NATIONAL CONSULTING BUREAU&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;National Consulting Bureau&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES (TWOS)&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES LLC&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0,
+		&quot;ADVANCED CONSTRUCTION TECHNOLOGY SERVICES - QATAR&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Services Lebanon&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ADVANCED CONSTRUCTION TECHNOLOGY SERVICES (ACTS)&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Service Company KSA LLC&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Banhill Nigeria Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Bateman Watling &amp; Associates (Pty) Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;BATEMAN WATLING &amp; ASSOCIATES&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Cadoc SARL&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;MERCURY PAS LIMITED&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;MERCURY PAS LTD&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ONLINE BILGI HIZMETLERI EGITIM VE YAYINCILIK SANAYI TICARET AS&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Teldan Information Systems Ltd&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Alex Centre for Multimedia &amp; Libraries&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ALEX CENTER FOR MULTIMEDIA &amp; LIBRARIES&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;LOGISER SA&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+	OpportunityLineItem.FirstYear__c.CONVERT)))</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Net (Channel partner commission excluded)</description>
+        <developerName>CDF1</developerName>
+        <label>Net(ADH/First Year Value net converted)</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>6L-Closed Lost,6L-Renewal Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Product Design/Deposit Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>PD: Parts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS1_COUNTRY_CODE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AO,BJ,BW,BF,BI,CM,CF,TD,KM,CG,CD,CI,DJ,GQ,ER,ET,GA,GM,GH,GN,GW,KE,LS,LR,LY,MG,MW,ML,MR,MU,MA,MZ,NA,NE,NG,RW,SN,SO,SS,SD,SZ,TG,TN,UG,TZ,EH,ZM,ZW</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Dorte Blichfeldt Schatt,Adel Hallak,Rachid El Jaouhari</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ADDRESS1_COUNTRY_CODE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.ChannelPartner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Rachid Africa (non lost) by country</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.ContractStartDate__c</dateColumn>
+        <endDate>2022-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-01-01</startDate>
+    </timeFrameFilter>
+</Report>

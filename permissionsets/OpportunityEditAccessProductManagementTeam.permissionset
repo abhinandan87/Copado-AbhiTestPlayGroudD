@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>OpportunityEditAccessProductManagementTeam</name>
+    </customPermissions>
+    <description>IHSMUS-5331720 - Opportunity Edit access for Product Management Team to update Quotation Approved? field</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.QuotationApproved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Opportunity - Edit Access - Product Management Team</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Opportunity</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>Opportunity.NewBusiness</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

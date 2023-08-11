@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All Cases Closed by Type-Resources Start COVID-19 February</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4) AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EWP Events,Crop Protection &amp; Seeds,Animal Health,Policy &amp; Regulation,Commodities &amp; Food,Biofuels,Agri Coal,DTC Agri Coal,Agri Consulting,Agri Multi-Client Studies,Agri Events,Fertilizers,Agri Gas,Crop Forecasting Consulting,Agriculture,P&amp;P Supply Chain - Procurement,Chemical Week,Market Advisory Service (MAS),Base Chemicals,World Analysis,Downstream Consulting,Chemical Consulting,Chemical Reports: Custom,OMDC Consulting,OMMD MCS,Company Strategies and Performance,Content Delivery Intl Mid,Accumap-Midstream,Chemical Events,Midstream,Global Markets,Midstream Oil &amp; Gas Data,NAPD,Chemical Information &amp; Same Day Analysis,LPG Events,US Offshore Lease Data,Context Distribution/Content,NAPD Other,DMS Midstream,EGIS Midstream,GIS Mistream,OMMD Data,Crude Oil Markets,Midstream Oil &amp; NGL,Chemicals Royalties,Chemical PP,Downstream PP,Chemical Handbooks: Speciality Chemicals,Specialty Chemicals,Chemical Reports: PEP,Technical Analytics,Chemical Technology Analytics Reports,Downstream Analytics,Chemical Cost Curve Service,Not in SAP Product Master,Coal Publications &amp; Indices,Metals &amp; Mining,Coal,Coal Events,Coal Indices,Market Daily Services,The Energy Daily,PointLogic Energy,OPIS Rack,OPIS Retail,NAVX Retail,NAVX Other,EV Recharge Locations,Fuel Prices</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Parking Availability,OPIS Spot,EWP Financial,EWP Non-Financial,EWP Trans,EWP Consulting,PCGR Services,Coal Consulting,Power &amp; Renewables,Global Gas,PCGR Consulting,PCGR Services Trans,PCGR MCS,PCGR PP,Energy Technology,Rushmore,Que$tor,Kingdom,Accumap,Petra,Optimize,FieldDirect,PowerTools,Perform,Production Engineering Services,SubPUMP,Harmony Enterprise,Engineering Training &amp; Client Services,Energy Documents,Harmony,Evolution,Piper,Validata,WellTest,Accumap-Software,Community,Training and Client Services,Upstream Consulting,Costs &amp; Technology,Company Insight,E&amp;P Terms &amp; Above Ground Risks,Plays &amp; Basins,Companies &amp; Transactions,Paid Presentations,Upstream Intelligence,Content Delivery Partner,Content Delivery Intl,Petrodata,E&amp;P Content Intl,Basin Data,Data Delivery,Logs &amp; Seismic Data Intl,Content Delivery NA,Upstream Technical Consulting,General Energy Data Services &amp; Fees,Well Data NA,LogArc / LogTech,Drilling Data NA,AccuLogs,Petra Energy Data,Seismic Surveys NA,Digital Logs NA,US Well Data,Culture Data NA,Raster Logs NA,Production Data NA,Land Data US,GIS Data NA,Data Management Services NA,GeoSyn Data,EGIS Can,Data Management Content NA,Asset Valuation,Engineering Data NA,Oil &amp; Gas Data,Environmental Data NA,Land Data Can</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Trench Data NA,Topography Data NA,Geopolitical Data NA,GeoWebWorks Can,Power &amp; Transmission Data NA,Interpreted Tops,EDM Base,Land Data,Content Partners NA,Well Log Downloader,Log Digitizing Services,LAS Tools,Plan Distribution Service,Valtus,Performance Evaluator NA,Surcharges,Well Data Intl,Data Management Content Intl,Drilling Wire NA,Energy News on Demand,Field Maps NA,Rig Data NA,eTriever,Vantage,Upstream View,DNA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Access,Billing,Data,Notifications,Product Assistance,Training,User Administration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Not in SAP Product Master</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CLOSED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Case Volume | Resources | COVID-19 | Feb</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.ProductGroup__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <endDate>2020-02-29</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-02-01</startDate>
+    </timeFrameFilter>
+</Report>

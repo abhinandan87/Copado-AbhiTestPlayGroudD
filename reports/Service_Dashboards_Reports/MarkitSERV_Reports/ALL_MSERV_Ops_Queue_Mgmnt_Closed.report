@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Case.ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.CaseAgeBusinessDays__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Case.Subtype__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Quarterly closed cases</description>
+    <filter>
+        <booleanFilter>(((((((((1 or 2 or 3 OR 6)))) AND 4) AND 5) )) AND 7)</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aadra Jain,Aashi Gupta,Abhinav Bhandari,Abhishek Dixit,Abir Majumder,Aditya Singh,Alexander Jacobs,Amar Naik,Amitpreet Singh,Angela Jou,Angeline Salim,Ankur Tripathi,Anthony Capra,Arun Sikri,Ashu Chanana,Ashwajit Singh,Atria Ong,Benit Kurian,Brooke Bliven,Carolin Martinez Diaz,Catherine Oreta,Catherine Tan,Cesar Adams,Chau Ting Lau,Chhavi Sharma,Clare Lloyd,Clinton Mak,Daniel Flores-Choto,Daniel Gualtieri,Darren Ko,Dayna Vasilko,Declan Murphy,Dianne Jeong,Divesh Singh,Elaine Tan,Elly Kang,Emi Yanase,Eri Yamazaki,Eshan Singh,Eti Kapoor,Evan Dingle,Sharon Havilah,Russell Chew,Shaun Ng,Shumei Fu,Siti Ismail,Yuen Jing Low,TzeSiew Koay,Yuddhis Vijayakumaran,shikha kanwar,Sudhanshu Fuloria,Sujata Biswal,Sumit Behl,Zarrin Zuberi,Thomas Chase,Vipul Patel,Yasmin Evans,Thomas Lee,Tolulope Aboyade-Cole,Mai Adachi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Evan Hendershot,Flora Janting,Francis Misischia,Gaurav Srivastav,Gimpi Rawal,Greg Chalmers,GuoXin Li,jaspal singh Saini,Jellenie Estares,Jia En Khoo,Jie Wang,Jim Lopez,Joel Somerstein,Jolly Sinha,Judy To,Jun Xiang Ong,Junseok Kim,Kanika Malik,Karan Malhotra,Karan Singal,Karishma Gupta,Karishma Jain,Kaushal Sharma,Kavya Sridhar,Kawal Nain Singh,Kawaljeet Singh Sudan,Khai Qing Goh,Khushboo Nagpal,Khushbu Srivastava,Kinnan Zaloom,Kokushin Li,Kriti Malhotra,Kuldeep Thakur,kumari pragati,Luca Colelli Riano,Lyla Aomi,Mahima Sharma,Manila Dewan,Marina Josef,Matt Proulx,Matthew Flynn,Urja Malhotra,Shawn Wei Jian Tan,Trevor Shearer,Sabrina Kaur,Tej Pratap Sohi,Sachin Sharma,Shelvy Lestari Chandra Tjing,Shelvy Tjing,Van Anh Nguyen,Kamziana Nazwin Kamarulzaman,Shramta Uppal,Subhasish Ranjan Das,Thomas Howse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Mayuri Goel,Md Danish Akhtar,Megan Barwick,Megan Heintschel,Michael Kelly,Michael Wilshere,Milana Kelis,Mizael Poh,Mizuna Kaneko,Mudassir Khan,Mukul Jain,Muskan Kumari,Muzzammil Khan,Natalie Pou,Natasha Chaudhary,Neeraj Jain,Nikhita Bhandarkar,Nikhita Rahul Bhandarkar,Nikita Narang,Nisha Khurana,Nizam Miah,Nurcan Demirel,Pang Soon Ong,Parth Vashishth,Peter Walker,Ping Leong Ng,Pooi San Lim,Poonam Singh,Pranav Arneja,Prateek jain,Prerna Panwar,Presinna Thomas,Rahul Jain2,Rahul Tanver,Ramit Vohra,Rashmi Sharda,Rexie Romero,Rishabh Kumar,Ritika Mehra,Robert Schweikert,Rohit Arora,Roland Gonzales,Rupal Sood,TzeS Koay,Srigouri Dondeti,Sarita Monga,Vandita Agarwal,Candice Jin Er Tan,Pragya Pal,Shashank Gupta,Aastha Kejriwal,Nitin Wadhwa,Kirti Kumari,Tonje Langaas,Sharon Basils Balakrishnan,Jitesh Jangid,Vishveshwar Choudhary,Eeshan Singh</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>FM | Markit Research Manager,FM | TCA,FM | Debtdomain,FM | Loan Settlement | Loan Admin,FM |GMG | EQUITIES,FM | GMG | RST,FM | Counterparty Manager Onboarding,FM | Counterparty Manager,FM | Customer Care,FM | MSERV POD Cases,FM | Customer Care - DO NOT USE,FM | Integrated Reporting,FM | GRS Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Automatische Antwort:,Auto Reply,DELIVERY FAILURE,Out of Office,Generic leaver notification,Undeliverable,SOX,Overlay,MarkitSERV Customer Experience Survey,Retirement,Zero,FCA,Delivery Status Notification (Failure),Returned mail:,Automatic reply</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Abhinav Bhandari,Abhishek Dixit,Kaushal Sharma,Kriti Malhotra,Mayuri Goel,Natasha Chaudhary,Ramit Vohra,Smarak Nayak,Shivani Abrol,Somesh Sinha,Vradhi Srivastava,Vivek Kumar Yadav,Ashu Chanana,Karishma Gupta,Vanshika Gupta,Surbhi Kalra,Sukriti Srivastava,Abir Majumder,Aadra Jain,Catherine Tan,Jia En Khoo,Lyla Aomi,Xi Chen,Gaurav Srivastav,Jellenie Estares,Kuldeep Thakur,Tomas Maliska,Benit Kurian,Milana Kelis,Peter Walker,Robert Schweikert,Wilson Lee,Sam Lucchesi,Shikha Bhardwaj</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Onboarding,Case.CustomerCare,Case.Implementation</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.PreviousQueue__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ALL MSERV Ops Queue Mgmnt - Closed</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

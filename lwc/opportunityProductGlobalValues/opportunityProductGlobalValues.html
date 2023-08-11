@@ -1,0 +1,142 @@
+<template>   
+    <!--Same component to be used for both Add edit Screen-->
+    <div class="slds-card">
+        <div class="containerdiv" onclick={collapseSec}>
+            <div>
+                <lightning-icon icon-name="utility:right" size="x-small" if:false={globalSectionShow}></lightning-icon> 
+                <lightning-icon icon-name="utility:down" size="x-small" if:true={globalSectionShow}> </lightning-icon>      
+            </div>
+            <div>
+                <h2 class="slds-page-header__title"><b>Global Values</b></h2>
+            </div>
+        </div>                 
+        <template if:true={globalSectionShow}>
+            <div class="slds-p-around_xx-small">
+                <table class="slds-table" style="width:100%;">
+                    <thead>
+                        <tr class="slds-text-body_small boldFont">
+                            <th class="slds-size--2-of-12"  scope="col">
+                                <div class="slds-truncate" title="License Type">License Type</div>
+                            </th>
+                            <th class="slds-size--2-of-12" scope="col">
+                                <div class="slds-truncate" title="Discount Type">Discount Type</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Discount Step">Discount Step</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title={discValAnnot}>{discValAnnot}</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Uplift(%)">Uplift(%)</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Years">Years</div>
+                            </th>
+                            <template if:true={editScreen}>
+                                <th class="slds-size--1-of-12" scope="col">
+                                    <div class="slds-truncate" title="Product At Risk(Select All)">Product At Risk(Select All)</div>
+                                </th>
+                                <th class="slds-size--1-of-12" scope="col">
+                                    <div class="slds-truncate" title="Risk Status">Risk Status</div>
+                                </th>
+                            </template>
+                                <th class="slds-size--1-of-12" scope="col">
+                                    <div class="slds-truncate" title="Probability">Probability</div>
+                                </th>
+                            <template if:true={globalProRateDisplay}>
+                                <th class="slds-size--1-of-12" scope="col">
+                                    <div class="slds-truncate" title="Proration Required">Proration Required</div>
+                                </th>
+                            </template>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <td style="overflow:visible"> 
+                            <lightning-combobox
+                                name="LicenseType" 
+                                variant="label-hidden"                                                         
+                                value={licenseTypeVal}                            
+                                options={licensePicklistValues}  
+                                data-id="LicenseType"   
+                                onchange={handleChange} 
+                                disabled={autoRenewNoChanges}                   
+                            ></lightning-combobox>
+                        </td> 
+                        <td>                      
+                            <lightning-combobox
+                                name="DiscountType" 
+                                variant="label-hidden"                                                         
+                                value={discountTypeVal}                            
+                                options={discounttypePicklistValues}  
+                                data-id="DiscountType"  
+                                onchange={handleChange} 
+                                disabled={disableDiscountType}                      
+                            ></lightning-combobox>                                                                 
+                        </td>                        
+                        <td>
+                            <lightning-combobox
+                                name="DiscountStep" 
+                                variant="label-hidden"                                                         
+                                value={discountStepVal}                            
+                                options={stepOptions} 
+                                data-id="DiscountStep"   
+                                onchange={handleChange} 
+                                disabled={disableDiscStep}                        
+                            ></lightning-combobox>
+                        </td>
+                        <td>
+                            <lightning-input variant="label-hidden" type="number" disabled={disableDiscStep} data-id="DiscountValue" name="DiscountValue" value={discountValueVal} onchange={handleChange}  formatter="decimal" step="any" min="0"></lightning-input> 
+                        </td>
+                        <td>
+                            <lightning-input variant="label-hidden" type="number" disabled={disableUplift} data-id="Uplift" name="Uplift" value={upliftVal} onchange={handleChange} formatter="decimal" step="any" min="0" ></lightning-input>
+                        </td>
+                        <td>
+                            <lightning-combobox
+                                name="Years"     
+                                variant="label-hidden"                                                     
+                                value={yearsVal}                            
+                                options={yearOptions}  
+                                data-id="Years"   
+                                onchange={handleChange}   
+                                disabled={autoRenewNoChanges}                          
+                            ></lightning-combobox> 
+                        </td>
+                        <template if:true={editScreen}>
+                            <td>
+                                <lightning-input variant="label-hidden" checked={prodRisk} type="checkbox" data-id="ProdAtRisk" name="ProdAtRisk" onchange={riskhandleChange} ></lightning-input>  
+                            </td>
+                            <td>
+                                <lightning-combobox
+                                    name="RiskStatus"  
+                                    variant="label-hidden"                                                        
+                                    value={riskStatusVal}                            
+                                    options={riskstatusPicklistValues} 
+                                    data-id="RiskStatus" 
+                                    onchange={handleChange}   
+                                    disabled={disableRiskStat}                        
+                                ></lightning-combobox>  
+                            </td>
+                        </template>
+                        <td>
+                            <lightning-input variant="label-hidden" type="number" data-id="Probability" name="Probability" value={probabilityVal} onchange={handleChange} min="0" max="100"></lightning-input>
+                        </td>
+                        <template if:true={globalProRateDisplay}>
+                        <td>
+                            <lightning-combobox
+                                name="Proration"   
+                                variant="label-hidden"                                                       
+                                value={prorationVal}                            
+                                options={prorationOptions}      
+                                data-id="Proration" 
+                                onchange={handleChange} 
+                                onselectionchange={handleSelectionChangeBill}                     
+                            ></lightning-combobox>   
+                        </td>  
+                        </template>                   
+                    </tbody>
+                    </table>
+            </div>
+        </template>        
+    </div> 
+</template>

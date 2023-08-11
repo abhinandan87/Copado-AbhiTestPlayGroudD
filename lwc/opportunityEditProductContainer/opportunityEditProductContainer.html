@@ -1,0 +1,101 @@
+<template>  
+    <div class="mainPage">   
+    <!-- Header -->
+    <div class="slds-grid slds-card icondiv">
+        <div class="slds-media__figure">
+            <lightning-icon icon-name="standard:product" size="medium"></lightning-icon>
+        </div>
+        <div class="slds-media__body">
+            <div class="slds-line-height_reset">
+                Edit Products
+            </div> 
+            <h1 class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate" title="Legal Entity">
+                <b>Legal Entity:
+                    <template if:true = {oppy}>
+                        <template if:true = {oppy.LegalEntity__c}>
+                            {oppy.LegalEntity__r.Name}
+                        </template>
+                    </template>
+                </b>
+            </h1>
+        </div>
+    </div>
+     
+    <!--Display Spinner while saving the details-->
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="spinner" variant="brand" size="medium"></lightning-spinner>
+    </template>
+    
+    <template if:false={hasNoProducts} >
+        <!-- Global Values --> 
+        <div>   
+            <template if:true={oppyWrapper}>
+                <c-opportunity-Product-Global-Values get-ops-wrapper={oppyWrapper} oppy={oppy} recordids={recordId} mode="Edit"></c-opportunity-Product-Global-Values>  
+            </template>       
+        </div> 
+            
+        <div class="mainContent">
+        <!-- Collapsed/Expand Filter and Product List --> 
+        <div class="slds-grid slds-wrap containerDiv"> 
+            <!-- Collapse Filter -->
+            <div data-id="collapsedFilter">
+                <div class="slds-card collapsedDiv">                  
+                        <div  onclick={handleFilterDisplay}> <!-- class="utilitydiv" -->
+                            <lightning-icon icon-name="utility:right" size="x-small" class="slds-m-top_medium"></lightning-icon>
+                        </div>                 
+                </div> 
+            </div> 
+            <!-- Expand Filter -->
+            <div class="slds-col" data-id="expandFilter">  
+                <div class="slds-card expanddiv">             
+                    <div>
+                        <lightning-icon icon-name="standard:calibration" size="small"></lightning-icon>
+                    </div>
+                    <div>
+                        <h2><span class="slds-text-heading_small slds-truncate"><b>Filters</b></span></h2>
+                    </div>
+                    <div class="utilitydiv" onclick={handleFilterDisplay}>
+                        <lightning-icon icon-name="utility:left" size="x-small"></lightning-icon>
+                    </div>
+                    <c-opportunity-Product-Filter  mode="Edit"></c-opportunity-Product-Filter>  
+                </div>
+            </div>
+            <!-- Product List -->
+            <div class="slds-col" data-id="prodList">
+                <template if:true={oppyWrapper}>
+                    <c-opportunity-Edit-Product-List record-id={recordId} ops-wrapper={oppyWrapper} onstopspinner={stopSpinner} onerrormsg={handleErrorMsg}></c-opportunity-Edit-Product-List>
+                </template>
+            </div>                         
+        </div>
+        </div>
+            <!--Footer-->
+        <div class="slds-var-m-bottom_x-large slds-docked-form-footer">
+            <lightning-layout horizontal-align="space" vertical-align="top" >
+                <template if:true={hasOppyEditAccess}>
+                    <lightning-button class="slds-var-m-right_small" variant="brand" label="Reset" icon-name="utility:undo" icon-position="right" onclick={resetPage} ></lightning-button>
+                    <lightning-button class="slds-var-m-right_small" variant="brand" label="Add Product" icon-name="utility:new" icon-position="right" onclick={addProducts} disabled={disableAdd}></lightning-button>
+                    <lightning-button class="slds-var-m-right_small" variant="brand" label="Save" icon-name="utility:save" icon-position="right" onclick={saveProducts} disabled={disableSave}></lightning-button>
+                    <lightning-button class="slds-var-m-right_small" variant="brand" label="Save and Close" icon-name="utility:save" icon-position="right" onclick={saveClose} disabled={disableSaveClose}></lightning-button>
+                    <lightning-button class="slds-var-m-right_small" variant="brand" label="Change Legal Entity" icon-name="utility:change_record_type" icon-position="right" onclick={changeLegalEntity} disabled={disableLegalEntity}></lightning-button>
+                </template>
+                <lightning-button variant="brand" label="Cancel" icon-name="utility:close" icon-position="right" onclick={cancelChanges} ></lightning-button>
+            </lightning-layout>
+            <lightning-layout horizontal-align="space" vertical-align="top" >
+                <lightning-layout-item></lightning-layout-item>
+                <lightning-layout-item></lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+    <!-- Error Message if there is no Products on Opportunity-->
+    <template if:true={hasNoProducts}>
+        <div class="slds-card slds-grid_align-center slds-grid_vertical">
+            <div class="slds-col slds-m-around_medium slds-container_fluid slds-align_absolute-center">
+                <p class="slds-text-heading--medium slds-text-color_error"><b>{noProductsMessage}</b></p>
+            </div>
+            <div class="slds-col slds-m-around_large slds-container_fluid slds-align_absolute-center">
+                <lightning-button variant="brand" label="Go Back" icon-name="utility:back" icon-position="right" onclick={cancelChanges}></lightning-button>
+            </div>
+        </div>
+    </template>
+    </div>
+</template>

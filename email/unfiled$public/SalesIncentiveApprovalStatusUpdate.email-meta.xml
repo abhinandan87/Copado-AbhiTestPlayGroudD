@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-2625 Email Template for Sales Incentive Approvals status update</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SalesIncentiveApprovalStatusUpdate</name>
+    <style>none</style>
+    <subject>Sales Incentive Approval Record: Status updated to {!SalesIncentiveApproval__c.CommissionStatus__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

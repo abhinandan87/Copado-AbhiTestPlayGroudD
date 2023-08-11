@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>SurveyResponse__c.CESScore__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.Contact__c</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_CASE_SUBJECT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Commission Manager,Calendar-Vote,Hub</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Beth Emmert,Brandon Murnane,Gary Ge,Shellie Howard,Joel Gamzon,Kas Shambrook,Priscilla Kim,Robert Curtis,Bergina Obertinca,Olga Scerbatiuk,Ilaria Valaydon Pyke,Tom Hodds</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Global: BRS Survey Responses YTD</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>SurveyResponse__c.CESScore__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>FK_CASE_CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-12-01</startDate>
+    </timeFrameFilter>
+</Report>

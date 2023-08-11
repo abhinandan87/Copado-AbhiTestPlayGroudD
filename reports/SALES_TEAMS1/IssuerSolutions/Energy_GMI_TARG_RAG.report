@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$TickerSymbol</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.OpportunityLineItems$PricebookEntry.Product2.Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities.OpportunityLineItems$FirstYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$CloseDate</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$SAP_TerminationNotice__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$OpportunityOwner__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Energy GMI/TARG - RAG</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>3-Renewal Pending,5-Renewal Contracting,6W-Renewal Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities.OpportunityLineItems$PricebookEntry.Product2.Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Global Mkts,Targeting,BuysideIQ+,shareholder ID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$TickerSymbol</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ABM,ADNT,AC,ALSN,AMCR,AAL,AXL,APG,APTV,ACA,AFI,AVY,BLL,B,BV,BC,BWXT,CHRW,CN,CP,CSL,CARR,CAT,CBZ,CHRA,GTLS,CSTM,CTB,CAAP,CR,DE,BWA,DAL,DOV,ETN,EMR,FDX,STLA,FSR,F,FTV,FBM,GTX,GTES,GD,GE,GM,GFL,EAF,GPX,GBX,MLHR,HXL,HI,HON,HWM,HYLN,HY,IAA,ITW,IR,INSW,JEC,JCI,KAR,KBR,LEA,LMT,MLM,MTOR,MWA,NC,NP,NJR,NLSN,NDSN,NSC,OMC,OTIS,OSG,PSN,PNR,PGTI,PWR,QS,PACK,RTX,RBC,RXN,ROK,ROP,R,SAIC,SNA,SAVE,SWK,SUM,TEV-TSE,TXT,AZEK,BA,BCO,IPG,MTW,THO,TT,TGI,USCR,USX,UNP,VNE,VRT,SPCE,VNT,VMC,WBT,WCC,WRK,VTOL,TTC,XL,RMO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - General Service Account,Place Holder - IHS Markit Internal Employees,Place Holder - Sales,Place Holder - Self Registered Users Account,Place Holder - Unknown Account</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Energy GMI/TARG - RAG</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Oppy_and_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$LastActivityDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

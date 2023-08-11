@@ -196,29 +196,31 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>User_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>User_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <label>User Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <fieldSets>
         <fullName>PersonalInfo_EPIM</fullName>
         <description>Fieldset for User Field Masking</description>
         <displayedFields>
-            <field>CompanyName</field>
+            <field>Name</field>
             <isFieldManaged>true</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>ManagerId</field>
+            <field>SenderEmail</field>
             <isFieldManaged>true</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>MobilePhone</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Username</field>
+            <field>Department</field>
             <isFieldManaged>true</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -228,17 +230,17 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>AboutMe</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>FederationIdentifier</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
             <field>LastName</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>FirstName</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Username</field>
             <isFieldManaged>true</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -253,12 +255,7 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>GeocodeAccuracy</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Name</field>
+            <field>FederationIdentifier</field>
             <isFieldManaged>true</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -268,17 +265,7 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
-            <field>FirstName</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
             <field>Title</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Country</field>
             <isFieldManaged>true</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -287,84 +274,55 @@
             <isFieldManaged>true</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
-        <displayedFields>
-            <field>Email</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>SenderName</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Street</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>PostalCode</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Fax</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>City</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Latitude</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>SenderEmail</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Longitude</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>BadgeText</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Phone</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>State</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Department</field>
-            <isFieldManaged>true</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
         <label>PersonalInfo_EPIM</label>
     </fieldSets>
     <fields>
-        <fullName>AboutMe</fullName>
+        <fullName>ADID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>SFDC1-199 Unique ID for the employee used also for Single Sign On</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique Id for the employee generated by HR</inlineHelpText>
+        <label>AD ID</label>
+        <length>100</length>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>AboutMe</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>AdClaimsApprover__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC1-1059 This field should be checked for a user who is authorized to approve an Ad Claim records.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please check this field if current user is authorized to approve Ad Claim records.</inlineHelpText>
+        <label>Ad Claims Approver</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Address</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
     </fields>
     <fields>
         <fullName>Alias</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>AssociatedTo__c</fullName>
+        <description>SFDC-5551: Creating Associated To values to categorize the records &amp; data can be used for reporting</description>
+        <externalId>false</externalId>
+        <label>Associated To</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>AssociatedTo</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>CallCenterId</fullName>
@@ -384,6 +342,15 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>DUCApprover__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>POLK WRF checkbox for POLK data on User for Approvers.</description>
+        <externalId>false</externalId>
+        <label>DUC Approver</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>DefaultGroupNotificationFrequency</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -396,6 +363,16 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Description__c</fullName>
+        <description>SFDC1-7841 This field holds insight about the user and why the user was created</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter contextual notes about the user and why the user was created</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>DigestFrequency</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -405,7 +382,7 @@
     </fields>
     <fields>
         <fullName>Email</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
     </fields>
     <fields>
         <fullName>EmailEncodingKey</fullName>
@@ -416,8 +393,43 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>EmployeeNumber__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>SFDC1-8976 : As standard &apos;Employee Number&apos; Field can not be marked as External Id, creating new custom field for the same.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>The Workday ID of any IHS Markit Employees, consultants and channel partners. This field is used to synch HR data with the quota database and workday system to Salesforce.</inlineHelpText>
+        <label>Employee Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>EnrolledINSalesProgram__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC1-199 Field to determine is user is part of Sales High Touch program</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field designates users from legacy IHS that were enrolled as part of the High Touch program at migration. It is currently being used for only historical purposes</inlineHelpText>
+        <label>Enrolled in Sales High Touch Program</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Extension</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Temporarily external Id for migration of Markit System</description>
+        <externalId>true</externalId>
+        <label>ExternalId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
     </fields>
     <fields>
         <fullName>Fax</fullName>
@@ -430,6 +442,229 @@
     <fields>
         <fullName>ForecastEnabled</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>FormalFirstName__c</fullName>
+        <description>SFDC1-199 Name user likes to go by – ie Mike vs   Michael</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the name users go by e.g Mike vs Michael</inlineHelpText>
+        <label>Formal First Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FullName__c</fullName>
+        <description>SFDC-1156 - This field will show the full name of User.</description>
+        <externalId>false</externalId>
+        <formula>FirstName &amp; &quot; &quot; &amp; LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Full Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GlobalVertical__c</fullName>
+        <externalId>false</externalId>
+        <label>Global Vertical</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Consolidated Markets &amp; Solutions</fullName>
+                    <default>false</default>
+                    <label>Consolidated Markets &amp; Solutions</label>
+                </value>
+                <value>
+                    <fullName>Financial Markets</fullName>
+                    <default>false</default>
+                    <label>Financial Markets</label>
+                </value>
+                <value>
+                    <fullName>Financial Services: Financial Markets</fullName>
+                    <default>false</default>
+                    <label>Financial Services: Financial Markets</label>
+                </value>
+                <value>
+                    <fullName>Financial Services: Financial Market Technologies</fullName>
+                    <default>false</default>
+                    <label>Financial Services: Financial Market Technologies</label>
+                </value>
+                <value>
+                    <fullName>Resources</fullName>
+                    <default>false</default>
+                    <label>Resources</label>
+                </value>
+                <value>
+                    <fullName>Transportation</fullName>
+                    <default>false</default>
+                    <label>Transportation</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Above All</fullName>
+                    <default>false</default>
+                    <label>Above All</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HRActiveStatus__c</fullName>
+        <description>SFDC1-906; It helps to identify them and turn off the user access in sfdc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ACTIVE (Active Colleague)
+INACTIVE (On Leave)
+RETIREE (Retired)
+WITHDRWN (Terminated)</inlineHelpText>
+        <label>HR Active Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACTIVE(ActiveColleague)</fullName>
+                    <default>false</default>
+                    <label>ACTIVE (Active Colleague)</label>
+                </value>
+                <value>
+                    <fullName>INACTIVE(OnLeave)</fullName>
+                    <default>false</default>
+                    <label>INACTIVE (On Leave)</label>
+                </value>
+                <value>
+                    <fullName>RETIREE(Retired)</fullName>
+                    <default>false</default>
+                    <label>RETIREE (Retired)</label>
+                </value>
+                <value>
+                    <fullName>WITHDRWN(Terminated)</fullName>
+                    <default>false</default>
+                    <label>WITHDRWN (Terminated)</label>
+                </value>
+                <value>
+                    <fullName>ACTIVE</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>ACTIVE</label>
+                </value>
+                <value>
+                    <fullName>INACTIVE</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>INACTIVE</label>
+                </value>
+                <value>
+                    <fullName>RETIREE</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>RETIREE</label>
+                </value>
+                <value>
+                    <fullName>WITHDRAWN</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>WITHDRAWN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HRBusinessLine__c</fullName>
+        <description>This is the Business Line field created  per SFDC1-638.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populate HR Business Line details</inlineHelpText>
+        <label>HR Business Line</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HRCostCenter__c</fullName>
+        <description>SFDC1-199 Cost Center as defined by HR Cost Center</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To be provided by HR</inlineHelpText>
+        <label>HR Cost Center</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HRFunction__c</fullName>
+        <description>SFDC1-199 Function as defined by HR file</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To be provided by HR</inlineHelpText>
+        <label>HR Function</label>
+        <length>150</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HRJobTitle__c</fullName>
+        <description>SFDC1-199 Title as defined by HR file</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To be provided by HR</inlineHelpText>
+        <label>HR Job Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HRManagerID__c</fullName>
+        <description>SFDC1-199 HR managers AD ID as defined in the HR file</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To be provided by HR</inlineHelpText>
+        <label>HR Manager ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HRManager__c</fullName>
+        <description>SFDC1-199 HR managers full name as defined in the HR file</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Managers full name to be provided by HR</inlineHelpText>
+        <label>HR Manager</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HRSubBusinessLine__c</fullName>
+        <description>The field is created for SPGI Day1 project SFDC-4829</description>
+        <externalId>false</externalId>
+        <label>HR Sub Business Line</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>IndividualId</fullName>
@@ -452,26 +687,216 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>LegacyCRM__c</fullName>
+        <description>SFDC-907. Request by Anne Thomas to log the legacy CRM the user originates from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Displays the legacy system the User was on prior to migration to IHS Markit&apos;s Salesforce.</inlineHelpText>
+        <label>Legacy CRM</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Clientele</fullName>
+                    <default>false</default>
+                    <label>Clientele</label>
+                </value>
+                <value>
+                    <fullName>IHS</fullName>
+                    <default>false</default>
+                    <label>IHS</label>
+                </value>
+                <value>
+                    <fullName>IHS Markit</fullName>
+                    <default>false</default>
+                    <label>IHS Markit</label>
+                </value>
+                <value>
+                    <fullName>Ipreo-GMG Corp</fullName>
+                    <default>false</default>
+                    <label>Ipreo-GMG Corp</label>
+                </value>
+                <value>
+                    <fullName>Ipreo-PCM</fullName>
+                    <default>false</default>
+                    <label>Ipreo-PCM</label>
+                </value>
+                <value>
+                    <fullName>Markit</fullName>
+                    <default>false</default>
+                    <label>Markit</label>
+                </value>
+                <value>
+                    <fullName>Polk</fullName>
+                    <default>false</default>
+                    <label>Polk</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LegacyIDUnique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>LegacyIDUnique</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>SFDC1-2445 : Legacy ID field for User Object</description>
+        <externalId>true</externalId>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacySystem__c</fullName>
+        <externalId>false</externalId>
+        <label>LegacySystem</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LegacySystem</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LegalEntity__c</fullName>
+        <description>SFDC1-5853 : This field will hold the value of Legal Entity of the user and will be editable only by System Admin and  Sales Ops</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Legal Entity of the user</inlineHelpText>
+        <label>Legal Entity</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>LocaleSidKey</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
-        <fullName>ManagerId</fullName>
-        <securityClassification>Confidential</securityClassification>
+        <fullName>Loop__LOOPlus_Tester__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking this box will allow this user to run Document Packages on the Drawloop next-release environment when it is available for testing.</inlineHelpText>
+        <label>DocGen Next Release Test User</label>
         <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__dsPassword__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DocuSign Password</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__dsToken__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DocuSign API UserName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
         <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Me__c</fullName>
+        <description>SFDC-2645 Reporting fields for Hierarchy on the User record</description>
+        <externalId>false</externalId>
+        <formula>$User.Id = Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checked for current user</inlineHelpText>
+        <label>Me</label>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>MobilePhone</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>MyTeam__c</fullName>
+        <description>SFDC-2645 Reporting fields for Hierarchy on the User record</description>
+        <externalId>false</externalId>
+        <formula>OR(
+$User.Id = Id,
+$User.Id = ManagerId,
+$User.Id = Manager.Manager.Id, 
+$User.Id = Manager.Manager.Manager.Id,
+$User.Id = Manager.Manager.Manager.Manager.Id,
+$User.Id = Manager.Manager.Manager.Manager.Manager.Id,
+$User.Id = Manager.Manager.Manager.Manager.Manager.Manager.Id,
+$User.Id = Manager.Manager.Manager.Manager.Manager.Manager.Manager.Id,
+$User.Id = Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.Id,
+$User.Id = Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.Id,
+$User.Id = Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.Id
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>To only pull their team member info</inlineHelpText>
+        <label>MyTeam</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>PKIDUser__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>Usr{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID User</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>PartnerAccountId__c</fullName>
+        <description>Used by Partner Community users to reference their Partner Account Id
+
+This field is being used in Community related changes</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(UserType,&quot;PowerPartner&quot;),
+    CASESAFEID(Contact.AccountId),
+    null
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner Account Id</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Phone</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <trackFeedHistory>true</trackFeedHistory>
     </fields>
     <fields>
         <fullName>PortalRole</fullName>
@@ -483,12 +908,200 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>QuotaManager__c</fullName>
+        <description>SFDC1-199 Lookup to manager populated by QDB integration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically populated through system integration</inlineHelpText>
+        <label>Quota Manager</label>
+        <relationshipName>QuotaManagers</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
         <fullName>ReceivesAdminInfoEmails</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>ReceivesInfoEmails</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>RenewalIntegration__c</fullName>
+        <description>SFDC-2248 to note if a User has Renewal auto populated by the Renewal Integration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Yes, if an Automotive user needs their renewals created via renewal integration</inlineHelpText>
+        <label>Renewal Integration</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SalesBusinessLine__c</fullName>
+        <description>SFDC1-5516: To define the Sales Business Line for a user</description>
+        <externalId>false</externalId>
+        <label>Sales Business Line</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AD&amp;S (Aerospace, Defense and Security)</fullName>
+                    <default>false</default>
+                    <label>AD&amp;S (Aerospace, Defense and Security)</label>
+                </value>
+                <value>
+                    <fullName>Analytics</fullName>
+                    <default>false</default>
+                    <label>Analytics</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Corporate Actions</fullName>
+                    <default>false</default>
+                    <label>Corporate Actions</label>
+                </value>
+                <value>
+                    <fullName>Digital</fullName>
+                    <default>false</default>
+                    <label>Digital</label>
+                </value>
+                <value>
+                    <fullName>ECR</fullName>
+                    <default>false</default>
+                    <label>ECR</label>
+                </value>
+                <value>
+                    <fullName>EDM/Vista</fullName>
+                    <default>false</default>
+                    <label>EDM/Vista</label>
+                </value>
+                <value>
+                    <fullName>Equities</fullName>
+                    <default>false</default>
+                    <label>Equities</label>
+                </value>
+                <value>
+                    <fullName>ERC/PMI (Economic Country Risk)</fullName>
+                    <default>false</default>
+                    <label>ERC/PMI (Economic Country Risk)</label>
+                </value>
+                <value>
+                    <fullName>Indices</fullName>
+                    <default>false</default>
+                    <label>Indices</label>
+                </value>
+                <value>
+                    <fullName>M&amp;T (Maritime and Trade)</fullName>
+                    <default>false</default>
+                    <label>M&amp;T (Maritime and Trade)</label>
+                </value>
+                <value>
+                    <fullName>OMDC (Oil, Midstream, Downstream, Chemicals)</fullName>
+                    <default>false</default>
+                    <label>OMDC (Oil, Midstream, Downstream, Chemicals)</label>
+                </value>
+                <value>
+                    <fullName>OMS</fullName>
+                    <default>false</default>
+                    <label>OMS</label>
+                </value>
+                <value>
+                    <fullName>OPIS</fullName>
+                    <default>false</default>
+                    <label>OPIS</label>
+                </value>
+                <value>
+                    <fullName>PD (Product Design)</fullName>
+                    <default>false</default>
+                    <label>PD (Product Design)</label>
+                </value>
+                <value>
+                    <fullName>PGCR (Power, Gas, Coal and Renewables)</fullName>
+                    <default>false</default>
+                    <label>PGCR (Power, Gas, Coal and Renewables)</label>
+                </value>
+                <value>
+                    <fullName>Processing &amp; Platforms</fullName>
+                    <default>false</default>
+                    <label>Processing &amp; Platforms</label>
+                </value>
+                <value>
+                    <fullName>PVR</fullName>
+                    <default>false</default>
+                    <label>PVR</label>
+                </value>
+                <value>
+                    <fullName>Risk &amp; Compliance</fullName>
+                    <default>false</default>
+                    <label>Risk &amp; Compliance</label>
+                </value>
+                <value>
+                    <fullName>TMT (Technology Media Telecom)</fullName>
+                    <default>false</default>
+                    <label>TMT (Technology Media Telecom)</label>
+                </value>
+                <value>
+                    <fullName>Upstream</fullName>
+                    <default>false</default>
+                    <label>Upstream</label>
+                </value>
+                <value>
+                    <fullName>WSO</fullName>
+                    <default>false</default>
+                    <label>WSO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SalesBusinessLineglobalpicklist__c</fullName>
+        <description>SFDC1-5516 This field is to define the Sales Business Line for a user</description>
+        <externalId>false</externalId>
+        <label>Sales Business Line</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SalesBusinessLine</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SalesManager__c</fullName>
+        <description>SFDC-2645 Reporting fields for Hierarchy on the User record</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.ManagerId)),Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp; Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.FullName__c &amp; &quot;, &quot; &amp;FullName__c, IF(NOT(ISBLANK(Manager.Manager.Manager.Manager.Manager.Manager.Manager.ManagerId)),Manager.Manager.Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.FullName__c &amp; &quot;, &quot; &amp;FullName__c,IF(NOT(ISBLANK(Manager.Manager.Manager.Manager.Manager.Manager.ManagerId)),Manager.Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.FullName__c &amp; &quot;, &quot; &amp;FullName__c,IF(NOT(ISBLANK(Manager.Manager.Manager.Manager.Manager.ManagerId)),Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.FullName__c &amp; &quot;, &quot; &amp;FullName__c,IF(NOT(ISBLANK(Manager.Manager.Manager.Manager.ManagerId)),Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp; Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.FullName__c &amp; &quot;, &quot; &amp;FullName__c,IF(NOT(ISBLANK(Manager.Manager.Manager.ManagerId)),Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.FullName__c &amp; &quot;, &quot; &amp;FullName__c,IF(NOT(ISBLANK(Manager.Manager.ManagerId)),Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.FullName__c &amp; &quot;, &quot; &amp;FullName__c,IF(NOT(ISBLANK(Manager.ManagerId)),Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;Manager.FullName__c &amp; &quot;, &quot; &amp;FullName__c,IF(NOT(ISBLANK(ManagerId)),Manager.FullName__c &amp; &quot;, &quot; &amp; FullName__c,FullName__c
+)))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Show manager hierarchy upto 10 levels</inlineHelpText>
+        <label>Sales Manager</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>SenderEmail</fullName>
@@ -515,12 +1128,66 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>SubDivision__c</fullName>
+        <description>SFDC-5593- Add a text field in the User object and name it &quot;Sub-Division&quot;</description>
+        <externalId>false</externalId>
+        <label>Sub-Division</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>TimeZoneSidKey</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>Title</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>UserHRType__c</fullName>
+        <description>SFDC1-199 Defines if the user is a dealer, contractor, employee or others as defined by HR systems</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To be provided by HR</inlineHelpText>
+        <label>User HR Type</label>
+        <length>255</length>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserRegion__c</fullName>
+        <description>SFDC1-199 Interpret from address based on country</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Interpret from address based on country</inlineHelpText>
+        <label>User Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <label>Americas</label>
+                </value>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>false</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>EMEA</fullName>
+                    <default>false</default>
+                    <label>EMEA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>UserRoleId</fullName>
@@ -538,6 +1205,82 @@
         <fullName>WorkspaceId</fullName>
         <type>Lookup</type>
     </fields>
+    <fields>
+        <fullName>dsfs__DSProSFMembershipStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DSProSFMembershipStatus</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>dsfs__DSProSFPassword__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DSProSFPassword</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>dsfs__DSProSFUsername__c</fullName>
+        <deprecated>false</deprecated>
+        <description>DocuSign username</description>
+        <externalId>false</externalId>
+        <label>DSProSFUsername</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>ActiveCustomerCommunityUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>SALES.CONTACT.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.USERTYPE</field>
+            <operation>equals</operation>
+            <value>b</value>
+        </filters>
+        <label>Active Customer Community Users</label>
+    </listViews>
+    <listViews>
+        <fullName>ActivePartnerCommunityUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>SALES.CONTACT.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.USERTYPE</field>
+            <operation>equals</operation>
+            <value>P</value>
+        </filters>
+        <label>Active Partner Community Users</label>
+    </listViews>
     <listViews>
         <fullName>ActiveUsers</fullName>
         <columns>FULL_NAME</columns>
@@ -546,6 +1289,7 @@
         <columns>CORE.USERS.LAST_LOGIN</columns>
         <columns>CORE.USER_ROLE.NAME</columns>
         <columns>CORE.PROFILE.NAME</columns>
+        <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CORE.USERS.ACTIVE</field>
@@ -553,6 +1297,28 @@
             <value>1</value>
         </filters>
         <label>Active Users</label>
+    </listViews>
+    <listViews>
+        <fullName>ActiveUsersHR</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CREATED_BY_NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>HRBusinessLine__c</columns>
+        <columns>HRCostCenter__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>HRActiveStatus__c</field>
+            <operation>equals</operation>
+            <value>ACTIVE(ActiveColleague),INACTIVE(OnLeave)</value>
+        </filters>
+        <label>Active User HR</label>
     </listViews>
     <listViews>
         <fullName>AdminUsers</fullName>
@@ -575,13 +1341,143 @@
         <columns>FULL_NAME</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <columns>CORE.USERS.USERNAME</columns>
-        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>FULL_NAME</field>
+            <operation>contains</operation>
+            <value>Rahul</value>
+        </filters>
+        <label>All Users</label>
+    </listViews>
+    <listViews>
+        <fullName>DocusignActiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
         <columns>CORE.USERS.LAST_LOGIN</columns>
         <columns>CORE.USER_ROLE.NAME</columns>
         <columns>CORE.USERS.ACTIVE</columns>
         <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
         <filterScope>Everything</filterScope>
-        <label>All Users</label>
+        <filters>
+            <field>dsfs__DSProSFUsername__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Docusign Active Users</label>
+    </listViews>
+    <listViews>
+        <fullName>DrawloopUsers</fullName>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>contains</operation>
+            <value>eagza,sackr,kande,panto,daust,bbaks,dbanw,abars,AnnaBele,SBill,jblak,kblas,tbook</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>contains</operation>
+            <value>jbrys,dbuel,tburn,dcamp,rcroa,adeak,cdege,ddel,fdos,rearl,jelki,deste,tevan,ageu</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>contains</operation>
+            <value>tgill,dglov,jgoun,mgow,mhand,bhane,jharr,ehasu,chend,fhoos,mhube,jhull,jvavl,fhu</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>contains</operation>
+            <value>ainne,SJohn,BJone,ekaku,hkane,dkaru,skash,vkent,tklot,bkoba,RKolp,tkova,nkuma</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>contains</operation>
+            <value>jlamb2,llasf,hlau,vlaur,nlee,rlee,jlewi,dmaca,emald,HMcCl,amile,jmine,FMinhas</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>contains</operation>
+            <value>bmoff,tmoor,amuha,kmulr,mnewm,bo&apos;co,kpari,cpashm,spemb,jpenn,rpetr,cphan,apren</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>contains</operation>
+            <value>jquin,srani,jrega,mreil,rrenn,troac,arusi,osali,csalu,csand,jsant,ssris,jsavi</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>contains</operation>
+            <value>dseow,santoshs,psmit,csout,Kerryann,gstow,csund,sswad,ytaka,stake,erict,ttam,pta</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>contains</operation>
+            <value>jthei,btill,pturn,evass,kvon,cwhee,swu,nyegu,azelt,bzhou,czoog</value>
+        </filters>
+        <label>Drawloop Users</label>
+    </listViews>
+    <listViews>
+        <fullName>dsfs__DocuSignActiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>dsfs__DSProSFUsername__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </filters>
+        <filters>
+            <field>dsfs__DSProSFUsername__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>DocuSign Active Users</label>
+    </listViews>
+    <listViews>
+        <fullName>dsfs__DocuSignInactiveUsers</fullName>
+        <booleanFilter>(1 or 2) and 3</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>dsfs__DSProSFUsername__c</field>
+            <operation>equals</operation>
+            <value>null</value>
+        </filters>
+        <filters>
+            <field>dsfs__DSProSFUsername__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>DocuSign Inactive Users</label>
     </listViews>
     <searchLayouts>
         <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
@@ -597,4 +1493,65 @@
         <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>ADIdRequired</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( ADID__c )</errorConditionFormula>
+        <errorDisplayField>ADID__c</errorDisplayField>
+        <errorMessage>Please enter AD Id</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CompanyNameOnlyEditableSysAdmin</fullName>
+        <active>true</active>
+        <description>SFDC-2254. Makes sure that the CompanyName field is only editable by Admin users. Required for TMT and Informa users.</description>
+        <errorConditionFormula>AND(
+	ISCHANGED(CompanyName),
+	NOT(
+		OR(
+			$Profile.Name = &quot;System Administrator&quot;,	
+			$Profile.Name = &quot;IHSMarkit System Admin: API&quot;,
+			$Profile.Name = &quot;IHSMarkit System Admin&quot;
+			)
+		)
+	)</errorConditionFormula>
+        <errorDisplayField>CompanyName</errorDisplayField>
+        <errorMessage>The Company Name field is only editable by Administrator profiles.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EmployeeNumberRequired</fullName>
+        <active>true</active>
+        <description>SFDC1-4395 Employee number is required for employees except partner users
+SFDC1-8976 : Updating Rule from Standard field (&apos;EmployeeNumber&apos;) to Custom field (&apos;EmployeeNumber__c&apos;)</description>
+        <errorConditionFormula>AND (
+ISBLANK(EmployeeNumber__c),
+Profile.UserLicense.Name  = &quot;Salesforce&quot;
+)</errorConditionFormula>
+        <errorDisplayField>EmployeeNumber__c</errorDisplayField>
+        <errorMessage>Workday ID of user. Required when active salesforce user</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FirstNameRequired</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(FirstName)</errorConditionFormula>
+        <errorDisplayField>FirstName</errorDisplayField>
+        <errorMessage>Please fill in the first name</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>HRManagerRequired</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( HRManager__c )</errorConditionFormula>
+        <errorDisplayField>HRManager__c</errorDisplayField>
+        <errorMessage>HR Manager name is required</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Loop__Change_DS_Cred</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Change DocuSign Credentials</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/loop__dsUnPass</url>
+    </webLinks>
 </CustomObject>

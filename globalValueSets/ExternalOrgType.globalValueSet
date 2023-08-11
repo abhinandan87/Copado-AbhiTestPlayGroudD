@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Academic/Education</fullName>
+        <default>false</default>
+        <label>Academic/Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Aerospace and Defense</fullName>
+        <default>false</default>
+        <label>Aerospace and Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Agriculture and Food</fullName>
+        <default>false</default>
+        <label>Agriculture and Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive &amp; Transportation</fullName>
+        <default>false</default>
+        <label>Automotive &amp; Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotechnology &amp; Healthcare</fullName>
+        <default>false</default>
+        <label>Biotechnology &amp; Healthcare</label>
+    </customValue>
+    <customValue>
+        <fullName>Construction</fullName>
+        <default>false</default>
+        <label>Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy</fullName>
+        <default>false</default>
+        <label>Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Buy-Side</fullName>
+        <default>false</default>
+        <label>Financial Buy-Side</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Sell-Side</fullName>
+        <default>false</default>
+        <label>Financial Sell-Side</label>
+    </customValue>
+    <customValue>
+        <fullName>Government, NGOs and Non-profit</fullName>
+        <default>false</default>
+        <label>Government, NGOs and Non-profit</label>
+    </customValue>
+    <customValue>
+        <fullName>Individuals</fullName>
+        <default>false</default>
+        <label>Individuals</label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Mining and Metals</fullName>
+        <default>false</default>
+        <label>Mining and Metals</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Power and Utilities</fullName>
+        <default>false</default>
+        <label>Power and Utilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Professional and Business Services</fullName>
+        <default>false</default>
+        <label>Professional and Business Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail/Consumer</fullName>
+        <default>false</default>
+        <label>Retail/Consumer</label>
+    </customValue>
+    <customValue>
+        <fullName>Technology, Media &amp; Telecommunication</fullName>
+        <default>false</default>
+        <label>Technology, Media &amp; Telecommunication</label>
+    </customValue>
+    <description>SFDC-2810 To update &apos;New Account request Form&apos;</description>
+    <masterLabel>External Org Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC1-9003: Creating OMDH case from lightning component. SFDC1-10103: Including logic for SSO condition</description>
+    <height>500</height>
+    <label>Create OM/Delivery helpdesk case</label>
+    <lightningComponent>CreateOMDHCase</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

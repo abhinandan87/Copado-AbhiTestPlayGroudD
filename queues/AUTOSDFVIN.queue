@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>AUTOS | DF - VIN</name>
+    <queueMembers>
+        <users>
+            <user>brenda.mcintyre@ihsmarkit.com</user>
+            <user>douglas.mangoli@ihsmarkit.com</user>
+            <user>ed.tyves@ihsmarkit.com</user>
+            <user>heather.oyler@ihsmarkit.com</user>
+            <user>jason.corn@ihsmarkit.com</user>
+            <user>jennifer.lane@ihsmarkit.com</user>
+            <user>kelsey.hines@ihsmarkit.com</user>
+            <user>leah.dunn@ihsmarkit.com</user>
+            <user>maureen.evans@ihsmarkit.com</user>
+            <user>maxwell.werunga@ihsmarkit.com</user>
+            <user>patrick.weiss@ihsmarkit.com</user>
+            <user>rebecca.mccluskey@ihsmarkit.com</user>
+            <user>rick.leffler@ihsmarkit.com</user>
+            <user>sandra.donaldson@ihsmarkit.com</user>
+            <user>tim.hecksel@ihsmarkit.com</user>
+            <user>william.baeckeroot@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

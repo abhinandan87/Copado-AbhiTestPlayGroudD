@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Salesforce Helpdesk Report Export</name>
+    <queueMembers>
+        <users>
+            <user>aayush.sachdeva@ihsmarkit.com</user>
+            <user>andri.oinam@ihsmarkit.com</user>
+            <user>peeyush.chaturvedi@ihsmarkit.com</user>
+            <user>poonam.choudhary@ihsmarkit.com</user>
+            <user>raveena.bhagat@ihsmarkit.com</user>
+            <user>satwinder.singh@ihsmarkit.com</user>
+            <user>rishi.arora@ihsmarkit.com</user>
+            <user>rohan.singh1@ihsmarkit.com</user>
+            <user>rohan.singh@ihsmarkit.com</user>
+            <user>shikhar.singh@ihsmarkit.com</user>
+            <user>sunny.nasa@ihsmarkit.com</user>
+            <user>utkarsh.singhal@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

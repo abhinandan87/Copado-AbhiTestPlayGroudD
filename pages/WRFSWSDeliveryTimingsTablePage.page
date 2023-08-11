@@ -1,0 +1,27 @@
+<apex:page showHeader="false" standardController="WorkRequestForm__c" sidebar="false">
+    <apex:includeLightning />
+    <div id="LightningComponentid" style="width=100%" />
+
+    <script>
+        $Lightning.use("c:wrfSWSDeliveryTimingsTableApp", function () {
+            $Lightning.createComponent("c:wrfSWSDeliveryTimingsTable",
+                 {
+                    recordId: "{!JSENCODE(WorkRequestForm__c.Id)}",
+                },
+                "LightningComponentid",
+                function (cmp) {
+                    console.log('LWC Componenet added in VF page');
+                });
+        });
+    </script>
+    <apex:pageBlock >
+     <apex:pageblocksection id="SWS" collapsible="false" columns="1" >         
+            <apex:outputText > *Assumes a completed and approved WRF is submitted with a Signed License Agreement </apex:outputText>
+            <apex:outputText > *Please use this as a guideline for determining estimated delivery dates </apex:outputText>
+            <apex:outputText > *During our monthly production release cycle we will work to meet your deadlines,  if there are questions please check with the production staff. </apex:outputText>
+            <apex:outputText > Standard Request: This encompasses what is on a WRF, except Symbol Merges </apex:outputText>
+            <apex:outputText > Standard plus add on: CVINA YMS files for AS/400, VIS Symbol Merges, Standard YMS Lookup files for PC CVINA, etc. </apex:outputText>
+            <apex:outputText > Custom Work: AIB VRG, CAR 3 Symbol System, etc.  This may go through the Production Life Cycle (PLC) or through Investment Approval (IA) </apex:outputText>
+      </apex:pageblocksection>
+     </apex:pageBlock>
+</apex:page>

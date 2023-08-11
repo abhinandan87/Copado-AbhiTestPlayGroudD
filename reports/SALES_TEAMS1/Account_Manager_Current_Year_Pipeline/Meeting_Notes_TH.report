@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Achieved__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Info__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.NextSteps__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Meeting notes for Amy Singer team - Testing fields</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Travis Hagler</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Meeting Notes TH</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MeetingNote__c@MeetingNote__c.Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MeetingNote__c.When__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

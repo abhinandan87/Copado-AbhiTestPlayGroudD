@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <decisions>
+        <description>Updates status on parent when child status changes by informatica.</description>
+        <name>Child_Status_is_changed</name>
+        <label>Child Status is changed</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Pre_loaded_Submitted_Disqualified</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Child Status Not Changed</defaultConnectorLabel>
+        <rules>
+            <name>Child_Status_Changed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Total_Routed_Referrals__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_Status_Count__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status</targetReference>
+            </connector>
+            <label>Child Status Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>When pre-load is submitted, the parent and child statuses updated to &quot;Created&quot;. When pre-load is disqualified, the parent and child status updated to &quot;Disqualified&quot;.</description>
+        <name>Pre_loaded_Submitted_Disqualified</name>
+        <label>Pre loaded Submitted/Disqualified</label>
+        <locationX>314</locationX>
+        <locationY>671</locationY>
+        <defaultConnector>
+            <targetReference>Referral_owner_changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default</defaultConnectorLabel>
+        <rules>
+            <name>Pre_Load_Submitted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pre-Load</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Created</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_child_status_to_created</targetReference>
+            </connector>
+            <label>Pre-Load Submitted</label>
+        </rules>
+        <rules>
+            <name>Pre_Load_Disqualified</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pre-Load</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Disqualified</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_child_referrals_to_disqualified</targetReference>
+            </connector>
+            <label>Pre-Load Disqualified</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-4562787: If pre-load referral owner is changed, the updated owner region will be tagged on the referral.</description>
+        <name>Referral_owner_changed</name>
+        <label>Referral owner changed</label>
+        <locationX>314</locationX>
+        <locationY>1247</locationY>
+        <defaultConnectorLabel>Owner Not Changed</defaultConnectorLabel>
+        <rules>
+            <name>Owner_IsChanged</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Referral_Region</targetReference>
+            </connector>
+            <label>Owner IsChanged</label>
+        </rules>
+    </decisions>
+    <description>Updates parent status (SPG Referral) record when child records are routed, created, or transfer.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Concatenates prior and current value of the divisions the lead is transferred to.</description>
+        <name>DivisionsTransferred</name>
+        <dataType>String</dataType>
+        <expression>({!DivisionTransferredtoPriorValue}) + &quot;;&quot; + 
+(IF(INCLUDES({!$Record.Transfer_Lead_To__c}, &quot;MI&quot;), &quot;MI;&quot;,null) +
+IF(INCLUDES({!$Record.Transfer_Lead_To__c}, &quot;Ratings&quot;), &quot;Ratings;&quot;,null) +
+IF(INCLUDES({!$Record.Transfer_Lead_To__c}, &quot;Platts&quot;), &quot;Platts;&quot;,null) +
+IF(INCLUDES({!$Record.Transfer_Lead_To__c}, &quot;Indices&quot;), &quot;Indices;&quot;,null) +
+IF(INCLUDES({!$Record.Transfer_Lead_To__c}, &quot;Automotive&quot;), &quot;Automotive;&quot;,null) +
+IF(INCLUDES({!$Record.Transfer_Lead_To__c}, &quot;ENR&quot;), &quot;ENR;&quot;,null) +
+IF(INCLUDES({!$Record.Transfer_Lead_To__c}, &quot;Financial Services&quot;), &quot;Financial Services;&quot;,null) +
+IF(INCLUDES({!$Record.Transfer_Lead_To__c}, &quot;CMS/Product Design&quot;), &quot;CMS/Product Design;&quot;,null) )</expression>
+    </formulas>
+    <formulas>
+        <description>US-4562787: Searches for updated owner country on user record. If country match is not found, &quot;Other&quot; is listed on the record.</description>
+        <name>OwnerRegionUpdate</name>
+        <dataType>String</dataType>
+        <expression>IF({!Referral_Region.IHS_Name__c} = {!$Record.Owner:User.Country}, {!Referral_Region.Referral_Region__r.MasterLabel}, 
+IF({!Referral_Region.IHS_Name__c} &lt;&gt; {!$Record.Owner:User.Country}, &quot;Other&quot;,
+null))</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to insert routed or partially routed status.</description>
+        <name>ParentStatusUpdates</name>
+        <dataType>String</dataType>
+        <expression>IF(
+AND({!$Record.Total_Routed_Referrals__c}/{!$Record.Total_Child_Referrals__c} = 1), &quot;Routed&quot;,
+IF(
+AND({!$Record.Created_Status_Count__c} / {!$Record.Total_Child_Referrals__c} &lt; 1), &quot;Partially Routed&quot;,
+IF(
+AND({!$Record.RecordType.Name} = &quot;Lead Transfer&quot;, {!$Record.Created_Status_Count__c} / {!$Record.Total_Child_Referrals__c} = 1), &quot;Transferred&quot;,
+IF(
+AND({!$Record.RecordType.Name}= &quot;Referral&quot;, {!$Record.Created_Status_Count__c} / {!$Record.Total_Child_Referrals__c} = 1), &quot;Created&quot;,
+&quot;Created&quot;))))</expression>
+    </formulas>
+    <interviewLabel>UpdateSPGReferralStatus {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>UpdateSPGReferralStatus</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>US-4562787: Search for region custom metadata based on country match between custom metadata and standard address country field on User object.</description>
+        <name>Referral_Region</name>
+        <label>Referral Region</label>
+        <locationX>182</locationX>
+        <locationY>1367</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Referral_Owner_Region</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IHS_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Owner:User.Country</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Referral_Country__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>US-4562787: Update the region when referral owner is updated.</description>
+        <name>Referral_Owner_Region</name>
+        <label>Referral Owner Region</label>
+        <locationX>182</locationX>
+        <locationY>1487</locationY>
+        <inputAssignments>
+            <field>Referral_Submitter_Region__c</field>
+            <value>
+                <elementReference>OwnerRegionUpdate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>When referral is disqualified, update child statuses to &quot;Disqualified&quot;.</description>
+        <name>Update_child_referrals_to_disqualified</name>
+        <label>Update child referrals to disqualified</label>
+        <locationX>314</locationX>
+        <locationY>791</locationY>
+        <connector>
+            <targetReference>Referral_owner_changed</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPG_Referral__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Routing_Status__c</field>
+            <value>
+                <stringValue>Disqualified</stringValue>
+            </value>
+        </inputAssignments>
+        <object>SPG_Referral_Lead__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>When referral is submitted, update child statuses to &quot;Created&quot;.</description>
+        <name>Update_child_status_to_created</name>
+        <label>Update child status to created</label>
+        <locationX>50</locationX>
+        <locationY>791</locationY>
+        <connector>
+            <targetReference>Update_Parent_Referral_Submitted_Date_0</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPG_Referral__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Routing_Status__c</field>
+            <value>
+                <stringValue>Created</stringValue>
+            </value>
+        </inputAssignments>
+        <object>SPG_Referral_Lead__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Tracks date/time when referral was submitted.</description>
+        <name>Update_Parent_Referral_Submitted_Date_0</name>
+        <label>Update Parent Referral Submitted Date</label>
+        <locationX>50</locationX>
+        <locationY>911</locationY>
+        <inputAssignments>
+            <field>Pre_Load_Submitted_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>When SPG Referral Lead child status fields change, update Status__c.</description>
+        <name>Update_Status</name>
+        <label>Update Status</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <connector>
+            <targetReference>Pre_loaded_Submitted_Disqualified</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <elementReference>ParentStatusUpdates</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Child_Status_is_changed</targetReference>
+        </connector>
+        <object>SPG_Referral__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Store the prior value of division transferred to for tracking.</description>
+        <name>DivisionTransferredtoPriorValue</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>InterestedProducts</name>
+        <dataType>Multipicklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

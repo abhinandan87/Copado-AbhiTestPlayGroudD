@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TrainingAssessmentSurveyResponseTemplate</name>
+    <style>none</style>
+    <subject>IHS Markit Training Survey – your feedback is important</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for attending my recent {!SurveyResponse__c.Training__r.ActivityName__c} training session.For your reference, the training session number was {!SurveyResponse__c.Training__c}.
+
+If you require any further training, please do not hesitate to contact us to further discuss your needs.
+
+Your feedback is very important to us. Please share your training experience with us by participating in our short survey.
+
+Complete the Survey
+
+We appreciate you taking the time to provide your input as we use this feedback to measure program effectiveness and ensure our training meets your needs.
+
+IHS Markit will process your personal information only for these purposes and will not be shared externally. All personal information will be protected and handled in line with our  Privacy Policy which is available on our website.
+
+Kind regards,
+{!SurveyResponse__c.PrimaryInstructor__c}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

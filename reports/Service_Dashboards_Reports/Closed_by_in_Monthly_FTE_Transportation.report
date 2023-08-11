@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/10560</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Field for reporting purposes only.  10560 = 22 working days, with 8 hrs per working day, 60 min per hour</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent Monthly FTE</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Sime Spent in Hours</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent (Hours)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_50016423</developerName>
+        <masterLabel>Customer Care</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Aishna Jain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Iris Karabatos</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eri Hasumoto</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deepak Karumuthil</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samuel Khoo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Suneet Raniga</sourceValue>
+            </sourceValues>
+            <value>CC Managers</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Susan Knauf</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Begel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Hughes</sourceValue>
+            </sourceValues>
+            <value>CS CC EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lucy Bean</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Janet Holmes-Boone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Burnett</sourceValue>
+            </sourceValues>
+            <value>CS CC AMER</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Haqimi Ashaari</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Zi Yun Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chin Nean Chew</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kent Choong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Farah Razali</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Frank Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mehar Banu Mohamed Salib</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tee Huang Cheah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Don</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kanesir Govindarajaloo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Najah Nadhira Binti Dorohid</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nur Hashi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kanika Garg</sourceValue>
+            </sourceValues>
+            <value>CS CC APAC/INDIA</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_50739555</developerName>
+        <masterLabel>Group/Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER_ROLE</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Customer Care Agent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Customer Care Manager</sourceValue>
+            </sourceValues>
+            <value>Customer Care</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <currency>GBP</currency>
+    <description>Closed by-in Monthly FTE -Transportation</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AD&amp;S Consulting,AD&amp;S Data,AD&amp;S Data Other,AD&amp;S Events/Training,AD&amp;S Trans,Aftermarket Management,Aftersales Marketing,AIS Data,AIS Data (EE),AIS Data Other,Auto Advisory,Auto Conferences,Auto Consulting,Auto Consulting DND,Auto Events/Training,Auto Multi Channel Marketing,Auto Other,Auto Technology,Commercial Account File,Component Forecasting,Dealer Network Planning,Forecasting,Global Trade Atlas,Global Trade Atlas Trans,International Marketing Report,iPIERS,iPiers Data Files Trans,JOC Magazine,JOC Membership,JOC Reports,JOC.com,LV Production,LV Ptrain,LV Sales,LV Sales IMR,Maritime &amp; Trade Events,Maritime AISLive,Maritime Books Trans,Maritime Consulting,Maritime Custom,Maritime Data,Maritime Data Services,Maritime Data Trans,Maritime Distance,Maritime Fairplay,Maritime Fairplay Events,Maritime News,Maritime Other,Maritime Portal,Maritime Portal Desktop,Maritime Royalties,Maritime Statistics,Maritime Trade,Martime Training,MHCV,MHCV Advisory,MINT Maritime,N America Market Reporting,PIERS,PIERS Data Files,PIERS Enterprise,Piers Solutions,Ports &amp; Harbours,Ports Guide,Recall,Recall Postage,Safety at Sea,SeaWeb,Shipping Markets,Supplier Insight,TIPNET,VIN Solutions,World Markets Automotive,World Register of Ships,World Shipping Encyclopedia,World Trade Atlas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Access,Billing,Data,Notifications,Product Assistance,Training,User Administration</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_50739555</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CLOSED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Closed by-in Monthly FTE -Transportation</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.ProductGroup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

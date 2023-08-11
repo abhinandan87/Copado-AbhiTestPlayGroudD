@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFDC-4540: This object is to store criteria for identification of Legal Entity under Product Selection framework.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>BillingCountry__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-4540: Field to store the Account Billing Country</description>
+        <externalId>false</externalId>
+        <label>Billing Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Product Selection Criteria</relationshipLabel>
+        <relationshipName>ProductSelectionCriteria</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessLine__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-4540: Store the Product Business Line</description>
+        <externalId>false</externalId>
+        <label>Business Line</label>
+        <referenceTo>BusinessLine__c</referenceTo>
+        <relationshipLabel>Product Selection Criteria</relationshipLabel>
+        <relationshipName>ProductSelectionCriteria</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CompareCurrency__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-4540 field to suggest the rule engine to compare the currency of the product selection criteria</description>
+        <externalId>false</externalId>
+        <label>Compare Currency</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FormerIPOwner__c</fullName>
+        <description>SFDC-4540: Store the Former IP Owner of a product</description>
+        <externalId>false</externalId>
+        <label>Former IP Owner</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IPJurisdiction__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-4540: Store the Product IP Jurisdiction</description>
+        <externalId>false</externalId>
+        <label>IP Jurisdiction</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Product Selection Criteria (IP Jurisdiction)</relationshipLabel>
+        <relationshipName>ProductSelectionCriteria1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MediaType__c</fullName>
+        <description>SFDC-4540: Store the Media type of Product</description>
+        <externalId>false</externalId>
+        <label>Media Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <description>SFDC-4540 field to capture the order in which the rule should be fired</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Order of the step  in which it will be executed</inlineHelpText>
+        <label>Order</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PreferredLegalEntity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-4540 this field captures preferred legal entity if it already exist in the rule engine then skip the rule.</description>
+        <externalId>false</externalId>
+        <label>Preferred Legal Entity</label>
+        <referenceTo>LegalEntity__c</referenceTo>
+        <relationshipLabel>Product Selection Criteria (Preffered Legal Entity)</relationshipLabel>
+        <relationshipName>PreferredLegalEntities</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductGroup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-4540: Store the Product Group</description>
+        <externalId>false</externalId>
+        <label>Product Group</label>
+        <referenceTo>ProductGroup__c</referenceTo>
+        <relationshipLabel>Product Selection Criteria</relationshipLabel>
+        <relationshipName>ProductSelectionCriteria</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductLegalEntity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-4540: Store the Legal Entity</description>
+        <externalId>false</externalId>
+        <label>Product Legal Entity</label>
+        <referenceTo>LegalEntity__c</referenceTo>
+        <relationshipLabel>Product Selection Criteria</relationshipLabel>
+        <relationshipName>ProductSelectionCriteria</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <description>SFDC-4540: Store the account region</description>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StepNumber__c</fullName>
+        <description>SFDC-4540: Store the step number for rules</description>
+        <externalId>false</externalId>
+        <label>Step Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TargetLegalEntity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-4540: Store the Target Legal Entity</description>
+        <externalId>false</externalId>
+        <label>Target Legal Entity</label>
+        <referenceTo>LegalEntity__c</referenceTo>
+        <relationshipLabel>Product Selection Criteria (Target Legal Entity)</relationshipLabel>
+        <relationshipName>ProductSelectionCriteria1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Product Selection Criteria</label>
+    <listViews>
+        <fullName>PSC</fullName>
+        <columns>NAME</columns>
+        <columns>BillingCountry__c</columns>
+        <columns>BusinessLine__c</columns>
+        <columns>CompareCurrency__c</columns>
+        <columns>FormerIPOwner__c</columns>
+        <columns>IPJurisdiction__c</columns>
+        <columns>MediaType__c</columns>
+        <columns>Order__c</columns>
+        <columns>PreferredLegalEntity__c</columns>
+        <columns>ProductGroup__c</columns>
+        <columns>ProductLegalEntity__c</columns>
+        <columns>Region__c</columns>
+        <columns>StepNumber__c</columns>
+        <columns>TargetLegalEntity__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>PSC</label>
+    </listViews>
+    <nameField>
+        <displayFormat>PSC-{000000}</displayFormat>
+        <label>Product Selection Criteria Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Product Selection Criteria</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

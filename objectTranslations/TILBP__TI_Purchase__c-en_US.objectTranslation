@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Amount Changed --></label>
+        <name>TILBP__AmountChanged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Disputed --></label>
+        <name>TILBP__AmountDisputed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Net --></label>
+        <name>TILBP__AmountNet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Refunded --></label>
+        <name>TILBP__AmountRefunded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TILBP__Contact__c</name>
+        <relationshipLabel><!-- TI Purchases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Coupon --></label>
+        <name>TILBP__Coupon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>TILBP__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Code --></label>
+        <name>TILBP__FailureCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Message --></label>
+        <name>TILBP__FailureMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gift Recipient Email --></label>
+        <name>TILBP__GiftRecipientEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group ID --></label>
+        <name>TILBP__Group_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Items --></label>
+        <name>TILBP__Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order ID --></label>
+        <name>TILBP__Order_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Revenue Type --></label>
+        <name>TILBP__PurchaseRevenueType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Type --></label>
+        <name>TILBP__PurchaseType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase ID --></label>
+        <name>TILBP__Purchase_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>TILBP__Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Success --></label>
+        <name>TILBP__Success__c</name>
+    </fields>
+    <fields>
+        <label><!-- TI ID --></label>
+        <name>TILBP__TI_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timestamp --></label>
+        <name>TILBP__Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TILBP__Type__c</name>
+    </fields>
+</CustomObjectTranslation>

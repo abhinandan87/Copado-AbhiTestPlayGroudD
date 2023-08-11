@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_75131299</developerName>
+        <masterLabel>NYSE Tier</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>FK_$AdditionalOpportunityFields__c.NYSEProgramTier__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Tier A</sourceValue>
+            </sourceValues>
+            <value>Tier A</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tier B</sourceValue>
+            </sourceValues>
+            <value>Tier B</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tier 1</sourceValue>
+            </sourceValues>
+            <value>Tier 1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tier 2</sourceValue>
+            </sourceValues>
+            <value>Tier 2</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>TICKER</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Status__c</field>
+    </columns>
+    <columns>
+        <field>Product2.AAG__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.IsProductatRisk__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.RCRenewal__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.SalesNewPrice__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.PassThroughRoyaltyAnnualValue__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalOpportunityFields__c.NYSEProgramTier__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.SubsidyRoyaltyPassthroughPartner__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.SubsidyRoyaltyPassthroughType__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesRegion__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.OpportunityStage__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonCode__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonDescription__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Product2.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ISS: Digital Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - General Service Account,Place Holder - IHS Markit Internal Employees,Place Holder - Sales,Place Holder - Self Registered Users Account,Place Holder - Unknown Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProductFamily__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>BD IR Consultant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Research &amp; Estimates,Events &amp; Transcripts,Market Intelligence,FactSet Workstation,Add-in</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Digital Solutions Renewals BDIRC Q3 22</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct@Opportunity.AdditionalOpportunityFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.ContractStartDate__c</dateColumn>
+        <endDate>2022-09-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-07-01</startDate>
+    </timeFrameFilter>
+</Report>

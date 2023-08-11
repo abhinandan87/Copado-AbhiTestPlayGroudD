@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_89401992</developerName>
+        <masterLabel>Shift</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Activity$Owner</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Aaron Ching</sourceValue>
+            </sourceValues>
+            <value>FS Penang</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Esma Agzanay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melanie Mladenova</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kinnerey Patel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Safiya Murray</sourceValue>
+            </sourceValues>
+            <value>FS EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Samuel Abraham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Varun Bhutani</sourceValue>
+            </sourceValues>
+            <value>FS India</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Paul Hughes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Begel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vera Rasa</sourceValue>
+            </sourceValues>
+            <value>CS EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kent Choong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicholas Teo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mehar Banu Mohamed Salib</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agnes Ooi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tee Huang Cheah</sourceValue>
+            </sourceValues>
+            <value>CS Penang</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Activity$Owner</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Activity$Subject</field>
+    </columns>
+    <columns>
+        <field>Activity$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>BucketField_89401992</field>
+    </columns>
+    <columns>
+        <field>Activity$Description</field>
+    </columns>
+    <currency>GBP</currency>
+    <filter>
+        <criteriaItems>
+            <column>Activity$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Event.TimeTracking,Event.Standard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$CallType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,0,1,2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Subject</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Email</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$IsTask</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Mika Sakurai,Aaron Tang,Kok Han Lee,Samuel Abraham,Esma Agzanay,Melanie Mladenova,Christelle Dikole,Gautam Pant,Tee Huang Cheah,Soo Ling Chaiyasu,Aaron Ching,Yin Hoong Lim,Jason Mitchell,Anmol Singh,Aman Kumar,Devrach Atawnia,Mohd Rusdi Rahim,Bo Yuan Ng,Syarwanni Mustafa,Ling Lim,Sanya Soni</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Activity$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Activity$CompletedDateTime</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Log A Call Activity - This Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities_with_Additional_User_Fields__c</reportType>
+    <roleHierarchyFilter>CustomerCareTier1</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Activity$CreatedDate</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Activity$CompletedDateTime</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

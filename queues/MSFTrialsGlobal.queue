@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>dl-msftrials@ihsmarkit.com</email>
+    <name>MSF Trials – Global</name>
+    <queueMembers>
+        <users>
+            <user>annabelle.shrieves@ihsmarkit.com</user>
+            <user>david.delzotto@ihsmarkit.com</user>
+            <user>janos.zsiros@ihsmarkit.com</user>
+            <user>jillian.hurley@ihsmarkit.com</user>
+            <user>jonathan.chen@ihsmarkit.com</user>
+            <user>mark.klein@ihsmarkit.com</user>
+            <user>stewart.cowan@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

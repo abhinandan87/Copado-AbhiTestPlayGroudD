@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Command After Results --></label>
+        <name>metazoa3__command_after__c</name>
+    </fields>
+    <fields>
+        <label><!-- Command Before Results --></label>
+        <name>metazoa3__command_before__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complete After Tasks --></label>
+        <name>metazoa3__complete_after__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complete Before Tasks --></label>
+        <name>metazoa3__complete_before__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Username --></label>
+        <name>metazoa3__created_username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deployment Record --></label>
+        <name>metazoa3__deploy_record__c</name>
+        <relationshipLabel><!-- Snapshot Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Destination Username --></label>
+        <name>metazoa3__destination_username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Field One --></label>
+        <name>metazoa3__extra_field_one__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Field Two --></label>
+        <name>metazoa3__extra_field_two__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Flag One --></label>
+        <name>metazoa3__extra_flag_one__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Flag Two --></label>
+        <name>metazoa3__extra_flag_two__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incomplete After Tasks --></label>
+        <name>metazoa3__incomplete_after__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incomplete Before Tasks --></label>
+        <name>metazoa3__incomplete_before__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merged Story List --></label>
+        <name>metazoa3__merged_stories__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>metazoa3__object_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Snapshot Sprint --></label>
+        <name>metazoa3__snapshot_sprint__c</name>
+        <relationshipLabel><!-- Snapshot Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Username --></label>
+        <name>metazoa3__source_username__c</name>
+    </fields>
+</CustomObjectTranslation>

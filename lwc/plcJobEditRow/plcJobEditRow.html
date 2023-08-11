@@ -1,0 +1,20 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+    <lightning-record-edit-form object-api-name='PLCJob__c' onsubmit={handleSave}>
+        <lightning-messages>
+        </lightning-messages>
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+            <template for:each={displayFields} for:item="field" for:index="index">
+                <div key={field.apiName} class={styleClass}>
+                    <div class="slds-m-around_xx-small">
+                        <lightning-input-field key={field.apiName} value={field.value} field-name={field.apiName}
+                            variant="label-hidden" onchange={handleChange} read-only={field.readOnly}>
+                        </lightning-input-field>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-record-edit-form>
+</template>

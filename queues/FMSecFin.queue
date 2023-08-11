@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>mk-msf-cs@markit.com</email>
+    <name>FM | Sec Fin</name>
+    <queueMembers>
+        <users>
+            <user>aishna.jain@ihsmarkit.com</user>
+            <user>alison.schaaffe@markit.com.prod</user>
+            <user>anmol.singh@ihsmarkit.com</user>
+            <user>burhan.omar@ihsmarkit.com</user>
+            <user>christopher.ghobashy@ihsmarkit.com</user>
+            <user>david.murphy@ihsmarkit.com</user>
+            <user>deepak.karumuthil@ihsmarkit.com</user>
+            <user>deepak.srivastav@ihsmarkit.com</user>
+            <user>esma.agzanay@ihsmarkit.com</user>
+            <user>gaurav.sharma@markit.com.prod</user>
+            <user>hagay.cohen@ihsmarkit.com</user>
+            <user>henry.lau@ihsmarkit.com</user>
+            <user>jason.yang@ihsmarkit.com</user>
+            <user>jordan.maskowitz@ihsmarkit.com</user>
+            <user>jorden.ramos@ihsmarkit.com</user>
+            <user>michael.patrizio@ihsmarkit.com</user>
+            <user>peter.markus@markit.com.prod</user>
+            <user>samuel.abraham@ihsmarkit.com</user>
+            <user>santosh.mourya@ihsmarkit.com</user>
+            <user>shashank.singh1@markit.com.prod</user>
+            <user>sherry.lau@ihsmarkit.com</user>
+            <user>suneet.raniga@ihsmarkit.com</user>
+            <user>tanvi.arora@ihsmarkit.com</user>
+            <user>tarun.miglani@markit.com.prod</user>
+            <user>wenruo.wang@ihsmarkit.com</user>
+            <user>ziqi.ye@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

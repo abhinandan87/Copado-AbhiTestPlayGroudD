@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Country/Territory Code</value>
+        </caseValues>
+        <name>country_code_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Country/Territory</value>
+        </caseValues>
+        <name>country_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>AccountName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Requested --></label>
+        <name>AccountRequested__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the account record associated to the Company Name. If a new Account is requested from the lead, this field will be populated once the case to request the new account is marked as closed complete. --></help>
+        <label><!-- Requested Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contact&apos;s Autority Level in buying process. --></help>
+        <label><!-- Authority --></label>
+        <name>Authority__c</name>
+        <picklistValues>
+            <masterLabel>I am not involved</masterLabel>
+            <translation><!-- I am not involved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I am responsible</masterLabel>
+            <translation><!-- I am responsible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I can suggest but will require approval</masterLabel>
+            <translation><!-- I can suggest but will require approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Amount that has been set aside for purchase. --></help>
+        <label><!-- Budget Range --></label>
+        <name>BudgetRange__c</name>
+        <picklistValues>
+            <masterLabel>100,000 - 500,000</masterLabel>
+            <translation><!-- 100,000 - 500,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25,000-50,000</masterLabel>
+            <translation><!-- 25,000-50,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50,000-100,000</masterLabel>
+            <translation><!-- 50,000-100,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500,000 - 1,000,000</masterLabel>
+            <translation><!-- 500,000 - 1,000,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 25,000</masterLabel>
+            <translation><!-- &lt; 25,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 1,000,000</masterLabel>
+            <translation><!-- &gt; 1,000,000 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Budget availability. --></help>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+        <picklistValues>
+            <masterLabel>Funding has been secured</masterLabel>
+            <translation><!-- Funding has been secured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funding will require approval</masterLabel>
+            <translation><!-- Funding will require approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Budget</masterLabel>
+            <translation><!-- No Budget --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sales/Marketing BL that product of interest falls under. --></help>
+        <label><!-- Business Line Interest --></label>
+        <name>BusinessLineInterest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>CIRef_Account_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account State/Province --></label>
+        <name>CIRef_Account_State_Province__c</name>
+    </fields>
+    <fields>
+        <help><!-- If lead disqualified reason is &quot;Other&quot;, provide a brief explanation. --></help>
+        <label><!-- Disqualified Reason Other Notes --></label>
+        <name>CIRef_Disqualified_Reason_Other_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Region in which contact is located --></help>
+        <label><!-- Region --></label>
+        <name>CalculatedRegion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Colleague who completed qualification process. --></help>
+        <label><!-- Call Dispositioned By --></label>
+        <name>CallDispositionedBy__c</name>
+        <relationshipLabel><!-- Leads (Call Dispositioned By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Provides insight to Contacts interactions with IHSM --></help>
+        <label><!-- Prospect Profiler --></label>
+        <name>CallProspectProfiler__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the type of form the Contact filled out. --></help>
+        <label><!-- Call-To-Action Type --></label>
+        <name>CallToActionType__c</name>
+        <picklistValues>
+            <masterLabel>Analyst/Research Submissions</masterLabel>
+            <translation><!-- Analyst/Research Submissions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Analyst/Expert</masterLabel>
+            <translation><!-- Contact Analyst/Expert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Sales or Request Quote/Exploratory Meeting</masterLabel>
+            <translation><!-- Contact Sales or Request Quote/Exploratory Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Us Request</masterLabel>
+            <translation><!-- Contact Us Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Download Sample Report/Data/Map</masterLabel>
+            <translation><!-- Download Sample Report/Data/Map --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Download Whitepaper/Case Study</masterLabel>
+            <translation><!-- Download Whitepaper/Case Study --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Registration</masterLabel>
+            <translation><!-- Event Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Form Submission</masterLabel>
+            <translation><!-- Internal Form Submission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Form Submission - Cool</masterLabel>
+            <translation><!-- Internal Form Submission - Cool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Form Submission - Hot</masterLabel>
+            <translation><!-- Internal Form Submission - Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newsletter Subscribe</masterLabel>
+            <translation><!-- Newsletter Subscribe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Free Trial or Demo</masterLabel>
+            <translation><!-- Request Free Trial or Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for Information</masterLabel>
+            <translation><!-- Request for Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watch Recorded Webcast</masterLabel>
+            <translation><!-- Watch Recorded Webcast --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date of next scheduled call. --></help>
+        <label><!-- Callback Date --></label>
+        <name>CallbackDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calling Country/Territory code for the Contact. --></help>
+        <label><!-- Calling Country/Territory Code --></label>
+        <name>CallingCountryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign ID --></label>
+        <name>CampaignID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Campaign Number --></label>
+        <name>CampaignNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto-populated via Eloqua during lead insertion based on Campaign the lead is associated it. --></help>
+        <label><!-- Campaign Type --></label>
+        <name>CampaignType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please populate the name of Competitor --></help>
+        <label><!-- Competitor --></label>
+        <name>Competitor__c</name>
+        <relationshipLabel><!-- Leads (Competitor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please populate from associated Contact --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Reflects the date the Lead was converted. --></help>
+        <label><!-- Conversion Date --></label>
+        <name>ConversionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted From Custom --></label>
+        <name>ConvertedFromCustom__c</name>
+    </fields>
+    <fields>
+        <help><!-- Country/Territory of Contact. --></help>
+        <label><!-- Country/Territory --></label>
+        <name>Country__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Person who created the Lead. --></help>
+        <label><!-- Created By --></label>
+        <name>CreatedBy__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date qualification was completed. --></help>
+        <label><!-- Date Dispositioned --></label>
+        <name>DateDispositioned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dial Result --></label>
+        <name>DialResult__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reason Lead is not valid. --></help>
+        <label><!-- Disqualifed Reason --></label>
+        <name>DisqualifedReason__c</name>
+        <picklistValues>
+            <masterLabel>(Nurture) Budget</masterLabel>
+            <translation><!-- (Nurture) Budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(Nurture) Prospect-Future Interest</masterLabel>
+            <translation><!-- (Nurture) Prospect-Future Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Already Prospecting</masterLabel>
+            <translation><!-- Already Prospecting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Already Purchased</masterLabel>
+            <translation><!-- Already Purchased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Too Small</masterLabel>
+            <translation><!-- Company Too Small --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company is too small to be Rated</masterLabel>
+            <translation><!-- Company is too small to be Rated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competition</masterLabel>
+            <translation><!-- Competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Non Responsive/Wrong Contact</masterLabel>
+            <translation><!-- Contact Non Responsive/Wrong Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Customer</masterLabel>
+            <translation><!-- Current Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Division Transfer</masterLabel>
+            <translation><!-- Division Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Lead</masterLabel>
+            <translation><!-- Duplicate Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate/Existing Lead</masterLabel>
+            <translation><!-- Duplicate/Existing Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired Lead (Not for Manual Selection)</masterLabel>
+            <translation><!-- Expired Lead (Not for Manual Selection) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IHSM Decision to Pass/No Bid</masterLabel>
+            <translation><!-- IHSM Decision to Pass/No Bid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid/Test Data</masterLabel>
+            <translation><!-- Invalid/Test Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Tracking Purpose Only - No Action Required</masterLabel>
+            <translation><!-- Marketing Tracking Purpose Only - No Action Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Action Taken</masterLabel>
+            <translation><!-- No Action Taken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Budget at this time</masterLabel>
+            <translation><!-- No Budget at this time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No further interest, has all information needed</masterLabel>
+            <translation><!-- No further interest, has all information needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No solution to offer</masterLabel>
+            <translation><!-- No solution to offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not able to contact</masterLabel>
+            <translation><!-- Not able to contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not good candidate (i.e., student, individual investor)</masterLabel>
+            <translation><!-- Not good candidate (i.e., student, individual investor) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not the Decision Maker</masterLabel>
+            <translation><!-- Not the Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passed to Consultant</masterLabel>
+            <translation><!-- Passed to Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passed to Customer Care</masterLabel>
+            <translation><!-- Passed to Customer Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product/Solution does not match need</masterLabel>
+            <translation><!-- Product/Solution does not match need --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect didn&apos;t want to buy</masterLabel>
+            <translation><!-- Prospect didn&apos;t want to buy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time frame too far out</masterLabel>
+            <translation><!-- Time frame too far out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transferred to Legacy System</masterLabel>
+            <translation><!-- Transferred to Legacy System --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is the division that submitted the referral lead. --></help>
+        <label><!-- Division Referred From --></label>
+        <name>Division_Referred_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division Sent To --></label>
+        <name>Division_Sent_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division Transferred To --></label>
+        <name>Division_Transferred_To__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eloqua ID Unique to Contact --></help>
+        <label><!-- ElqProspectID --></label>
+        <name>ElqProspectID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Unknown --></label>
+        <name>EmailUnknown__c</name>
+    </fields>
+    <fields>
+        <help><!-- Size of company based on # of employees. --></help>
+        <label><!-- Employee Band --></label>
+        <name>EmployeeBand__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise (1000+)</masterLabel>
+            <translation><!-- Enterprise (1000+) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid-Market (100-999)</masterLabel>
+            <translation><!-- Mid-Market (100-999) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small (1-99)</masterLabel>
+            <translation><!-- Small (1-99) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Existing BL Customer --></help>
+        <label><!-- Existing BL Customer --></label>
+        <name>ExistingBLCustomer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Existing IHS Markit Customer --></help>
+        <label><!-- Existing IHS Markit Customer --></label>
+        <name>ExistingIHSMarkitCustomer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select if you would like to associate this lead to an existing opportunity. --></help>
+        <label><!-- Existing Opportunity --></label>
+        <name>ExistingOpportunity__c</name>
+        <relationshipLabel><!-- Leads (Existing Opportunity) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Lead ID --></label>
+        <name>External_Lead_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if customer should be reached in person --></help>
+        <label><!-- Field Sales --></label>
+        <name>FieldSales__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field populates the local language equivalent for the customer first name --></help>
+        <label><!-- First Name (Native) --></label>
+        <name>FirstNameNative__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Sales Rep/Queue Assignment --></label>
+        <name>FirstSalesRepQueueAssignment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Sales began working the lead. --></help>
+        <label><!-- First Touch - Pre-Sales --></label>
+        <name>FirstTouchPreSales__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Pre Sales began working the lead. --></help>
+        <label><!-- First Touch - Sales --></label>
+        <name>FirstTouchSales__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select a value --></help>
+        <label><!-- Function --></label>
+        <name>Function__c</name>
+        <picklistValues>
+            <masterLabel>Academic/Education</masterLabel>
+            <translation><!-- Academic/Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst</masterLabel>
+            <translation><!-- Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Development/Sales</masterLabel>
+            <translation><!-- Business Development/Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Suite Executives</masterLabel>
+            <translation><!-- C-Suite Executives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Services</masterLabel>
+            <translation><!-- Corporate Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economist</masterLabel>
+            <translation><!-- Economist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental Health Safety Sustainability</masterLabel>
+            <translation><!-- Environmental Health Safety Sustainability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exploration &amp; Production</masterLabel>
+            <translation><!-- Exploration &amp; Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial/Investment</masterLabel>
+            <translation><!-- Financial/Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geology</masterLabel>
+            <translation><!-- Geology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Technology</masterLabel>
+            <translation><!-- Information Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Librarian</masterLabel>
+            <translation><!-- Librarian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product/Project Management</masterLabel>
+            <translation><!-- Product/Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Management</masterLabel>
+            <translation><!-- Risk Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Planning</masterLabel>
+            <translation><!-- Strategic Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain</masterLabel>
+            <translation><!-- Supply Chain --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Tracks HR Sub Business Line for IHS divisions only. --></help>
+        <label><!-- IHS HR Sub Business Line --></label>
+        <name>IHS_HR_Sub_Business_Line__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tracks SME on account team. --></help>
+        <label><!-- IHS Subject Matter Expert --></label>
+        <name>IHS_Subject_Matter_Expert__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identified Targeted WhiteSpace --></help>
+        <label><!-- Identified Targeted WhiteSpace --></label>
+        <name>IdentifiedTargetedWhiteSpace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Sequence Date --></label>
+        <name>Initial_Sequence_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if customer should be reached by phone or online --></help>
+        <label><!-- Inside Sales --></label>
+        <name>InsideSales__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Notes field for Pre Sales. --></help>
+        <label><!-- Internal LD Notes --></label>
+        <name>InternalLDNotes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Result of Pre Sales follow up. --></help>
+        <label><!-- LD Completion Status --></label>
+        <name>LDCompletionStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Notes gathered during Pre-Sales call. --></help>
+        <label><!-- LD Notes --></label>
+        <name>LDNotes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Script Associated to the Product indicated. --></help>
+        <label><!-- LD Script ID --></label>
+        <name>LDScriptID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lead Score based on Pre Sales Activity. --></help>
+        <label><!-- LD Script Score --></label>
+        <name>LDScriptScore__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn Company Id --></label>
+        <name>LID__LinkedIn_Company_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn Member Token --></label>
+        <name>LID__LinkedIn_Member_Token__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days (fractional) between Pre-Sales Qualified status and the first Sales Rep/Queue assignment --></help>
+        <label><!-- LMT Assignment Time --></label>
+        <name>LMTAssignmentTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Hour --></label>
+        <name>LastHour__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field populates the local language equivalent for the customer last name --></help>
+        <label><!-- Last Name (Native) --></label>
+        <name>LastNameNative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Sales Rep/Queue Assignment --></label>
+        <name>LastSalesRepQueueAssignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Age2 --></label>
+        <name>LeadAge2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days since creation of lead --></help>
+        <label><!-- Lead Age --></label>
+        <name>LeadAge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal notes field for manual processing of lead. --></help>
+        <label><!-- Lead Distribution Notes --></label>
+        <name>LeadDistributionNotes__c</name>
+    </fields>
+    <fields>
+        <label><!-- LeadID 18 Character --></label>
+        <name>LeadID18Character__c</name>
+    </fields>
+    <fields>
+        <help><!-- Region of lead owner of referrals and transfers. --></help>
+        <label><!-- Lead Owner Region --></label>
+        <name>Lead_Owner_Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes campaign name of the lead being transferred for reference. --></help>
+        <label><!-- Synergy Campaign --></label>
+        <name>Lead_Transfer_Campaign_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select a value --></help>
+        <label><!-- Stage --></label>
+        <name>Lead__c</name>
+        <picklistValues>
+            <masterLabel>Convert</masterLabel>
+            <translation><!-- Convert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does not meet requirements / Need more Information</masterLabel>
+            <translation><!-- Does not meet requirements / Need more Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead exposed to sales</masterLabel>
+            <translation><!-- Lead exposed to sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No additional opportunity</masterLabel>
+            <translation><!-- No additional opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurture opportunity</masterLabel>
+            <translation><!-- Nurture opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending MKTG Qualification</masterLabel>
+            <translation><!-- Pending MKTG Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Sales Qualification</masterLabel>
+            <translation><!-- Pending Sales Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent to Customer Care</masterLabel>
+            <translation><!-- Sent to Customer Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent to Sales</masterLabel>
+            <translation><!-- Sent to Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field store the concatenation of the source system name and a source system record id to ensure the record is uniquely identified. --></help>
+        <label><!-- LegacyIDUnique --></label>
+        <name>LegacyIDUnique__c</name>
+    </fields>
+    <fields>
+        <label><!-- LegacyID --></label>
+        <name>LegacyID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a friendly system reference to the source record. --></help>
+        <label><!-- LegacyReference --></label>
+        <name>LegacyReference__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the CRM system the source record came from --></help>
+        <label><!-- LegacySystem --></label>
+        <name>LegacySystem__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn URL --></label>
+        <name>LinkedInURL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Message --></help>
+        <label><!-- Message --></label>
+        <name>Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Campaign Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculated field, populated when the Business Line, Domain of the lead&apos;s email, and region match a list of maintained Named Accounts. --></help>
+        <label><!-- Named Account --></label>
+        <name>NamedAccount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select a value --></help>
+        <label><!-- Need --></label>
+        <name>Need__c</name>
+        <picklistValues>
+            <masterLabel>Not interested in follow-up</masterLabel>
+            <translation><!-- Not interested in follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes – Call Me</masterLabel>
+            <translation><!-- Yes – Call Me --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes – Email Me</masterLabel>
+            <translation><!-- Yes – Email Me --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of attempts to contact by Pre Sales --></help>
+        <label><!-- Number of Dials --></label>
+        <name>NumberofDials__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please populate from associated  opportunity --></help>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contact&apos;s placement in the company --></help>
+        <label><!-- Org Level --></label>
+        <name>OrgLevel__c</name>
+        <picklistValues>
+            <masterLabel>Advisory</masterLabel>
+            <translation><!-- Advisory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board Member</masterLabel>
+            <translation><!-- Board Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEO or President</masterLabel>
+            <translation><!-- CEO or President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CXO</masterLabel>
+            <translation><!-- CXO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director</masterLabel>
+            <translation><!-- Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager</masterLabel>
+            <translation><!-- Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Management</masterLabel>
+            <translation><!-- Non Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President</masterLabel>
+            <translation><!-- Vice President --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Originating Business Division --></label>
+        <name>OriginatingBusinessDivision__c</name>
+    </fields>
+    <fields>
+        <help><!-- Details regarding source of Marketing Lead and comments provided by Contact and/or Marketing --></help>
+        <label><!-- Originating Notes --></label>
+        <name>OriginatingNotes__c</name>
+    </fields>
+    <fields>
+        <help><!-- URL where Form was submitted from --></help>
+        <label><!-- Originating Source URL --></label>
+        <name>OriginatingSourceURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- OutReach Status --></label>
+        <name>OutReachStatus__c</name>
+        <picklistValues>
+            <masterLabel>Added to Sequence</masterLabel>
+            <translation><!-- Added to Sequence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad Contact Info</masterLabel>
+            <translation><!-- Bad Contact Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Left Company</masterLabel>
+            <translation><!-- Closed Left Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marked as Finished (no reply)</masterLabel>
+            <translation><!-- Marked as Finished (no reply) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New / Cold</masterLabel>
+            <translation><!-- New / Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opted Out</masterLabel>
+            <translation><!-- Opted Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replied</masterLabel>
+            <translation><!-- Replied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unresponsive</masterLabel>
+            <translation><!-- Unresponsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working</masterLabel>
+            <translation><!-- Working --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Outreach ID --></label>
+        <name>OutreachID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outreach Opt Out --></label>
+        <name>OutreachOptOut__c</name>
+    </fields>
+    <fields>
+        <help><!-- Outreach owner indicates who is prospecting this Lead in Outreach. --></help>
+        <label><!-- Outreach Owner --></label>
+        <name>OutreachOwner__c</name>
+        <relationshipLabel><!-- Leads (Outreach Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Actively being sequenced --></label>
+        <name>Outreach_Actively_being_sequenced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence ID --></label>
+        <name>Outreach_Current_Sequence_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence Name --></label>
+        <name>Outreach_Current_Sequence_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence Status --></label>
+        <name>Outreach_Current_Sequence_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence Step Number --></label>
+        <name>Outreach_Current_Sequence_Step_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence Step Type --></label>
+        <name>Outreach_Current_Sequence_Step_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence Task Due Date --></label>
+        <name>Outreach_Current_Sequence_Task_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Sequence User Integration ID --></label>
+        <name>Outreach_Current_Sequence_User_ID__c</name>
+        <relationshipLabel><!-- Leads (Current Sequence User Integration ID) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Date field that is updated automatically when Lead are added to a new sequence --></help>
+        <label><!-- Date Added to Sequence --></label>
+        <name>Outreach_Date_Added_to_Sequence__c</name>
+    </fields>
+    <fields>
+        <help><!-- All sequences that the prospect has completed via Outreach --></help>
+        <label><!-- Finished Sequences --></label>
+        <name>Outreach_Finished_Sequences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Sequence ID --></label>
+        <name>Outreach_Initial_Sequence_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Sequence Name --></label>
+        <name>Outreach_Initial_Sequence_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Active Sequences --></label>
+        <name>Outreach_Number_of_Active_Sequences__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Active Tasks --></label>
+        <name>Outreach_Number_of_Active_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- PKID Lead --></label>
+        <name>PKIDLead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Sales Qualified / Disqualified --></label>
+        <name>PreSalesQualifiedDisqualified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Sales Working --></label>
+        <name>PreSalesWorking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Colleague who assigned the Lead --></help>
+        <label><!-- Processed By --></label>
+        <name>ProcessedBy__c</name>
+        <relationshipLabel><!-- Leads (Processed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product that customer has expressed interest in --></help>
+        <label><!-- Product Interest --></label>
+        <name>ProductInterest__c</name>
+    </fields>
+    <fields>
+        <help><!-- Star rating based on Call To Action and Verbal Qualification. --></help>
+        <label><!-- Marketing Lead Rating --></label>
+        <name>Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Account CAPIQ ID Number --></label>
+        <name>Referral_Account_CAPIQ_ID_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes S&amp;P CAPIQ ID of the referred account. --></help>
+        <label><!-- Referral Account CAPIQ ID --></label>
+        <name>Referral_Account_CAPIQ_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral ID --></label>
+        <name>Referral_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Lead Country/Territory --></label>
+        <name>Referral_Lead_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Lead State --></label>
+        <name>Referral_Lead_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Lead Type --></label>
+        <name>Referral_Lead_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Divisional Account Manager who created the referral. --></help>
+        <label><!-- Referral Submitted By --></label>
+        <name>Referral_Submitted_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Submitted Date --></label>
+        <name>Referral_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email of divisional account manager who submitted the referral. --></help>
+        <label><!-- Referral Submitter Email --></label>
+        <name>Referral_Submitter_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Phone number of the user submitting the referral or lead transfer. --></help>
+        <label><!-- Referral Submitter Phone --></label>
+        <name>Referral_Submitter_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Region of the sales user who submitted the referral or lead transfer. --></help>
+        <label><!-- Referral Submitter Region --></label>
+        <name>Referral_Submitter_Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates Sales Person who referred the Lead --></help>
+        <label><!-- Referred By --></label>
+        <name>ReferredByContact__c</name>
+        <relationshipLabel><!-- Leads (Referred By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates Sales Person who referred the Lead --></help>
+        <label><!-- Referred By --></label>
+        <name>ReferredBy__c</name>
+        <relationshipLabel><!-- Leads (Referred By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contact has requested follow up from Sales --></help>
+        <label><!-- Requested Interaction --></label>
+        <name>RequestedInteraction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Annual Sales of company --></help>
+        <label><!-- Revenue Band (USD) --></label>
+        <name>RevenueBand__c</name>
+        <picklistValues>
+            <masterLabel>$1 - $1M</masterLabel>
+            <translation><!-- $1 - $1M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$100M - $250M</masterLabel>
+            <translation><!-- $100M - $250M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$10M - $25M</masterLabel>
+            <translation><!-- $10M - $25M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$1B - $2.5B</masterLabel>
+            <translation><!-- $1B - $2.5B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$1M - $5M</masterLabel>
+            <translation><!-- $1M - $5M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$2.5B - $5B</masterLabel>
+            <translation><!-- $2.5B - $5B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$250M - $500M</masterLabel>
+            <translation><!-- $250M - $500M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$25M - $50M</masterLabel>
+            <translation><!-- $25M - $50M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$500M - $1B</masterLabel>
+            <translation><!-- $500M - $1B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$50M - $100M</masterLabel>
+            <translation><!-- $50M - $100M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$5M - $10M</masterLabel>
+            <translation><!-- $5M - $10M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over $5B</masterLabel>
+            <translation><!-- Over $5B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Number of days (fractional) between lead creation and assignment to SDR (Pre-Sales) queue --></help>
+        <label><!-- SDR Assignment Time --></label>
+        <name>SDRAssignmentTime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days (fractional) between Pre-Sales Working status and Pre-Sales Qualified status --></help>
+        <label><!-- SDR Qualification Time --></label>
+        <name>SDRQualificationTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- SDR Queue Assignment --></label>
+        <name>SDRQueueAssignment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days (fractional) between SDR (Pre-Sales) queue assignment and move to Pre-Sales Working status --></help>
+        <label><!-- SDR Time to Pick up --></label>
+        <name>SDRTimetoPickup__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Account Description --></label>
+        <name>SNPCAPIQ__Account_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- UNUSED_PE_S&amp;P Capital IQ Company ID --></label>
+        <name>SNPCAPIQ__CapitalIQCompanyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Company ID --></label>
+        <name>SNPCAPIQ__CapitalIQCompanyId_txt__c</name>
+    </fields>
+    <fields>
+        <label><!-- UNUSED_PE_S&amp;P Capital IQ Person ID --></label>
+        <name>SNPCAPIQ__CapitalIQPersonID__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Person ID --></label>
+        <name>SNPCAPIQ__CapitalIQPersonID_txt__c</name>
+    </fields>
+    <fields>
+        <label><!-- UNUSED_PE_S&amp;P Capital IQ Professional ID --></label>
+        <name>SNPCAPIQ__CapitalIQProfessionalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Professional ID --></label>
+        <name>SNPCAPIQ__CapitalIQProfessionalID_txt__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Revenue (USD) --></label>
+        <name>SNPCAPIQ__CapitalIQRevenueUSD__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Company Type --></label>
+        <name>SNPCAPIQ__Company_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Contact Description --></label>
+        <name>SNPCAPIQ__Contact_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Primary Industry --></label>
+        <name>SNPCAPIQ__Industry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include expanded business listings --></help>
+        <label><!-- Include expanded business listings --></label>
+        <name>SNPCAPIQ__Is_DB_USA_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Last Updated Date --></label>
+        <name>SNPCAPIQ__LastUpdatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- PE_S&amp;P Capital IQ Company ID --></label>
+        <name>SNPCAPIQ__PE_CapitalIQCompanyID_txt__c</name>
+    </fields>
+    <fields>
+        <label><!-- PE_S&amp;P Capital IQ Person ID --></label>
+        <name>SNPCAPIQ__PE_CapitalIQPersonID_txt__c</name>
+    </fields>
+    <fields>
+        <label><!-- PE_S&amp;P Capital IQ Professional ID --></label>
+        <name>SNPCAPIQ__PE_CapitalIQProfessionalID_txt__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Primary Exchange --></label>
+        <name>SNPCAPIQ__Primary_Exchange__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P MI Company Key --></label>
+        <name>SNPCAPIQ__SNPMI_MICompanyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P MI Ultimate Parent Key --></label>
+        <name>SNPCAPIQ__SNPMI_MIUltimate_Parent_Company_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Ticker Symbol --></label>
+        <name>SNPCAPIQ__Ticker_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Ultimate Parent CompanyID --></label>
+        <name>SNPCAPIQ__Ultimate_Parent_Company_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Ultimate Parent Company --></label>
+        <name>SNPCAPIQ__Ultimate_Parent_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Capital IQ Year Founded --></label>
+        <name>SNPCAPIQ__Year_Founded__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes the referred client&apos;s product interests. --></help>
+        <label><!-- SPG Referral Product Interest --></label>
+        <name>SPG_Referral_Product_Interest__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days (fractional) between the first Sales Rep/Queue assignment and the last Sales Rep/Queue assignment --></help>
+        <label><!-- Sales Assignment Time --></label>
+        <name>SalesAssignmentTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Converted / Disqualified --></label>
+        <name>SalesConvertedDisqualified__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days (fractional) between Sales Working status and either Converted or Disqualified status --></help>
+        <label><!-- Sales Qualification Time --></label>
+        <name>SalesQualificationTime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days (fractional) between the last Sales Rep/Queue assignment and status change to Sales Working --></help>
+        <label><!-- Sales Time to Pick up --></label>
+        <name>SalesTimetoPickup__c</name>
+    </fields>
+    <fields>
+        <label><!-- SalesUser --></label>
+        <name>SalesUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Working --></label>
+        <name>SalesWorking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please provide a score defination --></help>
+        <label><!-- Score Definition --></label>
+        <name>ScoreDefinition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please populate --></help>
+        <label><!-- Score Model --></label>
+        <name>ScoreModel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marketing Score based on Contact&apos;s implicit and explicit behavior --></help>
+        <label><!-- Score --></label>
+        <name>Score__c</name>
+        <picklistValues>
+            <masterLabel>A1</masterLabel>
+            <translation><!-- A1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A2</masterLabel>
+            <translation><!-- A2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A3</masterLabel>
+            <translation><!-- A3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A4</masterLabel>
+            <translation><!-- A4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B1</masterLabel>
+            <translation><!-- B1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2</masterLabel>
+            <translation><!-- B2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B3</masterLabel>
+            <translation><!-- B3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B4</masterLabel>
+            <translation><!-- B4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C1</masterLabel>
+            <translation><!-- C1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C2</masterLabel>
+            <translation><!-- C2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C3</masterLabel>
+            <translation><!-- C3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C4</masterLabel>
+            <translation><!-- C4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D1</masterLabel>
+            <translation><!-- D1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D2</masterLabel>
+            <translation><!-- D2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D3</masterLabel>
+            <translation><!-- D3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D4</masterLabel>
+            <translation><!-- D4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Link to script associated to product of interest --></help>
+        <label><!-- Script Access URL --></label>
+        <name>ScriptAccessURL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Case from which lead has been generated --></help>
+        <label><!-- Source Case --></label>
+        <name>SourceCase__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please populate a Sub- Industry --></help>
+        <label><!-- Sub Industry --></label>
+        <name>SubIndustry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synergy --></label>
+        <name>Synergy__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact&apos;s propensity to buy --></help>
+        <label><!-- Timeframe --></label>
+        <name>Timeframe__c</name>
+        <picklistValues>
+            <masterLabel>3 to 6 months</masterLabel>
+            <translation><!-- 3 to 6 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>As soon as possible</masterLabel>
+            <translation><!-- As soon as possible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More than 6 months</masterLabel>
+            <translation><!-- More than 6 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No plans to move forward</masterLabel>
+            <translation><!-- No plans to move forward --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within the next 3 months</masterLabel>
+            <translation><!-- Within the next 3 months --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If checked, this lead was transferred to a division. --></help>
+        <label><!-- Transferred? --></label>
+        <name>Transferred__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- DO NOT MODIFY/DELETE. Record type referenced in referrals integration, this record type can&apos;t be deleted and must be available to system admins. --></description>
+        <label><!-- SPG Referral Leads --></label>
+        <name>CIRef_SPG_Referral_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- General leads. --></description>
+        <label><!-- Lead Master Record Type --></label>
+        <name>LeadMasterRecordType</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Due to U.S. export controls and sanctions restrictions, Lead records cannot be created for the selected country. --></errorMessage>
+        <name>BlockProhibitedCountries</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must create an opportunity when converting this lead. --></errorMessage>
+        <name>CIRef_Opportunity_creation_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When disqualifying an SPG Referral lead for &quot;Other&quot; or &quot;Prospect didn&apos;t want to buy&quot; reason codes, please enter notes in the &quot;Disqualified Reason Other Notes&quot; field. --></errorMessage>
+        <name>CIRef_Other_Disqualified_reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have set Disqualified Reason as Competition, please populate the name of Competitor. --></errorMessage>
+        <name>CompetitorRequiredWhenLostToCompetition</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please make sure Requested Account&apos;s Status is &quot;Active&quot; and that account&apos;s Governance Status is &quot;Approved&quot; before converting the lead. --></errorMessage>
+        <name>DataGovernanceImplementationforLead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Disqualified Reason if you want to move this lead to &apos;Disqualify&apos; status, or clear the Disqualified Reason and change the lead status to something else. --></errorMessage>
+        <name>DisqualifiedReasonMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You entered a Disqualified Reason, did you mean to move the lead to &apos;Disqualify&apos; status? If not, please change the Disqualified Reason value to &quot;None&quot;. --></errorMessage>
+        <name>DisqualifyStatusMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Email address or check the Email Unknown box (a business phone number will be required in that case) --></errorMessage>
+        <name>EmailRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Phone when Email is unknown --></errorMessage>
+        <name>EmailUnknownThenPhoneRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If email address is populated then Email Unknown checkbox should be unchecked. --></errorMessage>
+        <name>EmailUnknownUncheckIfEmailPresent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_Company_Id_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can not set status to &apos;Converted&apos;, Please use Convert button to convert Lead. --></errorMessage>
+        <name>LeadStatusCanNotbeConvertedDirectly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Marketing users cannot select the &apos;Sales Working&apos; Lead Status, please select &apos;Prioritized&apos;, &apos;Pre-Sales Working&apos;, or &apos;Pre-Sales Qualified&apos;. --></errorMessage>
+        <name>LeadStatusLimitationForMarketing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Reps can only select the &apos;Sales Working&apos; Lead Status when creating a Lead and cannot move the Lead Status backwards from that Lead Status. --></errorMessage>
+        <name>LeadStatusLimitationForSalesMarketing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not able to edit this Lead as you are not the record owner. --></errorMessage>
+        <name>PartnerUsersEnforceRecordOwner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Country is required to create a Lead --></errorMessage>
+        <name>RequiredCountryForLeadCreation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- ConvertLead --></label>
+        <name>ConvertLead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LeadActivityOverview --></label>
+        <name>LeadActivityOverview</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP_Merge --></label>
+        <name>Loop__LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOPlus --></label>
+        <name>Loop__LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOP_Merge --></label>
+        <name>Loop__Mass_LOOP_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_LOOPlus --></label>
+        <name>Loop__Mass_LOOPlus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RequestAccountNew --></label>
+        <name>RequestAccountNew</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Slack --></label>
+        <name>slackv2__Send_to_Slack</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Slack_Alerts --></label>
+        <name>slackv2__Slack_Alerts</name>
+    </webLinks>
+</CustomObjectTranslation>

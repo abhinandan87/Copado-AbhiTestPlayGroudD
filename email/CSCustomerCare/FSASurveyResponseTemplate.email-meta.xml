@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-4091: Training Survey Response Hot Alert</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FSASurveyResponseTemplate</name>
+    <style>none</style>
+    <subject>Training Survey Hot Alert: Survey Response {!SurveyResponse__c.Name} for {!SurveyResponse__c.Training__c}</subject>
+    <textOnly>Hello,
+
+The following Hot Alert has been triggered from a Field Service Activity Training Survey, triggered by the red scores in the customer’s feedback below:
+
+Field Service Activity Number: {!SurveyResponse__c.Training__c}
+Survey Response Number: {!SurveyResponse__c.Name}
+
+Survey Type: {!SurveyResponse__c.SurveyType__c}
+
+Account: {!SurveyResponse__c.Account__c}
+Contact:{!SurveyResponse__c.Contact__c}
+Contact Email: {!SurveyResponse__c.ContactEmail__c}
+FSA Owner: {!SurveyResponse__c.FSAOwner__c}
+Primary Instructor: {!SurveyResponse__c.PrimaryInstructor__c}
+Product Group: {!SurveyResponse__c.CaseProductGroup__c}
+
+Response Date: {!SurveyResponse__c.ResponseDate__c}
+Training Met Needs: {!SurveyResponse__c.TrainingMetNeeds__c}
+NPS: {!SurveyResponse__c.NPSScore__c}
+
+
+Please review the Survey Response and the FSA to action accordingly.
+
+Once the loop is closed with the customer, please ensure you update the Survey Response with the appropriate Hot Alert Status, feedback, supporting notes and actions items.
+
+Kind Regards,
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

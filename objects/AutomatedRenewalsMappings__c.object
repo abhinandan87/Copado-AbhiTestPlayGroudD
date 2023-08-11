@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>SFDC-3186 Field Mappings for Automated Renewals creation batch</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if the mapping is active. Only active mappings are used in Renewals Automation batch.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Must be marked active if in use.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CriteriaMapping__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 If true, represents that the custom setting record is a criteria mapping used in business criteria evaluations.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If true, represents that the custom setting record is a criteria mapping used in business criteria evaluations.</inlineHelpText>
+        <label>Criteria Mapping?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>SFDC-3186 Gives the additional details about custom setting record</description>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>FieldMapping__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 If true, represents that the custom setting record is a field to field mapping</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If true, represents that the custom setting record is a field to field mapping</inlineHelpText>
+        <label>Field Mapping?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RuleName__c</fullName>
+        <description>SFDC-3186 Rule Name(if needed) to segregate mappings for different use cases</description>
+        <externalId>false</externalId>
+        <label>Rule Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SourceField__c</fullName>
+        <description>SFDC-3186 Source Field Name</description>
+        <externalId>false</externalId>
+        <label>Source Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SourceObject__c</fullName>
+        <description>SFDC-3186 Source Object Name</description>
+        <externalId>false</externalId>
+        <label>Source Object</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SourceValue__c</fullName>
+        <description>SFDC-3186 Represents the source value</description>
+        <externalId>false</externalId>
+        <label>Source Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TargetField__c</fullName>
+        <description>SFDC-3186 Target Field Name</description>
+        <externalId>false</externalId>
+        <label>Target Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TargetObject__c</fullName>
+        <description>SFDC-3186 Target Object Name</description>
+        <externalId>false</externalId>
+        <label>Target Object</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TargetValue__c</fullName>
+        <description>SFDC-3186 Represents Target Value</description>
+        <externalId>false</externalId>
+        <label>Target Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ValueMapping__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 If true, represents that the custom setting record is a value to value mapping. Please populate Source Value and Target Value fields.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If true, represents that the custom setting record is a value to value mapping. Please populate Source Value and Target Value fields.</inlineHelpText>
+        <label>Value Mapping?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Automated Renewals Mappings</label>
+    <listViews>
+        <fullName>AllCriteriaMappings</fullName>
+        <columns>NAME</columns>
+        <columns>CriteriaMapping__c</columns>
+        <columns>Active__c</columns>
+        <columns>SourceObject__c</columns>
+        <columns>SourceField__c</columns>
+        <columns>SourceValue__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Description__c</columns>
+        <columns>RuleName__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CriteriaMapping__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Criteria Mappings</label>
+    </listViews>
+    <listViews>
+        <fullName>AllFieldMappings</fullName>
+        <columns>NAME</columns>
+        <columns>FieldMapping__c</columns>
+        <columns>Active__c</columns>
+        <columns>TargetObject__c</columns>
+        <columns>TargetField__c</columns>
+        <columns>SourceObject__c</columns>
+        <columns>SourceField__c</columns>
+        <columns>RuleName__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>FieldMapping__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Field Mappings</label>
+    </listViews>
+    <listViews>
+        <fullName>AllValueMappings</fullName>
+        <columns>NAME</columns>
+        <columns>ValueMapping__c</columns>
+        <columns>Active__c</columns>
+        <columns>SourceField__c</columns>
+        <columns>SourceValue__c</columns>
+        <columns>TargetField__c</columns>
+        <columns>TargetValue__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ValueMapping__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Value Mappings</label>
+    </listViews>
+    <listViews>
+        <fullName>InactiveMappings</fullName>
+        <columns>NAME</columns>
+        <columns>FieldMapping__c</columns>
+        <columns>ValueMapping__c</columns>
+        <columns>CriteriaMapping__c</columns>
+        <columns>Active__c</columns>
+        <columns>TargetObject__c</columns>
+        <columns>TargetField__c</columns>
+        <columns>TargetValue__c</columns>
+        <columns>SourceObject__c</columns>
+        <columns>SourceField__c</columns>
+        <columns>SourceValue__c</columns>
+        <columns>RuleName__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Inactive Mappings</label>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

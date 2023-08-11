@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>SharingRuleforDataGovernance</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFDC1-1842 : This Sharing Rule will be applicable for all the Users of  group &apos;OpportunitySharingGroupforDataGovernance&apos; to have access to all the Opportunities.</description>
+        <label>SharingRuleforDataGovernance</label>
+        <sharedTo>
+            <group>OpportunitySharingGroupforDataGovernance</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SharingRuleforDelivery</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFDC1-1842 : This Sharing Rule will be applicable for all the Users of  group &apos;OpportunitySharingGroupforDelivery&apos; to have access to all the Opportunities.</description>
+        <label>SharingRuleforDelivery</label>
+        <sharedTo>
+            <group>OpportunitySharingGroupforDelivery</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SharingRuleforMarketing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFDC1-1842 : This Sharing Rule will be applicable for all the Users of  group &apos;OpportunitySharingGroupforMarketing&apos; to have access to all the Opportunities.</description>
+        <label>SharingRuleforMarketing</label>
+        <sharedTo>
+            <group>OpportunitySharingGroupforMarketing</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SharingRuleforOrderManagment</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFDC1-1842 : This Sharing Rule will be applicable for all the Users of  group &apos;OpportunitySharingGroupforOrderManagment&apos; to have access to all the Opportunities.</description>
+        <label>SharingRuleforOrderManagment</label>
+        <sharedTo>
+            <group>OpportunitySharingGroupforOrderManagment</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SharingRuleforSalesOps</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFDC1-1842 : This Sharing Rule will be applicable for all the Users of  group &apos;OpportunitySharingGroupforSalesOps&apos; to have access to all the Opportunities.</description>
+        <label>SharingRuleforSalesOps</label>
+        <sharedTo>
+            <group>OpportunitySharingGroupforSalesOps</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

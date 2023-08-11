@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | SFTR | UTI Connect NMO</name>
+    <queueMembers>
+        <users>
+            <user>atul.panwar@ihsmarkit.com</user>
+            <user>bhavya.khanna@ihsmarkit.com</user>
+            <user>bill.tsang@ihsmarkit.com</user>
+            <user>daniel.oluyemi@ihsmarkit.com</user>
+            <user>david.williams2@ihsmarkit.com</user>
+            <user>dishant.sharma@ihsmarkit.com</user>
+            <user>fabien.romero@ihsmarkit.com</user>
+            <user>hamza.shah@ihsmarkit.com</user>
+            <user>harish.kumar2@ihsmarkit.com</user>
+            <user>jonathan.tsang@ihsmarkit.com</user>
+            <user>majid.azaim@ihsmarkit.com</user>
+            <user>miguel.coral@ihsmarkit.com</user>
+            <user>mishika.gandhi@ihsmarkit.com</user>
+            <user>quephuong.dufournet@ihsmarkit.com</user>
+            <user>sahil.nangia@ihsmarkit.com</user>
+            <user>shreeya.patel@ihsmarkit.com</user>
+            <user>tori.ogundimu@ihsmarkit.com</user>
+            <user>tushar.suri@ihsmarkit.com</user>
+            <user>vijayendra.agarwal@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

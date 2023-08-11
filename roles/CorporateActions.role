@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Corporate Actions</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Corporate Actions</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>FinancialServicesFinancialMarketTechnologies</parentRole>
+</Role>

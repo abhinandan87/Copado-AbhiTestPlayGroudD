@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>iCompliance document request submitted for &lt;Client Name (Requestor Company)&gt;</name>
+    <style>none</style>
+    <subject>iCompliance document request submitted for {Client Name (Requestor Company)}</subject>
+    <textOnly>Dear Collections Team,
+
+Ref: {!Case.CaseNumber}
+
+Please upload the attached document. A {Document Type} request has been submitted for {Client Name (Requestor Company)}.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

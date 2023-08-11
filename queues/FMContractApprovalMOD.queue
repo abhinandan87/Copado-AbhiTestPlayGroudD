@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Contract Approval | MOD</name>
+    <queueMembers>
+        <users>
+            <user>ajay.kumar2@ihsmarkit.com</user>
+            <user>amit.maurya@ihsmarkit.com</user>
+            <user>andy.hitchings@ihsmarkit.com</user>
+            <user>brijesh.gupta@ihsmarkit.com</user>
+            <user>kiko.naoumov@ihsmarkit.com</user>
+            <user>rohit.reddy@ihsmarkit.com</user>
+            <user>mary.fischer@ihsmarkit.com.prod</user>
+            <user>pankaj.khurana@markit.com.prod</user>
+            <user>saurabh.dhawan@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Contract.ContractStatus__c</field>
+    </columns>
+    <columns>
+        <field>Contract.RenewalDate__c</field>
+    </columns>
+    <columns>
+        <field>END_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contract.AutoRenewal__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contract.AutoRenewStopped__c</field>
+    </columns>
+    <columns>
+        <field>Contract.IHSMarkitLegalEntity__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Contract.IHSMarkitLegalEntity__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>IHS Markit Global Sarl,IHS Herold Inc,IHS Global Pte Ltd,IHS Global Inc,IHS Global GmbH,Root Wireless,Inc,R. L. Polk Germany GmbH,R.L. Polk &amp; Co,Premier Data Services,Petroconsultants MAI limited,Oil Price Information Service,LLC,Macroeconomic Advisors,JOC Group Inc,Jane?s Group UK Limited,Ipreo LLC,Ipreo Limited,Ipreo Data Inc,Informa Tech Research Limited,Informa Tech LLC,IHS Rushmore,IHS Markit Japan GK,IHS Informações e Insight Ltda,IHS Hong Kong Limited,IHS Global Taiwan Limited,IHS Global SAS,IHS Global S.r.l.,IHS Global Limited LLC,IHS Global Limited (Moscow Branch),IHS Global Limited,IHS Global Insight Limited,IHS Global FZ LLC,IHS Global BV,IHS Global AS,IHS Global (Thailand) Ltd. (HEAD OFFICE),IHS Australia Pty Ltd.,IHS (Beijing) Trading Company Limited,IHS (Beijing) Trading Co Limited Shenzhen Br,IHS (Beijing) Trading Co Limited Shanghai Branch,Global Insight (Japan) Inc.,Global Insight (Beijing) Co. Limited</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>All Contracts OM</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractList</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contract.IHSMarkitLegalEntity__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,24 @@
+.icondiv{
+    padding: 8px 0px 8px 16px;
+    background-color: #f1f5f4;
+}
+
+.containerDiv {
+    background-color: #ffffff; 
+}
+
+.expanddiv > div {
+    display: inline-block;
+    padding-top:6%;
+    margin-left: 10%;
+}
+
+.collapsedDiv {  
+    height: 100vh;
+    background-color: #f1f5f4;
+}
+
+.utilitydiv{
+    float:right;
+    padding-right: 10px;
+}

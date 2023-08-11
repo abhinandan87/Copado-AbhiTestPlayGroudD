@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created as per SFDC-3096, to show error message if Fastrack and Master agreement both are blank</description>
+    <height>150</height>
+    <label>Convert to Word</label>
+    <lightningComponent>ConConvertToWord</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

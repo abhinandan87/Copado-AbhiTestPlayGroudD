@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Address --></label>
+        <name>Loop__Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signing Order --></label>
+        <name>Loop__Calc_Signing_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- This can be made dynamic by using tags from the Field Tagger. --></help>
+        <label><!-- Access Code --></label>
+        <name>Loop__CustomAccessCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- This option will display the recipient(s)&apos;s (contact, user, lead) title when initiating DDPs. --></help>
+        <label><!-- Display Title --></label>
+        <name>Loop__DisplayTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Text --></label>
+        <name>Loop__EmailText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Embedded Signer --></label>
+        <name>Loop__Embedded_Signer__c</name>
+        <picklistValues>
+            <masterLabel>Routed via Client Code</masterLabel>
+            <translation><!-- Routed via Client Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routed via LOOPlus</masterLabel>
+            <translation><!-- Routed via LOOPlus --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Host Address --></label>
+        <name>Loop__Host_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Host Contact --></label>
+        <name>Loop__Host_Contact__c</name>
+        <relationshipLabel><!-- Host Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Host Role/Group Names --></label>
+        <name>Loop__Host_Role_Group_Names__c</name>
+    </fields>
+    <fields>
+        <label><!-- Host Static Email --></label>
+        <name>Loop__Host_Static_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Host Static Name --></label>
+        <name>Loop__Host_Static_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Host User --></label>
+        <name>Loop__Host_User__c</name>
+        <relationshipLabel><!-- Recipients (Host User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delivery Option --></label>
+        <name>Loop__IntegrationOption__c</name>
+        <relationshipLabel><!-- Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Loop__Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Access Code Failed --></label>
+        <name>Loop__OnAccessCodeFailed__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Cancel --></label>
+        <name>Loop__OnCancel__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Decline --></label>
+        <name>Loop__OnDecline__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Exception --></label>
+        <name>Loop__OnException__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Id Check Failed --></label>
+        <name>Loop__OnIdCheckFailed__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Session Timeout --></label>
+        <name>Loop__OnSessionTimeout__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Signing Complete --></label>
+        <name>Loop__OnSigningComplete__c</name>
+    </fields>
+    <fields>
+        <label><!-- On TTL Expired --></label>
+        <name>Loop__OnTTLExpired__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Viewing Complete --></label>
+        <name>Loop__OnViewingComplete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type the Role or User Group names separated by double commas for this recipient. --></help>
+        <label><!-- Role/Group Names --></label>
+        <name>Loop__RoleGroupNames__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signing Group Id --></label>
+        <name>Loop__SigningGroupId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signing Group Name --></label>
+        <name>Loop__SigningGroupName__c</name>
+    </fields>
+    <fields>
+        <help><!-- When using the standard signing options, this number is used in the document to denote which options belong to this recipient. For example, if Recipient # is 2, the dl.signhere option will be typed into the document as &quot;dl.signhere.2&quot;. --></help>
+        <label><!-- Recipient # --></label>
+        <name>Loop__SigningOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- For an In Person Signer recipient, this is the person that will &quot;host&quot; the in person signing event (who the email is sent to). --></help>
+        <label><!-- Specified Host --></label>
+        <name>Loop__Specified_Host__c</name>
+        <picklistValues>
+            <masterLabel>Contact Lookup</masterLabel>
+            <translation><!-- Contact Lookup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current User</masterLabel>
+            <translation><!-- Current User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current User&apos;s Manager</masterLabel>
+            <translation><!-- Current User&apos;s Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynamic Name-Email</masterLabel>
+            <translation><!-- Dynamic Name-Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Creator</masterLabel>
+            <translation><!-- Object Creator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Owner</masterLabel>
+            <translation><!-- Object Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roles or Groups</masterLabel>
+            <translation><!-- Roles or Groups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selected Contact</masterLabel>
+            <translation><!-- Selected Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selected User</masterLabel>
+            <translation><!-- Selected User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static Name-Email</masterLabel>
+            <translation><!-- Static Name-Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Lookup</masterLabel>
+            <translation><!-- User Lookup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Selected Contact</masterLabel>
+            <translation><!-- User Selected Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Selected Name-Email</masterLabel>
+            <translation><!-- User Selected Name-Email --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Static Email --></label>
+        <name>Loop__StaticEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Static Name --></label>
+        <name>Loop__StaticName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Loop__Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Access Code --></label>
+        <name>Loop__dsAllowAccessCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Id Check --></label>
+        <name>Loop__dsCheckId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Loop__dsContact__c</name>
+        <relationshipLabel><!-- Recipients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>Loop__dsRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Name --></label>
+        <name>Loop__dsRoleName__c</name>
+    </fields>
+    <fields>
+        <help><!-- This specifies the order in which recipients receive the document to sign. --></help>
+        <label><!-- Signing Order --></label>
+        <name>Loop__dsRoutingOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Options --></label>
+        <name>Loop__dsSignOptions__c</name>
+        <picklistValues>
+            <masterLabel>dl.acceptance</masterLabel>
+            <translation><!-- dl.acceptance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.approve</masterLabel>
+            <translation><!-- dl.approve --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.capture</masterLabel>
+            <translation><!-- dl.capture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.company</masterLabel>
+            <translation><!-- dl.company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.datesign</masterLabel>
+            <translation><!-- dl.datesign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.decline</masterLabel>
+            <translation><!-- dl.decline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.emailaddress</masterLabel>
+            <translation><!-- dl.emailaddress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.envelopeid</masterLabel>
+            <translation><!-- dl.envelopeid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.firstname</masterLabel>
+            <translation><!-- dl.firstname --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.fullname</masterLabel>
+            <translation><!-- dl.fullname --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.initialhere</masterLabel>
+            <translation><!-- dl.initialhere --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.initialhereoptional</masterLabel>
+            <translation><!-- dl.initialhereoptional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.lastname</masterLabel>
+            <translation><!-- dl.lastname --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.mobilecapture</masterLabel>
+            <translation><!-- dl.mobilecapture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.signerattachment</masterLabel>
+            <translation><!-- dl.signerattachment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.signhere</masterLabel>
+            <translation><!-- dl.signhere --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.signhereoptional</masterLabel>
+            <translation><!-- dl.signhereoptional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dl.title</masterLabel>
+            <translation><!-- dl.title --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This changes which recipients the user can select from. --></help>
+        <label><!-- Specified Recipient --></label>
+        <name>Loop__dsStaticRecipient__c</name>
+        <picklistValues>
+            <masterLabel>Contact Lookup</masterLabel>
+            <translation><!-- Contact Lookup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current User</masterLabel>
+            <translation><!-- Current User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current User&apos;s Manager</masterLabel>
+            <translation><!-- Current User&apos;s Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynamic Name-Email</masterLabel>
+            <translation><!-- Dynamic Name-Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Creator</masterLabel>
+            <translation><!-- Object Creator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Owner</masterLabel>
+            <translation><!-- Object Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roles or Groups</masterLabel>
+            <translation><!-- Roles or Groups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selected Contact</masterLabel>
+            <translation><!-- Selected Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selected User</masterLabel>
+            <translation><!-- Selected User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static Name-Email</masterLabel>
+            <translation><!-- Static Name-Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Lookup</masterLabel>
+            <translation><!-- User Lookup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Selected Contact</masterLabel>
+            <translation><!-- User Selected Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Selected Name-Email</masterLabel>
+            <translation><!-- User Selected Name-Email --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Loop__dsType__c</name>
+        <picklistValues>
+            <masterLabel>Agent</masterLabel>
+            <translation><!-- Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carbon Copy</masterLabel>
+            <translation><!-- Carbon Copy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certified Delivery</masterLabel>
+            <translation><!-- Certified Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Person Signer</masterLabel>
+            <translation><!-- In Person Signer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signer</masterLabel>
+            <translation><!-- Signer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>Loop__dsUser__c</name>
+        <relationshipLabel><!-- Recipients (User) --></relationshipLabel>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- An address is required for a Static Name-Email recipient. --></errorMessage>
+        <name>Loop__Recipient_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A parameter is required for a Dynamic Name-Email recipient. --></errorMessage>
+        <name>Loop__Recipient_Dynamic_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selected contact static recipient requires a contact. --></errorMessage>
+        <name>Loop__Recipient_Selected_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selected user static recipient requires a user. --></errorMessage>
+        <name>Loop__Recipient_Selected_User</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An address is required for a Static Name-Email recipient. --></errorMessage>
+        <name>Loop__Recipient_Static_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A static name is required for a Static Name-Email recipient. --></errorMessage>
+        <name>Loop__Recipient_Static_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A SignNow Recipient with Type of Signer requires a Role Name. --></errorMessage>
+        <name>Loop__SignNow_Signer_requires_Role_Name</name>
+    </validationRules>
+</CustomObjectTranslation>

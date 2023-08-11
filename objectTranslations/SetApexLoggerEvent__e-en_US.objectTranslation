@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SetApexLoggerEvent</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SetApexLoggerEvents</value>
+    </caseValues>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>ClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Type --></label>
+        <name>ExceptionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Method Name --></label>
+        <name>MethodName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Id --></label>
+        <name>RecordId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Json --></label>
+        <name>RecordJson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stack Trace --></label>
+        <name>StackTrace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Id --></label>
+        <name>TransactionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Id --></label>
+        <name>UserId__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

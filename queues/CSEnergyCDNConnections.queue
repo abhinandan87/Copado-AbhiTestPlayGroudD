@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Energy | CDN | CONNECTIONS</name>
+    <queueMembers>
+        <users>
+            <user>anthony.santos@ihsmarkit.com</user>
+            <user>brian.flack@ihsmarkit.com</user>
+            <user>christina.ewert@ihsmarkit.com</user>
+            <user>cindy.gibb@ihsmarkit.com</user>
+            <user>curt.jones@ihsmarkit.com</user>
+            <user>dallas.anderson@ihsmarkit.com</user>
+            <user>gwen.burnett@ihsmarkit.com</user>
+            <user>hari.krishnamoorthy@ihsmarkit.com</user>
+            <user>kirk.shore@ihsmarkit.com</user>
+            <user>mandy.lee@ihsmarkit.com</user>
+            <user>melisa.olivarez@ihsmarkit.com</user>
+            <user>prima.anderson@ihsmarkit.com</user>
+            <user>staci.nutter@ihsmarkit.com</user>
+            <user>tom.mcivor@ihsmarkit.com</user>
+            <user>troy.winn@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

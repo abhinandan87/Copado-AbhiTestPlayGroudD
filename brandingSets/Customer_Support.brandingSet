@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BrandingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brandingSetProperty>
+        <propertyName>_desktopFontSizeXxLarge</propertyName>
+        <propertyValue>2rem</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_desktopFontSizeMedium</propertyName>
+        <propertyValue>1rem</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>TextTransformStyle</propertyName>
+        <propertyValue>uppercase</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>BorderColor</propertyName>
+        <propertyValue>rgb(88, 89, 91)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>DetailTextColor</propertyName>
+        <propertyValue>rgb(105, 105, 105)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_desktopFontSizeMediumA</propertyName>
+        <propertyValue>1.125rem</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>HeaderFonts</propertyName>
+        <propertyValue>Source Sans Pro</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>CardBackgroundColor</propertyName>
+        <propertyValue>rgba(255, 255, 255, 0)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>LoginBackgroundColor</propertyName>
+        <propertyValue>rgb(255, 255, 255)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_ActionColorTrans</propertyName>
+        <propertyValue>rgba(0, 171, 78, 0.9)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>LoginBackgroundImage</propertyName>
+        <propertyValue></propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>PageBackgroundColor</propertyName>
+        <propertyValue>rgb(233, 233, 233)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>brandNavigationColorText</propertyName>
+        <propertyValue>rgb(255, 255, 255)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_desktopFontSizeXLarge</propertyName>
+        <propertyValue>1.5rem</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>TextColor</propertyName>
+        <propertyValue>#333</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_desktopFontSizeSmall</propertyName>
+        <propertyValue>0.875rem</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_ColorBackgroundTransparent</propertyName>
+        <propertyValue>rgba(255, 255, 255, 0.0)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_brandNavigationBarBackgroundColor</propertyName>
+        <propertyValue>rgba(88, 89, 91, 0.75)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>HeaderImage</propertyName>
+        <propertyValue>/file-asset/X188076623EC1117BRAArtforSalesforce1?v=1</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_desktopFontSizeLarge</propertyName>
+        <propertyValue>1.25rem</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>ActionColor</propertyName>
+        <propertyValue>rgb(0, 171, 78)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_ColorBackgroundWhite</propertyName>
+        <propertyValue>#FFFFFF</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>CompanyLogo</propertyName>
+        <propertyValue>/file-asset/IHSMarkitlogo?v=1</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_LinkColorDarker</propertyName>
+        <propertyValue>#e38008</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_ActionColorDarker</propertyName>
+        <propertyValue>#007837</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_desktopSquareIconMedium</propertyName>
+        <propertyValue>2.375rem</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_brandNavigationItemBackgroundColorHover</propertyName>
+        <propertyValue>rgba(255,255,255,.2)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_HoverColor</propertyName>
+        <propertyValue>rgba(0, 171, 78, 0.1)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_desktopLineHeightText</propertyName>
+        <propertyValue>1.375</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>ErrorFontColor</propertyName>
+        <propertyValue>#ff9e9e</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>OverlayTextColor</propertyName>
+        <propertyValue>rgb(255, 255, 255)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>brandNavigationBackgroundColor</propertyName>
+        <propertyValue>rgb(88, 89, 91)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>PrimaryFont</propertyName>
+        <propertyValue>Source Sans Pro</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>LinkColor</propertyName>
+        <propertyValue>rgb(247, 148, 29)</propertyValue>
+    </brandingSetProperty>
+    <brandingSetProperty>
+        <propertyName>_brandNavigationItemDividerColor</propertyName>
+        <propertyValue>rgba(255, 255, 255, 0.2)</propertyValue>
+    </brandingSetProperty>
+    <masterLabel>Customer_Support</masterLabel>
+    <type>service:branding-service</type>
+</BrandingSet>

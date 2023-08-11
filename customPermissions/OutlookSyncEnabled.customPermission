@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-2872 Created to identify if the user has outlook sync enabled</description>
+    <isLicensed>false</isLicensed>
+    <label>Outlook Sync Enabled</label>
+</CustomPermission>

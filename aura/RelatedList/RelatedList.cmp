@@ -1,0 +1,63 @@
+<aura:component description="RelatedList" implements="flexipage:availableForAllPageTypes,force:hasRecordId,lightning:isUrlAddressable"
+    controller="RelatedListController">
+    <aura:attribute name="objectType" type="String" />
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="parentFieldName" type="String" />
+    <aura:attribute name="queryColumns" type="String" />
+    <aura:attribute name="fieldTransformationRules" type="String" />
+    <aura:attribute name="columnDefinitions" type="String" />
+    <aura:attribute name="title" type="String" />
+    <aura:attribute name="filter" type="String" />
+    <aura:attribute name="orderBy" type="String" />
+    <aura:attribute name="icon" type="String" />
+    <aura:attribute name="showActions" type="String" />
+    <aura:attribute name="showPagination" type="String" />
+    <aura:attribute name="columns" type="List" />
+    <aura:attribute name="tableSize" type="integer" />
+    <aura:attribute name="data" type="sObject[]" access="global" />
+    <aura:attribute name="page" type="integer" />
+    <aura:attribute name="pages" type="integer" />
+    <aura:attribute name="total" type="integer" />
+    <aura:attribute name="reportName" type="String" default=""/>
+    <aura:attribute name="reportId" type="String" default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="force:showToast" action="{!c.handleApplicationEvent}" />
+    <aura:attribute name="sortedBy" type="String" />
+	<aura:attribute name="sortedDirection" type="Boolean" default="true" />
+
+    <lightning:card title="" iconName="{!v.icon}">
+            <aura:set attribute="title">
+                    <aura:if isTrue="{!and(v.reportId!=null, v.reportId!='')}">
+                        <a href="{!'/lightning/r/Report/'+ v.reportId +'/view?fv0='+ v.recordId}" target="_Self">{!v.title + ' (' +v.total +')'}</a>
+                        <aura:set attribute="else">
+                        	<ui:outputText value="{!v.title + ' (' +v.total +')'}"/>
+                        </aura:set>
+                	</aura:if>
+            </aura:set>
+        <aura:set attribute="actions">
+            <aura:if isTrue="{!and(not(empty(v.data)),v.showActions)}">
+                <lightning:button label="New" onclick="{!c.createRecord}" />
+            </aura:if>
+        </aura:set>
+        <div class="slds-m-around_small">
+            <aura:if isTrue="{!not(empty(v.data))}">
+                <lightning:datatable data="{! v.data }" columns="{! v.columns }" keyField="id" hideCheckboxColumn="true"
+                    onrowaction="{! c.handleRowAction }" onsort="{!c.updateColumnSorting}" sortedBy="{!v.sortedBy}"
+                     sortedDirection="{!v.sortedDirection}"  min-column-width="20px" max-column-width="200px"/>
+                <aura:if isTrue="{!v.showPagination}">
+                    <div class="button-container">
+                        <lightning:button disabled="{!v.page == 1}" variant="base" label="Previous"
+                            onclick="{! c.navigate }" />
+                        {!v.page} / {!v.pages}
+                        <lightning:button disabled="{!v.page == v.pages}" aura:id="previousPage" variant="base"
+                            label="Next" onclick="{! c.navigate }" />
+                    </div>
+                </aura:if>
+            </aura:if>
+
+            <aura:if isTrue="{!empty(v.data)}">
+                <p>There are no items to display.</p>
+            </aura:if>
+        </div>
+    </lightning:card>
+</aura:component>

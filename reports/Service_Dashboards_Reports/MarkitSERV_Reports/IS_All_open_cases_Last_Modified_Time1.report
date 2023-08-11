@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Case.ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF ((TODAY()-(Datevalue(LAST_UPDATE))) &lt; 3 , &quot;0-3&quot;, 
+(IF ((TODAY()-(Datevalue(LAST_UPDATE))) &lt; 5 , &quot;3-5&quot;,
+(IF ((TODAY()-(Datevalue(LAST_UPDATE))) &lt; 8 , &quot;5-8&quot;,
+&quot;&gt;8&quot;)))))</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Last Modified Date Range</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,ABHINAV BHANDARI,ABHISHEK DIXIT,AUREA COLON,BENIT KURIAN,BROOKE BLIVEN,CATHERINE TAN,CHARLES BRANCH,CLARE LLOYD,CLINTON MAK,DECLAN MURPHY,FM | MARKITSERV | MTM IMPLEMENTATION,FM | MSERV FX | UAT,FM | MSERV MEMBERSHIP,FM | MSERV UAT,FM | MSERV UAT - UNASSIGNED,FM | MSERV UAT | BAU,FM | MSERV UAT | DSM NCM,FM | MSERV UAT | PROJECTS,FM | MW| ONBOARDING,GAURAV SRIVASTAV,GHIRENDER PALANGE,HYEWON HWANG,JAY SHAH,JELLENIE ESTARES,JESSIE WANG,KAUSHAL SHARMA,KHUSHBOO NAGPAL,KRITI MALHOTRA,KULDEEP THAKUR,MAYURI GOEL,MEL NGUYEN,MEL YAP,MIZAEL POH,NATASHA CHAUDHARY,NIKITA NARANG,PAUL RASAY,PETER WALKER,PING LEONG NG,POONAM SINGH,RAMIT VOHRA,ROBERT SCHWEIKERT,SAHILAH SHIEKH MAHAMUD,SARITA MONGA,SHIVANI ABROL,SIVARAMAKRISHNA KAMMA,SMARAK NAYAK,SOMESH SINHA,SRIGOURI DONDETTI,SUBHASISH RANJAN DAS,TOMAS MALISKA,TZES KOAY,VANDITA AGARWAL,VRADHI SRIVASTAVA,WILSON LEE,XI CHEN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Onboarding,Case.CustomerCare,Case.Implementation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed - Canceled,Closed - Resolved,Closed - Referral,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Live,Install Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>MarkitSERV-FX</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>IS- All open cases- Last Modified Time</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

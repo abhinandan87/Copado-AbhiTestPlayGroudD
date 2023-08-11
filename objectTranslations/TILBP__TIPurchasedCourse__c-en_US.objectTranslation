@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Course --></label>
+        <name>TILBP__Course__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete --></label>
+        <name>TILBP__PercentComplete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TILBP__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course --></label>
+        <name>TILBP__TICourse__c</name>
+        <relationshipLabel><!-- TI Purchased Courses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TI User --></label>
+        <name>TILBP__TIUser__c</name>
+        <relationshipLabel><!-- TI Purchased Courses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Time Seconds --></label>
+        <name>TILBP__TotalTimeSeconds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Views --></label>
+        <name>TILBP__TotalViews__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>TILBP__User__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead.InsideSales__c</field>
+    </columns>
+    <columns>
+        <field>LEAD_ID</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>COMPANY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead.ExistingIHSMarkitCustomer__c</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Lead.DisqualifedReason__c</field>
+    </columns>
+    <columns>
+        <field>RATING</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_MONTH</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>maritime &amp; trade,bradley koekemoer,lemee,edward marsch,lasfer,victoria fitch,muzafar ahmad,migliorini,sam chamberlain,jack power,soren</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>anthony few,aliet martinez,german duque,carlos thimann,claudia rojas,maria elena barrios,max jallad,richard powers,misty,rosalina barragan,daniel stafford,hanft,roxby,tristan james,james drogalis,richard veale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>anthony lim,ron pan,rishad lilani,stella huang,lorena zanol,cameron gumley,xiaolong song,jonathan wei,takashi sekimoto,rina arai,sally kim,sachiko koide,barnaby dobson,sidney leung,richard katsuta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>jiayeen tan,vladimir tikhvinskiy,pakirisamy,benjamin ooi,charlie Ng,reuben lim,enrico perini,chong hooi,goh,joe chuah,felicia yeow,mohamed ouail,drouiche,alex lee,nicole lim,charlie ng,siddharta,mohamed fauzi,mohd firdaus,kenny fu,khaleerurrahman,sin yian lau,ahmad sayuti,azman ali,amarjeet,guang xuan lee</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>New Leads Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Energy | Content</name>
+    <queueMembers>
+        <users>
+            <user>bob.brown@ihsmarkit.com</user>
+            <user>brian.clingan@ihsmarkit.com</user>
+            <user>casey.kerr@ihsmarkit.com</user>
+            <user>chelley.james@ihsmarkit.com</user>
+            <user>craig.lochhead@ihsmarkit.com</user>
+            <user>curt.jones@ihsmarkit.com</user>
+            <user>dan.pettit@ihsmarkit.com</user>
+            <user>daniel.bettinger@ihsmarkit.com</user>
+            <user>daniel.louser@ihsmarkit.com</user>
+            <user>dayleen.thompson@ihsmarkit.com</user>
+            <user>diane.ruggiero@ihsmarkit.com</user>
+            <user>jeff.sprowl@ihsmarkit.com</user>
+            <user>justin.delp@ihsmarkit.com</user>
+            <user>justin.rutherford@ihsmarkit.com</user>
+            <user>keith.ina@ihsmarkit.com</user>
+            <user>kelli.delp@ihsmarkit.com</user>
+            <user>kirk.shore@ihsmarkit.com</user>
+            <user>michael.blackstone@ihsmarkit.com</user>
+            <user>randall.bennett@ihsmarkit.com</user>
+            <user>salida.baharum@ihsmarkit.com</user>
+            <user>shakir.salmi@ihsmarkit.com</user>
+            <user>stacy.hendrickson@ihsmarkit.com</user>
+            <user>tim.dulik@ihsmarkit.com</user>
+            <user>zonia.nichols@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

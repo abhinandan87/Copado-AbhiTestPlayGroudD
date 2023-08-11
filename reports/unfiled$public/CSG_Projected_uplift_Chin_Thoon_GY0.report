@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ProjectedUplift__c.Uplift__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Family__c.FamilyNumber__c</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>FK_$Family__c.ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>FK_$Family__c.FamilyNumber__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1000000030,1000000279,1000000885,1000000887,1000000900,1000000902,1000000903,1000001274,1000001555,1000001831,1000002336,1000002338,1000002369,1000002380,1000002381,1000002382,1000002385,1000002392,1000002393,1000002411,1000002647,1000003299</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CSG Projected uplift - Chin Thoon</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ProjectedUplift__c@ProjectedUplift__c.Family__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ProjectedUplift__c.EndDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>AUTOS | Development Team–Customer Pay EU</name>
+    <queueMembers>
+        <users>
+            <user>alan.creek@ihsmarkit.com</user>
+            <user>anuradha.deshwal@ihsmarkit.com</user>
+            <user>caroline.hu@ihsmarkit.com</user>
+            <user>david.griffiths@ihsmarkit.com</user>
+            <user>gil.sassoon@ihsmarkit.com</user>
+            <user>jason.corn@ihsmarkit.com</user>
+            <user>jimmy.hearn@ihsmarkit.com</user>
+            <user>leah.dunn@ihsmarkit.com</user>
+            <user>leonce.doussaud@ihsmarkit.com</user>
+            <user>martin.woods@ihsmarkit.com</user>
+            <user>patrick.weiss@ihsmarkit.com</user>
+            <user>prasanthi.kandukuru@ihsmarkit.com</user>
+            <user>sandra.donaldson@ihsmarkit.com</user>
+            <user>sonja.kecman@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

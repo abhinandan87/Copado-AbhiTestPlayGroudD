@@ -1,0 +1,23 @@
+Hello,
+<br/><br/>
+
+{!Lead.Name} has been assigned to queue {!Lead.OwnerFullName}. <br/><br/>
+
+Please visit the link for more details: 
+<a href={!Lead.Link}> Lead Link </a>
+<br/><br/>
+
+<b>First Name:</b> {!Lead.FirstName}<br/>
+<b>Last Name:</b> {!Lead.LastName}<br/>
+<b>Email:</b> {!Lead.Email}<br/>
+<b>Company:</b> {!Lead.Company}<br/>
+<b>Product Interest:</b> {!Lead.ProductInterest__c} <br/>
+<b>SPG Referral Product Interest:</b> {!Lead.SPG_Referral_Product_Interest__c}<br/>
+<b>Lead Source:</b> {!Lead.LeadSource}<br/>
+<b>Country:</b> {!Lead.Country__c}<br/>
+<b>Region:</b> {!Lead.CalculatedRegion__c}<br/><br/>
+
+*Do not reply to this automated email*
+<br/><br/>
+Kind regards,<br/>
+IHSMarkit Salesforce

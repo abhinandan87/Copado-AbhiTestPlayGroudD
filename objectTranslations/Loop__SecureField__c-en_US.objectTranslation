@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- If this option is checked, data entered in this field during the signing process will not be visible to any of the signers or the sender. --></help>
+        <label><!-- Conceal --></label>
+        <name>Loop__Conceal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Font --></label>
+        <name>Loop__Font__c</name>
+        <picklistValues>
+            <masterLabel>Arial</masterLabel>
+            <translation><!-- Arial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arial Narrow</masterLabel>
+            <translation><!-- Arial Narrow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calibri</masterLabel>
+            <translation><!-- Calibri --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courier New</masterLabel>
+            <translation><!-- Courier New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Garamond</masterLabel>
+            <translation><!-- Garamond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Georgia</masterLabel>
+            <translation><!-- Georgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation><!-- Helvetica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lucida Console</masterLabel>
+            <translation><!-- Lucida Console --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tahoma</masterLabel>
+            <translation><!-- Tahoma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times New Roman</masterLabel>
+            <translation><!-- Times New Roman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trebuchet</masterLabel>
+            <translation><!-- Trebuchet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verdana</masterLabel>
+            <translation><!-- Verdana --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group Name --></label>
+        <name>Loop__GroupName__c</name>
+    </fields>
+    <fields>
+        <help><!-- in pixels --></help>
+        <label><!-- Height --></label>
+        <name>Loop__Height__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a semicolon delimited list of pick list items. --></help>
+        <label><!-- List Items --></label>
+        <name>Loop__ListItems__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locked --></label>
+        <name>Loop__Locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient --></label>
+        <name>Loop__Recipient__c</name>
+        <relationshipLabel><!-- Secure Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>Loop__Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected --></label>
+        <name>Loop__Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tool Tip --></label>
+        <name>Loop__ToolTip__c</name>
+    </fields>
+    <fields>
+        <help><!-- This applies a standard validation pattern to the secure field. --></help>
+        <label><!-- Type --></label>
+        <name>Loop__Type__c</name>
+        <picklistValues>
+            <masterLabel>Approve Button</masterLabel>
+            <translation><!-- Approve Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decline Button</masterLabel>
+            <translation><!-- Decline Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number</masterLabel>
+            <translation><!-- Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plain Text</masterLabel>
+            <translation><!-- Plain Text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSN</masterLabel>
+            <translation><!-- SSN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signer Attachment</masterLabel>
+            <translation><!-- Signer Attachment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zip</masterLabel>
+            <translation><!-- Zip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zip-4</masterLabel>
+            <translation><!-- Zip-4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Update Field --></label>
+        <name>Loop__Update_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- This error message will be displayed if the input does not match the validation pattern. --></help>
+        <label><!-- Validation Message --></label>
+        <name>Loop__ValidationMessage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Insert a Regular Expression (RegEx) pattern to validate the input. Learn more about Regular Expressions at www.regexlib.com. --></help>
+        <label><!-- Validation Pattern --></label>
+        <name>Loop__ValidationPattern__c</name>
+    </fields>
+    <fields>
+        <help><!-- This can be made dynamic by using tags from the Field Tagger. --></help>
+        <label><!-- Default Value --></label>
+        <name>Loop__Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- in pixels --></help>
+        <label><!-- Width --></label>
+        <name>Loop__Width__c</name>
+    </fields>
+    <fields>
+        <help><!-- Positive X Offset values move the tab right on the page. --></help>
+        <label><!-- X Offset --></label>
+        <name>Loop__X_Offset__c</name>
+    </fields>
+    <fields>
+        <help><!-- Positive Y Offset values move the tab down on the page. --></help>
+        <label><!-- Y Offset --></label>
+        <name>Loop__Y_Offset__c</name>
+    </fields>
+    <fields>
+        <help><!-- The value of the parent field will determine whether this field appears while the recipient is signing. --></help>
+        <label><!-- Parent Field --></label>
+        <name>Loop__dsParentField__c</name>
+        <relationshipLabel><!-- Conditional Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If the parent field equals this value, this secure field will be visible while the recipient is signing. --></help>
+        <label><!-- Parent Value --></label>
+        <name>Loop__dsParentValue__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Checkbox field --></description>
+        <label><!-- Checkbox --></label>
+        <name>Loop__Checkbox</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A list or drop down with two or more possible options --></description>
+        <label><!-- List --></label>
+        <name>Loop__List</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Other types such as Signer Attachment, Approve Button, and Decline Button --></description>
+        <label><!-- Other --></label>
+        <name>Loop__Other</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Radio field --></description>
+        <label><!-- Radio --></label>
+        <name>Loop__Radio</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Text field (e.g. plain text, email, date, number, ssn, zip, and zip-4) --></description>
+        <label><!-- Text --></label>
+        <name>Loop__Text</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Text Area field --></description>
+        <label><!-- Text Area --></label>
+        <name>Loop__Text_Area</name>
+    </recordTypes>
+</CustomObjectTranslation>

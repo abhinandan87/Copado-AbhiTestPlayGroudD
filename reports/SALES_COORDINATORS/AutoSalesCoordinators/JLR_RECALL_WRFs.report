@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.OpportunityNumber__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.JobTypeRecall__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.InputRecordCount__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.ApprovalDate__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.RequestedDueDate__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>WorkRequestForm__c.AccountName__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>JAGUAR LAND ROVER NORTH AMERICA,LLC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.AccountName__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>General Motors Holdings LLC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PrimarySalesContact__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>zac caito,helen clayman,jim walker,tim conway,karl miller,brian galindo,janet bernard,Toni-Anne Ricketts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>JLR_RCL,US_LR</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>WorkRequestForm__c.AccountName__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>JLR RECALL WRFs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$WorkRequestForm__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>WorkRequestForm__c.ApprovalDate__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>WorkRequestForm__c.ApprovalDate__c</dateColumn>
+        <interval>INTERVAL_PREVCURY</interval>
+    </timeFrameFilter>
+</Report>

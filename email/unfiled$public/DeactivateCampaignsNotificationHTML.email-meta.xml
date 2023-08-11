@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC1-6635;Deactivate Campaigns 60 Days After the End Date and Notify Campaign Owner || SFDC-947;Update action to 180days</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Deactivate Campaigns Notification</name>
+    <style>none</style>
+    <subject>Campaign Deactivation Notification</subject>
+    <textOnly>Hello
+
+Your Campaign {!Campaign.Name} - {!Campaign.CampaignNumber__c} is set to end on {!Campaign.EndDate}. Unless you change the End Date, it will be deactivated 180 days after the End Date.
+
+Thank you,
+
+Salesforce Administrator</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -128,11 +128,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>FieldServiceActivityRecordPageV3</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -140,81 +143,595 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
+    <compactLayoutAssignment>FieldServiceActivityCompactLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>FieldServiceActivityCompactLayout</fullName>
+        <fields>Status</fields>
+        <label>Field Service Activity Compact Layout</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>ActivityName__c</fullName>
+        <description>SFDC1-166. 
+Activity name tied to the Field Service Activity.</description>
+        <externalId>false</externalId>
+        <label>Activity Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ActivityRequestOrigin__c</fullName>
+        <description>SFDC1-166.
+The origin of this specific Field Service Activity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Who requested this</inlineHelpText>
+        <label>Activity Request Origin</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Customer Care</fullName>
+                    <default>false</default>
+                    <label>Customer Care</label>
+                </value>
+                <value>
+                    <fullName>Customer On Site</fullName>
+                    <default>false</default>
+                    <label>Customer On Site</label>
+                </value>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>Other Referral</fullName>
+                    <default>false</default>
+                    <label>Other Referral</label>
+                </value>
+                <value>
+                    <fullName>Proactive</fullName>
+                    <default>false</default>
+                    <label>Proactive</label>
+                </value>
+                <value>
+                    <fullName>Public Training</fullName>
+                    <default>false</default>
+                    <label>Public Training</label>
+                </value>
+                <value>
+                    <fullName>Referral</fullName>
+                    <default>false</default>
+                    <label>Referral</label>
+                </value>
+                <value>
+                    <fullName>Registration</fullName>
+                    <default>false</default>
+                    <label>Registration</label>
+                </value>
+                <value>
+                    <fullName>Sales Referral</fullName>
+                    <default>false</default>
+                    <label>Sales Referral</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ActivityType__c</fullName>
+        <description>SFDC1-166 : Activity type tied to the Field Service Activity.
+SFDC1-6018 : Changed from &quot;Acitivity Type&quot; TO &quot;Activity Type&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Event</inlineHelpText>
+        <label>Activity Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Access/Usage</fullName>
+                    <default>false</default>
+                    <label>Access/Usage</label>
+                </value>
+                <value>
+                    <fullName>Admin</fullName>
+                    <default>false</default>
+                    <label>Admin</label>
+                </value>
+                <value>
+                    <fullName>Analysis and Technical Issues</fullName>
+                    <default>false</default>
+                    <label>Analysis and Technical Issues</label>
+                </value>
+                <value>
+                    <fullName>Colleague Training</fullName>
+                    <default>false</default>
+                    <label>Colleague Training</label>
+                </value>
+                <value>
+                    <fullName>Custom Webpage Development</fullName>
+                    <default>false</default>
+                    <label>Custom Webpage Development</label>
+                </value>
+                <value>
+                    <fullName>Customer Consulting</fullName>
+                    <default>false</default>
+                    <label>Customer Consulting</label>
+                </value>
+                <value>
+                    <fullName>Customer Training</fullName>
+                    <default>false</default>
+                    <label>Customer Training</label>
+                </value>
+                <value>
+                    <fullName>Deployment</fullName>
+                    <default>false</default>
+                    <label>Deployment</label>
+                </value>
+                <value>
+                    <fullName>Documentation</fullName>
+                    <default>false</default>
+                    <label>Documentation</label>
+                </value>
+                <value>
+                    <fullName>E learning Creation</fullName>
+                    <default>false</default>
+                    <label>E learning Creation</label>
+                </value>
+                <value>
+                    <fullName>Escalation</fullName>
+                    <default>false</default>
+                    <label>Escalation</label>
+                </value>
+                <value>
+                    <fullName>Preparation</fullName>
+                    <default>false</default>
+                    <label>Preparation</label>
+                </value>
+                <value>
+                    <fullName>Proactive</fullName>
+                    <default>false</default>
+                    <label>Proactive</label>
+                </value>
+                <value>
+                    <fullName>Research Focus Interaction</fullName>
+                    <default>false</default>
+                    <label>Research Focus Interaction</label>
+                </value>
+                <value>
+                    <fullName>Sales Demos</fullName>
+                    <default>false</default>
+                    <label>Sales Demos</label>
+                </value>
+                <value>
+                    <fullName>Sales/Marketing Events</fullName>
+                    <default>false</default>
+                    <label>Sales/Marketing Events</label>
+                </value>
+                <value>
+                    <fullName>Support Requirement Meeting</fullName>
+                    <default>false</default>
+                    <label>Support Requirement Meeting</label>
+                </value>
+                <value>
+                    <fullName>Travel</fullName>
+                    <default>false</default>
+                    <label>Travel</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Address</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>CaseId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DeliveryLanguage__c</fullName>
+        <description>SFDC1-166.
+Delivery Language associated with the Field Service Activity.</description>
+        <externalId>false</externalId>
+        <label>Delivery Language</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>English</fullName>
+                    <default>true</default>
+                    <label>English</label>
+                </value>
+                <value>
+                    <fullName>Arabic</fullName>
+                    <default>false</default>
+                    <label>Arabic</label>
+                </value>
+                <value>
+                    <fullName>Chinese</fullName>
+                    <default>false</default>
+                    <label>Chinese</label>
+                </value>
+                <value>
+                    <fullName>Danish</fullName>
+                    <default>false</default>
+                    <label>Danish</label>
+                </value>
+                <value>
+                    <fullName>Dutch</fullName>
+                    <default>false</default>
+                    <label>Dutch</label>
+                </value>
+                <value>
+                    <fullName>Finnish</fullName>
+                    <default>false</default>
+                    <label>Finnish</label>
+                </value>
+                <value>
+                    <fullName>French</fullName>
+                    <default>false</default>
+                    <label>French</label>
+                </value>
+                <value>
+                    <fullName>German</fullName>
+                    <default>false</default>
+                    <label>German</label>
+                </value>
+                <value>
+                    <fullName>Italian</fullName>
+                    <default>false</default>
+                    <label>Italian</label>
+                </value>
+                <value>
+                    <fullName>Japanese</fullName>
+                    <default>false</default>
+                    <label>Japanese</label>
+                </value>
+                <value>
+                    <fullName>Korean</fullName>
+                    <default>false</default>
+                    <label>Korean</label>
+                </value>
+                <value>
+                    <fullName>Portuguese</fullName>
+                    <default>false</default>
+                    <label>Portuguese</label>
+                </value>
+                <value>
+                    <fullName>Russian</fullName>
+                    <default>false</default>
+                    <label>Russian</label>
+                </value>
+                <value>
+                    <fullName>Spanish</fullName>
+                    <default>false</default>
+                    <label>Spanish</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DeliveryMethod__c</fullName>
+        <description>SFDC1-1052. 
+Delivery Method tied to the Field Service Activity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the Medium</inlineHelpText>
+        <label>Delivery Method</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>On site (Customer&apos;s office)</fullName>
+                    <default>false</default>
+                    <label>On site (Customer&apos;s office)</label>
+                </value>
+                <value>
+                    <fullName>IHS Markit&apos;s office</fullName>
+                    <default>false</default>
+                    <label>IHS Markit&apos;s office</label>
+                </value>
+                <value>
+                    <fullName>Web based</fullName>
+                    <default>false</default>
+                    <label>Web based</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Public location</fullName>
+                    <default>false</default>
+                    <label>Public location</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>On site</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>On site</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Discount</fullName>
     </fields>
     <fields>
+        <fullName>DoNotSendSurvey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If this box is checked, no communication emails will be sent to any of the attendees, asking them to complete the Training Survey.</inlineHelpText>
+        <label>Do Not Send Survey</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DoNotSurveyReason__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the reason why we are not asking these attendees to complete the Training Survey using the automatic process.</inlineHelpText>
+        <label>Do Not Survey Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>Duration</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>DurationType</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>EndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>EntitlementId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ExpenseBillable__c</fullName>
+        <description>SFDC1-166.
+The expense amount that is billable.
+SFDC1-5579
+Changing the Expense billable field and API name</description>
+        <externalId>false</externalId>
+        <label>Expense Billable</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ExpenseNonBillable__c</fullName>
+        <description>SFDC1-166.
+The expense amount that is not billable.</description>
+        <externalId>false</externalId>
+        <label>Expense Non-Billable</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>GrandTotal</fullName>
     </fields>
     <fields>
+        <fullName>HoursDelivered__c</fullName>
+        <description>SFDC1-675. 
+Minor request made to record hours delivered for the FSA.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How long was session.
+Note: Half and quarter hour increments. Ex:
+1.25 for one and a quarter hour, 
+2.50 for 2 and a half hours</inlineHelpText>
+        <label>Hours Delivered</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HoursofPrep__c</fullName>
+        <description>SFDC1-166.
+Hours of prep required for this Field Service Activity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hours of Preparation. 
+Note: Half and quarter hour increments. Ex:
+1.25 for one and a quarter hour, 
+2.50 for 2 and a half hours</inlineHelpText>
+        <label>Hours of Prep</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>IsClosed</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>IsStopped</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>LegacyIDUnique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>SFDC1-7046: Legacy ID Unique field is a concatenation of the source system name and a source system record id to ensure record is uniquely identified.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Concatenation of the source system name and a source system record id to ensure the record is uniquely identified.</inlineHelpText>
+        <label>LegacyIDUnique</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <description>SFDC1-7046: Legacy ID field is the system id (unfriendly) referencing the source record.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>System ID referencing the source record Populated at Migration</inlineHelpText>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyReference__c</fullName>
+        <description>SFDC-2018. Contains the legacy reference field that wasn&apos;t initially made for this object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a friendly system reference to the source record.</inlineHelpText>
+        <label>LegacyReference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacySystem__c</fullName>
+        <description>SFDC1-7046: Legacy System field is a picklist that represents the original system the record came from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the Legacy CRM system the source record came from</inlineHelpText>
+        <label>LegacySystem</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LegacySystem</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>LineItemCount</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>LocationId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <description>SFDC1-166.
+Location that is tied to the Field Service Activity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Where will it happen</inlineHelpText>
+        <label>Location</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>MilestoneStatus</fullName>
@@ -223,27 +740,157 @@
         <fullName>MilestoneStatusIcon</fullName>
     </fields>
     <fields>
-        <fullName>OwnerId</fullName>
+        <fullName>NumberOfAttendees__c</fullName>
+        <description>SFDC1-169.
+Roll-up required to validate there is always an attendee tied to the Field Service Activity.</description>
+        <externalId>false</externalId>
+        <label>Number of Attendees</label>
+        <summaryForeignKey>FieldServiceActivityAttendee__c.FieldServiceActivity__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>NumberOfProducts__c</fullName>
+        <description>SFDC1-169.
+Roll-up required to make sure there is always a product tied to the Field Service Activity.</description>
+        <externalId>false</externalId>
+        <label>Number of Products</label>
+        <summaryForeignKey>FieldServiceActivityProduct__c.FieldServiceActivity__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC1-166.
+Associated opportunity for this Field Service Activity.</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Work Orders</relationshipLabel>
+        <relationshipName>Work_Orders</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PKIDFSA__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>FSA{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID FSA</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
         <fullName>ParentWorkOrderId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Pricebook2Id</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PrimaryInstructorName__c</fullName>
+        <externalId>false</externalId>
+        <formula>PrimaryInstructor__r.FirstName  + &apos; &apos; + PrimaryInstructor__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Instructor Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimaryInstructor__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>SFDC1-166.
+Primary instructor tied to the Field Service Activity.</description>
+        <externalId>false</externalId>
+        <label>Primary Instructor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Work Orders</relationshipLabel>
+        <relationshipName>WorkOrders</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PrimaryOpportunityName__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-5786 Add Primary Opportunity Name to FSA Records</description>
+        <externalId>false</externalId>
+        <inlineHelpText>It reflects the highest value opportunity (using first year value converted) from the list of opportunities added in the related section under field service activity opportunities</inlineHelpText>
+        <label>Primary Opportunity Name</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Field Service Activities (Primary Opportunity Name)</relationshipLabel>
+        <relationshipName>FieldServiceActivities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Priority</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>ProductGroups__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Groups</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Revenue__c</fullName>
+        <description>SFDC1-166.
+Revenue amount generated through this Field Service Activity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Income from Activity</inlineHelpText>
+        <label>Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>RootWorkOrderId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SecondaryInstructor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC1-166.
+Secondary instructor tied to the Field Service Activity.</description>
+        <externalId>false</externalId>
+        <label>Secondary Instructor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Work Orders (Secondary Instructor)</relationshipLabel>
+        <relationshipName>WorkOrders2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -252,77 +899,506 @@
     </fields>
     <fields>
         <fullName>ServiceContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>SlaExitDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>SlaStartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>StartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
     <fields>
         <fullName>StatusCategory</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>StopStartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Subtotal</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Tax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>TotalPrice</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
+    <fields>
+        <fullName>TotalSeats__c</fullName>
+        <description>SFDC1-166.
+Total Seats assigned to the Field Service Activity.</description>
+        <externalId>false</externalId>
+        <label>Total Seats</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllFieldServiceActivities</fullName>
+        <columns>Name</columns>
+        <columns>ActivityName__c</columns>
+        <columns>ActivityType__c</columns>
+        <columns>Status</columns>
+        <columns>PrimaryInstructor__c</columns>
+        <columns>StartDate</columns>
+        <columns>EndDate</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Field Service Activities</label>
+    </listViews>
     <listViews>
         <fullName>All_WorkOrders</fullName>
         <filterScope>Everything</filterScope>
         <label>All Work Orders</label>
     </listViews>
     <listViews>
-        <fullName>My_WorkOrders</fullName>
-        <filterScope>Mine</filterScope>
-        <label>My Work Orders</label>
+        <fullName>EPDTrainingRequests_WorkOrder</fullName>
+        <columns>Name</columns>
+        <columns>StartDate</columns>
+        <columns>EndDate</columns>
+        <columns>Subject</columns>
+        <columns>Account</columns>
+        <columns>Priority</columns>
+        <columns>Status</columns>
+        <columns>Owner</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Confirmed,Delivered,Cancelled,Canceled</value>
+        </filters>
+        <filters>
+            <field>PrimaryInstructor__c</field>
+            <operation>equals</operation>
+            <value>E&amp;PD Default Trainer</value>
+        </filters>
+        <label>E&amp;PD | Training Requests</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>My_WorkOrders</fullName>
+        <columns>Name</columns>
+        <columns>ActivityName__c</columns>
+        <columns>ActivityType__c</columns>
+        <columns>Status</columns>
+        <columns>StartDate</columns>
+        <columns>EndDate</columns>
+        <columns>Account</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Owner</field>
+            <operation>contains</operation>
+            <value>Nadezhda</value>
+        </filters>
+        <label>My Field Service Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>Start_Date</fullName>
+        <columns>StartDate</columns>
+        <columns>EndDate</columns>
+        <columns>Status</columns>
+        <columns>Revenue__c</columns>
+        <columns>PrimaryInstructor__c</columns>
+        <columns>Name</columns>
+        <filterScope>Everything</filterScope>
+        <label>FSA Showing Start Date</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>WorkOrderStandard</fullName>
+        <active>true</active>
+        <description>SFDC1-931</description>
+        <label>Work Order Standard</label>
+        <picklistValues>
+            <picklist>ActivityRequestOrigin__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer On Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ActivityType__c</picklist>
+            <values>
+                <fullName>Access%2FUsage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Admin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Analysis and Technical Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colleague Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom Webpage Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deployment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E learning Creation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preparation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research Focus Interaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Demos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales%2FMarketing Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Requirement Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travel</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>DeliveryLanguage__c</picklist>
+            <values>
+                <fullName>Arabic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chinese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Danish</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dutch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Finnish</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>French</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>German</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Japanese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korean</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portuguese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Russian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>DeliveryMethod__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHS Markit%27s office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On site %28Customer%27s office%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public location</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web based</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LegacySystem__c</picklist>
+            <values>
+                <fullName>Agri_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDNEnergy_Ctele</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cappitech_Hubspot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fekete_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goldfire_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHS_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IPREO_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOC_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kingdom_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEA_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Markit_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCM_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polk_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMT_MSCRM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Critical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirmed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delivered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposed</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts>
-        <customTabListAdditionalFields>Subject</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Account</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Priority</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ActivityName__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ActivityType__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Status</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>Subject</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Account</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Priority</lookupDialogsAdditionalFields>
+        <customTabListAdditionalFields>PrimaryInstructor__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ActivityName__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ActivityType__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Status</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Subject</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Account</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Priority</lookupPhoneDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PrimaryInstructor__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ActivityName__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ActivityType__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Status</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>Subject</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Account</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Priority</searchResultsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PrimaryInstructor__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ActivityName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ActivityType__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Status</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PrimaryInstructor__c</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>DoNotSurveyReasonRequired</fullName>
+        <active>true</active>
+        <description>When the Do not Survey checkbox is checked, the Do Not Survey Reason field is required.</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.WorkOrder__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND (ISBLANK( DoNotSurveyReason__c ),
+DoNotSendSurvey__c = True)
+&amp;&amp;(NOT($Permission.IgnoreCaseValidationRules ))
+)</errorConditionFormula>
+        <errorDisplayField>DoNotSurveyReason__c</errorDisplayField>
+        <errorMessage>Please populate a reason when Do Not Survey is checked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OneProductAndOneAttendeeIsRequired</fullName>
+        <active>true</active>
+        <description>SFDC1-1052.
+A work order cannot be completed until an attendee AND a product is added.
+SFDC1-1827: Changing error message</description>
+        <errorConditionFormula>IF(OR($Setup.SystemMutedValidationRules__c.All__c, $Setup.SystemMutedValidationRules__c.WorkOrder__c), False,AND(
+	ISPICKVAL(Status, &quot;Delivered&quot;),
+	OR(
+	NumberOfAttendees__c &lt; 1 ,
+	NumberOfProducts__c &lt; 1	)
+	))</errorConditionFormula>
+        <errorMessage>A Field Service Activity cannot be completed without a related Attendee record and a Product record.</errorMessage>
+    </validationRules>
 </CustomObject>

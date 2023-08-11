@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Background Color --></label>
+        <name>Loop__Background_Color__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of pixels of padding to add of the Background Color behind the text. --></help>
+        <label><!-- Background Padding --></label>
+        <name>Loop__Background_Padding__c</name>
+    </fields>
+    <fields>
+        <help><!-- Merged - stamp entire merged PDF as a whole. All - stamp all PDFs individually. Select individual files to stamp them separately. --></help>
+        <label><!-- DocGen Package Templates --></label>
+        <name>Loop__DDP_Files__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocGen Package --></label>
+        <name>Loop__DDP__c</name>
+        <relationshipLabel><!-- PDF Stamps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delivery Methods --></label>
+        <name>Loop__Delivery_Methods__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Loop__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Font Size --></label>
+        <name>Loop__FontSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Font --></label>
+        <name>Loop__Font__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation><!-- Courier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courier Bold</masterLabel>
+            <translation><!-- Courier Bold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courier Bold Oblique</masterLabel>
+            <translation><!-- Courier Bold Oblique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courier Oblique</masterLabel>
+            <translation><!-- Courier Oblique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica</masterLabel>
+            <translation><!-- Helvetica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica Bold</masterLabel>
+            <translation><!-- Helvetica Bold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica Bold Oblique</masterLabel>
+            <translation><!-- Helvetica Bold Oblique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Helvetica Oblique</masterLabel>
+            <translation><!-- Helvetica Oblique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symbol</masterLabel>
+            <translation><!-- Symbol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times</masterLabel>
+            <translation><!-- Times --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times Bold</masterLabel>
+            <translation><!-- Times Bold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times Bold Italic</masterLabel>
+            <translation><!-- Times Bold Italic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times Italic</masterLabel>
+            <translation><!-- Times Italic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times Roman</masterLabel>
+            <translation><!-- Times Roman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zapf Dingbats</masterLabel>
+            <translation><!-- Zapf Dingbats --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Horizontal Alignment --></label>
+        <name>Loop__HAlign__c</name>
+        <picklistValues>
+            <masterLabel>Center</masterLabel>
+            <translation><!-- Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left</masterLabel>
+            <translation><!-- Left --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right</masterLabel>
+            <translation><!-- Right --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Height --></label>
+        <name>Loop__Height__c</name>
+    </fields>
+    <fields>
+        <help><!-- Percentage of opacity (default is 100% opaque) --></help>
+        <label><!-- Opacity --></label>
+        <name>Loop__Opacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Loop__Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the pages to be stamped. Use a dash to indicate a range, use commas to separate pages or ranges, or enter Odd or Even (e.g. 1-5,8,10-12). A blank value will stamp all pages. --></help>
+        <label><!-- Pages --></label>
+        <name>Loop__Pages__c</name>
+    </fields>
+    <fields>
+        <help><!-- The 6 character RGB code for the text color of the stamp. (Default: black) --></help>
+        <label><!-- Text Color --></label>
+        <name>Loop__RGB_Color__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number in degrees (0 to 360) --></help>
+        <label><!-- Rotation --></label>
+        <name>Loop__Rotation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scale By --></label>
+        <name>Loop__Scale_By__c</name>
+        <picklistValues>
+            <masterLabel>Percent</masterLabel>
+            <translation><!-- Percent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pixel</masterLabel>
+            <translation><!-- Pixel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Text to stamp onto the PDF. Use [[page]] for the current page number; use [[total pages]] for the total number of pages; [[bookmark]], [[sectionName]], [[filename]]. Use the field tagger to include other dynamic tags. (e.g. [[page]] of [[total pages]]) --></help>
+        <label><!-- Stamp Text --></label>
+        <name>Loop__Stamp_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Style --></label>
+        <name>Loop__Style__c</name>
+        <picklistValues>
+            <masterLabel>Bold</masterLabel>
+            <translation><!-- Bold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italic</masterLabel>
+            <translation><!-- Italic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underline</masterLabel>
+            <translation><!-- Underline --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Loop__Type__c</name>
+        <picklistValues>
+            <masterLabel>Image</masterLabel>
+            <translation><!-- Image --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rectangle</masterLabel>
+            <translation><!-- Rectangle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vertical Alignment --></label>
+        <name>Loop__VAlign__c</name>
+        <picklistValues>
+            <masterLabel>Bottom</masterLabel>
+            <translation><!-- Bottom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle</masterLabel>
+            <translation><!-- Middle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top</masterLabel>
+            <translation><!-- Top --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Width --></label>
+        <name>Loop__Width__c</name>
+    </fields>
+    <fields>
+        <help><!-- Offset from horizontal alignment in pixels. Positive numbers move the stamp right and negative numbers move the stamp left. --></help>
+        <label><!-- Horizontal Offset --></label>
+        <name>Loop__XOffset__c</name>
+    </fields>
+    <fields>
+        <help><!-- Offset from vertical alignment in pixels. Positive numbers move the stamp up and negative numbers move the stamp down. --></help>
+        <label><!-- Vertical Offset --></label>
+        <name>Loop__YOffset__c</name>
+    </fields>
+</CustomObjectTranslation>

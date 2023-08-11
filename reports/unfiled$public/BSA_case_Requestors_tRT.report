@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USER_ID</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <columns>
+        <field>ROLE</field>
+    </columns>
+    <columns>
+        <field>USERNAME</field>
+    </columns>
+    <columns>
+        <field>ALIAS</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <field>LAST_LOGIN</field>
+    </columns>
+    <columns>
+        <field>User.HRBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>DIVISION</field>
+    </columns>
+    <columns>
+        <field>DEPARTMENT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>George Barker,Beverly Craggs,Whitney Jarrell,Christine Gangl,Naman Gupta,Iris Karabatos,David Choules,Yieng San Kho,Robert Petrik,Viktoria Malysheva,Josue Mendez,Roberta Brindley,Vitali Kaliabianau,Evlynn VanWulfen,Divyank Kohli,Shameem Akhtar Farooqui,Gargi Nagar,Lucian Dietsche,David Linton,Marion Wenk,Brooke Townsend,Andrew Jones,Kawaljit Shokar,Yolanda Schmidt,Janos Zsiros,Neha Kakroo,Candice Bergeron,Ching Khooi Ng,Dorota Kruczkowska,Theresa DesRochers,Jorine Yeoh,Mohd Zeeshan,Penny Carroll,Linda Kinney,Ryan Bransfield,Kolli Rohit Reddy,Arveent Kathirtchelvan,Jonathan Tsang,Achaiah CS,Idunn Rhoades,Paul Fuda,Christa Huber,VIKRAM P G,Charlotte Buckley,Vitali Burko,Yuliana Yuliana,Nayiri Boyadjian,Ana Campos,Stephen Beevor,Ya Min Nyi Nyi,Sarah Clarkin,Rohan Singh,Michelle Loader,Ankur Salotra,Anitha Charoth,Asheesh Singh,Praveen Kumar,Wendy Vise-Wiley,Nicole Pierson,Michelle Eissele</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Nicholas Tan Chi-Ming,Mohit Handa,Dorota Kruczkowska,Stephen Beevor,Ck Ng</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>BSA Case Requestors</name>
+    <params>
+        <name>active</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>LAST_LOGIN</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

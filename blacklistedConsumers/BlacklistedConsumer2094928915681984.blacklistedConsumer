@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>true</blockedByApiWhitelisting>
+    <consumerKey>3MVG9ZF4bs_.MKujpKct2zVtFKEp0m17W1lvwV2CFaWyp1WBh0N2ESk5H2AIU7lyaPdCL.c81OgnrjLj_0h1q</consumerKey>
+    <consumerName>Tableau Online</consumerName>
+    <masterLabel>BlacklistedConsumer2094928915673664</masterLabel>
+</BlacklistedConsumer>

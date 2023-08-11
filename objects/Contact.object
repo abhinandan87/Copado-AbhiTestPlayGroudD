@@ -326,6 +326,17 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>ContactCompactLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ContactCompactLayout</fullName>
+        <fields>Name</fields>
+        <fields>AccountId</fields>
+        <fields>Title</fields>
+        <fields>MailingAddress</fields>
+        <fields>Phone</fields>
+        <fields>Email</fields>
+        <fields>Status__c</fields>
+        <label>Contact Compact Layout</label>
+    </compactLayouts>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
@@ -4215,16 +4226,44 @@ Field required to new CCPA (California Customer Privacy Act) requirements.</desc
         <unique>false</unique>
     </fields>
     <listViews>
+        <fullName>AllActiveContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <label>All Active Contacts</label>
+    </listViews>
+    <listViews>
         <fullName>AllContacts</fullName>
         <columns>FULL_NAME</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>CONTACT.TITLE</columns>
-        <columns>CONTACT.PHONE1</columns>
         <columns>CONTACT.EMAIL</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>CONTACT.ALLOW_PORTAL_SELF_REG</columns>
+        <columns>CONTACT.PHONE1</columns>
         <filterScope>Everything</filterScope>
         <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>AllInactiveContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Inactive</value>
+        </filters>
+        <label>All Inactive Contacts</label>
     </listViews>
     <listViews>
         <fullName>BirthdaysThisMonth</fullName>
@@ -4244,6 +4283,16 @@ Field required to new CCPA (California Customer Privacy Act) requirements.</desc
         <label>Birthdays This Month</label>
     </listViews>
     <listViews>
+        <fullName>MyContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews>
+    <listViews>
         <fullName>NewThisWeek</fullName>
         <columns>FULL_NAME</columns>
         <columns>ACCOUNT.NAME</columns>
@@ -4258,6 +4307,22 @@ Field required to new CCPA (California Customer Privacy Act) requirements.</desc
             <value>THIS_WEEK</value>
         </filters>
         <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>whitney_test_contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>equals</operation>
+            <value>Matt Weiler</value>
+        </filters>
+        <label>whitney test contacts</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
@@ -4284,6 +4349,135 @@ Field required to new CCPA (California Customer Privacy Act) requirements.</desc
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>BlockProhibitedCountry</fullName>
+        <active>true</active>
+        <description>SFDC1-384 Do not allow a Contact record to be created if the Contact&apos;s country is a Prohibited Country</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Contact__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+NOT($Permission.IgnoreCaseValidationRules)
+&amp;&amp; VLOOKUP( $ObjectType.Country__c.Fields.IsProhibited__c ,  $ObjectType.Country__c.Fields.Name, MailingCountry)
+)</errorConditionFormula>
+        <errorDisplayField>MailingCountry</errorDisplayField>
+        <errorMessage>Due to U.S. export controls and sanctions restrictions, Contact records cannot be created for the selected country.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ContactAddressInfoRequiredForNewAccount</fullName>
+        <active>true</active>
+        <description>SFDC1-10142 If the parent Account Type is &apos;Place Holder - Unknown Account&apos;, Contact&apos;s Mailing Address is required.</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Contact__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(NOT($Permission.IgnoreCaseValidationRules),ISPICKVAL(Account.Type, &apos;Place Holder - Unknown Account&apos;),
+OR(ISBLANK(MailingStreet), ISBLANK(MailingCity), ISBLANK(MailingCountry))
+)
+)</errorConditionFormula>
+        <errorDisplayField>MailingCountry</errorDisplayField>
+        <errorMessage>Please provide Mailing Address (Country, Street, City, and State/Province if required) when creating contact under Pending New Account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ContactInactiveReason_Validation</fullName>
+        <active>true</active>
+        <description>Required when status changed to inactive</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Contact__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+NOT($Permission.IgnoreCaseValidationRules)
+&amp;&amp; ISPICKVAL(Status__c, &quot;Inactive&quot;)
+&amp;&amp;  ISBLANK(TEXT(InactiveReason__c))
+)</errorConditionFormula>
+        <errorMessage>Please select an inactive reason to change the contact&apos;s status to &quot;Inactive&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EmailRequired</fullName>
+        <active>true</active>
+        <description>When [Email Unknown] is not checked, Email Address is required.</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Contact__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+NOT($Permission.IgnoreCaseValidationRules)
+&amp;&amp; EmailUnknown__c  = false
+&amp;&amp;   Email = null
+)</errorConditionFormula>
+        <errorDisplayField>Email</errorDisplayField>
+        <errorMessage>Please enter Email address or check the Email Unknown box (a business phone number will be required in that case).</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EmailUnknownThenPhoneRequired</fullName>
+        <active>true</active>
+        <description>When [Email Unknown] is checked, Business phone field is required.</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Contact__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+NOT($Permission.IgnoreCaseValidationRules)
+&amp;&amp; EmailUnknown__c  = true
+&amp;&amp;  Phone  = null
+)</errorConditionFormula>
+        <errorDisplayField>Phone</errorDisplayField>
+        <errorMessage>Please enter Business Phone when Email is unknown.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FirstNameRequired</fullName>
+        <active>true</active>
+        <description>SFDC1-749 Make First Name a required field</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Contact__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+NOT($Permission.IgnoreCaseValidationRules)
+&amp;&amp; FirstName = null
+)</errorConditionFormula>
+        <errorDisplayField>FirstName</errorDisplayField>
+        <errorMessage>Please enter contact&apos;s first name</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>InactiveContactUpdate_Validation</fullName>
+        <active>true</active>
+        <description>Only allow edit on active contacts.
+Any field other than the status change can&apos;t be updated for inactive contact.
+SFDC1-6833: Bypassing this validation to allow SF Admin user to update inactive contacts</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Contact__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+NOT($Permission.IgnoreCaseValidationRules)
+&amp;&amp; ISPICKVAL (Status__c, &quot;Inactive&quot;)
+&amp;&amp; !ISCHANGED(Status__c)
+&amp;&amp; NOT(CONTAINS($User.FirstName + &apos; &apos;+ $User.LastName, &apos;SF Admin&apos;))
+&amp;&amp; NOT($User.FirstName=&apos;Eloqua&apos; &amp;&amp; $User.LastName=&apos;Admin&apos;)
+)</errorConditionFormula>
+        <errorMessage>Inactive contact cannot be edited. Please change the contact status to &quot;Active&quot; to update other values.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>LID__Check_Company_Id_Value</fullName>
+        <active>false</active>
+        <description>Throws an exception message if the company id contains non-numerics</description>
+        <errorConditionFormula>AND(
+	(LID__LinkedIn_Company_Id__c &lt;&gt; NULL),
+	NOT(ISNUMBER(LID__LinkedIn_Company_Id__c))
+)</errorConditionFormula>
+        <errorDisplayField>LID__LinkedIn_Company_Id__c</errorDisplayField>
+        <errorMessage>CompanyId should be a numeric value</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>UniqueEmailAddressForContact</fullName>
+        <active>true</active>
+        <description>SFDC1-9777 - Add Additional Email Addresses to Contacts</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Contact__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(  
+NOT($Permission.IgnoreCaseValidationRules),
+NOT(ISBLANK( Email )),
+NOT(ISBLANK( AdditionalEmailAddress__c )),
+Email  =  AdditionalEmailAddress__c
+)
+)</errorConditionFormula>
+        <errorDisplayField>AdditionalEmailAddress__c</errorDisplayField>
+        <errorMessage>Email Address and Additional Email Address Cannot be Same</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>ContactActivityOverview</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Contact Activity Overview</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://login.eloqua.com/autoLogin?LoginPrefix=IHSM&amp;Url=FlexReports%2FDisplayReport2.aspx%3FStandardReportID%3D1297%2526EmailAddress%3D%7B%21Contact_Email%7D%2526ShowPrintOption%3DTrue</url>
+    </webLinks>
     <webLinks>
         <fullName>GoogleMaps</fullName>
         <availability>online</availability>
@@ -4321,6 +4515,120 @@ Field required to new CCPA (California Customer Privacy Act) requirements.</desc
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>800</height>
+        <linkType>url</linkType>
+        <masterLabel>Create PDF</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loop?eid={!Contact.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1000</height>
+        <linkType>url</linkType>
+        <masterLabel>Deprecated LM</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__loopmerge?eid={!Contact.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>1200</height>
+        <linkType>url</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/loop__looplus?eid={!Contact.Id}&amp;accountId={!Account.Id}&amp;sessionId={!$Api.Session_ID}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOP_Merge</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Deprecated Mass LM</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/apex/loop__loopmerge?eid={!Contact.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Mass_LOOPlus</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Generate Documents</masterLabel>
+        <openType>sidebar</openType>
+        <page>Loop__massContactDdp</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>SNPCAPIQ__Enrich_from_Cap_IQ</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Enrich from S&amp;P Capital IQ</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/{!IF(TEXT(Contact.SNPCAPIQ__CapitalIQProfessionalID__c)==&apos;&apos;, &apos;SNPCAPIQ__ContactEnrichment&apos;, &apos;SNPCAPIQ__ContactEnrich&apos;)}?id={!Contact.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SNPCAPIQ__Unlink_from_Cap_IQ</fullName>
+        <availability>online</availability>
+        <description>Clear CapitalIQPersonID__c, CapitalIQProfessionalID__c and CapitalIQCompanyID__c.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Unlink from S&amp;P Capital IQ</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} //adds the proper code for inclusion of AJAX toolkit
+
+var contact = new sforce.SObject(&quot;Contact&quot;);
+contact.id = &apos;{!Contact.Id}&apos;; //set Record Id here, potentially get it from the URL ?id= param
+
+var quoteLines = sforce.connection.query(&quot;SELECT SNPCAPIQ__CapitalIQProfessionalID__c FROM Contact WHERE ID = &apos;{!Contact.Id}&apos; limit 1&quot;);
+records = quoteLines.getArray(&quot;records&quot;);
+  for (var i=0; i&lt; records.length; i++) {
+    var record = records[i];
+  }
+if(record.SNPCAPIQ__CapitalIQProfessionalID__c!=null){
+if(confirm(&apos;Are you sure that you want to unlink this record from S&amp;P Capital IQ?&apos;)){
+contact.SNPCAPIQ__CapitalIQPersonID__c= null;
+contact.SNPCAPIQ__CapitalIQProfessionalID__c= null;
+contact.SNPCAPIQ__CapitalIQCompanyID__c= null;
+
+result = sforce.connection.update([contact]); 
+if (result &amp;&amp; result.length){ 
+for (var i = 0; i &lt; result.length; i++){ 
+var res = result[i]; 
+if (res &amp;&amp; res.success == &apos;true&apos;){ 
+window.location.reload(); //to reload the window and show the updated values
+} else { 
+var es = res.getArray(&quot;errors&quot;); 
+alert(es[0].message); 
+} 
+}}
+
+window.location.reload(); //to reload the window and show the updated values
+}}else{
+alert(&apos;This record is not linked to S&amp;P Capital IQ.&apos;)
+}</url>
     </webLinks>
     <webLinks>
         <fullName>SendGmail</fullName>
@@ -4378,5 +4686,41 @@ Field required to new CCPA (California Customer Privacy Act) requirements.</desc
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>http://weather.yahoo.com/search/weather2?p={!Contact_MailingPostalCode}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Contact</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)}
+DocuSign_CreateEnvelope();</url>
+    </webLinks>
+    <webLinks>
+        <fullName>slackv2__Send_to_Slack</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Send to Slack</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.slackv2__Setup_Settings__c.slackv2__Namespace_Api__c}sendToSlack?recordId={!CASESAFEID (Contact.Id)}&amp;objectApiName=Contact</url>
+    </webLinks>
+    <webLinks>
+        <fullName>slackv2__Slack_Alerts</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Slack Alerts</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.slackv2__Setup_Settings__c.slackv2__Namespace_Api__c}slackAlerts?recordId={!CASESAFEID (Contact.Id)}&amp;objectApiName=Contact</url>
     </webLinks>
 </CustomObject>

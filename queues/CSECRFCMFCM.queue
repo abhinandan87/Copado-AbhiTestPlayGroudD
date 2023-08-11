@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | ECR/FCM  | FCM</name>
+    <queueMembers>
+        <users>
+            <user>andradamaria.buta@ihsmarkit.com</user>
+            <user>bartosz.latkowski@ihsmarkit.com</user>
+            <user>eric.camelin@ihsmarkit.com</user>
+            <user>jaideep.sengupta@ihsmarkit.com</user>
+            <user>james.holderness@ihsmarkit.com</user>
+            <user>lisa.olschner@ihsmarkit.com.prod</user>
+            <user>marialucia.gioioso@ihsmarkit.com</user>
+            <user>matthew.hubbard@ihsmarkit.com</user>
+            <user>michael.minor@ihsmarkit.com</user>
+            <user>miriam.neuhaus@ihsmarkit.com</user>
+            <user>prakash.thomas@ihsmarkit.com</user>
+            <user>renata.vazquez@ihsmarkit.com</user>
+            <user>sean.patten@ihsmarkit.com</user>
+            <user>shaden.albadawi@ihsmarkit.com</user>
+            <user>terumi.chen@ihsmarkit.com</user>
+            <user>volker.gries@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

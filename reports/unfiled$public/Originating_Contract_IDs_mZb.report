@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Id</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractBeingRenewed__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractBeingRenewed__c.ContractID18Character__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Id</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0061B00001jbNHD,0061B00001jc0Ac,0064v00001p4eZc,0064v00001p4ege,0064v00001p4eaz,0064v00001pvytE,0064v00001pxQVo,0064v00001stKWa,0064v00001u61OQ,0064v00001u61OV,0064v00001uCves,0064v00001uErKi,0064v00001uFSxo,0064v00001ucIDr,0064v00001ud1zB,0064v00001udohX,0064v00001udojJ,0064v00001udojx,0064v00001ulD90,0064v00001ulsjN,0064v00001umBs5,0064v00001vsZ3f,0064v00001wRJxJ,0064v00001umgNs,0064v00001ujaPh,0064v00001umgOH,0064v00001uoh5R,0064v00001pw50e,0064v00001umgO2,0064v00001upJEi,0064v00001upJ8L,0064v00001umgO7,0064v00001v2kwC,0064v00001vhhfl,0064v00001udoqK,0061B00001mDZZY,0064v00001uqfKu,0064v00001ue0aU,0064v00001p4ejN,0064v00001up6Z7,0064v00001urYAd,0064v00001urs8l,0064v00001umgNn,0061B00001oR8jv</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Originating Contract IDs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_PO_required__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$DateRiskFirstIdentified__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

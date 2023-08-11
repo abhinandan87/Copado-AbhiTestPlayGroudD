@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC - 5597 Lead assignment template for flows v2</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Lead Assignment Template for Flows v2</name>
+    <style>none</style>
+    <subject>Lead {!Lead.Name} has been assigned to queue {!Lead.OwnerFullName}</subject>
+    <textOnly>Hello,
+
+{!Lead.Name} has been assigned to queue {!Lead.OwnerFullName}.
+
+Please visit the link for more details:  Lead Link
+
+First Name: {!Lead.FirstName}
+Last Name: {!Lead.LastName}
+Email: {!Lead.Email}
+Company: {!Lead.Company}
+Product Interest: {!Lead.ProductInterest__c}
+SPG Referral Product Interest: {!Lead.SPG_Referral_Product_Interest__c}
+Lead Source: {!Lead.LeadSource}
+Country: {!Lead.Country__c}
+Region: {!Lead.CalculatedRegion__c}
+
+*Do not reply to this automated email*
+
+Kind regards,
+IHSMarkit Salesforce</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

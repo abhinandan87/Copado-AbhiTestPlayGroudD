@@ -1,0 +1,50 @@
+<template>
+    <lightning-card icon-name="standard:email" class="slds-m-around_xx-large">
+        <h1 slot="title">Send Meeting Notes</h1>
+        <div class="slds-grid slds-wrap slds-m-horizontal_xx-large">
+            <div class="slds-col slds-size-1_of_1">
+                <c-lwc-lookup-utility
+                selection={initialSelection}
+                errors={errors}
+                onsearch={handleSearch}
+                onselectionchange={handleSelectionChange}
+                label="Add Contacts (Optional)"
+                placeholder="Search Contacts to add..."
+                is-multi-entry={isMultiEntry}
+            >
+                </c-lwc-lookup-utility>
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-m-horizontal_xx-large">
+            <div class="slds-col slds-size-4_of_12"></div>
+            <div class="slds-col slds-size-4_of_12">
+            <template if:true={hasData}>
+                <lightning-datatable
+                data={lstSendEmailToMembers}
+                columns={meetingColumns}
+                key-field="email"
+                onrowaction={handleRowActions}
+                hide-checkbox-column
+                show-row-number-column	
+                class="datatable-css"
+                ></lightning-datatable>
+                <div class="slds-m-around_large"  role="alert">
+                    *Contacts highlighted with orange will not receive emails
+                </div>
+            </template>
+            <!--
+            <template if:false={hasData}>
+                <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+            </template>-->
+        </div>
+        <div class="slds-col slds-size-4_of_12"></div>
+        </div>
+        <div slot="footer">
+            <lightning-button variant="brand" label="Send Notes" icon-name="utility:email" title="Send Meeting Notes" onclick={sendNotes} class="slds-m-left_x-small" disabled={doesNotHaveDate}></lightning-button>
+            <lightning-button variant="brand" label="Cancel" icon-name="utility:skip_back" title="Send Meeting Notes" onclick={goBack} class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </lightning-card>
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+    </template>
+</template>

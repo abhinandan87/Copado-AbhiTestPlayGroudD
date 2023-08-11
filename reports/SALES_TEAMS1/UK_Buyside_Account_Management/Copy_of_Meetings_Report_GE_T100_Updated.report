@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>START_DATE_TIME</field>
+    </columns>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>TASK_TYPE</field>
+    </columns>
+    <columns>
+        <field>ACCOWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Meetings report</description>
+    <filter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>David Timothy,Brett Cahill,Selina Navarroanya,lubin,bunyard,omar,patric,shalom,arabella,jason blake,Kirsty thomson,reevey,alessio,craddock,nishat,gambarini,swadling,jonathan chen,ryan lee,Daniel Kalyan,Michael Waite,Chris Wheeler,Julia Ly,Alexander Stovell,Stephen Baxter,Annabelle Shrieves,Gary Payne,Mike Kelly,Robert Styles,Kerry Daniel,James Kwan,Mark Hamilton,Keith Viverito,Neslihan Yegul,Steven Shone,Farrelly,DAWN Gleeson,stheeman,tim harris,talbot,Evangelista,Bateman,Stheeman,Stovell,Downton,Shrieves,Shalom,Van den berg,Bedford-Forde,Hampson,Wheeler,Craddock,Hart,Kalyan,Gleeson,Watts,Kaltsas,Bunyard,Nozic,Payne,Evans,Marcus,Rhodes,Emmerson,Palsson-Junkergard,Talbot,Vogel,Lubin,Kwan,Williamson,Viverito,Daniel,Bouhafs,Lasfer,Vincent,Di Mateo,Hamilton,Gambarini,Crawley,Alazard,Hidalgo,Lucas,Waite,Dark,Catillon,Yegul,Rezvi,Bennett,Dermaux,Salici,Brent,Donovan,Ryan Lee,Swadling,Danan,Patel,Rae,Baxter,Grady,Shone,Billingham,Cornock,Rawlings,Harris,Koutoupi,Christopher Thompson,Kelly Carter,Marco Loiacono,Piers Dixon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>SUSHIL TOMAR,TANYA TIWARI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Time Tracking</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DUE_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_WEEK,THIS_WEEK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>IHS MARKIT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Paddy Turner,Victoria Kent,Emma Vassallo,Alex Reynolds</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>UK Buyside Meetings Report</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>e</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>START_DATE_TIME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

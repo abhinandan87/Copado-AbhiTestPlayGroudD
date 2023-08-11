@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Financial Risk Analytics - Global</name>
+    <queueMembers>
+        <users>
+            <user>florence.falck@ihsmarkit.com</user>
+            <user>janos.zsiros@ihsmarkit.com</user>
+            <user>mike.reilly@ihsmarkit.com</user>
+            <user>nyeong.lee@ihsmarkit.com</user>
+            <user>peter.harker@ihsmarkit.com</user>
+            <user>rob.bruce@ihsmarkit.com</user>
+            <user>samuele.marello@ihsmarkit.com</user>
+            <user>thomas.goodfellow@ihsmarkit.com</user>
+            <user>torjus.dalen@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_42816219</developerName>
+        <masterLabel>M&amp;T Inside Sales</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OPP.OWNER_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Ahmad Sayuti Ibrahim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alex Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amarjeet Gigindar Singh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Azman Ali Mohd Baharudeen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Benjamin Ooi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charlie Ng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chonghooi Goh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Elayarasi Nagarajan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enrico Perini</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Felicia Yeow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gajemugan Subramaniam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Guang Xuan Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jiayeen Tan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Chuah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>KaiLing Khaw</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kenny Fu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Khaleerurrahman ShaikDawood</sourceValue>
+            </sourceValues>
+            <value>Yes (First Name A-L)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mohamed Fauzi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohamed Ouail Drouiche</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohd Firdaus Haikal Abdullah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicole Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Poobalan Shamugam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reuben Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shanthy.P Pakirisamy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Siddhartha Selvanathan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sin Yian Lau</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tara MacDevitt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Terence Soo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vladimir Tikhvinskiy</sourceValue>
+            </sourceValues>
+            <value>Yes (First Name M-Z)</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Opportunity.SalesRegion__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Campaign.MarketingTeam__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN.TYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>OPP.NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>OPP.LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>OPP.OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.FORECAST_CATEGORY</field>
+    </columns>
+    <columns>
+        <field>OPP.STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>OPP.CREATED_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>OPP.PROBABILITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OPP.AMOUNT.CONVERT</field>
+    </columns>
+    <columns>
+        <field>INFLUENCE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>REVENUE_SHARE.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CampaignInfluence.ExpectedRevenueShare__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <description>ECR Mktg Related Opps By Region Rev
+ECR Marketing Related Opportunities By Sales Region
+https://ihsmarkit.lightning.force.com/lightning/r/Dashboard/01Z4v000001BdyWEAS/view?queryScope=userFolders</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN.TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Sales Led</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign.MarketingTeam__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Economics &amp; Country Risk</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPP.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>&quot; ECR&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPP.CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/8/2019 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.SalesRegion__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN.PARENT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>buMAT_ECR Mktg Related Opps By Region</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomizableCampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+</Report>

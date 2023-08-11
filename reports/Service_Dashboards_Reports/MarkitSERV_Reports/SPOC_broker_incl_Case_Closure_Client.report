@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.ContactEmail__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.CaseAgeBusinessDays__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Case.PreviousQueue__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Weekly closed cases per client</description>
+    <filter>
+        <booleanFilter>((((((((((1 or 2 or 4 or 7)))) AND 3))) AND 5) AND (6 )))</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aadra Jain,Aakash Sharma,Aashi Gupta,Aastha Kejriwal,Abhinav Bhandari,Abhishek Dixit,Abir Majumder,Aditya Singh,Amar Naik,Amitpreet Singh,Angela Jou,Ankur Tripathi,Anthony Capra,Arpita Gupta,Arun Sikri,Ashu Chanana,Ashwajit Singh,Atria Ong,Benit Kurian,Bhawana Jain,Candice Jing Er Tan,Carolin Martinez Diaz,Catherine Oreta,Catherine Tan,Chau Ting Lau,Chhavi Sharma,Clare Lloyd,Clinton Mak,Daniel Flores-Choto,Daniel Gualtieri,Daniel Palacio,Darren Ko,Dayna Vasilko,Declan Murphy,Dianne Jeong</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Divesh Singh,Eshan Singh,Evan Dingle,Evan Hendershot,Evelyn Jayshree,Flora Janting,Gaurav Srivastav,Gimpi Rawal,GuoXin Li,Hiren Mathur,Jangdim GD,Jellenie Estares,Jia En Khoo,Jitesh Jangid,Joel Somerstein,Jolly Sinha,Judy To,Junseok Kim,Kamziana Nazwin Kamarulzaman,Kanika Malik,Karan Malhotra,Karan Singal,Karishma Gupta,Kaushal Sharma,Kavya Sridhar,Kawal Nain Singh,Khai Qing Goh,Khushboo Nagpal,Khushbu Srivastava,Kinnan Zaloom,Kirti Kumari,Kriti Malhotra,Kuldeep Thakur,Lokesh Taunk,Luca Colelli Riano</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Automatische Antwort:,Auto Reply,DELIVERY FAILURE,Out of Office,Generic leaver notification,Undeliverable,SOX,Overlay,MarkitSERV Customer Experience Survey,Retirement,Zero,FCA,Delivery Status Notification (Failure),Returned mail:,Automatic reply:</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lyla Aomi,Mahima Sharma,Mai Adachi,Manila Dewan,Mayuri Goel,Md Danish Akhtar,Megan Heintschel,Michael Kelly,Michael Wilshere,Milana Kelis,Mizael Poh,Mizuna Kaneko,Mohamad Al Dafaee,Mudassir Khan,Mukul Jain,Muzzammil Khan,Natalie Pou,Natasha Chaudhary,Neeraj Jain,Nikhita Rahul Bhandarkar,Nikita Narang,Nisha Khurana,Nitin Wadhwa,Pang Soon Ong,Parth Vashishth,Peter Walker,Ping Leong Ng,Pooi San Lim,Pragya Pal,Pranav Arneja,Prerna Panwar,Presinna Thomas,Rahul Jain2,Ramit Vohra,Rashmi Sharda</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>FM | Markit Research Manager,FM | TCA,FM | Debtdomain,FM | Loan Settlement | Loan Admin,FM |GMG | EQUITIES,FM | GMG | RST,FM | Counterparty Manager Onboarding,FM | Counterparty Manager,FM | Customer Care,FM | MSERV POD Cases,FM | Customer Care - DO NOT USE,FM | GRS Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NatWest Group PLC,NatWest Markets,NATWEST MARKETS PLC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Rishabh Jain,Rishabh Kumar,Ritika Mehra,Robert Schweikert,Rohit Arora,Sabrina Kaur,Sachin Sharma,Sam Lucchesi,Sarita Monga,Saurabh Kapoor,Sharon Basils Balakrishnan,Sharon Havilah,Shashank Gupta,Shawn Wei Jian Tan,Shelvy Lestari Chandra Tjing,Shikha Bhardwaj,Shikha kanwar,Shivani Abrol,Shramta Uppal,Smarak Nayak,Somesh Sinha,Subhasish Ranjan Das,Sukriti Srivastava,Surbhi Kalra,Tej Pratap Sohi,Thomas Chase,Thomas Howse,Timothy Saenger,Tomas Maliska,Tonje Langaas,Trevor Shearer,TzeS Koay,Urja Malhotra,Van Anh Nguyen,Vandita Agarwal,Vanshika Gupta,Vineet Thakur,Vishveshwar Choudhary,Vivek Kumar Yadav,Vradhi Srivastava,Wilson Lee Xi Chen,Yuen Jing Low</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SPOC (broker incl) - Case Closure Client</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <endDate>2021-10-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-01-01</startDate>
+    </timeFrameFilter>
+</Report>

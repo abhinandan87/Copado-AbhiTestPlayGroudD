@@ -1,0 +1,36 @@
+.border{
+    box-shadow: 1px 1px 5px darkgrey;
+    padding: .3rem .3rem .5rem .5rem;
+    border-radius: 3px;
+}
+
+.title-font{
+    padding-bottom: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.subheading-font{
+    padding-bottom: 10px;
+    color: #808080;
+}
+
+.overflow-name_font{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline;
+}
+
+@media only screen and (max-width: 1270px) {
+    .division-card__container.slds-large-size_1-of-3{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 1025px){
+    .division-card__container.slds-large-size_1-of-3{
+        width: 100%;
+    }
+}
