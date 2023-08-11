@@ -1,0 +1,11 @@
+Hello,
+
+{!Lead.Name} has been assigned to queue {!Lead.OwnerFullName}.
+
+Please visit the link below for more details-
+{!Lead.Link}
+
+*Do not reply to this automated email*
+
+Kind regards,
+S&P SFDC

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Salesforce Business Analysis</name>
+    <queueMembers>
+        <users>
+            <user>alia.geiger@ihsmarkit.com</user>
+            <user>amber.rodriguez@ihsmarkit.com</user>
+            <user>christine.hotz@ihsmarkit.com</user>
+            <user>deborah.marchand@ihsmarkit.com</user>
+            <user>diane.reeder@ihsmarkit.com</user>
+            <user>laura.harris@ihsmarkit.com</user>
+            <user>melanie.aris@ihsmarkit.com</user>
+            <user>sarah.moughan@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

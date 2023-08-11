@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommunityThemeDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableExtendedCleanUpOnDelete>true</enableExtendedCleanUpOnDelete>
+    <masterLabel>Customer_Support</masterLabel>
+    <publisher>IHS Markit</publisher>
+    <themeSetting>
+        <themeLayout>Customer_Support_themeLayout_Login</themeLayout>
+        <themeLayoutType>Login</themeLayoutType>
+    </themeSetting>
+    <themeSetting>
+        <themeLayout>Customer_Support_themeLayout_Home</themeLayout>
+        <themeLayoutType>Home</themeLayoutType>
+    </themeSetting>
+    <themeSetting>
+        <themeLayout>Customer_Support_themeLayout_Inner</themeLayout>
+        <themeLayoutType>Inner</themeLayoutType>
+    </themeSetting>
+</CommunityThemeDefinition>

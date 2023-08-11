@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFDC-3186 Staging object to store details of opportunities for which Renewal opps should be created automatically.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>ErrorDescription__c</fullName>
+        <description>SFDC-3186 Provides details of error in renewal creation</description>
+        <externalId>false</externalId>
+        <label>Error Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Error__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if there was an error in renewal creation</description>
+        <externalId>false</externalId>
+        <label>Error?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ExceptionDescription__c</fullName>
+        <description>SFDC-3186 Gives details on why the opp is invalid/exception for renewal</description>
+        <externalId>false</externalId>
+        <label>Exception Description</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Exception__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if opp is invalid/exception for renewal opp creation.</description>
+        <externalId>false</externalId>
+        <label>Exception?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasMixedProducts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if an opp has products from both Fincancial and non-Financial Svcs Global Segment.</description>
+        <externalId>false</externalId>
+        <label>Has Mixed Products?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasNoSubscriptionProduct__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if an opp to be renewed has no subscription products.</description>
+        <externalId>false</externalId>
+        <label>Has No Subscription Product?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasNoTranConsProduct__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3925 Represents if an opp to be renewed has no transaction/consulting products.</description>
+        <externalId>false</externalId>
+        <label>Has No Trans/Cons Product?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasNonBillableEvergreenContract__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3372 Represents if an opp has a contract with Renewal Term as Evergreen and Billing Frequency as Non-Billable</description>
+        <externalId>false</externalId>
+        <label>Has Non-Billable Evergreen Contract?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasOneTimeContract__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if the opp has one-time contract</description>
+        <externalId>false</externalId>
+        <label>Has One-Time Contract?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OppId__c</fullName>
+        <description>SFDC-3186 To store opp Id text. If opp gets deleted, this text field will conserve data in staging for reconciliation.</description>
+        <externalId>true</externalId>
+        <label>Opp Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityContactRoleSuccess__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents there was no error in creating child opportunity cpntact role records for new renewal opp.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Contact Role Success?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityOwnerInactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if the owner is inactive for opportunity to be renewed.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Owner Inactive?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityProductSuccess__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if there was no error in creating child opportunity product records for new renewal opp.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Product Success?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunitySplitSuccess__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if there was no error in creating child opportunity split records for new renewal opp.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Split Success?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityTeamSuccess__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if there was no error in creating child opportunity team member records for new renewal opp.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Team Success?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Success__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents that there was no error in creating renewal opp record for the given master opp in staging record.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Success?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>SFDC-3186 Opportunity record to validate for renewals creation</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Renewals Staging</relationshipLabel>
+        <relationshipName>RenewalsStaging</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Processed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if the staging record is processed by renewals batch or not.</description>
+        <externalId>false</externalId>
+        <label>Processed?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RenewalPreexists__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if a renewal opp pre-exists for a given opp.</description>
+        <externalId>false</externalId>
+        <label>Renewal Pre-exists?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Success__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Represents if complete batch ran successfully and all records in object hierarchy were created successfully for this staging record opp.</description>
+        <externalId>false</externalId>
+        <label>Success?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>hasNoValidConsultingProducts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3925 Represents if an opp to be renewed has no transaction/consulting/Subs products.</description>
+        <externalId>false</externalId>
+        <label>Has No Valid Consulting Products?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Renewal Staging</label>
+    <nameField>
+        <displayFormat>RS-{0000}</displayFormat>
+        <label>Renewal Staging #</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Renewals Staging</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

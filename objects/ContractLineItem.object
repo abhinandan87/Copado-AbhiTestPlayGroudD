@@ -93,6 +93,17 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>ContractLineItemID18Character__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ContractLineItemID 18 Character</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -112,6 +123,15 @@
         <fullName>LocationId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PKIDContractLineItem__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>CLI{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID ContractLineItem</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
     </fields>
     <fields>
         <fullName>ParentContractLineItemId</fullName>

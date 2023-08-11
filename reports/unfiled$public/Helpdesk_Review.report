@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_91597778</developerName>
+        <masterLabel>Brand</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>FK_$AdditionalCaseFields__c.SystemCompany__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>VWG UK - Internal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Volkswagen PC UK</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Volkswagen LCV UK</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Seat UK</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Skoda UK</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Audi UK</sourceValue>
+            </sourceValues>
+            <value>VW Group</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CONTACT.NAME</field>
+    </columns>
+    <columns>
+        <field>BucketField_91597778</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.ClosedReason__c</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalCaseFields__c.Category__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6) AND 7 AND 8 AND 9 AND 10</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jose Guedes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Alessio Clapasson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jemma Warehand</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jemma Palmer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Michal Frankowski</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AUTOS GPHD UK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed - Canceled,Delete,Auto-Closed – No Action Taken,Canceled,Closed - Moved to Jira</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_91597778</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>VW Group</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Data</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Helpdesk Review</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CREATED_DATEONLY</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_PREVY</interval>
+    </timeFrameFilter>
+</Report>

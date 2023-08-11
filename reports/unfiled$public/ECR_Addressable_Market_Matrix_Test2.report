@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>Account</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Account.Opportunities$Name</field>
+        </columns>
+        <currency>USD</currency>
+        <format>Summary</format>
+        <name>Accounts with Opportunities &amp; Co block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>DDC_clean__Accounts_with_Opportunities_and_Contacts_Clean__c</reportType>
+        <scope>user</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>Account$CreatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>a</joinTable>
+        </blockInfo>
+        <columns>
+            <aggregateTypes>Sum</aggregateTypes>
+            <field>Opportunity.Amount__c.CONVERT</field>
+        </columns>
+        <columns>
+            <field>TICKER</field>
+        </columns>
+        <columns>
+            <field>FULL_NAME</field>
+        </columns>
+        <columns>
+            <field>Account.AccountRegion__c</field>
+        </columns>
+        <currency>USD</currency>
+        <filter>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <column>INDUSTRY</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>equals</operator>
+                <value>,Academic/Education,Aerospace &amp; Defense,Agriculture,Air Transport,Automotive,Banking,Business Services/Consulting,Chemicals,Coal,Commodities Trading,Construction,Electronics,Energy Equipment,Energy Services,Financial/Asset Management,Food Manufacturing,Healthcare,Insurance,Land Transport,Local/State Government,Logistics &amp; Shipping,Maritime,Media,Metals/Mining,Military/Security Government,National Government,Non-Governmental Organizations (NGO),Oil &amp; Gas,Other,Other Manufacturing,Pharmaceutical,Power &amp; Utility,Retail,Software,Telecommunications,Transportation Manufacturing,Wood &amp; Paper</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>Opportunity.BusinessLine__c</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>contains</operator>
+                <value>Economics &amp; Country Risk</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>TYPE</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>equals</operator>
+                <value>,Renewal,New Business</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Opportunities with Products block 1</name>
+        <params>
+            <name>open</name>
+            <value>open</value>
+        </params>
+        <params>
+            <name>probability</name>
+            <value>&gt;0</value>
+        </params>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>OpportunityProduct</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>CLOSE_DATE</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId>B1</blockId>
+        <joinTable>Account</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ECR - Addressable Market Matrix_Test2</name>
+    <reportType>DDC_clean__Accounts_with_Opportunities_and_Contacts_Clean__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

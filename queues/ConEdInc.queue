@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>ConEd Inc.</name>
+    <queueMembers>
+        <users>
+            <user>achaiah.cs@ihsmarkit.com</user>
+            <user>aditi.srivastava@ihsmarkit.com</user>
+            <user>bharati.singh@ihsmarkit.com</user>
+            <user>karan.chauhan@ihsmarkit.com</user>
+            <user>pratibha.nautiyal@ihsmarkit.com</user>
+            <user>saiveer.trivedi@ihsmarkit.com</user>
+            <user>srishti.upadhyay@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

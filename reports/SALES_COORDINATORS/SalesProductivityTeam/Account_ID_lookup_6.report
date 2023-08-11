@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <columns>
+        <field>Account.PKIDAccount__c</field>
+    </columns>
+    <columns>
+        <field>Account.SNPCAPIQ__CapitalIQCompanyId_txt__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LIMAGRAIN BRASIL S.A,AMERRA CAPITAL MANAGEMENT,LLC,ATVOS AGROINDUSTRIAL PARTICIPACOES S.A,AGROPECUARIA GRENDENE LTDA,JORGE LUIZ ZENATTI,WRI BRASIL,MESSIAS ASSESSORIA FISCAL CONTABIL S/S LTDA ME,EDUARDO BRUNO RAMPELOTTO GATTO,AGROPECUARIA SEMENTES TALISMA LTDA,FLORESTAL VALE DO CORISCO S.A,LE SCHOBINGER GESTAO EMPRESARIAL ME,GDM GENETICA DO BRASIL S. A.,WESTCHESTER GROUP SOUTH AMERICA GESTAO DE INVESTIM,EVORA S/A,ENFORCE GESTÃO DE ATIVOS S.A.,FAZENDA IOWA LTDA,RUI PERES LACERDA,SYMBIOSIS INVESTIMENTOS E PARTICIPACOES S.A.,SINDICATO E ORGANIZAÇÃO DAS COOP. DO ESTADO DO PR,KLEBER WILSON MARQUES,JBJ AGROPECUARIA LTDA,CRD CAPITAL ADMINISTRACAO DE RECURSOS LTDA,BATELEUR ASSESSORIA FINANCEIRA LTDA.,JOÃO CORNÉLIO HENRIQUE MICHELS,AUDSAT GESTÃO E MONITORAMENTO DE RISCOS LTDA,EASY ACCESS TRADING BRASIL LTDA.,VALORA ENGENHARIA S/S LTDA,ESFERA AGRICOLA LTDA,CABRERA CONSULTORIA CONTABIL E TRIBUTARIA LTDA,CHRIMATA INVESTIMENTOS LTDA.,CELSO CARLOS DOS SANTOS JÚNIOR,CATHARINA FRANCO DO AMARAL PAOLIELLO,ARAUCO DO BRASIL S.A,INNOVATECH SERVIÇOS ESPECIALIZADOS LTDA,BM2C CONSULTORIA EM GESTAO E NEGOCIOS EIRELI,COLPAR PARTICIPACOES S/A,KUHN DO BRASIL S/A,CBRE CONSULTORIA DO BRASIL LTDA,SANTA CLARA AGROCIENCIA INDUSTRIAL LTDA,MICROBIOL INDUSTRIA E COMERCIO LTDA</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Account ID lookup 6</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

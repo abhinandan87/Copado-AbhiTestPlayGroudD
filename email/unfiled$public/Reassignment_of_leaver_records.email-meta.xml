@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Reassignment of leaver records</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Reassignment of leaver records</name>
+    <style>none</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>Dear ,
+
+We received a request to perform the exit proceedings of your direct &apos;leaver&apos;s name&apos; for all the matters related to Salesforce.
+
+&apos;Leaver&apos;s name&apos; has few Leads/Opportunities/Contracts/Cases/Accounts/Campaigns assigned to him/her(attached).
+
+Kindly specify to whom should we assign the ownership of those records.
+
+Let us know if you have any further queries.
+
+Regards,
+{!Case.OwnerFullName}
+Salesforce Configuration Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

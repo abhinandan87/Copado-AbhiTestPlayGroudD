@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Markit Support Customer Care Team</description>
+    <label>RED Level 2</label>
+</Skill>

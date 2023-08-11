@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_21707584</developerName>
+        <masterLabel>Analysts</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ASSIGNED</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Gaurav Srivastav</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jay Shah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jellenie Estares</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Rasay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vandita Agarwal</sourceValue>
+            </sourceValues>
+            <value>Analysts</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Activity.TimeSpentMinutes__c</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>ASSIGNED</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>LDN Event Report</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>START_DATE_TIME</field>
+    </columns>
+    <columns>
+        <field>END_DATE_TIME</field>
+    </columns>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>DURATION</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Activity.TimeSpentMinutes__c</field>
+    </columns>
+    <columns>
+        <field>TASK_TYPE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>CS Events Report</description>
+    <filter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Luca Colelli Riano,Thomas Howse,Sharon Havilah,Jellenie Estares,Vandita Agarwal,Gaurav Srivastav,Tomas Maliska,kuldeep thakur</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Project Work</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CS LDN Project Work (Events)</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>e</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>DUE_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

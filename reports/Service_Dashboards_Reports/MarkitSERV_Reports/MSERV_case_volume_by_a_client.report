@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.TimeSpentMinutes__c</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>WEBEMAIL</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aashna papneja,Angela Jou,Ankur Saxena,Ankur Tripathi,Arun Sikri,Benit Kurian,Brooke Bliven,Chau Ting Lau,Diksha Sahni,Divesh Singh,Elaine Tan,Eti Kapoor,Gimpi Rawal,Grand Total,Greg Chalmers,Jim Lopez,Jolly Sinha,Junseok Kim,Karishma Jain,Kawaljeet Singh Sudan,Kinnan Zaloom,Kolli Rohit Reddy,Mahima Sharma,Manila Dewan,Marina Josef,Matt Proulx,Md Danish Akhtar,Mizuna Kaneko,Mukul Jain,Natasha Chaudhary,Nurcan Demirel,Prateek jain,Rishabh Kumar,Roland Gonzales,Rupal Sood,Sarita Monga,Sharon Havilah,Shumei Fu,Siti Ismail,Sumit Behl,Thomas Chase,Thomas Lee,Tolulope Aboyade-Cole,Yasmin Evans,Alexander Jacobs,Catherine Oreta,Francis Misischia,Kuldeep Thakur,Matthew Flynn,Milana Kelis,Rohit Arora,Angeline Salim,pranav arneja,Sujata Biswal,Rahul Tanver,Sudhanshu Fuloria,kumari pragati,shikha kanwar,jaspal singh Saini,kavya sridhar,Cesar Adams,Thomas Howse,Rexie Romero,Nizam Miah,Jay Shah,Yuen Jing Low,Elly Kang,Jie Wang,Karan Singal,David Luke,Amitpreet Singh,Zarrin Zuberi,Neeraj jain</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Nisha Khurana,Luca Colelli Riano,Vipul Patel,Eri Yamazaki,Shaun Ng,Judy To,Prerna Panwar,Rashmi Sharda,Rahul Jain</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Onboarding,Case.CustomerCare,Case.Implementation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT.ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>WESTPAC BANKING CORPORATION</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.PreviousQueue__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MSERV - case volume by a client</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURPREVQ</interval>
+    </timeFrameFilter>
+</Report>

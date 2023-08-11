@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$RecordType</field>
+    </columns>
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Account</field>
+    </columns>
+    <columns>
+        <field>Case$Status</field>
+    </columns>
+    <columns>
+        <field>Case$Opportunity__c.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Case$CreatedDate</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Agri Cases to be worked.</description>
+    <filter>
+        <criteriaItems>
+            <column>Case$BusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>AGRI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Subject</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Continuation</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>AGRI Implementation Cases</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

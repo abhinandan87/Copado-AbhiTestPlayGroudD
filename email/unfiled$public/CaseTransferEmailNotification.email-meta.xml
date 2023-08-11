@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-697 Modifications to case email notification template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CaseTransferEmailNotification</name>
+    <style>none</style>
+    <subject>Case {!Case.CaseNumber} has been transferred to you</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>field_key</field>
+    </columns>
+    <columns>
+        <field>OLDVAL</field>
+    </columns>
+    <columns>
+        <field>NEWVAL</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>NEWVAL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Ashwajit Singh,saumya singh,Deepak Dutt,Hiren Mathur,nisha khurana,Grand Total,Rishabh Kumar,shikha kanwar,Amitpreet Singh,Eshan Singh,Tej Pratap Sohi,Khushbu Srivastava,Jitesh Jangid,Divesh Singh,Mohammad Shahzeb,Pooja Verma,Aashi Garg</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OLDVAL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,FM | MW | All Other,FM | MW | L1,FM | MW | Reports</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>L1/All other Assignment History</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseAuditHistory@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

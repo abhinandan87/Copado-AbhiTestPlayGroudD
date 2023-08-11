@@ -1,0 +1,15 @@
+Hi {!Contact.FirstName},
+<br><br>
+To receive access to export data from Salesforce.
+<br><br>
+Please provide the approval from your MD/ED and let us know the "Business reason" for the export permission.
+<br><br>
+Please complete the Salesforce GDPR training in workday to get the access to the export report permission set in the salesforce.
+<br><br>
+ <a href= "https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.myworkday.com%2Fihsmarkit%2Fd%2Finst%2F17815%24741%2Frel-task%2F2997%2410951.htmld&data=02%7C01%7CShikhar.Singh%40ihsmarkit.com%7Cf9c108709a7d486e34d908d7427c3112%7Cc1156c2fa3bb4fc4ac073eab96da8d10%7C1%7C0%7C637050973481671294&sdata=RJkaj97hPUlKwryXtWoJ1z1PWIb3Cn6kHMFY86s%2F%2FKw%3D&reserved=0&"> Workday Training Link</a>.<br><br>
+
+Feel free to reach out to us in case of any doubts.<br><br>
+
+Regards,<br>
+{!Case.OwnerFullName},<br>
+Salesforce Configuration Team

@@ -1,0 +1,23 @@
+<apex:page standardController="TILBP__ThoughtIndustries__c" extensions="TILBP.TIAdminController" tabstyle="TILBP__ThoughtIndustries__c" lightningStylesheets="true" showHeader="true" >
+    <apex:form id="theForm" style="width:80%; margin:auto" target="_parent">
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{! save }" rerender="theForm" />
+                <apex:commandButton value="Cancel" action="{! cancel }" immediate="true"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="2" showHeader="false">
+                <apex:pageBlockSectionItem dataStyle="text-align: center;">
+                    <apex:image value="https://www.thoughtindustries.com/hubfs/Optimize/Home_Images/logo.png?t=1509368573996" alt="Thought Industries Logo" style="background: black"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem dataStyle="text-align: center;">
+                    <apex:outputText value="Administrator Panel" style="font-size: x-large;"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1" showHeader="false" html-style="border: solid 1px #4aba6f;" >
+                <apex:inputField value="{! tiApi.TILBP__BaseURL__c }" style="width: 50%" />
+                <apex:inputField value="{! tiApi.TILBP__APIKey__c }" style="width: 50%" />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

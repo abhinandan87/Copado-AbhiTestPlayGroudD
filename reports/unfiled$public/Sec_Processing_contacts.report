@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>Contact.JobTitle__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.InstitutionType__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>Account.InstitutionType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Asset Management,Bank - Central,Bank - Development,Fund Administrator/Custodian/Trustee/Servicer,Insurance Company,International Bank,Investment Bank/Securities Firm,National Bank,Regional Bank,Retail,Wealth Management &amp; Family Offices</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.EmailOptOut__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Global Email Opt Out,Country Email Exclusion (ie CASL/GDPR)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.JobTitle__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>COO - Chief Operating Officer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Head of Operations,Head of Ops,Senior Operations,Senior Ops,Head of trading,Senior head of trading,Global head of operations,Asset Services manager,Head of Corporate Actions,Head of Custody,Head of Securities Services,Head of Change Governance</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Sec Processing contacts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

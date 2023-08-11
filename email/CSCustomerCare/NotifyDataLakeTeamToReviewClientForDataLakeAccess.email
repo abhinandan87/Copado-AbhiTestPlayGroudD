@@ -1,0 +1,9 @@
+We have received a case {!Case.CaseNumber} for which they are seeking your approval.
+</b> </br></br>
+We would request you to please access the case by clicking the link below and provide your approval by marking the sales review field to Yes or No.
+</b> </br></br>
+<a href={!Case.Link}>Click here</a>
+</b> </br></br></br>
+
+With Regards</br> 
+Data Lake Team.

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$PrimaryContact__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$FirstYearValue__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractEndDate__c</field>
+    </columns>
+    <currency>INR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$ProductFamily__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NAMR-Analysis-Early Reporting,NAMR-Analysis-Analytics Platform,NAMR-Analysis-CanNet,NAMR-Analysis-Household,NAMR-Analysis-Loyalty,NAMR-Analysis-Report Viewer,NAMR-Analysis-Stat Reporting,NAMR-F&amp;S-Loyalty Dlr,NAMR-F&amp;S-Field Dealer Reporting,NAMR-F&amp;S-Stat Reporting,NAMR-General</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Opportunity$ContractStartDate__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of New Opportunity with Contracts 1</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunitywithContracts__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$ContractStartDate__c</dateColumn>
+        <interval>INTERVAL_PREVFY</interval>
+    </timeFrameFilter>
+</Report>

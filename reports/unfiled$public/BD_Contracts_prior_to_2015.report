@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Contract.EffectiveDate__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CONTRACT_OWNER</field>
+    </columns>
+    <columns>
+        <field>Contract.ContractStatus__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>BD Corporate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.ContractStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Validated,Validated PO Pending,Expired,Replaced</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BD Contracts prior to 2015</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractCustomEntity$ContractLineItem__c</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contract.EffectiveDate__c</dateColumn>
+        <endDate>2015-01-01</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>true</blockedByApiWhitelisting>
+    <consumerKey>3MVG99qusVZJwhslwhxn5BnF5L8sXBjjlNMQvfBIL.gWcwnm1q6cx7qq2t64Myjh6SPLXh9csTvsHGCCpYgTN</consumerKey>
+    <consumerName>OwnBackup for Force.com</consumerName>
+    <masterLabel>BlacklistedConsumer1319374315927918</masterLabel>
+</BlacklistedConsumer>

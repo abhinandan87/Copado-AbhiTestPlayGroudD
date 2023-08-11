@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>START_DATE</field>
+    </columns>
+    <columns>
+        <field>END_DATE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Contract.Businessline__c</field>
+    </columns>
+    <columns>
+        <field>CONTRACT_CREATEDBY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contract.FirstYearContractValue__c</field>
+    </columns>
+    <columns>
+        <field>Contract.ContractStatus__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Contract.ContractStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Submitted,Validated PO Pending,Rejected</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTRACT_OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Beth Connolly,Denise Zobel,John Hofmeister,John Shipley,Pete Margaros,Zac Caito,Kevin Schwed,Marek Smolinski</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CONTRACT_OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Contract Tracking East Coast OEM</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractList</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>START_DATE</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

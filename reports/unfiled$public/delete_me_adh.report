@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.MaterialCode__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.FirstYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>CASE(Opportunity.ChannelPartner__c, 
+&quot;ROC Consulting Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT,
+&quot;A&amp;J Deftek Consultants&quot;, OpportunityLineItem.FirstYear__c.CONVERT,
+&quot;&quot;,OpportunityLineItem.FirstYear__c.CONVERT,OpportunityLineItem.FirstYear__c.CONVERT*0.85)</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Net (Channel partner commission excluded)</description>
+        <developerName>CDF1</developerName>
+        <label>Net(ADH/First Year Value net converted)</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>6W-Closed Won,6W-Renewal Won,6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_WEEK</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>Opportunity.ContractStartDate__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>delete me adh</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.ContractStartDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

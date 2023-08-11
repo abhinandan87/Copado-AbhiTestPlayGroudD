@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Average</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>SurveyResponse__c.CESScore__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>FK_$Case.ProductGroup__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>SurveyResponse__c.CESScore__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Avg.Survey Response-ProdGroup-Resources</description>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <column>FK_$Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Accumap-Data,AccuLogs,Accumap,Accumap-Midstream,Accumap-Software,Asset Valuation,Base Chemcicals,Basin Data,Chemical Consulting,Chemical Cost Curve Service,Chemical Events,Chemical Handbooks: Speciality Chemicals,Chemical Information &amp; Same Day Analysis,Chemical PP,Chemical Reports: Custom,Chemical Reports: PEP,Chemical Technology Analytics Reports,Chemicals Royalties,Coal Consulting,Coal Events,Coal Indices,Coal Publications &amp; Indices,Coal,Community,Companies &amp; Transactions,Company Insight,Company Strategies and Performance,Content Delivery Intl Mid,Content Delivery Intl,Content Delivery NA,Content Delivery Partner,Content Partners NA,Context Distribution/Content,Costs &amp; Technology,Crude Oil Markets,Culture Data NA,Data Management Content Intl,Data Management Content NA,Data Management Services NA,Digital Logs NA,DMS Midstream,DNA,Downstream Analytics,Downstream Consulting,Downstream PP,Drilling Data NA,Drilling Wire NA,E&amp;P Content Intl,E&amp;P Terms &amp; Above Ground Risks,EDM Base,EGIS Can,EGIS Midstream,Energy Documents,Energy News on Demand,Engineering Data NA,Engineering Training &amp; Client Services,Environmental Data NA,eTriever,EV Recharge Locations,Evolution,EWP Consulting,EWP Events,EWP Financial,EWP Non-Financial,EWP Paid Presentations,EWP Trans</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Field Maps NA,FieldDirect,Fuel Prices,General Energy Data Services &amp; Fees,Geopolitical Data NA,GeoSyn Data,GeoWebWorks Can,GIS Data NA,GIS Mistream,Global Gas,Global Markets,Harmony Enterprise,Harmony,Interpreted Tops,Kingdom,Land Data Can,Land Data US,Land Data,LAS Tools,Log Digitizing Services,LogArc / LogTech,Logs &amp; Seismic Data Intl,LPG Events,Market Advisory Service (MAS),Market Daily Services,Metals &amp; Mining,Midstream Oil &amp; Gas Data,Midstream Oil &amp; NGL,Midstream,NAPD Other,NAPD,NAVX Other,NAVX Retail,Oil &amp; Gas Data,OMDC Consulting,OMMD Data,OMMD MCS,OPIS Rack,OPIS Retail,OPIS Spot,Optimize,Paid Presentations,Parking Availability,PCGR Consulting,PCGR MCS,PCGR PP,PCGR Services Trans,PCGR Services,Perform,Performance Evaluator NA,Petra Energy Data,Petra,Petrodata,Piper,Plan Distribution Service,Plays &amp; Basins,PointLogic Energy,Power &amp; Renewables,Power &amp; Transmission Data NA,PowerTools,Production Data NA,Production Engineering Services,Que$tor,Raster Logs NA,Rig Data NA,Seismic Surveys NA,Specialty Chemicals,SubPUMP,Surcharges,Technical Analytics,The Energy Daily,Topography Data NA,Training and Client Services,Trench Data NA,Upstream Consulting,Upstream Intelligence,Upstream Technical Consulting,Upstream View,US Offshore Lease Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>US Well Data,Validata,Valtus,Vantage Discontinued,Well Data Intl,Well Data NA,Well Log Downloader,WellTest,World Analysis</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$Case.ProductGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.CaseOwner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Avg.Survey Response-ProdGroup-Resources</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SurveyResponse__c.CaseClosedDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

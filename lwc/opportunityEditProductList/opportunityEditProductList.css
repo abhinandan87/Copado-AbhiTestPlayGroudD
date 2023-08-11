@@ -1,0 +1,102 @@
+:host {
+  --slds-c-card-shadow: none;
+  --slds-c-card-radius-border: none;
+  --slds-c-card-color-border: #ffffff; 
+  --lwc-heightInput:1.5rem; 
+}
+
+.cardClass {
+    height: 100%;
+    border-style: none;
+    border-radius: none;
+    box-shadow: none; 
+}
+
+.slds-backdrop {
+  opacity: 0.6;
+}
+
+.tableClass {
+  border-collapse: collapse;
+  margin: 25px 15px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+
+.global-icon {
+  --sds-c-icon-color-foreground-default: #ffffff;
+}
+
+.delete-icon {
+  --sds-c-icon-color-foreground-default: #ff0000;
+}
+
+.delete-fade-icon {
+  --sds-c-icon-color-foreground-default: #808080;
+}
+
+.tableHeaderClass {
+  background-color: #808080;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: small;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.tableRowClass {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-size: small;
+  background-color: #e5e4e2;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.required {
+  color: #ff0000;
+}
+
+.rTableDiv {
+  padding: 5px;
+}
+
+.schTable {
+  border: 0.5px solid #d3d3d3;
+}
+
+.errorText {
+  color: #ff0000;
+}
+
+.redBorder {
+  border: 0.5px solid #ff0000;
+}
+
+.rTable {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0 5px;
+}
+
+.rTableCell .rTableHead {
+  word-wrap: break-all;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  padding: 4px;
+  margin: 0px;
+}
+
+.paginatorSpace{
+  background-color: #ffffff;
+  min-height: 3rem;
+}

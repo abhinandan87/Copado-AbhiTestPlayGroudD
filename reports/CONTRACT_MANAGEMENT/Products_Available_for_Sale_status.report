@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.MaterialCode__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductStatus__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Division__c</field>
+    </columns>
+    <columns>
+        <field>Product2.InternalBusinessSegment__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Product2.ProductStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Available for Sale</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Products (Available for Sale status)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

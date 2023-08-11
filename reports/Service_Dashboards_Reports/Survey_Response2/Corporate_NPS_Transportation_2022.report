@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.RecipientFirstName__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.RecipientLastName__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.RecipientEmail__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>FK_$Account.CorporateNPS__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.SurveySystemReference__c</field>
+    </columns>
+    <currency>GBP</currency>
+    <filter>
+        <criteriaItems>
+            <column>SurveyResponse__c.SurveyType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Corporate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.SurveyVersion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Corporate Survey Version 2021</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.ProductGroupLookup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>International Marketing Report,Polk Data Hygeine,Auto Insight,World Markets Automotive,Auto Other,Maritime Portal,AutoTechInsight,Maritime Fairplay,Polk Demand Signals,AIS Data,Maritime Data,SeaWeb,Automotive Technology,TIPNET,VIN Solutions,Polk Data Enhancements,Recall,Global Trade Atlas,LV Production,Haystack,Polk Audiences,Maritime &amp; Trade Events,Piers Solutions,Polk Market Research,MIRS,Component Forecasting,JOC.com,Freight Rate Forecasts,BOM Manager,LV Ptrain,AD&amp;S Data,N America Market Reporting,Auto Consulting,JOC Reports,Automotive Standards,MHCV,PIERS,Maritime Ships Register,MINT Maritime,Aftersales Marketing,Aftermarket Management,Maritime Statistics,Sea Cargo Charter,Auto Events/Training,LV Sales IMR,Maritime Data Services,Auto Multi Channel Marketing,PIERS TI,iPIERS,Commodities at Sea,Maritime AISLive,PIERS Data Files,JOC Magazine,LV Sales,Auto Consulting DND,Auto EnterpriseEyeQ,Polk Data Hygiene,AD&amp;S Trans,Maritime Trade,GTA Forecasting,Global Trade Analytics Suite,Automotive &amp; Other Semiconductors,PIERS Enterprise,Maritime Books Trans,Expert Connect-Auto,Maritime Portal Desktop,Maritime Custom,Auto Conferences</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Corporate NPS | Transportation | 2021</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-10-04</startDate>
+    </timeFrameFilter>
+</Report>

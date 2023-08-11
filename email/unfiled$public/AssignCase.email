@@ -1,0 +1,7 @@
+Hello,
+​
+Regards,
+
+{!User.Name}
+
+https://ihsmarkit.lightning.force.com/lightning/r/Case/{!Case.Id}/view

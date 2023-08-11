@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AdHoc Apex Class --></label>
+        <name>Loop__AdHoc_Apex_Class__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the field name that stores a Document Id to include the document(s) in the Document Package. (Use the Field Tagger with Document Type set to Excel.) --></help>
+        <label><!-- Addendum Doc Id Field --></label>
+        <name>Loop__AddendumDocIdField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows the user to chose to store the Document Package output as determined by the Attach As field. --></help>
+        <label><!-- Allow output to be attached --></label>
+        <name>Loop__AllowOutputAttachment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This allows the user to add attachments from the associated objects to the end of the Document Package. --></help>
+        <label><!-- Allow Attachments --></label>
+        <name>Loop__Allow_Attachments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow UserId Override --></label>
+        <name>Loop__Allow_UserId_Override__c</name>
+    </fields>
+    <fields>
+        <help><!-- Attachment will create a Salesforce attachment; LOOP Storage will create a document in the LOOP Storage interface; Content and Content - User Selected will create a Content document in the appropriate Workspace. --></help>
+        <label><!-- Store As --></label>
+        <name>Loop__Attach_As__c</name>
+        <picklistValues>
+            <masterLabel>Activity History</masterLabel>
+            <translation><!-- Activity History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attachment</masterLabel>
+            <translation><!-- Attachment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation><!-- Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content</masterLabel>
+            <translation><!-- Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content - User Selected</masterLabel>
+            <translation><!-- Content - User Selected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOOP Storage</masterLabel>
+            <translation><!-- LOOP Storage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business User --></label>
+        <name>Loop__Business_User__c</name>
+        <picklistValues>
+            <masterLabel>Field Service</masterLabel>
+            <translation><!-- Field Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management</masterLabel>
+            <translation><!-- Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation><!-- Support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Articles --></label>
+        <name>Loop__Case_Articles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Library --></label>
+        <name>Loop__Content_Workspace__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will default the &apos;Additional To&apos; field when delivering the Document Package via email. Use the Field Tagger to use dynamic email addresses. --></help>
+        <label><!-- Additional To --></label>
+        <name>Loop__DDP_Additional_To__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will default the &apos;BCC&apos; field when delivering the Document Package via email. Use the Field Tagger to use dynamic email addresses. --></help>
+        <label><!-- BCC --></label>
+        <name>Loop__DDP_BCC__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will default the &apos;CC&apos; field when delivering the Document Package via email.Use the Field Tagger to use dynamic email addresses. --></help>
+        <label><!-- CC --></label>
+        <name>Loop__DDP_CC__c</name>
+    </fields>
+    <fields>
+        <help><!-- If monthly is selected and you specify a day between 29 and 31, the report runs only in the months that contain that day. --></help>
+        <label><!-- Day --></label>
+        <name>Loop__Day__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation><!-- 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19</masterLabel>
+            <translation><!-- 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation><!-- 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23</masterLabel>
+            <translation><!-- 23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24</masterLabel>
+            <translation><!-- 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>26</masterLabel>
+            <translation><!-- 26 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27</masterLabel>
+            <translation><!-- 27 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28</masterLabel>
+            <translation><!-- 28 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>29</masterLabel>
+            <translation><!-- 29 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31</masterLabel>
+            <translation><!-- 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Email Template --></label>
+        <name>Loop__Default_Email_Template__c</name>
+    </fields>
+    <fields>
+        <help><!-- For internal use. --></help>
+        <label><!-- Description --></label>
+        <name>Loop__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>Loop__Document_Type__c</name>
+        <picklistValues>
+            <masterLabel>Excel</masterLabel>
+            <translation><!-- Excel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation><!-- PDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PowerPoint</masterLabel>
+            <translation><!-- PowerPoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word</masterLabel>
+            <translation><!-- Word --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email Template --></label>
+        <name>Loop__Email_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enclosure Folder Id --></label>
+        <name>Loop__Enclosure_Folder_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit the number of enclosures that can be selected. --></help>
+        <label><!-- Enclosure Limit --></label>
+        <name>Loop__Enclosure_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, the user cannot send this Document Package to a Salesforce email template. --></help>
+        <label><!-- Exclude Email Delivery --></label>
+        <name>Loop__Exclude_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, the user cannot send this Document Package to LOOP. LOOP is a PDF conversion service. It can be used to upload ad hoc documents to convert to PDF and combine with other documents into one PDF. --></help>
+        <label><!-- Exclude LOOP Delivery --></label>
+        <name>Loop__Exclude_LOOP__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, the user cannot send this Document Package to the document queue. The Document Queue allows DDPs to be generated behind the scenes and allows for inter-department fulfillment options. --></help>
+        <label><!-- Exclude DocGen Queue Delivery --></label>
+        <name>Loop__Exclude_Queue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this value with the filter and filtertype querystring parameters on your custom button or link to filter which DDPs are listed. Filtertype options are equals, doesnotequal, startswith, endswith, contains, and doesnotcontain. --></help>
+        <label><!-- Filter --></label>
+        <name>Loop__Filter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Once activated, your report will be emailed out at this frequency. --></help>
+        <label><!-- Frequency --></label>
+        <name>Loop__Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>Loop__Industry__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any</masterLabel>
+            <translation><!-- Any --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Loop__IsActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Files from selected article types can be included at Document Package run time.
+
+Use Shift or Ctrl to select multiple options. Use Ctrl to deselect. --></help>
+        <label><!-- Optional Articles --></label>
+        <name>Loop__KA_Optional__c</name>
+    </fields>
+    <fields>
+        <help><!-- All files from selected Article Types will be included with the Document Package automatically.
+
+Use Shift or Ctrl to select multiple options. Use Ctrl to deselect. --></help>
+        <label><!-- Required Articles --></label>
+        <name>Loop__KA_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Files from selected article types can be included as separate attachments at run time. (If an article has more than one file field, the files will be listed as separate options.)
+
+Use Shift or Ctrl to select multiple options. Use Ctrl to deselect. --></help>
+        <label><!-- Separate Optional Articles --></label>
+        <name>Loop__KA_Separate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keep Word Formulas --></label>
+        <name>Loop__Keep_Word_Formulas__c</name>
+    </fields>
+    <fields>
+        <help><!-- Once activated, this field will be updated each time the report is sent out. --></help>
+        <label><!-- Last Sent --></label>
+        <name>Loop__LastSent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Limit Deployment instead. --></help>
+        <label><!-- Limit Availability --></label>
+        <name>Loop__Limit_Availability__c</name>
+        <picklistValues>
+            <masterLabel>Mass Only</masterLabel>
+            <translation><!-- Mass Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Mass Only</masterLabel>
+            <translation><!-- Non Mass Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If no options are selected, the Document Package will be available for all deployment types. --></help>
+        <label><!-- Limit Deployment (Deprecated) --></label>
+        <name>Loop__Limit_Deployment__c</name>
+        <picklistValues>
+            <masterLabel>Mass</masterLabel>
+            <translation><!-- Mass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad</masterLabel>
+            <translation><!-- iPad --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This will override the user&apos;s locale when running a Document Package. The value must be a valid locale (e.g. en-us, en-uk, fr-ca, etc.). Use the Field Tagger to dynamically set the locale. --></help>
+        <label><!-- Locale --></label>
+        <name>Loop__Locale__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a Salesforce Report Id. The first column (# zero) of the report must be the lead, contact, or user id that the report will be emailed to. Each consecutive column can be used in a report filter as !param# where # is the column number. --></help>
+        <label><!-- Mass Email Report to --></label>
+        <name>Loop__MassEmailReport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mass Email Report Name --></label>
+        <name>Loop__Mass_Email_Report_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a Salesforce Report. The first column (# zero) of the report must be the lead, contact, or user id that the report will be emailed to. Each consecutive column can be used in a report filter as !param# where # is the column number. --></help>
+        <label><!-- Mass Recipient Report --></label>
+        <name>Loop__Mass_Email_Report_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>Loop__Object_Name_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the custom object this Document Package should be available from. --></help>
+        <label><!-- Object API Name --></label>
+        <name>Loop__Object_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Document Package Templates will be processed using this version of Office. This does not need to match the version that the Document Package Templates were created/modified in. --></help>
+        <label><!-- Office Version --></label>
+        <name>Loop__Office_Version__c</name>
+        <picklistValues>
+            <masterLabel>2003</masterLabel>
+            <translation><!-- 2003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2010</masterLabel>
+            <translation><!-- 2010 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OrgWideEmailAddress --></label>
+        <name>Loop__OrgWideEmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org-Wide Email Id --></label>
+        <name>Loop__OrgWideEmailId__c</name>
+    </fields>
+    <fields>
+        <label><!-- OrgWideEmailName --></label>
+        <name>Loop__OrgWideEmailName__c</name>
+    </fields>
+    <fields>
+        <help><!-- For information on Organization-Wide Addresses, search the Salesforce Help site for organization-wide addresses. --></help>
+        <label><!-- Org-Wide Email --></label>
+        <name>Loop__Org_Wide_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the name for the Document Package output file. Use the Field Tagger to make this dynamic. Examples: &quot;Quote &lt;&lt;Opportunity_Quote_Num&gt;&gt;&quot; or &quot;&lt;&lt;Account_Name&gt;&gt; Proposal&quot;. --></help>
+        <label><!-- Output Filename --></label>
+        <name>Loop__Output_Filename__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Output Type --></label>
+        <name>Loop__Output__c</name>
+        <picklistValues>
+            <masterLabel>Originals</masterLabel>
+            <translation><!-- Originals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation><!-- PDF --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Preview URL --></label>
+        <name>Loop__Preview_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Semi-colon delimited list of at most 6 values. Defaults to: initializing ddp; security check; acquiring data; looping documents; combining ddp; routing ddp. For no processing text, type null. --></help>
+        <label><!-- Processing Text --></label>
+        <name>Loop__ProcessingText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Published --></label>
+        <name>Loop__Published__c</name>
+    </fields>
+    <fields>
+        <help><!-- Documents sent to the Queue from this Document Package will be stored in this Document Folder. --></help>
+        <label><!-- Queue Folder Id --></label>
+        <name>Loop__Queue_Folder_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Attachments --></label>
+        <name>Loop__Quote_Attachments__c</name>
+        <picklistValues>
+            <masterLabel>Allow</masterLabel>
+            <translation><!-- Allow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require</masterLabel>
+            <translation><!-- Require --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Content --></label>
+        <name>Loop__RelatedContent__c</name>
+        <picklistValues>
+            <masterLabel>Allow</masterLabel>
+            <translation><!-- Allow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require</masterLabel>
+            <translation><!-- Require --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field has been deprecated. Use the Related Object list instead. (Values in this field will overwrite the Related Object list.) --></help>
+        <label><!-- Related Objects (Deprecated) --></label>
+        <name>Loop__RelatedObjects__c</name>
+    </fields>
+    <fields>
+        <help><!-- If data in a Salesforce report contains bad/invalid characters, checking this option will remove them from the data. --></help>
+        <label><!-- Remove Invalid Characters --></label>
+        <name>Loop__Remove_Invalid_Characters__c</name>
+    </fields>
+    <fields>
+        <help><!-- The LOOP It delivery option will be renamed to this value. --></help>
+        <label><!-- Rename LOOP It --></label>
+        <name>Loop__RenameLOOP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Loop__ReportStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, the user must select an attachment to be appended to the Document Package. This option requires Allow Attachments to also be selected. --></help>
+        <label><!-- Require Attachment --></label>
+        <name>Loop__RequireAttachment__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, the user must select a contact to be used with this Document Package. --></help>
+        <label><!-- Require Contact Selection --></label>
+        <name>Loop__RequireContact__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Document Package output will be stored as specified in the Attach As field. --></help>
+        <label><!-- Require output to be attached --></label>
+        <name>Loop__RequireOutputAttachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Delivery Option --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only non-download Delivery Options related to this DocGen Package allowed. --></errorMessage>
+        </lookupFilter>
+        <name>Loop__Scheduled_Delivery_Option__c</name>
+        <relationshipLabel><!-- DocGen Packages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SecurityType --></label>
+        <name>Loop__SecurityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security --></label>
+        <name>Loop__Security__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skip AdHoc Processing --></label>
+        <name>Loop__Skip_AdHoc_Processing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time --></label>
+        <name>Loop__Time__c</name>
+        <picklistValues>
+            <masterLabel>10AM</masterLabel>
+            <translation><!-- 10AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10PM</masterLabel>
+            <translation><!-- 10PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11AM</masterLabel>
+            <translation><!-- 11AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11PM</masterLabel>
+            <translation><!-- 11PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12AM</masterLabel>
+            <translation><!-- 12AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12PM</masterLabel>
+            <translation><!-- 12PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1AM</masterLabel>
+            <translation><!-- 1AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1PM</masterLabel>
+            <translation><!-- 1PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2AM</masterLabel>
+            <translation><!-- 2AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2PM</masterLabel>
+            <translation><!-- 2PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3AM</masterLabel>
+            <translation><!-- 3AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3PM</masterLabel>
+            <translation><!-- 3PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4AM</masterLabel>
+            <translation><!-- 4AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4PM</masterLabel>
+            <translation><!-- 4PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5AM</masterLabel>
+            <translation><!-- 5AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5PM</masterLabel>
+            <translation><!-- 5PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6AM</masterLabel>
+            <translation><!-- 6AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6PM</masterLabel>
+            <translation><!-- 6PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7AM</masterLabel>
+            <translation><!-- 7AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7PM</masterLabel>
+            <translation><!-- 7PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8AM</masterLabel>
+            <translation><!-- 8AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8PM</masterLabel>
+            <translation><!-- 8PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9AM</masterLabel>
+            <translation><!-- 9AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9PM</masterLabel>
+            <translation><!-- 9PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Loop__Type__c</name>
+        <picklistValues>
+            <masterLabel>Account Plan Summary</masterLabel>
+            <translation><!-- Account Plan Summary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation><!-- Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Agreement</masterLabel>
+            <translation><!-- Legal Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter</masterLabel>
+            <translation><!-- Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Information</masterLabel>
+            <translation><!-- Product Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal</masterLabel>
+            <translation><!-- Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting</masterLabel>
+            <translation><!-- Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Agreement</masterLabel>
+            <translation><!-- Service Agreement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- WorkspaceId --></label>
+        <name>Loop__WorkspaceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- WorkspaceName --></label>
+        <name>Loop__WorkspaceName__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- API --></label>
+        <name>Loop__API</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available from an Account only --></description>
+        <label><!-- Account --></label>
+        <name>Loop__Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available from a Case only --></description>
+        <label><!-- Case --></label>
+        <name>Loop__Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available from a Contact only --></description>
+        <label><!-- Contact --></label>
+        <name>Loop__Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available from a Contract only --></description>
+        <label><!-- Contract --></label>
+        <name>Loop__Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available from a custom object only --></description>
+        <label><!-- Custom Object --></label>
+        <name>Loop__Custom_Object</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available as a form --></description>
+        <label><!-- Form --></label>
+        <name>Loop__Form</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available from a Lead only --></description>
+        <label><!-- Lead --></label>
+        <name>Loop__Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available only for Nintex Forms --></description>
+        <label><!-- Nintex Form (Deprecated) --></label>
+        <name>Loop__Nintex_Form</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available from an Opportunity only --></description>
+        <label><!-- Opportunity --></label>
+        <name>Loop__Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available from a Quote only --></description>
+        <label><!-- Quote --></label>
+        <name>Loop__Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- DocGen Package will be available as an automated email only --></description>
+        <label><!-- Report --></label>
+        <name>Loop__Report</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Activate --></label>
+        <name>Loop__Activate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Compile --></label>
+        <name>Loop__Compile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Custom_Delete --></label>
+        <name>Loop__Custom_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DDP_Button_Wizard --></label>
+        <name>Loop__DDP_Button_Wizard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Deactivate --></label>
+        <name>Loop__Deactivate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Field_Tagger --></label>
+        <name>Loop__Field_Tagger</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Field_Tagger_Btn --></label>
+        <name>Loop__Field_Tagger_Btn</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Migrate_DDPs --></label>
+        <name>Loop__Migrate_DDPs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Quick_DDP --></label>
+        <name>Loop__Quick_DDP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Form --></label>
+        <name>Loop__Run_Form</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Test --></label>
+        <name>Loop__Test</name>
+    </webLinks>
+</CustomObjectTranslation>

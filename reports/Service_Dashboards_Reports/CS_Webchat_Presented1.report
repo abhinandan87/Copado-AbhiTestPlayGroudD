@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATEONLY</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.SkillLevel__c</field>
+    </columns>
+    <columns>
+        <field>CONTACT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Case.Subtype__c</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Case.ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>Case.BusinessLine__c</field>
+    </columns>
+    <currency>GBP</currency>
+    <description>Demo L-IHS Report for cemail/cases presented</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Account,Case,Contract,Email,Fax,Internal,Lead,Mail,Marketing,Self Service,Service Now,VM,Web,Web to Case,Email: support@ihsmarkit.com,Quick Action</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Accumap-Data,AccuLogs,Accumap,Accumap-Midstream,Accumap-Software,Asset Valuation,Base Chemcicals,Basin Data,Chemical Consulting,Chemical Cost Curve Service,Chemical Events,Chemical Handbooks: Speciality Chemicals,Chemical Information &amp; Same Day Analysis,Chemical PP,Chemical Reports: Custom,Chemical Reports: PEP,Chemical Technology Analytics Reports,Chemicals Royalties,Coal Consulting,Coal Events,Coal Indices,Coal Publications &amp; Indices,Coal,Community,Companies &amp; Transactions,Company Insight,Company Strategies and Performance,Content Delivery Intl Mid,Content Delivery Intl,Content Delivery NA,Content Delivery Partner,Content Partners NA,Context Distribution/Content,Costs &amp; Technology,Crude Oil Markets,Culture Data NA,Data Management Content Intl,Data Management Content NA,Data Management Services NA,Digital Logs NA,DMS Midstream,DNA,Downstream Analytics,Downstream Consulting,Downstream PP,Drilling Data NA,Drilling Wire NA,E&amp;P Content Intl,E&amp;P Terms &amp; Above Ground Risks,EDM Base,EGIS Can,EGIS Midstream,Energy Documents,Energy News on Demand,Engineering Data NA,Engineering Training &amp; Client Services,Environmental Data NA,eTriever,EV Recharge Locations,Evolution,EWP Consulting,EWP Events,EWP Financial,EWP Non-Financial,EWP Paid Presentations,EWP Trans</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Field Maps NA,FieldDirect,Fuel Prices,General Energy Data Services &amp; Fees,Geopolitical Data NA,GeoSyn Data,GeoWebWorks Can,GIS Data NA,GIS Mistream,Global Gas,Global Markets,Harmony Enterprise,Harmony,Interpreted Tops,Kingdom,Land Data Can,Land Data US,Land Data,LAS Tools,Log Digitizing Services,LogArc / LogTech,Logs &amp; Seismic Data Intl,LPG Events,Market Advisory Service (MAS),Market Daily Services,Metals &amp; Mining,Midstream Oil &amp; Gas Data,Midstream Oil &amp; NGL,Midstream,NAPD Other,NAPD,NAVX Other,NAVX Retail,Oil &amp; Gas Data,OMDC Consulting,OMMD Data,OMMD MCS,OPIS Rack,OPIS Retail,OPIS Spot,Optimize,Paid Presentations,Parking Availability,PCGR Consulting,PCGR MCS,PCGR PP,PCGR Services Trans,PCGR Services,Perform,Performance Evaluator NA,Petra Energy Data,Petra,Petrodata,Piper,Plan Distribution Service,Plays &amp; Basins,PointLogic Energy,Power &amp; Renewables,Power &amp; Transmission Data NA,PowerTools,Production Data NA,Production Engineering Services,Que$tor,Raster Logs NA,Rig Data NA,Seismic Surveys NA,Specialty Chemicals,SubPUMP,Surcharges,Technical Analytics,The Energy Daily,Topography Data NA,Training and Client Services,Trench Data NA,Upstream Consulting,Upstream Intelligence,Upstream Technical Consulting,Upstream View,US Offshore Lease Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>US Well Data,Validata,Valtus,Vantage Discontinued,Well Data Intl,Well Data NA,Well Log Downloader,WellTest,World Analysis,Not in SAP Product Master,Retail,Not an SAP Product,Agri Consulting,Animal Health,Commodities &amp; Food,Crop Protection &amp; Seeds,Policy &amp; Regulation,Fertilizers,Biofuels,Agriculture</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Above Ground,Advantage,AFNOR LOCAL,Agriculture,AVDATA,Benchmarking,BOM Manager,CAPS Connect,Caps Universe,CatalogXpress,CIS Advertising,CIS,Consolidated Law Registers,Cost Benchmarking,Deposit Accounts,ECR Consulting Healthcare,ECR Consulting Macro Econ,ECR Consulting Supply Chain,ECR Consulting,ECR Country Intelligence,ECR Events NA,ECR Events,ECR Industry Services,ECR Macro Economics,ECR Macro Services,ECR Risk Services,ECR South Africa,ECR Suites,ECR US Regional Services,EIATrack,Energy Technology,Engineering Workbench - KC,Engineering Workbench - Other,Engineering Workbench - S&amp;S UK Local,Engineering Workbench - S&amp;S,Engineering Workbench Platform,Engineering Workbench Training,Engineer-it,Environment,Environmental Performance,EQADS (ERC),Equipment,ESDU,ESG Custom,ESG,Facilities Management,FastrackCAD,Food and Drink,Foresight,Goldfire Services,Goldfire,Gov,Haystack,HDB Data - Financial,HDB Software (Aremos,IDDS,FAME,Other),HDB Software (DataInsight),Healthcare - Life Sciences,Healthcare MSC/PP,HFIS,HMMS Consulting,Info4 Portals</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IntraSource,Irish CIS,Irish OHSIS,ISS,Knowledge Collection,Legacy Dataware Maintenance,Legacy Dataware Services,Legacy Dataware Subs,Not in SAP Product Master OHSIS Adverts,OHSIS,Operational Excellence,P&amp;P Supply Chain - Procurement,Parts Data Services,Parts,PARTsolutions,PCNalert,Performance Benchmarking,Perinorm,Portals,Product Design Consulting,Product Design Custom,Product Design Events,Product Design Maintenance,Product Design Services UK,Product Design Services,Product Design Support Services,Product Design Tools,Reference Linking Service,Retail,Shared,Specify,Specify-It,TDNet,Tools,Trading Standards Specialist,US Military/DODISS,World Economic Service,World Markets Monitor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AD&amp;S Consulting,AD&amp;S Data,AD&amp;S Data Other,AD&amp;S Events/Training,AD&amp;S Trans,AIS Data,AIS Data (EE),AIS Data Other,Auto Advisory,Auto Conferences,Auto Consulting,Auto Consulting DND,Auto Events/Training,Auto Multi Channel Marketing,Auto Other,Auto Technology,Commercial Account File,Component Forecasting,Dealer Network Planning,Forecasting,Global Trade Atlas,Global Trade Atlas Trans,International Marketing Report,iPIERS,iPiers Data Files Trans,JOC Magazine,JOC Membership,JOC Reports,JOC.com,LV Production,LV Ptrain,LV Sales,LV Sales IMR,Maritime &amp; Trade Events,Maritime AISLive,Maritime Books Trans,Maritime Consulting,Maritime Custom,Maritime Data,Maritime Data Services,Maritime Data Trans,Maritime Distance,Maritime Fairplay,Maritime Fairplay Events,Maritime News,Maritime Other,Maritime Portal,Maritime Portal Desktop,Maritime Royalties,Maritime Statistics,Maritime Trade,Martime Training,MHCV,MHCV Advisory,MINT Maritime,N America Market Reporting,PIERS,PIERS Data Files,PIERS Enterprise,Piers Solutions,Ports &amp; Harbours,Ports Guide,Recall,Recall Postage,Safety at Sea,SeaWeb,Shipping Markets,Supplier Insight,World Markets Automotive,World Register of Ships,World Shipping Encyclopedia,World Trade Atlas</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CS - Webchat Presented</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CASE_NUMBER</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

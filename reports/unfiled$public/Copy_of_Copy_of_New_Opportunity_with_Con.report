@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contracts__r$ContractNumber</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contracts__r$ContractStatus__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>oppies</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Contracts__r$OpportunityNumber__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OP0001239489,OP0001422368,OP0001121682,OP0001400249,OP0001288531,OP0001309029,OP0001423552,OP0001480004,OP0000835554,OP0001104817,OP0001218199,OP0000636533,OP0000670764,OP0001339065,OP0000993776,OP0000562015,OP0001200295,OP0000782670,OP0001120089,OP0001098180,OP0001385158,OP0000239910,OP0001325446,OP0001353658,OP0001242395,OP0001483187,OP0001436934,OP0001381464,OP0000642983,OP0001424998,OP0001465784,OP0001198938</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Contracts__r$OpportunityNumber__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of Copy of New Opportunity with Con</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunitywithContracts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

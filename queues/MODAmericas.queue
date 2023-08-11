@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Digital</name>
+    <queueMembers>
+        <users>
+            <user>anthony.puentes@ihsmarkit.com</user>
+            <user>daniel.scaglione@ihsmarkit.com</user>
+            <user>jayna.whitcher@ihsmarkit.com</user>
+            <user>lara.edwards@ihsmarkit.com</user>
+            <user>lydia.malin@ihsmarkit.com</user>
+            <user>marjorie.patton@ihsmarkit.com</user>
+            <user>sean.steeves@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

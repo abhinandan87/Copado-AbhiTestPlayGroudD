@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_59961396</developerName>
+        <masterLabel>Legal Approvers</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Contract.Internal_Approvals__r$Contact__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Allison Labovitz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Arshee Nigar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Austin Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bethany Harrington</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Boris Gelfand</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christina Damiano</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christina Plummer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christopher McLoughlin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Claudia Pascuzzo Dominguez-Pombo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Salm</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deena Mccabe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emma Inkester</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emma Inkester-Dann</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hidehiro Kanehara</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Khalil Nobles</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Nelson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Natalia Marcos</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nathan Kirk</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yieng San Kho</sourceValue>
+            </sourceValues>
+            <value>&lt;5 approvals</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Contract$ContractNumber</field>
+    </columns>
+    <columns>
+        <field>Contract$RecordType</field>
+    </columns>
+    <columns>
+        <field>Contract.Internal_Approvals__r$Status__c</field>
+    </columns>
+    <columns>
+        <field>Contract$GlobalSegments__c</field>
+    </columns>
+    <columns>
+        <field>Contract.Internal_Approvals__r$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Contract.Internal_Approvals__r$ApprovalType__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contract$CurrentAnnualValue__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Contract$ClientLegalEntityCountryLookup__c</field>
+    </columns>
+    <columns>
+        <field>Contract$ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Legal approvers for modified contracts</description>
+    <filter>
+        <criteriaItems>
+            <column>Contract.Internal_Approvals__r$ApprovalType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Legal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$GlobalSegments__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>financial</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Contracts with Internal Approval (Legal)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contracts_with_Internal_Approvals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contract$StartDate</dateColumn>
+        <endDate>2020-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-12-01</startDate>
+    </timeFrameFilter>
+</Report>

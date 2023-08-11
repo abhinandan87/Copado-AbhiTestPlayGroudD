@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Actual Finish --></label>
+        <name>metazoa3__actual_finish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Start --></label>
+        <name>metazoa3__actual_start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Work --></label>
+        <name>metazoa3__actual_work__c</name>
+    </fields>
+    <fields>
+        <label><!-- Archive Flag --></label>
+        <name>metazoa3__archive_flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Deployments --></label>
+        <name>metazoa3__broadcast_deployments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Sprint Changes --></label>
+        <name>metazoa3__broadcast_sprint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Stage Changes --></label>
+        <name>metazoa3__broadcast_stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Story Changes --></label>
+        <name>metazoa3__broadcast_story__c</name>
+    </fields>
+    <fields>
+        <label><!-- Burndown Graph --></label>
+        <name>metazoa3__burndown_graph__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detailed Comments --></label>
+        <name>metazoa3__detailed_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Field One --></label>
+        <name>metazoa3__extra_field_one__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Field Two --></label>
+        <name>metazoa3__extra_field_two__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Flag One --></label>
+        <name>metazoa3__extra_flag_one__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Flag Two --></label>
+        <name>metazoa3__extra_flag_two__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finish Date --></label>
+        <name>metazoa3__finish_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Branch --></label>
+        <name>metazoa3__master_branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>metazoa3__object_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partial Deployments --></label>
+        <name>metazoa3__partial_deployments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Complete --></label>
+        <name>metazoa3__percent_complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Work --></label>
+        <name>metazoa3__planned_work__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sprint Owner --></label>
+        <name>metazoa3__sprint_owner__c</name>
+        <relationshipLabel><!-- Snapshot Sprints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>metazoa3__start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Deployments --></label>
+        <name>metazoa3__total_deployments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Stories --></label>
+        <name>metazoa3__total_stories__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacation Days --></label>
+        <name>metazoa3__vacation_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Days --></label>
+        <name>metazoa3__work_days__c</name>
+    </fields>
+</CustomObjectTranslation>

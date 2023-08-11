@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Issuer Solutions - Americas</name>
+    <queueMembers>
+        <users>
+            <user>douglas.french@ihsmarkit.com.prod</user>
+            <user>janos.zsiros@ihsmarkit.com</user>
+            <user>michael.hutto@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

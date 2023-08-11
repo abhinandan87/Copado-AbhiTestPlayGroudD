@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be used when Customer is unable to be view any of the research entitlements</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Markit Hub research content issue</name>
+    <style>none</style>
+    <subject>Markit Hub research content issue</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for contacting Customer Care at IHS Markit.
+
+The Markit Hub platform provides third-party unified access to multiple research providers, who are common customers with IHSMarkit. The content is managed direcly by each research provider and not by Markit Hub.
+
+Therefore, please reach out to the support team at  &lt;Research Provider Company Name&gt;  by emailing the support team at  &lt;email address&gt;  who will be able to assist you.
+
+If you require any further assistance, please do not hesitate to contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

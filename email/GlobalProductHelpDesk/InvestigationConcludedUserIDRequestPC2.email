@@ -1,0 +1,26 @@
+Dear {!Contact.FirstName},
+
+We are writing to inform you that we have completed your User ID request for access to PolkConnect:
+
+User ID: 
+Password: 
+
+The URL for PolkConnect 2.0 is https://polkconnect.polk.com
+
+Should you have any further questions, please do not hesitate to contact us again, quoting Case # {!Case.CaseNumber}. 
+
+Kind regards, 
+
+{!User.FirstName} {!User.LastName} 
+IHS Automotive Global Product Help Desk
+01727 733 800 
+Product_Helpdesk@ihs.com
+www.ihs.com
+
+A complete description of the Case is as follows:
+
+--------------------------------------------------------------------------
+
+{!Case.Description}
+
+--------------------------------------------------------------------------

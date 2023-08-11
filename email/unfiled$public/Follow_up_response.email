@@ -1,0 +1,13 @@
+Dear {!Contact.FirstName},
+<br><br>
+Good day!<br>
+Thanks for reaching out to the Salesforce Helpdesk Team.
+<br><br>
+Your original request {!Case.Parent} is currently assigned to the “respective team name”.
+<br><br>
+We are forwarding your follow-up request to them so that they can provide you with the solution at the earliest.<br><br>
+Feel free to reach out to us in case of any queries.
+<br><br>
+Regards,<br>
+{!Case.OwnerFullName}<br>
+Salesforce Helpdesk

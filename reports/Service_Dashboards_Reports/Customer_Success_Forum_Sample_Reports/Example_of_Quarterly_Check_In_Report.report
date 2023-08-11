@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Beth Emmert,Brandon Murnane,Gary Ge,Shellie Howard,FM | Markit Research Manager,Joel Gamzon,Kas Shambrook,Priscilla Kim,Robert Curtis,Bergina Obertinca,Olga Scerbatiuk,Ilaria Valaydon Pyke,Tom Hodds</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Quarterly Check In</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Time Tracking</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Example of Quarterly Check In Report</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>e</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>DUE_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <endDate>2019-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-10-01</startDate>
+    </timeFrameFilter>
+</Report>

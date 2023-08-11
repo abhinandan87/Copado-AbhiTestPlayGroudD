@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Goldfire | Requests</name>
+    <queueMembers>
+        <users>
+            <user>evan.shelby@ihsmarkit.com</user>
+            <user>mark.kaprielian@ihsmarkit.com</user>
+            <user>peter.suhorukov@ihsmarkit.com</user>
+            <user>vitali.burko@ihsmarkit.com</user>
+            <user>vladimir.oleinik@ihsmarkit.com.prod</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

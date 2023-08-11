@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Airlines</fullName>
+        <default>false</default>
+        <label>Airlines</label>
+    </customValue>
+    <customValue>
+        <fullName>Airports</fullName>
+        <default>false</default>
+        <label>Airports</label>
+    </customValue>
+    <customValue>
+        <fullName>Animal Health</fullName>
+        <default>false</default>
+        <label>Animal Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Auto Finance</fullName>
+        <default>false</default>
+        <label>Auto Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Auto Manufacturers</fullName>
+        <default>false</default>
+        <label>Auto Manufacturers</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive - Other</fullName>
+        <default>false</default>
+        <label>Automotive - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Auto Parts Suppliers Other</fullName>
+        <default>false</default>
+        <label>Auto Parts Suppliers Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Auto Parts Suppliers Tier 1</fullName>
+        <default>false</default>
+        <label>Auto Parts Suppliers Tier 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Auto Retailers</fullName>
+        <default>false</default>
+        <label>Auto Retailers</label>
+    </customValue>
+    <customValue>
+        <fullName>Auto Services</fullName>
+        <default>false</default>
+        <label>Auto Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Business/Management</fullName>
+        <default>false</default>
+        <label>Business/Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemicals - Other</fullName>
+        <default>false</default>
+        <label>Chemicals - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>CLO Manager</fullName>
+        <default>false</default>
+        <label>CLO Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Coal and Commodity Traders</fullName>
+        <default>false</default>
+        <label>Coal and Commodity Traders</label>
+    </customValue>
+    <customValue>
+        <fullName>Coal Mining - Coking/Met Coal Producers</fullName>
+        <default>false</default>
+        <label>Coal Mining - Coking/Met Coal Producers</label>
+    </customValue>
+    <customValue>
+        <fullName>Coal Mining - Thermal/Steam Coal Producers</fullName>
+        <default>false</default>
+        <label>Coal Mining - Thermal/Steam Coal Producers</label>
+    </customValue>
+    <customValue>
+        <fullName>Commodity</fullName>
+        <default>false</default>
+        <label>Commodity</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer</fullName>
+        <default>false</default>
+        <label>Consumer</label>
+    </customValue>
+    <customValue>
+        <fullName>Crop Protection and Seed</fullName>
+        <default>false</default>
+        <label>Crop Protection and Seed</label>
+    </customValue>
+    <customValue>
+        <fullName>Currency</fullName>
+        <default>false</default>
+        <label>Currency</label>
+    </customValue>
+    <customValue>
+        <fullName>Diversified</fullName>
+        <default>false</default>
+        <label>Diversified</label>
+    </customValue>
+    <customValue>
+        <fullName>Downstream - Other</fullName>
+        <default>false</default>
+        <label>Downstream - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Drilling and Completions</fullName>
+        <default>false</default>
+        <label>Drilling and Completions</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric - Coops</fullName>
+        <default>false</default>
+        <label>Electric - Coops</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric - Munis</fullName>
+        <default>false</default>
+        <label>Electric - Munis</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric - Transportation/Distribution and Regulated Retail</fullName>
+        <default>false</default>
+        <label>Electric - Transportation/Distribution and Regulated Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric - Transportation/Distribution and Unregulated Retail</fullName>
+        <default>false</default>
+        <label>Electric - Transportation/Distribution and Unregulated Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Traders</fullName>
+        <default>false</default>
+        <label>Energy Traders</label>
+    </customValue>
+    <customValue>
+        <fullName>Equity</fullName>
+        <default>false</default>
+        <label>Equity</label>
+    </customValue>
+    <customValue>
+        <fullName>ETFs</fullName>
+        <default>false</default>
+        <label>ETFs</label>
+    </customValue>
+    <customValue>
+        <fullName>Fertilizers</fullName>
+        <default>false</default>
+        <label>Fertilizers</label>
+    </customValue>
+    <customValue>
+        <fullName>Fertilizers and Agricultural</fullName>
+        <default>false</default>
+        <label>Fertilizers and Agricultural</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Services and Supply</fullName>
+        <default>false</default>
+        <label>Field Services and Supply</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial</fullName>
+        <default>false</default>
+        <label>Financial</label>
+    </customValue>
+    <customValue>
+        <fullName>Fixed Income</fullName>
+        <default>false</default>
+        <label>Fixed Income</label>
+    </customValue>
+    <customValue>
+        <fullName>Fleet</fullName>
+        <default>false</default>
+        <label>Fleet</label>
+    </customValue>
+    <customValue>
+        <fullName>Gas</fullName>
+        <default>false</default>
+        <label>Gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Gathering and Processing</fullName>
+        <default>false</default>
+        <label>Gathering and Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Growth</fullName>
+        <default>false</default>
+        <label>Growth</label>
+    </customValue>
+    <customValue>
+        <fullName>Hardware</fullName>
+        <default>false</default>
+        <label>Hardware</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare</fullName>
+        <default>false</default>
+        <label>Healthcare</label>
+    </customValue>
+    <customValue>
+        <fullName>Hedge Funds</fullName>
+        <default>false</default>
+        <label>Hedge Funds</label>
+    </customValue>
+    <customValue>
+        <fullName>Household Appliances</fullName>
+        <default>false</default>
+        <label>Household Appliances</label>
+    </customValue>
+    <customValue>
+        <fullName>Household Durables</fullName>
+        <default>false</default>
+        <label>Household Durables</label>
+    </customValue>
+    <customValue>
+        <fullName>Housewares</fullName>
+        <default>false</default>
+        <label>Housewares</label>
+    </customValue>
+    <customValue>
+        <fullName>Independent Oil Company</fullName>
+        <default>false</default>
+        <label>Independent Oil Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Independent Power Products and Developers</fullName>
+        <default>false</default>
+        <label>Independent Power Products and Developers</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Gases</fullName>
+        <default>false</default>
+        <label>Industrial Gases</label>
+    </customValue>
+    <customValue>
+        <fullName>Information Technology</fullName>
+        <default>false</default>
+        <label>Information Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Infrastructure</fullName>
+        <default>false</default>
+        <label>Infrastructure</label>
+    </customValue>
+    <customValue>
+        <fullName>International Oil Company (IOC)</fullName>
+        <default>false</default>
+        <label>International Oil Company (IOC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Life</fullName>
+        <default>false</default>
+        <label>Life</label>
+    </customValue>
+    <customValue>
+        <fullName>Limited Partners</fullName>
+        <default>false</default>
+        <label>Limited Partners</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketer/Retailer/Jobber</fullName>
+        <default>false</default>
+        <label>Marketer/Retailer/Jobber</label>
+    </customValue>
+    <customValue>
+        <fullName>Market Regulators</fullName>
+        <default>false</default>
+        <label>Market Regulators</label>
+    </customValue>
+    <customValue>
+        <fullName>Midstream Other</fullName>
+        <default>false</default>
+        <label>Midstream Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Monoline</fullName>
+        <default>false</default>
+        <label>Monoline</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi - Sector</fullName>
+        <default>false</default>
+        <label>Multi - Sector</label>
+    </customValue>
+    <customValue>
+        <fullName>National Oil Company (NOC)</fullName>
+        <default>false</default>
+        <label>National Oil Company (NOC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-operating Company</fullName>
+        <default>false</default>
+        <label>Non-operating Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Oilfield Services and Equipment - Other</fullName>
+        <default>false</default>
+        <label>Oilfield Services and Equipment - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceutical</fullName>
+        <default>false</default>
+        <label>Pharmaceutical</label>
+    </customValue>
+    <customValue>
+        <fullName>Pipeline/Terminal/Barge</fullName>
+        <default>false</default>
+        <label>Pipeline/Terminal/Barge</label>
+    </customValue>
+    <customValue>
+        <fullName>Pipeline Operator</fullName>
+        <default>false</default>
+        <label>Pipeline Operator</label>
+    </customValue>
+    <customValue>
+        <fullName>Ports and Terminals</fullName>
+        <default>false</default>
+        <label>Ports and Terminals</label>
+    </customValue>
+    <customValue>
+        <fullName>Power Market Operations and Grid Management / RTO / ISO</fullName>
+        <default>false</default>
+        <label>Power Market Operations and Grid Management / RTO / ISO</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Credit</fullName>
+        <default>false</default>
+        <label>Private Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Equity</fullName>
+        <default>false</default>
+        <label>Private Equity</label>
+    </customValue>
+    <customValue>
+        <fullName>Property and Casualty</fullName>
+        <default>false</default>
+        <label>Property and Casualty</label>
+    </customValue>
+    <customValue>
+        <fullName>Real estate</fullName>
+        <default>false</default>
+        <label>Real estate</label>
+    </customValue>
+    <customValue>
+        <fullName>Refining and Marketing - Gas</fullName>
+        <default>false</default>
+        <label>Refining and Marketing - Gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Refining and Marketing - LNG</fullName>
+        <default>false</default>
+        <label>Refining and Marketing - LNG</label>
+    </customValue>
+    <customValue>
+        <fullName>Refining and Marketing - Oil</fullName>
+        <default>false</default>
+        <label>Refining and Marketing - Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Reinsurance</fullName>
+        <default>false</default>
+        <label>Reinsurance</label>
+    </customValue>
+    <customValue>
+        <fullName>REITs</fullName>
+        <default>false</default>
+        <label>REITs</label>
+    </customValue>
+    <customValue>
+        <fullName>Retailer Other</fullName>
+        <default>false</default>
+        <label>Retailer Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Seismic and Geophysical</fullName>
+        <default>false</default>
+        <label>Seismic and Geophysical</label>
+    </customValue>
+    <customValue>
+        <fullName>Services/Information Services</fullName>
+        <default>false</default>
+        <label>Services/Information Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipping</fullName>
+        <default>false</default>
+        <label>Shipping</label>
+    </customValue>
+    <customValue>
+        <fullName>Software</fullName>
+        <default>false</default>
+        <label>Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty</fullName>
+        <default>false</default>
+        <label>Specialty</label>
+    </customValue>
+    <customValue>
+        <fullName>Storage</fullName>
+        <default>false</default>
+        <label>Storage</label>
+    </customValue>
+    <customValue>
+        <fullName>Tangible Assets</fullName>
+        <default>false</default>
+        <label>Tangible Assets</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical</fullName>
+        <default>false</default>
+        <label>Technical</label>
+    </customValue>
+    <customValue>
+        <fullName>Technology - Other</fullName>
+        <default>false</default>
+        <label>Technology - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Transmission and Distribution</fullName>
+        <default>false</default>
+        <label>Transmission and Distribution</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation and Shipping</fullName>
+        <default>false</default>
+        <label>Transportation and Shipping</label>
+    </customValue>
+    <customValue>
+        <fullName>Truckstop</fullName>
+        <default>false</default>
+        <label>Truckstop</label>
+    </customValue>
+    <customValue>
+        <fullName>Upstream - Other</fullName>
+        <default>false</default>
+        <label>Upstream - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Venture Capital</fullName>
+        <default>false</default>
+        <label>Venture Capital</label>
+    </customValue>
+    <customValue>
+        <fullName>Water</fullName>
+        <default>false</default>
+        <label>Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Storage, Transportation, Disposal and Recycling</fullName>
+        <default>false</default>
+        <label>Water Storage, Transportation, Disposal and Recycling</label>
+    </customValue>
+    <description>SFDC-2810 Updated &apos;New Account Request Forms&apos;</description>
+    <masterLabel>Institution Sub Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Test CC</name>
+    <style>none</style>
+    <subject>testing</subject>
+    <textOnly>Dear Team,
+
+Please can you assist with below document inclusion and advise at your earliest convenience?
+
+Below you will find subscription details:
+
+Call Details Customer care – Please copy Account Manager
+IHS Markit Case ID  {!Case.CaseNumber}
+IHS Markit Case Owner  {!Case.OwnerFullName}
+Company Name  {!Case.Account}
+IHS Markit Syst. Account
+Customer Name  {!Case.Contact}
+Subscription Details Supplement details (please be precise on the required BS Supplement)
+Date Call/Case received  {!Case.CreatedDate}
+Document Number Document Title
+Request from Customer
+Additional Info from Customer Care i.e.
+PM call response
+Date response sent to Customer Care
+Any follow up required?
+
+
+
+Looking forward to your response.
+Best regards,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

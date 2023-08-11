@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPP.CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>OPP.PROBABILITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OPP.AMOUNT.CONVERT</field>
+    </columns>
+    <columns>
+        <field>INFLUENCE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>REVENUE_SHARE.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CampaignInfluence.ExpectedRevenueShare__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>if(contains(Text(OPP.LEAD_SOURCE),&quot;Market&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Push&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Website&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;SEO&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Inbound&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Paid&quot;),&quot;Marketing Sourced&quot;,&quot;Marketing Influenced&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Marketing Sourced/Influenced</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Opportunities For 2020 Marketing Corporate Actions - Pipeline Influenced</description>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PRC-CA-22Sept20-NA CA webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PRC-CA-29Sept20-EMEA CA webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IS-Indices-2020-ESG iBoxx GSS Whitepaper</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SL-EDM-07Sep20-GBL-CT-IDC whitepaper - Energy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SL-EDM-07Sep20-GBL-CT-IDC whitepaper - Maritime</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SL-EDM-07Sep20-GBL-CT-IDC whitepaper - Energy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SL-EDM-07Sep20-GBL-WB-IDC whitepaper - Energy webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IS-Indices-2020-ESG Greenium Whitepaper</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPP.FORECAST_CATEGORY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Dorothy 2020/21 Leads</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomizableCampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+</Report>

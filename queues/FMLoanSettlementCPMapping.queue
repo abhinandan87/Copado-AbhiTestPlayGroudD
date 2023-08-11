@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Loan Settlement | CP Mapping</name>
+    <queueMembers>
+        <users>
+            <user>robert.fiore@ihsmarkit.com.prod</user>
+            <user>christopher.bosworth@ihsmarkit.com</user>
+            <user>christopher.ghobashy@ihsmarkit.com</user>
+            <user>daniel.trejo@ihsmarkit.com</user>
+            <user>genevieve.paganini@ihsmarkit.com</user>
+            <user>gina.giraldo@ihsmarkit.com</user>
+            <user>gregory.deely@ihsmarkit.com</user>
+            <user>james.morgan@ihsmarkit.com.prod</user>
+            <user>john.colombini@ihsmarkit.com</user>
+            <user>jozefina.lekutanovic@ihsmarkit.com</user>
+            <user>nareeya.sullivan@ihsmarkit.com</user>
+            <user>shane.durgana@ihsmarkit.com.prod</user>
+            <user>stacey-ann.nicholas@ihsmarkit.com.prod</user>
+            <user>vismayra.estevez@ihsmarkit.com</user>
+            <user>yolanda.schmidt@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

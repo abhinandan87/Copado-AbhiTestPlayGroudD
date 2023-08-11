@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Energy | Petra</name>
+    <queueMembers>
+        <users>
+            <user>bob.brownjr@ihsmarkit.com</user>
+            <user>craig.lochhead@ihsmarkit.com</user>
+            <user>dan.pettit@ihsmarkit.com</user>
+            <user>daniel.bettinger@ihsmarkit.com</user>
+            <user>daniel.louser@ihsmarkit.com</user>
+            <user>dayleen.thompson@ihsmarkit.com</user>
+            <user>jessica.quintanar@ihsmarkit.com</user>
+            <user>joshua.boss@ihsmarkit.com</user>
+            <user>justin.delp@ihsmarkit.com</user>
+            <user>justin.rutherford@ihsmarkit.com</user>
+            <user>michael.blackstone@ihsmarkit.com</user>
+            <user>randall.bennett@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

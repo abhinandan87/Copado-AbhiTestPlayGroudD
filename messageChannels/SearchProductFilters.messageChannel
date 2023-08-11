@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This event is fired when product search filters change from Search Products screen.</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Holds the product search filter values</description>
+        <fieldName>prodSearchFilters</fieldName>
+    </lightningMessageFields>
+    <masterLabel>SearchProductFilters</masterLabel>
+</LightningMessageChannel>

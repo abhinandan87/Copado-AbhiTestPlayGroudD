@@ -1,0 +1,27 @@
+.delete-icon {
+    --sds-c-icon-color: gray;
+}
+
+.containerdiv > div {
+    display: inline-block;
+    padding-top:10px;
+    margin-left: 16px;
+}
+
+.paginatorDiv{
+    padding-top:1rem;
+    padding-bottom: 2.5rem;
+}
+
+.cardstyle{
+    height: 100%;
+    border-style: none;
+    border-radius: none;
+    box-shadow: none;
+    
+}
+
+.icondiv{
+    float:right;
+    padding-right: 10px;
+}

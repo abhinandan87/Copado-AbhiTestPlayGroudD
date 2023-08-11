@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Campaign__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.When__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.IHSMarkitAttendeeNames__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>MeetingNote__c.IHSMarkitAttendeeNames__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>rahul bhalla,Randolf Tantzscher,Shelly Wu,Kangwei Yang,Jessica Tan,Shirlene Yeong,Joey Low,Seolin Park</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MeetingNote__c.Country__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>iBoxx Asia Meeting Notes Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MeetingNote__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MeetingNote__c.When__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

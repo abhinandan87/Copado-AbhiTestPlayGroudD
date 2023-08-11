@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalCaseFields__c.CaseStage__c</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalCaseFields__c.AssetClass__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Bhavya Narang,Sarah Suhaimi,Ivy Zheng,Luka Orlic,Haley Ward,Zef Narkaj,Karan Oswal,Mohammed Siraj,Abhay Kalia,Greg Melton,Chevvakula Kumar,Eddagiri Manohar,Karishma Ramchandani,Pinnem Varma,Mohan Subramaniam,Muhammad Hanif Bin Zahari,Harshal Garg,Muhammad Hazim Noran,Herni Hamidi,Joseph Laskus,Fuad Mohd Sor,Grace Popoola,Khushboo Singh,Ernesto Velasquez,Prateek Motan,Prabha Rawat,Manjeet Kaur,Rahul Bajaj,Dhanishtha Rajan,Mudit Sarna,Ruchika Gupta,kunal asiwal,rahul sharma,suchita goel,spencer bradley,sagar kataria,manasvi pathak,priti agarwal,shivendu srivastava,vipin gupta,sneha khosla,mayank bhatia,sumit kumar mishra,mohit saini,praveen kumar,blake lee,michael english,mason addy,matthew luce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed - Canceled,Closed - Resolved,Closed - Referral,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Delete,Duplicate,Closed,Closed - Moved to Jira</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.IssueType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>NAR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.CaseStage__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pending 4 Eye Check</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LRD: Pending NAR QC</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

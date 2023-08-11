@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>((1 OR 2 OR 3) OR 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>SurveyResponse__c.Response22__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Opis,Reports for Oil Price Information Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.Response23__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>opis,Reports for Oil Price Information Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.Response32__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Opis,Reports for Oil Price Information Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.ProductGroupLookup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Opis,OPIS Services,Expert Connect-OPIS,OPIS Spot,OPIS Retail,OPIS Rack</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.SurveyType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Training</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.AlertType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.SurveyType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Training Surveys - OPIS (All Types)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-10-04</startDate>
+    </timeFrameFilter>
+</Report>

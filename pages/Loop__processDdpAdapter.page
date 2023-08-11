@@ -1,0 +1,61 @@
+<apex:page id="processDdpAdapter" controller="Loop.ProcessDdpAdapterController" showHeader="false" sidebar="false" lightningStylesheets="true">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <apex:slds />
+        <style type="text/css">
+            .process-ddp-container {
+                margin-top: .5rem;
+                margin-bottom: 1rem;
+            }
+            .process-ddp-container .success-icon {
+                color: #04844b;
+            }
+            .process-ddp-container .title-container, .process-ddp-container .success-icon {
+                /* We programmatically show the card title onComplete */
+                display: none;
+            }
+        </style>
+        <div class="process-ddp-container slds-scope">
+            <div class="slds-media slds-media_center title-container">
+                <div class="slds-media__figure">
+                    <span class="success-icon slds-icon_container slds-current-color" title="Success">
+                        <svg aria-hidden="true" class="slds-icon slds-icon_small">
+                            <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#success')}"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Success</span>
+                    </span>
+                </div>
+                <div class="slds-media__body">
+                    <span class="adapter-title slds-text-heading_medium"></span>
+                </div>
+            </div>
+            <c:processDDP rendered="{!NOT(ISNULL(parameters))}" parameters="{!parameters}"/>
+        </div>
+        <script type="application/javascript">
+            function onComplete(data) {
+                showSuccessTitle();
+                fireHeightMessage(getContainerHeight());
+            }
+            function showSuccessTitle() {
+                setTitleMessage('Document generated');
+                showSuccessIcon();
+                showTitle();
+            }
+            function getContainerHeight() {
+                var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+                return document.querySelector('.process-ddp-container').scrollHeight + (isChrome ? 16 : 24);
+            }
+            function fireHeightMessage(height) {
+                parent.postMessage(JSON.stringify({ height }), '{!lightningExperienceOrigin}');
+            }
+            function setTitleMessage(message) {
+                document.querySelector('.process-ddp-container .title-container .adapter-title').innerText = message;
+            }
+            function showSuccessIcon() {
+                document.querySelector('.process-ddp-container .title-container .success-icon').style.display = 'inline-flex';
+            }
+            function showTitle() {
+                document.querySelector('.process-ddp-container .title-container').style.display = 'inline-flex';
+            }
+        </script>
+    </html>
+</apex:page>

@@ -1,0 +1,203 @@
+<apex:page controller="SNPCAPIQ.BatchConfigPageController" title="S&P Capital IQ Details">
+    <c:IncludeResources_v1 ></c:IncludeResources_v1>
+
+    <apex:outputPanel layout="block" id="configPanel" styleClass="snp">
+        <apex:pageMessages id="pageMessages"/>
+
+        <apex:form >
+            <apex:actionFunction action="{!stopJobs}" name="stopJobs" rerender="configPanel" status="pageLoader" />
+
+            <div class="snp-form-group">
+                <label class="snp-form-label">Enable Batch Updates</label>
+                <apex:inputCheckbox value="{!disableBatchUpdate}" onchange="stopJobs()" />
+            </div>
+            <br/>
+        </apex:form>
+
+
+        <apex:outputPanel rendered="{!disableBatchUpdate}" styleClass="snp-tabs snp-disable-loader">
+            <ul>
+                <li><a href="#tabBatchConfig">Batch Config</a></li>
+                <li><a href="#tabBatchError">Batch Error Notification</a></li>
+            </ul>
+            
+            <div id="tabBatchConfig">
+                <div class="snp-panel snp-batch-config">
+                    <div class="snp-panel-tabs">
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="ui-tabs-panel-global">
+                        <apex:form id="batchConfigForm">
+                            <apex:selectList label="Option" value="{!option}" size="1" multiselect="false" id="option">
+                                <apex:selectOptions value="{!options}"/>
+                            </apex:selectList>
+
+
+                            <div class="snp-container15">
+                                <div class="snp-form-group  snp-tab-key snp-tab-key-weekly snp-tab-key-monthly snp-tab-key-quarterly snp-tab-key-yearly">
+                                    <label class="snp-form-label">Day of Week</label>
+                                    <div class="overflow">
+                                        <apex:selectList label="Rate of Day" value="{!rate}" size="1" multiselect="false" styleClass="snp-tab-key snp-tab-key-monthly snp-tab-key-quarterly snp-tab-key-yearly">
+                                            <apex:selectOptions value="{!rates}"/>
+                                        </apex:selectList>
+                                        <apex:selectList label="Day Of Week" value="{!day}" size="1" multiselect="false">
+                                            <apex:selectOptions value="{!days}"/>
+                                        </apex:selectList>
+                                    </div>
+                                </div>
+
+                                <div class="snp-form-group  snp-tab-key snp-tab-key-quarterly">
+                                    <label class="snp-form-label">of each of</label>
+                                    <div class="overflow">
+                                        <apex:selectList label="Quarter Rate" value="{!quarter}" size="1" multiselect="false">
+                                            <apex:selectOption itemValue="First" itemLabel="January, April, July, October"/>
+                                            <apex:selectOption itemValue="Second" itemLabel="February, May, August, November"/>
+                                            <apex:selectOption itemValue="Third" itemLabel="March, June, September, December"/>
+                                        </apex:selectList>
+                                    </div>
+                                </div>
+
+                                <div class="snp-form-group  snp-tab-key snp-tab-key-yearly">
+                                    <label class="snp-form-label">of</label>
+                                    <div class="overflow">
+                                        <apex:selectList label="Month" value="{!month}" size="1" multiselect="false">
+                                            <apex:selectOptions value="{!monthes}"/>
+                                        </apex:selectList>
+                                    </div>
+                                </div>
+
+                                <div class="snp-form-group  snp-tab-key snp-tab-key-weekly snp-tab-key-monthly snp-tab-key-quarterly snp-tab-key-yearly">
+                                    <label class="snp-form-label">Start Time</label>
+                                    <div class="overflow">
+                                        <apex:inputText value="{!timeString}" id="time"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="snp-panel-divider"></div>
+                            <div class="snp-container15 center">
+                                <label class="snp-form-label">Update Only Standard Fields</label>
+                                <apex:inputCheckbox value="{!updateStandardFields}"/>
+                                
+                                <label class="snp-form-label">Update Only Custom Fields</label>
+                                <apex:inputCheckbox value="{!updateCustomFields}"/>
+                                <apex:commandLink action="{!save}" onclick="getTimeString();" styleClass="snp-btn">Save</apex:commandLink>
+                            </div>
+                        </apex:form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="tabBatchError">
+                <br/>
+                <apex:form >
+                    <div class="snp-form-group">
+                        <div class="snp-form-label">Select Profile</div>
+                        <div class="snp-form-stretchmax">
+                            <apex:selectList multiselect="false" size="1" value="{!selectedProfile}">
+                                <apex:selectOptions value="{!profiles}"/>
+                            </apex:selectList>
+                        </div>
+                    </div>
+                    <div class="snp-form-group">
+                        <apex:commandButton value="Save Nofification Settings" action="{!saveNotificationSetting}"/>
+                    </div>
+                </apex:form>
+            </div>
+
+
+            <script>
+                var getTimeString = function() {}
+
+                $$(function() {
+                    //
+                    // Global Tabs
+                    //
+
+                    $$('.snp-tabs').tabs();
+
+
+                    //
+                    // Batch Tabs
+                    //
+
+                    var optionSelect = $$(getId('{!$Component.batchConfigForm.option}'));
+
+                    // calculate options for tabs
+                    optionSelect
+                        .hide()
+                        .find('option')
+                            .each(function(){
+                                var option = $$(this).val(),
+                                    tabName = option.toLowerCase()+'Tab';
+                                $$('<li>').append( $$('<a>', {'href':'#'+tabName}).text(option) ).appendTo('.snp-panel-tabs ul');
+                                $$('<div>', {'id':tabName, 'class':'ui-tabs-panel-fake'}).appendTo('.snp-panel-tabs');
+                            });
+
+
+                    // init tabs
+                    $$('.snp-panel-tabs').tabs({
+                        create: function( event, ui ) {
+                            setTab(ui.tab);
+                        },
+                        activate: function( event, ui ) {
+                            $$(getId('{!$Component.pageMessages}')).hide();
+                            setTab(ui.newTab);
+                        }
+                    });
+
+                    function setTab(tab) {
+                        var prefix = '.snp-tab-key',
+                            key = tab.text().trim();
+
+                        optionSelect.val(key);
+
+                        $$('.ui-tabs-panel-global')
+                            .find(prefix)
+                                .hide()
+                            .filter(prefix+'-'+key.toLowerCase())
+                                .show();
+                    }
+
+
+                    //
+                    // TimePicker
+                    //
+
+                    var timeInput = $$(getId('{!$Component.batchConfigForm.time}')),
+                        hoursSelect = $$('<select>', {'name':'hours'}),
+                        minutesSelect = $$('<select>', {'name':'minutes'});
+
+                    for(var i=0; i<=23; i++) {
+                        var value = (i<10 ? '0'+i : i);
+                        $$('<option>', {'value':value}).text(value).appendTo(hoursSelect);
+                    }
+                    for(var i=0; i<=59; i++) {
+                        var value = (i<10 ? '0'+i : i);
+                        $$('<option>', {'value':value}).text(value).appendTo(minutesSelect);
+                    }
+
+
+                    getTimeString = function() {
+                        var timeString = hoursSelect.val() +':'+ minutesSelect.val();
+                        timeInput.val(timeString);
+                    }
+
+                    hoursSelect.on('change', getTimeString);
+                    minutesSelect.on('change', getTimeString);
+
+                    timeInput
+                        .after(minutesSelect)
+                        .after(hoursSelect.val('10'))
+                        .hide();
+
+                });
+            </script>
+        </apex:outputPanel>
+
+
+
+    </apex:outputPanel>
+</apex:page>

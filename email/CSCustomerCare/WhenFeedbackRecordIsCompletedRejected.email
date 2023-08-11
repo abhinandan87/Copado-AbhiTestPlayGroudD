@@ -1,0 +1,13 @@
+{!Feedback__c.LastModifiedDate}
+</br></br>
+Dear {!Feedback__c.CreatedBy},
+</br>
+<p>The status of the feedback has changed to {!Feedback__c.Status__c}. Please click on the link below for details.</p>
+
+<a href="{!Feedback__c.Link}">Link to Feedback</a>
+</br></br></br>
+
+
+Kind regards,
+</br>
+IHS Markit

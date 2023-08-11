@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_31849162</developerName>
+        <masterLabel>Final Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed - Canceled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Resolved</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Referral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Resolved by 3rd Party</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Resolved by Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Resolved by IHS Markit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed</sourceValue>
+            </sourceValues>
+            <value>Closed Cases</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting - 3rd Party</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - Internal Team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Approvals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Requester</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Active Waiting for info</sourceValue>
+            </sourceValues>
+            <value>Waiting</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>OWNER</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_31849162</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed - Canceled,Closed - Resolved,Closed - Referral,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Waiting on Requester,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>David Williams,Jonathan Tsang,Bill Tsang,Que Phuong Dufournet,Hamza Shah,Shreeya Patel,Majid Azaim,Tori Ogundimu,Miguel Coral,Sahil Nangia,Vijayendra Agarwal,Tushar Suri,Atul Panwar,Manya Gupta,Bhavya Khanna,Dishant Sharma,Biswaraj Paul Choudhury,Mishika Gandhi,Daniel Oluyemi,Biswaraj Paul,Biswaraj Paulchoudh,Biswaraj Choudhury,Ravi Navath,Andrew Hibberd,Pierre Simonet,Abhishek Yadav,Tushar Gupta,Prachi Bhatt,FM | SFTR | Client Services</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_31849162</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SFTR Closed</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

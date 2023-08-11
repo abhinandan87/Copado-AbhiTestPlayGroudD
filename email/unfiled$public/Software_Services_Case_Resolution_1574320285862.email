@@ -1,0 +1,26 @@
+<html style="overflow-y: hidden;">
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{Recipient.FirstName}}},<br />
+<br />
+Your case reference #{{{Case.CaseNumber}}} - {{{Case.Subject}}} - has been resolved.<br />
+<br />
+The resolution is as follows:<br />
+<br />
+{{{Case.ResolutionDescription__c}}}<br />
+<br />
+Regards,<br />
+<br />
+{Your Name}<br />
+{Your Title}<br />
+{Your Email Address}<br />
+<a href="https://ihsmarkit.lightning.force.com/lightning/r/Case/%7B%7B%7BCase.CaseID18Character__c%7D%7D%7D/view">IHS Markit</a><br />
+26533 Evergreen Road | Suite 1100 | Southfield, MI 48076<br />
+<br />
+<span style="color:#ffffff;">SoftwareServicesAttachmentCopy&nbsp;</span>
+<p>---------------------<br />
+<br />
+{{{Case.Description}}}</p>
+</body>
+</html>

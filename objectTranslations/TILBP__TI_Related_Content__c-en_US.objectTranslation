@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Primary Content --></label>
+        <name>TILBP__Primary_Content__c</name>
+        <relationshipLabel><!-- TI Related Content --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary Content --></label>
+        <name>TILBP__Secondary_Content__c</name>
+        <relationshipLabel><!-- TI Related Content (Secondary Content) --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

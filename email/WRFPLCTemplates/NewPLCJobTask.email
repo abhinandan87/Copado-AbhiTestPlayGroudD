@@ -1,0 +1,6 @@
+** ATTENTION – ACTION NEEDED ** 
+
+Job Task #: {!JobTask__c.Name} 
+PLC Job: {!JobTask__c.PLCJob__c} 
+Assigned to: {!JobTask__c.AssignedTo__c}
+PLC Job Task Link: {!JobTask__c.Link}

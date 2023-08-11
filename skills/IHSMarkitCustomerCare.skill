@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>admin</profile>
+            <profile>ihsmarkit customer care</profile>
+        </profiles>
+    </assignments>
+    <description>First line Customer Care skills.</description>
+    <label>IHS Markit Customer Care</label>
+</Skill>

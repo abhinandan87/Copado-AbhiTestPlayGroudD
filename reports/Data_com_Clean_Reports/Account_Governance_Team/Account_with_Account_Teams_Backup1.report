@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.AccountTeamMembers$Name</field>
+    </columns>
+    <columns>
+        <field>Account.AccountTeamMembers$AccountTeamMemberId</field>
+    </columns>
+    <columns>
+        <field>Account.AccountTeamMembers$TeamMemberRole</field>
+    </columns>
+    <columns>
+        <field>Account.AccountTeamMembers$UserRole</field>
+    </columns>
+    <columns>
+        <field>Account.AccountTeamMembers$UserRole.OpportunityAccessForAccountOwner</field>
+    </columns>
+    <columns>
+        <field>Account.AccountTeamMembers$UserRole.CaseAccessForAccountOwner</field>
+    </columns>
+    <columns>
+        <field>Account.AccountTeamMembers$UserRole.ContactAccessForAccountOwner</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Accounts with Account Teams Backup</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$PKIDAccount__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$AccountID18Character__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Account with Account Teams Backup</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Account_Team__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

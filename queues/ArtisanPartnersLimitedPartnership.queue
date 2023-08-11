@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Artisan Partners Limited Partnership</name>
+    <queueMembers>
+        <users>
+            <user>aditi.srivastava@ihsmarkit.com</user>
+            <user>bharati.singh@ihsmarkit.com</user>
+            <user>dhananjay.singh@ihsmarkit.com</user>
+            <user>harsimar.kaur@ihsmarkit.com</user>
+            <user>karan.chauhan@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

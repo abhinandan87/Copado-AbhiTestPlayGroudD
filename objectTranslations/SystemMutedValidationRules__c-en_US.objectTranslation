@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>System Muted Validation Rules</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>System Muted Validation Rules</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountAddress --></label>
+        <name>AccountAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountRanking --></label>
+        <name>AccountRanking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdClaimChangeLog --></label>
+        <name>AdClaimChangeLog__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdClaim --></label>
+        <name>AdClaim__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdditionalAccountFields --></label>
+        <name>AdditionalAccountFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdditionalCaseFields --></label>
+        <name>AdditionalCaseFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdditionalContactFields --></label>
+        <name>AdditionalContactFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdditionalProductLoginFields --></label>
+        <name>AdditionalProductLoginFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- All --></label>
+        <name>All__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, all validations for the Volume/Variable Billing Line Item object will be disabled. --></help>
+        <label><!-- BillingScheduleLineItem --></label>
+        <name>BillingScheduleLineItem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChangeLog --></label>
+        <name>ChangeLog__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContractAttachment --></label>
+        <name>ContractAttachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContractLineItemSchedule --></label>
+        <name>ContractLineItemSchedule__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, all validations for the Contract line item object will be disabled. --></help>
+        <label><!-- ContractLineItem --></label>
+        <name>ContractLineItem__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, all validations for contract object will be disabled. --></help>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, all validations for the Lead object will be disabled. --></help>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailingList --></label>
+        <name>MailingList__c</name>
+    </fields>
+    <fields>
+        <label><!-- MasterAgreementExhibit --></label>
+        <name>MasterAgreementExhibit__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpportunityLineItem --></label>
+        <name>OpportunityLineItem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- OrderRequest --></label>
+        <name>OrderRequest__c</name>
+    </fields>
+    <fields>
+        <label><!-- PLCJob --></label>
+        <name>PLCJob__c</name>
+    </fields>
+    <fields>
+        <label><!-- PriceIncreaseDetails --></label>
+        <name>PriceIncreaseDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductEntitlement --></label>
+        <name>ProductEntitlement__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductExtensions --></label>
+        <name>ProductExtensions__c</name>
+    </fields>
+    <fields>
+        <label><!-- RenewalatRisk --></label>
+        <name>RenewalatRisk__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPGReferralLead --></label>
+        <name>SPGReferralLead__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPGReferral --></label>
+        <name>SPGReferral__c</name>
+    </fields>
+    <fields>
+        <label><!-- SurveyResponse --></label>
+        <name>SurveyResponse__c</name>
+    </fields>
+    <fields>
+        <label><!-- TriageCriteria --></label>
+        <name>TriageCriteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, all validations for the WorkOrder/Field Service Activity object will be disabled. --></help>
+        <label><!-- WorkOrder --></label>
+        <name>WorkOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- WorkRequestForm --></label>
+        <name>WorkRequestForm__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

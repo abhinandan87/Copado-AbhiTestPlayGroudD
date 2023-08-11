@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/10560</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Field for reporting purposes only.  10560 = 22 working days, with 8 hrs per working day, 60 min per hour</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time spent monthly FTE</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_41355216</developerName>
+        <masterLabel>Agents by Location</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Michael Burnett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Janet Holmes-Boone</sourceValue>
+            </sourceValues>
+            <value>CS Americas</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jason Mitchell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evan Gerlack</sourceValue>
+            </sourceValues>
+            <value>FS Americas</value>
+        </values>
+        <values>
+            <value>CS Americas Penang</value>
+        </values>
+        <values>
+            <value>FS Americas Penang</value>
+        </values>
+        <values>
+            <value>CS Americas India</value>
+        </values>
+        <values>
+            <value>FS Americas India</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Case.Subtype__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.TimeSpentMinutes__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Case.ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>BucketField_41355216</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Kartikey Bisht,Kanika Garg,Samuel Abraham,Michael Burnett,Janet Holmes-Boone,Evan Gerlack,Nathan Valdez,Varun Bhutani,Katerani Selvarraju,Mark Quejado,Jason Mitchell,Frank Lee,Farah Razali,Michael Don,Najah Nadhira Binti Dorohid,Hashi Khalid Mohamad,Midhunan Pram Kumar,Miaoyin Ng,Komal Kajal,Pooja P Nair</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed - Canceled,Closed - Resolved,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Resolved/Completed,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Delete Queue</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>US: Cases Closed by Person</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

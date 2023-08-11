@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.PreviousYearOpportunityNumber__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Opportunitynum__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OP0001230209,OP0001348915,OP0001351290,OP0001368207,OP0001368300,OP0001371361,OP0001377987,OP0001378645,OP0001378646,OP0001381273,OP0001387079,OP0001387094,OP0001387994,OP0001394012,OP0001394068,OP0001395692,OP0001397927,OP0001398409,OP0001400049,OP0001400663,OP0001400838,OP0001444111,OP0001460442,OP0001470554</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>New Opportunities Report</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

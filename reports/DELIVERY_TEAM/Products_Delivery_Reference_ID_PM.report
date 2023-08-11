@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product2.MaterialCode__c</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Product2.DeliveryReferenceID__c</field>
+    </columns>
+    <columns>
+        <field>Product2.LoadingGroup__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductManager__c</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Click on Filters - enter product code/material code and click on save to find out what the legacy material number is and who the Product Manager is</description>
+    <filter>
+        <criteriaItems>
+            <column>Product2.MaterialCode__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>2000020423</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Products - Delivery Reference ID &amp; PM</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

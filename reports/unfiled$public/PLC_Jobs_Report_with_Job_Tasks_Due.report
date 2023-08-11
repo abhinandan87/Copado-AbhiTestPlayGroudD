@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>JobTask__c.JobDueDate__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.Team1__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.JobStatus__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.Account__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>PLC jobs assigned to Jeff. Sachin using this as a template for reporting.</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jeff Allen</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>JobTask__c.JobDueDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NEXT_N_DAYS:60</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PLC Jobs Report with Job Tasks Due</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$PLCJob__c$JobTask__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>JobTask__c.JobDueDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>PLCJob__c.CycleStart__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

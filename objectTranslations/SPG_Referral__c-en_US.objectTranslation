@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SPG Referral</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SPG Referrals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account CAPIQ ID --></label>
+        <name>Account_CAPIQ_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>Account_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account State/Province --></label>
+        <name>Account_State_Province__c</name>
+    </fields>
+    <fields>
+        <help><!-- The account you are referring to other divisions. --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- SPG Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If checked, this referral was determined to be routed to Automotive.. --></help>
+        <label><!-- Automotive Division --></label>
+        <name>Automotive_Referral__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this referral was determined to be routed to CMS/Product Design. --></help>
+        <label><!-- CMS/Product Design Division --></label>
+        <name>CMS_Product_Design_Referral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Type --></label>
+        <name>Company_Type__c</name>
+        <picklistValues>
+            <masterLabel>Academia</masterLabel>
+            <translation><!-- Academia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Academic Institution</masterLabel>
+            <translation><!-- Academic Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounting/Auditing Firm</masterLabel>
+            <translation><!-- Accounting/Auditing Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agricultural Bank/Agricultural Coop</masterLabel>
+            <translation><!-- Agricultural Bank/Agricultural Coop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arts Institution</masterLabel>
+            <translation><!-- Arts Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset Management</masterLabel>
+            <translation><!-- Asset Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset Management - High Wealth Individuals</masterLabel>
+            <translation><!-- Asset Management - High Wealth Individuals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset Manager</masterLabel>
+            <translation><!-- Asset Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset Owner</masterLabel>
+            <translation><!-- Asset Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assets/Products</masterLabel>
+            <translation><!-- Assets/Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auditors/Accounting</masterLabel>
+            <translation><!-- Auditors/Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automobiles and Components</masterLabel>
+            <translation><!-- Automobiles and Components --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Commercial</masterLabel>
+            <translation><!-- Bank - Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Development</masterLabel>
+            <translation><!-- Bank - Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Insurance</masterLabel>
+            <translation><!-- Bank - Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Investment</masterLabel>
+            <translation><!-- Bank - Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Other</masterLabel>
+            <translation><!-- Bank - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Prime Brokerage</masterLabel>
+            <translation><!-- Bank - Prime Brokerage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Regional (Tier 1)</masterLabel>
+            <translation><!-- Bank - Regional (Tier 1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Regional (Tier 2)</masterLabel>
+            <translation><!-- Bank - Regional (Tier 2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Retail</masterLabel>
+            <translation><!-- Bank - Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Third Party Administrator</masterLabel>
+            <translation><!-- Bank - Third Party Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank - Trust</masterLabel>
+            <translation><!-- Bank - Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Holdings</masterLabel>
+            <translation><!-- Bank Holdings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Third Party Fund Administrator</masterLabel>
+            <translation><!-- Bank Third Party Fund Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bond Insurer</masterLabel>
+            <translation><!-- Bond Insurer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broker/Dealer</masterLabel>
+            <translation><!-- Broker/Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital Goods</masterLabel>
+            <translation><!-- Capital Goods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clearing Firm</masterLabel>
+            <translation><!-- Clearing Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Bank</masterLabel>
+            <translation><!-- Commercial Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Services and Supplies</masterLabel>
+            <translation><!-- Commercial Services and Supplies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting Firm</masterLabel>
+            <translation><!-- Consulting Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Durables and Apparel</masterLabel>
+            <translation><!-- Consumer Durables and Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Finance</masterLabel>
+            <translation><!-- Consumer Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Services</masterLabel>
+            <translation><!-- Consumer Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate VC</masterLabel>
+            <translation><!-- Corporate VC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation</masterLabel>
+            <translation><!-- Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation/Industrial</masterLabel>
+            <translation><!-- Corporation/Industrial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Association</masterLabel>
+            <translation><!-- Credit Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card Company</masterLabel>
+            <translation><!-- Credit Card Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Union</masterLabel>
+            <translation><!-- Credit Union --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Currency Rate</masterLabel>
+            <translation><!-- Currency Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Vendor</masterLabel>
+            <translation><!-- Data Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development Bank</masterLabel>
+            <translation><!-- Development Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Educational Institution</masterLabel>
+            <translation><!-- Educational Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange &amp; Clearing House</masterLabel>
+            <translation><!-- Exchange &amp; Clearing House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FI Other Banks</masterLabel>
+            <translation><!-- FI Other Banks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FI Other Insurance</masterLabel>
+            <translation><!-- FI Other Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Office</masterLabel>
+            <translation><!-- Family Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance company</masterLabel>
+            <translation><!-- Finance company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Planning/Investment Advisory</masterLabel>
+            <translation><!-- Financial Planning/Investment Advisory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Service VC</masterLabel>
+            <translation><!-- Financial Service VC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food and Staples Retailing</masterLabel>
+            <translation><!-- Food and Staples Retailing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food, Beverage and Tobacco</masterLabel>
+            <translation><!-- Food, Beverage and Tobacco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundation/Charitable Institution</masterLabel>
+            <translation><!-- Foundation/Charitable Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Family</masterLabel>
+            <translation><!-- Fund Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Platform/Distributor</masterLabel>
+            <translation><!-- Fund Platform/Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund of Funds</masterLabel>
+            <translation><!-- Fund of Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gov/Municipality/Municipal Enterprise</masterLabel>
+            <translation><!-- Gov/Municipality/Municipal Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Entity/Regulatory Agency</masterLabel>
+            <translation><!-- Government Entity/Regulatory Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Institution</masterLabel>
+            <translation><!-- Government Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Support Entity (GSE)</masterLabel>
+            <translation><!-- Government Support Entity (GSE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare Equipment and Services</masterLabel>
+            <translation><!-- Healthcare Equipment and Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hedge Fund</masterLabel>
+            <translation><!-- Hedge Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household and Personal Products</masterLabel>
+            <translation><!-- Household and Personal Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Association</masterLabel>
+            <translation><!-- Housing Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Index</masterLabel>
+            <translation><!-- Index --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industry</masterLabel>
+            <translation><!-- Industry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Company</masterLabel>
+            <translation><!-- Insurance Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Rate</masterLabel>
+            <translation><!-- Interest Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Advisor</masterLabel>
+            <translation><!-- Investment Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Bank</masterLabel>
+            <translation><!-- Investment Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Consulting</masterLabel>
+            <translation><!-- Investment Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Group</masterLabel>
+            <translation><!-- Investment Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Management</masterLabel>
+            <translation><!-- Investment Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labor Union</masterLabel>
+            <translation><!-- Labor Union --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Law Firm</masterLabel>
+            <translation><!-- Law Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease Company</masterLabel>
+            <translation><!-- Lease Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Library</masterLabel>
+            <translation><!-- Library --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Materials</masterLabel>
+            <translation><!-- Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Company</masterLabel>
+            <translation><!-- Media Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media/Telecom</masterLabel>
+            <translation><!-- Media/Telecom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metals/Mining</masterLabel>
+            <translation><!-- Metals/Mining --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Company</masterLabel>
+            <translation><!-- Mortgage Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mutual Fund Company</masterLabel>
+            <translation><!-- Mutual Fund Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Full-Service Broker</masterLabel>
+            <translation><!-- National Full-Service Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-FI Corporates</masterLabel>
+            <translation><!-- Non-FI Corporates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-FI Other</masterLabel>
+            <translation><!-- Non-FI Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oil and Gas</masterLabel>
+            <translation><!-- Oil and Gas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pension Fund</masterLabel>
+            <translation><!-- Pension Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmaceuticals, Biotechnology and Life Sciences</masterLabel>
+            <translation><!-- Pharmaceuticals, Biotechnology and Life Sciences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power</masterLabel>
+            <translation><!-- Power --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Bank</masterLabel>
+            <translation><!-- Private Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Banker/Wealth Management</masterLabel>
+            <translation><!-- Private Banker/Wealth Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Company</masterLabel>
+            <translation><!-- Private Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Equity</masterLabel>
+            <translation><!-- Private Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Fund</masterLabel>
+            <translation><!-- Private Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Investment Firm</masterLabel>
+            <translation><!-- Private Investment Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Standalone Fund</masterLabel>
+            <translation><!-- Private Standalone Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Company</masterLabel>
+            <translation><!-- Public Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Fund</masterLabel>
+            <translation><!-- Public Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Investment Firm</masterLabel>
+            <translation><!-- Public Investment Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations/Investor Relation Firm</masterLabel>
+            <translation><!-- Public Relations/Investor Relation Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Sector</masterLabel>
+            <translation><!-- Public Sector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Service Corporation</masterLabel>
+            <translation><!-- Public Service Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Standalone Fund</masterLabel>
+            <translation><!-- Public Standalone Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REIT Company</masterLabel>
+            <translation><!-- REIT Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rating Agency</masterLabel>
+            <translation><!-- Rating Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruiter/Headhunter</masterLabel>
+            <translation><!-- Recruiter/Headhunter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redistributor</masterLabel>
+            <translation><!-- Redistributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Bank - (Tier 1)</masterLabel>
+            <translation><!-- Regional Bank - (Tier 1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Bank - (Tier 2)</masterLabel>
+            <translation><!-- Regional Bank - (Tier 2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Broker</masterLabel>
+            <translation><!-- Regional Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulatory</masterLabel>
+            <translation><!-- Regulatory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reinsurer</masterLabel>
+            <translation><!-- Reinsurer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religious Institution</masterLabel>
+            <translation><!-- Religious Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remuneration Consultant</masterLabel>
+            <translation><!-- Remuneration Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Institute</masterLabel>
+            <translation><!-- Research Institute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Bank</masterLabel>
+            <translation><!-- Retail Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Funds</masterLabel>
+            <translation><!-- Retail Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail/Wholesale Fund Management</masterLabel>
+            <translation><!-- Retail/Wholesale Fund Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retailing</masterLabel>
+            <translation><!-- Retailing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Management</masterLabel>
+            <translation><!-- Risk Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings &amp; Loan</masterLabel>
+            <translation><!-- Savings &amp; Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Securities Dealer</masterLabel>
+            <translation><!-- Securities Dealer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services Company</masterLabel>
+            <translation><!-- Services Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Provider</masterLabel>
+            <translation><!-- Software Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stock Exchange</masterLabel>
+            <translation><!-- Stock Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Alliance</masterLabel>
+            <translation><!-- Strategic Alliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategy/Business Consulting</masterLabel>
+            <translation><!-- Strategy/Business Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Loan Company</masterLabel>
+            <translation><!-- Student Loan Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Exempt Financial Advisor</masterLabel>
+            <translation><!-- Tax Exempt Financial Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Exempt Investment Banker/Underwriter</masterLabel>
+            <translation><!-- Tax Exempt Investment Banker/Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Distributor</masterLabel>
+            <translation><!-- Third Party Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Association</masterLabel>
+            <translation><!-- Trade Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trading Companies and Distributors</masterLabel>
+            <translation><!-- Trading Companies and Distributors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust Bank</masterLabel>
+            <translation><!-- Trust Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unclassified</masterLabel>
+            <translation><!-- Unclassified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undefined</masterLabel>
+            <translation><!-- Undefined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Universities/Endowment funds</masterLabel>
+            <translation><!-- Universities/Endowment funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venture company</masterLabel>
+            <translation><!-- Venture company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wirehouse/Discount Broker</masterLabel>
+            <translation><!-- Wirehouse/Discount Broker --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>Contact_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Contact_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Contact_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pre-fills the contact&apos;s phone. If phone is blank, mobile number is pre-populated on the form. --></help>
+        <label><!-- Phone --></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>Contact_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>Contact_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Contact_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Contact_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- The contact divisions should reach out to. --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- SPG Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created Status Count --></label>
+        <name>Created_Status_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the pre-loaded referral is disqualified from being routed to division(s), then a comment is required. --></help>
+        <label><!-- Disqualified Comments --></label>
+        <name>Disqualified_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes the name of the division sending the lead to another division(s). --></help>
+        <label><!-- Division Sent From --></label>
+        <name>Division_Sent_From__c</name>
+        <picklistValues>
+            <masterLabel>Automotive</masterLabel>
+            <translation><!-- Automotive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS/Product Design</masterLabel>
+            <translation><!-- CMS/Product Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Services</masterLabel>
+            <translation><!-- Financial Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select a division or &quot;Multiple&quot; if the referral should be sent to more than one division. Selecting different divisions will clear out the interested products you&apos;ve already chosen. --></help>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>Automotive</masterLabel>
+            <translation><!-- Automotive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CI</masterLabel>
+            <translation><!-- CI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS/Product Design</masterLabel>
+            <translation><!-- CMS/Product Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESG CSA</masterLabel>
+            <translation><!-- ESG CSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Services</masterLabel>
+            <translation><!-- Financial Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indices</masterLabel>
+            <translation><!-- Indices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple</masterLabel>
+            <translation><!-- Multiple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ratings</masterLabel>
+            <translation><!-- Ratings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If checked, this referral was determined to be routed to ENR. --></help>
+        <label><!-- ENR Division --></label>
+        <name>ENR_Referral__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this referral was determined to be routed to Financial Services. --></help>
+        <label><!-- Financial Services Division --></label>
+        <name>Financial_Services_Referral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guidance --></label>
+        <name>Guidance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tracks HR Sub Business Line for IHS divisions only. --></help>
+        <label><!-- IHS HR Sub Business Line --></label>
+        <name>IHS_HR_Sub_Business_Line__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tracks SME on account team. --></help>
+        <label><!-- IHS Subject Matter Expert --></label>
+        <name>IHS_Subject_Matter_Expert__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this referral was determined to be routed to Indices. --></help>
+        <label><!-- Indices Division --></label>
+        <name>Indices_Referral__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select an industry for the referred account. --></help>
+        <label><!-- Industry --></label>
+        <name>Industry__c</name>
+        <picklistValues>
+            <masterLabel>Communication Services</masterLabel>
+            <translation><!-- Communication Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Discretionary</masterLabel>
+            <translation><!-- Consumer Discretionary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Staples</masterLabel>
+            <translation><!-- Consumer Staples --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financials</masterLabel>
+            <translation><!-- Financials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Care</masterLabel>
+            <translation><!-- Health Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrials</masterLabel>
+            <translation><!-- Industrials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Technology</masterLabel>
+            <translation><!-- Information Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Materials</masterLabel>
+            <translation><!-- Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select all the products the client is interested in. When &quot;Multiple&quot; is selected in the division field, you can select products from multiple divisions. --></help>
+        <label><!-- Interested Products --></label>
+        <name>Interested_Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Function --></label>
+        <name>Job_Function__c</name>
+        <picklistValues>
+            <masterLabel>Academia</masterLabel>
+            <translation><!-- Academia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Academic</masterLabel>
+            <translation><!-- Academic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acct/Back Office/Settlement</masterLabel>
+            <translation><!-- Acct/Back Office/Settlement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actuary</masterLabel>
+            <translation><!-- Actuary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administration</masterLabel>
+            <translation><!-- Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisory</masterLabel>
+            <translation><!-- Advisory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst</masterLabel>
+            <translation><!-- Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst - Credit/Fixed Income</masterLabel>
+            <translation><!-- Analyst - Credit/Fixed Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst - Credit/Fixed Income (Sell-Side)</masterLabel>
+            <translation><!-- Analyst - Credit/Fixed Income (Sell-Side) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst - Equity</masterLabel>
+            <translation><!-- Analyst - Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst - Funds</masterLabel>
+            <translation><!-- Analyst - Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst/Associate</masterLabel>
+            <translation><!-- Analyst/Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset Services</masterLabel>
+            <translation><!-- Asset Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset consultant</masterLabel>
+            <translation><!-- Asset consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset/Portfolio/Fund Mgt</masterLabel>
+            <translation><!-- Asset/Portfolio/Fund Mgt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attorney/Partner</masterLabel>
+            <translation><!-- Attorney/Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audit/Accounting</masterLabel>
+            <translation><!-- Audit/Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking - Commercial Lending</masterLabel>
+            <translation><!-- Banking - Commercial Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking - General</masterLabel>
+            <translation><!-- Banking - General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking - Investment</masterLabel>
+            <translation><!-- Banking - Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking - Private/Wealth Mgt</masterLabel>
+            <translation><!-- Banking - Private/Wealth Mgt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board Member/Trustee</masterLabel>
+            <translation><!-- Board Member/Trustee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broker</masterLabel>
+            <translation><!-- Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Development/Relationship Management</masterLabel>
+            <translation><!-- Business Development/Relationship Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital Markets (IBD)</masterLabel>
+            <translation><!-- Capital Markets (IBD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commodities Pricing</masterLabel>
+            <translation><!-- Commodities Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitive Intelligence</masterLabel>
+            <translation><!-- Competitive Intelligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conflict Resolution</masterLabel>
+            <translation><!-- Conflict Resolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultancy</masterLabel>
+            <translation><!-- Consultancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation><!-- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Development</masterLabel>
+            <translation><!-- Corporate Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Finance</masterLabel>
+            <translation><!-- Corporate Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Analyst</masterLabel>
+            <translation><!-- Credit Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Manager/Officer</masterLabel>
+            <translation><!-- Credit Manager/Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Risk Modeller</masterLabel>
+            <translation><!-- Credit Risk Modeller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D&amp;O Underwriter</masterLabel>
+            <translation><!-- D&amp;O Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Governance</masterLabel>
+            <translation><!-- Data Governance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economist</masterLabel>
+            <translation><!-- Economist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editorial</masterLabel>
+            <translation><!-- Editorial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineer</masterLabel>
+            <translation><!-- Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equity Analyst</masterLabel>
+            <translation><!-- Equity Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Management</masterLabel>
+            <translation><!-- Executive Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculty</masterLabel>
+            <translation><!-- Faculty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Manager/Officer</masterLabel>
+            <translation><!-- Finance Manager/Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance/Planning</masterLabel>
+            <translation><!-- Finance/Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance/Treasury</masterLabel>
+            <translation><!-- Finance/Treasury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Advisor/Planner</masterLabel>
+            <translation><!-- Financial Advisor/Planner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Advisory/Planning</masterLabel>
+            <translation><!-- Financial Advisory/Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Income Analyst</masterLabel>
+            <translation><!-- Fixed Income Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecasting</masterLabel>
+            <translation><!-- Forecasting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuels Admin</masterLabel>
+            <translation><!-- Fuels Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Official</masterLabel>
+            <translation><!-- Government Official --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR Professional</masterLabel>
+            <translation><!-- HR Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare Professional</masterLabel>
+            <translation><!-- Healthcare Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Investor</masterLabel>
+            <translation><!-- Individual Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industry/Sector Coverage (IBD)</masterLabel>
+            <translation><!-- Industry/Sector Coverage (IBD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance - Monoline</masterLabel>
+            <translation><!-- Insurance - Monoline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance - Underwriter</masterLabel>
+            <translation><!-- Insurance - Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Broking</masterLabel>
+            <translation><!-- Insurance Broking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Underwriter</masterLabel>
+            <translation><!-- Insurance Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Strategist</masterLabel>
+            <translation><!-- Investment Strategist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Relations</masterLabel>
+            <translation><!-- Investor Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalist</masterLabel>
+            <translation><!-- Journalist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knowledge management/Library</masterLabel>
+            <translation><!-- Knowledge management/Library --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Affairs</masterLabel>
+            <translation><!-- Legal Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Librarian</masterLabel>
+            <translation><!-- Librarian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Originator</masterLabel>
+            <translation><!-- Loan Originator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M&amp;A</masterLabel>
+            <translation><!-- M&amp;A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Consulting</masterLabel>
+            <translation><!-- Management Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Data</masterLabel>
+            <translation><!-- Market Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Data/Business Information</masterLabel>
+            <translation><!-- Market Data/Business Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Research</masterLabel>
+            <translation><!-- Market Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketer</masterLabel>
+            <translation><!-- Marketer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing/Communications</masterLabel>
+            <translation><!-- Marketing/Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Editorial</masterLabel>
+            <translation><!-- Non-Editorial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations Management</masterLabel>
+            <translation><!-- Operations Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Origination</masterLabel>
+            <translation><!-- Origination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (description required)</masterLabel>
+            <translation><!-- Other (description required) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner/Principal</masterLabel>
+            <translation><!-- Partner/Principal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PhD Student</masterLabel>
+            <translation><!-- PhD Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Political Risk Underwriter</masterLabel>
+            <translation><!-- Political Risk Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portfolio Manager</masterLabel>
+            <translation><!-- Portfolio Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prime Services</masterLabel>
+            <translation><!-- Prime Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Banker</masterLabel>
+            <translation><!-- Private Banker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Investor</masterLabel>
+            <translation><!-- Private Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement/Purchasing</masterLabel>
+            <translation><!-- Procurement/Purchasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation><!-- Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public/Investor relations</masterLabel>
+            <translation><!-- Public/Investor relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publishing</masterLabel>
+            <translation><!-- Publishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quant</masterLabel>
+            <translation><!-- Quant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantitative Analyst</masterLabel>
+            <translation><!-- Quantitative Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ratings Advisory</masterLabel>
+            <translation><!-- Ratings Advisory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recruiting</masterLabel>
+            <translation><!-- Recruiting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redistribution</masterLabel>
+            <translation><!-- Redistribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reference Data</masterLabel>
+            <translation><!-- Reference Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulator</masterLabel>
+            <translation><!-- Regulator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulatory Affairs</masterLabel>
+            <translation><!-- Regulatory Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reinsurance Broker/Intermediary</masterLabel>
+            <translation><!-- Reinsurance Broker/Intermediary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporter/Journalist/Editor</masterLabel>
+            <translation><!-- Reporter/Journalist/Editor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research and Development</masterLabel>
+            <translation><!-- Research and Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Management</masterLabel>
+            <translation><!-- Risk Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Manager/Officer</masterLabel>
+            <translation><!-- Risk Manager/Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk/Product Ctrl/Mid Office</masterLabel>
+            <translation><!-- Risk/Product Ctrl/Mid Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales &amp; Trading</masterLabel>
+            <translation><!-- Sales &amp; Trading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales/Business Development</masterLabel>
+            <translation><!-- Sales/Business Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales/Marketing/PR</masterLabel>
+            <translation><!-- Sales/Marketing/PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales/Relationship Mgt</masterLabel>
+            <translation><!-- Sales/Relationship Mgt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servicer / Servicing</masterLabel>
+            <translation><!-- Servicer / Servicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Planning</masterLabel>
+            <translation><!-- Strategic Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Structuring/Arranger</masterLabel>
+            <translation><!-- Structuring/Arranger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain Management</masterLabel>
+            <translation><!-- Supply Chain Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surety Underwriter</masterLabel>
+            <translation><!-- Surety Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax-Exempt Financial Advisory</masterLabel>
+            <translation><!-- Tax-Exempt Financial Advisory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Association Professional</masterLabel>
+            <translation><!-- Trade Association Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Credit/Risk Underwriter</masterLabel>
+            <translation><!-- Trade Credit/Risk Underwriter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trader</masterLabel>
+            <translation><!-- Trader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury</masterLabel>
+            <translation><!-- Treasury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury &amp; Tax</masterLabel>
+            <translation><!-- Treasury &amp; Tax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation><!-- Trustee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undergrad and MBA Student</masterLabel>
+            <translation><!-- Undergrad and MBA Student --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Includes the synergy campaign linked for referrals and primary campaign name for lead transfers. --></help>
+        <label><!-- Synergy Campaign --></label>
+        <name>Lead_Campaign_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes the lead that should be transferred. --></help>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- SPG Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If checked, this referral was determined to be routed to MI. --></help>
+        <label><!-- MI Division --></label>
+        <name>MI_Referral__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter any notes you want to share with divisions to follow up on the referral. --></help>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this referral was determined to be routed to Platts. --></help>
+        <label><!-- CI Division --></label>
+        <name>Platts_Referral__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tracks the date when pre-load was submitted. --></help>
+        <label><!-- Pre-Load Submitted Date --></label>
+        <name>Pre_Load_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-load? --></label>
+        <name>Pre_load__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this referral was determined to be routed to Ratings. --></help>
+        <label><!-- Ratings Division --></label>
+        <name>Ratings_Referral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Lock --></label>
+        <name>Record_Lock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routed Date --></label>
+        <name>Referral_Routed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted By --></label>
+        <name>Referral_Submitted_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- For referrals/transfers, submitted date is the created date of the referral. For pre-loads, submitted date is updated once pre-load is submitted. --></help>
+        <label><!-- Submitted Date --></label>
+        <name>Referral_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitter Email --></label>
+        <name>Referral_Submitter_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Referral owner&apos;s phone number. --></help>
+        <label><!-- Submitter Phone --></label>
+        <name>Referral_Submitter_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Region of the sales user submitting the referral or lead transfer. --></help>
+        <label><!-- Submitter Region --></label>
+        <name>Referral_Submitter_Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula field to return the 18 digit system generated Unique SPG Referral ID for reporting purposes. --></help>
+        <label><!-- SPG Referral ID 18 Character --></label>
+        <name>SPGReferralID18Character__c</name>
+    </fields>
+    <fields>
+        <help><!-- If status is &quot;routed&quot;, all leads are successfully routed to the receiving divisions. If the status is &quot;Created&quot; or &quot;Transferred&quot;, none of the leads have been routed. If status is &quot;Partially Routed&quot;, only some leads have been routed. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation><!-- Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disqualified</masterLabel>
+            <translation><!-- Disqualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Routed</masterLabel>
+            <translation><!-- Partially Routed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Load</masterLabel>
+            <translation><!-- Pre-Load --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routed</masterLabel>
+            <translation><!-- Routed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transferred</masterLabel>
+            <translation><!-- Transferred --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary Status --></label>
+        <name>Summary_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Child Referrals --></label>
+        <name>Total_Child_Referrals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Routed Referrals --></label>
+        <name>Total_Routed_Referrals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the divisions the lead should be routed to. --></help>
+        <label><!-- Transfer Lead To --></label>
+        <name>Transfer_Lead_To__c</name>
+        <picklistValues>
+            <masterLabel>CI</masterLabel>
+            <translation><!-- CI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESG CSA</masterLabel>
+            <translation><!-- ESG CSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indices</masterLabel>
+            <translation><!-- Indices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ratings</masterLabel>
+            <translation><!-- Ratings --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <description><!-- Referrals created by divisional account managers. --></description>
+        <label><!-- Referral --></label>
+        <name>CIRef_Created_Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Non-referral leads that are being transferred to other divisions. --></description>
+        <label><!-- Lead Transfer --></label>
+        <name>Lead_Transfer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Referrals re-submitted from a lead. --></description>
+        <label><!-- Re-Referral --></label>
+        <name>Re_Referral</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Due to Unapproved/Inactive Account, SPG Referral records cannot be created for the selected Account. --></errorMessage>
+        <name>AccountValidationCheck</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select interested products to submit the referral. --></errorMessage>
+        <name>CIREF_InterestedProductsRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Due to contact privacy restrictions, SPG Referral records cannot be created for the selected contact. --></errorMessage>
+        <name>ContactValidationCheck</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An email or phone number is needed for the contact to submit the referral. --></errorMessage>
+        <name>Contact_email_or_phone_must_be_entered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter a country on the contact&apos;s mailing address to submit a referral. --></errorMessage>
+        <name>CountryRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select the division that is sending the referral in order to submit the referral. --></errorMessage>
+        <name>Division_Sent_From_Required_for_IHS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Due to Inactive Contact, SPG Referral records cannot be created for the selected contact. --></errorMessage>
+        <name>InactiveContact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pre-loaded referrals need to be checked off to track how the referral was created. Contact an admin if you need more support. --></errorMessage>
+        <name>Preload_checkbox</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only system admins can reassign and update referral owners. Please contact your system admin if the referral needs to be reassigned. --></errorMessage>
+        <name>Preload_owner_update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contact State/Province is required when contact country is United States, Canada, and Australia. --></errorMessage>
+        <name>StateRequiredForUS_CanadaContactCountry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Synergy campaign is required for pre-loaded referrals. --></errorMessage>
+        <name>Synergy_Campaign_Required_for_Preloads</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This lead has already been sent to a division selected on the form. You must send the lead to a new division. You can&apos;t re-send leads to your own division. --></errorMessage>
+        <name>TransferLeadUniqueDivision</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,41 @@
+<apex:component controller="ActivitiesEmailTemplateController" access="global">
+    <apex:attribute name="eventIdValue" type="String" description="This is the Id of the event" assignTo="{!eventId}" access="global" />
+    <table class="MsoNormalTable" style='mso-cellspacing:1.5pt;mso-yfti-tbllook:1184'>
+        <tr>
+          <td width="20%" vertical-align="top" align="left"><b>Subject: </b></td>
+          <td width="70%" vertical-align="top">{!wrapperObj.subject}</td>
+        </tr>
+        <tr>
+          <td width="20%" vertical-align="top" align="left"><b>When:</b></td>
+          <td width="70%" vertical-align="top">{!wrapperObj.startDate}</td>
+        </tr>
+        <tr>
+          <td width="20%" style="vertical-align:top" vertical-align="top" align="left"><b>Where:</b></td>
+          <td width="70%" vertical-align="top">{!wrapperObj.Location}</td>
+        </tr>
+        <tr>
+          <td width="20%" vertical-align="top" align="left"><b>Client:</b></td>
+          <td width="70%" vertical-align="top">{!wrapperObj.client}</td>
+        </tr>
+        <tr height="10px">
+          <td width="20%" vertical-align="top" align="left"></td>
+          <td width="70%" vertical-align="top"></td>
+        </tr>
+        <tr>
+          <td width="20%" vertical-align="top" align="left"><b>IHS Markit:</b></td>
+          <td width="70%" vertical-align="top">{!wrapperObj.ihsMarkit}</td>
+        </tr>
+        <tr>
+          <td width="20%" style="vertical-align:top" vertical-align="top" align="left"><b>Organizer:</b></td>
+          <td width="70%" vertical-align="top">{!wrapperObj.organizer}</td>
+        </tr>
+        <tr height="10px">
+        </tr>
+        <tr>
+          <td width="20%" valign="top" align="left"><b>Meeting Notes:</b></td>
+          <td width="70%" valign="top" > <apex:outputField value="{!wrapperObj.meetingNote.MeetingOutcome__c}"></apex:outputField></td>
+        </tr>
+        <tr height="10px">
+        </tr>
+      </table>
+</apex:component>

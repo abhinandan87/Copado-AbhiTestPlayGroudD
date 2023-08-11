@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Opportunities__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Opportunities__r$ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Opportunities__r$ProductGroup__c</field>
+    </columns>
+    <currency>GBP</currency>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>Account$InstitutionType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Exchange/Clearer/Trading Venue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.Opportunities__r$ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>MarkitWire,Rates,MarkitWire-Trade Mgr,MTM,MarkitSERV-FX,DSMatch,DSMatch Other,MarkitWire Other,Trade STP,DMS,FX</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.Opportunities__r$ProductFamily__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>MarkitWire-Reg Reporting,MarkitWire,MarkitSERV-FX-TradeSTP,MarkitSERV-FX-Centralized Services,MarkitWire-Rates,Trade Manager,DSMatch,MarkitWire-MTM,MarkitSERV-FX-Centralized Services-Trade,MarkitSERV-FX-Trade STP</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Clearing house contacts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_with_out_Contact_and_Oppies__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$LastActivityDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

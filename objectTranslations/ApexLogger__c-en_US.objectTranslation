@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Apex Logger</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Apex Logger</value>
+    </caseValues>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>ClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Description --></label>
+        <name>ErrorDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Type --></label>
+        <name>ExceptionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function Name --></label>
+        <name>FunctionName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent record Id of record that resulted in error --></help>
+        <label><!-- Log Parent Record Id --></label>
+        <name>LogParentRecordId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent record name of record that resulted in error --></help>
+        <label><!-- Log Parent Record Name --></label>
+        <name>LogParentRecordName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id of record that resulted in error --></help>
+        <label><!-- Log Record Id --></label>
+        <name>LogRecordId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Record Json --></label>
+        <name>LogRecordJson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Record Name --></label>
+        <name>LogRecordName__c</name>
+    </fields>
+    <fields>
+        <label><!-- PKID ApexLogger --></label>
+        <name>PKIDApexLogger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Id --></label>
+        <name>TransactionId__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Apex Logger --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

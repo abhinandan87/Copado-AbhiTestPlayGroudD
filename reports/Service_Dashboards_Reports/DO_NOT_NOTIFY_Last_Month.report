@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.DoNotNotifyReason__c</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Do not Notify report created</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.DoNotNotify__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Syarwanni Mustafa,Bo Yuan Ng,Aman Kumar,Mohd Rusdi Rahim,Ling Lim,Gautam Pant,Anmol Singh,Jason Mitchell,Chayan Bhattacharjee,Samuel Abraham,Kok Han Lee,Aaron Tang,Mika Sakurai,Melanie Mladenova,Soo Ling Chaiyasu,Varun Bhutani,Esma Agzanay,Devrach Atawnia,Aaron Ching</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.DoNotNotify__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DO NOT NOTIFY - Last Month</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

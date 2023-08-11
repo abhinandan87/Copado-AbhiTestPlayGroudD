@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Account Manager</fullName>
+        <default>false</default>
+        <label>Account Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Alliance Lead</fullName>
+        <default>false</default>
+        <label>Alliance Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BL Leader</fullName>
+        <default>false</default>
+        <label>BL Leader</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Channel Manager</fullName>
+        <default>false</default>
+        <label>Channel Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Manager</fullName>
+        <default>false</default>
+        <label>Client Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consultant</fullName>
+        <default>false</default>
+        <label>Consultant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Covering Rep</fullName>
+        <default>false</default>
+        <label>Covering Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive in Charge</fullName>
+        <default>false</default>
+        <label>Executive in Charge</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opportunity Owner</fullName>
+        <default>false</default>
+        <label>Opportunity Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Specialist</fullName>
+        <default>false</default>
+        <label>Product Specialist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Manager</fullName>
+        <default>false</default>
+        <label>Project Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pursuit Lead</fullName>
+        <default>false</default>
+        <label>Pursuit Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referred By</fullName>
+        <default>false</default>
+        <label>Referred By</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Response Management Lead</fullName>
+        <default>false</default>
+        <label>Response Management Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Coordinator</fullName>
+        <default>false</default>
+        <label>Sales Coordinator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Manager</fullName>
+        <default>false</default>
+        <label>Sales Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Operations</fullName>
+        <default>false</default>
+        <label>Sales Operations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Specialist</fullName>
+        <default>false</default>
+        <label>Sales Specialist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SME</fullName>
+        <default>false</default>
+        <label>Subject Matter Expert</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SME – Parts</fullName>
+        <default>false</default>
+        <label>Subject Matter Expert – Parts</label>
+    </standardValue>
+</StandardValueSet>

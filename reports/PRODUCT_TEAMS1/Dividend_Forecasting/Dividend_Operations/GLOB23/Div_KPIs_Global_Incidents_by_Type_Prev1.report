@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_61417546</developerName>
+        <masterLabel>DivOwners</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amira Abdulkadir</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amyn Lakhani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paige Anderson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Puneet Goyal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Roberto Soares</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Veronika Jastrzebski</sourceValue>
+            </sourceValues>
+            <value>DivsAMER</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ankita Narwal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chong Jun Wong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kar Mun Fan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Qianwen Ruan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hye Young Jo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marvyn Hoi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Selim Baek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Seolin Park</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sophie Cortes</sourceValue>
+            </sourceValues>
+            <value>DivsAPAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Anna Beletskaya</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carlos Garcia-Lastra Marques</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gulia Umarakhunova</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonathan Chatelain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Soyer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pawan Shekhar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rashmi Choubey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Bransfield</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Surneet Bhatia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thomas Matheson</sourceValue>
+            </sourceValues>
+            <value>DivsEMEA</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CREATED_DATE</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>Case.Subtype__c</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.ClosedReason__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Div KPIs - Global Incidents by Type Prev</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5) AND 6</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Delete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Canceled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ClosedReason__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Data Republished</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ClosedReason__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Outage Resolved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Dividend</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Week</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Subtype__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Div KPIs - Global Incidents by Type Prev</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseSolution@Case.ProductFamily__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2020-11-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-12-01</startDate>
+    </timeFrameFilter>
+</Report>

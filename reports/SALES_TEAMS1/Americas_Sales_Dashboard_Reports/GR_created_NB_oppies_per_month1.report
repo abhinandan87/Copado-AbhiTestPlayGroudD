@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>PROD_SPLIT_TOTAL_PRICE.CONVERT:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Notional ($)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_5033104</developerName>
+        <masterLabel>Oppy Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Open</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Renewal Pending</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Renewal Contracting</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Renewal Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Closed Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Renewal Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6WP-Closed Won/Order Processed</sourceValue>
+            </sourceValues>
+            <value>Closed</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_43254247</developerName>
+        <masterLabel>Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Open</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Renewal Pending</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Renewal Contracting</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Renewal Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Closed Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Renewal Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6WP-Closed Won/Order Processed</sourceValue>
+            </sourceValues>
+            <value>Closed</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>PROD_SPLIT_TOTAL_PRICE.CONVERT</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y2</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGroupedLine</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CLOSE_DATE</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>CLOSE_DATE2</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>PROD_SPLIT_TOTAL_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.FirstYearValue__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <description>[GR#] - created NB oppies per month- Open Expected $ - Open Notional for Account Manager dashboard</description>
+    <filter>
+        <criteriaItems>
+            <column>PROD_SPLIT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account Managers</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.NewBusiness</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PROD_SPLIT_MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>equals contains Peter Renner,Thierry Klotz,Thomas Hoefer,Martin Six,Aurelien Podvin,Julien Vocat,Stephane Bouvier,Joost Bongers,Marco di Addezio,Bercem Baksi,Charlotte Sundberg,Sebastian Dalheimer,Azhar Muhammad Saul</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CON.ADDRESS2_COUNTRY_CODE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>GB</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>FiscalYear</dateGranularity>
+        <field>CLOSE_DATE2</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>MonthInYear</dateGranularity>
+        <field>CLOSE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Pipeline Created YOY</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProductSplit</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_PREVCUR2FY</interval>
+    </timeFrameFilter>
+</Report>

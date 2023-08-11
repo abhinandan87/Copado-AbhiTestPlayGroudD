@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_92166987</developerName>
+        <masterLabel>Regions</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Alexandra Pilet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Vera</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Larsen Mabika</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matteo Buschittari</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christos Gardikis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gerard McKenna</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Huerfano</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Janet Burke</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melissa Allison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephanie Ginsberg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bill O&apos;Shea</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anthony Gomes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kenyon Scales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel DeWitt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Swati Gangwani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Edward Plante</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Linda Zralka</sourceValue>
+            </sourceValues>
+            <value>AMER</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Terry Kwok</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mateja Spat</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Transaction Cost Analysis</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed - Canceled,Delete,Duplicate,Auto-Closed – No Action Taken</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_92166987</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AMER</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_92166987</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_NUMBER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>yesterday&apos;s action - AMER</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.ProductGroup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

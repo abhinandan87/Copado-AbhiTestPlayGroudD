@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_51778070</developerName>
+        <masterLabel>Response timing</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ACTUAL_ELPSD_TIME_MINS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>15</to>
+            </sourceValues>
+            <value>&lt;15 Mins</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>15</from>
+                <to>30</to>
+            </sourceValues>
+            <value>&lt;30 Mins</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>30</from>
+                <to>60</to>
+            </sourceValues>
+            <value>&lt;60 Mins</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>60</from>
+                <to>90</to>
+            </sourceValues>
+            <value>&lt;90</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>90</from>
+                <to>120</to>
+            </sourceValues>
+            <value>&lt;120</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>120</from>
+            </sourceValues>
+            <value>&gt;120 Mins</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_30666091</developerName>
+        <masterLabel>Support Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Christopher Perry</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel DeWitt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Janet Burke</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marco Sprenkle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Montel Hardy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Rennard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Randy Lii</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephanie Ginsberg</sourceValue>
+            </sourceValues>
+            <value>TA AMER</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Juan Vera</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Laura Merce Bermudez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matteo Buschittari</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Santiago Arrus</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sarah Van Lam</sourceValue>
+            </sourceValues>
+            <value>TA EMEA</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ELPSD_TIME_MINS</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ACTUAL_ELPSD_TIME_MINS</field>
+    </columns>
+    <columns>
+        <field>CM.TARGET_DATE</field>
+    </columns>
+    <columns>
+        <field>CM.COMPLETION_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>MT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Transaction Analysis - First Response-14</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 6) AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Delete,Duplicate,Merged</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Transaction Cost Analysis,MSA,Market Share Analysis,Trading Analytics</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>TCA,Trading Analytics</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.CurrentQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>merged,delete,duplicate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>First Response</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>TCA,Trading Analytics,Transaction Cost</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_51778070</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_30666091</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Transaction Analysis - First Response-14</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseMilestone</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
+    </timeFrameFilter>
+</Report>

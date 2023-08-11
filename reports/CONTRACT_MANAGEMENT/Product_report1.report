@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Family__c.FamilyNumber__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Product2.BusinessLine2__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Division__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductStatus__c</field>
+    </columns>
+    <columns>
+        <field>FK_CUSTENT_ID</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pkg-DoD Adopted Standards,Pkg-Human Factors,Pkg-Med Stds Lib,SDO-ISO,SDO-ISO AENOR,SDO-ISO ANSI,SDO-ISO DS,SDO-ISO NEN,SDO-ISO SCC</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Product report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList@Product2.Family__c</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>FK_$Family__c.FamilyNumber__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

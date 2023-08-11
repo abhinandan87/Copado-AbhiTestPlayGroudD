@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Body Hash --></label>
+        <name>metazoa3__body_hash__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Index --></label>
+        <name>metazoa3__display_index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Field One --></label>
+        <name>metazoa3__extra_field_one__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Field Two --></label>
+        <name>metazoa3__extra_field_two__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Flag One --></label>
+        <name>metazoa3__extra_flag_one__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Flag Two --></label>
+        <name>metazoa3__extra_flag_two__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Fragment --></label>
+        <name>metazoa3__job_fragment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metadata Body --></label>
+        <name>metazoa3__metadata_body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>metazoa3__object_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overflow One --></label>
+        <name>metazoa3__overflow_one__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overflow Two --></label>
+        <name>metazoa3__overflow_two__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Type --></label>
+        <name>metazoa3__task_type__c</name>
+        <picklistValues>
+            <masterLabel>After Task</masterLabel>
+            <translation><!-- After Task --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Before Task</masterLabel>
+            <translation><!-- Before Task --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

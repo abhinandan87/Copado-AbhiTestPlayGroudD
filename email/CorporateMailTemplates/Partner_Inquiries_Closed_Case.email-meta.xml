@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-3843 : Email Template for Partner Inquiries queue</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Partner Inquiries Closed Case</name>
+    <style>none</style>
+    <subject>Your IHS Markit Partner Inquiries Case {!Case.CaseNumber} - Closed</subject>
+    <textOnly>PARTNER INQUIRIES 
+
+Your IHS Markit Partner Inquiries Case {!Case.CaseNumber} - Closed
+
+{!Today()}
+
+Dear {!Case.Contact},
+
+The IHS Markit Partner Inquiries Team has completed your request and closed case number {!Case.CaseNumber} with the subject &quot;{!Case.Subject}&quot;.
+
+Kind regards,
+IHS Markit Partner Inquiries Team
+
+{!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

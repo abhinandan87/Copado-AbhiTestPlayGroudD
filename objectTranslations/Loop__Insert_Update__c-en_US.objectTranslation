@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Example: 1 AND (2 OR 3) --></help>
+        <label><!-- Advanced Conditions --></label>
+        <name>Loop__Advanced_Conditions__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the Document Package file(s) will be attached to this object (attach type based on delivery method). Checking this field will prevent the Document Package from being attached to the originating object unless specified in an Insert-Update. --></help>
+        <label><!-- Attach to this Object --></label>
+        <name>Loop__Attach__c</name>
+    </fields>
+    <fields>
+        <help><!-- Create or Update this record only if... --></help>
+        <label><!-- Conditions --></label>
+        <name>Loop__Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocGen Package --></label>
+        <name>Loop__DDP__c</name>
+        <relationshipLabel><!-- Insert-Updates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delivery Methods --></label>
+        <name>Loop__Delivery_Methods__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Loop__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field-Value Pairs --></label>
+        <name>Loop__Field_Value_Pairs__c</name>
+    </fields>
+    <fields>
+        <help><!-- This number determines the sequence that the Insert-Updates will occur in. --></help>
+        <label><!-- Order --></label>
+        <name>Loop__Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, this Insert-Update will be executed at the beginning of the Document Package run process. --></help>
+        <label><!-- Run at Beginning --></label>
+        <name>Loop__Run_at_Beginning__c</name>
+    </fields>
+    <fields>
+        <help><!-- After the record has been created or updated, it will be submitted for approval. This requires an active approval process to already be in place for this object type. See the Salesforce Help site for more info on Approval Processes. --></help>
+        <label><!-- Submit for Approval --></label>
+        <name>Loop__Submit_for_Approval__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, this Insert-Update will be executed using an administrator&apos;s credentials as specified on the Drawloop Admin tab. --></help>
+        <label><!-- Use Admin Credentials --></label>
+        <name>Loop__Use_Admin_Credentials__c</name>
+    </fields>
+</CustomObjectTranslation>

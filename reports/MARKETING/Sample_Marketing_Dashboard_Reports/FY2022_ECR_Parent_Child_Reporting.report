@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignNumber__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_PARENT_ID</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_PARENT_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>807041029_COM_WJ_1221_Whitney Program reporting - update pull for FY2022</description>
+    <filter>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN_PARENT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FS-ECR-SC-2022-SupplyChain,FS-ECR-SCO-2022-SupplyChain-Overarching,FS-ECR-SCABM-2022-SupplyChain-ABM,FS-ECR-SCSPM-2022-SupplyChain-Spend Management,FS-ECR-SCSM-2022-SupplyChain-Sourcing Management,FS-ECR-SCLRM-2022-SupplyChain-Location Risk Monitor,FS-ECR-SCCM-2022-SupplyChain-Contract Management,FS-ECR-SCCM-2022-SupplyChain-Category Management,FS-ECR-SCSPM-2022-SupplyChain-Supplier Performance Management,FS-ECR-RI-2022-RiskIntelligence,FS-ECR-MSA-2022-MarketStrategy&amp;Analysis,FS-ECR-RE-2022-RegionalExplorer,FS-ECR-ST-2022-StressTesting,FS-ECR-PMI-2022-PMI,FS-ECR-CRP-2022-CountryRiskPremiums,FS-ECR-EV-2022-EViews,FS-ECR-EI-2022-EconomicImpact</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>FY2022_ECR_Parent/Child_Reporting</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignList</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

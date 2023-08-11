@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-5688 : Sending Case Welcome Email for Contract SignatoriesTeam</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NotifyWhenContractSignatoriesCaseIsCreated</name>
+    <style>none</style>
+    <subject>Your IHS Markit Contract Signatories Case {!Case.CaseNumber}</subject>
+    <textOnly>CONTRACT SIGNATORIES
+
+Your IHS Markit Contract Signatories Case {!Case.CaseNumber}
+
+Date: {!Today()}
+
+Dear {!Case.Contact},
+
+Thank you for contacting our Contract Signatories Team, we have received your request.
+
+A unique case reference number {!Case.CaseNumber} with the subject &quot;{!Case.Subject}&quot; is currently being reviewed by one of our analysts.
+
+In order to allow you to track the progress of your enquiry, please quote the above case reference number when contacting us. Someone will be in touch with you shortly to ensure that your request is handled to your satisfaction.
+
+With Regards,
+IHS Markit Contract Signatories
+
+{!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

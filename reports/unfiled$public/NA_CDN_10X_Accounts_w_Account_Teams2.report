@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.GlobalUltimateAccount__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <columns>
+        <field>Account.AccountGeography__c</field>
+    </columns>
+    <columns>
+        <field>Account.AccountCountry__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE_CODE</field>
+    </columns>
+    <columns>
+        <field>Account.Relationship__c</field>
+    </columns>
+    <columns>
+        <field>Account.Priority__c</field>
+    </columns>
+    <columns>
+        <field>Account.InstitutionType__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>MEMBER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Client Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Zonia Nichols,Virginia Calvert,Nasser Chaudhry,Jeff Sprowl,Stacy Hendrickson,Kelli Delp,Nina Vilner,Brittaney Bridge,Karen Morgan,Brittaney Bromberg,Jennifer Sivley,Jesse Oman,Melisa Olivarez,Mimoza Gallani,Teresa Pagalilauan,Connie Pagalilauan,Kimberly Toten</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>US Geological Survey,Tourmaline Oil Corp,TAQA North Ltd,SM Energy Company,Shell Canada Limited,Schlumberger Technology Corp,Repsol Oil &amp; Gas Canada,Range Resources Corporation,Petro-Hunt,Matador Resources,Marathon Oil,Kaiser-Francis Oil,Husky Oil Operations,Hunt Oil,Hilcorp Energy,Eqt Production,Enervest,Earthstone Operating,Devon Energy,CRC Services,Contango Oil &amp; Gas Co,Comstock Resources,Cimarex Energy,Chesapeake Energy,Cenovus Energy,Canadian Natural Resources,Callon Petroleum Operating,Cabot Oil &amp; Gas,BUREAU OF LAND MANAGEMENT,Blackbeard Operating,Nextera</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>NA/CDN 10X Accounts w/ Account Teams</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

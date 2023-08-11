@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.InstitutionType__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_CITY</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ADDRESS1_COUNTRY_CODE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>GB</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS1_CITY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Edinburgh,Glasgow,Aberdeen,East Kilbride,Dundee</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.InstitutionType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Accountant,Asset Management - Holding Company,Asset Management,Bank - Central,Bank - Development,Consulting and Advisory,Fund Administrator/Custodian/Trustee/Servicer,Fund of Funds,Government Institutions &amp; Regulators,Insurance Company,International Bank,Investment Bank/Securities Firm,Investment Consultants,National Bank,Other,Pension Fund,Professional and Business Services - Other,Regional Bank,Sovereign Wealth Fund,Supranational or National Lender/Investor,Wealth Management &amp; Family Offices</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Scotland Financial Services</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList@Account.AccountCountry__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.InstitutionType__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

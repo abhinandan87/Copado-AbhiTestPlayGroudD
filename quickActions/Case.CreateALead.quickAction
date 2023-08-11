@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC1-44 quickly create lead from a case
+SFDC1-7970 add Contact Mailing Address, Email, Email Unknown and Phone to action layout + pre-defined fields for Lead Source, Country Code and State/Province Code
+SFDC1-8825 + SFDC1-8826</description>
+    <fieldOverrides>
+        <field>AccountRequested__c</field>
+        <formula>ISPICKVAL(Case.Account.Type, &apos;Place Holder - Unknown Account&apos;)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>City</field>
+        <formula>IF (Case.City__c != null, Case.City__c,
+IF (Case.ContactId != null, Case.Contact.MailingCity, &apos;&apos;)
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Company</field>
+        <formula>IF(
+ISPICKVAL(Case.Account.Type, &apos;Place Holder - Unknown Account&apos;)
+, Case.AccountName__c
+, Case.Account.Name
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>CountryCode</field>
+        <formula>IF (Case.Country__c != null, Case.Country__r.CountryCode__c, Case.ContactCountryCode__c)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Description</field>
+        <formula>&apos;Case Subject: &apos; + Case.Subject  &amp;BR() &amp;BR() + &apos;Case Description: &apos; + Case.Description</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Email</field>
+        <formula>IF (Case.ContactId != null, Case.Contact.Email, &apos;&apos;)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>EmailUnknown__c</field>
+        <formula>IF (Case.ContactId != null, Case.Contact.EmailUnknown__c, false)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>FirstName</field>
+        <formula>IF (Case.ContactId != null, Case.Contact.FirstName, &apos;&apos;)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>LastName</field>
+        <formula>IF (Case.ContactId != null, Case.Contact.LastName, &apos;&apos;)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>LeadSource</field>
+        <literalValue>Customer Care</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Phone</field>
+        <formula>IF (Case.ContactId != null, Case.Contact.Phone, &apos;&apos;)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>PostalCode</field>
+        <formula>IF (Case.Postal__c = null, Case.Postal__c,
+IF (Case.ContactId != null, Case.Contact.MailingPostalCode, &apos;&apos;)
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>ProductInterest__c</field>
+        <formula>IF (Case.ProductGroup__c != null, Case.ProductGroup__r.Name, &apos;&apos;)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SourceCase__c</field>
+        <formula>Case.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status</field>
+        <literalValue>Prioritized</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Street</field>
+        <formula>IF (Case.Address1__c != null, Case.Address1__c,
+IF (Case.ContactId != null, Case.Contact.MailingStreet, &apos;&apos;)
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Website</field>
+        <formula>Case.Website__c</formula>
+    </fieldOverrides>
+    <label>Convert To Lead</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Address</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Email</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>EmailUnknown__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Phone</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Website</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Success!! New Lead has been generated</successMessage>
+    <targetObject>Lead</targetObject>
+    <targetParentField>SourceCase__c</targetParentField>
+    <targetRecordType>Lead.LeadMasterRecordType</targetRecordType>
+    <type>Create</type>
+</QuickAction>

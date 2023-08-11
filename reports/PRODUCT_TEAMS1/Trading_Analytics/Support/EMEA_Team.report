@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_74120503</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Matteo Buschittari</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Larsen Mabika</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Huerfano</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alexandra Pilet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Vera</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christos Gardikis</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Janet Burke</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bill O&apos;Shea</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kenyon Scales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anthony Gomes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melissa Allison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephanie Ginsberg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel DeWitt</sourceValue>
+            </sourceValues>
+            <value>AMER</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Terry Kwok</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.PreviousOwner__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Christos Gardikis,Matteo Buschittari,Alexandra Pilet,Juan Vera,Maria Huerfano,Larsen Mabika,Kenyon Scales,Anthony Gomes,Daniel DeWitt,Stephanie Ginsberg,Melissa Allison,Bill O&apos;Shea,Janet Burke,Terry Kwok</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_74120503</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases by Region</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.ProductGroup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contract.Businessline__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Report of Contract and Product using for POD</description>
+    <filter>
+        <criteriaItems>
+            <column>Contract.Businessline__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Derivatives Processing,Derivative Processing,Rates and Credit,FX and Equities,FX and Securities</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>One-Time,SubVar,Trans,Var</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>POD - Contract and Product</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractCustomEntity$ContractLineItem__c</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-02-28</startDate>
+    </timeFrameFilter>
+</Report>

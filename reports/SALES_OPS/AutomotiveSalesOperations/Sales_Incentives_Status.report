@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_OPP_OWNER_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Opportunities tagged with sales incentive code</description>
+    <filter>
+        <criteriaItems>
+            <column>SalesIncentiveApproval__c.Campaign__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Planning Solutions New Subscriptions – Storm the Market</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Sales Incentives Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SalesIncentiveApproval__c@SalesIncentiveApproval__c.Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

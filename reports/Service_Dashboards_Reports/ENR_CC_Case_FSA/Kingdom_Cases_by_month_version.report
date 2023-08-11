@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_80499924</developerName>
+        <masterLabel>Kingdom Version Year</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.ProductVersion__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Kingdom 2015 Feature Pack 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2015 Feature Pack 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2015 Hot Fix 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2015 Hot Fix 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2015 Release</sourceValue>
+            </sourceValues>
+            <value>Kingdom 2015</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kingdom 2016.1 Hot Fix 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2016.1 Hot Fix 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2016.1 Hot Fix 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2016.1 Release</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2016 Hot Fix 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2016 Release</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2016 SP1</sourceValue>
+            </sourceValues>
+            <value>Kingdom 2016</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kingdom 2017 Hof Fix 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2017 Hot Fix 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2017 Hot Fix 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2017 Hot Fix 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2017 Release</sourceValue>
+            </sourceValues>
+            <value>Kingdom 2017</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kingdom 2018 Hot Fix 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2018 Hot Fix 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2018 Hot Fix 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2018 Hot Fix 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2018 Hot Fix 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2018 Release</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2018 SP1</sourceValue>
+            </sourceValues>
+            <value>Kingdom 2018</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kingdom 2019 Hot Fix 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2019 Hot Fix 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2019 Hot Fix 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2019 Hot Fix 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2019 Hot Fix 4 (obsoleted)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2019 Release</sourceValue>
+            </sourceValues>
+            <value>Kingdom 2019</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kingdom 2020 Hot Fix 1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2020 Hot Fix 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2020 Hot Fix 3</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2020 Hot Fix 4</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2020 Hot Fix 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2020 Hot Fix 6</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2020 Release</sourceValue>
+            </sourceValues>
+            <value>Kingdom 2020</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kingdom 2021 Release</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kingdom 2021 Hot Fix 1</sourceValue>
+            </sourceValues>
+            <value>Kingdom 2021</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Case.ProductModule__c</field>
+    </columns>
+    <columns>
+        <field>Case.ProductVersion__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>This report is used for showing cases monthly grouped by which product version year documented</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Kingdom</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductVersion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductVersion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>3.15.1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_80499924</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Kingdom Cases by month / version</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-01-01</startDate>
+    </timeFrameFilter>
+</Report>

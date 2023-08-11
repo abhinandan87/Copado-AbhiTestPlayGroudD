@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>System Muted Triggers</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>System Muted Triggers</value>
+    </caseValues>
+    <fields>
+        <help><!-- Check to switch AccountRanking object triggers on --></help>
+        <label><!-- AccountRanking --></label>
+        <name>AccountRanking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch account team member object triggers on --></help>
+        <label><!-- Account Team Member --></label>
+        <name>AccountTeamMember__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch account object triggers on --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch AdClaimChangeLog object triggers on --></help>
+        <label><!-- AdClaimChangeLog --></label>
+        <name>AdClaimChangeLog__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch AdClaim object triggers on --></help>
+        <label><!-- AdClaim --></label>
+        <name>AdClaim__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch Additional Account Fields object triggers on --></help>
+        <label><!-- AdditionalAccountFields --></label>
+        <name>AdditionalAccountFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdditionalCaseFields --></label>
+        <name>AdditionalCaseFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdditionalContactFields --></label>
+        <name>AdditionalContactFields__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch AdditionalOpportunityFields object triggers on --></help>
+        <label><!-- AdditionalOpportunityFields --></label>
+        <name>AdditionalOpportunityFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdditionalProductLoginFields --></label>
+        <name>AdditionalProductLoginFields__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch Asset object triggers on --></help>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>Attachment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch BillingScheduleLineItem object triggers on --></help>
+        <label><!-- BillingScheduleLineItem --></label>
+        <name>BillingScheduleLineItem__c</name>
+    </fields>
+    <fields>
+        <label><!-- CampaignInfluence --></label>
+        <name>CampaignInfluence__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch CampaignMember object triggers on --></help>
+        <label><!-- CampaignMember --></label>
+        <name>CampaignMember__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch Case Comment object triggers off --></help>
+        <label><!-- CaseComment --></label>
+        <name>CaseComment__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseContracts --></label>
+        <name>CaseContracts__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseOpportunities --></label>
+        <name>CaseOpportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseProducts --></label>
+        <name>CaseProducts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch case object triggers on --></help>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+    </fields>
+    <fields>
+        <help><!-- POLK -  To switch Change Log Fields object triggers on/off --></help>
+        <label><!-- ChangeLog --></label>
+        <name>ChangeLog__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch ChannelProgramContact object triggers on --></help>
+        <label><!-- ChannelProgramContact --></label>
+        <name>ChannelProgramContact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch chat survey  object triggers on --></help>
+        <label><!-- ChatSurvey --></label>
+        <name>ChatSurvey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch account contact triggers on --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContentDocumentLink --></label>
+        <name>ContentDocumentLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContentDocument --></label>
+        <name>ContentDocument__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch ContractAttachment object triggers on --></help>
+        <label><!-- ContractAttachment --></label>
+        <name>ContractAttachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Line Item --></label>
+        <name>ContractLineItem__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContractProductAlliancePartner --></label>
+        <name>ContractProductAlliancePartner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch account contract triggers on --></help>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch EmailMessage object triggers off --></help>
+        <label><!-- EmailMessage --></label>
+        <name>EmailMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event --></label>
+        <name>Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- FieldServiceActivityOpportunity --></label>
+        <name>FieldServiceActivityOpportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- FieldServiceActivityProduct --></label>
+        <name>FieldServiceActivityProduct__c</name>
+    </fields>
+    <fields>
+        <help><!-- Switch Internal Approval object triggers on/off --></help>
+        <label><!-- InternalApproval --></label>
+        <name>InternalApproval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch lead object triggers on --></help>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch Live Chat Transcript object triggers on --></help>
+        <label><!-- LiveChatTranscript --></label>
+        <name>LiveChatTranscript__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Agreement Exhibit --></label>
+        <name>MasterAgreementExhibit__c</name>
+    </fields>
+    <fields>
+        <label><!-- MeetingNote --></label>
+        <name>MeetingNote__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpportunityLineItemSchedule --></label>
+        <name>OpportunityLineItemSchedule__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch OpportunityLineItem object triggers on --></help>
+        <label><!-- OpportunityLineItem --></label>
+        <name>OpportunityLineItem__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch OpportunitySplit object triggers on --></help>
+        <label><!-- OpportunitySplit --></label>
+        <name>OpportunitySplit__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpportunityTeamMember --></label>
+        <name>OpportunityTeamMember__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch opportunity object triggers on --></help>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- OrderRequest --></label>
+        <name>OrderRequest__c</name>
+    </fields>
+    <fields>
+        <help><!-- POLK : Check to switch PLC Job object triggers on --></help>
+        <label><!-- PLCJob --></label>
+        <name>PLCJob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Login Contact Association --></label>
+        <name>ProductLoginContactAssociation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Login --></label>
+        <name>ProductLogin__c</name>
+    </fields>
+    <fields>
+        <help><!-- switch Product Usage Statistics object triggers on/off --></help>
+        <label><!-- ProductUsageStatistics --></label>
+        <name>ProductUsageStatistics__c</name>
+    </fields>
+    <fields>
+        <help><!-- SFDC-3115 --></help>
+        <label><!-- Related Opportunity --></label>
+        <name>RelatedOpportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch RenewalatRisk object triggers on/off --></help>
+        <label><!-- RenewalatRisk --></label>
+        <name>RenewalatRisk__c</name>
+    </fields>
+    <fields>
+        <label><!-- RocketDocs Proposal Request --></label>
+        <name>RocketDocsProposalRequest__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPGReferralLead --></label>
+        <name>SPGReferralLead__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPGReferral --></label>
+        <name>SPGReferral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Incentive Approval --></label>
+        <name>SalesIncentiveApproval__c</name>
+    </fields>
+    <fields>
+        <label><!-- SetApexLoggerEvent --></label>
+        <name>SetApexLoggerEvent__c</name>
+    </fields>
+    <fields>
+        <label><!-- SetComplianceException --></label>
+        <name>SetComplianceException__c</name>
+    </fields>
+    <fields>
+        <label><!-- SetContractCountonAccount --></label>
+        <name>SetContractCountonAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- SetupEvents --></label>
+        <name>SetupEvents__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch Solution object triggers on --></help>
+        <label><!-- Solution --></label>
+        <name>Solution__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch account object triggers on --></help>
+        <label><!-- SurveyResponse --></label>
+        <name>SurveyResponse__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch task object triggers on --></help>
+        <label><!-- Task --></label>
+        <name>Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+    </fields>
+    <fields>
+        <label><!-- WorkOrder --></label>
+        <name>WorkOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- WorkRequestForm --></label>
+        <name>WorkRequestForm__c</name>
+    </fields>
+    <fields>
+        <help><!-- dsfs_DocuSign_Recipient_Status managed package object --></help>
+        <label><!-- dsfsDocuSignRecipientStatus --></label>
+        <name>dsfsDocuSignRecipientStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to switch object triggers on/off for dsfs_DocuSign_Status --></help>
+        <label><!-- dsfsDocuSignStatus --></label>
+        <name>dsfsDocuSignStatus__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

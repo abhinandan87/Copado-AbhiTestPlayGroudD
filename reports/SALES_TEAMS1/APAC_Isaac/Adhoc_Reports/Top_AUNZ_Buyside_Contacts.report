@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>Contact.JobTitle__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY_CODE</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>CONTACT_OWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Top Buyside in the Australian Primary Markets contacts</description>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Macquarie Investment,Colonial First State,Citi Trading,JP Morgan Trading,National Asset Management,Henderson,Smarter Money Investments,United Overseas Bank,RBC Trading,HSBC Trading,NAB RV Book,BofA Trading Australia,Morgan Stanley Australia Securities Limited,CIPAM,Nomura Trading,Deutsche Bank,Perennial Investment,Greater Bank Limited,BNPP,Victoria Funds,GS Trading,Nabinvest Capital Partners,Sandhurst Trustees,National Australia Bank,BT Financial,SUMITOMO,Gryphon Capital,Mason Stevens,Suncorp-Metway,Bank of Communications,Bank of Queensland Limited</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS2_COUNTRY_CODE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AU,NZ</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.UltimateParent__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Top AUNZ Buyside Contacts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

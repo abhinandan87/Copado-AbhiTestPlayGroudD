@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_94704563</developerName>
+        <masterLabel>NYSE Tier</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_$AdditionalOpportunityFields__c.NYSEProgramTier__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_94704563</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesOpsReviewed__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.IsThisRenewalAutoClosed__c</field>
+    </columns>
+    <columns>
+        <field>NEXT_STEP</field>
+    </columns>
+    <currency>USD</currency>
+    <description>for Ipreo OM Case tracking Dashboard</description>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SalesOpsReviewed__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Mike R - Done,Alex,Shakil,Robert</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.BusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Issuer Solutions</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.PORequired__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ISSUER SOL Won Opps</name>
+    <params>
+        <name>open</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity@Opportunity.AdditionalOpportunityFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity.ContractStartDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

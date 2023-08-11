@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>AUTOS | NA Prod VINtelligence</name>
+    <queueMembers>
+        <users>
+            <user>brenda.mcintyre@ihsmarkit.com</user>
+            <user>brooke.townsend@ihsmarkit.com</user>
+            <user>ed.tyves@ihsmarkit.com</user>
+            <user>erica.stephens@ihsmarkit.com</user>
+            <user>jason.corn@ihsmarkit.com</user>
+            <user>leah.dunn@ihsmarkit.com</user>
+            <user>maxwell.werunga@ihsmarkit.com</user>
+            <user>patrick.weiss@ihsmarkit.com</user>
+            <user>roberta.brindley@ihsmarkit.com</user>
+            <user>sandra.donaldson@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

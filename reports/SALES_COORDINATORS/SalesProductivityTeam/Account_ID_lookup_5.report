@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <columns>
+        <field>Account.PKIDAccount__c</field>
+    </columns>
+    <columns>
+        <field>Account.SNPCAPIQ__CapitalIQCompanyId_txt__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PRICEWATERHOUSECOOPERS AUDITORES INDEPENDENTES,TERRA SANTA AGRO S.A.,ECO CONSULT - CONSULTORIA DE OPERACOES FINANCEIRAS,ETICA ENGENHARIA DE AVALIACOES PATRIMONIAIS LTDA -,VETOQUINOL SAUDE ANIMAL LTDA.,SBARAINI AGROPECUARIA S/A IND. E COM.,NEOVIA NUTRICAO E SAUDE ANIMAL LTDA,MINISTERIO PUBLICO DA UNIAO,CUSHMAN &amp; WAKEFIELD NEGÓCIOS IMOBILIÁRIOS LTDA,DSM PRODUTOS NUTRICIONAIS BRASIL SA,MITSUI CHEMICALS DO BRASIL COMERCIO LTDA.,MAURICIO COSTA DE CAMARGO SOARES,BUNGE ALIMENTOS S/A,UNIVERSO VERDE AGRONEGOCIOS LTDA.,ATHENAGRO CONSULTORIA LTDA,SYNERGIA - CONSULTORIA URBANA E SOCIAL LTDA.,INDUFOR ASIA PACIFIC LIMITED,SERRA BONITA SEMENTES S/A,JCS AGROPECUARIA E PARTICIPACOES LTDA,RENOVA FLORESTA LTDA,AGRICOLA FAMOSA LTDA,MARCELO BONATO,NICHINO DO BRASIL AGROQUIMICOS LTDA,SEMENTES SAO JOAO LTDA - ME,BIOMIN DO BRASIL NUTRICAO ANIMAL LTDA,PATRIA TERRAS FUNDO DE INVESTIMENTO EM PARTICIPACO,WAGNER DE OLIVEIRA FILIPPETTI,AGROICONE LTDA,PARANATINGA AGROPECUARIA SA,IRV - FACTORING FOMENTO COMERCIAL LTDA,MSU BRASIL AGROPECUARIA LTDA,VERA CRUZ - PLANEJAMENTO AGROPECUARIO LTDA,SOLLUS CAPITAL PARTICIPACOES LTDA,GARACUI COMERCIAL S.A.,FABRICIO PINOTTI,WAGNER WASHINGTON CARVALHO NOVAES,ENXERTO AGRO CONSULTORIA COMERCIAL LTDA,PB BRASIL INDUSTRIA E COMERCIO DE GELATINAS LTDA</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Account ID lookup 5</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

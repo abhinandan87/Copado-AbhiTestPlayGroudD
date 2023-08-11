@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DocGen Package --></label>
+        <name>Loop__DDP__c</name>
+        <relationshipLabel><!-- Form Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Default Value --></label>
+        <name>Loop__Default_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- The message displayed when the input value does not match the field validation. --></help>
+        <label><!-- Error Message --></label>
+        <name>Loop__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form Step --></label>
+        <name>Loop__Form_Step__c</name>
+        <relationshipLabel><!-- Form Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Help Text --></label>
+        <name>Loop__Help_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ignored --></label>
+        <name>Loop__Ignored__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Values --></label>
+        <name>Loop__List_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Loop__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- SfDefault Value --></label>
+        <name>Loop__SfDefault_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tag --></label>
+        <name>Loop__TagView__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tag --></label>
+        <name>Loop__Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Loop__Type__c</name>
+        <picklistValues>
+            <masterLabel>Checkbox</masterLabel>
+            <translation><!-- Checkbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkbox Inline</masterLabel>
+            <translation><!-- Checkbox Inline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drop Down</masterLabel>
+            <translation><!-- Drop Down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memo</masterLabel>
+            <translation><!-- Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio Inline</masterLabel>
+            <translation><!-- Radio Inline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rich Text</masterLabel>
+            <translation><!-- Rich Text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>View</masterLabel>
+            <translation><!-- View --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This can be any regular expression you wish to use to validate this field. See http://regexlib.com/CheatSheet.aspx --></help>
+        <label><!-- Validation --></label>
+        <name>Loop__Validation__c</name>
+    </fields>
+</CustomObjectTranslation>

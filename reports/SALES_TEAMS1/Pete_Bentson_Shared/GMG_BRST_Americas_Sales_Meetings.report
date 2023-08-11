@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>MeetingNote__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Subject__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.MeetingOutcome__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.PrivacyLevel__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>GMG/BRST Americas Sales Meetings - Last 7 Days</description>
+    <filter>
+        <criteriaItems>
+            <column>MeetingNote__c.PrivacyLevel__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>,Customer-facing meeting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MeetingNote__c.Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>S&amp;P Global Inc.</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>GMG/BRST Americas Sales Meetings</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MeetingNote__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>MeetingNote__c.Account__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>MeetingNote__c.EndDateTime__c</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

@@ -142,6 +142,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Event_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -149,30 +157,39 @@
         <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <fields>
         <fullName>ActivityDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>ActivityDateTime</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Attendees</fullName>
     </fields>
     <fields>
+        <fullName>ClientGuid</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>DurationInMinutes</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -180,13 +197,18 @@
     </fields>
     <fields>
         <fullName>EndDateTime</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>EventSubtype</fullName>
     </fields>
     <fields>
         <fullName>IsAllDayEvent</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsException</fullName>
     </fields>
     <fields>
         <fullName>IsPrivate</fullName>
@@ -201,14 +223,20 @@
     </fields>
     <fields>
         <fullName>IsVisibleInSelfService</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Location</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>OriginalInstanceDateTime</fullName>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -217,18 +245,23 @@
     </fields>
     <fields>
         <fullName>ShowAs</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>StartDateTime</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
         <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Type</fullName>
+        <inlineHelpText>Event Type</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -242,6 +275,40 @@
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
+    <listViews>
+        <fullName>CustomerfacingMeetings</fullName>
+        <columns>SUBJECT</columns>
+        <columns>ALL_DAY</columns>
+        <columns>START_DATE_TIME</columns>
+        <columns>END_DATE_TIME</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>PrivacyLevel__c</field>
+            <operation>equals</operation>
+            <value>Customer-facing meeting</value>
+        </filters>
+        <label>Customer-facing Meetings</label>
+    </listViews>
+    <listViews>
+        <fullName>InternalMeetings</fullName>
+        <columns>SUBJECT</columns>
+        <columns>ALL_DAY</columns>
+        <columns>START_DATE_TIME</columns>
+        <columns>END_DATE_TIME</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>PrivacyLevel__c</field>
+            <operation>equals</operation>
+            <value>Internal meeting</value>
+        </filters>
+        <label>Internal Meetings</label>
+    </listViews>
     <listViews>
         <fullName>MyRecentEvents</fullName>
         <columns>START_DATE_TIME</columns>
@@ -311,6 +378,23 @@
         <label>My Upcoming Events</label>
     </listViews>
     <listViews>
+        <fullName>PersonalAppointments</fullName>
+        <columns>SUBJECT</columns>
+        <columns>ALL_DAY</columns>
+        <columns>START_DATE_TIME</columns>
+        <columns>END_DATE_TIME</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>PrivacyLevel__c</field>
+            <operation>equals</operation>
+            <value>Personal appointment</value>
+        </filters>
+        <label>Personal Appointments</label>
+    </listViews>
+    <listViews>
         <fullName>TodaysAgenda</fullName>
         <columns>START_DATE_TIME</columns>
         <columns>END_DATE_TIME</columns>
@@ -332,6 +416,606 @@
         </filters>
         <label>Today&apos;s Agenda</label>
     </listViews>
-    <searchLayouts/>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <description>Create an event record to log interactions with a customer</description>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>ActivityType__c</picklist>
+            <values>
+                <fullName>Client Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In person meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Tasks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meetings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mentoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online customer meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Accepted meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Delivery meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Generation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Triage</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AssociatedTo__c</picklist>
+            <values>
+                <fullName>Base Chemicals%2FAlchemy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Divested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHS Markit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indices%2FDragonfly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mserv%2FOsttra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPGI</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LegacySystem__c</picklist>
+            <values>
+                <fullName>Agri_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDNEnergy_Ctele</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cappitech_Hubspot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fekete_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goldfire_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHS Markit_Salesforce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHS_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IPREO_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOC_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kingdom_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEA_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Markit_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCM_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polk_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMT_MSCRM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PrivacyLevel__c</picklist>
+            <values>
+                <fullName>Customer-facing meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal appointment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SubType__c</picklist>
+            <values>
+                <fullName>Customer Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Acceptance Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Delivery Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meetings</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TimeTracking</fullName>
+        <active>true</active>
+        <description>To track time unrelated to customer interactions, ensure that any customer related meetings (internal or external), calls, cases and tasks are logged using the correct event or case type.</description>
+        <label>Time Tracking</label>
+        <picklistValues>
+            <picklist>ActivityType__c</picklist>
+            <values>
+                <fullName>Client Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In person meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Tasks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meetings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mentoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online customer meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Accepted meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Delivery meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Generation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Triage</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AssociatedTo__c</picklist>
+            <values>
+                <fullName>Base Chemicals%2FAlchemy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Divested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHS Markit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indices%2FDragonfly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mserv%2FOsttra</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPGI</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LegacySystem__c</picklist>
+            <values>
+                <fullName>Agri_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDNEnergy_Ctele</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cappitech_Hubspot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fekete_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHS Markit_Salesforce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IHS_MSCRM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IPREO_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOC_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Markit_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCM_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polk_SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMT_MSCRM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PrivacyLevel__c</picklist>
+            <values>
+                <fullName>Customer-facing meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal appointment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SubType__c</picklist>
+            <values>
+                <fullName>Customer Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Acceptance Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Delivery Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter%2FQuote</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Time Tracking</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>BAU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Client Visit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In person meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Tasks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meetings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mentoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online customer meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Accepted meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Delivery meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly Check In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Generation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Triage</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts />
     <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>RestrictEventCreateandEditbyProfiles</fullName>
+        <active>true</active>
+        <description>SFDC1-4739 : Restrict some Profiles from Event creation and edit.</description>
+        <errorConditionFormula>AND( 
+OR( 
+ISNEW(), 
+ISCHANGED(Subject), 
+ISCHANGED(Location), 
+ISCHANGED(IsAllDayEvent), 
+ISCHANGED(Type), 
+ISCHANGED(Description), 
+ISCHANGED(TimeSpentMinutes__c), 
+ISCHANGED(WhoId), 
+ISCHANGED(WhatId), 
+ISCHANGED(OwnerId) 
+), 
+OR( 
+CONTAINS($Profile.Name, &apos;Read Only Profile&apos;), 
+CONTAINS($Profile.Name, &apos;Data Governance&apos;), 
+CONTAINS($Profile.Name, &apos;Sales: Product Manager&apos;), 
+CONTAINS($Profile.Name, &apos;Sales: Marketing&apos;) 
+),
+LEFT(WhatId, 3) == &apos;800&apos;
+)</errorConditionFormula>
+        <errorMessage>You are not authorized to create or edit an Event.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>CreateMeetingNoteEvent</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Meeting Note</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)} 
+if(&quot;{!Event.IsChild}&quot; == true) { 
+alert(&quot;This is a shared meeting that is automatically generated. You can only create meeting notes on the original meeting event.&quot;); 
+} else { 
+if(&quot;{!Event.MeetingNoteId__c}&quot; == &quot;&quot;) { 
+
+// determine object type 
+var whatId = &quot;{!Event.What}&quot;; 
+var prefix = whatId.substring(0,3); 
+
+// both empty 
+if((&quot;{!Event.Account__c}&quot; == null || &quot;{!Event.Account__c}&quot; == &quot;&quot;) &amp;&amp; (&quot;{!Event.What}&quot; == null || &quot;{!Event.What}&quot; == &quot;&quot;)) { 
+alert(&quot;Please link this event to an Account or Opportunity.&quot;); 
+} 
+// Account field filled, related to not 
+else if((&quot;{!Event.Account__c}&quot; != null &amp;&amp; &quot;{!Event.Account__c}&quot; != &quot;&quot;) &amp;&amp; (&quot;{!Event.What}&quot; == null || &quot;{!Event.What}&quot; == &quot;&quot; || prefix != &quot;006&quot;)) { 
+var url = &quot;/apex/CreateMeetingNoteEvent?infoType=accOnly&amp;accId={!Event.AccountId__c}&amp;EventId={!Event.Id}&quot;; 
+window.location.href = url; 
+} 
+// Account field empty but related to filled 
+else if((&quot;{!Event.Account__c}&quot; == null || &quot;{!Event.Account__c}&quot; == &quot;&quot;) &amp;&amp; (&quot;{!Event.What}&quot; != null &amp;&amp; &quot;{!Event.What}&quot; != &quot;&quot;)) { 
+
+// account 
+if(prefix == &quot;001&quot;) { 
+var url = &quot;/apex/CreateMeetingNoteEvent?infoType=accOnly&amp;accId={!Event.What}&amp;EventId={!Event.Id}&quot;; 
+window.location.href = url; 
+// opportunity 
+} else if (prefix == &quot;006&quot;) { 
+var url = &quot;/apex/CreateMeetingNoteEvent?infoType=oppOnly&amp;oppId={!Event.What}&amp;EventId={!Event.Id}&quot;; 
+window.location.href = url; 
+// something else, no meeting note atm 
+} else { 
+alert(&quot;Please link this event to an Account or Opportunity.&quot;); 
+} 
+
+// both filled 
+} else if((&quot;{!Event.Account__c}&quot; != null &amp;&amp; &quot;{!Event.Account__c}&quot; != &quot;&quot;) &amp;&amp; (&quot;{!Event.What}&quot; != null &amp;&amp; &quot;{!Event.What}&quot; != &quot;&quot;)) { 
+// determine object type 
+var whatId = &quot;{!Event.What}&quot;; 
+var prefix = whatId.substring(0,3); 
+
+// account 
+if(prefix == &quot;001&quot;) { 
+var url = &quot;/apex/CreateMeetingNoteEvent?infoType=accOnly&amp;accId={!Event.What}&amp;EventId={!Event.Id}&quot;; 
+window.location.href = url; 
+// opportunity 
+} else if (prefix == &quot;006&quot;) { 
+var url = &quot;/apex/CreateMeetingNoteEvent?infoType=bothFilled&amp;accId={!Event.AccountId__c}&amp;oppId={!Event.What}&amp;EventId={!Event.Id}&quot;; 
+window.location.href = url; 
+// something else, no meeting note atm 
+} else { 
+alert(&quot;Please link this event to an Account or Opportunity.&quot;); 
+} 
+} else { 
+alert(&quot;Please link this event to an Account or Opportunity.&quot;); 
+} 
+} else { 
+alert(&quot;This event is already linked to a meeting note.&quot;); 
+} 
+}</url>
+    </webLinks>
 </CustomObject>

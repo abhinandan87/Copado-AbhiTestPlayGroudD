@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>AUTOS | GE - Team Customizing</name>
+    <queueMembers>
+        <users>
+            <user>christian.guenzel@ihsmarkit.com</user>
+            <user>christine.gangl@ihsmarkit.com</user>
+            <user>jason.corn@ihsmarkit.com</user>
+            <user>jochen.rosner@ihsmarkit.com</user>
+            <user>leah.dunn@ihsmarkit.com</user>
+            <user>marion.wenk@ihsmarkit.com</user>
+            <user>patrick.weiss@ihsmarkit.com</user>
+            <user>sandra.donaldson@ihsmarkit.com</user>
+            <user>sandro.guenther@ihsmarkit.com</user>
+            <user>thomas.wolter@ihsmarkit.com</user>
+            <user>vaishali.kashmiri@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

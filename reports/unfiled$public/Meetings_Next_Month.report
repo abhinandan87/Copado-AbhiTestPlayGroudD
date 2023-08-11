@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>MeetingNote__c.When__c</field>
+    </columns>
+    <columns>
+        <field>FK_OPP_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.MeetingOutcome__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>FK_$Opportunity.BusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Product Design,ADS Haystack,Haystack</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Meetings Last Week</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$MeetingNote__c$RelatedOpportunity__c@RelatedOpportunity__c.Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MeetingNote__c.StartDateTime__c</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

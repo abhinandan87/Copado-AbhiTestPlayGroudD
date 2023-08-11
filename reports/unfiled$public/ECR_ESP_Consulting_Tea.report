@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Opportunity.TotalOpportunityAmount__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>STAGE_NAME</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.TotalOpportunityAmount__c</field>
+    </columns>
+    <columns>
+        <field>MEMBER_NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>ECR Economist &amp; Strategic Planning Consulting Team Pipeline Report</description>
+    <filter>
+        <booleanFilter>((2 AND 1) OR 3) AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <column>OWNER_FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brendan O&apos;Neil,Paul Bingham,Christian Schena,Laura Hand,Martin Seban,Paul Ciannavei,Mohsen Bonakdarpour,James Diffley,Aniruddha Banerjee,Shane Norton,Bob Flanagan,Maria Kulikova,Aleksandra Maguire,Steve Owen</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Brendan O&apos;Neil,Paul Bingham,Christian Schena,Laura Hand,Martin Seban,Paul Ciannavei,Mohsen Bonakdarpour,James Diffley,Aniruddha Banerjee,Shane Norton,Bob Flanagan,Maria Kulikova,Aleksandra Maguire,Steve Owen</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brendan O&apos;Neil,Paul Bingham,Christian Schena,Laura Hand,Martin Seban,Paul Ciannavei,Mohsen Bonakdarpour,James Diffley,Aniruddha Banerjee,Shane Norton,Bob Flanagan,Maria Kulikova,Aleksandra Maguire,Steve Owen</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Executive in Charge,Opportunity Owner,Project Manager,SME,Subject Matter Expert</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Zbyszko Tabernacki</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ECR_ESP Consulting Team</name>
+    <params>
+        <name>include</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>MEMBER_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

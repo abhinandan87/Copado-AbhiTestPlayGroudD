@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>SurveyResponse__c.CESScore__c:SUM/7*100</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Customer Satisfaction</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>SurveyResponse__c.CESScore__c:AVG/7*100</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Team Summary</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_78497129</developerName>
+        <masterLabel>Response 4 Rating</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>SurveyResponse__c.Response4__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Extremely longer than expected</sourceValue>
+            </sourceValues>
+            <value>1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Much longer than expected</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Somewhat longer than expected</sourceValue>
+            </sourceValues>
+            <value>2</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Longer than expected</sourceValue>
+            </sourceValues>
+            <value>3</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>As expected</sourceValue>
+            </sourceValues>
+            <value>4</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Shorter than expected</sourceValue>
+            </sourceValues>
+            <value>5</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Much shorter than expected</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Somewhat shorter than expected</sourceValue>
+            </sourceValues>
+            <value>6</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Extremely shorter than expected</sourceValue>
+            </sourceValues>
+            <value>7</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Average</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>CDF1</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>SurveyResponse__c.CaseProductGroup__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.CaseOwner__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.Response4__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_78497129</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>GBP</currency>
+    <customDetailFormulas>
+        <calculatedFormula>CASE( SurveyResponse__c.Response4__c,&quot;Extremely shorter than expected&quot;,7, 
+&quot;Much shorter than expected&quot; , 6,
+&quot;Somewhat shorter than expected&quot;,6,
+&quot;Shorter than expected&quot;, 5,
+&quot;As expected&quot;, 4,
+&quot;Longer than expected&quot;, 3,
+&quot;Much longer than expected&quot;,2,
+&quot;Somewhat longer than expected&quot;,2,
+&quot;Extremely longer than expected&quot;,1
+,null)/7*100</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Time Expectation score</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Time Expectation Score - Resources</description>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Accumap-Data,AccuLogs,Accumap,Accumap-Midstream,Accumap-Software,Asset Valuation,Base Chemcicals,Basin Data,Chemical Consulting,Chemical Cost Curve Service,Chemical Events,Chemical Handbooks: Speciality Chemicals,Chemical Information &amp; Same Day Analysis,Chemical PP,Chemical Reports: Custom,Chemical Reports: PEP,Chemical Technology Analytics Reports,Chemicals Royalties,Coal Consulting,Coal Events,Coal Indices,Coal Publications &amp; Indices,Coal,Community,Companies &amp; Transactions,Company Insight,Company Strategies and Performance,Content Delivery Intl Mid,Content Delivery Intl,Content Delivery NA,Content Delivery Partner,Content Partners NA,Context Distribution/Content,Costs &amp; Technology,Crude Oil Markets,Culture Data NA,Data Management Content Intl,Data Management Content NA,Data Management Services NA,Digital Logs NA,DMS Midstream,DNA,Downstream Analytics,Downstream Consulting,Downstream PP,Drilling Data NA,Drilling Wire NA,E&amp;P Content Intl,E&amp;P Terms &amp; Above Ground Risks,EDM Base,EGIS Can,EGIS Midstream,Energy Documents,Energy News on Demand,Engineering Data NA,Engineering Training &amp; Client Services,Environmental Data NA,eTriever,EV Recharge Locations,Evolution,EWP Consulting,EWP Events,EWP Financial,EWP Non-Financial,EWP Paid Presentations,EWP Trans</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Field Maps NA,FieldDirect,Fuel Prices,General Energy Data Services &amp; Fees,Geopolitical Data NA,GeoSyn Data,GeoWebWorks Can,GIS Data NA,GIS Mistream,Global Gas,Global Markets,Harmony Enterprise,Harmony,Interpreted Tops,Kingdom,Land Data Can,Land Data US,Land Data,LAS Tools,Log Digitizing Services,LogArc / LogTech,Logs &amp; Seismic Data Intl,LPG Events,Market Advisory Service (MAS),Market Daily Services,Metals &amp; Mining,Midstream Oil &amp; Gas Data,Midstream Oil &amp; NGL,Midstream,NAPD Other,NAPD,NAVX Other,NAVX Retail,Oil &amp; Gas Data,OMDC Consulting,OMMD Data,OMMD MCS,OPIS Rack,OPIS Retail,OPIS Spot,Optimize,Paid Presentations,Parking Availability,PCGR Consulting,PCGR MCS,PCGR PP,PCGR Services Trans,PCGR Services,Perform,Performance Evaluator NA,Petra Energy Data,Petra,Petrodata,Piper,Plan Distribution Service,Plays &amp; Basins,PointLogic Energy,Power &amp; Renewables,Power &amp; Transmission Data NA,PowerTools,Production Data NA,Production Engineering Services,Que$tor,Raster Logs NA,Rig Data NA,Seismic Surveys NA,Specialty Chemicals,SubPUMP,Surcharges,Technical Analytics,The Energy Daily,Topography Data NA,Training and Client Services,Trench Data NA,Upstream Consulting,Upstream Intelligence,Upstream Technical Consulting,Upstream View,US Offshore Lease Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>US Well Data,Validata,Valtus,Vantage Discontinued,Well Data Intl,Well Data NA,Well Log Downloader,WellTest,World Analysis</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.Response4Score__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.CaseProductGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Time Expectation Score - Resources</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CDF1</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SurveyResponse__c.CaseClosedDate__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

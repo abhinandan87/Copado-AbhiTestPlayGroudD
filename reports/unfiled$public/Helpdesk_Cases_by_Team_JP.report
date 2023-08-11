@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_76757450</developerName>
+        <masterLabel>Teams Jemma</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_$AdditionalCaseFields__c.ProductReleaseSpecialist__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Anuradha Deshwal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Léonce Doussaud</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prasanthi Kandukuru</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Priya Agrawal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tanvi Sharma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Subham Gupta</sourceValue>
+            </sourceValues>
+            <value>EUF</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alan Creek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sean Hoggard</sourceValue>
+            </sourceValues>
+            <value>DEV Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alessio Clapasson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jemma Palmer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jose Guedes</sourceValue>
+            </sourceValues>
+            <value>Helpdesk</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Danny Underhill</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Keval Shah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mat Hutchin</sourceValue>
+            </sourceValues>
+            <value>Programme Management</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Antonio Da Silva</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Claire Gardner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michal Frankowski</sourceValue>
+            </sourceValues>
+            <value>CFA Installs</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Andrew Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vilesh Amrania</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sukanya Manoharan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sahaj Kalra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mridul Miglani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Lever</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nitin Sharma</sourceValue>
+            </sourceValues>
+            <value>Analytics</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Nicholas Ward</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christopher Mole</sourceValue>
+            </sourceValues>
+            <value>BA Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Karl Shokar</sourceValue>
+            </sourceValues>
+            <value>Tableau Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Paul Hargreaves</sourceValue>
+            </sourceValues>
+            <value>Paul Hargreaves</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalCaseFields__c.SystemCompany__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8) AND 2</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Michal Frankowski</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed - Canceled,Closed - Resolved,Closed - Referral,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Delete,Closed,Auto-Closed – No Action Taken,Canceled,Closed - Moved to Jira</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jemma Palmer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Danny Underhill</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Selina Hamid</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Joe Dyer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Robert Crow</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jag Badyal</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_76757450</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Helpdesk Cases by Team - JP</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

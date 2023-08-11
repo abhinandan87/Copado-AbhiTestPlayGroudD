@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FS Marketing</name>
+    <queueMembers>
+        <users>
+            <user>anca.rosca@ihsmarkit.com</user>
+            <user>anney.lester@ihsmarkit.com</user>
+            <user>bryan.huynh1@ihsmarkit.com</user>
+            <user>christian.degenhardt@ihsmarkit.com</user>
+            <user>corrine.wu@ihsmarkit.com</user>
+            <user>douglas.french@ihsmarkit.com.prod</user>
+            <user>eiji.hirasawa@ihsmarkit.com</user>
+            <user>erika.alter@ihsmarkit.com</user>
+            <user>gipsy.cheng@ihsmarkit.com</user>
+            <user>greg.vadala@ihsmarkit.com</user>
+            <user>hayley.borriello@ihsmarkit.com</user>
+            <user>jemma.green@ihsmarkit.com</user>
+            <user>julie.wong@ihsmarkit.com</user>
+            <user>kumar.muthiahchetti@ihsmarkit.com</user>
+            <user>laura.davis@ihsmarkit.com</user>
+            <user>lucvincent.avent@ihsmarkit.com</user>
+            <user>marc.doise@ihsmarkit.com</user>
+            <user>margaret.blake@ihsmarkit.com</user>
+            <user>naomi.fox@ihsmarkit.com</user>
+            <user>nicholas.hamilton@ihsmarkit.com</user>
+            <user>nicolas.berner@ihsmarkit.com</user>
+            <user>nicole.mcleod@ihsmarkit.com</user>
+            <user>nina.minassian1@ihsmarkit.com</user>
+            <user>olivier.raspin@ihsmarkit.com</user>
+            <user>richard.earl@ihsmarkit.com</user>
+            <user>rosanna.warr@ihsmarkit.com</user>
+            <user>saad.khan1@ihsmarkit.com</user>
+            <user>shannon.mcdermott@ihsmarkit.com</user>
+            <user>suzanne.hewitt@ihsmarkit.com</user>
+            <user>thomas.goodfellow@ihsmarkit.com</user>
+            <user>whitney.jarrell@ihsmarkit.com</user>
+            <user>yasmin.evans@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Your iCompliance document request</name>
+    <style>none</style>
+    <subject>Your iCompliance document request</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Ref: {!Case.CaseNumber}
+
+We have received the document and will confirm once it has been processed successfully by the product team.
+
+If you have any questions or queries, please do not hesitate to  contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

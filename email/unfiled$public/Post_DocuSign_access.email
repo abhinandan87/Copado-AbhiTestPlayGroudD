@@ -1,0 +1,13 @@
+Dear {!Contact.FirstName},
+<br><br>
+
+Good day!<br><br>
+
+A DocuSign license has been assigned to you.<br><br>
+You must have received an email with a link to activate your Docusign license. Kindly follow the steps mentioned in that email.
+<br><br>
+Let me know if I can assist you with anything else.
+<br><br>
+Regards,<br>
+{!Case.OwnerFullName}<br>
+Salesforce Configuration Team

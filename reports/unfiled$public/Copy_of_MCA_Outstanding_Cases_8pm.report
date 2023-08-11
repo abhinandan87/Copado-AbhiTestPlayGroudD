@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_15057463</developerName>
+        <masterLabel>Age Range</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>8</to>
+            </sourceValues>
+            <value>0-8 hrs</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>8</from>
+                <to>24</to>
+            </sourceValues>
+            <value>9hrs to 2 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>24</from>
+                <to>168</to>
+            </sourceValues>
+            <value>2 - 7 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>168</from>
+            </sourceValues>
+            <value>7 days +</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_40185099</developerName>
+        <masterLabel>Office</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Dylan Beyer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Jefferson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Darshna Ravji</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aaron Williams1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jose Torres</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kameliya Yordanova</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Katim Woldemariam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kristin Love</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Boggs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oswald Phipps</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Valrie Wilson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christine Harrington</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonathan Wong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kimberly Proza</sourceValue>
+            </sourceValues>
+            <value>US</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela Caballero</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Renata Tuson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Celia Cabrita</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrea Shaw</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Lacey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Tembo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tracy Wang</sourceValue>
+            </sourceValues>
+            <value>LN</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Aayushi Kukreja</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Akshat Sharma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dheeraj Bhutani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dhiraj Sadhwani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kanishka Sharma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Madhur Mittal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Manjeet Choudhary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Monika Singh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nakul Vigg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Navmeet Randhawa</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neha Chopra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nikhita Punj</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>priya handa</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ratika Goel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shubhangi Seth</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shweta Jain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Srishti Sharma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Surbhi Grover</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tanya Sehgal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Adhar Jaiswal</sourceValue>
+            </sourceValues>
+            <value>IN</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alva Shi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feny Liong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeremy Sin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joy Foo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kuoyi Lin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>KyongHwan Kim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michelle Lu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rae Tao</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sera Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Suhyeon Park</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Winston Low</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Teck Yee Teng</sourceValue>
+            </sourceValues>
+            <value>SG</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_4500678</developerName>
+        <masterLabel>Offices</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Aaron Williams1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Jefferson</sourceValue>
+            </sourceValues>
+            <value>US</value>
+        </values>
+        <values>
+            <value>LN</value>
+        </values>
+        <values>
+            <value>IN</value>
+        </values>
+        <values>
+            <value>SG</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AGE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_DAYS:30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | MCA</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Copy of MCA Outstanding Cases 8pm</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseEmail</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

@@ -155,6 +155,11 @@
         <trackHistory>false</trackHistory>
     </fields>
     <listViews>
+        <fullName>All_AuthorizationFormText</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Authorization Form Text</label>
+    </listViews>
+    <listViews>
         <fullName>All_AuthorizationFormTexts</fullName>
         <filterScope>Everything</filterScope>
         <label>All Authorization Form Texts</label>

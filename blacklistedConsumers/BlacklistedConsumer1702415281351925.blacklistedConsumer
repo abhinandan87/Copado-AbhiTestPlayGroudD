@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>true</blockedByApiWhitelisting>
+    <consumerKey>3MVG9zlTNB8o8BA3XhDK7dUpilpyD79ImFJi8k_T.VlIbpPWA8mBvGwnAmlawNVOhmxN9lHhFRDJEDHs2C__E</consumerKey>
+    <consumerName>SimplyComp</consumerName>
+    <masterLabel>BlacklistedConsumer1702415281341280</masterLabel>
+</BlacklistedConsumer>

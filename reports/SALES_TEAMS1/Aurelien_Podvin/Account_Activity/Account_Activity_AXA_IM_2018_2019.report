@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TASK_TYPE</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>LOCATION</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Account Activity AXA IM - 2018 &amp; 2019</description>
+    <filter>
+        <criteriaItems>
+            <column>Activity.Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AXA Investment Managers</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Account Activity AXA IM - 2018 &amp; 2019</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountActivity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <endDate>2019-07-15</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-05-01</startDate>
+    </timeFrameFilter>
+</Report>

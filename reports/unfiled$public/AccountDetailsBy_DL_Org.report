@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>TICKER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Account.ExternalOrgType__c</field>
+    </columns>
+    <columns>
+        <field>Account.InstitutionType__c</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Account.Priority__c</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.AccountRegion__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SALES</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SALES.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18 OR 19 OR 20)</booleanFilter>
+        <criteriaItems>
+            <column>Contact.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>0 to 1 Analytics,25 Proje Teknoloji,3d Innovations Inc.,3M Company,4EI,4Intelligence,73 Strings,A&amp;T Systems Inc,A.T. Kearney GmbH,A.T.E. Huber Envirotech Pvt,AAL Shipping,AAMCO,AAR Corp,Aarti Industries Limited,AB Agri Ltd,AB Mauri,ABB,ABBOTT LABORATORIES,ABC Economics,ABCotton,Abel Noser,Abra,ABSA Bank,Absolute Results Productions Ltd,Abu Dhabi Investment Authority,Abu Dhabi Media,Abu Dhabi National Oil Company (ADNOC),Accenture,Accenz Inc,Accuity,ACT Government,Actagon,Act-Analytics,Actuaria &amp; Finanzas,AD Baltic,ADAC Automotive,Adecco Group,ADITYA BIRLA CHEMICALS LTD,Adler Pelzer Holding GmbH,Admin of Justice,Administration of the President,Advanced Composites,Inc.,Advanced Polymer Coatings,Advisory&amp;Co,Advocata,AECI Mining,Aegis ISA,Aenor Internacional S.A.U,Aenova Holding GmbH,Aerapass,AES Corporation,AFFIRMATIVE INVESTMENT MANAGEMENT PARTNERS LIMITED,AFI Inversiones Globales,Africa Specialty Risks,Afton Chemical Corp,AGC Inc.,Agentia Navala a Republicii Moldova,Agryo,AI Digital Solutions,AIANX Technologies,AIG,AIR LIQUIDE CANADA INC,Air Products &amp; Chemicals,AIRSTAR BANK LIMITED,Aisin Seiki Co Ltd,Akebono Brake Corporation,AKKA,Akro-Plastic,Akselos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>AL YOUSUF L L C,ALAC International,Albaugh LLC,Albemarle Corporation,Alcova Asset Management,ALDI International Services,ALFA LAVAL AB,Alfaloc,Algol Chemicals AB,Algoma Steel,Alimentos Espanoles Alsat SL,AlixPartners LLP,Allant Group,Alleghany Corporation,Allegiance Bank,Allen &amp; Gledhill LLP,Allen &amp; Overy LLP,ALLIANCE SALE &amp; PURCHASE PTE. LTD.,AllianceBernstein,Allianz Global Investments,Allnex,ALM First Financial Advisors,ALPHA10X,AlphaQ Advisors,Alpima Ltd,Altadata,Altas Partners,Alvarez &amp; Marsal,Amador Garcia,AMAGO CAPITAL,Amazon Web Services - SSO,Ambienta,Ambire,Amboseli Capital,Amcor Plc,American Bureau of Shipping,American Financial Group,Inc.,American Honda Motor Co.,American Lung Association,America&apos;s Central Port,AMG National Trust Bank,AMI,AMI Marine Ltd,AMN Healthcare Services,AMP Robotics,Ampacet Corporation,Amphenol Sensor Technology Group,amplio,Amundi Asset Management,Analysys Mason,ANCAP,Andersen Windows,Anderson King Energy Consultants,Anglian Water Services,Antero Resources,Any Connected,Aperia Technologies,APG Asset Management N.V.,APL Logistics,Ltd.,ApoBank,Apogee Consulting Group,Apollo Management Holdings,Application Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Apr Energy Holdings Limited,Aprile SpA,Aptiv,AquaChemie,Arab Potash Co,Aramis Auto,ARaymond,Arca Fondi SGR S.p.A.,Arcelik Anonim Sirketi,ArcelorMittal Automotive,ARIA Technologies,Arise BV,Arity,Ark Vision Philippines,Arohi,Arpel,Arrowstreet Capital Limited Partnership,Arthur D Little,Artic Diving &amp; Marine Service,Artisan Partners Limited Partnership,Artistic Milliners,Aryd Energy,Arzyz Metals,Ascend Performance Materials,Ashurst LLP,Asia Green Fund,Asia Pacific Energy Research Center,Asia School of Business MBA Malaysia,Aspen Technology,Inc.,Asset Resolution,Asta Chemicals Sdn Bhd,ASYST Technologies LLC,ATESTEO GmbH,Atkins LTD,Atlantica Consultoria,Atlantis Investment Management Ltd,Atlas Copco Blm,Atlas World Group,ATR Asset Management,ATTO Technology,Atul Ltd,AU Gov - Department of Defence,Audatex North America Inc.,Ausco Inc.,Ausnutria B.V,Australia and New Zealand Banking Group Limited,AUSTRALIANSUPER INVESTMENTS PTY LTD,Austrian Anadi Bank AG,Austrian Trade Commission,Auto &amp; General,Auto Care Association,Auto Heinen GmbH,Auto Parts Group,AUTOLIV ASP INC,Automarketolog,Automatic Spring Products Corp,Autoparts Del Sureste S. De R.L. De C.V.,Autos Innovate,Avanade,Avenue Capital Group,Avery Dennison Corporation,Avient Corporation,AVX Corporation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>AXA,AXA Investment Managers,AXA Versicherung AG,Axebrook Capital LLP,Axens,Axiom Consulting Partners,Azurite Logistics,Backyard Products,BAE Systems,Bahia Asset Management,Bain &amp; Company Inc,Baker Hughes,Baldan Implementos Agricolas e Maquinas Agricolas,Balearia,Balyasny Asset Management,Banca Intesa,Banco Bilbao Vizcaya Argentaria,Banco Bradesco,Banco Central de Reserva del Peru,Banco Central de Timor-Leste,Banco Central do Brasil,Banco do Brasil,Bank fur Internationalen Zahlungsausgleich,Bank of America Merryl Lynch,Bank of China,Bank of Ghana,Bank of Thailand,Bankhaus Ludwig Sperrer KG,Banorte,Banque J. Safra Sarasin (Monaco) SA,Barclays Bank PLC,Baring Private Equity Asia Limited,BARWIL General Marine Contractors,BASF Corp,BASF Petronas Chemicals,BasisPoint,Battelle Memorial Institute,Battlefin Technology and Events LLC,BAYER US LLC,BBC Chartering,BC Partners,Beacon Group,Beam Suntory Inc.,Befesa Silvermet Iskenderun,BEGS Engineering Co. Ltd.,Behr-Hella Thermocontrol GmbH,Beijing Gaohua Securities,Beijing Triumph Assets Management Ltd,Beijng Dongzhan Valuation,Bekaert Corporation,Belcan,Belron International,Benjamin Moore &amp; Co,Berger Nippon paints Automotive Coating Pvt. Ltd,Bernhard Schulte Shipmanagement (Cyprus) Ltd</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Best Bay Logistics Inc,Bestinver Gestion,BFAM Partners,BG Products,Inc.,BHP BILLITON,Biomarin Pharmaceutical Inc.,Biotest AG,Birch Hill Equity Partners II Ltd,Bitvore Corp,Biyac,BKV Corporation,Blachford UK Ltd,Black &amp; Veatch,Black Diamond Capital Management LLC,BlackRock,Blattner Company,Bloomberg Industry Group,Bloomberg L.P.,Blue Fire AI,Blue Owl Capital Inc.,BlueCove Limited,BLUECREST CAPITAL MANAGEMENT LLP,BMW AG,BNP Paribas,Bnsf Railway Company,BNY Mellon,BOARD OF INVESTMENTS,Boeing Corp,Boeing Distribution Services,Boen Huier IT,Bollinger Motors,Bondalti,Boost Management Consultancy,Borealis,BorgWarner,BOROUGE PTE. LTD.,Bosch.IO GmbH,Boston Trust Walden,BOVAG,Bowkett Auto Consulting Ltd,BP International,BR Distribuidora,Bracell,Braskem America,Inc,Breakthrough Fuel,Brembo S.p.A.,Bremenports GmbH &amp; Co KG,Brevan Howard,Bridgeton Technology Group LLC,Bridgewater,Briese Crewing Ukraine,Brigham Young University,Brinsa SA,Brit Insurance Ltd,British Arab Commercial Bank,British Bakels Limited,Britmindo Group,Brittany Ferries,Broad Homes Industrial Group Co Ltd,Brokeragnostics Ltd,Brooker Group,Bruna Group,Brunswick Corporation,Brunswick Group,BSLC,BT Group,BTLC,Buehler Motor Gmbh</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Bureau of Indian Affairs,Bureau of Land Management,Bureau Veritas,Burns Hyundai,Inc.,Bus Solutions Holdiongs,BusinessWorld,C4IR Ocean,Cabot Corporation,Caceis Investor Services,CACI International Inc,CAIA Association,Cairn Energy PLC,Calumet Specialty Product Partners LP,Calvert Investments,Cambryan,Canadian Natural Resources Limited,Canadian Solar Inc.,Cantor Fitzgerald,Cape Tryon Enterprises,CapeOmega,Capital Four Management Fondsmaeglerselskab,Capital Fund Management,Capital Market Risk Advisors Inc.,Capital University of Economics and Finance,Capitania S. A.,Capsa,Car Care Plan Ltd,Carbon Revolution,Carbon Technologies Ltd.,Cardano Holding B.V.,Cardiff University,Cardlytics,Cargill,Carnegie Mellon University,Carolopolis Fiduciary Counsel,Carpenter Marsh,CARTWRIGHT GROUP LIMITED,Catalina Holdings,Caterpillar Financial Services,Cathay Life Insurance,Catterton Partners,causaLens,Caxton Associates,Cbre Group,CDK Global,CDPQ,CEFAM (FRENCH-AMERICAN BUSINESS SCHOOL),Celanese International Corp,Cemex,Cenovus Energy Inc,Central Bank of Ireland,Central Bank of Malaysia,Central Bank of Morocco,Central Electricity Board,Central Garden &amp; Pet Company,Centroid Inc,Ceos Family Office,Cerberus Capital Management,L.P.,CF INDUSTRIES NITROGEN LLC,CFA Societies Canada,CFL Agencies USA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>CG Chemikalien GmbH &amp; Co. KG,Chabaa Bangkok Co.,Ltd.,Chalk Creek Production LLC,Challenger Ltd,Changjiang Securities Co Ltd,Changzhou Huawei Electronic,Channel Capital Advisors,Channel Logistics LLC,Charter Steel,Chartis Research,Chatham Financial,Chemigraphic Ltd,Chevron,Chevron Phillips Company,Chiba USA LLC,China Engergy Engineering Co,China International Fund Management Co Ltd,China International Marine Containers,China Merchants,China National Agrochemical Company Limited,China National Chemical Information Center Co.,China National Offshore Oil Corp.,China Petroleum Eng. Co. Ltd,China Society of Automotive Engineers,China University of Geosciences,Chinalink Trading,Chinese National Federation of Industries,CHS Hedging,CHS INC,Chulalongkorn University,Chunghwa Telecom Company,LTD,CIER,Cifc Corp.,Cigna Insurance,C-III Capital Partners,CIMalgo,Cincinnati Test Systems,Inc.,Cirrulus,Citadel Securities Americas LLC,Citco,Citfin - Financni,Citibank N.A.,CITIC,Citrosuci Europe NV,City of New York,Civil Aviation Directorate of the Republic of Serbia,CJ BIO MALAYSIA,Clar Solutions,Clariant International AG,CLARIOS,Clean Horizon,CLEANOCEAN SHIPMANAGEMENT,INC.,ClearFlame Engine Technologies,Clifford Chance,CloudWorks LLC,Cloyes Gear and Products Inc,CLS SERVICES LTD.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>CMA CGM SA,CMPC,Cms Energy Corp,CNH Industrial,Cobepa SA,Cobham Advanced Electronic Solutions,Coca-Cola,Codela,Coeli Global,COFCO International,Cognizant,Coiling Technologies,Inc.,Coles Group,Columbia Bank,Comau,Comcast,Commercetools,Commercial Bank of Qatar,Commercial International Bank (Egypt) S.A.E.,COMMONWEALTH BANK OF AUSTRALIA,Commonwealth Business Bank (Los Angeles,CA),Companhia Docas do Estado de Sao Paulo,Compania De Cemento Argos,Compass Group,Connections Insights,Connor,Clark and Lunn Investment Management Ltd,Conquer Systems,Consenna Ltd,Constant,Continental AG,Continental Industries Group Inc,Cornerstone Petroleum Corporation,Corning Incorporated,Corteva Agriscience,COSEC,Cottrill Research,Council For Scientific &amp; Industry Research,Coupa Software Inc.,Coventry University,Covestro AG,CP Capital Enterprises,CPF Board,Cpl,CPMS Group,CPP Investments,Crane Aerospace,Credit Agricole,Credit Andorra,Credit Assegurances,Credit Suisse Group AG,CRIOS Shipping LLC,Crisil,Crossover Energy Partners,Crow Trading Inc.,Crowe LLP,Crowell &amp; Moring LLP,Crowley Maritime Corporation,CRRC Corporation Limited,CRU Group,Crystal Health Group,CSIRO,CSLEE,CSM Bakery Solutions Europe Holding BV</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>CT Capital LLC,CT CLSA,Cubic Transportation Systems,Cubist Systematic Strategies LLC,Cudd Energy Services,Cummins,Curcio Webb LLC,Curtin University,Curtiss-Wright,CurveCue Data Analytics Ltd,CVN,CYDSA CORPORATIVO SA DE CV,Cyient Inc,Cymat Technologies Ltd,CYMER-DAYTON,CYPRESS CREEK RENEWABLES,Daewoo Shipbuilding &amp; Marine Engineering Co.,Ltd.,DAIMLER AG,Dainik Bhaskar,Dalya-H,Dana Point Capital,Danbury Proton LLC,Danish Maritime,Danone,Danske Bank,Darcy Partners,Dassault Systemes,Data Outlier,Datacor,Inc,DATAFORCE VERLAGSGESELLSCHAFT FUR BUSINESS INFORMATIONEN MBH,Datayes,DAYChem,Daymon Worldwide Inc.,DC Group Advisory,De Montfort University,DE NORA TECH LLC,Dealark,Decision Support Center - The Royal Court,Deen Meat &amp; Cooked Foods,Deere &amp; Co,Deestone,Defense Contract Audit Agency,Defreeze,DekaBank,Dell Computer Corp,Deloitte Consulting,Delta Asset Management,Delve,DemKota Ranch Beef,Dentons Beijing,Department of Home Affairs,Department of Jobs,Precincts and Regions,Department of Petroleum &amp; Gas Engineering University of Engineering and Technology,Department of Revenue Washington State,Depositbook Ltd,Desa Quimica</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Desjardins,Deutsche Bank,Deutsche Garantie Gesellschaft mbH,Deutsche Gesellschaft fur Internationale Zusammenarbeit (GIZ) BmgH,Deutsche Post DHL,Devon Energy Corporation,Diamond Generating Corporation,Dianjing Electronic Ltd,DIC Corporation,Differentis,Digital Solusi Prima,DiligenceVault,Direct ChassisLink Inc.,Distributed Ledger Technologies,DNB,Dongfeng Nissan Passenger Vehicle Company,Dorsum,Dotechconsultancy,DOXO INGREDIENTS INC.,Dport Services,Drakai Capital,Dried Fruits Australia,Driv Automotive Inc.,DRW Holdings,DSM ENGINEERING PLASTICS,DTE Energy Electric Company,DTEK TRADING,Dua Associates,Dubai Supply Authority,Dupont Specialty Products USA LLC,DYMON ASIA CAPITAL (SINGAPORE) PTE. LTD.,Dynalf Components,Dystematic Limited,DZ Privatebank (Schweiz) AG,E D &amp; F MAN LIMITED,EAC Consulting,EAFIT University,East China Normal University,East Metals Shipping AG,East Penn Manufacturing Co,East West Bank,Eastern Shipbuilding Group,Inc.,EASTMAN CHEMICAL CO,Eaton Limited,Eckes Granini Group GmbH,Ecolab,Ecolatina,EcoMitigation Asset Advisors,Econ-I Consulting,Econsia,ECOPETROL SA,Edelman Smithfield,Edelweiss Financial Services,Edison Energy,Edra Power Holdings,EFL Global</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Egniol,Egyptian Natural Gas Holding Company,Egyptian Organization,EIED,eiLink Research and Development Center,Eisenwerk Bruhl GmbH,El Financiero,Elcome Limited,Electronic Stock ltd,Element Fleet Management,ELIX Polymers,Ellington Management Group,L.L.C.,Elseco,EM Devices Corporation,Ema CM Ltd,Emeraude International,Emerson Electric Corp,Emlyon Business School,Empire State Realty Trust,Inc.,Employers Holdings,Enarka Instruments,Enbridge Inc.,Encino Energy,Endeavour Mining Corporation,Enel Group,Energy Harbor,Energy Impact Center,Eneriss GmbH,Engie Services,Engineered Sintered Components,Engro Corporation,ENI SPA,Enpal,Enterprise Singapore,Entravision Communications Corporation,ENTREPRISE TUNISIENNE D&apos;ACTIVITES PETROLIERES,EO Capital Services,EOG Resources Inc,E-one Moli Energy Corp.,EPAM Systems,Inc,Epiris Capital Partners,Equatorial CoCa-Cola Bottling Company,Equicom Savings Bank,Equinor ASA,ERCROS S.A.,ERIE srl,ERM Group Inc,Ernst &amp; Young LLP,ESGWAY Corporation,ESP International,ESRI Inc,Etalon Group Plc,ETH Zurich,Etika Consultores,ETIQ AI,Euphoria,European Commission,European Maritime Safety Agency (EMSA),European Product Carriers Ltd,European Stability Mechanism,Eurospuma,S.A.,Evalueserve,Evercore Group,Evercore Inc,Evergreen Trade Capital Ltd,Everstream Analytics,Evimero LLC dba Dottie&apos;s Kitchen</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Flint Hills Resources,Flowserve Fluid Motion and Control Co,Fluence,Fluor Corp,Focal Shipping Services Llc,Fong Lee Metal,Fonterra Ltd,Ford Motor Company,Formosa Petrochemical Co.,Formosa Plastics Corporation,FORTREC CHEMICALS AND PETROLEUM PTE. LTD.,Foshan Electrical And Lighting Co.,Ltd,Foundation,Fragrant Harbour Capital Advisors,Franco Public Relations Group,Frasle,Freightflows,Inc.,FREUDENBERG NOK INC,Freudenberg Sealing Technologies,Friede &amp; Goldman,FrieslandCampina,Frigair s.p.a,Frontenac Company,Frost and Sullivan,Fruvita,FS Investments,FSCI,Fuchs Petrolub,Fuji Electric,Fulcrum Asset Management,Fulda University of Applied Sciences,Fundacion ProMendoza,Future Fund Management,G2 Ocean AS,Gabriel Ride Control,Gahh,Galp Energia,Garin Investimentos,Gates Industrial Corp,GATX Corporation,Gazpromneft Omsk Refinery JSC,GEA Group AG,General Dynamics Mission Systems,General Electric,General Motors Holdings,Genesis Alkali Wyoming LP,Gentherm Inc,Gentrian Limited,Gerdau Special Steel,Gevo,GF International Investment Management Limited,GGVIE,GHC Gerling Holz + Co,GIC PRIVATE LIMITED,Gift Jeenie,Gingdao Everbright,GKN Sinter Metals Llc,Glenair Inc,Global Affairs Associates,Global Alliance,Global Design Innovation,Global Finesse LLC,Global Insight,Global Press</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Global Risk Management,Global Trading &amp; Agency BV,GlobalData,GlobalXperts Inc,Gobeyond Partners,Golding,Goldman Sachs Group,Goodbody Stockbrokers,Goodwe,Google LLC,Gouvernement du Quebec,Gov of Cambodia - Ministry of Labour,Government Employees Insurance Company Inc,Government Holdings Private Limited,Government of Alberta,Government of British Columbia,Government Of India,Government of Madhya Pradesh (M.P.),Graduate Consulting,Graham,Graham Capital Management,Grammer AG,GRANT THORNTON UK LLP,Grass Valley,Grastim JV Srl,Great Lakes Dredge &amp; Dock Company,Greenko,Greenwich.HR,GRENOBLE ECOLE DE MANAGEMENT,G-Research,Griffith University,Grinta Marketing,Grupo Idesa,GS1 Canada,GSG Company,GT TECHNOLOGIES,Guangzhou Shipyard International Co. Ltd.,Gulf States Toyota,Inc.,Guotai Junan International Holdings Ltd,Gustav Gerig AG,H. C. Olsen &amp; Associates,H.C. Starck Tungsten GmbH,H3C,Hagerty Insurance Agency,Hagland Group,Haitong International Securities,Haldia Petrochemicals,Hall of Fame Resort &amp; Entertainment Company,HALLIBURTON ENERGY SVC - SSO Onboarding,Hammonia,Hamon,HancockHamlin Ltd,Hang Seng Indexes Company Limited</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Hangzhou Justar Technology Ltd,Hannover Life Reassurance Company of America,Harbourvest Partners LLC,HARMAN INTERNATIONAL,Harvard,Harvester Capital Management LLC,Hauck &amp; Aufhaeuser AG,Haug,Havenport Investments,Hawaiian Electric Company,Hawk Performance,Haymarket,Healthcare of Ontario Pension Plan,HedgePoint Global Markets,HEDGE-TECH FINANCIAL ENGINEERING LTD,Helaba Invest,Heliogen,Inc.,Hella Japan Inc,Hempel A.S,Henderson Global Investors Ltd,Herrick,Feinstein LLP,Hess Corporation,Hew-Kabel GmbH,Hewlett Packard Enterprise,Hilltop-INV,Hindustan Petroleum Corporation Ltd,HISCOX UNDERWRITING GROUP SERVICES LIMITED,Hitachi Astemo,Ltd.,HNTB Corporation,Hoag Hospital,Hoechy Development Ltd,Hogan Lovells International LLP,Honda Canada Inc,Honda R&amp;D Co Ltd,Honeywell Process Solutions,Hong Kong Exchange and Clearing Ltd,Hong Kong Polytechnic University,Hormel Foods,Horton,HOYER Group,HP Cotton Mills,HP Inc.,HPO Forecasting AG,HPO Global,HSBC,HSCA AG,HSE Analytics,HSEP,HTFX Limited,HTI Cybernetics,Huadian Electric Power Research Institute,Huawei Technologies Co Ltd,Hudson River Trading LLC,Hundsun IHS Markit Technologies China,Hunt Oil,Hunt Oil Company,Hunt Refining,Huntsman International LLC.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Hychem,Hydro Aluminium International SA,Hyliion Holdings Corp,Hyundai Capital Canada Inc,Hyundai Engineering Co Ltd,Hyundai Mobis Co.,Ltd,HYUNDAI MOTOR GROUP,Hyva Holding B.V.,iA AWG,iA Financial Corporation Inc.,Ibiden,IBP Instituto Brasileiro do Petroleo,Gas e Biocombustivesis,ICF,ICL Group Ltd,Iconiq Capital,IDB,IDSC,the Egyptian Cabinet,IESEG School of Management,IFAD,IGC Partners,IHI Turbo America Co.,IHPC - Agency for Science,Technology and Research,IKA Germany,illio,Iluka Resources Ltd,ILX Fund,Imaginable Futures Services LLC,IMOCOM,Imubit,INCA Refining LLC,Inci Holding,INDIAN OIL CORP LTD,Indiana Department of Transportation,Indicio Technologies AB,Inditex,Indorama Venture,Industrial Semantics LLC,Industriall Global Union,Ineos Enterprises Group,INESC TEC,Infiniti Motor Company,Infosys Limited,Infra Invest,Infraco Africa,InfraSalience Ltd,ING Group,Ingenium,Ingram Barge Company,Ingredients Plus Sdn Bhd,Inigo Limited,Inland Tarp &amp; Liner,InMoment,Inovance Automotive,INRAE,Insight Edge Inc.,Insight Investment Management Ltd,Inspire11,Instittuto Superior de Engenharia do Porto,Institute of Geographic Sciences and Natural Resources Research,CAS,Institute of Shipping Economics &amp; Logistics,Institutional Research Consultants (Spartan Institutional Research),Instituto De Estadisticas De Puerto Rico</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Intact Investment Management,Integrated Vehicle Solutions Group LLC,Intel Corporation,Intellias,Intelligo Group,INTERCONEXION ELECTRICA S.A,Interfeed B.V.,InterMedia Communications,INTERNATIONAL BUSINESS,International Committee of the Red Cross (ICRC),International Council On Clean Transportation Inc,International Research Consultants Ltd,Interos Inc,Interroll Holding,Intertek Testing Services,Invenio Asset Management Pte Ltd,Invest India,Investec,ION Economics,ION Group,IPADEX,SA de CV,IPC Co-Op,IPN,IR Japan,IR Media Group Ltd,Irdeto B.V.,Irpi,Irrational Capital,ISAM Fund,ISI Emerging Markets Group,ISLAMIC DEVELOPMENT BANK,ISO Group,Inc.,Isotropic Systems Ltd,ISS ESG,Istanbul Settlement and Custody Bank Inc.,Istinye University,ITT Inc.,ITW Automotive Group,IWSR Drinks Market Analysis,J.B. Hunt Transport,Inc,Jabil Circuit Inc,Jaguar de Mexico S.A. de C.V.,Jaguar Land Rover Limited,Jama INC,JAMINS Investment Co.,Japan External Trade Organization,JAPAN PETROLEUM EXPL CO LTD,Japan Post Bank Co.,Ltd.,JATCO LTD,JATO Dynamics Limited,JBF Bahrain Spc,JBR Organisatie Adviseurs BV,Jefferies,Jeffrey W Trombly and Associates,Jets Vacuum AS,JGC Corporation,JGI Inc,JM Family,John Sisk &amp; Son Ltd,Johnsonville Foods,JP Maritime Services &amp; Broking Limited &amp; Co. KG,JP Morgan Chase Bank N.A.,JR SIMPLOT CO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>JS Bank Ltd,JTCM,JTEKT,JupiterOne Inc,Kalibrate Technologies,KANSAI International Management Co.,Ltd,Kaufland,KAUTEX TEXTRON,Kazakhtelecom,KBC Asset Management,KBR,Inc.,Kedge Business School,Kejuruteraan Semangat Maju,Kennametal Inc.,Kensho Technologies LLC,Keppel Offshore Technology Development,Kering S.A.,Kern-Liebers GmbH &amp; Co KG,Ketten Wulf Betriebs GmbH,Keus Automation,Keysight Technologies,Inc,Khazanah Nasional Berhad,Khronos Advisory,Kia Nederland,KifoFox Consulting,Kikaku Management,Kirchhoff Consult,Kirkwood Oil and Gas,KLCSM,KlineGroup,KN Filters,KNOC Caspian,KOBI Inc.,Koch Ag and Energy Solutions,Kolmar Americas,Konecranes Oyj,Korea Electric Power Corporation,Korea Institute for Industrial Economics &amp; Trade,Korea Institute of Industrial Technology,KOREA INTERNATIONAL TRADE ASSOCICATION NEW YORK,KOREA INVESTMENT &amp; SECURITIES CO. LTD,Korea University,Kostal of America,KPIT Technologies GmbH,KPMG,KPMG Services PTE,Kryptus,KSB SE &amp; Co.,Kudo Denki,Kuehne Nagel,KVM General Trading LLC,kWantix Carbon,KyungHee University,L&amp;T Finance Holdings,L&amp;T HYDROCARBON ENGINEERING LTD,L3harris Technologies,LAB Quantiative Strategies,Laboratorium Indonesia 2045,Ladeklar,Lagoon,Lamb Weston,Lampe &amp; Schwartze KG,Land Use Consultants</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Landor &amp; Fitch,LANXESS CORP,LAS Italian Consulting,Las Vegas Review-Journal,Inc.,Latcha and Associates,LBS Westdeutsche Landesbausparkasse,Lear Corporation,LeasePlan Corporation N.V.,Lecap Asset Management Ltd,LEGGETT &amp; PLATT,Legrand France,Lendco Limited,Leonardo DRS Inc,Leshnco Mining Solutions (Pty) Ltd,Levmet,LEVOYA Inc,Lexington Coal Company LLC,Lexus Corporate,Lian Tat Company,Liberty Mutual Insurance Co,Liberty Specialty Markets,Lidl,Limagrain,Linde AG,Lionpoint Group LLC,Lite-On Technology Corp.,Liveramp Inc.,Lloyd&apos;s Register Group Services Ltd,LMR Partners,LLP,Loadsure US LLC,Loan Partners,Lockton Companies,logisticsiq,London School of Economics and Political Science,Lookers Plc,Lord Abbett &amp; Co. LLC,Los Angeles Capital Management,Lotte Chemical Corporation,Louis Dreyfus Corporation,Lower Colorado River Authority,Lucien Frank,Lufkin Industries,Lumileds,Luthai Textile,Lux Ulaganja Investment and Real Estate,Lyondellbasell Industries,M G L s.r.o.,M Science LLC,M&amp;G FA Limited,M1 Data &amp; Analytics LLC,MA Shipping Service,MAB,Mace Group,Mackenzie Investments,Macquarie Group Ltd,Maersk Drilling,Magma Mekatronik Mak.San. ve Tic.A.S.,Magna International Inc,MAHLE Group,Makerere University,Malaysia Marine Department,MANIYAR CAPITAL ADVISORS UK LTD.,Mann+Hummel</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>,Mapfre Group,Mapna Group,Marcon International Inc,Marelli Corporation,Marine Power International,Maritime and Coastguard Agency (MCA),Markel International Services Limited,Market Data Insights,MarketWise,Marlin Equity Partners,Mars GmbH,MARS Technology LLC,Marsden Building Society,Marsoft,Inc.,Marti Group,Martin Marietta,Maruti Suzuki India,Ltd,MAT Industries,Material Research L3C,Matterkind,Maverick Capital Ltd,MAZDA MOTOR CORPORATION,McDermott,McGill University,McGough Construction Co.,McKinsey &amp; Co,Meat and Livestock Australia,medac GmbH sivuliike Suomessa,Medecins Sans Frontiere,MediaTek Inc,Medtronic Inc,Mega Fortris (M) Sdn Bhd,Megatech Industries,Melange,Mendix,Mercator Capital Management Fund LP,Mercer Consulting Ltd,Merck Sharp &amp; Dohme Corp,Mesarete Capital LLP,Meta Nikel Kobalt Madencilik,Metal Simplicity de Mexico,S.A. de C.V,Metalsa,MetLife,Inc SSO,METRO DATA RESOURCE CENTER,Metropolitan Reporting Bureau,Metzler Asset Management GmbH,MFO Asset Management,MG Motors,MHP SE,Miba Sinter Group,Michelman,Microsoft Corp,Midcontinent Independent System Operator,Midland Industries,MileOne Autogroup,MILIZE Inc.,Millennium Management LLC,Minda Industries Limited,Mindtree,Ministry of Energy,Industry and Mineral Resources</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>AccountDetailsBy_DL_Org</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

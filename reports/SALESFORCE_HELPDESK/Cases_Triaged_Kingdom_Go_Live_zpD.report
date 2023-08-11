@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>field_key</field>
+    </columns>
+    <columns>
+        <field>OLDVAL</field>
+    </columns>
+    <columns>
+        <field>NEWVAL</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OLDVAL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Salesforce Helpdesk,Prerna,Andri,Rishi,Sunny,Satwinder,Chirag,Shikhar,Peeyush,Utkarsh,Rohan,Ankur Salotra,Gaurav Dhami,Kanika Sharma,Mohd Zeeshan2,Mohit Handa,Rohit Kaundal,Sakshi Sinha,Shameem Akhtar Farooqui,Deepak Tiwari,Divyank Kohli,Kasmini Mohamed Elias,Mansi Behl,Nurul Nadia Jamaludin,Prince Kumar,Priyanka Bhandari,Ridhima Rana,Shilpa Tara,Sonia Sharma,Tanya Tiwari,Varun Kumar,Himanshu Singh,Manjunath P,Nitigya Khanna,Sachin Kumar,Shriya Thukral,Sonali Tripathi,Vidhi SharmaAarushi Bhargava,Kanika Bhatt,Munish Chopra,Priya Patawari,Sagar Singhal,Sonit Batra,Tushar Puri</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case owner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NEWVAL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>CM | Contract Management,Sales | Sales Operations,Account Governance</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>CASE_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases Triaged - Kingdom Go Live</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseAuditHistory</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>OLDVAL</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CASE_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

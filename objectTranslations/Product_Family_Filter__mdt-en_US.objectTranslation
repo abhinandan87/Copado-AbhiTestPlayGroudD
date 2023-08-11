@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Family Filter</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Family Filter</value>
+    </caseValues>
+    <fields>
+        <label><!-- ESG Amount Field --></label>
+        <name>ESG_Amount_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Display Name --></label>
+        <name>Filter_Display_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Name --></label>
+        <name>Filter_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Value --></label>
+        <name>Filter_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Amount Field --></label>
+        <name>Opportunity_Amount_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

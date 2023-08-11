@@ -1,0 +1,11 @@
+<template>
+    
+    <!-- To display accounts in hierarchy table -->
+    <lightning-tree-grid columns={accountColumns}
+                            data={accounts}
+                            key-field = "Name"
+                            expanded-rows = {accountExpandedRows}
+                            hide-checkbox-column = "true">
+    </lightning-tree-grid>
+
+</template>

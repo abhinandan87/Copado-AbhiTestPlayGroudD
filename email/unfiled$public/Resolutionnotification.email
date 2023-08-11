@@ -1,0 +1,7 @@
+{!Contact.FirstName},
+
+{!Case.ResolutionDescription__c}
+
+Regards,
+
+{!User.Name}

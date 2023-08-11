@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-5863: Survey Response Escalation Email After 30 Days</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Survey Response Escalation Email After 30 Days Hot Alert</name>
+    <style>none</style>
+    <subject>The {!SurveyResponse__c.RecordType} Survey Response {!SurveyResponse__c.Name} has been Escalated</subject>
+    <textOnly>Dear {!SurveyResponse__c.OwnerFullName},
+
+The following {!SurveyResponse__c.RecordType} Survey Response that has been Escalated for breaching the Hot Alert SLA of 30 Days.
+
+Details of the Survey Response are as follows:
+
+Survey Response: {!SurveyResponse__c.Name}
+Survey Response Owner: {!SurveyResponse__c.OwnerFullName}
+Survey Type: {!SurveyResponse__c.RecordType}
+Account: {!SurveyResponse__c.Account__c}
+Contact: {!SurveyResponse__c.Contact__c}
+URL: {!SurveyResponse__c.Link}
+
+Please work with the required colleague(s) and team(s) as applicable, with the utmost urgency in order to close the loop with the customer and close out the Escalated Hot Alert.
+
+Kind regards,
+Customer Experience Team | Sphere</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

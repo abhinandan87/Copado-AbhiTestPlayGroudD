@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Opportunity.Amount__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>MEMBER_NAME</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.TotalOpportunityAmount__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Amount__c</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_MONTH</field>
+    </columns>
+    <currency>USD</currency>
+    <description>ECR International Consulting Team closed won ytd</description>
+    <filter>
+        <booleanFilter>((2 AND 1) OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>OWNER_FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Alexia Ash,Karim El Assir,Nathalie Wlodarczyk,Martin Seban,Camille Zanni,Anna Boyd,Anna Mathewson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Alexia Ash,Karim El Assir,Nathalie Wlodarczyk,Martin Seban,Camille Zanni,Anna Boyd,Anna Mathewson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Alexia Ash,Karim ElAssir,Nathalie Wlodarczyk,Martin Seban,Camille Zanni,Anna Boyd,Anna Mathewson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Executive in Charge,Opportunity Owner,Project Manager</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MEMBER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ECR consulting pipeline won ytd</name>
+    <params>
+        <name>include</name>
+        <value>won</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_PREVFY</interval>
+    </timeFrameFilter>
+</Report>

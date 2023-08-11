@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-2799 Enhanced Sales Permission</description>
+    <isLicensed>false</isLicensed>
+    <label>EnhancedSalesPermission</label>
+</CustomPermission>

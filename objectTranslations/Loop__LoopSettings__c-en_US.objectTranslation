@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Decryption is currently only supported with CipherCloud. Contact Drawloop to enable this for your organization. --></help>
+        <label><!-- Decryption Allowed --></label>
+        <name>Loop__Decryption_Allowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a semi-colon delimited list of DocuSign Account Ids that this organization, profile, or user can chose from. (Limit 6 Account Ids) --></help>
+        <label><!-- DocuSign Account Ids --></label>
+        <name>Loop__DocuSign_Account_Ids__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a semi-colon delimited list of Account Names that correspond to the DocuSign Account Ids. (Limit 6 Account Names) --></help>
+        <label><!-- DocuSign Account Names --></label>
+        <name>Loop__DocuSign_Account_Names__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a semi-colon delimited list of DocuSign User Ids that correspond to the DocuSign Account Ids. (Limit 6 User Ids) --></help>
+        <label><!-- DocuSign User Ids --></label>
+        <name>Loop__DocuSign_User_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Queue Status Enabled --></label>
+        <name>Loop__Job_Queue_Status_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Valid options are &quot;Upload&quot; and &quot;Salesforce Files Sync&quot;. (Do not include the quotes.) --></help>
+        <label><!-- Pause to Edit Type --></label>
+        <name>Loop__Pause_to_Edit_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Sandbox (Deprecated) --></label>
+        <name>Loop__Sandbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show DocGen Package Wizard Message --></label>
+        <name>Loop__Show_DDP_Wizard_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Edit Form Message --></label>
+        <name>Loop__Show_Edit_Form_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Attachments As Salesforce Files --></label>
+        <name>Loop__Store_Attachments_As_Salesforce_Files__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva Vault Subdomain --></label>
+        <name>Loop__Veeva_Vault_Subdomain__c</name>
+    </fields>
+</CustomObjectTranslation>

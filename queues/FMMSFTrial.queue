@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | MSF Trial</name>
+    <queueMembers>
+        <users>
+            <user>lalit.kumar@ihsmarkit.com</user>
+            <user>nitin.verma@ihsmarkit.com</user>
+            <user>sakshi.rajivsingh@ihsmarkit.com.prod</user>
+            <user>yashvi.kundra@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

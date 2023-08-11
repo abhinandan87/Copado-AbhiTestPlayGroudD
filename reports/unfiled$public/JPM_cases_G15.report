@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Case.CustomerInternalReference__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(((((1 AND 2) AND (3 OR 4) AND 5 AND 6 AND 7) AND 8) AND 9) AND 10) AND 11</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Onboarding,Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Auto-Closed – No Action Taken,Closed,Closed - Canceled,Closed - Moved to Jira,Closed- Moved to ADO,Closed - No action required,Closed - Referral,Closed - Resolved,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Resolved/Completed,Resolved/No Response</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | DS Match,Abhishek Khandelwal,Mrig Nain Singh,Amar Naik,Amitpreet Singh,Angela Jou,Anthony Capra,Ashwajit Singh,Catherine Oreta,Chau Ting Lau,Daniel Palacio,Deepak Dutt,Dianne Jeong,Dina Spadaccini,Divesh Singh,Eshan Singh,Gimpi Rawal,GuoXin Li,Hemant Kumar,Himani Goel,Hiren Mathur,Jasmeet Singh,Jitesh Jangid,Jolly Sinha,Kamziana Nazwin Kamarulzaman,Kawal Nain Singh,Khushbu Srivastava,Kirti Kumari,Luca Colelli Riano,Mayank Bamola,Md Danish Akhtar,Mizuna Kaneko,Mohamad AlDafaee,Mohammad Shahzeb,Neeraj Jain,Nicholas Rivera,Nikhita Rahul Bhandarkar,Nikunj Wasson,Nisha Khurana,Nitin Wadhwa,Parth Vashishth,Ping Leong Ng,Rahul Jain2,Rishabh Kumar,Rohit Arora,Saumya Singh,Sharon Havilah,Shawn Wei Jian Tan,Shikha kanwar,Subhasish Ranjan Das</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jellenie Estares,Vandita Agarwal,Sharon Basils Balakrishnan,Candice Jing Er Tan,FM | DS Match | Implementation,Peter Walker,Robert Schweikert,Vineet Thakur,Vanshika Gupta,Nitin Wadhwa,Khushboo Nagpal,Arpita Gupta,Hemant Kumar,Lokesh Taunk,Kriti Malhotra,Nikunj Wasson,Kawal Nain Singh,Neeraj Jain,Shivam Gupta,Urja Malhotra,Mayank Bamola,Kirti Kumari,Sahil Arora,Arushi Ratti,Saurabh Kapoor,Vivek Kumar Yadav,Abhinav Bhandari,Gimpi Rawal,Aidan Mulvey,Jasmeet Singh,Azza Zakaria,Keara Hallam,Nicholas Rivera,Jitesh Jangid,Vishveshwar Choudhary,Mai Adachi,Dina Spadaccini,Aakash Sharma,Ping Leong Ng,Ankur Tripathi,Tonje Langaas,Timothy Saenger,Hiren Mathur,Dianne Jeong,Tej Pratap Sohi,Thomas Howse,tzes koay,Yamini Sagar,Yuen Jing Low</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | MSERV,FM | DS Match,FM | DS Match | Implementation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>JPMorgan Chase &amp; Co,J.P. Morgan Investment Management,Jp Morgan Chase Bank</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>TradeSTP,Data Delivery,MarkitWire Other,DMS,MarkitWire,MarkitWire-Trade Mgr</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>JPMorgan Chase &amp; Co.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>JPMorgan Chase &amp; Co.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>JPMorgan Chase &amp; Co.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>JPMorgan Chase &amp; Co.</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>JPM cases - G15</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2022-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-10-10</startDate>
+    </timeFrameFilter>
+</Report>

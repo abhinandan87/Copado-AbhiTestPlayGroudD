@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_ID</field>
+    </columns>
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CONTRACT_OWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CONTRACT_NUMBER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>00162586,00163747,00164984,00165025,00165026,00167608,00167609,00167610,00167616,00168133,00168277,00172192,00174792,00174793,00176575,00176577,00176578,00176585,00176587,00176596,00177086,00180120,00181220,00181221,00183462,00183736,00186621,00186622,00188197,00188342,00188733,00188734,00190084,00190755,00195364,00195365,00195366,00195367,00196008,00196048,00197064,00197070,00197764,00197766,00197772,00198285,00199585,00201996,00257334,00269597,00272481,00322277</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Case Number 01967068</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractList</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>START_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

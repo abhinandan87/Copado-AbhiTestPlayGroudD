@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>global.hongkong@ihsmarkit.com</email>
+    <name>PD–Retail–APAC</name>
+    <queueMembers>
+        <users>
+            <user>amanda.khoo@ihsmarkit.com</user>
+            <user>ann.ignatius@ihsmarkit.com</user>
+            <user>dhrity.singh@ihsmarkit.com</user>
+            <user>grace.li2@ihsmarkit.com</user>
+            <user>joelyn.low@ihsmarkit.com</user>
+            <user>lessley.jacob@ihsmarkit.com</user>
+            <user>manish.pawar@ihsmarkit.com</user>
+            <user>nikhil.bhat@ihsmarkit.com</user>
+            <user>penny.carroll@ihsmarkit.com</user>
+            <user>sachin.raveendran@ihsmarkit.com</user>
+            <user>siva.prasad@ihsmarkit.com</user>
+            <user>vi.nguyen@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

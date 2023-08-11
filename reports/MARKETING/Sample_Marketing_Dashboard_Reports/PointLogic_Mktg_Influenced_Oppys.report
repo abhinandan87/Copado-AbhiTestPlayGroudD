@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN.NAME</field>
+    </columns>
+    <columns>
+        <field>CM.RESPONDED</field>
+    </columns>
+    <columns>
+        <field>PRIMARY</field>
+    </columns>
+    <columns>
+        <field>CONTACT.FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.AMOUNT</field>
+    </columns>
+    <columns>
+        <field>OPP.CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>MODEL.NAME</field>
+    </columns>
+    <columns>
+        <field>INFLUENCE</field>
+    </columns>
+    <columns>
+        <field>REVENUE_SHARE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.TotalOpportunityAmount__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Influence of campaigns for the PointLogic campaigns since August 1, 2020</description>
+    <filter>
+        <booleanFilter>((1 OR 3) OR 5) AND 2 AND 4 AND 6 AND 7 AND 8</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN.PARENT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ENR-CSG-PointLogic-FY2020-21-General Promotional Efforts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPP.CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>8/1/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ENR-CSG-PointLogic-FY2020-21-General Promotional Efforts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MODEL.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Campaign Influence</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProductFamily__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>PointLogic Energy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Sales Led</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Sales Led (Not Marketing Related)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPP.STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>5-Renewal Contracting,6W-Renewal Won,6W-Forecasting Placeholder</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPP.FORECAST_CATEGORY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPP.STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PointLogic - Mktg Influenced Oppys</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomizableCampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

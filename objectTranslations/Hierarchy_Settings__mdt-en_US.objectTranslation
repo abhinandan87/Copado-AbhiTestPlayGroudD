@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Hierarchy Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Hierarchy Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Represents the order in which the columns will appear from left (1) to right (13). --></help>
+        <label><!-- Column Number --></label>
+        <name>Column_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the text that should appear as the column header. --></help>
+        <label><!-- Field Label --></label>
+        <name>Field_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the field that should be in the hierarchy table. --></help>
+        <label><!-- Field Name --></label>
+        <name>Field_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter column number less than or equal to 13, but greater than 0. --></errorMessage>
+        <name>Column_Number_not_greater_than_13</name>
+    </validationRules>
+</CustomObjectTranslation>

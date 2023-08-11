@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Post user creation template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Post user creation template</name>
+    <style>none</style>
+    <subject>Post user creation template</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+This email is in response to your request for accessing Salesforce.
+
+You have been granted a salesforce license.
+
+You must activate this login within 24 hours of receiving this email.
+
+What you must do?
+To activate your Salesforce license please follow these instructions while logging in:
+
+1.    Open Google Chrome and navigate to  https://ihsmarkit.my.salesforce.com
+
+2.    Login with Single Sign-On by entering your Username and password - this will be the same as your IHS Markit email and the Desktop password you use to login
+
+IHS Markit Salesforce Helpdesk contact details
+Please reach out to Salesforce Helpdesk for any further queries or assistance at salesforce@ihsmarkit.com.
+
+For training material, you can visit the links below:  Training Link.
+
+​​​​​​​We work proactively in resolving all the salesforce-related queries of our users.
+
+Kind regards,
+{!Case.OwnerFullName}
+Salesforce Configuration Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Prospecting Email to support Fair Value outreach</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Fair Value Golden Week Case Study</name>
+    <style>none</style>
+    <subject>Fair Value Case Study – Japan Golden Week Exchange Holiday</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

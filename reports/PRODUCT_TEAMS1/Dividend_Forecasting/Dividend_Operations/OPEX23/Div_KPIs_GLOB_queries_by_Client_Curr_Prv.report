@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_61417546</developerName>
+        <masterLabel>DivOwners</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amira Abdulkadir</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amyn Lakhani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paige Anderson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Roberto Soares</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Veronika Jastrzebski</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Akshit Gupta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nitin Mehndiratta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dominique DeRubeis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gopendra Yadav</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Conor Murtagh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aman Garg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karandeep singh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kelvin Menezes</sourceValue>
+            </sourceValues>
+            <value>DivsAMER</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ankita Narwal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chong Jun Wong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kar Mun Fan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Qianwen Ruan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hye Young Jo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marvyn Hoi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sakshi Dhingra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tanisha Bhardwaj</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stella Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yang Yang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maojun Ye</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Suhit Saxena</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ralph QIHANG</sourceValue>
+            </sourceValues>
+            <value>DivsAPAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Carlos Garcia-Lastra Marques</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pawan Shekhar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rashmi Choubey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Surneet Bhatia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anupam Tripathi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Surbhi Garg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rohan Mehta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kartik Sahni</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Manish Bajaj</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Clara Besson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tejaspreet Singh</sourceValue>
+            </sourceValues>
+            <value>DivsEMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>james wheeler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Benito Ting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marnie Merrill</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mayuri Shah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Adam Coleman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nrupali shetty</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohammed Bheda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Olrick-Anselme Disashi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Maltempi</sourceValue>
+            </sourceValues>
+            <value>D1Support</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Gourahari Bebortha</sourceValue>
+            </sourceValues>
+            <value>DivsMODL</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Thomas Matheson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Soyer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Bransfield</sourceValue>
+            </sourceValues>
+            <value>DivsPROD</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CREATED_DATE</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Incidents</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.Subtype__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.ClosedReason__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Div KPIs GLOB queries by Client Curr&amp;Prv</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Delete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Canceled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Duplicate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Dividend</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Div KPIs GLOB queries by Client Curr&amp;Prv</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseSolution@Case.ProductFamily__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

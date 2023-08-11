@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>TLC_Learning_and_Training_Banner_53</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>TLC Learning and Training Banner 530x100.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

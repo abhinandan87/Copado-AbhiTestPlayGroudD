@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SurveyResponse__c.ContactEmail__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SurveyResponse__c.CESScore__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>SurveyResponse__c.ContactEmail__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>john.chu@anz.com,simon.johnston@ashmoregroup.com,reema.mistry@asx.com.au,adam.perllman@avivainvestors.com,alexei.geoghegan@bis.org,stephen.gretton@baml.com,alex.kennedy@boigm.com,antonio.garcia.vinuelas@bbva.com,mirna.martinez@bbva.com,caroline.deridder@belfius.be,joerg.auth@berlinhyp.de,geethan.rayan@bmo.com,mark.wendland@citadel.com,cecil.woo@citi.com,daniel.fogle@citi.com,jethandra.kumar@cba.com.au,dan.stevenson@cba.com.au,chris.fowler@ca-cib.com,rashmi.priya@outsourcing.ca-cib.com,Ecns@natixis.com,james.neale@daiwa.co.jp,johas@danskebank.dk,judy.chiu@fhlbny.com,squinn@fideuramireland.ie,ssiano@bancafideuram.it,wilfred.chettiar@bankfab.com,patrickccleung@hkex.com.hk,ajith.vijaykumar@hsbc.co.in,lalit.gulhane@hsbc.com,silke.sagner@hsh-nordbank.com,michiel.smid@ingbank.com,jason.bishop@jupiteram.com,jskelly@latamsef.com,markus.berjak@lgt.com,misa_minami@tr.mufg.jp,lucy.ragone@mizuhocap.com,yuhui.wang@morganstanley.com,tony.holland@mufgsecurities.com,alison.higgins@nbad.com,ecns@natixis.com,michael.webb@nomura.com,jesper.rossen.moller@nordea.com,linda_tong@otpp.com,fionamcmahon@optiver.com,jbrahami@pictet.com,jo.billiard@pimco.com,richard.garry@pioneerinvestments.com,rob.burnett@market-securities.com,daniel.gillen@rabobank.com,sujir.nayak@rabobank.com,michael.uebel@rbinternational.com,victoria.slater@rbs.com,tine</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Customer Success -  Surveys</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SurveyResponse__c.CaseClosedDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

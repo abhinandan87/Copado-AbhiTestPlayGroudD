@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | GS AVS | SG</name>
+    <queueMembers>
+        <users>
+            <user>aaron.williams1@ihsmarkit.com</user>
+            <user>ankur.pandey2@ihsmarkit.com</user>
+            <user>ashlie.kitching@ihsmarkit.com</user>
+            <user>cherie.foo@ihsmarkit.com</user>
+            <user>christopher.evans@ihsmarkit.com</user>
+            <user>david.dong@ihsmarkit.com</user>
+            <user>inara.nitisa@ihsmarkit.com</user>
+            <user>mark.lacey@ihsmarkit.com</user>
+            <user>marvin.kines@ihsmarkit.com</user>
+            <user>michelle.lu@ihsmarkit.com</user>
+            <user>ning.wang@ihsmarkit.com</user>
+            <user>niteshkumar.jha@ihsmarkit.com</user>
+            <user>ratika.goel@ihsmarkit.com</user>
+            <user>teckyee.teng@ihsmarkit.com</user>
+            <user>warren.benwell@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

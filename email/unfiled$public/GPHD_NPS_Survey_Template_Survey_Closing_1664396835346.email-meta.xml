@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Use to inform case owner that the survey is about to close and this is the final chance to get customer feedback.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GPHD NPS Survey Template - Survey Closing</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>S&amp;P Global Mobility NPS Survey Alert</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

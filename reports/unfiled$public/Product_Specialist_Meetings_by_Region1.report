@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_30574718</developerName>
+        <masterLabel>Client Tier</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ACCOUNT</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Jpmorgan Chase &amp; Co.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Blackrock Institutional Trust Company, National Association</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>HSBC BANK PLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SOCIETE GENERALE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deutsche Bank AG London</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Citigroup Inc.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bank of America Merrill Lynch (Global Parent)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Morgan Stanley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jefferies Group LLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AVIVA INVESTORS GLOBAL SERVICES LIMITED</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BARCLAYS PLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BNP PARIBAS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Credit Suisse Group AG</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eseclending LLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brown Brothers Harriman &amp; Co.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nomura Securities International, Inc.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Northern Trust Corporation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>The Bank of New York Mellon Corporation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>State Street Bank and Trust Company</sourceValue>
+            </sourceValues>
+            <value>Global Tier 1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>MACQUARIE GROUP LIMITED</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SCOTIA CAPITAL (EUROPE) LTD</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UBS AG</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ABN AMRO Clearing Bank N.V.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Skandinaviska Enskilda Banken AB</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BNP PARIBAS SECURITIES SERVICES</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Clearstream Banking SA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DWS Investment GmbH</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ABN AMRO Bank N.V.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>RBC Investor Services Trust</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SUMITOMO MITSUI TRUST BANK, LIMITED</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cowen and Company, LLC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Goldman Sachs Asset Management, L.P.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ING BANK NV</sourceValue>
+            </sourceValues>
+            <value>Global Tier 2</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AQR Capital Management LLC</sourceValue>
+            </sourceValues>
+            <value>US Tier 1 Buyside</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_54972406</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ASSIGNED</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Thomas Ingram</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hannah Gaunt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shaan Jivan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tom Spinner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melissa Gow</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jordan Maskowitz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nathan Kholodenko</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lou Carvajal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicole O&apos;Donnell</sourceValue>
+            </sourceValues>
+            <value>USA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jason Yang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Henry Lau</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kyotaro Inoue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stewart Cowan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karthik Ramesh</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>BucketField_54972406</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>PS Regional Meetings</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>BucketField_30574718</field>
+    </columns>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>TASK_TYPE</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>LOCATION</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>TASK</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Karthik Ramesh,Nicole O&apos;Donnell,gaunt,carvajal,stewart cowan,bassam,melissa gow,maskowitz,kholodenko,ingram,bernini,chakrane,henry lau,Jason Yang,Kyotaro Inoue,shaan jivan,spinner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>BAU,Internal Call,Internal Meeting,Internal Training,Management Tasks,Mentoring,Miscellaneous,Project Work,Proposal Acceptance Call,Proposal Accepted meeting,Proposal Delivery Call,Proposal Delivery meeting,Report Generation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>IHS Markit</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_54972406</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Product Specialist Meetings by Region</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>e</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>DUE_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENTQ</interval>
+    </timeFrameFilter>
+</Report>

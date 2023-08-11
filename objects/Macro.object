@@ -171,16 +171,12 @@
         <fullName>StartingContext</fullName>
     </fields>
     <searchLayouts>
-        <customTabListAdditionalFields>StartingContext</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>StartingContext</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>StartingContext</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>StartingContext</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
     </searchLayouts>

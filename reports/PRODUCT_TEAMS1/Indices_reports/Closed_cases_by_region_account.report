@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_69270534</developerName>
+        <masterLabel>Case owner region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Joey Low</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jessica Tan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Seolin Park</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marcus Wong</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Florian Guth</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Cunningham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Philipp Flock</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Zhaneta Chepileva</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Adam Barnes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brian Snodgrass</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lisa Dully</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fasal Lone</sourceValue>
+            </sourceValues>
+            <value>US</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>FM | Indices</sourceValue>
+            </sourceValues>
+            <value>Unassigned</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_85172124</developerName>
+        <masterLabel>Jessica</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CONTACT.ACCOUNT</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Case.Subtype__c</field>
+    </columns>
+    <columns>
+        <field>Case.ClosedReason__c</field>
+    </columns>
+    <columns>
+        <field>Case.ResolutionDescription__c</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.TimeSpentMinutes__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>BucketField_85172124</field>
+    </columns>
+    <currency>USD</currency>
+    <description>For APAC Client Check-in. All cases by account for the last 1 year (custom date), per contact tagged with region (CS region)</description>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Joey Low,Seolin Park,Jessica Tan,FM | Indices,Stephen Cunningham,Florian Guth,Lisa Dully,Adam Barnes,Brian Snodgrass,Philipp Flock,Marcus Wong,Zhaneta Chepileva,Fasal Lone</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>blackrock</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Aberdeen,AIA,Allianz,Amundi,Central Provident fund,Deutsche,Eastspring,fullerton,lion global,monetary authority,Nikko,NTUC,Schroders,Standard Chartered,State street,tokio marine,uob,western asset,Baring,BEA Union,BOCI,BOCI-Prudential,CEPHEI,China Asset Management,China Merchangts Asset,Colonial First,GAVEKAL,Hang Seng Investment,H.A.,HSBC Global Asset,HSBC,ICBC international,Invesco,JK Capital,JP morgan,Manulife Asset,Metlife,Mizuho securities,Morgan Stanley,Pinebridge,Principal,Hong kong and shanghai,Towers watson,hospital authority,prudential</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CONTACT.ACCOUNT</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CONTACT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_69270534</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>(APAC checkin) case by account &amp; contact</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <endDate>2020-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-06-01</startDate>
+    </timeFrameFilter>
+</Report>

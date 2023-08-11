@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTACT_CREATED</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Contact.ContactID18Character__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>contacts created in the IHS Markit instance of Salesforce</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Amy Newlan,Andrew Flynn,Anne Montana,April Wu,Aron Lenhoff,Ben Clemons,Boyd Steinhoff,Cassie Jensen,Chase Wickenheiser,Chris Thompson,Chris Walsh,Christian Kirschbaum,Clay Willingham,Dan Hernandez,Daniel Giardina,Daniel Hernandez,David Harris,Devin Vasquez,Dina Parise,Dina Shin,Erin Sheepo,Ethan Schneider,Eugene Ong,Grant Pollworth,Griffin Swanwick,Hank Boggio,Hass Salih,Iris Yan,Jack Rogers,Jack Young,Jamie Beckford,Jeremy Rosenthal,Jim Cannon,John Turner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT_CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jon Cross,Jordan Charalampous,Jose Perez,Josh Mallory,Kyri Yiannakis,Liam McDermott,Marco Loiacono,Maria Sa,Marko Peraica,Matt Mezzancello,Max Bauer,Max Merrill,Melissa Ferraz,Michael Sala,Michael Santos,Moneil Patel,Nader Balute,Nobu Ohara,Oriana Brut-Christensen,Phil Lief,Piers Dixon,Rachel White,Radhika Shah,Ryan Davis,Sam McElwain,Sam O’Neill,Sam Swadling,Sarah Broderick,Sharon Antsey,Simon Hughes,Steven Armanetti,Stuart Tait,Tara Post,Toby Bailey,Tyler Ward,Will Lopez</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>iLEVEL Contacts Created Since Migration</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-04-30</startDate>
+    </timeFrameFilter>
+</Report>

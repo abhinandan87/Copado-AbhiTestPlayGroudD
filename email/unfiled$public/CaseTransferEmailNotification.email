@@ -1,0 +1,6 @@
+Case {!Case.CaseNumber} has been assigned to you. Please click on the link below to view the record. 
+{!Case.Link} 
+
+Contact Name: {!Case.Contact} 
+Account Name: {!Case.Account} 
+Subject: {!Case.Subject}

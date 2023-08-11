@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Salesforce Access Management Cases</name>
+    <queueMembers>
+        <users>
+            <user>abunidal.khan@ihsmarkit.com</user>
+            <user>akshay.dogra@ihsmarkit.com</user>
+            <user>amit.kumar2@ihsmarkit.com</user>
+            <user>poonam.choudhary@ihsmarkit.com</user>
+            <user>prerna.yadav@ihsmarkit.com</user>
+            <user>prince.kumar@ihsmarkit.com</user>
+            <user>priya.tyagi@ihsmarkit.com</user>
+            <user>shameem.akhtarfarooqui@ihsmarkit.com</user>
+            <user>sona.chakroborty@ihsmarkit.com</user>
+            <user>tanya.tiwari@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

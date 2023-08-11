@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Post_To_America</name>
+        <label>Post To America</label>
+        <locationX>350</locationX>
+        <locationY>417</locationY>
+        <actionName>slackv2__invokePostMessage</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>OppyDetails</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messageDestinationId</name>
+            <value>
+                <stringValue>a2z780000000xWmAAI</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>slackv2__invokePostMessage</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Post_To_Deutsche</name>
+        <label>Post To Deutsche</label>
+        <locationX>861</locationX>
+        <locationY>418</locationY>
+        <actionName>slackv2__invokePostMessage</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>OppyDetails</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messageDestinationId</name>
+            <value>
+                <stringValue>a2z780000000xWrAAI</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>slackv2__invokePostMessage</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Post_To_Standard_Chartered</name>
+        <label>Post To Standard Chartered</label>
+        <locationX>619</locationX>
+        <locationY>554</locationY>
+        <actionName>slackv2__invokePostMessage</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>OppyDetails</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messageDestinationId</name>
+            <value>
+                <stringValue>a2z780000000xWhAAI</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>slackv2__invokePostMessage</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>Check_Ultimate_Parent</name>
+        <label>Check Ultimate Parent</label>
+        <locationX>612</locationX>
+        <locationY>376</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Bank_Of_America</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.UltimateParent__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Bank of America</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Post_To_America</targetReference>
+            </connector>
+            <label>If Bank Of America</label>
+        </rules>
+        <rules>
+            <name>If_Deutsche</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.UltimateParent__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>DEUTSCHE</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Post_To_Deutsche</targetReference>
+            </connector>
+            <label>If Deutsche</label>
+        </rules>
+        <rules>
+            <name>If_Standard_Chartered</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.UltimateParent__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Standard Chartered</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Post_To_Standard_Chartered</targetReference>
+            </connector>
+            <label>If Standard Chartered</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Innovation Slack Opportunity Owner Changes {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Innovation Slack Opportunity Owner Changes</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>490</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Check_Ultimate_Parent</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OwnerId</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>OppyDetails</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Opportunity Owner Changed Successfully!
+Old Owner - {!$Record__Prior.Owner.FullName__c}
+New Owner - {!$Record.Owner.FullName__c}
+AccountName - {!$Record.Account.Name}
+URL - https://ihsmarkit--ea.sandbox.lightning.force.com/{!$Record.AccountId}
+Amount - {!$Record.Amount}</text>
+    </textTemplates>
+</Flow>

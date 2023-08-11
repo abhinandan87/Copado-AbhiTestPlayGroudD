@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_32939890</developerName>
+        <masterLabel>Commit Stage</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>PROBABILITY</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>80</to>
+            </sourceValues>
+            <value>3-Pipeline</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>80</from>
+                <to>99</to>
+            </sourceValues>
+            <value>2-Commit</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>99</from>
+            </sourceValues>
+            <value>1-6WP</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>CASE(Opportunity.ChannelPartner__c, 
+&quot;ROC Consulting Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT,
+&quot;A&amp;J Deftek Consultants&quot;, OpportunityLineItem.FirstYear__c.CONVERT,
+&quot;&quot;,OpportunityLineItem.FirstYear__c.CONVERT,
+OpportunityLineItem.FirstYear__c.CONVERT*0.85)</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Net (Channel partner commission excluded)</description>
+        <developerName>CDF1</developerName>
+        <label>Net(ADH/First Year Value net converted)</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>,1-Open,1-Sales Qualified,2-Need Confirmed,3-Proposal Development,3-Renewal Pending,4.1-Proposal/Quote Delivery,4.2-Verbal Commit,5-Contracting,5-Renewal Contracting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PROBABILITY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>70.0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.FirstYearValue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>USD 100000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Winback__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Opportunity.InnerYear,Opportunity.Renewal</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Opportunity.ContractStartDate__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_32939890</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Sune +100K New Biz</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.ContractStartDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,3 @@
+<design:component>
+	<design:attribute name="objectType" label="Object API Name" />
+</design:component>

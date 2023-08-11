@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Custom RollUp Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custom RollUp Configuration</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Field --></label>
+        <name>ChildField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Object --></label>
+        <name>ChildObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criteria Field --></label>
+        <name>CriteriaField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Field --></label>
+        <name>ParentField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Object --></label>
+        <name>ParentObject__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

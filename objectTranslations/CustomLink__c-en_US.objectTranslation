@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Custom Link</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custom Links</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please Enter Name of the Custom Link --></help>
+        <label><!-- Custom Link Name --></label>
+        <name>CustomLinkName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of Custom Link. --></help>
+        <label><!-- Domain --></label>
+        <name>Domain__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global</masterLabel>
+            <translation><!-- Global --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Internal Link? --></label>
+        <name>InternalLink__c</name>
+    </fields>
+    <fields>
+        <help><!-- To add API name of the field. This will replace &apos;{FieldValue0}&apos; string in the URL.
+In case of multiple fields to be used in the URL, add comma separated API names, in the same sequence as {FieldValue(i)} in the URL field. --></help>
+        <label><!-- Related Field --></label>
+        <name>RelatedField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Add order number of the custom link. --></help>
+        <label><!-- Sort Order --></label>
+        <name>SortOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the URL. 
+To add a field value as a parameter, use &apos;{FieldValue0}&apos;. In case of multiple parameters, use &apos;{FieldValue0}&apos;, &apos;{FieldValue1}&apos;, &apos;{FieldValue2}&apos; and so on. Eg: www.example.com?p0={FieldValue0}&amp;p1={FieldValue1}&amp;p2={FieldValue2}. --></help>
+        <label><!-- URL --></label>
+        <name>URL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

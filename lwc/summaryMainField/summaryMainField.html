@@ -1,0 +1,49 @@
+<template>
+
+    <!-- To display email and Teams logo-->
+    <template if:true={displayEmail}>
+        <div class="slds-grid">
+            <a href= {teamsBody}
+               target="_blank"
+               class="slds-size_1-of-2">
+                <lightning-icon icon-name="action:share_post"
+                                size="xx-small"
+                                class="teams-icon slds-icon"
+                                alternative-text="Click to Initiate Teams Call">
+                </lightning-icon>
+            </a>
+            <a href= {emailBody} class="slds-size_1-of-2">
+                <lightning-icon icon-name="action:email"
+                                class="slds-icon"
+                                size="xx-small"
+                                alternative-text="Click to Email">
+                </lightning-icon>
+            </a>
+        </div>
+    </template>
+    
+    <!-- To display all fields -->
+    <template if:false={isEmail}>
+        <template if:true={displayPhone}>
+            <div class="tooltip">
+                <lightning-icon id="phone-icon"
+                                class="slds-icon"
+                                icon-name="action:call"
+                                size="xx-small"
+                                alternative-text="Click to Call"
+                                content= {fieldValue}>
+                </lightning-icon>
+                <div class="tooltiptext">{fieldValue}</div>
+            </div>
+
+        </template>
+        <template if:false={displayPhone}>
+            <template if:true = {isName}>
+                <span class={nameFontSize} style= {styleValue}>{fieldValue}</span>
+            </template>
+            <template if:false={isName}>
+                <span class="slds-text-body_regular" style= {styleValue}>{fieldValue}</span>
+            </template>
+        </template>
+    </template>
+</template>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_14738518</developerName>
+        <masterLabel>Live Chat</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CAMPAIGN_NAME</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_31211980</developerName>
+        <masterLabel>Sales Chat Campaign Group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>CAMPAIGN_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Central SDR Team Inbound Pre-Sales Chats</sourceValue>
+            </sourceValues>
+            <value>Live Qualified Sales Chats</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>Lead.FirstTouchPreSales__c</field>
+    </columns>
+    <columns>
+        <field>Lead.FirstTouchSales__c</field>
+    </columns>
+    <columns>
+        <field>Lead.ProductInterest__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignNumber__c</field>
+    </columns>
+    <columns>
+        <field>LEAD_OWNER</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>CONVERTED_DATE</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>COMPANY_ACCT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>OPP_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>if(NOT(ISNULL(Lead.FirstTouchSales__c)), Lead.FirstTouchSales__c - Lead.FirstTouchPreSales__c , if(NOT(ISNULL(CONVERTED_DATE)), DATETIMEVALUE(CONVERTED_DATE) - Lead.FirstTouchPreSales__c, NOW() - Lead.FirstTouchPreSales__c))</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>velocity diff between presales first touch and sales first touch</description>
+        <developerName>CDF1</developerName>
+        <label>Time b/w PreSales Work &amp; Sales Work</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Untouched pre-sales qualified leads that have stalled</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>11/10/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.CallDispositionedBy__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Renee Ong</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pre-SalesQualified,Pre-Sales Qualified</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LEAD_OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Central SDR Pre-Sales,Central SDR Disqualified</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead.CallDispositionedBy__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Renee Ong_Untouched Presales Qual Leads</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignLeadLifetime</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>Lead.FirstTouchPreSales__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>
