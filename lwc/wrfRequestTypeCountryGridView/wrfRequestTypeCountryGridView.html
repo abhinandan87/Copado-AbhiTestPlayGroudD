@@ -1,0 +1,63 @@
+<template>
+    <lightning-card>
+        <template if:true={gridviewDisplay}>
+            <div class="slds-size_1-of-1 ">
+                <p class="slds-truncate slds-text-heading_medium"> {dTypeValue}</p>
+            </div>
+            <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+                <div class={headerStyleClass}>
+                    Country/Territory
+                </div>
+                <template for:each={listGeos} for:item="geo">
+                    <div key={geo} class={headerWithCenterStyleClass}>
+                        {geo}
+                    </div>
+                </template>
+                <div class={headerStyleClass}>
+                    Comments
+                </div>
+            </div>
+            <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+                <div key={geo} class={headerStyleClass}>.</div>
+                <template for:each={listGeos} for:item="geo">
+                    <div key={geo} class={headerStyleClass}>
+                        <div data-id={geo} key={geo} class="demo-only demo-only--sizing slds-grid slds-wrap">
+                            <template for:each={listVehicleTypes} for:item="vt" for:index="index">
+                                <div key={vt} class={rowStyleClass}>
+                                    {vt}
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+                <div key={geo} class={headerStyleClass}>.</div>
+            </div>
+            <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+                <template for:each={selectedCountryValues} for:item="option">
+                <div key={option.Name} data-id={option.Name} class={headerWithNoCustomStyle}
+                        onclick={handleCountryNameClick}>
+                        <p key={option}>{option.displayName}</p>
+                    </div>
+                    <template if:true={refreshGrid}>
+                        <template for:each={option.values} for:item="geo">
+                            <div key={option} class={headerWithNoCustomStyle}>
+                                <div key={option} class="demo-only demo-only--sizing slds-grid slds-wrap">
+                                    <template for:each={geo.values} for:item="vt">
+                                        <div key={vt} class={rowDataStyleClass}>
+                                            <lightning-input type='checkbox' checked={vt.value} disabled>
+                                            </lightning-input>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+                    </template>
+                    <div key={option} class={headerWithNoCustomStyle}>
+                        <lightning-input type="Text" value={option.Comments__c} variant="label-hidden" disabled>
+                        </lightning-input>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </lightning-card>
+</template>

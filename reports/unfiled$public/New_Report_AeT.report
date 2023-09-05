@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TermsConditions__c.ProductswithTermsConditions1__r$Product__c</field>
+    </columns>
+    <columns>
+        <field>TermsConditions__c.ProductswithTermsConditions1__r$Product__c.MaterialCode__c</field>
+    </columns>
+    <columns>
+        <field>TermsConditions__c$Description__c</field>
+    </columns>
+    <columns>
+        <field>TermsConditions__c.ProductswithTermsConditions1__r$Product__c.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>TermsConditions__c.ProductswithTermsConditions1__r$Product__c.Family__c.Name</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>TermsConditions__c.ProductswithTermsConditions1__r$Product__c.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>VIN Solutions,VIS</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TermsConditions__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Terms and Conditions VIS</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>TermsConditionswithProductGroup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>TermsConditions__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,129 @@
+<aura:component controller="CreateOMDHCaseController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <aura:attribute name="recordId" type="Id" /> 
+    <!--Ocassianlly there is a salesforce internal error thrown at PicklistService.getPicklistValues()
+		as the record type id is null. To avoid it, passing the hardcoded label-->
+    <!--<aura:attribute name="recordTypeId" type="Id" default="{!$Label.c.OrderManagementDeliveryHelpDesk}"/> -->
+    <aura:attribute name="caseRecord" type="Case" default="{ 'sobjectType': 'Case' }"/>
+    <aura:attribute name="contractRecord" type="Contract" default="{ 'sobjectType': 'Contract' }"/>
+    <aura:attribute name="productList" type="ProductSelectorWrapperClass[]" /> 
+    <aura:attribute name="isMainCmp" type="Boolean" default="true" access="global"/>
+    <!--By default delivery is the selected value at the record level, so setting true -->
+    <aura:attribute name="isDeliverySelected" type="Boolean" default="true" access="global"/>
+    <aura:attribute name="isRetailSelected" type="Boolean" default="false" access="global"/>
+    <aura:attribute name="isEmptyProducts" type="Boolean" default="false" access="global"/>
+    <aura:attribute name="errorExists" type="Boolean" default="false"/>
+    <aura:attribute name="errorMessage" type="String"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+    <div class="slds-modal__header">
+        <h2 id="header43" class="slds-page-header__title slds-text-heading--medium">Create OM/Delivery helpdesk case</h2>
+    </div>
+    <div class="source-center-slds" >
+        <lightning:spinner variant="brand" size="large" class="slds-hide" aura:id="spinner" alternativeText="Please wait..."/>
+        <div aura:id="validationMsg" class="{!if(v.errorExists == true,'slds-show','slds-hide')}">
+            <ui:message title="Review the errors on this page." severity="error" closable="true">
+                {!v.errorMessage}
+            </ui:message>
+        </div>
+        <div aura:id="firstsection" class="{!'slds-scrollable_y '+if(v.isMainCmp == true,'slds-show','slds-hide')}">
+            <lightning:recordEditForm 
+                  aura:id="editForm"
+                  onsubmit="{!c.handleSubmit}"
+                  objectApiName="Case"
+                  recordTypeId="{!$Label.c.OrderManagementDeliveryHelpDesk}">
+            	<!-- the messages component is for error messages -->
+            	<lightning:messages />
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                        Contract <br/>
+                        {!v.contractRecord.ContractNumber}
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                        <lightning:inputField aura:id="subject" fieldName="Subject" />
+                    </div>
+                </div>
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                        <lightning:inputField aura:id="teamSelect" fieldName="TeamSelect__c" onchange="{!c.teamSelectChanged}"/>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                        <lightning:inputField aura:id="description" fieldName="Description"/>
+                    </div>
+                </div>
+                <div class="slds-grid ">
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                        <lightning:inputField aura:id="SSOSam" fieldName="SingleSignOnSAM__c" disabled="{! !v.isDeliverySelected}"/>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                        <lightning:inputField aura:id="deliveryTeam" fieldName="DeliveryTeam__c" disabled="{! !v.isRetailSelected}"/>
+                    </div>
+                </div>
+                <div class="slds-grid ">
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                        <lightning:inputField aura:id="OMRegion" fieldName="OrderManagementRegion__c" />
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                        <lightning:inputField aura:id="OMRootCause" fieldName="OMRootCause__c"/>
+                    </div>
+                </div>
+                <div class="slds-grid ">
+                    <div class="slds-col slds-size_1-of-1 slds-p-around_x-small">
+                        <lightning:inputField aura:id="Type" fieldName="Type"/>
+                    </div>
+                  </div>
+                <div class="slds-clearfix slds-m-top_medium">
+                    <lightning:buttonGroup class="slds-float_right">
+                        <lightning:button class="slds-m-around_x-small" label="Cancel" onclick="{!c.defaultCloseAction}"/>
+                        <lightning:button class="slds-m-around_x-small" label="Save" variant="brand" type="submit" disabled="{!v.isDeliverySelected}" name="save"/>
+                        <lightning:button class="slds-m-around_x-small" label="Continue" variant="brand"  onclick="{!c.handleContinue}" disabled="{! !v.isDeliverySelected}"/>
+                    </lightning:buttonGroup>
+                </div>
+            </lightning:recordEditForm>
+        </div>
+        <div aura:id="secondsection" class="{!'slds-scrollable_y '+ if(v.isMainCmp == false,'slds-show','slds-hide')}">
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="SNO"></div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Product Name">Product Name</div>
+                        </th>
+                    </tr>
+                    <tr>
+						<td class="myCheckbox">
+							<lightning:input type="checkbox" aura:id="selectAll" onchange="{!c.toggleSelectAll}"/>
+						</td>
+						<td class="myText">
+							<b>Add All Products</b>
+						</td>                     
+					</tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.productList}" var="con" indexVar="index">
+                        <tr scope="row">
+                            <td>
+                                <lightning:input type="checkbox" aura:id="checkbox" checked="{!con.isSelected}"/>
+                            </td>
+                            <td>
+                                {!con.productName}
+                            </td> 
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+            <br />
+            <div class="{!'slds-clearfix slds-m-top_medium '+if(v.isEmptyProducts == false,'slds-show','slds-hide')}">
+                <lightning:buttonGroup class="slds-float_right">
+                    <lightning:button class="slds-m-around_x-small" label="Cancel" onclick="{!c.defaultCloseAction}"/>
+                    <lightning:button class="slds-m-around_x-small" label="Save" variant="brand" type="submit" onclick="{!c.saveDeliveryCases}" name="save"/>
+                </lightning:buttonGroup>
+            </div>
+            <div class="{!if(v.isEmptyProducts == true,'slds-show','slds-hide')}">
+                <ui:message title="Warning" severity="info" closable="true">
+                    {! $Label.c.NoMoreProductsToCreateDeliveryCases}
+                </ui:message>
+            </div>
+        </div>
+    </div>
+</aura:component>

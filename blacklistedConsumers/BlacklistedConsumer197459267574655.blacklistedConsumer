@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>true</blockedByApiWhitelisting>
+    <consumerKey>3MVG9fMtCkV6eLhe.0gOxeLkplDXqX8_oHD9Vhx3pNvQyHjBAx0idBXnUYMGwIvnKNhS6s54Ko6e8naZvTjsf</consumerKey>
+    <consumerName>Pendo Salesforce Integration</consumerName>
+    <masterLabel>BlacklistedConsumer197459267565946</masterLabel>
+</BlacklistedConsumer>

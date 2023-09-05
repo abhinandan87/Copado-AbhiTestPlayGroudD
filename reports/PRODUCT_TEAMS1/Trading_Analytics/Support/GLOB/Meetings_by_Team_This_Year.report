@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_76009321</developerName>
+        <masterLabel>Age</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.CaseAgeBusinessDays__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>5</to>
+            </sourceValues>
+            <value>&lt;1 Week</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>5</from>
+                <to>10</to>
+            </sourceValues>
+            <value>&lt;2 weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>10</from>
+                <to>20</to>
+            </sourceValues>
+            <value>&lt;4 weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>20</from>
+            </sourceValues>
+            <value>&gt;4 weeks</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_18933829</developerName>
+        <masterLabel>Query age</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.CaseAgeBusinessDays__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>5</to>
+            </sourceValues>
+            <value>&lt;1 week</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>5</from>
+                <to>10</to>
+            </sourceValues>
+            <value>&lt;2 weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>10</from>
+                <to>20</to>
+            </sourceValues>
+            <value>&lt;4 weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>20</from>
+            </sourceValues>
+            <value>&gt;4 weeks</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_34494377</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>David Ta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Bisse</sourceValue>
+            </sourceValues>
+            <value>Onboarding</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Edward Plante</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Swati Gangwani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Wutoh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alexander Carratt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Chavis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aliyah Busari</sourceValue>
+            </sourceValues>
+            <value>Operations</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Juan Vera</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephanie Ginsberg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel DeWitt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Janet Burke</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christos Gardikis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christopher Perry</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matteo Buschittari</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Montel Hardy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Rennard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mateja Spat</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kah Ghim Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Laura Merce Bermudez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Santiago Arrus</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marco Sprenkle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sarah Van Lam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Randy Lii</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Colton Spence</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anthony Cleaver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Donavon Goh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Huerfano</sourceValue>
+            </sourceValues>
+            <value>Support</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kartik Arthanat</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anh Thai</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pratik Janani</sourceValue>
+            </sourceValues>
+            <value>Product</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bill O&apos;Shea</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Savannah Lansing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Richter</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christophe White Thomson</sourceValue>
+            </sourceValues>
+            <value>Business</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Babnish Bhatia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Esma Agzanay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shanthosh Rama</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pooja Madan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Divya Baghele</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ankit Jain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prateek Vashisth</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kanika Garg</sourceValue>
+            </sourceValues>
+            <value>Due Dilligence</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_29721011</developerName>
+        <masterLabel>Time Spent</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.TimeSpentMinutes__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>15</to>
+            </sourceValues>
+            <value>&lt;15</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>15</from>
+                <to>30</to>
+            </sourceValues>
+            <value>&lt;30</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>30</from>
+                <to>45</to>
+            </sourceValues>
+            <value>&lt;45</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>45</from>
+                <to>60</to>
+            </sourceValues>
+            <value>&lt;60</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>60</from>
+                <to>120</to>
+            </sourceValues>
+            <value>&lt;120</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>120</from>
+            </sourceValues>
+            <value>&gt;120</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Case.TimeSpentMinutes__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Case.CaseAgeBusinessDays__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_18933829</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Meetings by Team This Year</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Delete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>merged</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Duplicate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Trading Analytics,Transaction Cost Analysis,Market Share Analysis</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Alexander Carratt,Aliyah Busari,Anthony Cleaver,Bill O&apos;Shea,Christophe WhiteThomson,Christopher Perry,Christos Gardikis,Colton Spence,Daniel DeWitt,david Ta,Donavon Goh,Edward Plante,Erica Hetrick,FM | Trading Analytics,Jana Chenine,Janet Burke,Juan Vera,Justin Wutoh,Kah Ghim Lee,Kartik Arthanat,Laura Merce Bermudez,Luke Kenny,Marco Sprenkle,Maria Huerfano,Mateja Spat,Matteo Buschittari,Michael Bisse,Michael Chavis,Michael Richter,Montel Hardy,Paul Rennard,Pratik Janani,Randy Lii,Roger Barber,Ryan Bransfield,Santiago Arrus,Sarah Van Lam,Sridevi Unni,Stephanie Ginsberg,Swati Gangwani</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_29721011</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_34494377</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Meetings by Team This Year</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

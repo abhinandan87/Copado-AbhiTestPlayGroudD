@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SALUTATION</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_STREET</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_STATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_ZIP</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>PHONE2</field>
+    </columns>
+    <columns>
+        <field>PHONE3</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5) AND 6 AND 7</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AVIVA PLC,ROTHESAY LIFE PLC,Phoenix Group,CANADA LIFE LIMITED,PRUDENTIAL PUBLIC LIMITED COMPANY,PENSION SERVICES CORPORATION LIMITED,ROYAL LONDON MUTUAL INSURANCE SOCIETY,LIMITED(THE),WESLEYAN ASSURANCE SOCIETY,SW FUNDING PLC,JUST RETIREMENT LIMITED,BEAZLEY FURLONGE LIMITED,THE STANDARD LIFE ASSURANCE COMPANY 2006,Nexus Underwriting Management Limited,Retirement Advantage,WILLIS GROUP LIMITED,CARTWRIGHT GROUP LIMITED,THE PRUDENTIAL ASSURANCE COMPANY LIMITED,U K Insurance Limited,AXIS Capital Limited,LANE CLARK &amp; PEACOCK LLP,Co-Operative Financial Services Ltd,Zurich Insurance plc,LEADENHALL CAPITAL PARTNERS LLP,BRITISH UNITED PROVIDENT ASSOCIATION LIMITED(THE),PRICE FORBES &amp; PARTNERS LIMITED,POOL REINSURANCE COMPANY LIMITED,HYPERION INSURANCE GROUP LIMITED,Balance Re,MIS BROKERS LP,H &amp; C CONSULTING ACTUARIES LLP,NATIONAL FARMERS UNION MUTUAL INSURANCE SOCIETY LIMITED(THE),UTMOST LIFE AND PENSIONS LIMITED,HANSARD GLOBAL PLC,ROYAL &amp; SUN ALLIANCE INSURANCE PLC,LIVERPOOL VICTORIA INSURANCE COMPANY LIMITED,LEGAL &amp; GENERAL GROUP PLC,PARETO-RE LIMITED,CHANNING LUCAS &amp; PARTNERS LIMITED,OLD MUTUAL WEALTH LIFE ASSURANCE LIMITED,HISCOX UNDERWRITING GROUP SERVICES LIMITED,Marsh Ltd Per Guy Carpenter,Marsh Limited,Guy Carpenter &amp; Company Ltd</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SIRIUS INTERNATIONAL INSURANCE CORPORATION (PUBL),CreditTrade Limited,Hamilton Underwriting Limited,HAMILTON INSURANCE DESIGNATED ACTIVITY COMPANY,PRUDENTIAL / M&amp;G UKCF GP LIMITED,DUAL International Limited,HDI Global SE,Prudential Insurance,MS AMLIN PLC,SUFFOLK LIFE ANNUITIES LIMITED,Howden Specialty,COVEA INSURANCE PLC,Convex UK Services Limited,North of England P&amp;I Association Ltd,MUNICH RE SYNDICATE LIMITED,Zurich Finance Services,Chubb Insurance,Old Mutual plc,DIMENSIONAL FUND ADVISORS LTD.,Apollo Partners LLP,NMU (Specialty) Ltd,ED BROKING LLP,Endurance Business Services Limited,LANCASHIRE HOLDINGS LTD,Aegis Managing Agency Limited,THE INNOVATION GROUP LIMITED,LUCIDA LIMITED,The Channel Managing Agency Limited,ANV Central Bureau of Services Ltd,Ignis Investment Services Limited,CONVEX UK SERVICES LIMITED,JLT Specialty Limited,UNITED INSURANCE BROKERS LIMITED,Brit Insurance Ltd,ASCOT UNDERWRITING LIMITED,Swiss Re Europe SA,REASSURE MIDCO LIMITED,BUILDING LIFEPLANS LIMITED,AFL INSURANCE BROKERS LIMITED,Inigo Insurance,Zurich Engineering,Zurich UK,AXIS Managing Agency Limited,Hive Aero Underwriting,TOKIO MARINE BLUEBELL RE LIMITED,Tokio Marine HCC - International Group,HCC INTERNATIONAL INSURANCE COMPANY PLC,TOKIO MARINE KILN INSURANCE SERVICES LIMITED</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>HCC INTERNATIONAL INSURANCE COMPANY PLC,TOKIO MARINE KILN INSURANCE SERVICES LIMITED,Tokio Marine Kiln Syndicates Limited,HCC International Insurance Company PLC,Assured Guaranty (Europe) PLC,Axis Specialty Europe SE,Axis Insurance,MARKEL INTERNATIONAL INSURANCE COMPANY LIMITED,Markel International Services Limited,ERS Syndicate Management Limited,Bupa Insurance Ltd,CANADA LIFE MANAGEMENT (U.K.) LIMITED,Inter Hannover UK Branch,AIG,BEAZLEY MANAGEMENT LIMITED,Chaucer Underwriting Services Limited,HARDY (UNDERWRITING AGENCIES) LIMITED,MAR RISK SERVICES LIMITED,WILLIS LIMITED,WATSON WYATT EUROPEAN INVESTMENT HOLDINGS LIMITED,Willis RE (UK),BRIT GROUP SERVICES LIMITED,Advent Underwriting Limited,Berry Palmer &amp; Lyle Limited,The London P&amp;I Club.,MS Amlin Corporate Services Ltd,Amlin uk limited,Partnership Assurance,Phoenix Group Holdings Plc,REASSURE LIMITED,PHOENIX LIFE ASSURANCE LIMITED,Charles Taylor &amp; Co Ltd,LLOYD&apos;S OF LONDON LIMITED,International Risk Solutions Limited,Equinox Global Limited,Travelers Management Ltd,Travelers Management Limited,BMS Group,LTD,STANDARD LIFE EMPLOYEE SERVICES LIMITED,Dai-ichi Company,Ark Syndicate Management Limited,SCOR UK COMPANY LIMITED,QIC Global Services Limited</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>CLEVELAND FIRE BRIGADE RISK MANAGEMENT SERVICES C.I.C.,Britannia Steam Ship Insurance Association Ltd,LEGAL AND GENERAL ASSURANCE SOCIETY LIMITED,ARCH INSURANCE (UK) LIMITED,Argenta Syndicate Management Limited,EULER &amp; HERMES INTERNATIONAL LIMITED,Allianz Global Corporate &amp; Specialty SE,Allianz Inspection Services,Wadhwani Capital Limited,Fidelis Insurance Ltd,AON UK LIMITED,AON Plc,AON CONSULTING (BENEFITS) LIMITED,Aon Risk Solutions,MARINE AND GENERAL MUTUAL LIFE ASSURANCE SOCIETY,SEASCOPE HOLDINGS LTD,JUPITER FUND MANAGEMENT PLC,Northern Marine Underwriters Limited,Tindall Riley &amp; Co Limited,ASPEN INSURANCE UK LIMITED,CHUBB INSURANCE SERVICE COMPANY LTD,CHUBB SERVICES UK LIMITED,Chubb Insurance,Chubb Global Markets,ACE European Group Ltd,ACE Underwriting Agencies Limited,Chubb Services UK Limited,Michael Else &amp; Co Ltd,LIBERTY MANAGING AGENCY LIMITED,LIBERTY MUTUAL INSURANCE EUROPE PLC,LIBERTY SPECIALTY MARKETS LIMITED,Liberty Mutual Insurance Europe Ltd.,Liberty Global Group,MILLER INSURANCE SERVICES LLP,Lloyd&apos;s,TYSERS INSURANCE BROKERS LIMITED,Novae Syndicates Limited,Clyde &amp; Co LLP,Integra Technical Services,MD INSURANCE SERVICES LIMITED,Arthur J Gallagher (UK) Ltd,Fidelis Insurance Limited,HDI Global Specialty SE,LIVERPOOL VICTORIA INVESTMENT FUNDS,Besso Ltd</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>COOPER GAY (ACQUISITIONS) LIMITED,NHBC,Lancashire Insurance Company (UK) Limited,Cathedral Underwriting Limited,Victor Insurance Holdings,MARSH &amp; MCLENNAN COMPANIES UK LIMITED,Chesnara plc,Hiscox Plc,BMS HARRIS &amp; DIXON LIMITED,Pioneer Underwriting Ltd,Cincinnati Global Underwriting Agency Ltd.,NAVIGATORS MANAGEMENT (UK) LIMITED,AXA UK PLC,XL CATLIN SERVICES SE,XL Services UK Limited,Axa Ppp Healthcare Limited,ROYAL LONDON 360 LIMITED,OM RESIDUAL UK LIMITED,Ambassador Finance &amp; Insurance Services Ltd,ARGO MANAGING AGENCY LIMITED,AON PLC,STARSTONE INSURANCE SERVICES LIMITED,PATERNOSTER LIMITED,CANOPIUS MANAGING AGENTS LIMITED,Optio Insurance Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Risk,Solvency</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.ContactGeography__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>UK &amp; Ireland</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Jemma - Insurance</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

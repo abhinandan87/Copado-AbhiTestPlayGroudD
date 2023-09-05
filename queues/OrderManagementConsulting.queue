@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>professional.services@ihsmarkit.com</email>
+    <name>Order Management Consulting</name>
+    <queueMembers>
+        <users>
+            <user>aruna.apmunusamy@ihsmarkit.com</user>
+            <user>catherine.k.seenasamy@ihsmarkit.com</user>
+            <user>kenneth.dasher@ihsmarkit.com</user>
+            <user>laila.jamal@ihsmarkit.com</user>
+            <user>tinesh.nair@ihsmarkit.com</user>
+            <user>shakil.munshi@ihsmarkit.com</user>
+            <user>sueann.phang@ihsmarkit.com</user>
+            <user>susan.marsden@ihsmarkit.com</user>
+            <user>tim.belfrage@ihsmarkit.com</user>
+            <user>valerie.hopkins@ihsmarkit.com</user>
+            <user>will.kilkenny-patrick@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

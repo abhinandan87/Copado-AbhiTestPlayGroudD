@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>CheckUserLicenseController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>SFDC-5363 Permission set to view Sales Insights Dashboard tab to users</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Tableau CRM View Sales Insights Dashboard</label>
+    <license>Salesforce</license>
+    <tabSettings>
+        <tab>SalesInsightsFS</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

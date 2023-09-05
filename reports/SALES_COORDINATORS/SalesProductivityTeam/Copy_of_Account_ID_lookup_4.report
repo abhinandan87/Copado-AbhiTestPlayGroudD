@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <columns>
+        <field>Account.PKIDAccount__c</field>
+    </columns>
+    <columns>
+        <field>Account.SNPCAPIQ__CapitalIQCompanyId_txt__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>STONEX CONSULTORIA EM FUTUROS E COMMODITIES LTDA.,NILTON PRICLADNITZKI,DELOITTE TOUCHE TOHMATSU CONSULTORES LTDA.,MARKESTRAT ASSESSORIA EMPRESARIAL LTDA - EPP,ERICO LUIS SILVEIRA TEIXEIRA,BANCO DO BRASIL SA,SOCIEDADE MUNDIAL DE PROTECAO ANIMAL - WSPA BRASIL,RIO PARDO PROTEINA VEGETAL S.A,GIULLIANA FERREIRA COSTA,FUNDACAO GETULIO VARGAS,JBS S/A,SIGMA SOLUÇÕES AGRONOMICAS LTDA,ANTONIO LUCENA BARROS,HUSQVARNA DO BRASIL INDUSTRIA E COMERCIO DE PRODUT,ZI BLUE S/A,AGROPECUARIA UMUARAMA LTDA,SAGAGEL INDUSTRIA E COMERCIO IMPORTACAO E EXPORTAC,AGROPECUARIA FLORIDA DA BAHIA S/A,CONSUFOR - CONSULTORIA E AVALIACOES LTDA.,PIN AGROPECUARIA LTDA,VAZ DE MELLO CONSULTORIA EM AVALIACOES E PERICIAS,OROSTRATO OLAVO SILVA BARBOSA,ANTONIO PASCHOAL CONZO COELHO DE MOURA,LUIZ CASTILHO FONTOURA,CEMIG GERACAO E TRANSMISSAO S/A.,VERA CLEYDE BICALHO TOZZI,VIA NÉCTARE TECNOLOGIA EM BEBIDAS E ALIMENTOS LTDA,FUNDACAO ESPACO ECO,ATIVO ALIMENTOS EXPORTADORA E IMPORTADORA EIRELI,UNITAS AGRICOLA S/A,BANCO PINE S/A,HANCOCK INVESTIM. EM FLORESTAS E AGRIC. LTDA,ELDORADO BRASIL CELULOSE S/A,CRUZEIRO DO SUL GRAOS LTDA.,FLORESTAL GURUPI SA,BANCO ABC BRASIL S.A.,POYRY TECNOLOGIA LTDA.,AGBI ATIVOS REAIS LTDA,AVALICON ENGENHARIA LTDA,CAIXA ECONOMICA FEDERAL,BANCO ORIGINAL S/A</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Account ID lookup 4</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

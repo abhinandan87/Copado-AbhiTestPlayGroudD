@@ -1,0 +1,33 @@
+<template>
+    <div>
+        <div class="slds-page-header slds-theme_alt-inverse">
+            <div class="slds-grid">
+                <div class="slds-col slds-has-flexi-truncate">
+                    <h1 class="slds-page-header__title  slds-align-middle slds-truncate " title="Operations Queue">
+                        Operations Queue
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <lightning-card variant="Narrow">
+                <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+                    <div class="slds-size_1-of-6 slds-var-p-left_medium">
+                        <lightning-combobox name="queueList" value={value} placeholder="Select All" options={lstOptions}
+                            onchange={handleChange}></lightning-combobox>
+                    </div>
+                    <div class="slds-size_1-of-6 slds-var-p-left_medium slds-var-p-top_medium">
+                        <lightning-button label="Refresh" onclick={refreshComponent}></lightning-button>
+                    </div>
+                </div>
+            </lightning-card>
+        </div>
+
+
+    </div>
+    <c-work-request-queue value={value}></c-work-request-queue>
+
+    <c-change-log-queue value={value}></c-change-log-queue>
+
+    <c-order-request-queue value={value}></c-order-request-queue>
+</template>

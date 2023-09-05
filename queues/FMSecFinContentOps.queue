@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>msf-contentops@markit.com</email>
+    <name>FM | Sec Fin | Content Ops</name>
+    <queueMembers>
+        <users>
+            <user>adam.oakley@ihsmarkit.com</user>
+            <user>angela.vo@ihsmarkit.com</user>
+            <user>ayelet.har@ihsmarkit.com</user>
+            <user>chuangchuang.chen@ihsmarkit.com</user>
+            <user>claire.mallace@ihsmarkit.com.prod</user>
+            <user>dharmendraa.kumar@ihsmarkit.com</user>
+            <user>gali.swathi@ihsmarkit.com</user>
+            <user>gargi.nagar@ihsmarkit.com</user>
+            <user>gaurav.singh1@ihsmarkit.com</user>
+            <user>gayatri.awotar@inactive.markit.com</user>
+            <user>irene.lim1@ihsmarkit.com</user>
+            <user>jason.yang@ihsmarkit.com</user>
+            <user>kabin.george@ihsmarkit.com</user>
+            <user>katie.osullivan@inactive.markit.com</user>
+            <user>mary-erin.shields@ihsmarkit.com</user>
+            <user>michael.wilson@ihsmarkit.com.prod</user>
+            <user>paridhi.garg@ihsmarkit.com</user>
+            <user>rubal.gupta@ihsmarkit.com</user>
+            <user>vani.priya@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

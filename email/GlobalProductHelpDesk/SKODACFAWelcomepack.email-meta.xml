@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SKODA CFA Welcome pack username template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SKODA CFA Welcome pack</name>
+    <style>none</style>
+    <subject>SKODA credentials Welcome pack - case #{!Case.CaseNumber}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Please find below your new Skoda Catalyst for Aftersales username and a link to the login page.
+
+Username:
+
+Please click here to login.
+
+Upon first login you will be required to change the initial password and set up your personalised security questions and answers. This will allow you to reset your password in future if forgotten.
+
+All user logins are unique and Retailer/Group specific so please do not share yours with anyone else. If additional users are required for your retailer, please contact the Helpdesk for further information.
+
+Please click here to download your Welcome Pack which will help you to quickly understand and apply this solution
+
+Your initial password will follow in a separate communication.
+
+Initial CFA Training:
+
+Please log onto your NSC Learning System to access the CFA eGuide and 4 further online modules covering Data Management, Predictive Marketing, On Demand Campaign Creation and Performance Management.
+
+These online courses cover the key aspects of the application and data processing and can be accessed at a time to suit you. There is a short test at the end to check your understanding and give confidence in absorbing the key user areas.
+
+If you have any questions, please email us at:
+
+automotive_support@ihsmarkit.com
+
+{!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

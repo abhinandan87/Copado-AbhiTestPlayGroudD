@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be used to reject a customer request on swapping for Markit Hub profiles</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Markit Hub profile swap</name>
+    <style>none</style>
+    <subject>Markit Hub new account</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for contacting Customer Care at IHS Markit.
+
+Unfortunately, we are unable to swap Markit Hub profiles between two users. If your colleague requires access to the Markit Hub research portal, we suggest that they visit www.markithub.com and complete the online registration form. Once complete, they will automatically receive login credentials to their registered email address for their free account.
+
+If you require any further assistance, please do not hesitate to contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

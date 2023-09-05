@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>SurveyResponse__c.CESScore__c:SUM/7*100</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Customer Satisfaction</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>SurveyResponse__c.CESScore__c:AVG/7*100</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Team Summary</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_71699850</developerName>
+        <masterLabel>Response 4 Rating</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>SurveyResponse__c.Response4__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Extremely longer than expected</sourceValue>
+            </sourceValues>
+            <value>1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Much longer than expected</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Somewhat longer than expected</sourceValue>
+            </sourceValues>
+            <value>2</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Longer than expected</sourceValue>
+            </sourceValues>
+            <value>3</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>As expected</sourceValue>
+            </sourceValues>
+            <value>4</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Shorter than expected</sourceValue>
+            </sourceValues>
+            <value>5</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Much shorter than expected</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Somewhat shorter than expected</sourceValue>
+            </sourceValues>
+            <value>6</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Extremely shorter than expected</sourceValue>
+            </sourceValues>
+            <value>7</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Average</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>SurveyResponse__c.TESScore__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>SurveyResponse__c.CaseOwner__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>SurveyResponse__c.TESScore__c</field>
+    </columns>
+    <currency>GBP</currency>
+    <customDetailFormulas>
+        <calculatedFormula>SurveyResponse__c.TESScore__c/7*100</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>TES % Score</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Penang- Av. Time Expectation Score YTD</description>
+    <filter>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Girryrajen Veeramuthu,Mohd Rusdi Rahim,Syarwanni Mustafa,Soo Ling Chaiyasu,Theresa Tracy Alawangsa,Ling Lim,Felisha Anne Johnson,Joanne Ooi,Bo Yuan Ng,Nicholas Teo,Ann Shee Hong,Agnes Ooi,Aaron Tang,Kok Han Lee,Katerani Selvarraju,Mark Quejado,Aaron Ching,Hye-Won Choi,Haqimi Ashaari,Zi Yun Lim,Tee Huang Cheah,Kevin Lim,Kent Choong,Mehar Banu Mohamed Salib,Farah Razali,Chin Nean Chew,Hashi Khalid Mohamad,Najah Nadhira Binti Dorohid,Frank Lee,Michael Don,Miaoyin Ng</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.CaseOwner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Penang- Av. Time Expectation Q2FY22</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SurveyResponse__c.CaseClosedDate__c</dateColumn>
+        <endDate>2022-06-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-04-01</startDate>
+    </timeFrameFilter>
+</Report>

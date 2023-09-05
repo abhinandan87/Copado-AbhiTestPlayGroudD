@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Private Markets | Client Management</name>
+    <queueMembers>
+        <users>
+            <user>elliot.green@ihsmarkit.com</user>
+            <user>eric.dias@ihsmarkit.com</user>
+            <user>julianna.zhang@ihsmarkit.com</user>
+            <user>kiet.trinh@ihsmarkit.com</user>
+            <user>thomas.gift@ihsmarkit.com</user>
+            <user>uati.oahimin-akhimien@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

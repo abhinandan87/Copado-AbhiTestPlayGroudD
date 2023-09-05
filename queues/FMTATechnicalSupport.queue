@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | TA - Technical Support</name>
+    <queueMembers>
+        <users>
+            <user>anh.thai@ihsmarkit.com</user>
+            <user>janet.burke@ihsmarkit.com</user>
+            <user>juan.vera@ihsmarkit.com</user>
+            <user>kent.bevel@ihsmarkit.com</user>
+            <user>matteo.buschittari@ihsmarkit.com</user>
+            <user>melissa.allison@ihsmarkit.com</user>
+            <user>pratik.janani@ihsmarkit.com</user>
+            <user>robert.beauregard@ihsmarkit.com</user>
+            <user>stephanie.ginsberg@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

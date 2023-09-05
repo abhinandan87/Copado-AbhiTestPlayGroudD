@@ -1,0 +1,10 @@
+:host .paras-no-css  {
+    background: blue;
+}
+:host .paras-css {
+    background: crimson;
+    font-size: xx-large;
+}
+:host .paras-css::before {
+    content: "Testing allowed";
+}

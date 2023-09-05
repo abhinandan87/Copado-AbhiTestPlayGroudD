@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <icon>SNPCAPIQ__Branding_Do_Not_Delete/SNPCAPIQ__Tab_Style_icon.png</icon>
+    <label>Market Intelligence</label>
+    <motif>Custom120: TV Widescreen</motif>
+    <page>SNPCAPIQ__SearchAccounts</page>
+</CustomTab>

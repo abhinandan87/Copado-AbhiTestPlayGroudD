@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_96337706</developerName>
+        <masterLabel>Business Line</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.ProductGroup__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Commodities &amp; Food</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Animal Health</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertilizers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Crop Protection &amp; Seeds</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agriculture</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agri Coal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agri Consulting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agri Gas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Policy &amp; Regulation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Biofuels</sourceValue>
+            </sourceValues>
+            <value>Agribusiness</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>E&amp;P Terms &amp; Above Ground Risks</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Plays &amp; Basins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Costs &amp; Technology</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Companies &amp; Transactions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Upstream</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Energy Data Services</sourceValue>
+            </sourceValues>
+            <value>Upstream</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Coal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Coal Publications &amp; Indices</sourceValue>
+            </sourceValues>
+            <value>CMM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Power &amp; Renewables</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Global Gas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>GPE Cross Energy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>GPE: Financials</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Energy Technology</sourceValue>
+            </sourceValues>
+            <value>Climate and Sustainability</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chemical Cost Curve Service</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Handbooks: Speciality Chemicals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Information &amp; Same Day Analysis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Market Advisory Service (MAS)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PEPS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Events</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>World Analysis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Week</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Reports: PEP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Consulting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Reports: Specialty Chemicals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Base Chemicals</sourceValue>
+            </sourceValues>
+            <value>Chemical</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Company Strategies and Performance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Crude Oil Markets</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Midstream</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Midstream Oil &amp; Gas Data</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Midstream Oil &amp; NGL</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>OMDC Consulting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>OMMD Data</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Downstream</sourceValue>
+            </sourceValues>
+            <value>OMD</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_96337706</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Case.Subtype__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CONTACT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Case.ResolutionDescription__c</field>
+    </columns>
+    <columns>
+        <field>Case.OriginQueueName__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Closed Volume by Business Line</description>
+    <filter>
+        <booleanFilter>(1 AND 2) OR (3 AND 4 AND 5)</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Adam Baker,Ashli Kular,Beatriz Rodriguez,Christa Huber,Curt Jones,Daniela Guadagni,Dilys,Faisal Ali,Mims,Hannah Tan,Isabelly Fernandes,Jessica Frame,Johanna Tischbierek,Laura Mora,Lisa Olschner,Michael Homburger,Michele Maumus,Mounir El Agouz,Nadezhda Gutman,Olivier Tambwe,Salida Baharum,Sarah Faizan,Serge Lomago,Shakeel Rouf,Sharelle Fortuin,Staci Stark,Larsen Mabika,Olivia Du,Mayra Marinero,Susan Machiri,Ditiro Hlongwane,Yew Ru Chin,Mirza Aslam,Nathalia Perez</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Tonneka Ealum,Khairul Anuar Ismail,Najah Nadhira Binti Dorohid,Miaoyin Ng,Marta Botros,Marcin Kopicki,Neoh,Syaza Putri,Shakir Salmi,Nik Nur Farhana Roslan,Krzysztof Baniewicz,Nicole Pearson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CS | Connect ENR,AG | Customer Care</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CLOSED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_96337706</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Closed Cases by Business Line</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATE</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

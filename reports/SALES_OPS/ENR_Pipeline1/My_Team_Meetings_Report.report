@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Subject__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.When__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.AttendeeNames__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.IHSMarkitAttendeeNames__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.MeetingOutcome__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Description__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.CEOWorthyTakeaway__c</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_ACTIVITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>MeetingNote__c.IsReminderSet__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Report of meetings for my team</description>
+    <filter>
+        <criteriaItems>
+            <column>MeetingNote__c.PrivacyLevel__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Customer-facing meeting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>SF Admin</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>My Team Meetings Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MeetingNote__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MeetingNote__c.EndDateTime__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Case Volume | FS | COVID-19 | Feb</description>
+    <filter>
+        <booleanFilter>1 AND 6 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PMI,Profile Builder (Equity),Profile Builder (Fixed Income),BD Advanced,BD Advanced (Derivatives),BD Advanced (Equity),BD Advanced (Fixed Income),BD Vision,Data Feed (Equity),Data Feed (Fixed Income),iConference (Equity),iConference (Fixed Income),iPlanner (Equity),iPlanner (Fixed Income),Pitch Builder (Equity),Pitch Builder (Fixed Income),Global Markets Intelligence,Beneficial Ownership,Fixed Income ID,Targeting,Investor Day,IR Roadmap,M&amp;A Analysis,Perception Studies,Proxy,Shareholder ID,BD Corporate,Activist Intelligence (Shark Repellent),BD Corporate Governance,BD IR Consultant,BuysideIQ,Events &amp; Transcripts,FactSet Excel Add-in,FactSet Workstation,Quotes &amp; News,Research &amp; Estimates,Buyside Portal,Deal Services (API) (Fixed Income),Deal Services (API) (Muni),Equity Bookbuild,Capital Markets Analytics (Equity),Daily Market Summaries (Equity),Directed Share Program,Equity Deals Database,iCompliance (Equity),Investor Profiles (Equity),iProspectus (Equity),IssueNet (Equity),Issuer View,Roadshow Access (Equity),Roadshow Access (Retail Equity),Investor Access (EQ),Investor Access (Fixed Income),Buyside Portal (Fixed Income),Fixed Income Wires,Investor Profiles (Fixed Income),iProspectus (Fixed Income),IssueBook,IssueNet,Roadshow Access (Fixed Income)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Roadshow Access (Loan),Compliance Workstation (Fixed Income),Deal Monitor (Fixed Income),Primary OM (Fixed Income),Gameday,iProspectus (Municipals),Muni Analytics,Muni Bidcomp,Muni Bookrunning,Muni Data (BRS),Muni Deal Track,Muni Electronic Order Entry,Muni Non-Managed Deals,Muni Wires,Roadshow Access (Municipals),Variable Rate Trading,Deal Monitor (Muni),Retail Bookbuild (Equity),Retail Bookbuild (Fixed Income),Retail Bookbuild (Municipals),Premium Security (CORP),Premium Security (EQ),Premium Security (FI),Premium Security (GMG Other),Premium Security (Loans),Premium Security (MU),Premium Security (PCM),Premium Security (Retail),Debtdomain - Syndication Sites,Debtdomain - Agency Sites,Debtdomain - Compliance Subscription,Debtdomain - Dataroom Sites,Debtdomain - Portfolio Valuation,Debtdomain - Secondary Sites,Debtdomain - Sentry Subscription,Debtdomain - CRM Subscription,Debtdomain - Custom Development,Debtdomain - Institutional Loan Ownership,Debtdomain - Pipeline Reporting,Managed Data Services Val,FS Valuation 157,FS Valuation 409a,iLevel Enterprise,iLevel Fusion,iLevel iVal,iLevel Private Label,iLevel ViewPoint,Managed Data Services GP,Managed Data Services LP,Qval,BoD Portal (CORP),BoD Portal (PCS),LP Portal (PCM),LP Portal (PCS)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Prism Virtual Data Room,Prism Virtual Data Room (CORP),Prism Virtual Data Room (GMG),Prism Virtual Data Room (PCM),Private Company Platform,iCompliance (2111),iCompliance (2242),iCompliance (Fixed Income),iCompliance (SMMP),Hub,Calendar-Vote,Commission Manager,Information Mosaic,Markit Corporate Actions,Auctions,Environmental Registry,MarkitSERV-FX,MarkitSERV-Business Dev,MarkitWire,DSMatch,DealHub,EGUS,Digital External,Adhesion,Real Estate,EDM Prof SVC,EDM,VistaOne (vData),VistaOne (vReporter),DeltaOne,Securities Finance-Equity,SFTR,Dividend Forecasting,RegOne (Compliance SVC),Transaction Cost Analysis,Research Signals,Market Share Analysis,PrimeOne,Analytics Prod,Analytics Prof SVC,Index Admin &amp; Calculation,Calculation Agent SVC,Indices Bonds,Indices CDS,Other Index Initiatives,SecuritisedProd Indices,Indices Loans,Notice Manager,Loan Reference Data,Markit Loan Settlement,Feeds/API,Desktop,Private Equity,CDS Pricing Data,SecuritisedProdPrice Data-US,SecuritisedProdPrice Data-ABS,Loan Pricing Data,Corp&amp;Svrgn Bonds Pricing Data,Fair Value,Parsing,Municipal Bonds Pricing Data,Metrics,Bond Reference Data,CDS Reference Data,ABCDS Reference Cashflow Data,Portfolio Valuations,Valuations Manager,DeriveXperts-DxVal,Prism,Totem,OTC Derivatives Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>DeriveXperts-Mercure,FRTB VSII,Counterparty Manager-Core,KYC2,KYC,Counterparty Manager-Document Digitisation,Counterparty Manager-ISDA Amend,Counterparty Manager-LEI Procurement SVC,CTI Prod,CTI,CTI Consulting,Counterparty Manager-FATCA SVC Bureau,KYV,thinkFolio,thinkFolio Prof SVC,WSO-Software,Portfolio Analytics,WSO-SVC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Access,Billing,Data,Notifications,Product Assistance,Training,User Administration</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CLOSED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Case Volume | FS | COVID-19 | Feb</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <endDate>2020-02-29</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-02-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_17863250</developerName>
+        <masterLabel>Profit Center Group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Product2.ProfitCenters__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Specialty Chemicals-Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Specialty Chemicals-Trans</sourceValue>
+            </sourceValues>
+            <value>Specialty, Inorganic &amp; Plastics</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Midstream-Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Midstream-Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Info&amp;SameDayAn-Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Info&amp;SameDayAn-Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Events-Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Advertising-Other</sourceValue>
+            </sourceValues>
+            <value>BISDA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Technology Analytics-Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Technology Analytics-Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Training-Cons</sourceValue>
+            </sourceValues>
+            <value>Technology &amp; Analytics</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Special Studies-Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical-Cons</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oil Markets Downstream-Cons</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oil Markets Downstream-MCS</sourceValue>
+            </sourceValues>
+            <value>Consulting</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Oil Markets Downstream-Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oil Markets Downstream-Trans</sourceValue>
+            </sourceValues>
+            <value>OMDI</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chemical PP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oil Markets Downstream-PP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DATA LAKE-SUBS</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ProductOwner__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.BusinessLine2__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Product2.ProfitCenterCode__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.FirstYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>LINEITEM_CREATED_BY</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>CASE(Product2.ProfitCenterCode__c,
+    &quot;401&quot;, &quot;BISDA&quot;,
+    &quot;403&quot;, &quot;BISDA&quot;,
+    &quot;404&quot;, &quot;BISDA&quot;,
+    &quot;412&quot;, &quot;BISDA&quot;,
+    &quot;416&quot;, &quot;BISDA&quot;,
+    &quot;477&quot;, &quot;BISDA&quot;,
+    &quot;506&quot;, &quot;BISDA&quot;,
+    &quot;554&quot;, &quot;BISDA&quot;,
+    &quot;147&quot;, &quot;Consulting&quot;,
+    &quot;402&quot;, &quot;Consulting&quot;,
+    &quot;408&quot;, &quot;Consulting&quot;,
+    &quot;475&quot;, &quot;Consulting&quot;,
+    &quot;522&quot;, &quot;Consulting&quot;,
+    &quot;651&quot;, &quot;Consulting&quot;,
+    &quot;551&quot;, &quot;OMDI&quot;,
+    &quot;553&quot;, &quot;OMDI&quot;,
+    &quot;414&quot;, &quot;Specialty, Inorganic &amp; Plastics&quot;,
+    &quot;417&quot;, &quot;Specialty, Inorganic &amp; Plastics&quot;,
+    &quot;411&quot;, &quot;Technology &amp; Analytics (TAG)&quot;,
+    &quot;415&quot;, &quot;Technology &amp; Analytics (TAG)&quot;,
+    &quot;804&quot;, &quot;Technology &amp; Analytics (TAG)&quot;,
+    &quot;830&quot;, &quot;Other&quot;,
+    &quot;831&quot;, &quot;Other&quot;,
+    &quot;832&quot;, &quot;Other&quot;,
+    &quot;397&quot;, &quot;Other&quot;,
+    &quot;474&quot;, &quot;Other&quot;,
+    &quot;538&quot;, &quot;Other&quot;,
+    &quot;658&quot;, &quot;Other&quot;,
+&quot;NA&quot;
+    )</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Profit Center Group</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>OMDC New Business Created by Profit Center</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Product2.BusinessLine2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>OMDC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LINEITEM_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CDF1</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>NA</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Product2.ProfitCenters__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>LINEITEM_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>OMDC New Biz Oppy Created by PC</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Master Agreement Exhibit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Master Agreement Exhibits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Duplicate exhibit --></label>
+        <name>Duplicateexhibit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Agreement Exhibit Type --></label>
+        <name>MasterAgreementExhibitType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Agreement Exhibit --></label>
+        <name>MasterAgreementExhibit__c</name>
+        <relationshipLabel><!-- Related Master Agreement Exhibits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select related order form --></help>
+        <label><!-- Order Form/Consulting --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only Order form  contracts can be selected --></errorMessage>
+            <informationalMessage><!-- Please enter valid order form number --></informationalMessage>
+        </lookupFilter>
+        <name>OrderFormOrConsulting__c</name>
+        <relationshipLabel><!-- Master Agreement Exhibits --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Master Agreement exhibit should be related to order form master agreement --></errorMessage>
+        <name>MasterAgreementExhibitShouldBeRelated</name>
+    </validationRules>
+</CustomObjectTranslation>

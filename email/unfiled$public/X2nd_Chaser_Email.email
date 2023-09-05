@@ -1,0 +1,11 @@
+Dear {!Contact.FirstName},
+<br><br>
+Good day!
+<br>
+The status of this case is: ON HOLD – ACTIVE WAITING FOR INFO
+<br><br>
+This is the third attempt to receive additional information from you so we can provide you with a solution. Our original email requesting this information was sent on: (date). Details are provided below. Please provide this information within 24hrs so we can resolve your issue. 
+<br><br>
+Regards,<br>
+{!Case.OwnerFullName}<br>
+Salesforce Helpdesk

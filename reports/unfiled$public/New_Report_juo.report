@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Parent</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.OpportunityLineItems$PricebookEntry.Product2</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$SalesRegion__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$AnnualRevenue</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities.OpportunityLineItems$MaterialCode__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>2000006010,2000006011,2000006013,2000006014,2000006015,2000006016,2000006019,2000006020,2000006021,2000006022,2000006023,2000006024,2000006025,2000006027,2000038726,2000038727,2000038728,2000038737,2000038743,2000038771,2000038808,2000038970,2000038971,2000038926,2000038927,2000038928,2000038931,2000038932,2000038964,2000038966,2000038967,2000038968,2000038969,2000038973,2000038976,2000038977,2000038978,2000038980,2000038981,2000038984,2000038985,2000039224,2000039225,2000039226,2000039859,2000041572,2000041596,2000041721,2000046420,2000046421,2000046423,2000049609,2000049945,2000050853,2000050854,2000051429</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder,6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities.OpportunityLineItems$LicenseType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Enterprise Wide License</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Agribusiness subscription list</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_with_Opportunities_with_Products__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$AuditedOn__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

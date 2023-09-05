@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>LiveAgentSession.TimeInOnlineStatus:SUM/60/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent Online (in hours)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>LiveAgentSession.TimeInChats:SUM/60/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent in Chats (in hours)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>LiveAgentSession.TimeIdle:SUM/60/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Idle (in hours)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>LiveAgentSession$Name</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$LoginTime</field>
+    </columns>
+    <columns>
+        <field>LiveAgentSession$LogoutTime</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LiveAgentSession$ChatReqTimedOut</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LiveAgentSession$ChatReqDeclined</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Report to capture Live Agent session details</description>
+    <filter>
+        <criteriaItems>
+            <column>LiveAgentSession$Agent</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Tanvi Arora,Chayan Bhattacharjee,Aman Kumar,Devrach Atawnia,Anmol Singh,Gautam Pant,Varun Bhutani,Samuel Abraham</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LiveAgentSession$Agent</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>India Team: LIVE AGENT Last Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LiveAgentSession__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>LiveAgentSession$LoginTime</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LiveAgentSession$CreatedDate</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

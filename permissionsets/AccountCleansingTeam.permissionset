@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-3129 Permission set for team that will manage the account cleansing project.
+Fields added Audited By and Audit Date</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AuditedBy__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.AuditedOn__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account Cleansing Team</label>
+</PermissionSet>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesRegion__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>3-Renewal Pending,5-Renewal Contracting,6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>World Wrestling Entertainment,Turkiye Sise ve Cam Fabrikalari,Xerox,Hopson Development,Beijing Enterprises,Eventbrite,Stratasys,Xilinx,Herite Insurance,NetScout Systems,Yamana Gold,MGM China,Alexco Resource,Titan Mining,Yext,American Hotel ome Properties,Axalta Coating Systems,Z,Pure Gold Mining,DaVita,SW Umwelttechnik Stoiser &amp; Wolschner,Zalando,White Mountains Insurance,Zalando SE,Boqii,Hewlett Packard Enterprise,EVN,Bic,Century Communities,Zendesk,TKH,CrowdWorks,Yalla,Asana,IDACORP,Zimmer Biomet,Fisker,LAIX,MINISO,MediaAlpha,Skandinaviska Enskilda Banken,Vida Strategic,ZTO Express,ZTO Express (Cayman),Amdocs,RCA Financial,Zumtobel,Institutional Marketing Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Youdao,MITSUBISHI UFJ TRUST AND BANKING,Nexa Resources,Brookfield Business,US Foods,Shift4 Payments,Ferroglobe,Welbilt,K+S,WideOpenWest,JSW Steel,Kakaku.com,Ranpak,Associated Materials,Cadence Ban,Real Matters,Invitation Homes,FTS International,Kanematsu,Hexion,Ferrari,Science Applications International,Zhou Hei Ya International,International Seaways,Kanto Denka Kogyo,Ichnos Sciences,Triton International,Equity Bancshares,GCP Applied Technologies,ProPetro,iClick Interactive Asia,Ahern Rentals,Pure Store,Christensen China,MGM Growth Properties,Kapsch,Country Garden Services,Bruin E&amp;P,FGIC UK,Kapsch TrafficCom,Keikyu,J.P. MORGAN CAZENOVE,Yeahka,Intellia Therapeutics,Stoneway Capital,Kings Asset,Kinross Gold,Kirin,Odebrecht Engenharia e Construcao SA,EVOC Intelligent Technology,CCID Consulting,Kala Pharmaceuticals,Kirkland Lake Gold,Media Do,Gatwick Airport,Banco Latinoamericano de Comercio Exterior,Dun &amp; Bradstreet,Immunotech Biopharm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>advisory solutions,digital solutions</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Corporate Clients w/ non-Corp Products</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

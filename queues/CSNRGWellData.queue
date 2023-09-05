@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | NRG | Well Data</name>
+    <queueMembers>
+        <users>
+            <user>charles.williams@ihsmarkit.com</user>
+            <user>hanteh.ginsos@ihsmarkit.com</user>
+            <user>justin.hirsch@ihsmarkit.com</user>
+            <user>khairulanuar.ismail@ihsmarkit.com</user>
+            <user>lana.roybal@ihsmarkit.com</user>
+            <user>melissa.maloney@ihsmarkit.com</user>
+            <user>sam.long@ihsmarkit.com</user>
+            <user>tricia.busick@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

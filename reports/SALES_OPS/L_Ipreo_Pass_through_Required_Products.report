@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.OpportunityProductID18Character__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.PassThroughRoyaltyAnnualValue__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.LegacyID__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>2 AND (1 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Product2.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Shark Repellent,Quotes &amp; News,FactSet,research &amp; estimates,events &amp; transcripts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.LegacySystem__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IPREO_SFDC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Webcasting Services,Share Register Analysis,Aventri,Equity Deals Database,Information Agent,ACE Consensus</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.PassThroughRoyaltyAnnualValue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,USD 0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>L-Ipreo Pass-through Required Products</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,118 @@
+<aura:component controller="QuickRecordCreationController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable,lightning:utilityItem,lightning:actionOverride" access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="currentRecord" type="Object" description="Record on which the items are displayed"/>
+    <aura:attribute name="showSpinner" type="Boolean" />
+    <aura:attribute name="showSpinContact" type="Boolean" default="false" />
+    <aura:attribute name="showSpinOppy" type="Boolean" default="false" />
+    <aura:attribute name="justSaved" type="Boolean" default="false" />
+    <aura:attribute name="disableButton" type="Boolean" default="false"/>
+    <aura:attribute name="accId" type="String"/>
+    <aura:attribute name="supportsPopOut" type="Boolean" default="false" />
+    <aura:attribute name="budgetValues" type="String[]"/>
+    <aura:attribute name="selectedBudget" type="String"/>
+    <aura:attribute name="objectType" type="String"/>
+    <aura:attribute name="oppyName" type="String"/>
+    <aura:attribute name="closeDate" type="Date"/>
+    <aura:attribute name="fname" type="String"/>
+    <aura:attribute name="mname" type="String"/>
+    <aura:attribute name="lname" type="String"/>
+    <aura:attribute name="phone" type="String"/>
+    <aura:attribute name="email" type="String"/>
+    <aura:attribute name="title" type="String"/>
+    <aura:attribute name="businessSegment" type="String[]"/>
+    <aura:attribute name="selectedBusiness" type="String"/>
+    <aura:attribute name="jobTitle" type="String[]"/>
+    <aura:attribute name="selectedJobTitle" type="String"/>
+    <aura:attribute name="jobFunction" type="String[]"/>
+    <aura:attribute name="selectedJobFunction" type="String"/>
+    <aura:attribute name="groupDesk" type="String[]"/>
+    <aura:attribute name="selectedGroupDesk" type="String"/>
+    <aura:attribute name="hasCreateAccess" type="Boolean"/>
+    <aura:if isTrue="{!v.showSpinner}"><lightning:spinner aura:id="Spin" alternativeText="Loading.." size="medium" class="spinnerHolder" /></aura:if>
+    
+    <aura:handler name="change" value="{!v.accId}" action="{!c.fetchAccountId}"/>  
+    <lightning:utilityBarAPI aura:id="utilitybar"/>
+    <aura:if isTrue="{!v.hasCreateAccess}">
+        <aura:if isTrue="{!v.objectType=='Contact'}">
+            <aura:if isTrue="{!v.showSpinner==false}">
+                <div class="slds-text-align--left slds-p-around--small">
+                    <lightning:input class="slds-p-bottom--small" aura:id="firstname" name="firstname" label="First Name" required="true" value="{!v.fname}"/>
+                    <lightning:input class="slds-p-bottom--small" aura:id="middlename" name="middlename" label="Middle Name" required="false" value="{!v.mname}"/>
+                    <lightning:input class="slds-p-bottom--small" aura:id="lastname" name="lastname" label="Last Name" required="true" value="{!v.lname}"/> 
+                    <lightning:input class="slds-p-bottom--small" aura:id="email" name="email" label="Email" type="email" messageWhenTypeMismatch="Your entry must be a valid email address." required="true" value="{!v.email}"/>
+                    <lightning:input class="slds-p-bottom--small" aura:id="phone" name="phone" label="Phone" type="phone" value="{!v.phone}"/>
+                    <c:customLookup objectAPIName="Account" 
+                                    IconName="standard:account"
+                                    selectedRecord="{!v.currentRecord}"
+                                    selectedRecordId="{!v.accId}"
+                                    label="Account"
+                                    isChanged="{!v.accId}"
+                                    showAsRequired="true"/>
+					<label class="slds-form-element__label" for="unique-id-of-input"><abbr class="slds-required" title="required">*</abbr>Title</label>
+                    <lightning:helptext content="Official designation in the organization"/>
+                    <ui:inputText class="field" aura:id="title" required="false" value="{!v.title}"/>
+                    <label class="slds-form-element__label" for="unique-id-of-input"><abbr class="slds-required" title="required">*</abbr>Business Segment</label>
+                    <lightning:helptext content="Subsection of the company as indicated by product or service offering" />
+                    <ui:inputSelect class="slds-p-bottom_small" aura:id="businessSegment" value="{!v.selectedBusiness}">
+                        <aura:iteration items="{!v.businessSegment}" var="bs">
+                           <ui:inputSelectOption text="{!bs.label}" label="{!bs.value}"/>
+                        </aura:iteration>
+                    </ui:inputSelect>
+                    <br></br>
+                    <label class="slds-form-element__label" for="unique-id-of-input"><abbr class="slds-required" title="required">*</abbr>Job Title</label>
+                    <lightning:helptext content="Industry specific job level in organization" />
+                    <ui:inputSelect class="slds-p-bottom--small" aura:id="jobTitle" value="{!v.selectedJobTitle}">
+                        <aura:iteration items="{!v.jobTitle}" var="jt">
+                            <ui:inputSelectOption text="{!jt.label}" label="{!jt.value}"/>
+                        </aura:iteration>
+                    </ui:inputSelect>
+                    <br></br>
+                    <label class="slds-form-element__label" for="unique-id-of-input"><abbr class="slds-required" title="required">*</abbr>Job Function</label>
+                    <lightning:helptext content="Subsection of the company as indicated by responsibilities/activities undertaken by the individual" />
+                    <ui:inputSelect class="slds-p-bottom--small" aura:id="jobFunction" value="{!v.selectedJobFunction}">
+                        <aura:iteration items="{!v.jobFunction}" var="jf">
+                            <ui:inputSelectOption text="{!jf.label}" label="{!jf.value}"/>
+                        </aura:iteration>
+                    </ui:inputSelect>
+                    <br></br>
+                    <label class="slds-form-element__label" for="unique-id-of-input"><abbr class="slds-required" title="required">*</abbr>Group/Desk</label>
+                    <lightning:helptext content="Subsection of the company as indicated by industry expertise, experience, qualifications and/or skillset of the individual" />
+                    <ui:inputSelect class="slds-p-bottom--small" aura:id="groupDesk" value="{!v.selectedGroupDesk}">
+                        <aura:iteration items="{!v.groupDesk}" var="gd">
+                            <ui:inputSelectOption text="{!gd.label}" label="{!gd.value}"/>
+                        </aura:iteration>
+                    </ui:inputSelect>
+                    <br></br>
+                    <lightning:button class="slds-m-top--small" variant="brand" aura:id="submitBtn" label="Save" onclick="{!c.handleSaveRecord}" disabled="{!v.disableButton}" />
+                    <aura:if isTrue="{!v.showSpinContact}"><lightning:spinner aura:id="spinnerContact" alternativeText="Saving.." size="medium" class="spinnerHolder" /></aura:if>
+                </div>
+            </aura:if>		
+        </aura:if>
+        <aura:if isTrue="{!v.objectType=='Opportunity'}">
+            <aura:if isTrue="{!v.showSpinner==false}">
+                <div class="slds-text-align--left slds-p-around--small">
+                    <lightning:input class="slds-p-bottom--small" aura:id="oppyName" name="oppyName" label="Opportunity Name" required="true" value="{!v.oppyName}" />
+                    <c:customLookup objectAPIName="Account" 
+                                    IconName="standard:account"
+                                    selectedRecord="{!v.currentRecord}"
+                                    selectedRecordId="{!v.accId}"
+                                    label="Account"
+                                    isChanged="{!v.accId}"	
+                                    showAsRequired="true"/>
+                    <ui:inputDate class="slds-p-bottom--small" label="Close Date" displayDatePicker="true" required="true" aura:id="closeDate" value="{!v.closeDate}"/><br/>
+                    <ui:inputSelect class="slds-p-bottom_small" label="Budget Range" required="false" aura:id="InputBudget" value="{!v.selectedBudget}">
+                        <aura:iteration items="{!v.budgetValues}" var="b">
+                            <ui:inputSelectOption text="{!b.label}" label="{!b.value}"/>
+                        </aura:iteration>
+                    </ui:inputSelect>
+                    <br></br>
+                    <lightning:button variant="brand" aura:id="submitBtn" label="Save" onclick="{!c.handleSaveRecord}" disabled="{!v.disableButton}" />
+                    <aura:if isTrue="{!v.showSpinOppy}"><lightning:spinner aura:id="spinnerOppy" alternativeText="Saving.." size="medium" class="spinnerHolder" /></aura:if>
+                </div>
+            </aura:if>
+        </aura:if>
+     </aura:if>
+    <aura:if isTrue="{!v.hasCreateAccess==false}">
+            <div class="slds-text-align--center slds-p-around--large" style="font-size: 150%;"><h1>Not authorized to add {!v.objectType}.</h1></div>
+    </aura:if>
+</aura:component>

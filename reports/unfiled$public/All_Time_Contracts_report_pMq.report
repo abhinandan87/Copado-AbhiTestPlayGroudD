@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CONTRACT_NAME</field>
+    </columns>
+    <columns>
+        <field>Contract.ContractStatus__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Contract.OpportunityNumber__c</field>
+    </columns>
+    <columns>
+        <field>Contract.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Contract.IHSMarkitLegalEntity__c</field>
+    </columns>
+    <columns>
+        <field>Contract.ClientLegalEntityLookUp__c</field>
+    </columns>
+    <columns>
+        <field>START_DATE</field>
+    </columns>
+    <columns>
+        <field>END_DATE</field>
+    </columns>
+    <columns>
+        <field>Contract.RenewalDate__c</field>
+    </columns>
+    <columns>
+        <field>Contract.GeneralAgreement__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6)</booleanFilter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>AcadiaSoft,ClearPar,WSO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>DS Match/End User/Implmtnt/Trans,DS Match Credit/Sub,MarkitWire EndUser/Rates/Trans,MarkitSERV Trade Mgr Enh Cnnctvty/Sub,FX Trade Confirmation/SubVar,MarkitWire EndUser/Rates/Sub,MarkitWire EndUser/Implmnt/One-Time,FX Execution Connectivity Lic/Sub,FX Execution Connectivity Ticket/Sub,DS Match Credit/SubVar,MarkitWire EndUser/Equities/Sub,Broker Fees Sub,MarkitWire EndUser/Rates/SubVar,MarkitSERV Trade Mgr/Implmnttn/One-Time,MarkitWire Dlr/Rates/Sub,FX Execution Connectivity Implmnt/Trans,MarkitWire Rptg Svcs/SeededTrdEnr/Trans,MarkitSERV Trade Mgr/Paper WF&amp;Rpt/Sub,MarkitSERV Trade Mgr/PortRec/Sub,IntegratedRptg Solution/TransNR,IntegratedRptg Solution/Sub,MarkitWire Netting Synchronization/Sub,FX Execution Connectivity Pro Svcs/Sub,MarkitWire LeasedLine/Implmnt/One-Time,MarkitWire Line Charges/Sub,MarkitSERV Trade Mgr/Enh Cnnctvty/Trans,MarkitWire Custom Proc/Trans,MarkitWire VPN Connectivity/Sub,FX Execution Connectivity Ticket/SubVar,MarkitWire Rates/Sub,FX Opts exercise/SubVar,MarkitWire LeasedLine/Implementation/Sub,DS Match/End User/Implmtnt/Sub,DS Match Dlr/SubVar,MarkitWire Netting Synchronization/SubV,FX Opts exercise/Sub,FX Clearing Non Member/Sub,MarkitWire Dlr/Equities/Sub,DS Match Dlr/Sub,MarkitWire EndUser/Equities/SubVar,MarkitWire API Implementation/Trans,DS Match Equities/SubVar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>DealHub Post Trade Connect/Maintenance,MarkitSERV Trade Proc/Sub,SSL Connectivity Sub,MarkitWire Line Charges/Trans,MarkitSERV Trade Mgr/Implmnttn/SOW,DealHub Post Trade Apps/Maintenance,DealHub Post Trade Apps/Pro Svcs,DealHub Post Trade Apps/Licence,MarkitWire EndUser/Credit/SubVar,MarkitWire Dlr/Rates/SubVar,MarkitWire Dlr/Implementation/Sub,MarkitWire Equity Corp Actions/Sub,MarkitWire EndUser/Credit/Sub,MarkitWire Netting Synchronization/Trans,MarkitWire Rates/SubVar,FX Clearing/Sub,MarkitWire EndUser/Pro Svcs/Svc,FX Matching Svc Fees/Sub,MarkitWire SEF TradeVenueNtf/Sub,MarkitWire EndUser/Rptg/Trans,MarkitWire FIA PortRec/Sub,MarkitSERV Trade Mgr Enh Cnnctvty/SubV,MarkitSERV Credit Centre/Sub,Val Mgr/Sub,MarkitSERV Trade Mgr/PortRec/Trans,DS Match Rates/Sub,MarkitSERV Trade Mgr/Paper WF&amp;Rpt/SubVar,DS Match Equities/Sub,MarkitWire Dlr/Implementation/One-Time,FX Confirmation/Sub,MarkitWire EndUser/Implmnt/Sub,FX Clearing per ticket/Sub,DealHub Post Trade Connect/Pro Svcs,DealHub Post Trade Connect/Licence,MarkitSERV Trade Mgr/Tie-Outs/Sub,DS Match Credit/TransNR,MarkitWire Dual Power Router/Trans,FX Broker Affirmation Lic/Sub,FX Broker Affirmation Lic/TransNR,FX Broker Affirmation Per Ticket/Sub,MarkitWire Equity Corp Actions/Trans,DS Cleared Credit Novation/Sub,MarkitWire METS/Sub,FX FXO Clearing/SubVar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FXO Clearing Spot&amp;Fwd Delta Hedges/Sub,FXO Clearing Spot&amp;Fwd Delta Hedges/SubV,FX FXO Clearing/Sub,MarkitWire Dlr/Credit/Sub,FX Opts/Sub,FX Matching Svc Fees/SubVar,MarkitWire Rates/Trans,MarkitWire SEF TradeVenueNtf/SubVar,MarkitWire End2End UsrClearing/MW-Sub,FX Trade Confirmation/Sub,MarkitWire Rptg Svcs/SeededTrdEnr/Sub,MarkitWire TradeOrdAllocs/MTM/Sub,DealHub Trading Apps/Licence,DealHub Trading Apps/Maintenance,TP Rental/Sub,MarkitSERV Trade Mgr Prem Pkg/Sub,DealHub Post Trade Connect/Rental,FX Execution Connectivity Lic/SubVar,FX Execution Connectivity Lic/TransNR,FX Execution Connectivity Pro Svcs/SOW,MarkitSERV Trade Mgr/Paper WF&amp;Rpt/Trans,MarkitWire EndUser/Rptg/SubVar,DealHub Post Trade Apps/Implmt-Trans,DH Core STP Platform Maint/Sub,MarkitWire Custom Proc/Svc,MarkitSERV Trade Mgr/Implmnttn/Sub,MarkitWire CLS Connectivity/Sub,FX Clearing Lic/Sub,FX Clearing Lic/SubVar,FX Broker Affirmation Lic/SubVar,FX Broker Affirmation Per Ticket/SubVar,DealHub Trading Apps/Pro Svcs,DealHub Trading Apps/Rental,Cobalt Credit Switching Module/10 Sub,Cobalt Credit Module/10 Sub,TradeServ-FX/Sub,DealHub Post Trade Apps/Rental,DealHub Trading Connect/Pro Svcs,MarkitWire Dlr/Rates/Trans,FX Broker Affirmation PS Implment/Trans,DH DHView(InvlOvrvw)Lic/Trans,FX Clearing per ticket/SubVar,TradeServ-FX/SubVar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>DH Trading Connectiviy Rental/SubVar,DH Trading Connectiviy Rental/Sub,DealHub Trading Connect/Rental,MarkitWire EndUser/Implmnt/Trans,Val Mgr/Client OTC Var/Sub,MarkitWire TradeOrdAllocs/MWire/Sub,Loans WK Universe/Sub,Gold Package+SD/Sub,Euro ABS Pricing Contrib/BS/Full/Sub,Parsing/Sub,MarkitWire EndUser/Equities/Trans,MarkitSERV Trade Mgr/PortRec/Light/Sub,MarkitWire FIA eGUS/Trans,MarkitWire FIA eGUS/Sub,MarkitWire FIA eGains/Sub,MarkitWire EndUser/Rptg/Sub,MarkitWire Dlr/Equities/SubVar,MarkitWire Custom Proc/Sub,DS Match Rates/SubVar,MarkitWire SEF TradeVenueNtf/Trans,DealHub Trading Apps/Implmt-Trans,DealHub Trading Connect/Licence,DealHub Trading Connect/Maintenance,DealHub Post Trade Connect/Implmt-Trans,TradeServ-Credit/Sub,MarkitWire Rptg Svcs/SeededTrdEnr/SubVar,FX Clearing/SubVar,MarkitWire Custom Proc/SubVar,FX Clearing Non Member/SubVar,MarkitSERV Trade Mgr/Implmnttn/Trans,MarkitWire SEF TradeAffTimes Svc/Sub,MarkitWire Reconciliation/Trans,TradeServ-FX/TransNR,Broker Fees SubVar,FX Broker Affirmation Pro Svcs/SOW,DS Match Dlr/TransNR,IntegratedRptg Solution/Cons,TradeServ-Credit/SubVar,MarkitSERV Trade Mgr/Proc/Svc,Val Mgr/Client Cash Var/Sub,FX Execution Connectivity Ticket/TransNR,MarkitWire MIS/SubVar,DS Equity Buy-side Trades/Sub,TradeServ-Credit/TransNR,IntegratedRptg Solution/SubVar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>MarkitWire End2End UsrClearing/MTM/Sub</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Contracts report for Rob</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractCustomEntity$ContractLineItem__c</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contract.RenewalDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>START_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

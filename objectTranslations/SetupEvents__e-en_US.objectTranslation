@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SetupEvents</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SetupEvents</value>
+    </caseValues>
+    <fields>
+        <label><!-- Event Id --></label>
+        <name>EventId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SetMeetingShare --></label>
+        <name>SetMeetingShare__c</name>
+    </fields>
+    <fields>
+        <label><!-- SetPrivacyLevel --></label>
+        <name>SetPrivacyLevel__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

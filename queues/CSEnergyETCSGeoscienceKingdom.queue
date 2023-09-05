@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Energy | ETCS | Geoscience |Kingdom</name>
+    <queueMembers>
+        <users>
+            <user>ahmed.nabawy@ihsmarkit.com</user>
+            <user>amber.king@ihsmarkit.com</user>
+            <user>angela.olaya@ihsmarkit.com</user>
+            <user>dapo.ajibade@ihsmarkit.com</user>
+            <user>david.pfleger@ihsmarkit.com</user>
+            <user>dennis.earl@ihsmarkit.com</user>
+            <user>glen.penfield@ihsmarkit.com</user>
+            <user>iin.fransisca@ihsmarkit.com</user>
+            <user>jenga.ngalawa@ihsmarkit.com</user>
+            <user>john.wolff@ihsmarkit.com</user>
+            <user>jon.sartell@ihsmarkit.com</user>
+            <user>joseph.gnapragasan@ihsmarkit.com</user>
+            <user>ken.moorejr@ihsmarkit.com</user>
+            <user>matt.hergert@ihsmarkit.com</user>
+            <user>meghan.howard@ihsmarkit.com</user>
+            <user>olusegun.kolawole@ihsmarkit.com</user>
+            <user>pavel.ershov@ihsmarkit.com</user>
+            <user>richard.neeley@ihsmarkit.com</user>
+            <user>shady.elkadri@ihsmarkit.com</user>
+            <user>souvik.de@ihsmarkit.com</user>
+            <user>susannah.lagroue@ihsmarkit.com</user>
+            <user>tabata.funke@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

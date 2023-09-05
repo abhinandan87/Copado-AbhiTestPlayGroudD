@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Advanced Filter Conditions --></label>
+        <name>Loop__Advanced_Filter_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocGen Package --></label>
+        <name>Loop__DDP__c</name>
+        <relationshipLabel><!-- Component Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delete Container If Empty --></label>
+        <name>Loop__Delete_Empty_Containers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Component Group Name --></label>
+        <name>Loop__Field_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter --></label>
+        <name>Loop__Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filters --></label>
+        <name>Loop__Filters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component Group --></label>
+        <name>Loop__Text_Group__c</name>
+        <relationshipLabel><!-- DocGen Packages --></relationshipLabel>
+    </fields>
+    <webLinks>
+        <label><!-- Connect_Existing_Component_Group --></label>
+        <name>Loop__Connect_Existing_Component_Group</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Component_Group --></label>
+        <name>Loop__New_Component_Group</name>
+    </webLinks>
+</CustomObjectTranslation>

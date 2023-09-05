@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM |GMG | iProspectus</name>
+    <queueMembers>
+        <users>
+            <user>abhijit.biswas@ihsmarkit.com</user>
+            <user>asha.shaik@ihsmarkit.com</user>
+            <user>justin.wolfe@ihsmarkit.com</user>
+            <user>kevinabraham.jose@ihsmarkit.com</user>
+            <user>kim.brubacher@ihsmarkit.com</user>
+            <user>michael.patella@ihsmarkit.com</user>
+            <user>natalie.agboyibor@ihsmarkit.com</user>
+            <user>olivia.yarborough@ihsmarkit.com</user>
+            <user>wesley.rodriguez@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

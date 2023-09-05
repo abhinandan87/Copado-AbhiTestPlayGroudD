@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>AUTOS | Sales - Account Team - PNA</name>
+    <queueMembers>
+        <users>
+            <user>ashleigh.burden@ihsmarkit.com</user>
+            <user>brenda.mcintyre@ihsmarkit.com</user>
+            <user>brian.galindo@ihsmarkit.com</user>
+            <user>christine.bivins@ihsmarkit.com</user>
+            <user>christopher.royle@ihsmarkit.com</user>
+            <user>demian.flowers@ihsmarkit.com</user>
+            <user>doug.andrews@ihsmarkit.com</user>
+            <user>ed.tyves@ihsmarkit.com</user>
+            <user>jannisse.chesney@ihsmarkit.com</user>
+            <user>jasmina.kajtazovic@ihsmarkit.com</user>
+            <user>jason.corn@ihsmarkit.com</user>
+            <user>jeffrey.hanna@ihsmarkit.com</user>
+            <user>john.alioa@ihsmarkit.com</user>
+            <user>john.sinski@ihsmarkit.com</user>
+            <user>kristi.rutkowski@ihsmarkit.com</user>
+            <user>larry.hart@ihsmarkit.com</user>
+            <user>leah.dunn@ihsmarkit.com</user>
+            <user>lisa.lukitsch@ihsmarkit.com</user>
+            <user>lynda.iuppenlatz@ihsmarkit.com</user>
+            <user>matt.safran@ihsmarkit.com</user>
+            <user>matthew.cool@ihsmarkit.com</user>
+            <user>maxwell.werunga@ihsmarkit.com</user>
+            <user>paige.pritchard@ihsmarkit.com</user>
+            <user>patrick.weiss@ihsmarkit.com</user>
+            <user>richard.glover@ihsmarkit.com</user>
+            <user>richard.stucky@ihsmarkit.com</user>
+            <user>rick.leffler@ihsmarkit.com</user>
+            <user>robert.sacka@ihsmarkit.com</user>
+            <user>sandra.donaldson@ihsmarkit.com</user>
+            <user>scott.huston@ihsmarkit.com</user>
+            <user>teresa.sencey@ihsmarkit.com</user>
+            <user>tracy.weeks@ihsmarkit.com</user>
+            <user>wendy.adams@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

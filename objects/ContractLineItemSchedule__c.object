@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFDC1-905 This is a custom object, which will be related to contract line item.
+SFDC1-10132: Updated object label name to Fixed Fee Schedule Line Item</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AutoRenewal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-135: Checkbox to show if Fixed Fee Line Item Schedule is an Auto-Renewal or not.</description>
+        <externalId>false</externalId>
+        <label>Auto-Renewal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BillingDate__c</fullName>
+        <description>MIG-214 - Billing Date field in Contract Line Item Schedule to save Legacy data for cleanup exercise post-go-live. Only visible to Contract Management and System Admin</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Only visible to Contract Management and System Admin</inlineHelpText>
+        <label>Billing Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ContractLineItem__c</fullName>
+        <description>SFDC1-380 This field holds the value of contract line item record to which contract line item schedule is related
+SFDC1-10132 rename the label</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract Line Item</inlineHelpText>
+        <label>Contract Line Item</label>
+        <referenceTo>ContractLineItem__c</referenceTo>
+        <relationshipLabel>Fixed Fee Schedule Line Item</relationshipLabel>
+        <relationshipName>ContractLineItemSchedule</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Contract__c</fullName>
+        <description>SFDC1-380 This is a lookup to Contract record, to which contract line item schedule is related</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Related Contract</inlineHelpText>
+        <label>Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Contract Line Item Schedules</relationshipLabel>
+        <relationshipName>ContractLineItemSchedules</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Current__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-525: Current Annual Contract Value - Flag to rollup amount to contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Represents if schedule is valid for current fiscal year</inlineHelpText>
+        <label>Current</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DiscountAmount__c</fullName>
+        <description>SFDC1-380 This field gets populated from opportunity product schedule - Discount Amount field when contract is created from wizard</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount Amount</inlineHelpText>
+        <label>Discount Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DiscountPercent__c</fullName>
+        <description>SFDC1-380 This field gets populated from opportunity product schedule - discount % field when contract is created from wizard</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount %</inlineHelpText>
+        <label>Discount%</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>DiscountType__c</fullName>
+        <description>SFDC1-380 This field gets populated from opportunity product schedule - discount type field when contract is created from wizard</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Discount Type</inlineHelpText>
+        <label>Discount Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Percentage</fullName>
+                    <default>false</default>
+                    <label>Percentage</label>
+                </value>
+                <value>
+                    <fullName>Amount</fullName>
+                    <default>false</default>
+                    <label>Amount</label>
+                </value>
+                <value>
+                    <fullName>No Discount</fullName>
+                    <default>false</default>
+                    <label>No Discount</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ExternalListPrice__c</fullName>
+        <description>SFDC1-380 This field gets populated from opportunity product schedule - external list price field when contract is created from wizard</description>
+        <externalId>false</externalId>
+        <inlineHelpText>External List Price</inlineHelpText>
+        <label>External List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>InstallmentYear__c</fullName>
+        <description>SFDC1-380 This is a text field which copies InstallmentYear__c from Opportunity Product Schedule</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Installment Year</inlineHelpText>
+        <label>Installment Year</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InstallmentYears__c</fullName>
+        <description>SFDC1-380 This is a text field which copies InstallmentYears__c from Opportunity Product Schedule</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Installment Year</inlineHelpText>
+        <label>zzzInstallment Year</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>SFDC1-7046: Legacy ID field is the system id (unfriendly) referencing the source record.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This is the system id (unfriendly) referencing the source record and is populated via migrating system</inlineHelpText>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>MaterialCode__c</fullName>
+        <description>SFDC1-10062 : This will hold the value for Contract Line Item&apos;s Material Code</description>
+        <externalId>false</externalId>
+        <formula>ContractLineItem__r.MaterialCode__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Contract Line Item&apos;s Material Code</inlineHelpText>
+        <label>Material Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriceIncreaseId__c</fullName>
+        <description>SFDC-3187 Unique id to map opportunity schedule that created new fixed fee line item</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Auto generated ID to identify opportunity schedule with the fixed fee line item. This is the id of the opportunity from which the price increase was triggered</inlineHelpText>
+        <label>Price Increase Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesPrice__c</fullName>
+        <description>SFDC1-380 This field gets populated from opportunity product schedule - sales price (SFDC-1091 - Total Sales Price) field when contract is created from wizard</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Sales Price</inlineHelpText>
+        <label>Total Sales Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>SFDC1-9865 Status field on Contract Line item Schedules</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When a new Contract Line Item Schedule record is created, the Status field should be set to &quot;Active&quot;</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>History</fullName>
+                    <default>false</default>
+                    <label>History</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Fixed Fee Schedule Line Item</label>
+    <nameField>
+        <displayFormat>CLS-{0000000}</displayFormat>
+        <label>Fixed Fee Schedule Line Item Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Fixed Fee Schedule Line Items</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>ContractCurrencyCheck</fullName>
+        <active>true</active>
+        <description>SFDC-1438 - Volume/Variable Billing Line Item Currency
+SFDC-525 - Added System Admin bypass</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ContractLineItemSchedule__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(
+Contract__r.Currency__c &lt;&gt; TEXT(CurrencyIsoCode),
+$Profile.Name != &apos;System Administrator&apos;,
+$Profile.Name != &apos;IHSMarkit System Admin&apos;,
+NOT(CONTAINS($Profile.Name, &quot;Contract Management&quot;)),
+NOT(CONTAINS($Profile.Name, &quot;User Support&quot;)))
+)</errorConditionFormula>
+        <errorDisplayField>CurrencyIsoCode</errorDisplayField>
+        <errorMessage>Incorrect Currency Code, Please Refer to the Contract and Update Accordingly</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CorrectContractNumberOnCLIS</fullName>
+        <active>true</active>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.ContractLineItemSchedule__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(
+ISNEW(),
+OR(
+Contract__c &lt;&gt; Contract__r.Id,
+ContractLineItem__r.Contract__c &lt;&gt; Contract__c 
+)
+)
+)</errorConditionFormula>
+        <errorDisplayField>Contract__c</errorDisplayField>
+        <errorMessage>You must select the contract related to this fixed fee line.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

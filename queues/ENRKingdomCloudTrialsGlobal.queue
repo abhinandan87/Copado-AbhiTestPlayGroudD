@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>dl-kingdomtestdrive@ihsmarkit.com</email>
+    <name>ENR_KingdomCloudTrials_Global</name>
+    <queueMembers>
+        <users>
+            <user>abigail.cregger@ihsmarkit.com</user>
+            <user>alex.blizzard@ihsmarkit.com</user>
+            <user>jim.bock@ihsmarkit.com</user>
+            <user>kim.whipple@ihsmarkit.com</user>
+            <user>vladimir.rybakov@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>mk_ops_red_all@markit.com</email>
+    <name>FM | RED</name>
+    <queueMembers>
+        <users>
+            <user>ankit.kumar@ihsmarkit.com</user>
+            <user>apra.sharma@ihsmarkit.com</user>
+            <user>damanpreet.singh@ihsmarkit.com</user>
+            <user>hemant.garg@ihsmarkit.com</user>
+            <user>jeremy.reed@ihsmarkit.com</user>
+            <user>kay.huyen@ihsmarkit.com</user>
+            <user>leonardo.fanelli@ihsmarkit.com.prod</user>
+            <user>melody.xu@ihsmarkit.com</user>
+            <user>michael.raber@ihsmarkit.com</user>
+            <user>min.ng@markit.com.prod</user>
+            <user>penny.davenport@ihsmarkit.com</user>
+            <user>rahul.kumar@ihsmarkit.com</user>
+            <user>sarungbam.dennis@ihsmarkit.com</user>
+            <user>shivangi.goel@ihsmarkit.com</user>
+            <user>steve.holland@ihsmarkit.com</user>
+            <user>sue.lord@ihsmarkit.com.prod</user>
+            <user>suvidha.anjutgi@ihsmarkit.com</user>
+            <user>vinita.kumari@ihsmarkit.com</user>
+            <user>vivek.jaiswal@ihsmarkit.com</user>
+            <user>wazeena.sham@ihsmarkit.com.prod</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

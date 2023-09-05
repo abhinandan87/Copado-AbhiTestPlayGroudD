@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>SalesIncentiveApprovalRecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFDC-1908 Sales Incentives</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Campaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-1908 Sales Incentive Approvals</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to Campaign</inlineHelpText>
+        <label>Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Sales Incentive Approvals</relationshipLabel>
+        <relationshipName>SalesIncentiveApprovals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>SFDC - Sales Incentive Approvals</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Memo field for Commission Team</inlineHelpText>
+        <label>Comments</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CommissionStatus__c</fullName>
+        <description>SFDC-1908 Sales Incentive Approvals</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Picklist field for commission team</inlineHelpText>
+        <label>Commission Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Declined</fullName>
+                    <default>false</default>
+                    <label>Declined</label>
+                </value>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>true</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Opportunity Lost</fullName>
+                    <default>false</default>
+                    <label>Opportunity Lost</label>
+                </value>
+                <value>
+                    <fullName>Waiting on Finance Info</fullName>
+                    <default>false</default>
+                    <label>Waiting on Finance Info</label>
+                </value>
+                <value>
+                    <fullName>Waiting on Rep Info</fullName>
+                    <default>false</default>
+                    <label>Waiting on Rep Info</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IncentiveOwner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-1908 Sales Incentive Approvals</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to user, when users are creating for others</inlineHelpText>
+        <label>Incentive Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>SalesIncentiveApprovals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Justification__c</fullName>
+        <description>SFDC-1908 Sales Incentive Approvals</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Memo field</inlineHelpText>
+        <label>Justification</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-1908 Sales Incentive Approvals</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to Opportunity</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Sales Incentive Approvals</relationshipLabel>
+        <relationshipName>SalesIncentiveApprovals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ready_for_Submission__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>US-5103087 : Edit access remain unlocked for &quot;New Sales Incentive Approval &quot;related object under &quot;Opportunity&quot; object until &quot;Commission&quot; status is open.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this field to submit this record for approval.</inlineHelpText>
+        <label>Ready for Submission</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RelatedOpportunityStatus__c</fullName>
+        <description>SFDC-2593 Created for List Views for Sales Incentive Approval records</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity__r.StageName)</formula>
+        <label>Related Opportunity Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Sales Incentive Approval</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>ApprovedStatuson6WPOpportunities</fullName>
+        <columns>NAME</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>RelatedOpportunityStatus__c</field>
+            <operation>equals</operation>
+            <value>6WP-Closed Won/Order Processed</value>
+        </filters>
+        <filters>
+            <field>CommissionStatus__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <label>Approved Status on 6WP Opportunities</label>
+        <queue>SalesIncentiveApprovalQueue</queue>
+    </listViews>
+    <listViews>
+        <fullName>DeclinedStatuson6WPOpportunities</fullName>
+        <columns>NAME</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>RelatedOpportunityStatus__c</field>
+            <operation>equals</operation>
+            <value>6WP-Closed Won/Order Processed</value>
+        </filters>
+        <filters>
+            <field>CommissionStatus__c</field>
+            <operation>equals</operation>
+            <value>Declined</value>
+        </filters>
+        <label>Declined Status on 6WP Opportunities</label>
+        <queue>SalesIncentiveApprovalQueue</queue>
+    </listViews>
+    <listViews>
+        <fullName>OpenStatuson6WPOpportunities</fullName>
+        <columns>NAME</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>RelatedOpportunityStatus__c</field>
+            <operation>equals</operation>
+            <value>6WP-Closed Won/Order Processed</value>
+        </filters>
+        <filters>
+            <field>CommissionStatus__c</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </filters>
+        <label>Open Status on 6WP Opportunities</label>
+        <queue>SalesIncentiveApprovalQueue</queue>
+    </listViews>
+    <listViews>
+        <fullName>SalesIncentiveApprovalQueue_SalesIncentiveApproval</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Sales Incentive Approval Queue</label>
+        <queue>SalesIncentiveApprovalQueue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>WaitingonFinanceInfoStatuson6WPOpportunities</fullName>
+        <columns>NAME</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>RelatedOpportunityStatus__c</field>
+            <operation>equals</operation>
+            <value>6WP-Closed Won/Order Processed</value>
+        </filters>
+        <filters>
+            <field>CommissionStatus__c</field>
+            <operation>equals</operation>
+            <value>Waiting on Finance Info</value>
+        </filters>
+        <label>Waiting on Finance Info Status on 6WP Op</label>
+        <queue>SalesIncentiveApprovalQueue</queue>
+    </listViews>
+    <listViews>
+        <fullName>WaitingonRepInfoStatuson6WPOpportunities</fullName>
+        <columns>NAME</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>RelatedOpportunityStatus__c</field>
+            <operation>equals</operation>
+            <value>6WP-Closed Won/Order Processed</value>
+        </filters>
+        <filters>
+            <field>CommissionStatus__c</field>
+            <operation>equals</operation>
+            <value>Waiting on Rep Info</value>
+        </filters>
+        <label>Waiting on Rep Info Status on 6WP Op</label>
+        <queue>SalesIncentiveApprovalQueue</queue>
+    </listViews>
+    <nameField>
+        <displayFormat>SIA-{000000}</displayFormat>
+        <label>Sales Incentive Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sales Incentive Approvals</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New</fullName>
+        <availability>online</availability>
+        <description>SFDC-2680 Incentive Owner lookup field should be pre-populated record creation</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/lightning/o/SalesIncentiveApproval__c/new?defaultFieldValues=
+Opportunity__c={!Opportunity.Id},
+IncentiveOwner__c={!User.Id}</url>
+    </webLinks>
+</CustomObject>

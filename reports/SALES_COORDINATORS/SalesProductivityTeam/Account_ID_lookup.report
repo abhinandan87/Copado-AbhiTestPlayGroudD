@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <columns>
+        <field>Account.PKIDAccount__c</field>
+    </columns>
+    <columns>
+        <field>Account.SNPCAPIQ__CapitalIQCompanyId_txt__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AMCOR GROUP GMBH,BD,IDEMITSU KOSAN CO LTD,HANWHA TOTAL PETROCHEMICAL CO LTD,Yes Energy,AltAir Paramount LLC,AÇUCAR E ALCOOL OSWALDO RIBEIRO DE MENDONÇA LTDA,SERGIO JAN MEDICI HAMBURGER - FAZENDA ZILDA,AGROPECUARIA JORGE FERREIRA LTDA,AGROPECUARIA SANTO ANTONIO DOS BARRETOS LTDA.,SLC AGRÍCOLA SA.,AGROSUISSE SERV. TEC. AGRO PEC. LTDA,AGROPECUARIA AFFONSO GIANSANTE LTDA,LANCHES RODOSERV LTDA.,ANDRE COELHO BARBOSA,ROBERTO ZANINI BORDIGNON,BAYER S.A.,BANCO NACL. DESENVOLV. ECONOMICO E SOCIAL - BNDES,CAMBUHY AGRÍCOLA LTDA.,LUIZ EDUARDO G. DA SILVA G. PEREIRA,CÍCERO ANTÔNIO ALMEIDA GONÇALVES,CLÁUDIO FRANCO,CLÓVIS JULIÃO ARROYO,CONFEDERAÇÃO DA AGRICULT. E PEC. DO BRASIL - CNA,COOPERATIVA DE CREDITO CREDICITRUS,DENIO MUNIA BENFATTI,DIRCEU DE ANDRADE,ESCOLA SUPERIOR DE AGRICULTURA LUIZ DE QUEIROZ,EMPRESA BRASILEIRA DE PESQUISA AGROPECUARIA,ETECCO EMPRESA TECNICA DE ESTUDOS CONSULT E CONST,FAZENDA PALMEIRAS LTDA,ALCEU ELIAS FELDMANN,FRANCISCO CARLOS FALAVIGNA,FUNDACAO BRADESCO,GL AGROPECUARIA LTDA,MARIA CONSTANCIA SEPE DE BIASI,MONICA JACINTHO DE BIASI,MERCK SHARP &amp; DOHME SAUDE ANIMAL LTDA,HUMBERTO DE ALMEIDA BARROS JÚNIOR,IHARABRAS SA INDUSTRIAS QUIMICAS,IND COM E REPRES DE PROD AGROPECUARIOS BOV LTDA,SILVIO CARVALHO DE ARAUJO,IVAN D APREMONT LIMA,LAGOA DA SERRA LTDA</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Account ID lookup 1</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

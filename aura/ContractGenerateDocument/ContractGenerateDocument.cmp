@@ -1,0 +1,21 @@
+<aura:component controller="ContractGenerateDocumentClass" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="recordId" type="String" />
+    <aura:attribute name="showError" type="Boolean" />
+    <aura:attribute name="errorMessage" type="String" />
+    <aura:attribute name="AccountID" type="String" />
+    <aura:attribute name="OppID" type="String" />
+    <aura:attribute name="RecordTypeName" type="String" />
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="quickActionName" type="String"/>
+    <aura:attribute name="wrapperClass" type="object"/>
+    
+    <aura:if isTrue="{!v.showError}">
+    	<div class="slds-notify slds-notify_toast slds-theme_error">
+            <span class="slds-assistive-text">error</span>
+            <div class="slds-notify__content">
+                <p class="slds-align_absolute-center">{!v.errorMessage}</p>                
+            </div>
+        </div>
+    </aura:if>
+    
+</aura:component>

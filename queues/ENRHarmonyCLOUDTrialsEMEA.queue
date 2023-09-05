@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>dl-emea-eng-trials@ihsmarkit.com</email>
+    <name>ENR_Harmony-CLOUDTrials_EMEA</name>
+    <queueMembers>
+        <users>
+            <user>karel.valouch@ihsmarkit.com</user>
+            <user>matthew.bax@ihsmarkit.com</user>
+            <user>nalin.vatte@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

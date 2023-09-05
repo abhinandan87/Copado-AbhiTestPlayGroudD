@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Price Increase Details</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Price Increase Details</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter Comments related to Price Increase --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract --></help>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+        <relationshipLabel><!-- Price Increase Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter Date when Letter Sent --></help>
+        <label><!-- Date Letter Sent --></label>
+        <name>DateLetterSent__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be Exempted From Increase If Applicable --></help>
+        <label><!-- Exemption From Increase If Applicable --></label>
+        <name>ExemptionFromIncreaseIfApplicable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Existing Annual Revenue --></help>
+        <label><!-- Existing Annual Revenue --></label>
+        <name>ExistingAnnualRevenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter % Increase --></help>
+        <label><!-- % Increase --></label>
+        <name>Increase__c</name>
+    </fields>
+    <fields>
+        <help><!-- Source System Name and Record ID --></help>
+        <label><!-- LegacyIDUnique --></label>
+        <name>LegacyIDUnique__c</name>
+    </fields>
+    <fields>
+        <help><!-- Record IDs from the legacy system --></help>
+        <label><!-- LegacyID --></label>
+        <name>LegacyID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of CRM system that this record has come from --></help>
+        <label><!-- LegacySystem --></label>
+        <name>LegacySystem__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Net Increase --></help>
+        <label><!-- Net Increase --></label>
+        <name>NetIncrease__c</name>
+    </fields>
+    <fields>
+        <help><!-- New Annual Revenue --></help>
+        <label><!-- New Annual Revenue --></label>
+        <name>NewAnnualRevenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether Price Increase Applied --></help>
+        <label><!-- Price Increase Applied --></label>
+        <name>PriceIncreaseApplied__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter Price Increase Effective Date --></help>
+        <label><!-- Price Increase Effective Date --></label>
+        <name>PriceIncreaseEffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Date Price Increase Letter Returned And Resent --></help>
+        <label><!-- Price Increase Letter Returned &amp; Resent --></label>
+        <name>PriceIncreaseLetterReturnedResent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Price Increase Locked In Date --></help>
+        <label><!-- Price Increase Locked In Date --></label>
+        <name>PriceIncreaseLockedInDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Price Increase Not Automatic --></help>
+        <label><!-- Price Increase (not automatic) --></label>
+        <name>PriceIncreaseNotAutomatic__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If &apos;Price Increase Applied&apos; = &apos;No&apos;, then &apos;Comments&apos; field is required. --></errorMessage>
+        <name>PriceIncreaseAppliedValidation</name>
+    </validationRules>
+</CustomObjectTranslation>

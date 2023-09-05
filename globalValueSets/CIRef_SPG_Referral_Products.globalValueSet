@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive: Advisory</fullName>
+        <default>false</default>
+        <label>Automotive: Advisory</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive: Market Reporting</fullName>
+        <default>false</default>
+        <label>Automotive: Market Reporting</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive: Planning Solutions</fullName>
+        <default>false</default>
+        <label>Automotive: Planning Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive: Polk Automotive Solutions</fullName>
+        <default>false</default>
+        <label>Automotive: Polk Automotive Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive: Vehicle Performance &amp; Compliance (VPAC)</fullName>
+        <default>false</default>
+        <label>Automotive: Vehicle Performance &amp; Compliance (VPAC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive: Powertrain Sales Forecast</fullName>
+        <default>false</default>
+        <label>Automotive: Powertrain Sales Forecast</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive: Powertrain Production Forecast</fullName>
+        <default>false</default>
+        <label>Automotive: Powertrain Production Forecast</label>
+    </customValue>
+    <customValue>
+        <fullName>CMS/Product Design</fullName>
+        <default>false</default>
+        <label>CMS/Product Design</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: AGRI - Agribusiness</fullName>
+        <default>false</default>
+        <label>ENR: AGRI - Agribusiness</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: AGRI Consulting - Agribusiness Consulting</fullName>
+        <default>false</default>
+        <label>ENR: AGRI Consulting - Agribusiness Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: CSG - Climate and Sustainability</fullName>
+        <default>false</default>
+        <label>ENR: CSG - Climate and Sustainability</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: CSG Consulting - Climate and Sustainability Consulting</fullName>
+        <default>false</default>
+        <label>ENR: CSG Consulting - Climate and Sustainability Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: OMDC Consulting - Oil, Midstream, Downstream and Chemicals Consulting</fullName>
+        <default>false</default>
+        <label>ENR: OMDC Consulting - Oil, Midstream, Downstream and Chemicals Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: OMDC - Oil, Midstream, Downstream and Chemicals</fullName>
+        <default>false</default>
+        <label>ENR: OMDC - Oil, Midstream, Downstream and Chemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: Upstream</fullName>
+        <default>false</default>
+        <label>ENR: Upstream</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: Upstream Consulting</fullName>
+        <default>false</default>
+        <label>ENR: Upstream Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>ESG CSA</fullName>
+        <default>false</default>
+        <label>ESG CSA</label>
+    </customValue>
+    <customValue>
+        <fullName>ESG Corporate Engagement (CSA)</fullName>
+        <default>false</default>
+        <label>ESG Corporate Engagement (CSA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Services</fullName>
+        <default>false</default>
+        <label>Financial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Credit &amp; Risk (Financial Risk Analytics)</fullName>
+        <default>false</default>
+        <label>FS: Credit &amp; Risk (Financial Risk Analytics)</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Data, Valuations &amp; Analytics (Pricing, Vals, Ref Data, Equities)</fullName>
+        <default>false</default>
+        <label>FS: Data, Valuations &amp; Analytics (Pricing, Vals, Ref Data, Equities)</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Markit Digital</fullName>
+        <default>false</default>
+        <label>FS: Markit Digital</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Network &amp; Reg - (Brokerage, Research, Sales &amp; Trading)</fullName>
+        <default>false</default>
+        <label>FS: Network &amp; Reg - (Brokerage, Research, Sales &amp; Trading)</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Network &amp; Reg (KYC, KY3P, Tax, Corp Actions)</fullName>
+        <default>false</default>
+        <label>FS: Network &amp; Reg (KYC, KY3P, Tax, Corp Actions)</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: RA&amp;SS - ECR (Economics, Country Risk, Industry, Supply Chain, PMI)</fullName>
+        <default>false</default>
+        <label>FS: RA&amp;SS - ECR (Economics/PMI, Risk, Industry, Supply Chain)</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: RA&amp;SS - Issuer Solutions (Investor Relations)</fullName>
+        <default>false</default>
+        <label>FS: RA&amp;SS - Issuer Solutions (Investor Relations)</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: RA&amp;SS - Maritime &amp; Trade (GTAS, MIRS)</fullName>
+        <default>false</default>
+        <label>FS: RA&amp;SS - Maritime, Trade &amp; Supply Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Solutions (Private Markets, iLEVEL, WSO, Debt Domain)</fullName>
+        <default>false</default>
+        <label>FS: Solutions (Private Markets, iLEVEL, WSO, Debt Domain)</label>
+    </customValue>
+    <customValue>
+        <fullName>Indices</fullName>
+        <default>false</default>
+        <label>Indices</label>
+    </customValue>
+    <customValue>
+        <fullName>Indices: ESG</fullName>
+        <default>false</default>
+        <label>Indices: ESG</label>
+    </customValue>
+    <customValue>
+        <fullName>Indices: General Interest</fullName>
+        <default>false</default>
+        <label>Indices: General Interest</label>
+    </customValue>
+    <customValue>
+        <fullName>MI</fullName>
+        <default>false</default>
+        <label>MI</label>
+    </customValue>
+    <customValue>
+        <fullName>MI: 451</fullName>
+        <default>false</default>
+        <label>MI: 451</label>
+    </customValue>
+    <customValue>
+        <fullName>MI: Capital IQ Pro</fullName>
+        <default>false</default>
+        <label>MI: Capital IQ Pro</label>
+    </customValue>
+    <customValue>
+        <fullName>MI: ChartIQ</fullName>
+        <default>false</default>
+        <label>MI: ChartIQ</label>
+    </customValue>
+    <customValue>
+        <fullName>MI: Credit Products</fullName>
+        <default>false</default>
+        <label>MI: Credit Products</label>
+    </customValue>
+    <customValue>
+        <fullName>MI: ESG Data/Trucost/Benchmarking (Desktop, Feeds, Reports)</fullName>
+        <default>false</default>
+        <label>MI: ESG Data/Trucost/Benchmarking (Desktop, Feeds, Reports)</label>
+    </customValue>
+    <customValue>
+        <fullName>MI: Feeds (non-Rating Xpress (RX))</fullName>
+        <default>false</default>
+        <label>MI: Feeds (non-Rating Xpress (RX))</label>
+    </customValue>
+    <customValue>
+        <fullName>MI: General Interest</fullName>
+        <default>false</default>
+        <label>MI: General Interest</label>
+    </customValue>
+    <customValue>
+        <fullName>MI: MMD</fullName>
+        <default>false</default>
+        <label>MI: MMD</label>
+    </customValue>
+    <customValue>
+        <fullName>MI: Panjiva</fullName>
+        <default>false</default>
+        <label>MI: Panjiva</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Agriculture</fullName>
+        <default>false</default>
+        <label>Platts: Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Americas Gas and Power</fullName>
+        <default>false</default>
+        <label>Platts: Americas Gas and Power</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Coal</fullName>
+        <default>false</default>
+        <label>Platts: Coal</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Crude</fullName>
+        <default>false</default>
+        <label>Platts: Crude</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Energy Transition</fullName>
+        <default>false</default>
+        <label>Platts: Energy Transition</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Euro Gas and Power</fullName>
+        <default>false</default>
+        <label>Platts: Euro Gas and Power</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: General Interest</fullName>
+        <default>false</default>
+        <label>Platts: General Interest</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Liquefied Natural Gas</fullName>
+        <default>false</default>
+        <label>Platts: Liquefied Natural Gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Metals</fullName>
+        <default>false</default>
+        <label>Platts: Metals</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Nuclear</fullName>
+        <default>false</default>
+        <label>Platts: Nuclear</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Oil</fullName>
+        <default>false</default>
+        <label>Platts: Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Petrochemicals</fullName>
+        <default>false</default>
+        <label>Platts: Petrochemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Refined</fullName>
+        <default>false</default>
+        <label>Platts: Refined</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Shipping</fullName>
+        <default>false</default>
+        <label>Platts: Shipping</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts: Steel</fullName>
+        <default>false</default>
+        <label>Platts: Steel</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Design: Engineering Workbench &amp; Standards</fullName>
+        <default>false</default>
+        <label>Product Design: Engineering Workbench &amp; Standards</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Design: Goldfire</fullName>
+        <default>false</default>
+        <label>Product Design: Goldfire</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Design: Haystack</fullName>
+        <default>false</default>
+        <label>Product Design: Haystack</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Design: Parts</fullName>
+        <default>false</default>
+        <label>Product Design: Parts</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Design: UK construction/Local</fullName>
+        <default>false</default>
+        <label>Product Design: UK construction/Local</label>
+    </customValue>
+    <customValue>
+        <fullName>Ratings</fullName>
+        <default>false</default>
+        <label>Ratings</label>
+    </customValue>
+    <customValue>
+        <fullName>Ratings: Credit Rating</fullName>
+        <default>false</default>
+        <label>Ratings: Credit Rating</label>
+    </customValue>
+    <customValue>
+        <fullName>Ratings: General Interest</fullName>
+        <default>false</default>
+        <label>Ratings: General Interest</label>
+    </customValue>
+    <customValue>
+        <fullName>Ratings: Second Party Opinion on Bonds (Green, Social, Sustainable)</fullName>
+        <default>false</default>
+        <label>Ratings: Second Party Opinion on Bonds (Green, Social, Sustainable)</label>
+    </customValue>
+    <customValue>
+        <fullName>Indices: Markit Indices</fullName>
+        <default>false</default>
+        <label>Indices: Markit Indices</label>
+    </customValue>
+    <customValue>
+        <fullName>CI</fullName>
+        <default>false</default>
+        <label>CI</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: Gas, Power, &amp; Climate Solutions (GPCS)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ENR: Gas, Power, &amp; Climate Solutions (GPCS)</label>
+    </customValue>
+    <customValue>
+        <fullName>ESG Benchmarking Services (CSA based services)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ESG Benchmarking Services (CSA based services)</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ENR: Other</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: Market Reporting &amp; Trading Solutions (MRTS)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ENR: Market Reporting &amp; Trading Solutions (MRTS)</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: Conferences &amp; Advisory Solutions (CAS)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ENR: Conferences &amp; Advisory Solutions (CAS)</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR: Refining, Chemicals &amp; Resource Solutions (RCRS)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ENR: Refining, Chemicals &amp; Resource Solutions (RCRS)</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Research, Advisory &amp; Specialty Solutions</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FS: Research, Advisory &amp; Specialty Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Network &amp; Regulatory Solutions</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FS: Network &amp; Regulatory Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Software Solutions</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FS: Software Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Market Intelligence</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Market Intelligence</label>
+    </customValue>
+    <customValue>
+        <fullName>Ratings: ESG Evaluation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ratings: ESG Evaluation</label>
+    </customValue>
+    <customValue>
+        <fullName>Platts</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Platts</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Markit Indices</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FS: Markit Indices</label>
+    </customValue>
+    <customValue>
+        <fullName>ENR</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ENR</label>
+    </customValue>
+    <customValue>
+        <fullName>FS: Data, Valuation &amp; Analytics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FS: Data, Valuation &amp; Analytics</label>
+    </customValue>
+    <description>US-3852551: Global picklist values for products for routing referrals.</description>
+    <masterLabel>SPG Referral Products</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

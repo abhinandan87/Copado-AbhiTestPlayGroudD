@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC1-3000 Sends reply to the user for inquiry about Markit Securities Finance (MSF).</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>MSF Lead Inquiry Response</name>
+    <style>none</style>
+    <subject>Your IHS Markit Customer Care Case {!Case.CaseNumber} - Interest in Markit Securities Finance</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for your inquiry about Markit Securities Finance (MSF). Your local MSF Account or Sales representative will be in contact with you as soon as possible.
+
+If you require any further assistance, please do not hesitate to  contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

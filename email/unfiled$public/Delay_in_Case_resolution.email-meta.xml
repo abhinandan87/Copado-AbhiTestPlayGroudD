@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Delay in Case resolution</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Delay in Case resolution</name>
+    <style>none</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Good day!
+
+This update is regarding the case {!Case.CaseNumber} you raised with us.
+
+It’s going to take some time to resolve the issue you have been facing. We are working proactively to provide you with a solution at the earliest.
+
+We will keep you posted on this. Thanks for your patience.
+
+Regards,
+{!Case.OwnerFullName}
+Salesforce Helpdesk</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

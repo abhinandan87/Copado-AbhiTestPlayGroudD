@@ -1,0 +1,15 @@
+Dear {!Contact.FirstName},
+<br>
+<br>
+Ref: {!Case.CaseNumber}
+<br>
+<br>
+We have received confirmation from the product team that the document has been successfully processed.
+<br>
+<br>
+If you have any questions or queries, please do not hesitate to <a href= "https://ihsmarkit.com/about/contact-us.html"> contact us</a>.
+<br>
+<br>
+Kind regards,<br>
+{!Case.OwnerFullName}<br>
+IHS Markit | Customer Care

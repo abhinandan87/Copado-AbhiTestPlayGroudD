@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>WorkOrder$Name</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Account</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$ActivityName__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>WorkOrder$TotalSeats__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$PrimaryInstructor__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>WorkOrder$PrimaryInstructor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>David Wagner,Travis Miller,Andres Martinez,Alex Andrade,Frankie Tse,Diviya Sangarkaranara,Sathyakala Muthukrishnan,Hung-Fai Tse,Elzette Truebody,Lana Simic,Eva-Christina Peterzens,Eunice Ooi,Jervin Wong,Nomi Malik,Noman Malik,Megan Fehn,Timothy Dulik</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Delivered</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$ActivityType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Customer Training</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>WorkOrder$EndDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total # of users trained</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Field_Service_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>WorkOrder$TotalSeats__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>WorkOrder$EndDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

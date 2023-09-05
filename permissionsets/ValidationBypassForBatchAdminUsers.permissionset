@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>ValidationByPassPermission</name>
+    </customPermissions>
+    <description>SFDC-3903 permission set for by passing validation rules and code validations. DO NOT ASSIGN WITHOUT APPROVAL FROM Anne/Uttam</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Validation Bypass For Batch Admin Users</label>
+</PermissionSet>

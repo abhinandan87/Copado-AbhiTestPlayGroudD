@@ -1,0 +1,1947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AccountAndContactAccountMismatch</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account And ContactAccount Mismatch</shortDescription>
+        <value>Selected Contact’s Account on Case should match the Case Account</value>
+    </labels>
+    <labels>
+        <fullName>AccountIdForContact</fullName>
+        <categories>SFDC-4232: Custom Label to store the Account Id for the New contact based on the Recipient Email Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountIdForContact</shortDescription>
+        <value>0014v00002P3I2WAAV</value>
+    </labels>
+    <labels>
+        <fullName>AccountOverviewDDPAttachId</fullName>
+        <categories>SFDC1-5228 Account Overview: Label to store record id of Attach Delivery option in Account Overview DocGen package.</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountOverviewDDPAttachId</shortDescription>
+        <value>a0f1B00000GuaOIQAZ</value>
+    </labels>
+    <labels>
+        <fullName>AccountOverviewDDPId</fullName>
+        <categories>5228 Account Overview: Label to store record id of Account Overview DocGen package.</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountOverviewDDPId</shortDescription>
+        <value>a0h1B00000Xkug5QAB</value>
+    </labels>
+    <labels>
+        <fullName>AccountOverviewDocGenDownload</fullName>
+        <categories>SFDC1-5228 Account Overview: Label to store record id of Download Delivery option in Account Overview DocGen package.</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountOverviewDDPDownloadId</shortDescription>
+        <value>a0f1B00000GuaOHQAZ</value>
+    </labels>
+    <labels>
+        <fullName>AccountRequiredForLead</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Required for Lead</shortDescription>
+        <value>Please Select Valid Account in Lead</value>
+    </labels>
+    <labels>
+        <fullName>AccountTypePlaceholder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Type Placeholder</shortDescription>
+        <value>Placeholder</value>
+    </labels>
+    <labels>
+        <fullName>AccountTypePlaceholderError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Type Placeholder Error</shortDescription>
+        <value>Lead cannot be converted against an unapproved Account.</value>
+    </labels>
+    <labels>
+        <fullName>AccountUnknown</fullName>
+        <categories>Lead Conversion</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Unknown</shortDescription>
+        <value>Account Unknown</value>
+    </labels>
+    <labels>
+        <fullName>AccountUnknownError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Unknown Error</shortDescription>
+        <value>Account in Lead is &quot;Unknown Account &quot;, Please Select Valid Account</value>
+    </labels>
+    <labels>
+        <fullName>ActivityRequiredForStage5NewBusiness</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ActivityRequiredForStage5NewBusiness</shortDescription>
+        <value>On Stage 5-Contracting opportunity must have an activity referenced to it.</value>
+    </labels>
+    <labels>
+        <fullName>AddEditProdMaxAddProductCount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Edit Prod Maximum Add Product Count</shortDescription>
+        <value>250</value>
+    </labels>
+    <labels>
+        <fullName>AddEditProdMaxLimitError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Edit Prod Maximum Limit Error</shortDescription>
+        <value>Maximum limit has been reached. Please save limited products at a time.</value>
+    </labels>
+    <labels>
+        <fullName>AddEditProdMaxOppyProductCount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Edit Prod Maximum Opportunity Product Count</shortDescription>
+        <value>350</value>
+    </labels>
+    <labels>
+        <fullName>AddEditProdMaxSaveProducts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Edit Prod Max Save Products in a Batch</shortDescription>
+        <value>80</value>
+    </labels>
+    <labels>
+        <fullName>AddEditProdMaxUpdateProducts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add Edit Prod Maximum Update Products</shortDescription>
+        <value>175</value>
+    </labels>
+    <labels>
+        <fullName>AddMasterAgreementExhibitErrorMsg</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AddMasterAgreementExhibitErrorMsg</shortDescription>
+        <value>Master Agreement Exhibit, of type &apos;Data&apos;, &apos;Software&apos; or &apos;Services&apos; is missing in accordance with the Contract Line Item(s).</value>
+    </labels>
+    <labels>
+        <fullName>AdminProfileId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System Admin Profile Id</shortDescription>
+        <value>00e0P000000JoNsQAK</value>
+    </labels>
+    <labels>
+        <fullName>AdminUser</fullName>
+        <categories>Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Admin User</shortDescription>
+        <value>SF Admin</value>
+    </labels>
+    <labels>
+        <fullName>AnywherePermissionSets</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AnywherePermissionSets</shortDescription>
+        <value>Quip</value>
+    </labels>
+    <labels>
+        <fullName>ArchiveEmailMessagesBatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ArchiveEmailMessagesBatchSize</shortDescription>
+        <value>100</value>
+    </labels>
+    <labels>
+        <fullName>ArchiveEmailMessagesBatchWhereClause</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ArchiveEmailMessagesBatchWhereClause</shortDescription>
+        <value>null</value>
+    </labels>
+    <labels>
+        <fullName>AutoRenewHasChangesOppyError</fullName>
+        <categories>Auto Renew error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AutoRenewHasChangesOppyError</shortDescription>
+        <value>You can edit only certain fields in an auto-renewal opportunity</value>
+    </labels>
+    <labels>
+        <fullName>AutoRenewOppyAccessError</fullName>
+        <categories>Auto Renew error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AutoRenewOppyAccessError</shortDescription>
+        <value>You are not allowed to edit this AutoRenewal Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>AutoRenewOppyProductError</fullName>
+        <categories>Auto Renew error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AutoRenewOppyProductError</shortDescription>
+        <value>You are not allowed to edit this AutoRenewal Opportunity Product</value>
+    </labels>
+    <labels>
+        <fullName>AutoRenewalAutoCloseBatchSize</fullName>
+        <categories>ScheduleBatchAutoRenewalAutoClose</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AutoRenewalAutoCloseBatchSize</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>AutomatedProcessUser</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AutomatedProcessUser</shortDescription>
+        <value>0050P000006dHLJQA2</value>
+    </labels>
+    <labels>
+        <fullName>BSLIErrorOnQuickActionOnCLI</fullName>
+        <categories>Billing Schedule Line Item</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BSLIErrorOnQuickActionOnCLI</shortDescription>
+        <value>You can not create New Variable Billing Line Item as Billing Period is not greater than the existing Variable Billing Line Item records. Please enter a greater Billing periods value.</value>
+    </labels>
+    <labels>
+        <fullName>BSLIErrorOnQuickActionOnCLIForStartDate</fullName>
+        <categories>Billing Schedule Line Item</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BSLIErrorOnQuickActionOnCLIForStartDate</shortDescription>
+        <value>You can not create New Variable Billing Line Item as Invoicing Month is not greater than the existing Variable Billing Line Item records. Please enter a greater Invoicing Month value.</value>
+    </labels>
+    <labels>
+        <fullName>BatchAdminUserName</fullName>
+        <categories>SFDC-3002 To store name of batch admin user</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Batch Admin User Name</shortDescription>
+        <value>Batch Admin</value>
+    </labels>
+    <labels>
+        <fullName>BatchErrorRecepient</fullName>
+        <categories>BatchErrors</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BatchErrorRecepient</shortDescription>
+        <value>paras.dhingra@ihsmarkit.com</value>
+    </labels>
+    <labels>
+        <fullName>BillingFrequencyError</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Billing Frequency Error</shortDescription>
+        <value>Billing Frequency is required</value>
+    </labels>
+    <labels>
+        <fullName>BudgetRangeError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Budget Range Error while converting to Opportunity</shortDescription>
+        <value>Budget Range is mandatory to convert the Lead to opportunity.
+Please select a Budget Range.</value>
+    </labels>
+    <labels>
+        <fullName>ByPassMeetingNotes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>By Pass Meeting Notes</shortDescription>
+        <value>Informa,Montagu</value>
+    </labels>
+    <labels>
+        <fullName>CCCustomerExperience</fullName>
+        <categories>Queue Name</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CC | Customer Experience Team</shortDescription>
+        <value>CCCustomerExperienceTeam</value>
+    </labels>
+    <labels>
+        <fullName>CLIStatus</fullName>
+        <categories>Status Values</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CLI Status for creating Implementation cases</shortDescription>
+        <value>New;Existing</value>
+    </labels>
+    <labels>
+        <fullName>CSDeliveryQueue</fullName>
+        <categories>Queue API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CSDeliveryQueue</shortDescription>
+        <value>CSDelivery</value>
+    </labels>
+    <labels>
+        <fullName>CalgaryLoadingGrpCategory</fullName>
+        <categories>Loading Group Category</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CalgaryLoadingGrpCategory</shortDescription>
+        <value>Calgary</value>
+    </labels>
+    <labels>
+        <fullName>CannotUpdateLostOpp</fullName>
+        <categories>OpportunityValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CannotUpdateLostOpp</shortDescription>
+        <value>Please note that you can no longer edit closed lost opportunity. If you need any assistance please contact Sales Operation.</value>
+    </labels>
+    <labels>
+        <fullName>CaseAccountMisMatchError</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseAccountMisMatchError</shortDescription>
+        <value>The contact is not associated with the account entered.  Please update with a related account.</value>
+    </labels>
+    <labels>
+        <fullName>CaseAccountNameForSalesSupport</fullName>
+        <categories>Case AccountName For SalesSupport</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseAccountNameForSalesSupport</shortDescription>
+        <value>IHS Markit</value>
+    </labels>
+    <labels>
+        <fullName>CaseClosed</fullName>
+        <categories>Case Status</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseClosed</shortDescription>
+        <value>Closed - Canceled,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit</value>
+    </labels>
+    <labels>
+        <fullName>CaseContactAndAccountMatchMSG</fullName>
+        <categories>Case Record Validation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseContactAndAccountMatchMSG</shortDescription>
+        <value>The Contact Name is not associated with the Account Name on related Contract, please correct either the Contact or Account Name. If both are correct, then please add the Contact to the Account.</value>
+    </labels>
+    <labels>
+        <fullName>CaseContractDuplicateCheck</fullName>
+        <categories>CaseContracts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseContractDuplicateCheck</shortDescription>
+        <value>Already there is an entry in the system with this case and contract. Cannot enter a duplicate record</value>
+    </labels>
+    <labels>
+        <fullName>CaseOpned</fullName>
+        <categories>Case Status</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseOpned</shortDescription>
+        <value>New,In Progress,Assigned,Re-opened</value>
+    </labels>
+    <labels>
+        <fullName>CaseOpportunityDuplicateCheck</fullName>
+        <categories>CaseOpportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseOpportunityDuplicateCheck</shortDescription>
+        <value>Already there is an entry in the system with this case and opportunity. Cannot enter a duplicate record.</value>
+    </labels>
+    <labels>
+        <fullName>CaseProductDuplicateCheck</fullName>
+        <categories>CaseProducts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseProductDuplicateCheck</shortDescription>
+        <value>Already there is an entry in the system with this case and product. Cannot enter a duplicate record</value>
+    </labels>
+    <labels>
+        <fullName>CaseProductMandatoryCheck</fullName>
+        <categories>CaseProducts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseProductMandatoryCheck</shortDescription>
+        <value>Either Product, Product Group or Product family values have to be populated</value>
+    </labels>
+    <labels>
+        <fullName>CaseUnknownAccountName</fullName>
+        <categories>Case Unknokwn Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseUnknownAccountName</shortDescription>
+        <value>Pending New Account</value>
+    </labels>
+    <labels>
+        <fullName>ChatButtonId</fullName>
+        <categories>Live Agent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Chat Button Id</shortDescription>
+        <value>5730P000000fxed</value>
+    </labels>
+    <labels>
+        <fullName>CloseStatusAccountContactMismatchValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CloseStatusAccountContactMismatchValidation</shortDescription>
+        <value>Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Closed - Canceled,Closed - No action required,Closed - Unable to reach Customer,Closed - Resolved</value>
+    </labels>
+    <labels>
+        <fullName>CloseStatusOnCCCaseUI</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CloseStatusOnCCCaseUI</shortDescription>
+        <value>Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Closed - Canceled,Closed - No action required,Closed - Unable to reach Customer,Closed - Resolved</value>
+    </labels>
+    <labels>
+        <fullName>ClosedCaseStatusValues</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ClosedCaseStatusValues</shortDescription>
+        <value>Closed - Canceled,Closed - Resolved,Closed - Referral,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Delete,Duplicate,Resolved/Completed,Resolved/No Response,Closed,Auto-Closed – No Action Taken,Validated,Validated PO Pending,Validated-POD Pending,Rejected,Canceled,Closed - Moved to Jira,Merged</value>
+    </labels>
+    <labels>
+        <fullName>ContactLastNameUnknown</fullName>
+        <categories>Contact Lastname Unknown</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact LastName Unknown</shortDescription>
+        <value>Unknown LastName</value>
+    </labels>
+    <labels>
+        <fullName>ContractAttachmentCreationRestrictionError</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Attachment Creation Restriction Error</shortDescription>
+        <value>You cannot create a contract attachment at stage 11</value>
+    </labels>
+    <labels>
+        <fullName>ContractAttachmentRestrictionError</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Attachment Edit Restriction Error</shortDescription>
+        <value>You cannot edit/delete a contract attachment at stage 11</value>
+    </labels>
+    <labels>
+        <fullName>ContractLineItemEditAccessPermissionSet</fullName>
+        <categories>PemissionSet</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContractLineItemEditAccessPermissionSet</shortDescription>
+        <value>ContractLineItemEditAccessFinancialServicesteam</value>
+    </labels>
+    <labels>
+        <fullName>ContractManagementTeamEmailAddress</fullName>
+        <categories>SFDC-4731: Label for storing the Contract Management Team Email Address</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContractManagementTeamEmailAddress</shortDescription>
+        <value>mk-contract.management@ihsmarkit.com</value>
+    </labels>
+    <labels>
+        <fullName>ContractNoIncreaseAllowed</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContractNoIncreaseAllowed</shortDescription>
+        <value>Originating Contract’s terms don’t allow price change of this Opportunity/subscription. Please reach out to Contract Management team if you believe this is incorrect. Alternatively, proceed with second option to amend Opportunity/subscription pricing (however, new contract will be required to close your Opportunity)</value>
+    </labels>
+    <labels>
+        <fullName>ContractOrderFormRecordTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContractOrderFormRecordTypeId</shortDescription>
+        <value>0120P000000kL4e</value>
+    </labels>
+    <labels>
+        <fullName>ContractShouldHaveAtLeastOneFile</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract should have at least one file</shortDescription>
+        <value>There should be at least one file uploaded for a contract attachment on or above stage 10 of a contract</value>
+    </labels>
+    <labels>
+        <fullName>CustomerCare</fullName>
+        <categories>Case Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Care</shortDescription>
+        <value>0120P000000kKaU</value>
+    </labels>
+    <labels>
+        <fullName>CustomerCareRecordtypeId</fullName>
+        <categories>Live Agent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Care Recordtype Id</shortDescription>
+        <value>0120P000000kKaU</value>
+    </labels>
+    <labels>
+        <fullName>CustomerExperienceTeam</fullName>
+        <categories>Queue</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Experience Team</shortDescription>
+        <value>00G4v000004wKWpEAM</value>
+    </labels>
+    <labels>
+        <fullName>DaysBeforePvtEventsNotificationBatch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DaysBeforePvtEventsNotificationBatch</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>DaysGapBetweenPvtEventBatches</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DaysGapBetweenPvtEventBatches</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>DefaultIHSQueue</fullName>
+        <categories>Case Assignment Rule Custom</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DefaultIHSQueue</shortDescription>
+        <value>CS | Chemical</value>
+    </labels>
+    <labels>
+        <fullName>DefaultLwcRecordTypeId</fullName>
+        <categories>Custom label to store Record type Id in LWC components for apex metadata</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DefaultLwcRecordTypeId</shortDescription>
+        <value>012000000000000AAA</value>
+    </labels>
+    <labels>
+        <fullName>DefaultMSERVQueue</fullName>
+        <categories>Case Assignment Rule Custom</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DefaultMSERVQueue</shortDescription>
+        <value>FM | DS Match</value>
+    </labels>
+    <labels>
+        <fullName>DefaultMarkitQueue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DefaultMarkitQueue</shortDescription>
+        <value>Accounts Receivable</value>
+    </labels>
+    <labels>
+        <fullName>DefaultQueueIHSImplCaseContinuation</fullName>
+        <categories>QueueName</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DefaultQueueIHSImplCaseContinuation</shortDescription>
+        <value>DeliveryALL</value>
+    </labels>
+    <labels>
+        <fullName>DefaultQueueIHSImplCaseTrials</fullName>
+        <categories>QueueName</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DefaultQueueIHSImplCaseTrials</shortDescription>
+        <value>DeliveryALL</value>
+    </labels>
+    <labels>
+        <fullName>DefaultQueueMarkitImplCase</fullName>
+        <categories>QueueName</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DefaultQueueMarkitImplCase</shortDescription>
+        <value>FMOnboarding</value>
+    </labels>
+    <labels>
+        <fullName>DeleteQueueID</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete Queue ID</shortDescription>
+        <value>00G0P000003BaA6UAK</value>
+    </labels>
+    <labels>
+        <fullName>DeliveryHelpdesk</fullName>
+        <categories>Product Group</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delivery Helpdesk</shortDescription>
+        <value>a044D000001ACnj</value>
+    </labels>
+    <labels>
+        <fullName>DistributionList1</fullName>
+        <categories>SurveyResponse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SFDC1-1895, SFDC1-8305: Distribution List 1</shortDescription>
+        <value>MK-CSSO-LEADS@ihsmarkit.com</value>
+    </labels>
+    <labels>
+        <fullName>DistributionList2</fullName>
+        <categories>SurveyResponse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SFDC1-1895, SFDC1-8305: Distribution List 2</shortDescription>
+        <value>CustomerCare_Global_Leadership@ihsmarkit.com</value>
+    </labels>
+    <labels>
+        <fullName>Division_Filter_Tooltip</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Division Filter Tooltip</shortDescription>
+        <value>Divisions are multi-select except for Sustainable1 which is single select.</value>
+    </labels>
+    <labels>
+        <fullName>Divisional_View_Summary_Tab_Footnote</fullName>
+        <categories>footnote</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used to inform users of differences in summary tab</shortDescription>
+        <value>ACV and NPS data for Sustainable1 is unavailable at this time.</value>
+    </labels>
+    <labels>
+        <fullName>DoNotFireSetupEventPE</fullName>
+        <categories>SFDC-2865: SFDC-2865: Set to TRUE to stop publishing SetupEvents__e platformevents.</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DoNotFireSetupEventPE</shortDescription>
+        <value>False</value>
+    </labels>
+    <labels>
+        <fullName>DuplicateQueueID</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Queue ID</shortDescription>
+        <value>00G0P000003BaA7UAK</value>
+    </labels>
+    <labels>
+        <fullName>DuplicateRelatedOpportunity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DuplicateRelatedOpportunity</shortDescription>
+        <value>Same event already exists on the opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Email2CaseUserId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email2CaseUserId</shortDescription>
+        <value>0050P000007Ozo4QAC</value>
+    </labels>
+    <labels>
+        <fullName>EmailAddressToNotifyArchival</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailAddressToNotifyArchival</shortDescription>
+        <value>amrender.singh@ihsmarkit.com</value>
+    </labels>
+    <labels>
+        <fullName>EmailBodyLink1</fullName>
+        <categories>External Email template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Body Link1</shortDescription>
+        <value>http://images.ihs.com/EloquaImages/clients/IHS/{089414d1-8eea-4e2d-9caf-d26d4220fa35}_empty.gif</value>
+    </labels>
+    <labels>
+        <fullName>EmailBodyLink2</fullName>
+        <categories>External Email template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Body Link2</shortDescription>
+        <value>http://images.ihs.com/EloquaImages/clients/IHS/%7B6f5884c6-7b8e-488b-88ad-94f2a7a75a3f%7D_ClientEmail_Template_Banner.png</value>
+    </labels>
+    <labels>
+        <fullName>EmailFooterAddress1</fullName>
+        <categories>External Email template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Footer Address1</shortDescription>
+        <value>4th floor Ropemaker Place, 25 Ropemaker Street, London EC2Y 9LY.</value>
+    </labels>
+    <labels>
+        <fullName>EmailFooterAddress2</fullName>
+        <categories>External Email template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Footer Address2</shortDescription>
+        <value>IHS Markit, The Capitol Building, Oldbury, Bracknell, Berkshire, RG12 8FZ, UK (company no. 00788737)</value>
+    </labels>
+    <labels>
+        <fullName>EmailFooterAddress3</fullName>
+        <categories>External Email template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Footer Address3</shortDescription>
+        <value>IHS Markit, 8 Marina View, #12-01 Asia Square Tower 1, Singapore 018960</value>
+    </labels>
+    <labels>
+        <fullName>EmailFooterLink1</fullName>
+        <categories>External Email template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Footer Link1</shortDescription>
+        <value>https://www.ihsmarkit.com/Legal/privacy.html</value>
+    </labels>
+    <labels>
+        <fullName>EmailFooterLink2</fullName>
+        <categories>External Email template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Footer Link2</shortDescription>
+        <value>http://www.markit.com/General/Terms-Of-Use</value>
+    </labels>
+    <labels>
+        <fullName>EmailFooterLink3</fullName>
+        <categories>External Email template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Footer Link3</shortDescription>
+        <value>http://www.markit.com/General/Disclaimer</value>
+    </labels>
+    <labels>
+        <fullName>EmailFooterLink4</fullName>
+        <categories>External Email template</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Footer Link4</shortDescription>
+        <value>http://www.markit.com/Contact-Us</value>
+    </labels>
+    <labels>
+        <fullName>EmailFromValue</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailFromValue</shortDescription>
+        <value>Email: support@markitserv.com</value>
+    </labels>
+    <labels>
+        <fullName>EmailFromValueMarkit</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailFromValueMarkit</shortDescription>
+        <value>Email: support@ihsmarkit.com</value>
+    </labels>
+    <labels>
+        <fullName>EmailMessageErrorMessage</fullName>
+        <categories>Email Message Deletion Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailMessageErrorMessage</shortDescription>
+        <value>You are not authorized to delete the email.</value>
+    </labels>
+    <labels>
+        <fullName>EmptyRequestedLegalEntityErrorMessage</fullName>
+        <categories>SFDC-4885: Store the error message for empty Requested Legal Entity on exception approval</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmptyRequestedLegalEntityErrorMessage</shortDescription>
+        <value>Requested Legal Entity cannot be Blank</value>
+    </labels>
+    <labels>
+        <fullName>EntitySubscriptionBatchSize</fullName>
+        <categories>Entity Subscription</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EntitySubscriptionBatchSize</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>ErrorAccountTeamMember</fullName>
+        <categories>Account, AccountTeamMember,AccountMethods</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ErrorAccountTeamMember</shortDescription>
+        <value>There is an error adding Account team member, please contact salesforce helpdesk for assistance</value>
+    </labels>
+    <labels>
+        <fullName>ErrorMessagePOD</fullName>
+        <categories>Pages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Message in Case Proof Of Delivery Attached</shortDescription>
+        <value>The related Contract does not have the Proof Of Delivery attached</value>
+    </labels>
+    <labels>
+        <fullName>ExceptionCheckboxLabel</fullName>
+        <categories>SFDC-4731: Label for exception checkbox on legal entity selection screen</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExceptionCheckboxLabel</shortDescription>
+        <value>Please check the list of all the Recommended Legal Entities above before checking this checkbox to proceed with Exception Approval process</value>
+    </labels>
+    <labels>
+        <fullName>ExceptionInformativeMessage</fullName>
+        <categories>SFDC-4731: Label for displaying the informative message when exception checkbox is checked</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExceptionInformativeMessage</shortDescription>
+        <value>You have chosen to not select the recommended legal entity. Please select all the products at once before proceeding for exception process. In order to select the legal entity of your choice, you have to go through the legal entity exception process.</value>
+    </labels>
+    <labels>
+        <fullName>ExcessiveContinuationNoticeLabel1</fullName>
+        <categories>SFDC1-5520 Excessive continuation Notice email template labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcessiveContinuationNoticeLabel1</shortDescription>
+        <value>This Notice of Excessive Continuation is being sent to you because one of your sales people has attested</value>
+    </labels>
+    <labels>
+        <fullName>ExcessiveContinuationNoticeLabel10</fullName>
+        <categories>SFDC1-5520 Excessive continuation Notice email template labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcessiveContinuationNoticeLabel10</shortDescription>
+        <value>&lt;br/&gt;Thank You &lt;br/&gt;Salesforce Administrative Team</value>
+    </labels>
+    <labels>
+        <fullName>ExcessiveContinuationNoticeLabel2</fullName>
+        <categories>SFDC1-5520 Excessive continuation Notice email template labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcessiveContinuationNoticeLabel2</shortDescription>
+        <value>that you approved a continuation letter that takes the client past 90 days in Total Continuation.</value>
+    </labels>
+    <labels>
+        <fullName>ExcessiveContinuationNoticeLabel3</fullName>
+        <categories>SFDC1-5520 Excessive continuation Notice email template labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcessiveContinuationNoticeLabel3</shortDescription>
+        <value>&lt;br/&gt; Sales Person :</value>
+    </labels>
+    <labels>
+        <fullName>ExcessiveContinuationNoticeLabel4</fullName>
+        <categories>SFDC1-5520 Excessive continuation Notice email template labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcessiveContinuationNoticeLabel4</shortDescription>
+        <value>&lt;br/&gt; Client :</value>
+    </labels>
+    <labels>
+        <fullName>ExcessiveContinuationNoticeLabel5</fullName>
+        <categories>SFDC1-5520 Excessive continuation Notice email template labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcessiveContinuationNoticeLabel5</shortDescription>
+        <value>&lt;br/&gt; Renewal Opportunity Name :</value>
+    </labels>
+    <labels>
+        <fullName>ExcessiveContinuationNoticeLabel6</fullName>
+        <categories>SFDC1-5520 Excessive continuation Notice email template labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcessiveContinuationNoticeLabel6</shortDescription>
+        <value>&lt;br/&gt; Renewal Opportunity Number:</value>
+    </labels>
+    <labels>
+        <fullName>ExcessiveContinuationNoticeLabel7</fullName>
+        <categories>SFDC1-5520 Excessive continuation Notice email template labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcessiveContinuationNoticeLabel7</shortDescription>
+        <value>&lt;br/&gt; Contract Being Extended :</value>
+    </labels>
+    <labels>
+        <fullName>ExcessiveContinuationNoticeLabel8</fullName>
+        <categories>SFDC1-5520 Excessive continuation Notice email template labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcessiveContinuationNoticeLabel8</shortDescription>
+        <value>&lt;br/&gt; Total Value Of the Contract :</value>
+    </labels>
+    <labels>
+        <fullName>ExcessiveContinuationNoticeLabel9</fullName>
+        <categories>SFDC1-5520 Excessive continuation Notice email template labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcessiveContinuationNoticeLabel9</shortDescription>
+        <value>&lt;br/&gt; Total Days of Continuation Granted :</value>
+    </labels>
+    <labels>
+        <fullName>ExcludeProfilesmasterAgreementExhibitCheck</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ExcludeProfilesmasterAgreementExhibitCheck</shortDescription>
+        <value>IHSMarkit Sales: User Support,IHSMarkit Contract Management,IHSMarkit System Admin,IHSMarkit System Admin: Product Master,System Administrator</value>
+    </labels>
+    <labels>
+        <fullName>FMCustomerCareQueueName</fullName>
+        <categories>ExecuteCaseAssignmentRules</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FM Customer Care Queue Name</shortDescription>
+        <value>FM | Customer Care</value>
+    </labels>
+    <labels>
+        <fullName>GDSA</fullName>
+        <categories>Case Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GDSA</shortDescription>
+        <value>0120P000000avMW</value>
+    </labels>
+    <labels>
+        <fullName>GRRSOnboardingQueue</fullName>
+        <categories>Queue</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GRRSOnboardingQueue</shortDescription>
+        <value>00G4v000004wLDo</value>
+    </labels>
+    <labels>
+        <fullName>GRRSProductGroup</fullName>
+        <categories>Product Group</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GRRSProductGroup</shortDescription>
+        <value>a064v00001Ul6g2AAB</value>
+    </labels>
+    <labels>
+        <fullName>GeneralServiceAccount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General Service Account</shortDescription>
+        <value>General Service Account</value>
+    </labels>
+    <labels>
+        <fullName>GeneralServiceAccountError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General Service Account Error</shortDescription>
+        <value>Account in Lead is &quot;General Service Account&quot;. Please select valid Account</value>
+    </labels>
+    <labels>
+        <fullName>GenerateDocumentError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generate Document Error</shortDescription>
+        <value>Please check the fast track field or select/populate the Master Agreement before proceeding.</value>
+    </labels>
+    <labels>
+        <fullName>GenerateDocumentErrorLegalEntity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generate Document Error for Legal Entity</shortDescription>
+        <value>Please contact legal team to manually generate documents for this legal entity.</value>
+    </labels>
+    <labels>
+        <fullName>GlobalAllianceFieldError</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Global Alliance Field Error</shortDescription>
+        <value>Please note that you can no longer edit 6WP opportunity or 6W Forecasting. If you need any assistance please contact Global Sales Operations</value>
+    </labels>
+    <labels>
+        <fullName>GlobalDeliveryEMEAADAndMQueue</fullName>
+        <categories>Queue API</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GlobalDeliveryEMEAADAndMQueue</shortDescription>
+        <value>GlobalDeliveryEMEAADAndM</value>
+    </labels>
+    <labels>
+        <fullName>IHSLoadingGrpCategory</fullName>
+        <categories>Loading Group Category</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IHSLoadingGrpCategory</shortDescription>
+        <value>IHS</value>
+    </labels>
+    <labels>
+        <fullName>IHSMarkitCustomerCareQueue</fullName>
+        <categories>IHS Markit Queue</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IHSMarkitCustomerCareQueue</shortDescription>
+        <value>CC | Market Intelligence</value>
+    </labels>
+    <labels>
+        <fullName>IHSMarkitDomains</fullName>
+        <categories>SendMeetingNotes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IHSMarkitDomains</shortDescription>
+        <value>ihsmarkit.com,markit.com,mserv.com,ipreo.com,polk.com,ihs.com</value>
+    </labels>
+    <labels>
+        <fullName>IHSTriageDefaultQueue</fullName>
+        <categories>Case Assignment Rule Custom</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IHSTriageDefaultQueue</shortDescription>
+        <value>CC | Market Intelligence</value>
+    </labels>
+    <labels>
+        <fullName>IndianLevyMessage</fullName>
+        <categories>Warning Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Indian Levy Message</shortDescription>
+        <value>Indian Levy charge of 2.0408% will be applicable to this product</value>
+    </labels>
+    <labels>
+        <fullName>IndianLevyTax</fullName>
+        <categories>Tax</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IndianLevyTax</shortDescription>
+        <value>2.0408</value>
+    </labels>
+    <labels>
+        <fullName>InnerYearOppProdValidationMsg</fullName>
+        <categories>OpportunityProductValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>InnerYearOppProdValidationMsg</shortDescription>
+        <value>You are not authorized to update Opportunity Product values.</value>
+    </labels>
+    <labels>
+        <fullName>InnerYearWhereClause</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>InnerYearWhereClause</shortDescription>
+        <value>WHERE Account.Status__c = &apos;Active&apos; AND RecordType.Name = &apos;Inner Year&apos;
+AND ((BillToAddress__c = null AND (BillToCountryNew__c != null AND BillToCountryNew__c != &apos;zzz_DivestedData&apos; AND BillToCity__c != null AND BillToStreet__c != null))
+OR (ShipToAddress__c = null AND ShipToCountryNew__c != null AND ShipToCountryNew__c != &apos;zzz_DivestedData&apos; AND ShipToCity__c != null AND ShipToStreet__c != null))</value>
+    </labels>
+    <labels>
+        <fullName>InnerYearWithChange</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>InnerYearWithChange</shortDescription>
+        <value>This option is not yet available. Please reach out to Sales Coordinators or Sales Operations for assistance</value>
+    </labels>
+    <labels>
+        <fullName>InternalAccountOnCaseConfirmation</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>InternalAccountOnCaseConfirmation</shortDescription>
+        <value>Please check the Contact Validation check box field to confirm that the account and the contact for the case are internal.</value>
+    </labels>
+    <labels>
+        <fullName>JTLSuppliedEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JTLSuppliedEmail</shortDescription>
+        <value>noreply_igl@ihsmarkit.com</value>
+    </labels>
+    <labels>
+        <fullName>JiraUrl</fullName>
+        <categories>Url</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Jira Url</shortDescription>
+        <value>https://ihsmarkitcrm.atlassian.net/browse/</value>
+    </labels>
+    <labels>
+        <fullName>LMTLeadQueue</fullName>
+        <categories>LeadTimeEnhancement</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LMTLeadQueue</shortDescription>
+        <value>00G1B000004YENSUA4</value>
+    </labels>
+    <labels>
+        <fullName>LSNPermissionSet</fullName>
+        <categories>LinkedInSalesNavigator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LSNPermissionSet</shortDescription>
+        <value>LinkedInSalesNavigator</value>
+    </labels>
+    <labels>
+        <fullName>LSNTabLabel</fullName>
+        <categories>LinkedInSalesNavigator</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LSNTabLabel</shortDescription>
+        <value>LinkedIn Sales Navigator</value>
+    </labels>
+    <labels>
+        <fullName>LeadArchived</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Archived</shortDescription>
+        <value>Lead Already in Archived status</value>
+    </labels>
+    <labels>
+        <fullName>LeadInformationReport</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Information Report</shortDescription>
+        <value>00O0P000003p3Ii</value>
+    </labels>
+    <labels>
+        <fullName>LeadNonConvertable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Non Convertable</shortDescription>
+        <value>Disqualified</value>
+    </labels>
+    <labels>
+        <fullName>LegalEntityError</fullName>
+        <categories>Add Products, Edit Products</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LegalEntityError</shortDescription>
+        <value>Changing legal entity will delete all active products which are not related to new legal entity.
+
+Are sure you want to continue ?</value>
+    </labels>
+    <labels>
+        <fullName>LegalEntityErrorOnContract</fullName>
+        <categories>Contract</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LegalEntityErrorOnContract</shortDescription>
+        <value>IHS Markit Legal Entity Selected is not available for this Contract Record Type</value>
+    </labels>
+    <labels>
+        <fullName>LicenseTypeEnterpriseMessage</fullName>
+        <categories>Add Products</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LicenseTypeEnterpriseMessage</shortDescription>
+        <value>Delivery will grant access to all the active users on the account unless otherwise specified in the &quot;Special Shipping Instructions&quot; section in Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>LicenseTypeGeneralMessage</fullName>
+        <categories>Add Products</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LicenseTypeGeneralMessage</shortDescription>
+        <value>Number of users must be listed in the Concurrent Users/Seats field.</value>
+    </labels>
+    <labels>
+        <fullName>LicenseTypeMissingError</fullName>
+        <categories>Add Products</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LicenseTypeMissingError</shortDescription>
+        <value>Please select a valid license type</value>
+    </labels>
+    <labels>
+        <fullName>LineItemDatesOutOfRangeError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Line Item Dates out of range Error</shortDescription>
+        <value>One or more of the lines is outside of the Date Range with respect to opportunity.</value>
+    </labels>
+    <labels>
+        <fullName>LiveAgentDeploymentId</fullName>
+        <categories>Live Agent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Agent Deployment Id</shortDescription>
+        <value>5720P000000fxd1</value>
+    </labels>
+    <labels>
+        <fullName>LiveAgentDeploymentJS</fullName>
+        <categories>Live Agent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Agent Deployment JS</shortDescription>
+        <value>https://c.la4-c2-phx.salesforceliveagent.com/content/g/js/44.0/deployment.js</value>
+    </labels>
+    <labels>
+        <fullName>LiveAgentSiteURL</fullName>
+        <categories>Live Agent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Live Agent Site URL</shortDescription>
+        <value>https://ihsmarkit.secure.force.com/customers</value>
+    </labels>
+    <labels>
+        <fullName>LongRunningSessionCriteria</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LongRunningSessionCriteria</shortDescription>
+        <value>(&apos;UI&apos;, &apos;Aura&apos;)</value>
+    </labels>
+    <labels>
+        <fullName>MSERVTriageDefaultQueue</fullName>
+        <categories>Case Assignment Rule Custom</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSERVTriageDefaultQueue</shortDescription>
+        <value>FM | MSERV</value>
+    </labels>
+    <labels>
+        <fullName>MarkitLoadingGrpCategory</fullName>
+        <categories>Loading Group Category</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MarkitLoadingGrpCategory</shortDescription>
+        <value>Markit</value>
+    </labels>
+    <labels>
+        <fullName>MarkitServLegalEntities</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MarkitServ Legal Entities</shortDescription>
+        <value>Option Computers Ltd, MarkitSERV FX Limited, MarkitSERV LLC, MarkitSERV Ltd</value>
+    </labels>
+    <labels>
+        <fullName>MasterAgrTypeForMAE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MasterAgrTypeForMAE</shortDescription>
+        <value>IHS Markit Master Agreement</value>
+    </labels>
+    <labels>
+        <fullName>MasterAgreementExhibitContractStages</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MasterAgreementExhibitContractStages</shortDescription>
+        <value>ReadyForProcessing</value>
+    </labels>
+    <labels>
+        <fullName>MigrationSwitchOffCampaignInfluence</fullName>
+        <categories>Polk Migration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MigrationSwitchOffCampaignInfluence</shortDescription>
+        <value>FALSE</value>
+    </labels>
+    <labels>
+        <fullName>MigrationSwitchOffLogic</fullName>
+        <categories>Migration Only</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MigrationSwitchOffLogic</shortDescription>
+        <value>FALSE</value>
+    </labels>
+    <labels>
+        <fullName>MigrationSwitchOffReopenCases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MigrationSwitchOffReopenCases</shortDescription>
+        <value>FALSE</value>
+    </labels>
+    <labels>
+        <fullName>MigrationSwitchOppyProducts</fullName>
+        <categories>Migration Only</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MigrationSwitchOppyProducts</shortDescription>
+        <value>FALSE</value>
+    </labels>
+    <labels>
+        <fullName>MissingOriginatingContract</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MissingOriginatingContract</shortDescription>
+        <value>Originating Contract is missing on this Renewal Opportunity. Please reach out to Sales Coordinators or Sales Operations to populate this before proceeding further</value>
+    </labels>
+    <labels>
+        <fullName>MultiSelectInstructions</fullName>
+        <categories>WRF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultiSelect Instructions</shortDescription>
+        <value>Make multiple selections by holding the shift ↑ key and clicking or select all by using Ctrl + A (Steuerung + A).</value>
+    </labels>
+    <labels>
+        <fullName>NegativeSalesPriceError</fullName>
+        <categories>OpportunityProducts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Negative opportunity sales price error</shortDescription>
+        <value>One or more products have negative sales price. Please lower discount or update list price</value>
+    </labels>
+    <labels>
+        <fullName>NewAccountCreationMaintenance</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewAccountCreationMaintenance</shortDescription>
+        <value>https://spglobal.service-now.com/spg?id=sc_cat_item&amp;sys_id=b97248b01b6e1d14966da977bc4bcb13</value>
+    </labels>
+    <labels>
+        <fullName>NewBusinessWhereClause</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewBusinessWhereClause</shortDescription>
+        <value>WHERE Account.Status__c = &apos;Active&apos; AND RecordType.Name = &apos;New Business&apos; AND (BillToAddress__c = null OR ShipToAddress__c = null)</value>
+    </labels>
+    <labels>
+        <fullName>NewUserContactAccount</fullName>
+        <categories>SFDC1-9382 New User Contact Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New User Contact Account</shortDescription>
+        <value>IHS Markit Limited</value>
+    </labels>
+    <labels>
+        <fullName>NewUserContactAccountType</fullName>
+        <categories>SFDC1-9382 New User Contact Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New User Contact Account Type</shortDescription>
+        <value>Place Holder - IHS Markit Internal Employees</value>
+    </labels>
+    <labels>
+        <fullName>NoMoreProductsToCreateDeliveryCases</fullName>
+        <categories>Delivery, Case, Order Management Delivery Helpdesk</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoMoreProductsToCreateDeliveryCases</shortDescription>
+        <value>There are no products eligible for this case type</value>
+    </labels>
+    <labels>
+        <fullName>NoOPSforContractStartDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No OPS for Contract Start Date</shortDescription>
+        <value>Product Schedule is not available on selected Products for Contract Dates. Please select valid Products or check Contract Dates on Opportunity.</value>
+    </labels>
+    <labels>
+        <fullName>NumberOfDaysThreshold</fullName>
+        <categories>Entity Subscription</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NumberOfDaysThreshold</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>OMCaseStatus</fullName>
+        <categories>Status</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OM Case Status</shortDescription>
+        <value>In Progress,Pending Second Review</value>
+    </labels>
+    <labels>
+        <fullName>OffsetLimitError</fullName>
+        <categories>ProductSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OffsetLimitError</shortDescription>
+        <value>You have reached the limit of loading maximum products in a single search. Please update filter criteria to get more targeted results.</value>
+    </labels>
+    <labels>
+        <fullName>OldOpportunityOwnerNewRole</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OldOpportunityOwnerNewRole</shortDescription>
+        <value>Sales Operation</value>
+    </labels>
+    <labels>
+        <fullName>OnboardingCaseCreationValidationError</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Onboarding Case Creation Validation Error</shortDescription>
+        <value>Onboarding Case Required can be checked only when Contract is of Order form type</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityClosedStatus</fullName>
+        <categories>OpportunityValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityClosedStatus</shortDescription>
+        <value>6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder,6L-Closed Lost,6L-Renewal Lost,6L-Forecasting Placeholder,6WP-Closed Won/Order Processed</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityContactRoleMissing</fullName>
+        <categories>OpportunityValidationError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityContactRoleMissing</shortDescription>
+        <value>The opportunity does not have decision-making contacts (Decision Maker, Economic Buyer, Economic Decision Maker, Evaluator, and Executive Sponsor). Please populate the appropriate contact role before proceeding further.</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityContactRoleValues</fullName>
+        <categories>OpportunityValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityContactRoleValues</shortDescription>
+        <value>Decision Maker,Economic Buyer,Economic Decision Maker,Evaluator,Executive Sponsor</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityDeleteDenial</fullName>
+        <categories>Opportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityDeleteDenial</shortDescription>
+        <value>You are not authorized to delete opportunities</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityEditAccessError</fullName>
+        <categories>OpportunityProducts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityEditAccessError</shortDescription>
+        <value>You do not have access to edit products on this opportunity</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityGenericError</fullName>
+        <categories>Opportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityGenericError</shortDescription>
+        <value>Something gone wrong during opportunity update. Please reach out to salesforce helpdesk.</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityNewLabel</fullName>
+        <categories>OpportunityNewButtonOverride</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityNewLabel</shortDescription>
+        <value>NEW-</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityOverrideWarningBackButton</fullName>
+        <categories>Opportunity Override Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Override Warning Back Button</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityOverrideWarningLabel</fullName>
+        <categories>Opportunity Override Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Override Warning Label</shortDescription>
+        <value>Warning</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityOverrideWarningMessage</fullName>
+        <categories>Opportunity Override Page</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Override Warning Message</shortDescription>
+        <value>Opportunities can only be created from a contact record or upon lead conversion. 
+
+Please navigate to the Account you want to create the opportunity on and create it there.</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityPrimaryContactValidationError</fullName>
+        <categories>OpportunityValidationError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Primary Contact Validation Error</shortDescription>
+        <value>Primary Contact required for the Opportunity.</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityRenewalLabel</fullName>
+        <categories>OpportunityNewButtonOverride</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpportunityRenewalLabel</shortDescription>
+        <value>RENEWAL-</value>
+    </labels>
+    <labels>
+        <fullName>OpptyChannelPartnerError</fullName>
+        <categories>Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpptyChannelPartnerError</shortDescription>
+        <value>Channel Manager required on the Opportunity Team</value>
+    </labels>
+    <labels>
+        <fullName>OpptyOverlayAmountValidationMsg</fullName>
+        <categories>Opportunity Split</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Oppty Overlay Amount Validation Msg</shortDescription>
+        <value>Overlay must be total 100% for an Opportunity Split.</value>
+    </labels>
+    <labels>
+        <fullName>OpptyPrimaryContactBatchEmail</fullName>
+        <categories>SFDC1-5228 Account Overview: Label to store admin email id to send BatchUpdateOpportunityPrimaryContact batch success report.</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpptyPrimaryContactBatchEmail</shortDescription>
+        <value>uttam.arya@ihsmarkit.com</value>
+    </labels>
+    <labels>
+        <fullName>OpptyPrimaryContactBatchSize</fullName>
+        <categories>SFDC1-5228 Account Overview: Label to store scope size of BatchUpdateOpportunityPrimaryContact batch execution.</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpptyPrimaryContactBatchSize</shortDescription>
+        <value>20</value>
+    </labels>
+    <labels>
+        <fullName>Oppy6WStages</fullName>
+        <categories>Oppty Stages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Oppy6WStages</shortDescription>
+        <value>6W-Closed Won,6W-Renewal Won,6WP-Closed Won/Order Processed</value>
+    </labels>
+    <labels>
+        <fullName>OppyAtRiskStatusMsgOnContract</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppyAtRiskStatusMsgOnContract</shortDescription>
+        <value>Please update the Status on the Opportunity at Risk record before setting the Contract to Ready for Processing.</value>
+    </labels>
+    <labels>
+        <fullName>OppyAtRiskStatusMsgOnOpp</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppyAtRiskStatusMsgOnOpp</shortDescription>
+        <value>Please update the Status on the Opportunity at Risk record before setting this Opportunity to Closed</value>
+    </labels>
+    <labels>
+        <fullName>OppyIsNotAutoRenewal</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppyIsNotAutoRenewal</shortDescription>
+        <value>Changes/Amendments are already allowed on this Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>OppyProductQuantityError</fullName>
+        <categories>Opportunity Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppyProductQuantityError</shortDescription>
+        <value>To update quantity please use edit products page.</value>
+    </labels>
+    <labels>
+        <fullName>OppyisAlreadyTagged</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppyisAlreadyTagged</shortDescription>
+        <value>Opportunity is already tagged as Auto renewal with change. Changes/Amendments are allowed</value>
+    </labels>
+    <labels>
+        <fullName>OrderManagementConsultingQueueId</fullName>
+        <categories>Order Management Cases</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrderManagementConsultingQueueId</shortDescription>
+        <value>00G1B000004YDmCUAW</value>
+    </labels>
+    <labels>
+        <fullName>OrderManagementDeliveryHelpDesk</fullName>
+        <categories>Case Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Management/Delivery Help Desk</shortDescription>
+        <value>0120P000000R6Km</value>
+    </labels>
+    <labels>
+        <fullName>OrderManagementQueueId</fullName>
+        <categories>Order Management Cases</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrderManagementQueueId</shortDescription>
+        <value>00G1B000004OF5NUAW</value>
+    </labels>
+    <labels>
+        <fullName>OrderMgmtHelpdesk</fullName>
+        <categories>Product Group</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Mgmt. Helpdesk</shortDescription>
+        <value>a044D000001ACno</value>
+    </labels>
+    <labels>
+        <fullName>OrganizationId</fullName>
+        <categories>Live Agent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Organization Id</shortDescription>
+        <value>00D780000000Maq</value>
+    </labels>
+    <labels>
+        <fullName>OriginatingContractNotValidated</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OriginatingContractNotValidated</shortDescription>
+        <value>Originating Contract of this Renewal Opportunity is not Active/Validated. Please reach out to Contract Management team to rectify Contract before proceeding further</value>
+    </labels>
+    <labels>
+        <fullName>PortalAccountID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PortalAccountID</shortDescription>
+        <value>001x000xxx35tPN</value>
+    </labels>
+    <labels>
+        <fullName>PreChatInitURL</fullName>
+        <categories>Live Agent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pre Chat Init URL</shortDescription>
+        <value>https://d.la4-c2-phx.salesforceliveagent.com/chat</value>
+    </labels>
+    <labels>
+        <fullName>PreChatJSURL</fullName>
+        <categories>Live Agent</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pre Chat JS URL</shortDescription>
+        <value>https://c.la4-c2-phx.salesforceliveagent.com/content/g/js/44.0/prechat.js</value>
+    </labels>
+    <labels>
+        <fullName>PriceChangeFirstOption</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PriceChangeFirstOption</shortDescription>
+        <value>Existing Product Price change only– as allowed by/stated on existing signed contract. No new Contract paperwork will be required to close win the opportunity</value>
+    </labels>
+    <labels>
+        <fullName>PriceChangeSecondOption</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PriceChangeSecondOption</shortDescription>
+        <value>Change Products, Pricing and/or other terms of existing contract. New Contract paperwork will be required to close win this opportunity</value>
+    </labels>
+    <labels>
+        <fullName>ProRationError</fullName>
+        <categories>Edit Products, Opportunity Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProRationError</shortDescription>
+        <value>Disabled if opportunity does not have contract dates or a subscription product attached to it</value>
+    </labels>
+    <labels>
+        <fullName>ProductLoadError</fullName>
+        <categories>ProductSearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProductLoadError</shortDescription>
+        <value>No more products to load. Please change your search criteria if you don&apos;t find what you are looking for.</value>
+    </labels>
+    <labels>
+        <fullName>ProductSelectionInboundEmailAddress</fullName>
+        <categories>Product Selection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Selection Inbound Email Address</shortDescription>
+        <value>exceptionapprovalprocesstosalesforce@3t11f1c0q54pqy7udy9bxon35u68r5d3exrwoirwpuwln8s1o.0p-dfwduac.na148.apex.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>Production_Organization_Id</fullName>
+        <categories>OrgId</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Production Organization Id</shortDescription>
+        <value>00D780000000Maq</value>
+    </labels>
+    <labels>
+        <fullName>PvtEventBellNotificationSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PvtEventBellNotificationSize</shortDescription>
+        <value>400</value>
+    </labels>
+    <labels>
+        <fullName>PvtEventNotificationBody</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PvtEventNotificationBody</shortDescription>
+        <value>Your personal appointments from the last week and before, will be deleted from the calendar by the end of this week. Click here to review.</value>
+    </labels>
+    <labels>
+        <fullName>PvtEventNotificationTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PvtEventNotificationTitle</shortDescription>
+        <value>Personal appointments deletion reminder!</value>
+    </labels>
+    <labels>
+        <fullName>PvtEventsReportName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PvtEventsReportName</shortDescription>
+        <value>MyOldPersonalAppointments</value>
+    </labels>
+    <labels>
+        <fullName>RecommendedLegalEntityHeader</fullName>
+        <categories>Product Selection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Recommended Legal Entity Header</shortDescription>
+        <value>Please select from the below Recommended Legal Entity(ies).</value>
+    </labels>
+    <labels>
+        <fullName>RecommendedLegalEntityNote</fullName>
+        <categories>Product Selection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Recommended Legal Entity Note</shortDescription>
+        <value>Note: There might be more than one Recommended Legal Entity(ies).</value>
+    </labels>
+    <labels>
+        <fullName>RenewalWhereClause</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RenewalWhereClause</shortDescription>
+        <value>WHERE Account.Status__c = &apos;Active&apos; AND RecordType.Name = &apos;Renewal&apos;
+AND ((BillToAddress__c = null AND (BillToCountryNew__c != null AND BillToCountryNew__c != &apos;zzz_DivestedData&apos; AND BillToCity__c != null AND BillToStreet__c != null))
+OR (ShipToAddress__c = null AND ShipToCountryNew__c != null AND ShipToCountryNew__c != &apos;zzz_DivestedData&apos; AND ShipToCity__c != null AND ShipToStreet__c != null))</value>
+    </labels>
+    <labels>
+        <fullName>Retail</fullName>
+        <categories>Product Group</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Retail</shortDescription>
+        <value>a060P00000kCjQM</value>
+    </labels>
+    <labels>
+        <fullName>RunCustomCaseAssignmentRule</fullName>
+        <categories>Case Assignment Rule Custom</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RunCustomCaseAssignmentRule</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>RunMasterAgreementExhibitCheck</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RunMasterAgreementExhibitCheck</shortDescription>
+        <value>TRUE</value>
+    </labels>
+    <labels>
+        <fullName>RunSetComplianceExceptionTrigger</fullName>
+        <categories>Flag</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RunSetComplianceExceptionTrigger</shortDescription>
+        <value>TRUE</value>
+    </labels>
+    <labels>
+        <fullName>SAPAutoRenewal</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SAPAutoRenewal</shortDescription>
+        <value>Contractual price changes of existing products are managed by SAP Pricing Operations team. Please reach out to Contract Management team if you believe this is incorrect. Alternatively, proceed with second option to amend Opportunity/subscription pricing (however, new contract will be required to close your Opportunity)</value>
+    </labels>
+    <labels>
+        <fullName>SDRLeadQueue</fullName>
+        <categories>LeadTimeEnhancement</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SDRLeadQueue</shortDescription>
+        <value>00G1B000004YHWOUA4,00G4v000004wJRnEAM,00G1B000004OJB9UAO,00G1B000004OJBAUA4,00G1B000004OJBBUA4,00G1B000004OJBFUA4,00G1B000004OJBGUA4,00G1B000004OJBHUA4,00G1B000004YHWTUA4,00G1B000004YHWYUA4,00G4v000003Ye2LEAS,00G4v000004wJsFEAU</value>
+    </labels>
+    <labels>
+        <fullName>SFAdminId</fullName>
+        <categories>User Id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SF Admin Id</shortDescription>
+        <value>0050P000007Ozo4QAC</value>
+    </labels>
+    <labels>
+        <fullName>SalesCannotUpdateBillToShipToFields</fullName>
+        <categories>OpportunityValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SalesCannotUpdateBillToShipToFields</shortDescription>
+        <value>Please note that you can&apos;t update BillTo and ShipTo fields on opportunity. If you need any assistance please contact Global Sales Operations.</value>
+    </labels>
+    <labels>
+        <fullName>SalesCannotUpdateLostRenewalOpp</fullName>
+        <categories>OpportunityValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SalesCannotUpdateLostRenewalOpp</shortDescription>
+        <value>Please note that you can no longer edit 6L opportunity. If you need any assistance please contact Global Sales Operations.</value>
+    </labels>
+    <labels>
+        <fullName>SalesClaimQueueId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SalesClaimQueueId</shortDescription>
+        <value>00G0P000003gKm4</value>
+    </labels>
+    <labels>
+        <fullName>SalesIncentiveApprovalComment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Incentive Approval Comment</shortDescription>
+        <value>Submitted For Approval</value>
+    </labels>
+    <labels>
+        <fullName>SalesRepLeadQueue</fullName>
+        <categories>LeadTimeEnhancement</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SalesRepLeadQueue</shortDescription>
+        <value>00G1B000004YHWOUA4,00G4v000004wJRnEAM,00G1B000004OJB9UAO,00G1B000004OJBAUA4,00G1B000004OJBBUA4,00G1B000004OJBFUA4,00G1B000004OJBGUA4,00G1B000004OJBHUA4,00G1B000004YHWTUA4,00G1B000004YHWYUA4,00G4v000003Ye2LEAS,00G4v000004wJsFEAU,00G1B000004OLELUA4,00G1B000004YENSUA4,00G0P000003wxX7UAI,00G0P000003wxX8UAI,00G4v000004wJsKEAU,00G1B000004YGhtUAG</value>
+    </labels>
+    <labels>
+        <fullName>SalesforceBaseURL</fullName>
+        <categories>SFDC-4232: Custom Label to store the Salesforce Base URL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SalesforceBaseURL</shortDescription>
+        <value>https://ihsmarkit.my.salesforce.com/</value>
+    </labels>
+    <labels>
+        <fullName>SalesforceHelpId</fullName>
+        <categories>SFDC1-683 label to store 18 digit record type id for Salesforce Help record type for case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SalesforceHelpId</shortDescription>
+        <value>0120P000000kKtdQAE</value>
+    </labels>
+    <labels>
+        <fullName>StageNamestoIgnoreForOpportunityUpdatesForSalesops</fullName>
+        <categories>SFDC1-9837: Stage Names to ignore for OpportunityUpdatesForSalesops Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StageNamestoIgnoreForOpportunityUpdatesForSalesops</shortDescription>
+        <value>6L-Renewal Lost,6W-Renewal Won,6W-Closed Won,6WP-Closed Won/Order Processed,6L-Closed Lost</value>
+    </labels>
+    <labels>
+        <fullName>StartDateForPvtEventsDeletion</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StartDateForPvtEventsDeletion</shortDescription>
+        <value>2020-06-03 00:00:00</value>
+    </labels>
+    <labels>
+        <fullName>Step4NonUSDefaults</fullName>
+        <categories>Product Selection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Step4NonUSDefaults</shortDescription>
+        <value>a0O1B00000TnvyuUAB,a0O0P00000VH8ZIUA1,a0O0P00000VH8ZkUAL,a0O0P00000VH8ZmUAL</value>
+    </labels>
+    <labels>
+        <fullName>SubBusinessLinesToExclude</fullName>
+        <categories>Sales Plan</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SubBusinessLinesToExclude</shortDescription>
+        <value>CPA: Data Lake, ECN: Data Lake, EQI: Data Lake, GMG: Data Lake, IND: Data Lake, ISS: Data Lake, PVR: Data Lake, AGRI: Crop Protection and Seeds</value>
+    </labels>
+    <labels>
+        <fullName>SuccessMessageAfterRecordUpdate</fullName>
+        <categories>Success Messge</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Success Message After Record Update</shortDescription>
+        <value>Record updated successfully</value>
+    </labels>
+    <labels>
+        <fullName>SuccessMsgOption1</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SuccessMsgOption1</shortDescription>
+        <value>Existing Product Price change only is now enabled. You may amend your product pricing now</value>
+    </labels>
+    <labels>
+        <fullName>SuccessMsgOption2</fullName>
+        <categories>Amend Auto Renewal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SuccessMsgOption2</shortDescription>
+        <value>Change Products, Pricing and/or other terms is now enabled. You may amend your opportunity now. New Contract paperwork will be required to close win this opportunity</value>
+    </labels>
+    <labels>
+        <fullName>SystemAdminAPIProfile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System Admin API Profile</shortDescription>
+        <value>00e0P000000xXvIQAU</value>
+    </labels>
+    <labels>
+        <fullName>TaxTeamEmailAddress</fullName>
+        <categories>SFDC-4731: Label for storing the Tax Team Email Address</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TaxTeamEmailAddress</shortDescription>
+        <value>SalesCoExceptionTax@ihsmarkit.com</value>
+    </labels>
+    <labels>
+        <fullName>TcrmAccountOverview</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TcrmAccountOverview</shortDescription>
+        <value>Account Overview</value>
+    </labels>
+    <labels>
+        <fullName>TcrmAccountPlan</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TcrmAccountPlan</shortDescription>
+        <value>Strategic Account Plan</value>
+    </labels>
+    <labels>
+        <fullName>TcrmPermissionSets</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TcrmPermissionSets</shortDescription>
+        <value>TableauCRMPlusUserIHSMarkit, EinsteinAnalyticsPlusUser, EinsteinAnalyticsPlusAdmin, NextGenStandardUser</value>
+    </labels>
+    <labels>
+        <fullName>TcrmRelatedAccounts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TcrmRelatedAccounts</shortDescription>
+        <value>Child Accounts</value>
+    </labels>
+    <labels>
+        <fullName>TcrmThisAccount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TcrmThisAccount</shortDescription>
+        <value>This Account</value>
+    </labels>
+    <labels>
+        <fullName>TestDefaultIHSQueue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TestDefaultIHSQueue</shortDescription>
+        <value>CS | NRG | Prod Data</value>
+    </labels>
+    <labels>
+        <fullName>ToBeAssignedQueueId</fullName>
+        <categories>Case Assignment Rule Custom</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ToBeAssignedQueueId</shortDescription>
+        <value>00G0P000003ko0G</value>
+    </labels>
+    <labels>
+        <fullName>WRFWipeOffFeature</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WRFWipeOffFeature</shortDescription>
+        <value>TRUE</value>
+    </labels>
+    <labels>
+        <fullName>WrikeUrl</fullName>
+        <categories>Url</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wrike Url</shortDescription>
+        <value>https://www.wrike.com/open.htm?id=</value>
+    </labels>
+</CustomLabels>

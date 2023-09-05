@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Manager</field>
+    </columns>
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.Activity$OwnerId$Subject</field>
+    </columns>
+    <columns>
+        <field>User.Activity$OwnerId$Account</field>
+    </columns>
+    <columns>
+        <field>User.Activity$OwnerId$ActivityDate</field>
+    </columns>
+    <columns>
+        <field>User.Activity$OwnerId$Location</field>
+    </columns>
+    <columns>
+        <field>User.Activity$OwnerId$Country__c</field>
+    </columns>
+    <columns>
+        <field>User.Activity$OwnerId$Id</field>
+    </columns>
+    <columns>
+        <field>User$UserType</field>
+    </columns>
+    <columns>
+        <field>User$Profile</field>
+    </columns>
+    <currency>USD</currency>
+    <description>shows meetings by rep and by manager</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>User.Activity$OwnerId$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Event.Standard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Manager</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Ryan Welley,Benjamin Tansing,Guillaume Rondy,Mathieu Alazard,Karen King,Brendon Seeto,Noam Shefi,Vincent Huang,Sharon Tham,Banri,Andrew Innes,Julian Chesser,Rebecca Rennie,Adrien Daneau</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Suhyeon Park,Ana Ramos,Ryan Welley,Benjamin Tansing,Guillaume Rondy,Karen King,Brendon Seeto,Noam Shefi,Vincent Huang,Sharon Tham,Banri Kobayashi,Andrew Innes,Julian Chesser,Rebecca Rennie,Adrien Daneau</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Profile</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Sales</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Sales meetings by Manager</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>activities_with_user23__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User.Activity$OwnerId$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

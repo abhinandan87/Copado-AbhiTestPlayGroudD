@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_9704099</developerName>
+        <masterLabel>Bucket FCST</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FORECAST_CATEGORY</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Won</sourceValue>
+            </sourceValues>
+            <value>Closed Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pipeline</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Best Case</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Commit</sourceValue>
+            </sourceValues>
+            <value>Open Pipe</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_74288612</developerName>
+        <masterLabel>Buckets</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>PROBABILITY</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>49</to>
+            </sourceValues>
+            <value>Pipeline</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>49</from>
+                <to>74</to>
+            </sourceValues>
+            <value>Best Case</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>74</from>
+                <to>99</to>
+            </sourceValues>
+            <value>Commit</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>99</from>
+            </sourceValues>
+            <value>Won</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_32525276</developerName>
+        <masterLabel>Regions</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>SPLIT_MEMBER_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Konrad Von Habsburg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel Kalyan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ellen Bunyard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Julia Ly</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nishat Rezvi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sam Swadling</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tim Harris</sourceValue>
+            </sourceValues>
+            <value>UK &amp; Ireland Buy-Side</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alex Reynolds</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emma Vassallo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paddy Turner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sebastian Dalheimer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Victoria Kent</sourceValue>
+            </sourceValues>
+            <value>UK &amp; Ireland Sell-Side</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Julien Vocat</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Peter Renner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thierry Klotz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Thomas Hoefer</sourceValue>
+            </sourceValues>
+            <value>Germany/Austria/Switzerland</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Aurelien Podvin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Martin Six</sourceValue>
+            </sourceValues>
+            <value>France</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bercem Baksi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charlotte Whipman</sourceValue>
+            </sourceValues>
+            <value>Nordics</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Joost Bongers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephane Bouvier</sourceValue>
+            </sourceValues>
+            <value>Benelux</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Marco Di Addezio</sourceValue>
+            </sourceValues>
+            <value>Southern Europe</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Azhar Muhammad Saul</sourceValue>
+            </sourceValues>
+            <value>Middle East &amp; Africa</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Opportunity.SalesNewPrice__c.CONVERT</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_32525276</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>FORECAST_CATEGORY</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.SalesNewPrice__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <field>SPLIT_PERCENTAGE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>SPLIT_MEMBER_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.AccountManagers__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>SPLIT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>account managers</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FORECAST_CATEGORY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Commit,Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunitySplit.SalesRegion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SalesNewPrice__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FORECAST_CATEGORY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Omitted,Pipeline,Best Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SPLIT_PERCENTAGE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>100.0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_32525276</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>UK &amp; Ireland Buy-Side,UK &amp; Ireland Sell-Side,Germany/Austria/Switzerland,France,Nordics,Benelux,Southern Europe,Middle East &amp; Africa</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_32525276</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FORECAST_CATEGORY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DB KVHMSIX REGIONS</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunitySplit</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

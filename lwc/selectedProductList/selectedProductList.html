@@ -1,0 +1,24 @@
+<template>
+    <template if:false={emptyProductList}> 
+        <div class="slds-card">
+            <div class="containerdiv" onclick={collapseSec}>
+                <div>
+                    <lightning-icon icon-name="utility:right" size="x-small" if:false={globalSectionShow}></lightning-icon> 
+                    <lightning-icon icon-name="utility:down" size="x-small" if:true={globalSectionShow}> </lightning-icon>      
+                </div>
+                <div>
+                    <h2 class="slds-page-header__title"><b>Selected Products</b></h2>
+                </div>
+            </div>   
+            <template if:true={globalSectionShow}>
+            <div class="slds-p-horizontal_small">
+                <template for:each={selectedProducts} for:item="prod" for:index="index">              
+                        <lightning-pill key={prod.productId} label={prod.productName} title={prod.product.MaterialCode__c} onremove={removeSelectedProduct} name={index}>
+                            <lightning-icon icon-name="standard:product" alternative-text="Product"></lightning-icon>
+                        </lightning-pill>               
+                </template>
+            </div>
+        </template>
+        </div>        
+    </template> 
+</template>

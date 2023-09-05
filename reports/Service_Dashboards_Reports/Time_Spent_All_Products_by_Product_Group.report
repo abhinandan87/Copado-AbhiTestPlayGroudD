@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/10560</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Field for reporting purposes only.  10560 = 22 working days, with 8 hrs per working day, 60 min per hour</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent Monthly FTE</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Sime Spent in Hours</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent (Hours)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_52341685</developerName>
+        <masterLabel>Time Spent Bucket</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.TimeSpentMinutes__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>30</to>
+            </sourceValues>
+            <value>&lt;30 mins</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>30</from>
+                <to>1,440</to>
+            </sourceValues>
+            <value>30 mins - 24 hrs</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1,440</from>
+            </sourceValues>
+            <value>More than 24 hrs</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>GBP</currency>
+    <description>Time Spent-All Products by Product Group from Old Salesforce</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Case.ContractManagement,Case.SalesforceHelpdesk,Case.OrderManagementDeliveryHelpDesk,Case.GDSA,Case.ResponseManagement,Case.SalesforceSuggestion,Case.SalesOperations,Case.SalesSupport</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>SF Admin,Delete Queue,DCIInterfaceuser,Duplicate Queue,FM | MSERV Delete,FM | MSERV,FM | MSERV Duplicate,FM | MSERV FX | Onboarding,FM | MSERV TradeServ IP Whitelisting,FM | MSERV Product Business Development,FM | MSERV Regulatory Reporting,FM | MSERV MIS,FM | MSERV DS Match UAT,FM | MarkitSERV | MTM Implementation,FM | MSERV FX,FM | MSERV UAT | Projects,FM | MSERV UAT | BAU,FM | MSERV UAT - UNASSIGNED,FM | MSERV UAT | MTM,FM | MSERV API Integration,FM | MSERV FX | Onboarding | TradeSTP,FM | MSERV Membership</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Information Mosaic,Markit Corporate Actions,Adhesion,Digital External,PMI,Real Estate,EDM,EDM Prof SVC,VistaOne (vData),VistaOne (vReporter),3rd Party Index Mgmt,DeltaOne,Dividend Forecasting,Securities Finance-Equity,Calendar-Vote,Commission Manager,Hub,Market Share Analysis,RegOne (Compliance SVC),Research Signals,Transaction Cost Analysis,PrimeOne,Analytics Prod,Analytics Prof SVC,Calculation Agent SVC,Index Admin &amp; Calculation,Indices Bonds,Indices CDS,Indices Loans,Other Index Initiatives,SecuritisedProd Indices,Loan Reference Data,Notice Manager,Desktop,Feeds/API,Private Equity,Auctions,CDS Pricing Data,Corp&amp;Svrgn Bonds Pricing Data,Environmental Registry,Fair Value,Loan Pricing Data,Metrics,Municipal Bonds Pricing Data,Parsing,SecuritisedProdPrice Data-ABS,SecuritisedProdPrice Data-US,ABCDS Reference Cashflow Data,Bond Reference Data,CDS Reference Data,DeriveXperts-DxVal,Portfolio Valuations,Prism,Valuations Manager,DeriveXperts-Mercure,FRTB VSII,OTC Derivatives Data,Totem,DealHub,DSMatch,EGUS,Markit Loan Settlement,Counterparty Manager-Core,Counterparty Manager-Document Digitisation,Counterparty Manager-FATCA SVC Bureau,Counterparty Manager-ISDA Amend,Counterparty Manager-LEI Procurement SVC,CTI,CTI Consulting,CTI Prod,KYV,KYC,KYC2,thinkFolio,thinkFolio Prof SVC,Portfolio Analytics,WSO-Software,WSO-SVC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Access,Billing,Cancel,Cancellation,Data,General Inquiry,Invoice,JIRA,Login/Permission Issue,New Contract,New Renewal Product,Notifications,Product Assistance,Scheduled Termination,Training,Trial,Unscheduled Termination,User Administration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>MarkitWire,DSMatch,MarkitSERV-FX,MarkitSERV-Business Dev,Credit Centre</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_52341685</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.TimeSpentMinutes__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Time Spent-All Prods by Product Group-FS</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.ProductGroup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

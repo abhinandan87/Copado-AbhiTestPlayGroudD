@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Report Export Template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Report Export Template</name>
+    <style>none</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+To assign report export permission, we would require approval from the Steering committee member of your division.
+
+Kindly submit your business justification to any Steering Committee members listed below for approval. Approval must be obtained from a member who is representing the Business Division you belong to:
+
+(Steering Committee Members)
+1.	Edouard Tavernier - Mobility
+2.	Eric Maldonado - Market Intelligence
+3.	Ken Honroth - Engineering Solutions
+4.	Rich Dodds - Commodity Insights
+5.	Amy Gradnik - Finance
+6.	Anne Thomas - Digital Technology Services
+
+Upon receiving the approval, please complete the Salesforce GDPR Training in case you have not.
+The link is - GDPR TRAINING. After the completion of training, you may reply to this email to obtain permission.
+
+Feel free to reach out to us in case of any further queries.
+
+Regards,
+{!Case.OwnerFullName}
+Salesforce Configuration Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

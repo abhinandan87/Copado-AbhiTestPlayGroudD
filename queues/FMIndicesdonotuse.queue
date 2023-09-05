@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Obsolete</name>
+    <queueMembers>
+        <users>
+            <user>adam.barnes@ihsmarkit.com</user>
+            <user>benito.ting@ihsmarkit.com</user>
+            <user>brian.snodgrass@ihsmarkit.com</user>
+            <user>florian.guth@ihsmarkit.com</user>
+            <user>hyunmin.park@ihsmarkit.com</user>
+            <user>jessica.tan@ihsmarkit.com</user>
+            <user>joachim.gerhardt.duplicate@ihsmarkit.com.duplicate</user>
+            <user>joey.low@ihsmarkit.com</user>
+            <user>kangwei.yang@ihsmarkit.com</user>
+            <user>lisa.dully@ihsmarkit.com</user>
+            <user>marilyn.cook@ihsmarkit.com</user>
+            <user>paul.shapiro@ihsmarkit.com</user>
+            <user>philipp.flock@ihsmarkit.com</user>
+            <user>sebastian.meyer@ihsmarkit.com</user>
+            <user>shirlene.yeong@ihsmarkit.com</user>
+            <user>stephanie.ho@markit.com.prod</user>
+            <user>stephen.cunningham@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

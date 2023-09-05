@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OpportunityLineItem.FirstYear__c.CONVERT</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CDF1</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.MaterialCode__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.FirstYear__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(CONTAINS(OPPORTUNITY_NAME, &quot;Eregli Demir ve Celik Fabrikalari -10-MAY-2022&quot;				),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;Renewal HELLENIC PETROLEUM S.A.- 00612151-24-JUL-2022&quot;			),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;Renewal - IGA Havalimani Isletmesi - 20220530 - Standard - Winback&quot;	),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;BP Exploration&quot;								),&quot;6-NewBiz General&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;PCB - IPC General Active&quot;						),&quot;4-NewBiz Add - Ons&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;Winback - Daleel Petroleum LLC - 20220714-standards&quot;			),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;Procurement Deputyship MoD SA-lapsed -26-FEB-2022&quot;			),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;SOCAR Turkey Enerji A.S--00452224-31-MAR-2022 - Clone&quot;			),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;Previously NEPCO&quot;							),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;TUSAS TURK HAVACILIK VE UZAY SANAYII ANONIM SIRKETI-00592097-04-FEB-2022 - Standards&quot;),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;ACT Airlines INC.--00609135-05-MAY-2022 - ICAO Standards&quot;		),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;Halcon Systems LLC- 00622139-28-JUL-2022 - Standards&quot;			),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;TURK HAVA YOLLARI ANONIM ORTAKLIGI- 00617601-30-JUL-2022 - DIN&quot;		),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;LUKOIL Mid-East Limited-lapsed -01 DEC-2021&quot;				),&quot;5-Renewal&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;cc - Oilfields Supply Center Ltd&quot;					),&quot;4-NewBiz Add - Ons&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;Calidus LLC &quot;								),&quot;4-NewBiz Add - Ons&quot;,
+IF(CONTAINS(OPPORTUNITY_NAME, &quot;MEC MANNESMANN LLC (ASTM Campaign) -Standards&quot;				),&quot;6-NewBiz General&quot;,
+
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;WINBACK&quot;								), &quot;1-NewBiz Winback&quot;,
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;WIN BACK&quot;								), &quot;1-NewBiz Winback&quot;,
+
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;LEAD&quot;								), &quot;2-NewBiz Leads&quot;,
+
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;COMPETITIVE&quot;							), &quot;3-NewBiz Competitive&quot;,
+
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;ADDON&quot;								), &quot;4-NewBiz Add - Ons&quot;,
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;ADD ON&quot;								), &quot;4-NewBiz Add - Ons&quot;,
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;ADD-ON&quot;								),&quot;4-NewBiz Add - Ons&quot;,
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;CUSTOMCOLLECTIONS&quot;						),&quot;4-NewBiz Add - Ons&quot;,
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;CUSTOM COLLECTIONS&quot;						),&quot;4-NewBiz Add - Ons&quot;,
+
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;RENEWAL&quot;								), &quot;5-Renewal&quot;,
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;(CURRENT YEAR)&quot;							), &quot;5-Renewal&quot;,
+
+IF(CONTAINS(Upper(OPPORTUNITY_NAME), &quot;NEW&quot;								), &quot;6-NewBiz General&quot;,
+
+&quot;8-Unclassified Error&quot;)))))))))))))))))))))))))))))</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Oppy Type</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Product Design/Deposit Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>PD: Parts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PROBABILITY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>80.0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Test</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.ContractStartDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:AVG/60</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>TIME SPENT AVG IN HOURS</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_60173514</developerName>
+        <masterLabel>SHIFT</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Shikhar Singh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Peeyush Chaturvedi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rohan Singh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Somya Srivastava</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Poonam Choudhary</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Andri Oinam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prerna Yadav</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rishi Arora</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Satwinder Singh</sourceValue>
+            </sourceValues>
+            <value>NIGHT</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sunny Nasa</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Utkarsh Singhal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chirag Arora</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>DATETIMEVALUE(CLOSED_DATEONLY)-CREATED_DATE</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>SLA TIME</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.SalesforceHelpdesk</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_60173514</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of SLA HELPDESK CASES</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <endDate>2021-01-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-08-01</startDate>
+    </timeFrameFilter>
+</Report>

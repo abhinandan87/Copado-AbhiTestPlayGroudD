@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>WorkOrder</joinTable>
+        </blockInfo>
+        <columns>
+            <field>WorkOrder$StartDate</field>
+        </columns>
+        <columns>
+            <field>WorkOrder$Name</field>
+        </columns>
+        <columns>
+            <field>WorkOrder$Account</field>
+        </columns>
+        <columns>
+            <field>WorkOrder.FieldServiceActivityProducts__r$ProductGroup__c</field>
+        </columns>
+        <currency>INR</currency>
+        <filter>
+            <criteriaItems>
+                <column>WorkOrder.FieldServiceActivityProducts__r$ProductGroup__c</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>contains</operator>
+                <value>Engineering Workbench</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>WorkOrder$Status</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>equals</operator>
+                <value>Delivered</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>WorkOrder$Account</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>notContain</operator>
+                <value>IHS</value>
+            </criteriaItems>
+        </filter>
+        <format>Tabular</format>
+        <name>Field Service Activity Products block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>FieldServiceActivityProducts__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>WorkOrder$StartDate</dateColumn>
+            <interval>INTERVAL_CURFY</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>WorkOrder</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <name>Product-level Training Report</name>
+    <reportType>FieldServiceActivityProducts__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

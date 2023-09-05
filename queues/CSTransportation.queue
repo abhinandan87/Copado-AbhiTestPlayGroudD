@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Transportation</name>
+    <queueMembers>
+        <users>
+            <user>alex.andrade@ihsmarkit.com</user>
+            <user>anshun.tan@ihsmarkit.com</user>
+            <user>andres.martinez@ihsmarkit.com</user>
+            <user>beth.cutcliffe@ihsmarkit.com</user>
+            <user>blake.short@ihsmarkit.com</user>
+            <user>chad.peltier@ihsmarkit.com</user>
+            <user>chris.eow@ihsmarkit.com</user>
+            <user>christa.huber@ihsmarkit.com</user>
+            <user>cliff.allen@ihsmarkit.com</user>
+            <user>david.wagner@ihsmarkit.com</user>
+            <user>dean.rossiter@ihsmarkit.com</user>
+            <user>eva-christina.peterzens@ihsmarkit.com</user>
+            <user>frankie.tse@ihsmarkit.com</user>
+            <user>freddy.martin@ihsmarkit.com</user>
+            <user>george.devereese@ihsmarkit.com</user>
+            <user>john.toth@ihsmarkit.com</user>
+            <user>lana.simic@ihsmarkit.com</user>
+            <user>mary.durham@ihsmarkit.com</user>
+            <user>mike.wiman@ihsmarkit.com</user>
+            <user>mona.zhou@ihsmarkit.com</user>
+            <user>sachiko.iwata@ihsmarkit.com</user>
+            <user>sharon.shu@ihsmarkit.com.prod</user>
+            <user>travis.miller@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

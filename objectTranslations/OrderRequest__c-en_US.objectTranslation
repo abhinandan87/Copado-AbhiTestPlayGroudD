@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Availability Count --></label>
+        <name>AvailabilityCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To --></label>
+        <name>BillTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cust./Post Processing --></label>
+        <name>CustPostProcessing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Description --></label>
+        <name>CustomDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cutback Options --></label>
+        <name>CutbackOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desired Count --></label>
+        <name>DesiredCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Output Format --></label>
+        <name>FormatOrder__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fmt 001 - Name,C.Address,Phone</masterLabel>
+            <translation><!-- Fmt 001 - Name,C.Address,Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fmt 011 - F.Name,Address,Phone</masterLabel>
+            <translation><!-- Fmt 011 - F.Name,Address,Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fmt 012 - F.Name,C.Address,DMA,Vehicle Desc, Phone</masterLabel>
+            <translation><!-- Fmt 012 - F.Name,C.Address,DMA,Vehicle Desc, Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fmt 013 - F.Name,C.Address,Vehicle,Phone</masterLabel>
+            <translation><!-- Fmt 013 - F.Name,C.Address,Vehicle,Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fmt 014 - F.Name,C.Address,Phone</masterLabel>
+            <translation><!-- Fmt 014 - F.Name,C.Address,Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fmt 015 - F.Name,C.Address</masterLabel>
+            <translation><!-- Fmt 015 - F.Name,C.Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fmt 017 - C.Name,C.Address</masterLabel>
+            <translation><!-- Fmt 017 - C.Name,C.Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fmt 018 - F.Name,C.Address,Vehicle</masterLabel>
+            <translation><!-- Fmt 018 - F.Name,C.Address,Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fmt 021 - Fmt 13 w/o vehicle - w/o phone</masterLabel>
+            <translation><!-- Fmt 021 - Fmt 13 w/o vehicle - w/o phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fmt 026 - Fmt 13 w/o vehicle - with phone</masterLabel>
+            <translation><!-- Fmt 026 - Fmt 13 w/o vehicle - with phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Approved --></label>
+        <name>IsApproved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job#/Query ID --></label>
+        <name>JobQueryID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keyfield/Code --></label>
+        <name>KeyfieldCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field store the concatenation of the source system name and a source system record id to ensure the record is uniquely identified. --></help>
+        <label><!-- LegacyIDUnique --></label>
+        <name>LegacyIDUnique__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used for data integration to store legacy system id in WRF POLK application. --></help>
+        <label><!-- LegacyID --></label>
+        <name>LegacyID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a friendly system reference to the source record. --></help>
+        <label><!-- LegacyReference --></label>
+        <name>LegacyReference__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the CRM system the source record came from --></help>
+        <label><!-- LegacySystem --></label>
+        <name>LegacySystem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Negotiated Date --></label>
+        <name>NegotiatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Request Attachments --></label>
+        <name>OrderRequestAttachements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Request Details --></label>
+        <name>OrderRequestDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Request Status --></label>
+        <name>OrderRequestStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approval Pending</masterLabel>
+            <translation><!-- Approval Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved without Job</masterLabel>
+            <translation><!-- Approved without Job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Requested Date --></label>
+        <name>OrderRequestedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- PLC Job --></label>
+        <name>PLCJob__c</name>
+        <relationshipLabel><!-- Order Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Start of PLC Job, to be auto populated to PLC on Approval --></help>
+        <label><!-- PLC Start Date --></label>
+        <name>PLCStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post-Sort Decription --></label>
+        <name>PostSortDecription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post-Sort --></label>
+        <name>PostSort__c</name>
+        <picklistValues>
+            <masterLabel>Ascending</masterLabel>
+            <translation><!-- Ascending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Combo</masterLabel>
+            <translation><!-- Combo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Descending</masterLabel>
+            <translation><!-- Descending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pre-Sort Description --></label>
+        <name>PreSortDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Sort --></label>
+        <name>PreSort__c</name>
+        <picklistValues>
+            <masterLabel>Ascending</masterLabel>
+            <translation><!-- Ascending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Combo</masterLabel>
+            <translation><!-- Combo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Descending</masterLabel>
+            <translation><!-- Descending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Production Comments --></label>
+        <name>ProductionComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Resource --></label>
+        <name>ProductionResource__c</name>
+        <relationshipLabel><!-- Order Requests (Production Resource) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Programmer --></label>
+        <name>Programmer__c</name>
+        <relationshipLabel><!-- Order Requests (Programmer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requestor --></label>
+        <name>Requestor__c</name>
+        <relationshipLabel><!-- Order Requests (Requestor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>ShipTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted Date/Time --></label>
+        <name>SubmittedDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmer&apos;s Team --></label>
+        <name>Team1__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aftersales-Chrysler</masterLabel>
+            <translation><!-- Aftersales-Chrysler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESS-Delivery</masterLabel>
+            <translation><!-- ESS-Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecasting</masterLabel>
+            <translation><!-- Forecasting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCM-Analytics</masterLabel>
+            <translation><!-- MCM-Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCM-Market Research</masterLabel>
+            <translation><!-- MCM-Market Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCM-Marketing Databases</masterLabel>
+            <translation><!-- MCM-Marketing Databases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCM-Target Marketing Services</masterLabel>
+            <translation><!-- MCM-Target Marketing Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEL-Delivery</masterLabel>
+            <translation><!-- MEL-Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Aftermarket</masterLabel>
+            <translation><!-- MR-Aftermarket --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Commercial</masterLabel>
+            <translation><!-- MR-Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Loyalty</masterLabel>
+            <translation><!-- MR-Loyalty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Market Reporting BI</masterLabel>
+            <translation><!-- MR-Market Reporting BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Network Management</masterLabel>
+            <translation><!-- MR-Network Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning Solutions</masterLabel>
+            <translation><!-- Planning Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PolkConnect Analytics</masterLabel>
+            <translation><!-- PolkConnect Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PolkConnect System</masterLabel>
+            <translation><!-- PolkConnect System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIN-Recall</masterLabel>
+            <translation><!-- VIN-Recall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIN-VIN Decoders</masterLabel>
+            <translation><!-- VIN-VIN Decoders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIN-VVS</masterLabel>
+            <translation><!-- VIN-VVS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visualization Team</masterLabel>
+            <translation><!-- Visualization Team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Request Form --></label>
+        <name>WorkRequestForm__c</name>
+        <relationshipLabel><!-- Order Requests --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Order Request --></label>
+        <name>OrderRequest</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Approval Pending can&apos;t be moved to submitted or to Draft. --></errorMessage>
+        <name>ApprovalPendingNottoSubmitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status can&apos;t be moved to Approved or Approved without Job from Rejected. --></errorMessage>
+        <name>ErrorForApprovedStatusFromRejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorized to make this change as you are not an approver. --></errorMessage>
+        <name>ErrorForNonApprovers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorized to change to this Request Status. --></errorMessage>
+        <name>NewRecordStatusDraftOrSubmitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please move the Order Request Status to Submitted. --></errorMessage>
+        <name>OrderRequeststatustoSubmitfromDraft</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please update the status to Submitted or Draft from Rejected. --></errorMessage>
+        <name>RejectedLogtoSubmitOrDraft</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Order Request can&apos;t be moved back to Draft. --></errorMessage>
+        <name>SubmittedRecordtoDraft</name>
+    </validationRules>
+</CustomObjectTranslation>

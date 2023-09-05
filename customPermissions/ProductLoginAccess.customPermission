@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-190 Custom permission to tag Product login access permission set. To use this as a flag in validation rule and make the MSFA field mandatory</description>
+    <isLicensed>false</isLicensed>
+    <label>ProductLoginAccess</label>
+</CustomPermission>

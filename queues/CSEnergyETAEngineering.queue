@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Energy | ETA | Engineering</name>
+    <queueMembers>
+        <users>
+            <user>aleksandr.antonov@ihsmarkit.com</user>
+            <user>ali.awada@ihsmarkit.com</user>
+            <user>aram.yesayan@ihsmarkit.com</user>
+            <user>brian.wright@ihsmarkit.com</user>
+            <user>ehsan.motamed@ihsmarkit.com</user>
+            <user>frank.vrla@ihsmarkit.com</user>
+            <user>henry.akpan@ihsmarkit.com</user>
+            <user>jose.inciarte@ihsmarkit.com</user>
+            <user>ken.burr@ihsmarkit.com</user>
+            <user>lana.roybal@ihsmarkit.com</user>
+            <user>lisbeth.morejon2@ihsmarkit.com</user>
+            <user>martin.santo@ihsmarkit.com</user>
+            <user>muhammad.atif@ihsmarkit.com</user>
+            <user>sarai.parra@ihsmarkit.com</user>
+            <user>ali.zolalemin@ihsmarkit.com</user>
+            <user>simon.davies@ihsmarkit.com</user>
+            <user>tracy.brenner@ihsmarkit.com</user>
+            <user>zubin.maliel@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be used when Customer&apos;s entitlement request is rejected by research provider on Markit Hub</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Markit Hub access rejection email</name>
+    <style>none</style>
+    <subject>Markit Hub access rejection email</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for contacting Customer Care at IHS Markit.
+
+Thank you for your interest in Markit Hub. We have been informed that your request to access to  &lt;Research provider&gt;&apos;s data via Markit Hub has been denied. Unfortunately, this is all the information we have to hand. If you require further details, we suggest you reach out to your sales sponsor.
+
+If you require any further assistance, please do not hesitate to contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

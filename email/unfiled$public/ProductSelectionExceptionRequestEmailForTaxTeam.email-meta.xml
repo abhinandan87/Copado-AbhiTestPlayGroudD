@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-5500: Send email alert to Tax team when a user seeks for an approval via offline exception process</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Product Selection Exception Request Email For Tax Team</name>
+    <style>none</style>
+    <subject>Opportunity [{!Opportunity.Opportunitynum__c}] is awaiting your approval</subject>
+    <textOnly>Hello,
+
+I  would like to seek approval for entering an opportunity with the client based out of {!countryTerritory} with {!requestedLegalEntity}. Details of the opportunity are as follows:
+
+The rationale for the request (i.e. reasons client needs the change): {!requestReason}
+Requested legal entity: {!requestedLegalEntity}
+Country of incorporation of the customer: {!countryTerritory}
+US Dollar Value: ${!dollarValue}
+
+Existing SAP product codes: {!existingMaterialCodes}
+New SAP product codes: {!newMaterialCodes}
+Please provide approval or denial on this request.
+
+Approve            Reject     Approve       Reject
+
+Opportunity Record: {!Opportunity.Link}
+
+Thanks,
+{!salesUserName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

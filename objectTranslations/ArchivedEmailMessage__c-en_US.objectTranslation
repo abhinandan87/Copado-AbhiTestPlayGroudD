@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Archived Email Message</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Archived Email Messages</value>
+    </caseValues>
+    <fields>
+        <label><!-- BccAddress --></label>
+        <name>BccAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Archived Email Messages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CcAddress --></label>
+        <name>CcAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmailMessage Created By --></label>
+        <name>EmailMessage_CreatedBy__c</name>
+        <relationshipLabel><!-- Archived Email Messages (EmailMessage Created By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EmailMessage Created Date --></label>
+        <name>EmailMessage_CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmailMessage Last Modified By --></label>
+        <name>EmailMessage_LastModifiedBy__c</name>
+        <relationshipLabel><!-- Archived Email Messages (EmailMessage Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EmailMessage Last Modified Date --></label>
+        <name>EmailMessage_LastModifiedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmailTemplateId --></label>
+        <name>EmailTemplateId__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstOpenedDate --></label>
+        <name>FirstOpenedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- FromAddress --></label>
+        <name>FromAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- FromName --></label>
+        <name>FromName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HasAttachment --></label>
+        <name>HasAttachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Headers --></label>
+        <name>Headers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoming --></label>
+        <name>Incoming__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsBounced --></label>
+        <name>IsBounced__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsClientManaged --></label>
+        <name>IsClientManaged__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsExternallyVisible --></label>
+        <name>IsExternallyVisible__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsOpened --></label>
+        <name>IsOpened__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsTracked --></label>
+        <name>IsTracked__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastOpenedDate --></label>
+        <name>LastOpenedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- LegacyIDUnique --></label>
+        <name>LegacyIDUnique__c</name>
+    </fields>
+    <fields>
+        <label><!-- LegacyID --></label>
+        <name>LegacyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- LegacySystem --></label>
+        <name>LegacySystem__c</name>
+    </fields>
+    <fields>
+        <label><!-- MessageDate --></label>
+        <name>MessageDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- MessageIdentifier --></label>
+        <name>MessageIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- PKIDEmailMessage --></label>
+        <name>PKIDEmailMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReplyToEmailMessageId --></label>
+        <name>ReplyToEmailMessageId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forwarded</masterLabel>
+            <translation><!-- Forwarded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Read</masterLabel>
+            <translation><!-- Read --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replied</masterLabel>
+            <translation><!-- Replied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- TextBody --></label>
+        <name>TextBody__c</name>
+    </fields>
+    <fields>
+        <label><!-- ThreadIdentifier --></label>
+        <name>ThreadIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- ToAddress --></label>
+        <name>ToAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- ValidatedFromAddress --></label>
+        <name>ValidatedFromAddress__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Field Service Activity Case</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Field Service Activity Cases</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please enter Case --></help>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Field Service Activity Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please enter Field Service Activity. --></help>
+        <label><!-- Field Service Activity --></label>
+        <name>FieldServiceActivity__c</name>
+        <relationshipLabel><!-- Field Service Activity Cases --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

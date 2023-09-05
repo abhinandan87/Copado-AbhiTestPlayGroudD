@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>USERNAME</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS_COUNTRY_CODE</field>
+    </columns>
+    <columns>
+        <field>User.UserRegion__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All users who have worked on deals mapped to APAC over the past few years</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Bernard Lip,Sam Devine,Alex Lee,Ahmad Sayuti Ibrahim,Carl Michael Aeria,Michelle Tan,Jiayeen Tan,Joe Chuah,Reuben Lim,Nyeong Lee,Swagat Banerjee,Stanley Yu,Juliet Zhang,Will li,Mark Stephens,Olivia Wang,Hannah Goh,Michael Waite,Vicki Wong,Satish Chandra,Sahil Virmani,Felicity Soo,Hyewon Song,Banri Kobayashi,Yukari Sasaki,Michitomo Yamakita,Emi Kakumaru,Tatsuya Ichisaka,Rocky Cheung,Vincent Huang,Andrew Innes,Allison Li,Shintaro Toba,Sally Ou,Jason Powell,Noriko Sakaba,Eduardo Viana,Kevin Tapley,Samantha Chan,Ryan Welley,Conor Lyons,Chonghooi Goh,Azman Ali Mohd Baharudeen,Benjamin Ooi,Rishad Lilani,David Yap,Stella Huang,Peng Zhang,Jaeseung Lee,Takashi Sekimoto,Sachiko Koide,Charlie Ng,Xiaolong Song,Hailey Liang,Neil Coert,Jean See,James Hu,Nathan Eason,Shinnosuke Mizuyama,Yuko Takayama,Masaki Ogawa,Louis Wong,Mohd Firdaus Haikal Abdullah,Vishal Kapadia,Prashant Ayipuzha,Ana Ramos,Marianne Antonicelli,Mohamed Fauzi,Alex (Seng Liang) Chan,Hazelle Yeap,Naresh Tegarajan,Terence Soo,Terence Tan,Shanthy.P Pakirisamy,Richard Katsuta,Sidney Leung,Sofiane Djemili,Kenny Fu,Sin Yian Lau,Alexander Dodds,Lorena Zanol,Ghuzaili Hassan,Barnaby Dobson,Tracy Wang,Suhyeon Park,Eiji Hirasawa,Suthan Sathkuru,Sewon Park,Atsushi Higuchi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Robert O&apos;Brien,Zhenhe Ma,Toshita Chettranda,Keiichiro Oikawa,Nazrul Adenan,Jonathan Wei,Amarjeet Gigindar Singh,Khaleerurrahman ShaikDawood,Enrico Perini,Christian Peranovic,Sally Kim,Felicia Yeow,Mei Ping Liew,Sam Au Yeung,Mohamed Drouiche,Wendy Yip,Peiwei Chu,Hiroko Machida,Una Lin,Saori Aoyama,Hayato Nonaka,Atsuko Ogino,Camille Zhao,Vivian Liu2,Julie Rhee,Dorothy Luk,Ioannis Polygenis,Shamala Mani,Claire Tung,Muiz Roslan,Cina Lee,Summer Wang,Erik Darner,Fumiko Nakajima,Veronika Vorontsova,Saori Kato,Hidi Yamamoto,Yumi Takahashi,Yuting Cai,Kai Ng,Benjamin Ng,Hailey Lam,Carter Smith,Penghui Kee</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>APAC User Mapping</name>
+    <params>
+        <name>active</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

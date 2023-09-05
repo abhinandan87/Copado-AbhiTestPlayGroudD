@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User$Manager</field>
+    </columns>
+    <columns>
+        <field>User$UserRole</field>
+    </columns>
+    <columns>
+        <field>User$CountryCode</field>
+    </columns>
+    <columns>
+        <field>User$EmployeeNumber</field>
+    </columns>
+    <columns>
+        <field>User$Email</field>
+    </columns>
+    <columns>
+        <field>User*User$HRBusinessLine__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User$IsActive</field>
+    </columns>
+    <columns>
+        <field>User*User$PKIDUser__c</field>
+    </columns>
+    <columns>
+        <field>User$Id</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Rep, Mgr, BL, Active filter by specific name</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12)</booleanFilter>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>do not use</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aaron Gardner,Abigail Cregger,Adrienne Booth,Ahmed Salem,Alberto Luna,Alena Barford,Alexey Gurevich,Alex Garber,Alireza Haghighat,Allison Gilmore,Amy Fuller-Riley,Amy Singer,Andrew Trofimuk,Andrey Gavrikov,Andy Quintero,Andy Ranson,An Shun Tan,Anthony Aglio,Anton Shenouda,Anup Nair,Asheesh Singh,Ashley LeBlanc,Aylin Tumer,Baldev Singh,Ben Coleman</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Benjamin Rattner,Benjamin Watkins,Bouchra Arabi,Brandon DeMarsico,Brian Robak,Calista William,Carlos Lima,Caroline Wilson,Cecilia Gauthier,Cel Montilla,Charles O&apos;Brien,Chase Willett,Chris Kiser,Christian Peranovic,Christina Allen,Christopher Tosello,Chris Wesley,Cina Lee,CJ Chippendale,Colin Gray,Cosimo Angelilli,Daniel Heuston,Darya Gorbatova,David Arena,David Choules</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>David Gee,David Gillick,Deanise Moi,Denise Owens,Derek Gonsuron,Diane Braaten,Didiana Idrus,Dillon Watts,Dominik Rozwadowski,Donald Escott,Duncan Fisher,Duncan Matheson,Eduardo Mechereffe,Edward Shulman,Ekaterina Galkina,Eleni Hanton,Elizabeth Lopez,Emad Ahmed,Emi Kakumaru,Erica Dalme,Eric Hards,Erick Sanchez,Eva Brocvielle,Fagner Frangeli Da Silva,Fred Valizadeh</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Gabriel Roisenberg,Gang Hao,Geraldo Calainho,German Alberto Oviedo,Gina Gurung,Graeme Johannessen,Graham Helfrick,Greg Hamby,Gregory Thompson,Greg Willis,Hamza Abdel-Hafez,Han Ju Lee,Harriette Cheung,Heather MacKenzie,Henry Akpan,Henry Liu,Hitoshi Shinzawa,Indra Suryata,Irina Zamarina,Isoaki Iwasawa,Jake Sherman,James Ewert,James Kat,James MacDonald,James McCarthy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jason Foong,Javier Pastor,Jay Wininger,Jeff Kopec,Jelena Bariman,Jennafer Marchetti,Jeremy Wong,Jim Bilodeau,Jim Bock,Jim Conway,Joe Parker,John Kim,John Lezcano,John Paul Minett,John Robson,John Van Nest,Jorgie Ong,Juan Hernandez,Juan Lopez Ricaurte,Jufenilamora Nurak,Julian Guo,Julie Harper,Karel Valouch,Karen Logue,Karen Moore</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Kari L. Parson,Kathy Maher,Kevin Blake,Khizer Khadimally,Kim Whipple,Kok Hoe Yong,Kris McKnight,Lawrence Jackson,Layla Mahmood,Lee Shiong Lew,Leisha Archie,Leo Chen,Lewis Koppelman,Linda Kinney,Linda Li,Lindsay Moseley,Lindsey Bernard,Livvy Tan,Madison Barefoot,Mandy Gang,Markus Polag,Martyn Smith,Masanori Wakabayashi,Massimiliano Cervetti,Matthew Bax</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Matthew Fox,Matthew Hainje,Matthew Jones,Matthew Stamp,Maureen Kenyon,Michael Delgado,Mike Larkin,Min Park,Mitch Luehr,Mohamed Khiar,Mohammad Kurdi,Moises Silva,Monica Brinez,Nail Christian,Nalin Vatte,Nancy Strabala,Nao Terada,Natsuki Yoshikawa,Nelson Armstrong,Nichola McDonald,Nick Grimm,Nicole Ryan,Nino Pepper,Nisa Pujiresya,Olga Ilyushkina</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Oliva Unarce,Oliver Cottam,Olusegun Kolawole,Patricia Alleyne,Patrick Lynch,Patrick Maguire,Pavel Ershov,Pawan Sharma,Perline Tan,Peter Brown,Ping Yan,Prashin Muttreja,Quintin Stevenson,Rachel Hobbs,Reda Semmah,Rema Zuraiqi,Renfei Wang,Robin Fernandez,Rudolf Kissling,Sabrina Ousmaal,Safaa ElBezzi,Samuel Edwards,Sarah Danan,Sarah Stuart</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Tobias Webb,Toby Burrough,Travis Hagler,Tze Yan Lo,Vicki Doidge,Viktoria Malysheva,Vladimir Rybakov,Vorarat Vongpadungkiat,Walter Bruce,Xu Wang,Yahya Mehdizadeh,Yohana Vivas,Yoko Okawado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sarolta Bodi,Sayaka Koyanagi,Scott King,Seyed Ali Zolalemin,Shane Burnett,Shane Patrick,Sheila Whitten,Silvia Rey Gomez,Sinead Tucker,Smarco Ho,Sooi Phing Chee,Stephen Mossadegh,Steven McKenzie,Steve Paetzold,Stuart Rawlings,Sunil Kothari,Supada Wapatthai,Susan Beury,Susan Brennan-Weldon,Tatyana Ustyantseva,Thais Hamilko,Thomas Krause,Tiago Votta,Tiffany Aspinall,Tim Chan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$EmployeeNumber</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>211763</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Copy of Rep, Mgr all in SF by name</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_with_Managers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>User$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>User$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

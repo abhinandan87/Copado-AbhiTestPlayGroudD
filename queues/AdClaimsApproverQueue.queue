@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>adcla00@ihsmarkit.com</email>
+    <name>Ad Claims Approver Queue</name>
+    <queueMembers>
+        <users>
+            <user>aaron.friedberg@ihsmarkit.com</user>
+            <user>alex.vinatoru@ihsmarkit.com</user>
+            <user>ben.dellalucia@ihsmarkit.com</user>
+            <user>brandi.warren@ihsmarkit.com</user>
+            <user>craig.o&apos;donnell@ihsmarkit.com</user>
+            <user>delon.fulford@ihsmarkit.com</user>
+            <user>diana.duque-miranda@ihsmarkit.com</user>
+            <user>elizabeth.davis@ihsmarkit.com</user>
+            <user>jack.brock@ihsmarkit.com</user>
+            <user>jason.wilhoite@ihsmarkit.com</user>
+            <user>jeff.hojnacki@ihsmarkit.com</user>
+            <user>jimmy.hearn@ihsmarkit.com</user>
+            <user>julio.lee@ihsmarkit.com</user>
+            <user>katherine.skrzynski@ihsmarkit.com</user>
+            <user>katie.stmarie@ihsmarkit.com</user>
+            <user>kelly.warren@ihsmarkit.com</user>
+            <user>kiran.jadia@ihsmarkit.com</user>
+            <user>louis.goldobin@ihsmarkit.com</user>
+            <user>marina.maller@ihsmarkit.com</user>
+            <user>michael.dixon@ihsmarkit.com</user>
+            <user>prachi.bhasin@ihsmarkit.com</user>
+            <user>ryann.matthews@ihsmarkit.com</user>
+            <user>sarangabikashbarushtestuser@ihsmarkit.testuser.com</user>
+            <user>scot.beard@ihsmarkit.com</user>
+            <user>shannon.mosher@ihsmarkit.com</user>
+            <user>sheila.duffner@ihsmarkit.com</user>
+            <user>steve.giordano@ihsmarkit.com</user>
+            <user>susan.bergman@ihsmarkit.com</user>
+            <user>thomas.libby@ihsmarkit.com</user>
+            <user>tom.rockafellow@ihsmarkit.com</user>
+            <user>vince.palomarez@ihsmarkit.com</user>
+            <user>zenon.kuzmyn@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>AdClaim__c</sobjectType>
+    </queueSobject>
+</Queue>

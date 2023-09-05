@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Billing Country/Territory</value>
+        </caseValues>
+        <name>order_billing_country</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Billing Country/Territory Code</value>
+        </caseValues>
+        <name>order_billing_country_code</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipping Country/Territory</value>
+        </caseValues>
+        <name>order_shipping_country</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipping Country/Territory Code</value>
+        </caseValues>
+        <name>order_shipping_country_code</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- PKID Order --></label>
+        <name>PKIDOrder__c</name>
+    </fields>
+</CustomObjectTranslation>

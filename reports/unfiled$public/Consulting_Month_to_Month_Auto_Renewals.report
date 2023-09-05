@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contract.Opportunities2__r$OpportunityOwner__c</field>
+    </columns>
+    <columns>
+        <field>Contract.Opportunities2__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contract.Opportunities2__r$Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>Contract.Opportunities2__r$CloseDate</field>
+    </columns>
+    <columns>
+        <field>Contract.Opportunities2__r$ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Contract.Opportunities2__r$ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>Contract$ContractNumber</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contract.Opportunities2__r$AutoRenewal__c</field>
+    </columns>
+    <columns>
+        <field>Contract$TerminationNotice__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Shows All Issuer Solutions Consulting Deals that renew monthly with an opt out period.</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Contract.Opportunities2__r$ProfitCenter__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Global Markets Intelligence-Cons,Global Mkts Intell/Activist Surv/Cons</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.Opportunities2__r$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder,6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.Opportunities2__r$Opportunitynum__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contract$Account</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ECR Price Increase - Auto Renewals/Negot</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contracts_with_Renewal_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contract.Opportunities2__r$ContractStartDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contract.Opportunities2__r$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-05-01</startDate>
+    </timeFrameFilter>
+</Report>

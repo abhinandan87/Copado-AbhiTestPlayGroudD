@@ -1,0 +1,25 @@
+Dear {!Contact.FirstName},
+<br><br>
+
+You are receiving this email in response to your request for access to Salesforce.
+<br><br>
+What you must do?<br>
+Please complete the form (link below) and submit it online by pressing the ‘Submit’ button at the end of the form.<br><br>
+
+Note: If you are requesting a license for a new joiner in IHS Markit, we cannot progress the application until the new joiner has been assigned with an email address.<br><br>
+
+Please ensure that you have requested the new joiner’s email credentials from ServiceDesk and received a confirmation of the email address before continuing.<br><br>
+
+ <a href= "http://www.feedback.markit.com/survey?iv=3a127de283e06d"> New User Form</a>
+<br><br>
+
+What happens next?<br>
+Once we receive the form submitted by you, we will assign a Salesforce Licenses to the new user upon which they will be notified.<br><br>
+
+IHS Markit Salesforce Helpdesk contact details<br>
+Please reach out to Salesforce Helpdesk for any further queries or assistance at salesforce@ihsmarkit.com.<br><br>
+We work proactively in resolving all the salesforce related queries at the earliest.<br><br>
+
+Regards,<br>
+{!Case.OwnerFullName}<br>
+Salesforce Configuration Team

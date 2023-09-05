@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LegacyReference__c</field>
+    </columns>
+    <columns>
+        <field>Account.ExternalOrgType__c</field>
+    </columns>
+    <columns>
+        <field>Product2.BusinessLine2__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Created by Penang FP&amp;A
+Excluded account name with &quot;A Great company&quot; that used for testing during UAT
+Period: 1-Jan-2020 to 31-Dec-2022
+Global Segments: Financial Services &amp; MT
+Exclude: Product Type = Onetime, Consulting, Transaction, Software/Services</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 4) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>great company</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.GlobalSegments__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Financial Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.ProductType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Onetime,Consulting,Transaction,Software/Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.BusinessLine2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Maritime</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>zzFinancialServices_Oppy Ext Org</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct@Opportunity.AdditionalOpportunityFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.ContractStartDate__c</dateColumn>
+        <endDate>2022-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-01-01</startDate>
+    </timeFrameFilter>
+</Report>

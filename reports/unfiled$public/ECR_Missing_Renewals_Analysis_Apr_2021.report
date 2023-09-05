@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_55392847</developerName>
+        <masterLabel>Previous SAP Contract</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity.SAPContractNumber__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.BusinessLine2__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_55392847</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProcessedContractNum__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractBeingRenewed__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.PreviousYearOpportunityNumber__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Report fetches back EI deals where renewal is possibly missing</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.PreviousYearOpportunityNumber__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OP0000650174,OP0000650091,Not assigned,OP0000650241,OP0000649015,OP0000592767,OP0001203364,OP0000651397,OP0000649771,OP0000650835,OP0001118139,OP0001220228,OP0000630737,OP0000649797,OP0000649188,OP0000593868,OP0000651230,OP0000649884,OP0000645949,OP0000932949,OP0000645489,OP0000560897,OP0000649696,OP0000649631,OP0000649899,OP0000651404,OP0000649821,OP0000632019,OP0000648568,OP0000648729,OP0001109972,OP0000643608,OP0001101658,OP0000650582,OP0000650723,OP0000182563,OP0000649684,OP0000632033,OP0001313644,OP0000651002,OP0000649587,OP0000300830,OP0000632529,OP0000648505,OP0000649924,OP0000650924,OP0000649815,OP0000650181,OP0000651192,OP0000651339,OP0000632120,OP0001225054,OP0001198943,OP0001080375,OP0000649668,OP0000922642,OP0000649685,OP0000651294,OP0000649986,OP0000186703,OP0000651373,OP0000649929,OP0000645629,OP0001118156,OP0000650913,OP0000561112,OP0000651304,OP0001233476,OP0000649724,OP0000650168,OP0000649814,OP0000434790,OP0001243869,OP0000651442,OP0001227040,OP0000648859,OP0000633980,OP0000632514,OP0000649744,OP0000632030,OP0000648901,OP0000650235</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.PreviousYearOpportunitylink__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OP0000650440,Not assigned,OP0000650866,OP0000630204,OP0000590286,OP0001231382,OP0000642451,OP0000649844,OP0000651591,OP0000648959,OP0000649800,OP0000650445,OP0000632026,OP0000650024,OP0000632025,OP0000648878,OP0000650799,OP0000372456,OP0001223564,OP0000630275,OP0000992261,OP0000650574,OP0000587857,OP0000648992,OP0000648933,OP0000650757,OP0000647484,OP0000630292,OP0000650760,OP0000633640,OP0000649808,OP0001224124,OP0000649841,OP0000629587,OP0000650590,OP0000650763,OP0001254285,OP0000651335,OP0001108310,OP0000649026,OP0000650192,OP0000649742,OP0000649049,OP0000650608,OP0000650135,OP0000650301,OP0000630599,OP0000651014,OP0000646110,OP0000651354,OP0000650167,OP0000651010,OP0000589875,OP0000649764,OP0000651450,OP0000632947,OP0000649100,OP0001224814,OP0000650836,OP0000650254,OP0000639152,OP0000548385,OP0000632029,OP0000650394,OP0000632028,OP0001117047,OP0000648732,OP0000637918,OP0000593595,OP0000632024,OP0000649812,OP0000590450,OP0001118147,OP0000651584,OP0000649863,OP0000646219,OP0000632105,OP0000649847,OP0001067645,OP0000646689,OP0000974808</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>ECR Missing Renewals Analysis Apr 2021</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

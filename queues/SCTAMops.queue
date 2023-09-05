@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>SCTAMops</name>
+    <queueMembers>
+        <users>
+            <user>ann.bennett@ihsmarkit.com</user>
+            <user>erica.nyoni@ihsmarkit.com</user>
+            <user>gaurav.anand@ihsmarkit.com</user>
+            <user>rachel.larter@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

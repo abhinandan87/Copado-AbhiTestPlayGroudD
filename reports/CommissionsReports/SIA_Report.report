@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$OpportunityOwner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CloseDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesIncentiveApprovals__r$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesIncentiveApprovals__r$Campaign__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesIncentiveApprovals__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesIncentiveApprovals__r$IncentiveOwner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesIncentiveApprovals__r$CommissionStatus__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Created by MV on 07.10.22</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.SalesIncentiveApprovals__r$CommissionStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Open,Waiting on Finance Info,Waiting on Rep Info</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SIA Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity_with_Sales_Incentive_Approvals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

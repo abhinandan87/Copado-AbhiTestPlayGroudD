@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quota</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quotas</value>
+    </caseValues>
+    <fields>
+        <label><!-- All Managers --></label>
+        <name>AllManagers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocate Quota --></label>
+        <name>AllocateQuota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Line --></label>
+        <name>BusinessLine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Quota --></label>
+        <name>DirectQuota__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Vertical --></label>
+        <name>GlobalVertical__c</name>
+        <picklistValues>
+            <masterLabel>CMS</masterLabel>
+            <translation><!-- CMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial</masterLabel>
+            <translation><!-- Financial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy</masterLabel>
+            <translation><!-- Legacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport</masterLabel>
+            <translation><!-- Transport --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Formula --></label>
+        <name>HierarchyFormula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy --></label>
+        <name>Hierarchy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Quota --></label>
+        <name>IndividualQuota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Quota --></label>
+        <name>ManagerQuota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager --></label>
+        <name>Manager__c</name>
+        <relationshipLabel><!-- Quotas --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Offering Type --></label>
+        <name>OfferingType__c</name>
+        <picklistValues>
+            <masterLabel>Allocate Consulting</masterLabel>
+            <translation><!-- Allocate Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allocate New Business</masterLabel>
+            <translation><!-- Allocate New Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allocate New Subscription</masterLabel>
+            <translation><!-- Allocate New Subscription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allocate Onetime</masterLabel>
+            <translation><!-- Allocate Onetime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allocate Renewal</masterLabel>
+            <translation><!-- Allocate Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics License Revenue</masterLabel>
+            <translation><!-- Analytics License Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics Upfront</masterLabel>
+            <translation><!-- Analytics Upfront --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Business</masterLabel>
+            <translation><!-- New Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Subscription</masterLabel>
+            <translation><!-- New Subscription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onetime</masterLabel>
+            <translation><!-- Onetime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overlay</masterLabel>
+            <translation><!-- Overlay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue</masterLabel>
+            <translation><!-- Revenue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Open Position Count --></label>
+        <name>OpenPositionCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Position Quota --></label>
+        <name>OpenPositionQuota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overlay Quota --></label>
+        <name>OverlayQuota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Position Name --></label>
+        <name>PositionName__c</name>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep</masterLabel>
+            <translation><!-- Rep --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quota Amount --></label>
+        <name>QuotaAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota Period --></label>
+        <name>QuotaPeriod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota Region --></label>
+        <name>QuotaRegion__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Americas</masterLabel>
+            <translation><!-- Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rep Quota --></label>
+        <name>RepQuota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roll Quota --></label>
+        <name>RollQuota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team --></label>
+        <name>SalesTeam__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shared Hierarchy --></label>
+        <name>SharedHierarchy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>Source__c</name>
+        <picklistValues>
+            <masterLabel>Quota Database</masterLabel>
+            <translation><!-- Quota Database --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team Quota --></label>
+        <name>TeamQuota__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

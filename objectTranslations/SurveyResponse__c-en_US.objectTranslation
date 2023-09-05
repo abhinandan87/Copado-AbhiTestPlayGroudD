@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey Response</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey Responses</value>
+    </caseValues>
+    <fields>
+        <help><!-- Account Name of the Customer who submitted the Survey Response. --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Survey Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Activity Name --></label>
+        <name>ActivityName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of calendar days the Hot Alert has been open. --></help>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- Open-text comments field to enter details on the Alert follow-up and resolution of the Survey Response. --></help>
+        <label><!-- Alert Comments --></label>
+        <name>AlertComments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reason for the Hot Alert. --></help>
+        <label><!-- Alert Reason --></label>
+        <name>AlertReason__c</name>
+        <picklistValues>
+            <masterLabel>Billing issue</masterLabel>
+            <translation><!-- Billing issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer not contacted/slow response</masterLabel>
+            <translation><!-- Customer not contacted/slow response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer should not have been surveyed</masterLabel>
+            <translation><!-- Customer should not have been surveyed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Outage issue or outage</masterLabel>
+            <translation><!-- Data Outage issue or outage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect entitlements</masterLabel>
+            <translation><!-- Incorrect entitlements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal workflow/process issue</masterLabel>
+            <translation><!-- Internal workflow/process issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knowledge Gap/ Training</masterLabel>
+            <translation><!-- Knowledge Gap/ Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price/Value</masterLabel>
+            <translation><!-- Price/Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Query not resolved</masterLabel>
+            <translation><!-- Query not resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service/Platform issue or outage</masterLabel>
+            <translation><!-- Service/Platform issue or outage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubscribe/Opt-out issue</masterLabel>
+            <translation><!-- Unsubscribe/Opt-out issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Error</masterLabel>
+            <translation><!-- User Error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The area of responsibility for the Hot Alert. --></help>
+        <label><!-- Alert Responsibility --></label>
+        <name>AlertResponsibility__c</name>
+        <picklistValues>
+            <masterLabel>3rd Party/Alliance &amp; Channel Partner</masterLabel>
+            <translation><!-- 3rd Party/Alliance &amp; Channel Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Care</masterLabel>
+            <translation><!-- Customer Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Care (Product/T2/T3)</masterLabel>
+            <translation><!-- Customer Care (Product/T2/T3) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entitlements/Fulfilment</masterLabel>
+            <translation><!-- Entitlements/Fulfilment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing/Communications</masterLabel>
+            <translation><!-- Marketing/Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OCC</masterLabel>
+            <translation><!-- OCC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product (Data)</masterLabel>
+            <translation><!-- Product (Data) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product (Technology)</masterLabel>
+            <translation><!-- Product (Technology) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Current status of the Survey Response. --></help>
+        <label><!-- Alert Status --></label>
+        <name>AlertStatus__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation><!-- Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - No Action Required</masterLabel>
+            <translation><!-- Closed - No Action Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Resolved with Customer</masterLabel>
+            <translation><!-- Closed - Resolved with Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Unable to Reach Customer</masterLabel>
+            <translation><!-- Closed - Unable to Reach Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Progress</masterLabel>
+            <translation><!-- In-Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The type of Alert that has been generated based on the Survey Response: Commendation, Neutral or Hot Alert. --></help>
+        <label><!-- Alert Type --></label>
+        <name>AlertType__c</name>
+        <picklistValues>
+            <masterLabel>Commendation</masterLabel>
+            <translation><!-- Commendation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot Alert</masterLabel>
+            <translation><!-- Hot Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customer Effort Score (CES) defining the level of effort required by the customer to request support, on a scale of 1 (Extremely difficult) - 7 (Extremely easy). --></help>
+        <label><!-- CES Score --></label>
+        <name>CESScore__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer Satisfaction Score (CSAT) defines overall satisfaction, calculated as a simple average of CES, RSS &amp; TES, on a scale of 1 (Extremely unsatisfied) - 7 (Extremely satisfied). Note: Hot Alert triggers are not enabled on this formula field. --></help>
+        <label><!-- CSAT Score --></label>
+        <name>CSATScore__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date on which the surveyed Case was closed. --></help>
+        <label><!-- Case Closed Date --></label>
+        <name>CaseClosedDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email address of the Owner of the surveyed Case. --></help>
+        <label><!-- Case Owner Manager Email Id --></label>
+        <name>CaseOwnerEmailId__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseOwnerId --></label>
+        <name>CaseOwnerId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Owner of the Case to whom the Survey Response pertains to. --></help>
+        <label><!-- Case Owner --></label>
+        <name>CaseOwner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Group as selected on the Case. --></help>
+        <label><!-- Case Product Group --></label>
+        <name>CaseProductGroup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Case number for which the Survey Response was received. --></help>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Survey Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- New fields, in place to capture data when bringing it back from the surveys --></help>
+        <label><!-- Comment 10 --></label>
+        <name>Comment10__c</name>
+    </fields>
+    <fields>
+        <help><!-- New fields, in place to capture data when bringing it back from the surveys --></help>
+        <label><!-- Comment 1 --></label>
+        <name>Comment1__c</name>
+    </fields>
+    <fields>
+        <help><!-- New fields, in place to capture data when bringing it back from the surveys --></help>
+        <label><!-- Comment 2 --></label>
+        <name>Comment2__c</name>
+    </fields>
+    <fields>
+        <help><!-- New fields, in place to capture data when bringing it back from the surveys --></help>
+        <label><!-- Comment 3 --></label>
+        <name>Comment3__c</name>
+    </fields>
+    <fields>
+        <help><!-- New fields, in place to capture data when bringing it back from the surveys --></help>
+        <label><!-- Comment 4 --></label>
+        <name>Comment4__c</name>
+    </fields>
+    <fields>
+        <help><!-- New fields, in place to capture data when bringing it back from the surveys --></help>
+        <label><!-- Comment 5 --></label>
+        <name>Comment5__c</name>
+    </fields>
+    <fields>
+        <help><!-- New fields, in place to capture data when bringing it back from the surveys --></help>
+        <label><!-- Comment 6 --></label>
+        <name>Comment6__c</name>
+    </fields>
+    <fields>
+        <help><!-- New fields, in place to capture data when bringing it back from the surveys --></help>
+        <label><!-- Comment 7 --></label>
+        <name>Comment7__c</name>
+    </fields>
+    <fields>
+        <help><!-- New fields, in place to capture data when bringing it back from the surveys --></help>
+        <label><!-- Comment 8 --></label>
+        <name>Comment8__c</name>
+    </fields>
+    <fields>
+        <help><!-- New fields, in place to capture data when bringing it back from the surveys --></help>
+        <label><!-- Comment 9 --></label>
+        <name>Comment9__c</name>
+    </fields>
+    <fields>
+        <help><!-- Verbatim open comments from the survey. --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email Address of the customer contact who submitted the Survey Response. --></help>
+        <label><!-- Contact Email --></label>
+        <name>ContactEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer Contact who submitted the Survey Response. --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Survey Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Initial mailing list to receive Alert emails. --></help>
+        <label><!-- Distribution List 1 --></label>
+        <name>DistributionList1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default mailing list to receive Alert emails if Distribution List 1 is not provided. --></help>
+        <label><!-- Distribution List 2 --></label>
+        <name>DistributionList2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>Commodity Insights</masterLabel>
+            <translation><!-- Commodity Insights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Global Shared Services</masterLabel>
+            <translation><!-- Corporate Global Shared Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dow Jones Indices</masterLabel>
+            <translation><!-- Dow Jones Indices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering Solutions</masterLabel>
+            <translation><!-- Engineering Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Intelligence</masterLabel>
+            <translation><!-- Market Intelligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobility</masterLabel>
+            <translation><!-- Mobility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OSTTRA</masterLabel>
+            <translation><!-- OSTTRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ratings</masterLabel>
+            <translation><!-- Ratings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Overall customer Experience score based on interacting and doing business with IHS Markit, on a scale of 1 (Extremely negative) - 7 (Extremely positive). --></help>
+        <label><!-- Experience Question --></label>
+        <name>ExperienceQuestion__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSA Owner Id --></label>
+        <name>FSAOwnerId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Owner of the FSA to whom the Survey Response pertains to. --></help>
+        <label><!-- FSA Owner --></label>
+        <name>FSAOwner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Language in which the Corporate Survey was completed by the customer (EN = English, JA = Japanese). --></help>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- LegacyID --></label>
+        <name>LegacyID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer&apos;s likelihood to renew their contract with IHS Markit on a scale of  1 (Extremely unlikely) - 7 (Extremely likely). --></help>
+        <label><!-- Likelihood To Renew --></label>
+        <name>LikelihoodToRenew__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPS Score From Qualtrics --></label>
+        <name>NPSScoreFromQualtrics__c</name>
+    </fields>
+    <fields>
+        <help><!-- Net Promoter Score (NPS) measures the likelihood of the customer to recommend IHS Markit to a colleague or industry contact, on a scale of 0 (Not at all likely) - 10 (Extremely likely). --></help>
+        <label><!-- NPS Score --></label>
+        <name>NPSScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- PKID SurvResp --></label>
+        <name>PKIDSurvResp__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the primary training instructor who conducted the training session. --></help>
+        <label><!-- Primary Instructor --></label>
+        <name>PrimaryInstructor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Look up field to allocate the relevant Product/Service that the customer&apos;s corporate survey response pertains to. --></help>
+        <label><!-- Product Group --></label>
+        <name>ProductGroupLookup__c</name>
+        <relationshipLabel><!-- Survey Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The aggregated list of Product Groups as added to the FSA training session. --></help>
+        <label><!-- Product Groups --></label>
+        <name>ProductGroups__c</name>
+    </fields>
+    <fields>
+        <help><!-- A measure of the customer&apos;s overall needs met by IHS Markit&apos;s product(s) and/or service(s), on a scale of 1 (Strongly disagree) - 7 (Strongly agree). --></help>
+        <label><!-- Products/Services Meet Need --></label>
+        <name>ProductsServicesMeetNeed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 10 --></label>
+        <name>Question10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 11 --></label>
+        <name>Question11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 12 --></label>
+        <name>Question12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 13 --></label>
+        <name>Question13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 14 --></label>
+        <name>Question14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 15 --></label>
+        <name>Question15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 16 --></label>
+        <name>Question16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 17 --></label>
+        <name>Question17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 18 --></label>
+        <name>Question18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 19 --></label>
+        <name>Question19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 1 --></label>
+        <name>Question1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 20 --></label>
+        <name>Question20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 21 --></label>
+        <name>Question21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 22 --></label>
+        <name>Question22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 23 --></label>
+        <name>Question23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 24 --></label>
+        <name>Question24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 25 --></label>
+        <name>Question25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 26 --></label>
+        <name>Question26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 27 --></label>
+        <name>Question27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 28 --></label>
+        <name>Question28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 29 --></label>
+        <name>Question29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 2 --></label>
+        <name>Question2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 30 --></label>
+        <name>Question30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 31 --></label>
+        <name>Question31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 32 --></label>
+        <name>Question32__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 33 --></label>
+        <name>Question33__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 34 --></label>
+        <name>Question34__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 35 --></label>
+        <name>Question35__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 3 --></label>
+        <name>Question3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 4 --></label>
+        <name>Question4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 5 --></label>
+        <name>Question5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 6 --></label>
+        <name>Question6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 7 --></label>
+        <name>Question7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 8 --></label>
+        <name>Question8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question 9 --></label>
+        <name>Question9__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rep Satisfaction Score (RSS) measures the customer&apos;s satisfaction level, based on the service provided by the Case owner, on a scale of 1 (Extremely dissatisfied) - 7 (Extremely satisfied). --></help>
+        <label><!-- RSS Score --></label>
+        <name>RSSScore__c</name>
+    </fields>
+    <fields>
+        <help><!-- The source system(s) from which the customer data has been derived and used to send the Corporate Survey. --></help>
+        <label><!-- Recipient Email Source --></label>
+        <name>RecipientEmailSource__c</name>
+    </fields>
+    <fields>
+        <help><!-- The customer&apos;s email address to which the Corporate Survey was sent. --></help>
+        <label><!-- Recipient Email --></label>
+        <name>RecipientEmail__c</name>
+    </fields>
+    <fields>
+        <help><!-- The customer&apos;s first name as on the corporate survey mailing list. --></help>
+        <label><!-- Recipient First Name --></label>
+        <name>RecipientFirstName__c</name>
+    </fields>
+    <fields>
+        <help><!-- The customer&apos;s last name as on the corporate survey mailing list. --></help>
+        <label><!-- Recipient Last Name --></label>
+        <name>RecipientLastName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mandatory field to describe the resolution action(s) taken in order to close the Hot Alert. --></help>
+        <label><!-- Resolution Comments --></label>
+        <name>ResolutionComments1__c</name>
+    </fields>
+    <fields>
+        <label><!-- zzzResolution Comments --></label>
+        <name>ResolutionComments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date on which the Hot Alert was resolved. --></help>
+        <label><!-- Resolved Date --></label>
+        <name>ResolvedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 10 --></label>
+        <name>Response10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 11 --></label>
+        <name>Response11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 12 --></label>
+        <name>Response12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 13 --></label>
+        <name>Response13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 14 --></label>
+        <name>Response14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 15 --></label>
+        <name>Response15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 16 --></label>
+        <name>Response16__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 17 --></label>
+        <name>Response17__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 18 --></label>
+        <name>Response18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 19 --></label>
+        <name>Response19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 1 --></label>
+        <name>Response1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 20 --></label>
+        <name>Response20__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 21 --></label>
+        <name>Response21__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 22 --></label>
+        <name>Response22__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 23 --></label>
+        <name>Response23__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 24 --></label>
+        <name>Response24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 25 --></label>
+        <name>Response25__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 26 --></label>
+        <name>Response26__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 27 --></label>
+        <name>Response27__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 28 --></label>
+        <name>Response28__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 29 --></label>
+        <name>Response29__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 2 --></label>
+        <name>Response2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 30 --></label>
+        <name>Response30__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 31 --></label>
+        <name>Response31__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 32 --></label>
+        <name>Response32__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 33 --></label>
+        <name>Response33__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 34 --></label>
+        <name>Response34__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 35 --></label>
+        <name>Response35__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 3 Score --></label>
+        <name>Response3Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 3 --></label>
+        <name>Response3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 4 Score --></label>
+        <name>Response4Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 4 --></label>
+        <name>Response4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 5 --></label>
+        <name>Response5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 6 --></label>
+        <name>Response6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 7 --></label>
+        <name>Response7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 8 --></label>
+        <name>Response8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response 9 --></label>
+        <name>Response9__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date on which the Survey Response was received. --></help>
+        <label><!-- Response Date --></label>
+        <name>ResponseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- A unique survey identifier provided by the survey tool. --></help>
+        <label><!-- Survey System Reference --></label>
+        <name>SurveySystemReference__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of survey that was sent to the customer: Corporate, Training (FSA) or Customer Care (Case). --></help>
+        <label><!-- Survey Type --></label>
+        <name>SurveyType__c</name>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Care</masterLabel>
+            <translation><!-- Customer Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Version of the survey questions that the customer responded to, when the feedback was received. --></help>
+        <label><!-- Survey Version --></label>
+        <name>SurveyVersion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time Expectation Score (TES) measures the customer&apos;s satisfaction level, based on the time taken to respond to the Case, on a scale of 1 (Extremely dissatisfied) - 7 (Extremely satisfied). --></help>
+        <label><!-- TES Score --></label>
+        <name>TESScore__c</name>
+    </fields>
+    <fields>
+        <help><!-- Measure of whether the customer&apos;s training expectations were met, on a scale of 1 (Strongly disagree) - 7 (Strongly agree). --></help>
+        <label><!-- Training Met Needs --></label>
+        <name>TrainingMetNeeds__c</name>
+    </fields>
+    <fields>
+        <help><!-- FSA ID for which the Survey Response was received. --></help>
+        <label><!-- FSA ID --></label>
+        <name>Training__c</name>
+        <relationshipLabel><!-- Survey Responses --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Corporate --></label>
+        <name>Corporate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Transactional --></label>
+        <name>CustomerCare</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Field Service Activity --></label>
+        <name>FieldServiceActivity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Training --></label>
+        <name>Training</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please provide alert reason in order to resolve the Hot Alert --></errorMessage>
+        <name>AlertReasonShouldNotBeNull</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide alert responsibility in order to resolve the Hot Alert --></errorMessage>
+        <name>AlertResponsibilityShouldNotBeNull</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Alert type is not null then alert status should be populated --></errorMessage>
+        <name>AlertStatusIsRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have sufficient privileges to update the record type - please contact the Customer Experience Team. --></errorMessage>
+        <name>RecordTypeNonEditableField</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide resolution commentary in order to resolve the Hot Alert --></errorMessage>
+        <name>ResolutionCommentsShouldNotBeNull</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only update Alert Status, Alert Responsibility, Alert Reason, Resolution Comments and Product Group (Corporate Survey Response only) --></errorMessage>
+        <name>SurveyResponseNonEditableFields</name>
+    </validationRules>
+</CustomObjectTranslation>

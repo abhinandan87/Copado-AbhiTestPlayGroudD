@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Energy | Content | Developer</name>
+    <queueMembers>
+        <users>
+            <user>andrea.anderson@ihsmarkit.com</user>
+            <user>christina.ewert@ihsmarkit.com</user>
+            <user>cindy.gibb@ihsmarkit.com</user>
+            <user>merri.lloyd@ihsmarkit.com</user>
+            <user>scott.hamilton@ihsmarkit.com</user>
+            <user>tracy.belski@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

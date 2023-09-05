@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <description>US-4760946: Updates Lead Owner Region field for SPG Referral and Transfer leads when lead owner is assigned or updated.</description>
+    <formulas>
+        <description>Searches for region based on user country. If country match is not found, &quot;Other&quot; is listed on the record.</description>
+        <name>LeadRegionValue</name>
+        <dataType>String</dataType>
+        <expression>IF({!Lead_Owner_Region.IHS_Name__c} = {!$Record.Owner:User.Country}, {!Lead_Owner_Region.Referral_Region__r.MasterLabel}, 
+IF({!Lead_Owner_Region.IHS_Name__c} &lt;&gt; {!$Record.Owner:User.Country}, &quot;Other&quot;,
+null))</expression>
+    </formulas>
+    <interviewLabel>CI Referral Lead Owner Region {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CI Referral Lead Owner Region</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>US-4760946: Search for Referral Country custom metadata record if the user country is a match and store the region name linked to the matching country.</description>
+        <name>Lead_Owner_Region</name>
+        <label>Lead Owner Region</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Lead_Owner_Region</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IHS_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Owner:User.Country</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Referral_Country__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>US-4760946: Lead owner region is updated with region label from matching referral country record.</description>
+        <name>Update_Lead_Owner_Region</name>
+        <label>Update Lead Owner Region</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Lead_Owner_Region__c</field>
+            <value>
+                <elementReference>LeadRegionValue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Lead_Owner_Region</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3)</filterLogic>
+        <filters>
+            <field>OwnerId</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LeadSource</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPG Referral</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LeadSource</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Transfer</stringValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

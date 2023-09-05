@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>false</blockedByApiWhitelisting>
+    <consumerKey>3MVG95NPsF2gwOiOMYqSTKQwI6jW7ypUg_ylj4ckDhVodoFmeRJg7hoK7Nd_4Mo3ytfky_a1Cf9.1lrsL9m5u</consumerKey>
+    <consumerName>TIBCO Spotfire</consumerName>
+    <masterLabel>BlacklistedConsumer3070107016581632</masterLabel>
+</BlacklistedConsumer>

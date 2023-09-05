@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Datafeed__c.DatafeedDescription__c</field>
+    </columns>
+    <columns>
+        <field>Datafeed__c.DatafeedFilename__c</field>
+    </columns>
+    <columns>
+        <field>Datafeed__c.ReportConfig__c</field>
+    </columns>
+    <columns>
+        <field>Datafeed__c.DatafeedFrequency__c</field>
+    </columns>
+    <columns>
+        <field>Datafeed__c.DatafeedStatus__c</field>
+    </columns>
+    <columns>
+        <field>Datafeed__c.PGPKey__c</field>
+    </columns>
+    <columns>
+        <field>Datafeed__c.ReportStyle__c</field>
+    </columns>
+    <columns>
+        <field>FK_$ProductLogin__c.Email__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>MSF Twice Daily Datafeeds by Client</description>
+    <filter>
+        <criteriaItems>
+            <column>Datafeed__c.DatafeedFrequency__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Twice Daily</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Datafeed__c.LoginName__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MSF Twice Daily Datafeeds by Client</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Datafeed__c@Datafeed__c.ProductLogin__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>CUST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject></baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Association between template metrics and a Salesforce record.</description>
+    <label>Quip Template Metric Records</label>
+    <sections>
+        <masterLabel>Collaboration Template Metric Records</masterLabel>
+    </sections>
+</ReportType>

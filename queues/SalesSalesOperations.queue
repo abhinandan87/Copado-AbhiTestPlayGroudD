@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Sales | Sales Operations</name>
+    <queueMembers>
+        <users>
+            <user>alexander.coates@ihsmarkit.com</user>
+            <user>amber.rodriguez@ihsmarkit.com</user>
+            <user>amit.kumar2@ihsmarkit.com</user>
+            <user>ankit.jain2@ihsmarkit.com</user>
+            <user>ankit.rajvanshi@ihsmarkit.com</user>
+            <user>anubhav.saxena@ihsmarkit.com</user>
+            <user>babnish.bhatia@ihsmarkit.com</user>
+            <user>deepak.tiwari1@ihsmarkit.com</user>
+            <user>gaurav.chaudhary@ihsmarkit.com</user>
+            <user>gaurav.dhami@ihsmarkit.com</user>
+            <user>himanshu.gehaney@ihsmarkit.com</user>
+            <user>janos.zsiros@ihsmarkit.com</user>
+            <user>katherine.lupo@ihsmarkit.com.prod</user>
+            <user>kathy.troyer@ihsmarkit.com</user>
+            <user>lynn.leadley@ihsmarkit.com.prod</user>
+            <user>melanie.aris@ihsmarkit.com</user>
+            <user>mohd.zeeshan2@ihsmarkit.com</user>
+            <user>narendra.kumar@ihsmarkit.com</user>
+            <user>prince.kumar@ihsmarkit.com</user>
+            <user>robert.petrik@ihsmarkit.com</user>
+            <user>rohit.kaundal@ihsmarkit.com</user>
+            <user>sakshi.sinha@ihsmarkit.com</user>
+            <user>santosh.mourya@ihsmarkit.com</user>
+            <user>saurabh.dhawan@ihsmarkit.com</user>
+            <user>shameem.akhtarfarooqui@ihsmarkit.com</user>
+            <user>shilpa.tara@ihsmarkit.com</user>
+            <user>shubham.ramchandani@ihsmarkit.com</user>
+            <user>sona.chakroborty@ihsmarkit.com</user>
+            <user>sonia.sharma@ihsmarkit.com</user>
+            <user>supriya.saroha@ihsmarkit.com</user>
+            <user>tanya.tiwari@ihsmarkit.com</user>
+            <user>varun.kumar1@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

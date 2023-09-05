@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- API Key --></label>
+        <name>TILBP__APIKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base URL --></label>
+        <name>TILBP__BaseURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>TILBP__BatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Batch Size --></label>
+        <name>TILBP__DeleteBatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Run Time --></label>
+        <name>TILBP__RequestedRunTime__c</name>
+    </fields>
+</CustomObjectTranslation>

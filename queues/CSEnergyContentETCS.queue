@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Energy | Content | ETCS</name>
+    <queueMembers>
+        <users>
+            <user>adam.upson@ihsmarkit.com</user>
+            <user>beatriz.rodriguez@ihsmarkit.com</user>
+            <user>casey.kerr@ihsmarkit.com</user>
+            <user>dylan.mair@ihsmarkit.com</user>
+            <user>edward.liew@ihsmarkit.com</user>
+            <user>evgenia.guryeva@ihsmarkit.com</user>
+            <user>hitoshi.banno@ihsmarkit.com</user>
+            <user>jack.higginson@ihsmarkit.com</user>
+            <user>jeff.sprowl@ihsmarkit.com</user>
+            <user>jennifer.sivley@ihsmarkit.com</user>
+            <user>karen.morgan@ihsmarkit.com</user>
+            <user>keith.ina@ihsmarkit.com</user>
+            <user>kelli.delp@ihsmarkit.com</user>
+            <user>kim.toten@ihsmarkit.com</user>
+            <user>kirk.shore@ihsmarkit.com</user>
+            <user>larry.gerken@ihsmarkit.com</user>
+            <user>leonardo.pimentel@ihsmarkit.com</user>
+            <user>matthew.quinn@ihsmarkit.com</user>
+            <user>mohit.gulati@ihsmarkit.com</user>
+            <user>nadia.campaner@ihsmarkit.com</user>
+            <user>nasser.chaudhry@ihsmarkit.com.prod</user>
+            <user>nina.vilner@ihsmarkit.com</user>
+            <user>robert.moers@ihsmarkit.com</user>
+            <user>stacy.hendrickson@ihsmarkit.com</user>
+            <user>syed.ahmed@ihsmarkit.com</user>
+            <user>syed.nusratullah@ihsmarkit.com</user>
+            <user>virginia.calvert@ihsmarkit.com</user>
+            <user>yaxing.wang@ihsmarkit.com</user>
+            <user>yongliang.zhang@ihsmarkit.com</user>
+            <user>zonia.nichols@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>AUTOS | Data Quality Team - EU</name>
+    <queueMembers>
+        <users>
+            <user>antonio.dasilva@ihsmarkit.com</user>
+            <user>anuradha.deshwal@ihsmarkit.com</user>
+            <user>claire.gardner@ihsmarkit.com</user>
+            <user>daniel.lim@ihsmarkit.com</user>
+            <user>jason.corn@ihsmarkit.com</user>
+            <user>jemma.warehand@ihsmarkit.com</user>
+            <user>jimmy.hearn@ihsmarkit.com</user>
+            <user>jon.mccausland@ihsmarkit.com</user>
+            <user>kiran.sharma@ihsmarkit.com</user>
+            <user>leah.dunn@ihsmarkit.com</user>
+            <user>leonce.doussaud@ihsmarkit.com</user>
+            <user>michal.frankowski@ihsmarkit.com</user>
+            <user>patrick.weiss@ihsmarkit.com</user>
+            <user>prasanthi.kandukuru@ihsmarkit.com</user>
+            <user>robert.crow@ihsmarkit.com</user>
+            <user>sandra.donaldson@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

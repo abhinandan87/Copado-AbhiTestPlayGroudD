@@ -1,0 +1,164 @@
+<!--
+  @description       : 
+  @author            : pietro.martino@salesforce.com
+  @group             : 
+  @last modified on  : 05-10-2021
+  @last modified by  : pietro.martino@salesforce.com
+  Modifications Log 
+  Ver   Date         Author                          Modification
+  1.0   04-27-2021   pietro.martino@salesforce.com   Initial Version
+  1.1   06-29-2021   ankush.agarwal@ihsmarkit.com    Removed Child Accounts Tab
+-->
+<aura:component implements="lightning:recordHomeTemplate" description="Header and three columns layout with wider center column" access="global">
+    <aura:attribute name="headerLeft" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="headerRight" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="left" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="center" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="right" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="details" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="activity" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="currentTab" type="String" default="accountPlanDoc" /> <!--overview-->
+    <!-- start: updates to check for TCRM licenses -->
+    <aura:attribute name="tcrmDashboard" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="tcrmDashboard2" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="customerInsights" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="sfaDoc1" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="sfaDoc2" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="hasTcrmLicense" type="Boolean" default="false" />
+    <aura:attribute name="hasAnywhereLicense" type="Boolean" default="false" />
+    <aura:attribute name="hasLinkedInSalesNavigatorLicense" type="Boolean" default="false" />
+    <!--This is added to call controller method which cannot be called directly-->
+    <c:CheckUserLicense isAssigned="{!v.hasTcrmLicense}" licenseName="{!$Label.c.TcrmPermissionSets}"/>
+    <c:CheckUserLicense isAssigned="{!v.hasAnywhereLicense}" licenseName="{!$Label.c.AnywherePermissionSets}"/>
+    <!--This is for LinkedIN Sales Navigator-->
+    <aura:attribute name="linkedIn1" type="Aura.Component[]" access="global"/>
+    <aura:attribute name="linkedIn2" type="Aura.Component[]" access="global"/>
+	<c:CheckUserLicense isAssigned="{!v.hasLinkedInSalesNavigatorLicense}" licenseName="{!$Label.c.LSNPermissionSet}"/>
+    <!-- end -->
+    <aura:registerEvent name="appEvent" type="c:EventAccountQuickAction"/>
+    
+    <aura:if isTrue="{!$Browser.formFactor == 'DESKTOP'}">
+    	<div class="columns">
+            <lightning:layout >
+                <lightning:layoutItem size="10" class="columns">
+                      <div class="slds-p-bottom_small slds-p-right_small">
+                    		<div class="columns">{!v.headerLeft}</div>
+                       </div>
+                       <div class="slds-p-right_small">
+                    	<lightning:tabset aura:id="tabs" selectedTabId="accountPlanDoc" onselect="{! c.handleSelect }"> <!-- overview -->
+                            <aura:if isTrue="{!v.hasAnywhereLicense}"> 
+                                <lightning:tab label="{!$Label.c.TcrmAccountOverview}" id="accountOverviewDoc">
+                                    <lightning:layout class="columns">
+                                        <lightning:layoutItem size="12" class="left">{!v.sfaDoc2}</lightning:layoutItem>
+                                    </lightning:layout>
+                                </lightning:tab>
+                            </aura:if>
+                            <lightning:tab label="Details" id="details">
+                                <lightning:layout class="columns">
+                                    <lightning:layoutItem size="12" class="left">{!v.details}</lightning:layoutItem>
+                                </lightning:layout>
+                            </lightning:tab>
+                            <lightning:tab label="Summary" id="overview"> <!-- overview -->
+                                <lightning:layout class="columns">
+                                    <lightning:layoutItem size="6" class="left">{!v.left}</lightning:layoutItem>
+                                    <lightning:layoutItem size="6" class="left">{!v.center}</lightning:layoutItem>
+                                </lightning:layout>
+                            </lightning:tab>
+                            <lightning:tab label="Activity Stream" id="activity">
+                                <lightning:layout class="columns">
+                                    <lightning:layoutItem size="12" class="left">{!v.activity}</lightning:layoutItem>
+                                </lightning:layout>
+                            </lightning:tab>
+                            <aura:if isTrue="{!v.hasTcrmLicense}">
+                                <lightning:tab label="{!$Label.c.TcrmThisAccount}" id="tcrm1">
+                                    <lightning:layout class="columns">
+                                        <lightning:layoutItem size="12" class="left">{!v.tcrmDashboard}</lightning:layoutItem>
+                                    </lightning:layout>
+                                </lightning:tab>
+                                <!--lightning:tab label="{!$Label.c.TcrmRelatedAccounts}" id="tcrm2">
+                                    <lightning:layout class="columns">
+                                        <lightning:layoutItem size="12" class="left">{!v.tcrmDashboard2}</lightning:layoutItem>
+                                    </lightning:layout>
+                                </lightning:tab-->
+                            </aura:if>   
+                            <lightning:tab label="Customer Insights" id="customerInsights">
+                                <lightning:layout class="columns">
+                                    <lightning:layoutItem size="12" class="left">{!v.customerInsights}</lightning:layoutItem>
+                                </lightning:layout>
+                            </lightning:tab>
+                         	<aura:if isTrue="{!v.hasAnywhereLicense}"> 
+                                <lightning:tab label="{!$Label.c.TcrmAccountPlan}" id="accountPlanDoc">
+                                    <lightning:layout class="columns">
+                                        <lightning:layoutItem size="12" class="left">{!v.sfaDoc1}</lightning:layoutItem>
+                                    </lightning:layout>
+                                </lightning:tab>
+                            </aura:if>
+                            <aura:if isTrue="{!v.hasLinkedInSalesNavigatorLicense}"> 
+                                <lightning:tab label="{!$Label.c.LSNTabLabel}" id="linkedInTab">
+                                    <lightning:layout class="columns">
+                                        <lightning:layoutItem size="6" class="left">{!v.linkedIn1}</lightning:layoutItem>
+                                    	<lightning:layoutItem size="6" class="center">{!v.linkedIn2}</lightning:layoutItem>
+                                    </lightning:layout>
+                                </lightning:tab>
+                            </aura:if>
+
+                            <!--<lightning:tab class="slds-button slds-button_brand" label="Add Contact" id="contact" >
+                                
+                            </lightning:tab>
+                            <lightning:tab label="Add Activity" id="activity" >
+                            
+                            </lightning:tab>
+                            <lightning:tab label="Add Opportunity" id="opportunity" >
+                            
+                            </lightning:tab>-->
+                        </lightning:tabset> 
+                     </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="2" class="slds-theme_default">
+                            <div style="padding:0.1rem;">{!v.right}</div>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <div>{!v.headerRight}</div>
+        </div>
+        
+      </aura:if>
+      <aura:if isTrue="{!$Browser.formFactor == 'PHONE'}">
+            <div class="slds-col" style="width:100%;" >
+    			<lightning:layout >
+                     <lightning:layoutItem size="12">
+                            <div>{!v.headerLeft}</div>
+                     </lightning:layoutItem>
+                </lightning:layout>
+                            <br></br>
+                <lightning:layout>
+                    <lightning:layoutItem size="12">
+                           <lightning:tabset aura:id="tabs" selectedTabId="overview"  onselect="{! c.handleSelect }">
+                                <lightning:tab label="Details" id="details">
+                                    <lightning:layout>
+                                        <lightning:layoutItem class="left">{!v.details}</lightning:layoutItem>
+                                    </lightning:layout>
+                                </lightning:tab>
+                                <lightning:tab label="Summary" id="overview">
+                                    <lightning:layout>
+                                        <lightning:layoutItem>{!v.left}</lightning:layoutItem>
+                                    </lightning:layout><br></br>
+                                    <lightning:layout>
+                                        <lightning:layoutItem>{!v.center}</lightning:layoutItem>
+                                    </lightning:layout>
+                                </lightning:tab>
+                             </lightning:tabset> 
+                    </lightning:layoutItem>
+                 </lightning:layout><br></br>
+                 <lightning:layout>
+                    <lightning:layoutItem size="12">
+                           <div>{!v.right}</div>
+                    </lightning:layoutItem>
+                 </lightning:layout><br></br>
+                 <lightning:layout>
+                    <lightning:layoutItem size="12">
+                           <div>{!v.headerRight}</div>
+                    </lightning:layoutItem>
+                </lightning:layout><br></br>
+            </div>
+      </aura:if>
+</aura:component>

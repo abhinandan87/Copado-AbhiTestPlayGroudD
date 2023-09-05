@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditOpportunitySplits</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditOpportunitySplits</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditOpportunitySplits</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveAndClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveAndClose</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveAndClose</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>LegacyIDUnique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>SFDC1-7046: Legacy ID Unique field is a concatenation of the source system name and a source system record id to ensure record is uniquely identified.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This field store the concatenation of the source system name and a source system record id to ensure the record is uniquely identified.</inlineHelpText>
+        <label>LegacyIDUnique</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <description>SFDC1-7046: Legacy ID field is the system id (unfriendly) referencing the source record.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This is the system id (unfriendly) referencing the source record and is populated via migrating system</inlineHelpText>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacySystem__c</fullName>
+        <description>SFDC1-7046: Legacy System field is a picklist that represents the original system the record came from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the CRM system the source record came from</inlineHelpText>
+        <label>LegacySystem</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LegacySystem</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MySplitOppy__c</fullName>
+        <description>SFDC1-9778:Current User Formula field for Split Reporting</description>
+        <externalId>false</externalId>
+        <formula>$User.Id = SplitOwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>To only pull their part of the split.</inlineHelpText>
+        <label>MySplitOppy</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MyTeamSplitOppy__c</fullName>
+        <description>SFDC1-9778:Current User Formula field for Split Reporting
+SFDC-1450 Renamed Field Name</description>
+        <externalId>false</externalId>
+        <formula>OR(
+$User.Id = SplitOwnerId,
+$User.Id = SplitOwner.ManagerId,
+$User.Id = SplitOwner.Manager.ManagerId,
+$User.Id = SplitOwner.Manager.Manager.ManagerId,
+$User.Id = SplitOwner.Manager.Manager.Manager.ManagerId,
+$User.Id = SplitOwner.Manager.Manager.Manager.Manager.ManagerId
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>To only pull their part of the split.</inlineHelpText>
+        <label>MyTeamSplitOppy</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>SalesManager__c</fullName>
+        <description>SFDC-1156 - Show Manager Hierarchy upto 8 Levels.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(SplitOwner.Manager.Manager.Manager.Manager.Manager.Manager.ManagerId)), SplitOwner.Manager.Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp; SplitOwner.Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.FullName__c,
+IF(NOT(ISBLANK(SplitOwner.Manager.Manager.Manager.Manager.Manager.ManagerId)),
+SplitOwner.Manager.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.FullName__c,
+IF(NOT(ISBLANK(SplitOwner.Manager.Manager.Manager.Manager.ManagerId)),
+SplitOwner.Manager.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.FullName__c,
+IF(NOT(ISBLANK(SplitOwner.Manager.Manager.Manager.ManagerId)),
+SplitOwner.Manager.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.FullName__c,
+IF(NOT(ISBLANK(SplitOwner.Manager.Manager.ManagerId)),
+SplitOwner.Manager.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.FullName__c,
+IF(NOT(ISBLANK(SplitOwner.Manager.ManagerId)),
+SplitOwner.Manager.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.FullName__c,
+IF(NOT(ISBLANK(SplitOwner.ManagerId)),
+SplitOwner.Manager.FullName__c &amp; &quot;, &quot; &amp;
+SplitOwner.FullName__c, SplitOwner.FullName__c
+)
+)
+)
+)
+)
+)
+)</formula>
+        <label>Sales Manager</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesRegion__c</fullName>
+        <description>Region calculated from user&apos;s region</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SplitOwner.UserRegion__c)</formula>
+        <inlineHelpText>SFDC1-641 Formula field to fetch region based on user&apos;s country</inlineHelpText>
+        <label>Sales Region</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SplitAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>SplitCountry__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC1-216 Lookup to Country object</description>
+        <externalId>false</externalId>
+        <label>Split Country/Territory</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Opportunity Splits</relationshipLabel>
+        <relationshipName>OpportunitySplits</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SplitGeography__c</fullName>
+        <description>SFDC-216 Geography from the Country referenced in this Opportunity Split</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SplitCountry__r.Geography__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Split Geography</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SplitNote</fullName>
+    </fields>
+    <fields>
+        <fullName>SplitOwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SplitPercentage</fullName>
+    </fields>
+    <fields>
+        <fullName>SplitRegion__c</fullName>
+        <description>SFDC-216 Region from the Country referenced in this Opportunity Split</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SplitCountry__r.Region__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Split Region</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SplitTypeId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TeamMemberCountry__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-3262: Shows the value based on the user location</description>
+        <externalId>false</externalId>
+        <label>Team Member Country/Territory</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Opportunity Splits (Team Member Country)</relationshipLabel>
+        <relationshipName>Opportunity_Splits</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>NoOppSplitChangeWhen6WP</fullName>
+        <active>true</active>
+        <description>SFDC1-6858 Users cannot update the Opportunity Split when oppty is 6WP
+SFDC1-7583 Making sure the validation rules is applicable only for 6WP</description>
+        <errorConditionFormula>AND(
+    ISPICKVAL((Opportunity.StageName),&quot;6WP-Closed Won/Order Processed&quot;),
+    $Profile.Name &lt;&gt; &quot;IHSMarkit System Admin&quot;, 
+    $Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+    NOT(CONTAINS($Profile.Name,&apos;Sales Ops&apos;)),
+    NOT(CONTAINS($Profile.Name,&apos;User Support&apos;))
+)</errorConditionFormula>
+        <errorMessage>Since the Related Opportunity is in 6WP stage, no updates can be made to oppty split</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OpportunitySplitBlockProhibitedCountry</fullName>
+        <active>true</active>
+        <description>SFDC1-213. Do not allow an Opportunity record to be created if the Opportunity&apos;s country is a Prohibited Country</description>
+        <errorConditionFormula>SplitCountry__r.IsProhibited__c</errorConditionFormula>
+        <errorDisplayField>SplitCountry__c</errorDisplayField>
+        <errorMessage>Due to U.S. export controls and sanctions restrictions, Opportunity Split records cannot be created for the selected country.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OpptySplitOpptyRecordTypeValidationCheck</fullName>
+        <active>false</active>
+        <description>SFDC1-7803:Lock Down Opportunity Splits for the IHS Sales General Profile if Opportunity record type is Inner Year.</description>
+        <errorConditionFormula>AND(
+SplitType.DeveloperName  = &apos;Overlay&apos;,
+Opportunity.RecordType.Name = &apos;Inner Year&apos;, 
+$Profile.Name = &apos;IHSMarkit Sales: General&apos;
+)</errorConditionFormula>
+        <errorMessage>This User is not allowed to add/modify the Opportunity Splits.</errorMessage>
+    </validationRules>
+</CustomObject>

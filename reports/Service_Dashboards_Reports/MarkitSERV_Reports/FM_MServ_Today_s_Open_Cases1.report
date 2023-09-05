@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATEONLY</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(((1 OR 2 OR 3)) AND 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Flora Janting,Presinna Thomas,Trevor Shearer,Megan Heintschel,Joel Somerstein,Angela Jou,Ankur Tripathi,Arun Sikri,Benit Kurian,Chau Ting Lau,Divesh Singh,Gimpi Rawal,Anthony Capra,Jim Lopez,Jolly Sinha,Junseok Kim,Kawaljeet Singh Sudan,Kinnan Zaloom,Mahima Sharma,Manila Dewan,Md Danish Akhtar,Mizuna Kaneko,Mukul Jain,Natasha Chaudhary,Rishabh Kumar,Roland Gonzales,Rupal Sood,Sarita Monga,Sharon Havilah,Shumei Fu,Siti Ismail,Sumit Behl,Thomas Chase,Catherine Oreta,Kuldeep Thakur,Matthew Flynn,Milana Kelis,Rohit Arora,pranav arneja,Sujata Biswal,Rahul Tanver,Sudhanshu Fuloria,kumari pragati,shikha kanwar,jaspal singh Saini,kavya sridhar,Cesar,Thomas Howse,Rexie Romero,Nizam Miah,Jay Shah,Yuen Jing Low,Jie Wang,Karan Singal,Amitpreet Singh,Zarrin Zuberi,Neeraj jain,Mudassir Khan,GuoXin Li,Jia En Khoo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Nisha Khurana,Luca Colelli Riano,Vipul Patel,Eri Yamazaki,Shaun Ng,Judy To,Prerna Panwar,Rashmi Sharda,Rahul Jain,M | Unassigned,FM | All Japanese Client Queries,FM | DS Match,FM | MSERV,FM | MSERV Client Services,FM | MSERV FX,FM | MSERV Regulatory Reporting,FM | MW | All Other,FM | MW | Book Updates,FM | MW | Clearing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>FM | MW | CPS Onboarding,FM | MW | High Priority,FM | MW | L1,FM | MW | Password Reset,FM | MW | Reports,FM | MW | Static Data,FM | MW | User Clones Static Conf.,FM | MW | User Deactivations,FM | MW | User Setup,FM | Trade Processing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>duplicate,delete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Undeliverable,SOX,Overlay,HKEX,Trade division</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>CREATED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FM | MServ - New open cases (this week)</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

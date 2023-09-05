@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_65780071</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Abu Nidal Khan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Akshay Dogra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Poonam Choudhary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prerna Yadav</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Priya Tyagi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rahul Kumar</sourceValue>
+            </sourceValues>
+            <value>Helpdesk</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kolli Rohit Reddy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sushma Yadav</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paras Dhingra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Harshit Singhal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Uttam Arya</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tommy Aarts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tran Vu Tran</sourceValue>
+            </sourceValues>
+            <value>Dev</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Christine Hotz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christopher Ghobashy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Laura Harris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deborah Marchand</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alia Geiger</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melanie Aris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sarah Moughan</sourceValue>
+            </sourceValues>
+            <value>Product Owner</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_65780071</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.BusinessArea__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.SalesforceHelpdesk</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Global Access</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_65780071</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Cases Closed- Current Month</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

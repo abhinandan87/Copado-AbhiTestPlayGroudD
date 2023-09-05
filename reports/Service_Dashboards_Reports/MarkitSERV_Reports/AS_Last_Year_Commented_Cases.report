@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>This Report is only to view to Commented Cases from App support for last year</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.BusinessGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Client Services,Engineering Services,FX Application Support,Implementation Services,MIS,Application Support Buyside</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COMMENT_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_YEAR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_COMMENT_CREATED_BY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Gayathri Maganti,Gopal Sharma,Rashmi Ramagiri,Jessie Liu,Syairah Ibrahim,Yeongseon Cho,Ankur Goel,Muhammad asif Zafar,Gunjan Sehgal,Sonia Chauhan,Paras Jain,Milo Hong,Ken Tat Lim,James Craven,Jean-Marc Thomas-Jones,Simon Harmel,Yida Zhang,Vaibhav Khera,Xi Chen,FM | MSERV Engineering Services,Shobhit Jain,Prithvindra Maganti,Mel Yap,Pranav Arneja,Nikita Jain,Ajay Mundhra,Haris Anwar,Dominic Adshead,Yiling Koh,Venkata Kiran Thammina,FM | MSERV FX</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$AdditionalCaseFields__c.BusinessGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_COMMENT_CREATED_BY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AS_Last Year_Commented_Cases</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

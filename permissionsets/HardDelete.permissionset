@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Backend: Permission when enabled, the deleted records are not stored in the Recycle Bin. Instead, the records become immediately eligible for deletion, don\&apos;t count toward the storage space used by the organization, and may improve performance.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Hard Delete</label>
+    <license>Salesforce</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>BulkApiHardDelete</name>
+    </userPermissions>
+</PermissionSet>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Voice of Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Voice of Customers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer/ Account Name --></label>
+        <name>CustomerAccountName__c</name>
+        <relationshipLabel><!-- Voice of Customers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Representative --></label>
+        <name>CustomerRepresentative__c</name>
+        <relationshipLabel><!-- Voice of Customers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- File Attached --></label>
+        <name>FileAttached__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Voice of Customers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- S&amp;P Global Representative --></label>
+        <name>SPGlobal_Representative__c</name>
+        <relationshipLabel><!-- Voice of Customers (S&amp;P Global Representative) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Submission Date --></label>
+        <name>SubmissionDate__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

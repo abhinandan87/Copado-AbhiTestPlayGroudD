@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | VG AVS</name>
+    <queueMembers>
+        <users>
+            <user>aaron.williams1@ihsmarkit.com</user>
+            <user>adhar.jaiswal2@ihsmarkit.com</user>
+            <user>ankur.pandey2@ihsmarkit.com</user>
+            <user>apoorva.chadha@ihsmarkit.com</user>
+            <user>cherie.foo@ihsmarkit.com</user>
+            <user>christian.suarez@ihsmarkit.com</user>
+            <user>david.dong@ihsmarkit.com</user>
+            <user>gaurav.bhatia@ihsmarkit.com</user>
+            <user>gaurav.bhatia1@ihsmarkit.com</user>
+            <user>inara.nitisa@ihsmarkit.com</user>
+            <user>madhukar.ramu@ihsmarkit.com</user>
+            <user>maheshchandra.joshi2@ihsmarkit.com</user>
+            <user>mark.lacey@ihsmarkit.com</user>
+            <user>michelle.lu@ihsmarkit.com</user>
+            <user>ning.wang@ihsmarkit.com</user>
+            <user>ratika.goel@ihsmarkit.com</user>
+            <user>satyaprakash.bhagat@ihsmarkit.com</user>
+            <user>teckyee.teng@ihsmarkit.com</user>
+            <user>warren.benwell@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>ORRC Response Management</name>
+    <queueMembers>
+        <users>
+            <user>gaurav.chaudhary@ihsmarkit.com</user>
+            <user>nazeem.issac@ihsmarkit.com</user>
+            <user>nirav.shukla@ihsmarkit.com</user>
+            <user>sachin.singh@ihsmarkit.com</user>
+            <user>von.duran@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

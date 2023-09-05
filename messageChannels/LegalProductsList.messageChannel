@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This event is fired from back button on Legal Entity Screen and publish the existing SelectedProducts List to Aura component and send/subscribe it back to Selected Products to add more products.</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Holds the selected products List</description>
+        <fieldName>legalProdList</fieldName>
+    </lightningMessageFields>
+    <masterLabel>LegalProductsList</masterLabel>
+</LightningMessageChannel>

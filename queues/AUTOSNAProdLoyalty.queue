@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>AUTOS | NA Prod Loyalty</name>
+    <queueMembers>
+        <users>
+            <user>adam.coddington@ihsmarkit.com</user>
+            <user>ann.chen@ihsmarkit.com</user>
+            <user>eric.houghton@ihsmarkit.com</user>
+            <user>jason.corn@ihsmarkit.com</user>
+            <user>john.herrle@ihsmarkit.com</user>
+            <user>kelsey.hines@ihsmarkit.com</user>
+            <user>kyle.shope@ihsmarkit.com</user>
+            <user>leah.dunn@ihsmarkit.com</user>
+            <user>matthew.counts@ihsmarkit.com</user>
+            <user>michael.greenleaf@ihsmarkit.com</user>
+            <user>patrick.weiss@ihsmarkit.com</user>
+            <user>sandra.donaldson@ihsmarkit.com</user>
+            <user>saurav.sindhwani@ihsmarkit.com</user>
+            <user>vandana.neuman@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

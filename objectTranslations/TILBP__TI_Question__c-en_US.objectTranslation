@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Answer --></label>
+        <name>TILBP__Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Attempt --></label>
+        <name>TILBP__AssessmentAttempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correct? --></label>
+        <name>TILBP__Correct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>TILBP__Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Attempt --></label>
+        <name>TILBP__SFAssessmentAttempt__c</name>
+        <relationshipLabel><!-- TI Questions --></relationshipLabel>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Question ID is unique --></errorMessage>
+        <name>TILBP__ID_is_unique</name>
+    </validationRules>
+</CustomObjectTranslation>

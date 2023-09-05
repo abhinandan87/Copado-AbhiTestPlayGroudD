@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_33918143</developerName>
+        <masterLabel>Ageing</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>0 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+                <to>2</to>
+            </sourceValues>
+            <value>1-2 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+                <to>5</to>
+            </sourceValues>
+            <value>3-5 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>5</from>
+                <to>10</to>
+            </sourceValues>
+            <value>6-10 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>10</from>
+            </sourceValues>
+            <value>&gt;10 Days</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_33918143</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Aged Bucket View</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATEONLY</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(((((((1 OR 3 OR 4  OR 7 OR 8 ) AND 2) AND 5) AND 6)) AND 9) AND 10) AND 11</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aadra Jain,Aashi Gupta,Abhinav Bhandari,Abhishek Dixit,Abir Majumder,Aditya Singh,Alexander Jacobs,Amar Naik,Amitpreet Singh,Angela Jou,Angeline Salim,Ankur Tripathi,Anthony Capra,Arun Sikri,Ashu Chanana,Ashwajit Singh,Atria Ong,Benit Kurian,Brooke Bliven,Carolin Martinez Diaz,Catherine Oreta,Catherine Tan,Cesar Adams,Chau Ting Lau,Chhavi Sharma,Clare Lloyd,Clinton Mak,Daniel Flores-Choto,Daniel Gualtieri,Darren Ko,Dayna Vasilko,Declan Murphy,Dianne Jeong,Divesh Singh,Elaine Tan,Elly Kang,Emi Yanase,Eri Yamazaki,Eshan Singh,Eti Kapoor,Evan Dingle,Sharon Havilah,Russell Chew,Shaun Ng,Shumei Fu,Siti Ismail,Yuen Jing Low,TzeSiew Koay,Yuddhis Vijayakumaran,shikha kanwar,Sudhanshu Fuloria,Sujata Biswal,Sumit Behl,Zarrin Zuberi,Thomas Chase,Vipul Patel,Yasmin Evans,Thomas Lee,Tolulope Aboyade-Cole</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed - Canceled,Closed - Resolved,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Resolved/Completed,Resolved/No Response,Closed,Auto-Closed – No Action Taken,Canceled,Closed - Moved to Jira,Duplicate,Delete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Evan Hendershot,Flora Janting,Francis Misischia,Gaurav Srivastav,Gimpi Rawal,Greg Chalmers,GuoXin Li,jaspal singh Saini,Jellenie Estares,Jia En Khoo,Jie Wang,Jim Lopez,Joel Somerstein,Jolly Sinha,Judy To,Jun Xiang Ong,Junseok Kim,Kanika Malik,Karan Malhotra,Karan Singal,Karishma Gupta,Karishma Jain,Kaushal Sharma,Kavya Sridhar,Kawal Nain Singh,Kawaljeet Singh Sudan,Khai Qing Goh,Khushboo Nagpal,Khushbu Srivastava,Kinnan Zaloom,Kokushin Li,Kriti Malhotra,Kuldeep Thakur,kumari pragati,Luca Colelli Riano,Lyla Aomi,Mahima Sharma,Manila Dewan,Marina Josef,Matt Proulx,Matthew Flynn,Urja Malhotra,Shawn Wei Jian Tan,Trevor Shearer,Sabrina Kaur,Tej Pratap Sohi,Sachin Sharma,Shelvy Lestari Chandra Tjing,Shelvy Tjing,Van Anh Nguyen,Kamziana Nazwin Kamarulzaman,Shramta Uppal,Subhasish Ranjan Das,Thomas Howse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Mayuri Goel,Md Danish Akhtar,Megan Barwick,Megan Heintschel,Michael Kelly,Michael Wilshere,Milana Kelis,Mizael Poh,Mizuna Kaneko,Mudassir Khan,Mukul Jain,Muskan Kumari,Muzzammil Khan,Natalie Pou,Natasha Chaudhary,Neeraj Jain,Nikhita Bhandarkar,Nikhita Rahul Bhandarkar,Nikita Narang,Nisha Khurana,Nizam Miah,Nurcan Demirel,Pang Soon Ong,Parth Vashishth,Peter Walker,Ping Leong Ng,Pooi San Lim,Poonam Singh,Pranav Arneja,Prateek jain,Prerna Panwar,Presinna Thomas,Rahul Jain2,Rahul Tanver,Ramit Vohra,Rashmi Sharda,Rexie Romero,Rishabh Kumar,Ritika Mehra,Robert Schweikert,Rohit Arora,Roland Gonzales,Rupal Sood,zeS Koay,Srigouri Dondeti,Sarita Monga,Vandita Agarwal,Candice Jin Er Tan,Pragya Pal,Shashank Gupta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Undeliverable,SOX,Overlay,Zero,Brexit,Automatische Antwort:,Auto Reply,DELIVERY FAILURE,Out of Office,Generic leaver notification,MarkitSERV Customer Experience Survey,Retirement,FCA,Delivery Status Notification (Failure),Returned mail:,Automatic reply:,Delivery delayed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Onboarding,Case.CustomerCare,Case.Implementation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Abhinav Bhandari,Abhishek Dixit,Kaushal Sharma,Khushboo Nagpal,Kriti Malhotra,Mayuri Goel,Natasha Chaudhary,Ramit Vohra,Sarita Monga,Smarak Nayak,Shivani Abrol,Somesh Sinha,Vradhi Srivastava,Vivek Kumar Yadav,Nikita Narang,Poonam Singh,Ashu Chanana,Karishma Gupta,Vanshika Gupta,Surbhi Kalra,Sukriti Srivastava,Abir Majumder,Aadra Jain,Atria Ong,Catherine Tan,Clinton Mak,TzeS Koay,Ping Leong Ng,Jia En Khoo,Lyla Aomi,Mizael Poh,Xi Chen,Srigouri Dondeti,Darren Ko,Declan Murphy,Gaurav Srivastav,Jellenie Estares,Kinnan Zaloom,Kuldeep Thakur,Tomas Maliska,Vandita Agarwal,Peter Walker,Benit Kurian,Clare Lloyd,Milana Kelis,Robert Schweikert,Wilson Lee,Sam Lucchesi,Shikha Bhardwaj</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | TSERV Client Services,FM | MSERV Engineering Services,FM | DS Match,FM | MW | High Priority,FM | MW | User Setup,FM | MW | Clearing,FM | MW| Onboarding,FM | MW | Static Data,FM | MSERV Regulatory Reporting,FM | MW | L1,FM | MSERV FX,FM | Trade Processing,FM | MSERV UAT | BAU,FM | Client API Integrations,FM | DS Match | Implementation,FM | MW | All Other,FM | MSERV MIS,FM | MW | Book Updates,FM | MSERV UAT - UNASSIGNED,FM | MSERV CS-ES MarkitWire,FM | MW | CPS Onboarding,LRC | Response Management,FM | MarkitSERV | MTM Implementation,FM | MSERV UAT | Projects,FM | MSERV CS-ES BuySide,FM | MW | Password Reset,FM | MW | Reports,FM | MW | User Deactivations,FM | MSERV UAT | DSM NCM,FM | MSERV FX | UAT,FM | MW | User Clones Static Conf.,FM | MSERV Membership,FM | MSERV API Integration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>FM | Markit Research Manager,FM | TCA,FM | Debtdomain,FM | Loan Settlement | Loan Admin,FM |GMG | EQUITIES,FM | GMG | RST,FM | MSERV Duplicate,Duplicate Queue,FM | MSERV Delete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | DS Match | Implementation,FM | MW | TSERV Client Services,FM | MSERV FX | UAT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>DSM,DTCC,Credit</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_33918143</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FX Open Cases - Aged</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

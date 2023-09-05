@@ -1,0 +1,20 @@
+Dear {!Contact.FirstName},
+<br><br>
+Good day!
+<br>
+Thanks for reaching out to the Salesforce Helpdesk Team.
+<br><br>
+
+I have taken ownership of this case and will be working proactively to provide you with a solution at the earliest.
+
+<br><br>
+
+
+Feel free to reach out to us if you have any further queries.
+<br><br>
+
+
+
+Regards,<br>
+{!Case.OwnerFullName}<br>
+Salesforce Helpdesk

@@ -1,0 +1,31 @@
+:host{
+   --lwc-heightInput:1.2rem;
+}
+
+.containerdiv > div {
+    display: inline-block;
+    padding-top:10px;
+    margin-left: 16px;
+}
+
+.cardstyle{
+    height: 100%;
+    border-right: 0.5px solid;
+    border-style: none;
+    border-radius: none;
+    box-shadow: none;
+}
+
+section {
+   margin-top: 5%;
+}
+
+section > h1 {
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.searchtxt{
+   line-height: inherit;
+   padding-right:5%;
+}

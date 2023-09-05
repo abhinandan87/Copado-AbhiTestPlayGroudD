@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Feature_EnableDebugLogs --></label>
+        <name>SNPCAPIQ__Feature_EnableDebugLogs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature_SendDebugLogsTo --></label>
+        <name>SNPCAPIQ__Feature_SendDebugLogsTo__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_66944832</developerName>
+        <masterLabel>REVISED Business Line</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Product2.BusinessLine2__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>ADS Haystack</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Product Design</sourceValue>
+            </sourceValues>
+            <value>Product Design</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brokerage Research Sales &amp; Trading</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Corporate Actions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Corporate Solutions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Derivative Processing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Digital</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Equities Info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Equities Solutions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Financial Risk Analytics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Global Markets Group</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Indices</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Loan Platforms Info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Loan Platforms Processing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pricing Valuations &amp; Reference</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Regulatory Compliance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>thinkFolio</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>WSO</sourceValue>
+            </sourceValues>
+            <value>Financial</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Aerospace, Defense, Security</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Informa Tech</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Automotive</sourceValue>
+            </sourceValues>
+            <value>Automotive</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CERAWEEK</sourceValue>
+            </sourceValues>
+            <value>CERAWEEK</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DS AGRI</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DS CROP</sourceValue>
+            </sourceValues>
+            <value>Agri</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DS OMDC</sourceValue>
+            </sourceValues>
+            <value>Oil, Midstream, Downstream, Chemicals</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DS OPIS</sourceValue>
+            </sourceValues>
+            <value>OPIS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Economics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Economics &amp; Country Risk</sourceValue>
+            </sourceValues>
+            <value>Economic &amp; Country Risk</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Enterprise Data Management/Vista</sourceValue>
+            </sourceValues>
+            <value>EDM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GPE</sourceValue>
+            </sourceValues>
+            <value>Gas, Power and Energy Futures</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Maritime &amp; Trade</sourceValue>
+            </sourceValues>
+            <value>Maritime &amp; Trade</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Technology, Media, Telecomm</sourceValue>
+            </sourceValues>
+            <value>Technology, Media, Telecomm</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Upstream</sourceValue>
+            </sourceValues>
+            <value>Upstream</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OpportunityLineItem.FirstYear__c.CONVERT</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account.UltimateParent__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.GlobalAccountManager__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ProductOwner__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ProductType__c</field>
+    </columns>
+    <columns>
+        <field>Product2.AAG__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Product2.SubBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>Product2.BusinessLine2__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_66944832</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Status__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonCode__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonDescription__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.FirstYear__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <description>tracks renewals lost this year</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5) AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12 AND 13</booleanFilter>
+        <criteriaItems>
+            <column>HASOPPLINEITEM</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.GlobalAccountManager__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>christine holzinger,friedrich schilcher,geoff warr,jun saito,lynn middleton,natalie stockton,nirmal shani,paul jackson,wolfgang knell,lena li,Irina zamarina,mark western,james mclennan,lynne yang</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.UltimateParent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>volkswagen ag,cnh industrial,infineon technologies,toyota motor corporation,toyota motor (china),toyota motor engineering,arkema,air liquide,repsol,siemens,thyssenkrupp,galp energia,dongfeng motor,government of china,Power Construction Corporation of china,shanghai secco,Procurement Center of Supplies,china energy engineering,china huaneng group,china national machinery industry,rs components &amp; controls (India),government of the united states,us department of state,environmental protection agency,RWE ag,Tullow oil</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>thyssenkrupp</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.UltimateParent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>SIEMENS MANUFACTURING CO,EOG Resources,Hess Corp,murphy oil corporation,noble energy,glencore international,thales dms france,zodiac aerospace</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.BusinessLine2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>aerospace,informa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.AAG__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Subscription</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,New,Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.LostReasonCode__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Duplicate/Existing Opp</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>6L</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.GAM__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>paul jackson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.UltimateParent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>bp</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.UltimateParent__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Opportunitynum__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2020 Lost Renewals</name>
+    <params>
+        <name>open</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.ContractStartDate__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

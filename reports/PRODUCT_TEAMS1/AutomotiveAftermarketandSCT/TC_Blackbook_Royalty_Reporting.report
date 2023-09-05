@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>WorkRequestForm__c$Name</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.PLCJobs__r.JobTask__r$DueDate__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$SpecialInstructions__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$RoyaltyVendor__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$VehicleAttributes__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$VehicleValuesBlackBook__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>WorkRequestForm__c.PLCJobs__r$NumberOfCycles__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>WorkRequestForm__c.PLCJobs__r$RoyaltyRecordsIncluded__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+        <criteriaItems>
+            <column>WorkRequestForm__c$FormType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>aftermarket</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c$VehicleAttributes__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c$ShippingInstructions__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Vehicle Value</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c$ShippingInstructions__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Black Book</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c$PredictorInstructions__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Vehicle Values</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c$PredictorInstructions__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Black Book</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c$RoyaltyVendor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>includes</operator>
+            <value>Vehicle Values (Blackbook)</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>WorkRequestForm__c$AccountName__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TC - Blackbook Royalty Reporting</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>WRFwithPLCJobswithJobTasks__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>WorkRequestForm__c.PLCJobs__r.JobTask__r$DueDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>WorkRequestForm__c$ApprovalDate__c</dateColumn>
+        <endDate>2019-08-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2005-06-01</startDate>
+    </timeFrameFilter>
+</Report>

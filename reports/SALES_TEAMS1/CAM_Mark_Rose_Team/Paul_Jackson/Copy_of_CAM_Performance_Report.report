@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_66944832</developerName>
+        <masterLabel>REVISED Business Line</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Product2.BusinessLine2__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>ADS Haystack</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Product Design</sourceValue>
+            </sourceValues>
+            <value>Product Design</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brokerage Research Sales &amp; Trading</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Corporate Actions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Corporate Solutions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Derivative Processing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Digital</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Equities Info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Equities Solutions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Financial Risk Analytics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Global Markets Group</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Indices</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Loan Platforms Info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Loan Platforms Processing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pricing Valuations &amp; Reference</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Regulatory Compliance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>thinkFolio</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>WSO</sourceValue>
+            </sourceValues>
+            <value>Financial</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Aerospace, Defense, Security</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Informa Tech</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Automotive</sourceValue>
+            </sourceValues>
+            <value>Automotive</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CERAWEEK</sourceValue>
+            </sourceValues>
+            <value>CERAWEEK</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DS OMDC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DS AGRI</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DS CROP</sourceValue>
+            </sourceValues>
+            <value>Oil, Midstream, Downstream, Chemicals</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DS OPIS</sourceValue>
+            </sourceValues>
+            <value>OPIS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Economics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Economics &amp; Country Risk</sourceValue>
+            </sourceValues>
+            <value>Economic &amp; Country Risk</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Enterprise Data Management/Vista</sourceValue>
+            </sourceValues>
+            <value>EDM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>GPE</sourceValue>
+            </sourceValues>
+            <value>Gas, Power and Energy Futures</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Maritime &amp; Trade</sourceValue>
+            </sourceValues>
+            <value>Maritime &amp; Trade</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Upstream</sourceValue>
+            </sourceValues>
+            <value>Upstream</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Technology, Media, Telecomm</sourceValue>
+            </sourceValues>
+            <value>Technology</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_12005439</developerName>
+        <masterLabel>REVISED IHSM Business Line</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Product2.BusinessLine2__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Agriculture</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>OMDC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>OPIS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Upstream</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CSG</sourceValue>
+            </sourceValues>
+            <value>Energy &amp; Natural Resources</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Automotive Insights</sourceValue>
+            </sourceValues>
+            <value>Automotive</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Maritime and Trade</sourceValue>
+            </sourceValues>
+            <value>Maritime &amp; Trade</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Product Design</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haystack</sourceValue>
+            </sourceValues>
+            <value>Product Design</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Economic Indices</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Economics and Country Risk</sourceValue>
+            </sourceValues>
+            <value>Economics &amp; Country Risk</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Aerospace Defense Security</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Informa Tech</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>CERAWEEK</sourceValue>
+            </sourceValues>
+            <value>CERAWeek</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>RootMetrics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Technology Media Telecomm</sourceValue>
+            </sourceValues>
+            <value>Technology</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>BRST</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Corporate Actions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Debtdomain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Derivatives Processing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Digital</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EDM</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Equities Info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Equities Solutions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Financial Risk Analytics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Global Markets Group</sourceValue>
+            </sourceValues>
+            <value>Financial</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Indices</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Integrated Reporting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Issuer Solutions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Loan Platforms</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Notice Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pricing Valuations and Reference</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Private Markets</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Regulatory Compliance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sustainable Finance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>thinkFolio</sourceValue>
+            </sourceValues>
+            <value>Financial II</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>WSO</sourceValue>
+            </sourceValues>
+            <value>Financial III</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.UltimateParent__c</field>
+    </columns>
+    <columns>
+        <field>Account.GlobalAccountManager__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Product2.SubBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>Product2.BusinessLine2__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_12005439</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Status__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ProductType__c</field>
+    </columns>
+    <columns>
+        <field>Product2.AAG__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Probability__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_COUNTRY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.FirstYear__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Used to update the CAM Performance report biweekly</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 7 OR 8) AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>HASOPPLINEITEM</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>6L-Closed Lost,6L-Renewal Lost,6L-Forecasting Placeholder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.UltimateParent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>engie,iberdrola,sonatrach,abu dhabi power,almarai,government of bahrain,royal group,saudi international petrochemical,sahara international,saudi arabian mining,saudi electricy,aeroflot,alrosa,en+,evraz,government of russia,norilsk,oteko,russneft,suek,siberian coal energy,sovcomflot,surgutneftegas,oil company of the azerbaijan,jera,aviation industry corporation,beijing enterprises,beijing gas,china datang,guangdong dapeng,national petroleum and natural gas,state grid corporation,state power investment,wanhua chemical,new fortress,centrica,cgg,chrysaor,meggitt,relx,smiths group,anglo american,dno asa,johnson matthey,lundin,norsk hydro,orsted,petoro,statkraft,vedanta,wartsila,yara international,boehringer,clariant,covestro,eurochem,lanxess,mol group,wacker chemie,china power investment,aim capital se,linea ltd,Hydro Primary Metals,siemens energy,danisco,3m,novomet,ink-capital,republic of kazakhstan,avelar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.BusinessLine2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>aerospace,informa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.GlobalAccountManager__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>christine holzinger,geoff warr,jun saito,lynn middleton,natalie stockton,paul jackson,wolfgang knell,lena li,Irina Zamarina,Mark Western,lynne yang,james mclennan,samantha murray</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>siemens energy,eurochem,maersk drilling,danisco,rusal,suek,siberian coal energy,beijing gas,lundin,evonik,borealis</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Copy of CAM Performance Report</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>OpportunityLineItem.ContractStartDate__c</dateColumn>
+        <endDate>2020-11-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-12-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_59961396</developerName>
+        <masterLabel>Legal Approvers</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Contract.Internal_Approvals__r$Contact__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Allison Labovitz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Arshee Nigar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Austin Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bethany Harrington</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Boris Gelfand</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christina Damiano</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christina Plummer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christopher McLoughlin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Claudia Pascuzzo Dominguez-Pombo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Salm</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deena Mccabe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emma Inkester</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emma Inkester-Dann</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hidehiro Kanehara</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Khalil Nobles</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Nelson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Natalia Marcos</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nathan Kirk</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yieng San Kho</sourceValue>
+            </sourceValues>
+            <value>&lt;5 approvals</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Contract.Internal_Approvals__r$ApprovalType__c</field>
+    </columns>
+    <columns>
+        <field>Contract$ContractNumber</field>
+    </columns>
+    <columns>
+        <field>Contract$Name</field>
+    </columns>
+    <columns>
+        <field>Contract.Internal_Approvals__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contract.Internal_Approvals__r$Reason__c</field>
+    </columns>
+    <columns>
+        <field>Contract$StartDate</field>
+    </columns>
+    <columns>
+        <field>Contract$EndDate</field>
+    </columns>
+    <columns>
+        <field>Contract.Internal_Approvals__r$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>Contract$ContractOwner__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contract$NoInternalApprovalNeeded__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>Contract$Businessline__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>economic</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contract.Trial</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$NoInternalApprovalNeeded__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.Internal_Approvals__r$ApprovalType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Business Line Leader,Consulting Operations,Contract Management,Corporate Compliance,Custom Pricing Team,Finance,Legal,Product Manager,Sales Leader</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contract.Internal_Approvals__r$Contact__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contract.Internal_Approvals__r$Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Contracts with/wo Internal Approval</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contracts_with_Internal_Approvals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contract$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

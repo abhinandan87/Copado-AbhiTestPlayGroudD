@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>euroabspricing@markit.com</email>
+    <name>FM | European ABS</name>
+    <queueMembers>
+        <users>
+            <user>akhil.gupta1@ihsmarkit.com</user>
+            <user>ammar.salloum@ihsmarkit.com</user>
+            <user>jitendra.thakur@ihsmarkit.com</user>
+            <user>keith.corr@ihsmarkit.com</user>
+            <user>nathan.kirk@ihsmarkit.com</user>
+            <user>philippe.pagnotta@ihsmarkit.com</user>
+            <user>vihar.shah@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

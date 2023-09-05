@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Notice Manager Setup</name>
+    <queueMembers>
+        <users>
+            <user>abhay.kalia@ihsmarkit.com</user>
+            <user>ami.rahman@ihsmarkit.com</user>
+            <user>ashish.aneja@ihsmarkit.com</user>
+            <user>cory.hinchey@ihsmarkit.com</user>
+            <user>genevieve.paganini@ihsmarkit.com</user>
+            <user>jason.collins@ihsmarkit.com</user>
+            <user>jasveer.singh@ihsmarkit.com</user>
+            <user>kyle.cox@ihsmarkit.com</user>
+            <user>naman.malik@ihsmarkit.com</user>
+            <user>zef.narkaj@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

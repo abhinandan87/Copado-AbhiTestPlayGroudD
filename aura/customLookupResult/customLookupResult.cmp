@@ -1,0 +1,30 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:attribute name="oRecord" type="sObject" />
+    <aura:attribute name="IconName" type="string"/> 
+    <aura:attribute name="secondaryFieldName" type="string"/>
+    <aura:attribute name="secondaryFieldValue" type="string" default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!--Register the component level event-->
+    <aura:registerEvent name="oSelectedRecordEvent" type="c:selectedsObjectRecordEvent"/>
+    
+    <li role="presentation" class="slds-listbox__item" onclick="{!c.selectRecord}">
+        <span id="listbox-option-unique-id-01" class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+            <span class="slds-media__figure">
+                <span class="slds-icon_container" title="Object Icon">
+                    <lightning:icon iconName="{!v.IconName}" size="small" alternativeText="icon"/>
+                    <span class="slds-assistive-text">Icon</span>
+                </span>
+            </span>    
+            <span class="slds-media__body"> 
+                <aura:if isTrue="{!not(empty(v.secondaryFieldName))}">
+                    <span class="slds-listbox__option-text slds-listbox__option-text_entity">{!v.oRecord.Name}</span>
+                    <span class="slds-listbox__option-text slds-listbox__option-text_entity" style="font-size: 90%">{!v.secondaryFieldValue}</span>
+                    <aura:set attribute="else">
+                        <span class="slds-listbox__option-text slds-listbox__option-text_entity">{!v.oRecord.Name}</span>
+                    </aura:set> 
+                </aura:if>
+                
+            </span>
+        </span>
+    </li>
+</aura:component>

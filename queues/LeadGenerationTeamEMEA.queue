@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>emea-salesleadgen@ihsmarkit.com</email>
+    <name>Lead Generation Team - EMEA</name>
+    <queueMembers>
+        <users>
+            <user>angela.puggioni@ihsmarkit.com</user>
+            <user>donald.smajli@ihsmarkit.com</user>
+            <user>heloise.bernard@ihsmarkit.com</user>
+            <user>justine.gonzalez@ihsmarkit.com</user>
+            <user>kyran.worrell@ihsmarkit.com</user>
+            <user>layal.salaymeh@ihsmarkit.com</user>
+            <user>mandy.poku@ihsmarkit.com</user>
+            <user>tobias.gibbs@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

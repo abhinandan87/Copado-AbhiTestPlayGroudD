@@ -1,0 +1,2515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Triage Criteria</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Triage Criteria</value>
+    </caseValues>
+    <fields>
+        <help><!-- Rule Complexity --></help>
+        <label><!-- Calculated Sort Order --></label>
+        <name>CalculatedSortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Record Type --></label>
+        <name>ContractRecordType__c</name>
+        <picklistValues>
+            <masterLabel>Continuation Letter</masterLabel>
+            <translation><!-- Continuation Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Form</masterLabel>
+            <translation><!-- Order Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial</masterLabel>
+            <translation><!-- Trial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Rule will be evaluated when the value is checked. --></help>
+        <label><!-- Is Active --></label>
+        <name>IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loading Group Category --></label>
+        <name>LoadingGroupCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loading Group Number --></label>
+        <name>LoadingGroupNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Implementation case assignment based on Loading Group --></help>
+        <label><!-- Loading Group --></label>
+        <name>LoadingGroup__c</name>
+        <relationshipLabel><!-- Triage Criteria --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Priority of this rule (1 being highest and being evaluated first). --></help>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Family --></help>
+        <label><!-- Product Family --></label>
+        <name>ProductFamily__c</name>
+        <relationshipLabel><!-- Triage Criteria --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product Group --></help>
+        <label><!-- Product Group --></label>
+        <name>ProductGroup__c</name>
+        <relationshipLabel><!-- Triage Criteria --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Queue to which case will be assigned --></help>
+        <label><!-- Queue --></label>
+        <name>Queue__c</name>
+        <picklistValues>
+            <masterLabel>AG | Customer Care</masterLabel>
+            <translation><!-- AG | Customer Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AG | Onboarding</masterLabel>
+            <translation><!-- AG | Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRI Connect</masterLabel>
+            <translation><!-- AGRI Connect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APAC WRF</masterLabel>
+            <translation><!-- APAC WRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Aftermarket Production - PNA</masterLabel>
+            <translation><!-- AUTOS | Aftermarket Production - PNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Analytical Solutions - EU</masterLabel>
+            <translation><!-- AUTOS | Analytical Solutions - EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Application Support - EU</masterLabel>
+            <translation><!-- AUTOS | Application Support - EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Application Support - PNA</masterLabel>
+            <translation><!-- AUTOS | Application Support - PNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Business Analysis Team - EU</masterLabel>
+            <translation><!-- AUTOS | Business Analysis Team - EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Commercial Production - PNA</masterLabel>
+            <translation><!-- AUTOS | Commercial Production - PNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DBA</masterLabel>
+            <translation><!-- AUTOS | DBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF - Assembly</masterLabel>
+            <translation><!-- AUTOS | DF - Assembly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF - Custom Geography</masterLabel>
+            <translation><!-- AUTOS | DF - Custom Geography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF - Data Inbound</masterLabel>
+            <translation><!-- AUTOS | DF - Data Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF - Dealer Services - PNA</masterLabel>
+            <translation><!-- AUTOS | DF - Dealer Services - PNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF - ETL Services</masterLabel>
+            <translation><!-- AUTOS | DF - ETL Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF - Name Standardization</masterLabel>
+            <translation><!-- AUTOS | DF - Name Standardization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF - OV3</masterLabel>
+            <translation><!-- AUTOS | DF - OV3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF - OV4</masterLabel>
+            <translation><!-- AUTOS | DF - OV4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF - VIN</masterLabel>
+            <translation><!-- AUTOS | DF - VIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF â€“ Branded Title</masterLabel>
+            <translation><!-- AUTOS | DF â€“ Branded Title --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF â€“ Product Release Specialist</masterLabel>
+            <translation><!-- AUTOS | DF â€“ Product Release Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | DF – Product Release Specialist</masterLabel>
+            <translation><!-- AUTOS | DF – Product Release Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Data Analysis - EU</masterLabel>
+            <translation><!-- AUTOS | Data Analysis - EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Data Onboarding â€“ EU</masterLabel>
+            <translation><!-- AUTOS | Data Onboarding â€“ EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Data Onboarding – EU</masterLabel>
+            <translation><!-- AUTOS | Data Onboarding – EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Data Quality Team - EU</masterLabel>
+            <translation><!-- AUTOS | Data Quality Team - EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Data Team - EU</masterLabel>
+            <translation><!-- AUTOS | Data Team - EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Dataium</masterLabel>
+            <translation><!-- AUTOS | Dataium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Development - PNA</masterLabel>
+            <translation><!-- AUTOS | Development - PNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Development Team â€“ Product EU</masterLabel>
+            <translation><!-- AUTOS | Development Team â€“ Product EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Development Team – Product EU</masterLabel>
+            <translation><!-- AUTOS | Development Team – Product EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Development Teamâ€“Customer Pay EU</masterLabel>
+            <translation><!-- AUTOS | Development Teamâ€“Customer Pay EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Development Team–Customer Pay EU</masterLabel>
+            <translation><!-- AUTOS | Development Team–Customer Pay EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | EU Fulfillment</masterLabel>
+            <translation><!-- AUTOS | EU Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GE - Data Purchase</masterLabel>
+            <translation><!-- AUTOS | GE - Data Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GE - Helpdesk</masterLabel>
+            <translation><!-- AUTOS | GE - Helpdesk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GE - Product Management</masterLabel>
+            <translation><!-- AUTOS | GE - Product Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GE - Production</masterLabel>
+            <translation><!-- AUTOS | GE - Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GE - Software Development</masterLabel>
+            <translation><!-- AUTOS | GE - Software Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GE - Team 1to1</masterLabel>
+            <translation><!-- AUTOS | GE - Team 1to1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GE - Team Customizing</masterLabel>
+            <translation><!-- AUTOS | GE - Team Customizing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GE - Team P&amp;S</masterLabel>
+            <translation><!-- AUTOS | GE - Team P&amp;S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GE - Team Volumes</masterLabel>
+            <translation><!-- AUTOS | GE - Team Volumes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GPHD Americas</masterLabel>
+            <translation><!-- AUTOS | GPHD Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GPHD DE</masterLabel>
+            <translation><!-- AUTOS | GPHD DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | GPHD UK</masterLabel>
+            <translation><!-- AUTOS | GPHD UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Infrastructure</masterLabel>
+            <translation><!-- AUTOS | Infrastructure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | NA Prod Loyalty</masterLabel>
+            <translation><!-- AUTOS | NA Prod Loyalty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | NA Prod Mkt Reporting</masterLabel>
+            <translation><!-- AUTOS | NA Prod Mkt Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | NA Prod MultiChannel Mktg</masterLabel>
+            <translation><!-- AUTOS | NA Prod MultiChannel Mktg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | NA Prod Other</masterLabel>
+            <translation><!-- AUTOS | NA Prod Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | NA Prod VINtelligence</masterLabel>
+            <translation><!-- AUTOS | NA Prod VINtelligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | NA Prod VisualAnalytics</masterLabel>
+            <translation><!-- AUTOS | NA Prod VisualAnalytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | NA Product Management</masterLabel>
+            <translation><!-- AUTOS | NA Product Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Prod MyAnalytics</masterLabel>
+            <translation><!-- AUTOS | Prod MyAnalytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Production - Canada</masterLabel>
+            <translation><!-- AUTOS | Production - Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Production Support - PNA</masterLabel>
+            <translation><!-- AUTOS | Production Support - PNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Programme Management â€“ EU</masterLabel>
+            <translation><!-- AUTOS | Programme Management â€“ EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Programme Management – EU</masterLabel>
+            <translation><!-- AUTOS | Programme Management – EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Recall</masterLabel>
+            <translation><!-- AUTOS | Recall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Sales - Account Team - EU</masterLabel>
+            <translation><!-- AUTOS | Sales - Account Team - EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Sales - Account Team - PNA</masterLabel>
+            <translation><!-- AUTOS | Sales - Account Team - PNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Software Services</masterLabel>
+            <translation><!-- AUTOS | Software Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOS | Systems - PNA</masterLabel>
+            <translation><!-- AUTOS | Systems - PNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Receivable</masterLabel>
+            <translation><!-- Accounts Receivable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ad Claims Approver Queue</masterLabel>
+            <translation><!-- Ad Claims Approver Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aerospace, Defense, Security - APAC</masterLabel>
+            <translation><!-- Aerospace, Defense, Security - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aerospace, Defense, Security - Americas</masterLabel>
+            <translation><!-- Aerospace, Defense, Security - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aerospace, Defense, Security - EMEA</masterLabel>
+            <translation><!-- Aerospace, Defense, Security - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allspring</masterLabel>
+            <translation><!-- Allspring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics</masterLabel>
+            <translation><!-- Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Australia WRF</masterLabel>
+            <translation><!-- Australia WRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Fulfillment</masterLabel>
+            <translation><!-- Auto Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automotive - APAC</masterLabel>
+            <translation><!-- Automotive - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automotive - Americas</masterLabel>
+            <translation><!-- Automotive - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automotive - EMEA</masterLabel>
+            <translation><!-- Automotive - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automotive Operations Architecture</masterLabel>
+            <translation><!-- Automotive Operations Architecture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autonews</masterLabel>
+            <translation><!-- Autonews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Axivas Product Design Pre-Sales</masterLabel>
+            <translation><!-- Axivas Product Design Pre-Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIS Work Request</masterLabel>
+            <translation><!-- BIS Work Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BizOps | Regulatory &amp; Compliance</masterLabel>
+            <translation><!-- BizOps | Regulatory &amp; Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CC | Engineering Solutions</masterLabel>
+            <translation><!-- CC | Engineering Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CC | ExpertConnect</masterLabel>
+            <translation><!-- CC | ExpertConnect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CC | Market Intelligence</masterLabel>
+            <translation><!-- CC | Market Intelligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD Distribution</masterLabel>
+            <translation><!-- CD Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDS Model Website</masterLabel>
+            <translation><!-- CDS Model Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CET - All Open Sales Alerts</masterLabel>
+            <translation><!-- CET - All Open Sales Alerts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIFC</masterLabel>
+            <translation><!-- CIFC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CM | Contract Management</masterLabel>
+            <translation><!-- CM | Contract Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CM | Contract Signatories</masterLabel>
+            <translation><!-- CM | Contract Signatories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMD | Customer Master Data</masterLabel>
+            <translation><!-- CMD | Customer Master Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMG</masterLabel>
+            <translation><!-- CMG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CP | Channel Partner Operations</masterLabel>
+            <translation><!-- CP | Channel Partner Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Chemical</masterLabel>
+            <translation><!-- CS | Chemical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Connect ENR</masterLabel>
+            <translation><!-- CS | Connect ENR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Customer Care - DO NOT USE</masterLabel>
+            <translation><!-- CS | Customer Care - DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Delivery</masterLabel>
+            <translation><!-- CS | Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | ECR/FCM  | FCM</masterLabel>
+            <translation><!-- CS | ECR/FCM  | FCM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN</masterLabel>
+            <translation><!-- CS | Energy | CDN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | ACCUSUITE</masterLabel>
+            <translation><!-- CS | Energy | CDN | ACCUSUITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | AccuMap Enhancements</masterLabel>
+            <translation><!-- CS | Energy | CDN | AccuMap Enhancements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | AccuMap Tops Version</masterLabel>
+            <translation><!-- CS | Energy | CDN | AccuMap Tops Version --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | CCREQUESTS</masterLabel>
+            <translation><!-- CS | Energy | CDN | CCREQUESTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | CONNECTIONS</masterLabel>
+            <translation><!-- CS | Energy | CDN | CONNECTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | DATAIHS</masterLabel>
+            <translation><!-- CS | Energy | CDN | DATAIHS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | DIGLOGORDERS</masterLabel>
+            <translation><!-- CS | Energy | CDN | DIGLOGORDERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | DMSORDERDESK</masterLabel>
+            <translation><!-- CS | Energy | CDN | DMSORDERDESK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | FIELDSUPPORT</masterLabel>
+            <translation><!-- CS | Energy | CDN | FIELDSUPPORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | LICENSING</masterLabel>
+            <translation><!-- CS | Energy | CDN | LICENSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | POINT</masterLabel>
+            <translation><!-- CS | Energy | CDN | POINT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | PROJECTS</masterLabel>
+            <translation><!-- CS | Energy | CDN | PROJECTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | REVDATA</masterLabel>
+            <translation><!-- CS | Energy | CDN | REVDATA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | SALESDEMOS</masterLabel>
+            <translation><!-- CS | Energy | CDN | SALESDEMOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | CDN | WELLSOURCING</masterLabel>
+            <translation><!-- CS | Energy | CDN | WELLSOURCING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Content</masterLabel>
+            <translation><!-- CS | Energy | Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Content | Data Delivery</masterLabel>
+            <translation><!-- CS | Energy | Content | Data Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Content | Developer</masterLabel>
+            <translation><!-- CS | Energy | Content | Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Content | ETCS</masterLabel>
+            <translation><!-- CS | Energy | Content | ETCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Content | US Land</masterLabel>
+            <translation><!-- CS | Energy | Content | US Land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | ETA</masterLabel>
+            <translation><!-- CS | Energy | ETA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | ETA | Developer</masterLabel>
+            <translation><!-- CS | Energy | ETA | Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | ETA | Engineering</masterLabel>
+            <translation><!-- CS | Energy | ETA | Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | ETCS | Content</masterLabel>
+            <translation><!-- CS | Energy | ETCS | Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | ETCS | Geoscience | Petra</masterLabel>
+            <translation><!-- CS | Energy | ETCS | Geoscience | Petra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | ETCS | Geoscience |Kingdom</masterLabel>
+            <translation><!-- CS | Energy | ETCS | Geoscience |Kingdom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | FieldDirect</masterLabel>
+            <translation><!-- CS | Energy | FieldDirect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | FieldDirect | PowerTools</masterLabel>
+            <translation><!-- CS | Energy | FieldDirect | PowerTools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Kingdom</masterLabel>
+            <translation><!-- CS | Energy | Kingdom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Kingdom | Product Mgmnt</masterLabel>
+            <translation><!-- CS | Energy | Kingdom | Product Mgmnt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Kingdom | SET</masterLabel>
+            <translation><!-- CS | Energy | Kingdom | SET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | ODS Petrodata</masterLabel>
+            <translation><!-- CS | Energy | ODS Petrodata --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Perform/SubPump</masterLabel>
+            <translation><!-- CS | Energy | Perform/SubPump --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Petra</masterLabel>
+            <translation><!-- CS | Energy | Petra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Petra | SET</masterLabel>
+            <translation><!-- CS | Energy | Petra | SET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Questor</masterLabel>
+            <translation><!-- CS | Energy | Questor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Questor | Tier 3</masterLabel>
+            <translation><!-- CS | Energy | Questor | Tier 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | US</masterLabel>
+            <translation><!-- CS | Energy | US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Energy | Web-Services</masterLabel>
+            <translation><!-- CS | Energy | Web-Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Goldfire | Engineering</masterLabel>
+            <translation><!-- CS | Goldfire | Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Goldfire | Requests</masterLabel>
+            <translation><!-- CS | Goldfire | Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Goldfire | Sales</masterLabel>
+            <translation><!-- CS | Goldfire | Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Goldfire | Support</masterLabel>
+            <translation><!-- CS | Goldfire | Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Maritime | PIERS</masterLabel>
+            <translation><!-- CS | Maritime | PIERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | NRG | Prod Data</masterLabel>
+            <translation><!-- CS | NRG | Prod Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | NRG | Well Data</masterLabel>
+            <translation><!-- CS | NRG | Well Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Onboarding</masterLabel>
+            <translation><!-- CS | Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Onboarding | Order Management</masterLabel>
+            <translation><!-- CS | Onboarding | Order Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Order Management</masterLabel>
+            <translation><!-- CS | Order Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Retail</masterLabel>
+            <translation><!-- CS | Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Technology</masterLabel>
+            <translation><!-- CS | Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | The Learning Center</masterLabel>
+            <translation><!-- CS | The Learning Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Trade</masterLabel>
+            <translation><!-- CS | Trade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Training |  ETCS</masterLabel>
+            <translation><!-- CS | Training |  ETCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Training |  Resource</masterLabel>
+            <translation><!-- CS | Training |  Resource --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Training |  Training CMS</masterLabel>
+            <translation><!-- CS | Training |  Training CMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Training |  Transportation</masterLabel>
+            <translation><!-- CS | Training |  Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS | Transportation</masterLabel>
+            <translation><!-- CS | Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calgary Licensing</masterLabel>
+            <translation><!-- Calgary Licensing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cappitech - Marketing</masterLabel>
+            <translation><!-- Cappitech - Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cappitech - Pre Sales</masterLabel>
+            <translation><!-- Cappitech - Pre Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cappitech - Sales</masterLabel>
+            <translation><!-- Cappitech - Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carfax - APAC</masterLabel>
+            <translation><!-- Carfax - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carfax - Americas</masterLabel>
+            <translation><!-- Carfax - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carfax - EMEA</masterLabel>
+            <translation><!-- Carfax - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carproof - APAC</masterLabel>
+            <translation><!-- Carproof - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carproof - Americas</masterLabel>
+            <translation><!-- Carproof - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carproof - EMEA</masterLabel>
+            <translation><!-- Carproof - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central SDR Disqualified</masterLabel>
+            <translation><!-- Central SDR Disqualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central SDR Pre-Sales</masterLabel>
+            <translation><!-- Central SDR Pre-Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel Partner Operations - E&amp;PD</masterLabel>
+            <translation><!-- Channel Partner Operations - E&amp;PD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel Partner Operations - Energy</masterLabel>
+            <translation><!-- Channel Partner Operations - Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel Partner Operations - M&amp;T</masterLabel>
+            <translation><!-- Channel Partner Operations - M&amp;T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemical Deliverables</masterLabel>
+            <translation><!-- Chemical Deliverables --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ConsOps</masterLabel>
+            <translation><!-- ConsOps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Experience Team</masterLabel>
+            <translation><!-- Customer Experience Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRO</masterLabel>
+            <translation><!-- DRO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Lake Catalogue Onboarding</masterLabel>
+            <translation><!-- Data Lake Catalogue Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Lake Catalogue Sales</masterLabel>
+            <translation><!-- Data Lake Catalogue Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete Queue</masterLabel>
+            <translation><!-- Delete Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery ALL</masterLabel>
+            <translation><!-- Delivery ALL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery Technical</masterLabel>
+            <translation><!-- Delivery Technical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery | Automated Connect</masterLabel>
+            <translation><!-- Delivery | Automated Connect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery | Marco Advisors Fulfillment</masterLabel>
+            <translation><!-- Delivery | Marco Advisors Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery | OPIS</masterLabel>
+            <translation><!-- Delivery | OPIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery|Experts Portal</masterLabel>
+            <translation><!-- Delivery|Experts Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery|The Learning Center</masterLabel>
+            <translation><!-- Delivery|The Learning Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Docgen | Review</masterLabel>
+            <translation><!-- Docgen | Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DriveWealth</masterLabel>
+            <translation><!-- DriveWealth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Queue</masterLabel>
+            <translation><!-- Duplicate Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E&amp;PD | Content Requests</masterLabel>
+            <translation><!-- E&amp;PD | Content Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E&amp;PD | Customer Success</masterLabel>
+            <translation><!-- E&amp;PD | Customer Success --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E&amp;PD | Training Requests</masterLabel>
+            <translation><!-- E&amp;PD | Training Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECRâ€“Eviewsâ€“Global</masterLabel>
+            <translation><!-- ECRâ€“Eviewsâ€“Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDM - APAC</masterLabel>
+            <translation><!-- EDM - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDM - Americas</masterLabel>
+            <translation><!-- EDM - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA Physical Delivery</masterLabel>
+            <translation><!-- EMEA Physical Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR-CMM-LeadGen</masterLabel>
+            <translation><!-- ENR-CMM-LeadGen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR-Cross Campaign</masterLabel>
+            <translation><!-- ENR-Cross Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR-GlobalLeadGen</masterLabel>
+            <translation><!-- ENR-GlobalLeadGen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR-Upstream_KingdomCloudTrials</masterLabel>
+            <translation><!-- ENR-Upstream_KingdomCloudTrials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR_AMER_UpstreamLeads</masterLabel>
+            <translation><!-- ENR_AMER_UpstreamLeads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR_Harmony-CLOUDTrials_APAC</masterLabel>
+            <translation><!-- ENR_Harmony-CLOUDTrials_APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR_Harmony-CLOUDTrials_EMEA</masterLabel>
+            <translation><!-- ENR_Harmony-CLOUDTrials_EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR_Harmony-CLOUDTrials_LATAM</masterLabel>
+            <translation><!-- ENR_Harmony-CLOUDTrials_LATAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR_Harmony-CLOUDTrials_NA</masterLabel>
+            <translation><!-- ENR_Harmony-CLOUDTrials_NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR_HarmonyKingdomPetra-Trials_NA</masterLabel>
+            <translation><!-- ENR_HarmonyKingdomPetra-Trials_NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENR_KingdomCloudTrials_Global</masterLabel>
+            <translation><!-- ENR_KingdomCloudTrials_Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESGReportingRepository</masterLabel>
+            <translation><!-- ESGReportingRepository --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economic &amp; Country Risk - APAC</masterLabel>
+            <translation><!-- Economic &amp; Country Risk - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economic &amp; Country Risk - Americas</masterLabel>
+            <translation><!-- Economic &amp; Country Risk - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economic &amp; Country Risk - EMEA</masterLabel>
+            <translation><!-- Economic &amp; Country Risk - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economics - APAC</masterLabel>
+            <translation><!-- Economics - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economics - Americas</masterLabel>
+            <translation><!-- Economics - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economics - EMEA</masterLabel>
+            <translation><!-- Economics - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy-Wide Perspectives</masterLabel>
+            <translation><!-- Energy-Wide Perspectives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energyâ€“Training</masterLabel>
+            <translation><!-- Energyâ€“Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Englewood Physical Delivery</masterLabel>
+            <translation><!-- Englewood Physical Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erights</masterLabel>
+            <translation><!-- Erights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>European WRF</masterLabel>
+            <translation><!-- European WRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ExpertConnect_AskAnExpert</masterLabel>
+            <translation><!-- ExpertConnect_AskAnExpert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | ABCDS</masterLabel>
+            <translation><!-- FM | ABCDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Account Management MWireMTP</masterLabel>
+            <translation><!-- FM | Account Management MWireMTP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | All Japanese Client Queries</masterLabel>
+            <translation><!-- FM | All Japanese Client Queries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Auction</masterLabel>
+            <translation><!-- FM | Auction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | BOATCRT</masterLabel>
+            <translation><!-- FM | BOATCRT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | CC</masterLabel>
+            <translation><!-- FM | CC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | CC - MSF Cases Pending Update</masterLabel>
+            <translation><!-- FM | CC - MSF Cases Pending Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | CPM | Bugs/Enhancements</masterLabel>
+            <translation><!-- FM | CPM | Bugs/Enhancements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | CTI | Client Support</masterLabel>
+            <translation><!-- FM | CTI | Client Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | CTI | Credit Control</masterLabel>
+            <translation><!-- FM | CTI | Credit Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | CTI | PIN</masterLabel>
+            <translation><!-- FM | CTI | PIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Capital Connect</masterLabel>
+            <translation><!-- FM | Capital Connect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Client API Integrations</masterLabel>
+            <translation><!-- FM | Client API Integrations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Commodity Tracker</masterLabel>
+            <translation><!-- FM | Commodity Tracker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Connex</masterLabel>
+            <translation><!-- FM | Connex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Contract Approval Second Approval</masterLabel>
+            <translation><!-- FM | Contract Approval Second Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Contract Approval | Analytics</masterLabel>
+            <translation><!-- FM | Contract Approval | Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Contract Approval | GFOC</masterLabel>
+            <translation><!-- FM | Contract Approval | GFOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Contract Approval | MOD</masterLabel>
+            <translation><!-- FM | Contract Approval | MOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Contract Approval | NonBillable</masterLabel>
+            <translation><!-- FM | Contract Approval | NonBillable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Contract Approval | WSO</masterLabel>
+            <translation><!-- FM | Contract Approval | WSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Counterparty Manager</masterLabel>
+            <translation><!-- FM | Counterparty Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Counterparty Manager Leads</masterLabel>
+            <translation><!-- FM | Counterparty Manager Leads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Counterparty Manager Onboarding</masterLabel>
+            <translation><!-- FM | Counterparty Manager Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Counterparty Manager | Operations</masterLabel>
+            <translation><!-- FM | Counterparty Manager | Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Coverage Check</masterLabel>
+            <translation><!-- FM | Coverage Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Credit Control 0181</masterLabel>
+            <translation><!-- FM | Credit Control 0181 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Credit Data</masterLabel>
+            <translation><!-- FM | Credit Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Customer Care - DO NOT USE</masterLabel>
+            <translation><!-- FM | Customer Care - DO NOT USE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Customer Care | Communications</masterLabel>
+            <translation><!-- FM | Customer Care | Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Customer Care | Entitlements</masterLabel>
+            <translation><!-- FM | Customer Care | Entitlements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Customer Care | Japanese Queries</masterLabel>
+            <translation><!-- FM | Customer Care | Japanese Queries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DS Match</masterLabel>
+            <translation><!-- FM | DS Match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Data Challenges</masterLabel>
+            <translation><!-- FM | Data Challenges --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Data Delivery</masterLabel>
+            <translation><!-- FM | Data Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Data Delivery | Client Services</masterLabel>
+            <translation><!-- FM | Data Delivery | Client Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Data Delivery | Data</masterLabel>
+            <translation><!-- FM | Data Delivery | Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Data Delivery | Files</masterLabel>
+            <translation><!-- FM | Data Delivery | Files --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Data Delivery | Onboarding</masterLabel>
+            <translation><!-- FM | Data Delivery | Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Data Delivery | Onno Roep</masterLabel>
+            <translation><!-- FM | Data Delivery | Onno Roep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Data Delivery | Price Viewer</masterLabel>
+            <translation><!-- FM | Data Delivery | Price Viewer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Data Delivery | Web</masterLabel>
+            <translation><!-- FM | Data Delivery | Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Debtdomain</masterLabel>
+            <translation><!-- FM | Debtdomain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne</masterLabel>
+            <translation><!-- FM | DeltaOne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | **Internal** - BUYSIDE</masterLabel>
+            <translation><!-- FM | DeltaOne | **Internal** - BUYSIDE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | Analytics</masterLabel>
+            <translation><!-- FM | DeltaOne | Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | Buyside</masterLabel>
+            <translation><!-- FM | DeltaOne | Buyside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | Content Management</masterLabel>
+            <translation><!-- FM | DeltaOne | Content Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | Custom Baskets</masterLabel>
+            <translation><!-- FM | DeltaOne | Custom Baskets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | Development</masterLabel>
+            <translation><!-- FM | DeltaOne | Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | Index Builds</masterLabel>
+            <translation><!-- FM | DeltaOne | Index Builds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | NT ETFs</masterLabel>
+            <translation><!-- FM | DeltaOne | NT ETFs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | Operations</masterLabel>
+            <translation><!-- FM | DeltaOne | Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | Permissioning</masterLabel>
+            <translation><!-- FM | DeltaOne | Permissioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | Projects</masterLabel>
+            <translation><!-- FM | DeltaOne | Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne | Sanctions</masterLabel>
+            <translation><!-- FM | DeltaOne | Sanctions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | DeltaOne| Index Management| Buyside</masterLabel>
+            <translation><!-- FM | DeltaOne| Index Management| Buyside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Dividends</masterLabel>
+            <translation><!-- FM | Dividends --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Dividends | APAC</masterLabel>
+            <translation><!-- FM | Dividends | APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Dividends | EMEA</masterLabel>
+            <translation><!-- FM | Dividends | EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Dividends | ETFs</masterLabel>
+            <translation><!-- FM | Dividends | ETFs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Dividends | Model</masterLabel>
+            <translation><!-- FM | Dividends | Model --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Dividends | UK</masterLabel>
+            <translation><!-- FM | Dividends | UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Dividends | US</masterLabel>
+            <translation><!-- FM | Dividends | US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Do-Not-Use Loan Data Team</masterLabel>
+            <translation><!-- FM | Do-Not-Use Loan Data Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | EGUS Egains</masterLabel>
+            <translation><!-- FM | EGUS Egains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Environmental Registry</masterLabel>
+            <translation><!-- FM | Environmental Registry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Equities</masterLabel>
+            <translation><!-- FM | Equities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Equities | Dividends</masterLabel>
+            <translation><!-- FM | Equities | Dividends --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Equities | Index Builds</masterLabel>
+            <translation><!-- FM | Equities | Index Builds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | European ABS</masterLabel>
+            <translation><!-- FM | European ABS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | FRTB Client Services</masterLabel>
+            <translation><!-- FM | FRTB Client Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | FRTB Implementation</masterLabel>
+            <translation><!-- FM | FRTB Implementation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Fair Value</masterLabel>
+            <translation><!-- FM | Fair Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Finance Contract Signatories | UK</masterLabel>
+            <translation><!-- FM | Finance Contract Signatories | UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | GMG | RST</masterLabel>
+            <translation><!-- FM | GMG | RST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | GRRS | Onboarding</masterLabel>
+            <translation><!-- FM | GRRS | Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | GRRS | Onboarding - Sub Cases</masterLabel>
+            <translation><!-- FM | GRRS | Onboarding - Sub Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | GRS Support</masterLabel>
+            <translation><!-- FM | GRS Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | GS AVS</masterLabel>
+            <translation><!-- FM | GS AVS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | GS AVS | IN</masterLabel>
+            <translation><!-- FM | GS AVS | IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | GS AVS | LN</masterLabel>
+            <translation><!-- FM | GS AVS | LN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | GS AVS | SG</masterLabel>
+            <translation><!-- FM | GS AVS | SG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | GS AVS | US</masterLabel>
+            <translation><!-- FM | GS AVS | US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | ICE Global Handover</masterLabel>
+            <translation><!-- FM | ICE Global Handover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Indices</masterLabel>
+            <translation><!-- FM | Indices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Indices | IAS</masterLabel>
+            <translation><!-- FM | Indices | IAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Integrated Reporting</masterLabel>
+            <translation><!-- FM | Integrated Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Issuer Solutions - Advisory Imp</masterLabel>
+            <translation><!-- FM | Issuer Solutions - Advisory Imp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Issuer Solutions - Client Support</masterLabel>
+            <translation><!-- FM | Issuer Solutions - Client Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Issuer Solutions - Fixed Income Imp</masterLabel>
+            <translation><!-- FM | Issuer Solutions - Fixed Income Imp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Issuer Solutions - Perception Imp</masterLabel>
+            <translation><!-- FM | Issuer Solutions - Perception Imp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Issuer Solutions - Proxy</masterLabel>
+            <translation><!-- FM | Issuer Solutions - Proxy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Issuer Solutions - Shareholder ID</masterLabel>
+            <translation><!-- FM | Issuer Solutions - Shareholder ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | KY3P | Operations</masterLabel>
+            <translation><!-- FM | KY3P | Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | KYCS | Onboarding</masterLabel>
+            <translation><!-- FM | KYCS | Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | KYCS | Profile</masterLabel>
+            <translation><!-- FM | KYCS | Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | KYCS | Support</masterLabel>
+            <translation><!-- FM | KYCS | Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Data</masterLabel>
+            <translation><!-- FM | Loan Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Data Team</masterLabel>
+            <translation><!-- FM | Loan Data Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Data Team | APAC</masterLabel>
+            <translation><!-- FM | Loan Data Team | APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Data Team | India</masterLabel>
+            <translation><!-- FM | Loan Data Team | India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Ref Data | Client Specific NAR</masterLabel>
+            <translation><!-- FM | Loan Ref Data | Client Specific NAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Ref Data | Data Documentation</masterLabel>
+            <translation><!-- FM | Loan Ref Data | Data Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Ref Data | Fax Shells</masterLabel>
+            <translation><!-- FM | Loan Ref Data | Fax Shells --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Ref Data | MWSO</masterLabel>
+            <translation><!-- FM | Loan Ref Data | MWSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Ref Data | NAR | CA</masterLabel>
+            <translation><!-- FM | Loan Ref Data | NAR | CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Ref Data | New Asset Request</masterLabel>
+            <translation><!-- FM | Loan Ref Data | New Asset Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Ref Data | New Deals</masterLabel>
+            <translation><!-- FM | Loan Ref Data | New Deals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Ref Data | New Deals | QC</masterLabel>
+            <translation><!-- FM | Loan Ref Data | New Deals | QC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Settlement | CP Closer</masterLabel>
+            <translation><!-- FM | Loan Settlement | CP Closer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Settlement | CP Mapping</masterLabel>
+            <translation><!-- FM | Loan Settlement | CP Mapping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Settlement | Clear Par</masterLabel>
+            <translation><!-- FM | Loan Settlement | Clear Par --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Settlement | ClearPar Syndicat</masterLabel>
+            <translation><!-- FM | Loan Settlement | ClearPar Syndicat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Settlement | ClearPar | LDN</masterLabel>
+            <translation><!-- FM | Loan Settlement | ClearPar | LDN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Settlement | Doc Delivery</masterLabel>
+            <translation><!-- FM | Loan Settlement | Doc Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Settlement | LP Admin Support</masterLabel>
+            <translation><!-- FM | Loan Settlement | LP Admin Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Settlement | Loan Admin</masterLabel>
+            <translation><!-- FM | Loan Settlement | Loan Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Settlement | Loan Recon</masterLabel>
+            <translation><!-- FM | Loan Settlement | Loan Recon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Loan Settlement | Loan Ref Data</masterLabel>
+            <translation><!-- FM | Loan Settlement | Loan Ref Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MCA</masterLabel>
+            <translation><!-- FM | MCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MCA | London</masterLabel>
+            <translation><!-- FM | MCA | London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MCA | Noida</masterLabel>
+            <translation><!-- FM | MCA | Noida --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MCA | Shanghai</masterLabel>
+            <translation><!-- FM | MCA | Shanghai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MCA | Singapore</masterLabel>
+            <translation><!-- FM | MCA | Singapore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MCA | US</masterLabel>
+            <translation><!-- FM | MCA | US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MCA | US | DS</masterLabel>
+            <translation><!-- FM | MCA | US | DS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MCA | US | NY</masterLabel>
+            <translation><!-- FM | MCA | US | NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MK Accounts</masterLabel>
+            <translation><!-- FM | MK Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSACRT</masterLabel>
+            <translation><!-- FM | MSACRT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV</masterLabel>
+            <translation><!-- FM | MSERV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV API Integration</masterLabel>
+            <translation><!-- FM | MSERV API Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV CS-ES BuySide</masterLabel>
+            <translation><!-- FM | MSERV CS-ES BuySide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV CS-ES MarkitWire</masterLabel>
+            <translation><!-- FM | MSERV CS-ES MarkitWire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV Credit Centre</masterLabel>
+            <translation><!-- FM | MSERV Credit Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV Customisations</masterLabel>
+            <translation><!-- FM | MSERV Customisations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV DS Match UAT</masterLabel>
+            <translation><!-- FM | MSERV DS Match UAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV DS Match | UAT DELTE</masterLabel>
+            <translation><!-- FM | MSERV DS Match | UAT DELTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV Delete</masterLabel>
+            <translation><!-- FM | MSERV Delete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV Duplicate</masterLabel>
+            <translation><!-- FM | MSERV Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV FX</masterLabel>
+            <translation><!-- FM | MSERV FX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV FX | Onboarding</masterLabel>
+            <translation><!-- FM | MSERV FX | Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV FX | Onboarding | FXBA</masterLabel>
+            <translation><!-- FM | MSERV FX | Onboarding | FXBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV FX | Onboarding | TradeSTP</masterLabel>
+            <translation><!-- FM | MSERV FX | Onboarding | TradeSTP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV FX | UAT</masterLabel>
+            <translation><!-- FM | MSERV FX | UAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV MIS</masterLabel>
+            <translation><!-- FM | MSERV MIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV MW Credit Matching</masterLabel>
+            <translation><!-- FM | MSERV MW Credit Matching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV Membership</masterLabel>
+            <translation><!-- FM | MSERV Membership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV NDA Requests</masterLabel>
+            <translation><!-- FM | MSERV NDA Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV POD Cases</masterLabel>
+            <translation><!-- FM | MSERV POD Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV Regulatory Reporting</masterLabel>
+            <translation><!-- FM | MSERV Regulatory Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV Service Incident</masterLabel>
+            <translation><!-- FM | MSERV Service Incident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV TClear FX</masterLabel>
+            <translation><!-- FM | MSERV TClear FX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV TradeServ IP Whitelisting</masterLabel>
+            <translation><!-- FM | MSERV TradeServ IP Whitelisting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV UAT</masterLabel>
+            <translation><!-- FM | MSERV UAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV UAT - UNASSIGNED</masterLabel>
+            <translation><!-- FM | MSERV UAT - UNASSIGNED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV UAT | APAC</masterLabel>
+            <translation><!-- FM | MSERV UAT | APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV UAT | BAU</masterLabel>
+            <translation><!-- FM | MSERV UAT | BAU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV UAT | DSM NCM</masterLabel>
+            <translation><!-- FM | MSERV UAT | DSM NCM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSERV UAT | Projects</masterLabel>
+            <translation><!-- FM | MSERV UAT | Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSF</masterLabel>
+            <translation><!-- FM | MSF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSF Trial</masterLabel>
+            <translation><!-- FM | MSF Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSF | Bespoke Data Requests</masterLabel>
+            <translation><!-- FM | MSF | Bespoke Data Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MSF | Content Specialists</masterLabel>
+            <translation><!-- FM | MSF | Content Specialists --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | All Other</masterLabel>
+            <translation><!-- FM | MW | All Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | Book Updates</masterLabel>
+            <translation><!-- FM | MW | Book Updates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | Clearing</masterLabel>
+            <translation><!-- FM | MW | Clearing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | High Priority</masterLabel>
+            <translation><!-- FM | MW | High Priority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | L1</masterLabel>
+            <translation><!-- FM | MW | L1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | Management</masterLabel>
+            <translation><!-- FM | MW | Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | Password Reset</masterLabel>
+            <translation><!-- FM | MW | Password Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | Reports</masterLabel>
+            <translation><!-- FM | MW | Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | Static Data</masterLabel>
+            <translation><!-- FM | MW | Static Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | User Clones Static Conf.</masterLabel>
+            <translation><!-- FM | MW | User Clones Static Conf. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | User Deactivations</masterLabel>
+            <translation><!-- FM | MW | User Deactivations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MW | User Setup</masterLabel>
+            <translation><!-- FM | MW | User Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Markit Boulder MCS</masterLabel>
+            <translation><!-- FM | Markit Boulder MCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Markit Research Manager</masterLabel>
+            <translation><!-- FM | Markit Research Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MarkitHub</masterLabel>
+            <translation><!-- FM | MarkitHub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MarkitSERV</masterLabel>
+            <translation><!-- FM | MarkitSERV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | MarkitSERV | MTM Implementation</masterLabel>
+            <translation><!-- FM | MarkitSERV | MTM Implementation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Notice Manager</masterLabel>
+            <translation><!-- FM | Notice Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | OTC Derivatives Data</masterLabel>
+            <translation><!-- FM | OTC Derivatives Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Onboarding</masterLabel>
+            <translation><!-- FM | Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | PMI</masterLabel>
+            <translation><!-- FM | PMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Parsing</masterLabel>
+            <translation><!-- FM | Parsing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Portfolio Valuations</masterLabel>
+            <translation><!-- FM | Portfolio Valuations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Pricing | Operations</masterLabel>
+            <translation><!-- FM | Pricing | Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Private Markets | Client Management</masterLabel>
+            <translation><!-- FM | Private Markets | Client Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Product Request Form</masterLabel>
+            <translation><!-- FM | Product Request Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Product Review Committee</masterLabel>
+            <translation><!-- FM | Product Review Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | RCD</masterLabel>
+            <translation><!-- FM | RCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | RED</masterLabel>
+            <translation><!-- FM | RED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Reference Data Support</masterLabel>
+            <translation><!-- FM | Reference Data Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Reg and Compliance | Billing</masterLabel>
+            <translation><!-- FM | Reg and Compliance | Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Research Signals</masterLabel>
+            <translation><!-- FM | Research Signals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | SFTR | Client Services</masterLabel>
+            <translation><!-- FM | SFTR | Client Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | SFTR | Miscellaneous</masterLabel>
+            <translation><!-- FM | SFTR | Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | SFTR | Outreach Support</masterLabel>
+            <translation><!-- FM | SFTR | Outreach Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | SFTR | Product Enhancement</masterLabel>
+            <translation><!-- FM | SFTR | Product Enhancement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | SFTR | Product Management</masterLabel>
+            <translation><!-- FM | SFTR | Product Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | SFTR | Tech Ops</masterLabel>
+            <translation><!-- FM | SFTR | Tech Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | SFTR | UTI Connect NMO</masterLabel>
+            <translation><!-- FM | SFTR | UTI Connect NMO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Salesforce Access Management Cases</masterLabel>
+            <translation><!-- FM | Salesforce Access Management Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Salesforce Helpdesk | JTL</masterLabel>
+            <translation><!-- FM | Salesforce Helpdesk | JTL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Sec Fin</masterLabel>
+            <translation><!-- FM | Sec Fin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Sec Fin | Content Ops</masterLabel>
+            <translation><!-- FM | Sec Fin | Content Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Sec Fin | Content Projects</masterLabel>
+            <translation><!-- FM | Sec Fin | Content Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Sec Fin | Product Consultants</masterLabel>
+            <translation><!-- FM | Sec Fin | Product Consultants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Sec Fin | Product Management</masterLabel>
+            <translation><!-- FM | Sec Fin | Product Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Sec Fin | Technical Operations</masterLabel>
+            <translation><!-- FM | Sec Fin | Technical Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | TA - Technical Support</masterLabel>
+            <translation><!-- FM | TA - Technical Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | TCA</masterLabel>
+            <translation><!-- FM | TCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | TSERV Client Services</masterLabel>
+            <translation><!-- FM | TSERV Client Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Trade Processing</masterLabel>
+            <translation><!-- FM | Trade Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Tradeserv Integration</masterLabel>
+            <translation><!-- FM | Tradeserv Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Trading Analytics | Onboarding</masterLabel>
+            <translation><!-- FM | Trading Analytics | Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Trading Analytics | Operations</masterLabel>
+            <translation><!-- FM | Trading Analytics | Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Trading Analytics | Product</masterLabel>
+            <translation><!-- FM | Trading Analytics | Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Trading Analytics | Support</masterLabel>
+            <translation><!-- FM | Trading Analytics | Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Unassigned</masterLabel>
+            <translation><!-- FM | Unassigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | VCS Offset Project Registry</masterLabel>
+            <translation><!-- FM | VCS Offset Project Registry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | VCS Project Database</masterLabel>
+            <translation><!-- FM | VCS Project Database --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Valuation Managers</masterLabel>
+            <translation><!-- FM | Valuation Managers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | WSO</masterLabel>
+            <translation><!-- FM | WSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | WSO | Data Support</masterLabel>
+            <translation><!-- FM | WSO | Data Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | WSO | London</masterLabel>
+            <translation><!-- FM | WSO | London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM | Weekly Sales Call Agenda</masterLabel>
+            <translation><!-- FM | Weekly Sales Call Agenda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM |GMG | EQUITIES</masterLabel>
+            <translation><!-- FM |GMG | EQUITIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM |GMG | FIXED INCOME</masterLabel>
+            <translation><!-- FM |GMG | FIXED INCOME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM |GMG | MUNICIPALS</masterLabel>
+            <translation><!-- FM |GMG | MUNICIPALS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM |GMG | iProspectus</masterLabel>
+            <translation><!-- FM |GMG | iProspectus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FS Marketing</masterLabel>
+            <translation><!-- FS Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fekete Order Fulfillment</masterLabel>
+            <translation><!-- Fekete Order Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GIS Delivery</masterLabel>
+            <translation><!-- GIS Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPE_Global</masterLabel>
+            <translation><!-- GPE_Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Delivery EMEA ADandM</masterLabel>
+            <translation><!-- Global Delivery EMEA ADandM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Delivery Help Desk</masterLabel>
+            <translation><!-- Global Delivery Help Desk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Insight Fulfillment</masterLabel>
+            <translation><!-- Global Insight Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Operations Support</masterLabel>
+            <translation><!-- Global Operations Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goldfire Order Fulfillment</masterLabel>
+            <translation><!-- Goldfire Order Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IHS</masterLabel>
+            <translation><!-- IHS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPREO - GMG - AMER</masterLabel>
+            <translation><!-- IPREO - GMG - AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPREO - GMG - APAC</masterLabel>
+            <translation><!-- IPREO - GMG - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPREO - GMG - EMEA</masterLabel>
+            <translation><!-- IPREO - GMG - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPREO - PM - AMER</masterLabel>
+            <translation><!-- IPREO - PM - AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPREO - PM - APAC</masterLabel>
+            <translation><!-- IPREO - PM - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPREO - PM - EMEA</masterLabel>
+            <translation><!-- IPREO - PM - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JOC Order Fulfillment</masterLabel>
+            <translation><!-- JOC Order Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeff Allen</masterLabel>
+            <translation><!-- Jeff Allen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY3P - APAC</masterLabel>
+            <translation><!-- KY3P - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY3P - Americas</masterLabel>
+            <translation><!-- KY3P - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY3P - EMEA</masterLabel>
+            <translation><!-- KY3P - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY3P Managed Services</masterLabel>
+            <translation><!-- KY3P Managed Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY3P Referrals</masterLabel>
+            <translation><!-- KY3P Referrals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KYC - Global</masterLabel>
+            <translation><!-- KYC - Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KYC P-Card | Regulatory &amp; Compliance</masterLabel>
+            <translation><!-- KYC P-Card | Regulatory &amp; Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kingdom Licensing</masterLabel>
+            <translation><!-- Kingdom Licensing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knowledge - Customer Article Approvers</masterLabel>
+            <translation><!-- Knowledge - Customer Article Approvers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LMT for Assignment</masterLabel>
+            <translation><!-- LMT for Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LRC | Response Management</masterLabel>
+            <translation><!-- LRC | Response Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Generation Team - APAC</masterLabel>
+            <translation><!-- Lead Generation Team - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Generation Team - Americas</masterLabel>
+            <translation><!-- Lead Generation Team - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Generation Team - EMEA</masterLabel>
+            <translation><!-- Lead Generation Team - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lognet User Setup</masterLabel>
+            <translation><!-- Lognet User Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCPM â€“ Global (converted from case)</masterLabel>
+            <translation><!-- MCPM â€“ Global (converted from case) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOD - Americas</masterLabel>
+            <translation><!-- MOD - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOD - EMEA</masterLabel>
+            <translation><!-- MOD - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSF Trials â€“ Global</masterLabel>
+            <translation><!-- MSF Trials â€“ Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MacroEconomic Advisors</masterLabel>
+            <translation><!-- MacroEconomic Advisors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managed Services - APAC</masterLabel>
+            <translation><!-- Managed Services - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maritime &amp; Trade - APAC</masterLabel>
+            <translation><!-- Maritime &amp; Trade - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maritime &amp; Trade - Americas</masterLabel>
+            <translation><!-- Maritime &amp; Trade - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maritime &amp; Trade - EMEA</masterLabel>
+            <translation><!-- Maritime &amp; Trade - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maritime &amp; Trade Missed/Offline Chats</masterLabel>
+            <translation><!-- Maritime &amp; Trade Missed/Offline Chats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Reporting - CAP</masterLabel>
+            <translation><!-- Market Reporting - CAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Reporting - Loyalty</masterLabel>
+            <translation><!-- Market Reporting - Loyalty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Reporting - OEM Stat</masterLabel>
+            <translation><!-- Market Reporting - OEM Stat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merged Queue</masterLabel>
+            <translation><!-- Merged Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NRG Case</masterLabel>
+            <translation><!-- NRG Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North American ADM Support</masterLabel>
+            <translation><!-- North American ADM Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ODSP Orders</masterLabel>
+            <translation><!-- ODSP Orders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OE PD/4D/Haystack</masterLabel>
+            <translation><!-- OE PD/4D/Haystack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OMDC - APAC</masterLabel>
+            <translation><!-- OMDC - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OMDC - Americas</masterLabel>
+            <translation><!-- OMDC - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OMDC - EMEA</masterLabel>
+            <translation><!-- OMDC - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPIS - APAC</masterLabel>
+            <translation><!-- OPIS - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPIS - Americas</masterLabel>
+            <translation><!-- OPIS - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPIS - EMEA</masterLabel>
+            <translation><!-- OPIS - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORRC Response Management</masterLabel>
+            <translation><!-- ORRC Response Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Delivery</masterLabel>
+            <translation><!-- Online Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Entitlements EM</masterLabel>
+            <translation><!-- Order Entitlements EM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Entitlements UK</masterLabel>
+            <translation><!-- Order Entitlements UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Management</masterLabel>
+            <translation><!-- Order Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Management Consulting</masterLabel>
+            <translation><!-- Order Management Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Management Helpdesk - Noida</masterLabel>
+            <translation><!-- Order Management Helpdesk - Noida --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAS</masterLabel>
+            <translation><!-- PAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PD | Partner-Inquiries</masterLabel>
+            <translation><!-- PD | Partner-Inquiries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDâ€“Retailâ€“APAC</masterLabel>
+            <translation><!-- PDâ€“Retailâ€“APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDâ€“Retailâ€“EMEA</masterLabel>
+            <translation><!-- PDâ€“Retailâ€“EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PETRA Licensing</masterLabel>
+            <translation><!-- PETRA Licensing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POD Do Not Use</masterLabel>
+            <translation><!-- POD Do Not Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRC | Financial Operations &amp; Reporting</masterLabel>
+            <translation><!-- PRC | Financial Operations &amp; Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSG Licensing</masterLabel>
+            <translation><!-- PSG Licensing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance Evaluator Fulfillment</masterLabel>
+            <translation><!-- Performance Evaluator Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning Solutions</masterLabel>
+            <translation><!-- Planning Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PolkConnect Analytics</masterLabel>
+            <translation><!-- PolkConnect Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PolkConnect System</masterLabel>
+            <translation><!-- PolkConnect System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power, Gas, Coal, Renewables - APAC</masterLabel>
+            <translation><!-- Power, Gas, Coal, Renewables - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power, Gas, Coal, Renewables - Americas</masterLabel>
+            <translation><!-- Power, Gas, Coal, Renewables - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power, Gas, Coal, Renewables - EMEA</masterLabel>
+            <translation><!-- Power, Gas, Coal, Renewables - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Order Fulfillment</masterLabel>
+            <translation><!-- Premier Order Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Valuations and Reference</masterLabel>
+            <translation><!-- Pricing Valuations and Reference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Debt Solution Leads - Global</masterLabel>
+            <translation><!-- Private Debt Solution Leads - Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Markets | Customer Care â€“ Prism</masterLabel>
+            <translation><!-- Private Markets | Customer Care â€“ Prism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Markets | Web Services</masterLabel>
+            <translation><!-- Private Markets | Web Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Design</masterLabel>
+            <translation><!-- Product Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Design (UK Products)</masterLabel>
+            <translation><!-- Product Design (UK Products) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Design Other - APAC</masterLabel>
+            <translation><!-- Product Design Other - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Design Other - Americas</masterLabel>
+            <translation><!-- Product Design Other - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Design Other - EMEA</masterLabel>
+            <translation><!-- Product Design Other - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Design Parts - APAC</masterLabel>
+            <translation><!-- Product Design Parts - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Design Parts - Americas</masterLabel>
+            <translation><!-- Product Design Parts - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Design Parts - EMEA</masterLabel>
+            <translation><!-- Product Design Parts - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Design Retail â€“ APAC</masterLabel>
+            <translation><!-- Product Design Retail â€“ APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Design Retail â€“ EMEA</masterLabel>
+            <translation><!-- Product Design Retail â€“ EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recall</masterLabel>
+            <translation><!-- Recall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RootMetrics Inbound Lead</masterLabel>
+            <translation><!-- RootMetrics Inbound Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RootMetrics Order Fulfillment</masterLabel>
+            <translation><!-- RootMetrics Order Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCTAMops</masterLabel>
+            <translation><!-- SCTAMops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE2</masterLabel>
+            <translation><!-- SE2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFHD | Review</masterLabel>
+            <translation><!-- SFHD | Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Claims Team</masterLabel>
+            <translation><!-- Sales Claims Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Incentive Approval Queue</masterLabel>
+            <translation><!-- Sales Incentive Approval Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Optimization</masterLabel>
+            <translation><!-- Sales Optimization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Support/ENR</masterLabel>
+            <translation><!-- Sales Support/ENR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales | Finance Forms</masterLabel>
+            <translation><!-- Sales | Finance Forms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales | Sales Email Leads</masterLabel>
+            <translation><!-- Sales | Sales Email Leads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales | Sales Operations</masterLabel>
+            <translation><!-- Sales | Sales Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales | Sales Support</masterLabel>
+            <translation><!-- Sales | Sales Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales | Sales Support - APAC</masterLabel>
+            <translation><!-- Sales | Sales Support - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales | Sales Support - Americas</masterLabel>
+            <translation><!-- Sales | Sales Support - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales | Sales Support - EMEA</masterLabel>
+            <translation><!-- Sales | Sales Support - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce - Suggestion</masterLabel>
+            <translation><!-- Salesforce - Suggestion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Business Analysis</masterLabel>
+            <translation><!-- Salesforce Business Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Configuration</masterLabel>
+            <translation><!-- Salesforce Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce DAT</masterLabel>
+            <translation><!-- Salesforce DAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Development</masterLabel>
+            <translation><!-- Salesforce Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Helpdesk</masterLabel>
+            <translation><!-- Salesforce Helpdesk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Helpdesk Report Export</masterLabel>
+            <translation><!-- Salesforce Helpdesk Report Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Support</masterLabel>
+            <translation><!-- Salesforce Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spam Queue</masterLabel>
+            <translation><!-- Spam Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Queue-Test</masterLabel>
+            <translation><!-- Support Queue-Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology, Media, Telecomm - APAC</masterLabel>
+            <translation><!-- Technology, Media, Telecomm - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology, Media, Telecomm - Americas</masterLabel>
+            <translation><!-- Technology, Media, Telecomm - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology, Media, Telecomm - EMEA</masterLabel>
+            <translation><!-- Technology, Media, Telecomm - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Be Assigned</masterLabel>
+            <translation><!-- To Be Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Totem - Global</masterLabel>
+            <translation><!-- Totem - Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Triage for IHS</masterLabel>
+            <translation><!-- Triage for IHS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Triage for MarkitSERV</masterLabel>
+            <translation><!-- Triage for MarkitSERV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT</masterLabel>
+            <translation><!-- UAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unassigned Eloqua</masterLabel>
+            <translation><!-- Unassigned Eloqua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unassigned Other</masterLabel>
+            <translation><!-- Unassigned Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upstream - APAC</masterLabel>
+            <translation><!-- Upstream - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upstream - Americas</masterLabel>
+            <translation><!-- Upstream - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upstream - EMEA</masterLabel>
+            <translation><!-- Upstream - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Support</masterLabel>
+            <translation><!-- User Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VFACTS</masterLabel>
+            <translation><!-- VFACTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIN Solutions</masterLabel>
+            <translation><!-- VIN Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visualization</masterLabel>
+            <translation><!-- Visualization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WSO - Americas</masterLabel>
+            <translation><!-- WSO - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>automotiveMastermind - APAC</masterLabel>
+            <translation><!-- automotiveMastermind - APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>automotiveMastermind - Americas</masterLabel>
+            <translation><!-- automotiveMastermind - Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>automotiveMastermind - EMEA</masterLabel>
+            <translation><!-- automotiveMastermind - EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>thinkFolio - APAC</masterLabel>
+            <translation><!-- thinkFolio - APAC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Skill Level to be compared. --></help>
+        <label><!-- Skill Level --></label>
+        <name>SkillLevel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Subject to be compared for Case --></help>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <help><!-- Case Subtype to be compared. --></help>
+        <label><!-- Subtype --></label>
+        <name>Subtype__c</name>
+    </fields>
+    <fields>
+        <help><!-- Case Type to be compared. --></help>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Web Email --></help>
+        <label><!-- Web Email --></label>
+        <name>WebEmail__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Record type for Triage object to manage IHS case assignment rules for Customer Care cases --></description>
+        <label><!-- IHS --></label>
+        <name>IHS</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type for Triage object to manage Markit case assignment rules for Customer Care cases --></description>
+        <label><!-- Markit --></label>
+        <name>Markit</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type for Triage object to manage Markit SERV case assignment rules for Customer Care cases --></description>
+        <label><!-- MarkitSERV --></label>
+        <name>MarkitSERV</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type for Triage object to manage POLK case assignment rules for Customer Care cases --></description>
+        <label><!-- POLK --></label>
+        <name>POLK</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please specify priority of the rule. --></errorMessage>
+        <name>PriorityMandatoryForTriageRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please specify Queue for the rule. In case a match is found, case will be assigned to this queue. --></errorMessage>
+        <name>QueueMandatoryForTriageRule</name>
+    </validationRules>
+</CustomObjectTranslation>

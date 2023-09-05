@@ -1,0 +1,69 @@
+<!-------------------------------
+// @author: Legacy POLK Application
+// @company: VERTIBA/POLK
+// @date: 14 Dec 2018
+// @param: NA
+// @description:  This Vf Component is related to Legacy POLK application.
+// @return: NA
+-->
+<apex:component >
+    
+  <apex:attribute name="wrf" description="This is the active Work Request Form" required="true" type="WorkRequestForm__c" /> 
+        
+        <apex:pageBlock title="Request for Planning Solutions" rendered="{!wrf.PlanningSolutions__c}">
+                
+           <apex:pageBlockSection title="Report Specifications" columns="2" collapsible="false" id="reportSpecificationsUpper">      
+                <apex:pageBlockSectionItem > 
+                    <apex:outputLabel value="Start Date" for="startdt" />
+                    <apex:outputField value="{!wrf.PlanningSolutionsStartDate__c}" id="startdt" styleClass="requiredField" />
+               </apex:pageBlockSectionItem>
+                
+               <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="End Date" for="enddt" />
+                    <apex:outputField value="{!wrf.PlanningSolutionsEndDate__c}" id="enddt" styleClass="requiredField" />
+               </apex:pageBlockSectionItem>
+               <apex:pageBlockSectionItem /> <!--For spacing-->
+           </apex:pageBlockSection> <!--End reportSpecificationsUpper-->
+            
+           <apex:pageBlockSection columns="1" collapsible="false" id="reportSpecificationsLower">
+               <apex:pageBlockSectionItem >
+                  <apex:outputLabel value="Report Type" for="reporttp" />
+                    <apex:outputField value="{!wrf.TypeOfReportingMulti__c}" id="reporttp" />         
+               </apex:pageBlockSectionItem>
+               <apex:pageBlockSectionItem /> <!--For spacing-->
+            
+
+               <apex:pageBlockSectionItem >
+                  <apex:outputLabel value="Forecast Concept" for="forecastConcept" />
+                    <apex:outputField value="{!wrf.ForecastConcept__c}" id="forecastConcept" />         
+               </apex:pageBlockSectionItem>  
+               <apex:pageBlockSectionItem /> <!--For spacing-->            
+           </apex:pageBlockSection> <!--End reportSpecificationsLower-->
+            
+            
+           <apex:pageBlockSection columns="2" collapsible="false" id="reportSpecificationsGeography">
+               <apex:pageBlockSectionItem >
+                   <apex:outputLabel value="Prod Regions" for="prodRegions" />
+                   <apex:outputField value="{!wrf.PlanningSolutionsProdRegions__c}" id="prodRegions" />
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+                   <apex:outputLabel value="Prod Countries/Territories" for="prodCountries" />
+                   <apex:outputField value="{!wrf.PlanningSolutionsProdCountries__c}" id="prodCountries" />
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem /> <!--For spacing--> 
+               <apex:pageBlockSectionItem /> <!--For spacing--> 
+               
+               <apex:pageBlockSectionItem >
+                   <apex:outputLabel value="Sales Regions" for="salesRegions" />
+                   <apex:outputField value="{!wrf.PlanningSolutionsSalesRegions__c}" id="salesRegions" />
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+                   <apex:outputLabel value="Sales Countries/Territories" for="salesCountries" />
+                   <apex:outputField value="{!wrf.PlanningSolutionsSalesCountries__c}" id="salesCountries" />
+               </apex:pageBlockSectionItem>
+           </apex:pageBlockSection> <!--End reportSpecificationsGeography-->          
+      </apex:pageBlock>
+</apex:component>
