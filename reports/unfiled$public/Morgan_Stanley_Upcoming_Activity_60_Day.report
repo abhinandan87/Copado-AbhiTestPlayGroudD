@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Activity$ActivityDate</field>
+    </columns>
+    <columns>
+        <field>Activity$ActivityType__c</field>
+    </columns>
+    <columns>
+        <field>Activity$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Activity$Subject</field>
+    </columns>
+    <columns>
+        <field>Activity$What</field>
+    </columns>
+    <columns>
+        <field>Activity$Description</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Activity$Account.UltimateParent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Morgan Stanley</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$CreatedBy.Profile</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>IHSMarkit Customer Care</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Morgan Stanley Upcoming Activity 60 Day</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities_with_Additional_User_Fields__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Activity$ActivityDate</dateColumn>
+        <interval>INTERVAL_NEXT60</interval>
+    </timeFrameFilter>
+</Report>

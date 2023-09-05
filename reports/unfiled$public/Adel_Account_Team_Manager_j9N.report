@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Adel Hallak</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TeamMemberRole</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Account Manager</value>
+        </criteriaItems>
+        <operation>without</operation>
+        <primaryTableColumn>OPPORTUNITY_ID</primaryTableColumn>
+        <relatedTable>OpportunityTeamMember-User</relatedTable>
+        <relatedTableJoinColumn>Opportunity</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <column>OWNER_FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Adel Hallak,Nourane Mahmoud,Nicola Tame</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Opportunitynum__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Adel Opportunity Teams</name>
+    <params>
+        <name>include</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

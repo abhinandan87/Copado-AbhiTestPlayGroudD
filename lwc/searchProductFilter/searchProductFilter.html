@@ -1,0 +1,110 @@
+<template>
+    <div class="slds-card"> 
+        <br/>
+        <div class="slds-m-left_medium slds-scrollable_y cardstyle" > 
+            <lightning-input 
+                class="searchtxt"
+                label="Product Name"
+                type="search"
+                value={productNameVal}
+                placeholder="Type product name to search"
+                data-id="ProductName"               
+                onchange={handleSearchKeyChange}
+            ></lightning-input> 
+            <lightning-input 
+                class="searchtxt"
+                label="Material Code"
+                type="search"
+                value={materialCodeVal}
+                placeholder="Type material code to search"
+                data-id="MaterialCode"                
+                onchange={handleSearchKeyChange}
+            ></lightning-input>
+            <lightning-combobox
+                class="searchtxt"
+                name="AAG" 
+                label="AAG"  
+                value={aagVal}                                                                                                 
+                options={aagPicklistValues}  
+                data-id="AAG"                  
+                onchange={handleSearchKeyChange}                       
+            ></lightning-combobox>
+            <lightning-combobox
+                class="searchtxt"
+                name="IBS" 
+                label="Internal Business Segment"                                                         
+                value={ibsVal}                            
+                options={listIbsValues}  
+                data-id="IBS"      
+                onchange={handleIBSChange}                   
+            ></lightning-combobox>
+            <lightning-combobox
+                class="searchtxt"
+                name="BL" 
+                label="Business Line"                                                         
+                value={blVal}                            
+                options={listBlValues}  
+                data-id="BL"  
+                disabled={disableBlValues} 
+                onchange={handleBSLineChange}                     
+            ></lightning-combobox>
+            <lightning-combobox
+                class="searchtxt"
+                name="SBL" 
+                label="Sub Business Line"                                                         
+                value={subVal}                            
+                options={listSblValues}  
+                data-id="SBL"   
+                disabled={disableSBlValues} 
+                onchange={handleSearchKeyChange}                    
+            ></lightning-combobox>
+            <lightning-input 
+                class="searchtxt"
+                label="Internal Product Name" 
+                type="search"
+                value={internalProdNameVal}
+                placeholder="Type internal product name to search"
+                data-id="InternalProdName"
+                onchange={handleSearchKeyChange}
+            ></lightning-input>           
+            <lightning-input 
+                class="searchtxt"
+                label="Profit Center" 
+                type="search"
+                value={profitCenterVal}
+                placeholder="Type profit center line to search"
+                data-id="ProfitCenter"
+                onchange={handleSearchKeyChange}
+            ></lightning-input>
+            <lightning-input 
+                class="searchtxt"
+                label="Media Type" 
+                type="search"
+                value={mediaTypeVal}
+                placeholder="Type media type to search"
+                data-id="MediaType"
+                onchange={handleSearchKeyChange}
+            ></lightning-input>
+            <lightning-input 
+                class="searchtxt"
+                label="Family Name" 
+                type="search"
+                value={familyNameVal}
+                placeholder="Type family name to search"
+                data-id="FamilyName"
+                onchange={handleSearchKeyChange}
+            ></lightning-input>
+            <lightning-input 
+                class="searchtxt slds-m-bottom_xx-large"
+                label="Product Group" 
+                type="search"
+                value={productGroupVal}
+                placeholder="Type product group to search"
+                data-id="ProductGroup"
+                onchange={handleSearchKeyChange}
+            ></lightning-input>
+            
+            <br/>
+        </div> 
+    </div>
+</template>

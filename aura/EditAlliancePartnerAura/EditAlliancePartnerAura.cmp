@@ -1,0 +1,3 @@
+<aura:component implements="lightning:actionOverride,force:hasSObjectName,force:lightningQuickActionWithoutHeader,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <c:editAlliancePartnerPage objectApiName='ContractProductAlliancePartner__c' recordId="{!v.recordId}" actionName='New' oncancel="{!c.closepage}" onclose="{!c.closeQA}"></c:editAlliancePartnerPage>
+</aura:component>

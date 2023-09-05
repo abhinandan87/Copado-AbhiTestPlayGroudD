@@ -7,6 +7,21 @@
         <label>Business User</label>
     </standardValue>
     <standardValue>
+        <fullName>Channel Partner</fullName>
+        <default>false</default>
+        <label>Channel Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Champion</fullName>
+        <default>false</default>
+        <label>Champion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Contract Recipient</fullName>
+        <default>false</default>
+        <label>Customer Contract Recipient</label>
+    </standardValue>
+    <standardValue>
         <fullName>Decision Maker</fullName>
         <default>false</default>
         <label>Decision Maker</label>
@@ -32,9 +47,24 @@
         <label>Executive Sponsor</label>
     </standardValue>
     <standardValue>
+        <fullName>Freight Forwarder</fullName>
+        <default>false</default>
+        <label>Freight Forwarder</label>
+    </standardValue>
+    <standardValue>
         <fullName>Influencer</fullName>
         <default>false</default>
         <label>Influencer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Renewal Notice Recipient</fullName>
+        <default>false</default>
+        <label>Renewal Notice Recipient</label>
     </standardValue>
     <standardValue>
         <fullName>Technical Buyer</fullName>
@@ -42,8 +72,8 @@
         <label>Technical Buyer</label>
     </standardValue>
     <standardValue>
-        <fullName>Other</fullName>
+        <fullName>Trial User</fullName>
         <default>false</default>
-        <label>Other</label>
+        <label>Trial User</label>
     </standardValue>
 </StandardValueSet>

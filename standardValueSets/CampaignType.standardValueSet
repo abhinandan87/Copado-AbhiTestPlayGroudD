@@ -2,9 +2,14 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Advertisement</fullName>
-        <default>true</default>
-        <label>Advertisement</label>
+        <fullName>Advertising (Online/Offline Including Social)</fullName>
+        <default>false</default>
+        <label>Advertising (Online/Offline Including Social)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Mail</fullName>
+        <default>false</default>
+        <label>Direct Mail</label>
     </standardValue>
     <standardValue>
         <fullName>Email</fullName>
@@ -12,19 +17,39 @@
         <label>Email</label>
     </standardValue>
     <standardValue>
-        <fullName>Telemarketing</fullName>
+        <fullName>Third-Party Event / Tradeshow</fullName>
         <default>false</default>
-        <label>Telemarketing</label>
+        <label>Third-Party Event / Tradeshow</label>
     </standardValue>
     <standardValue>
-        <fullName>Banner Ads</fullName>
+        <fullName>IHS Markit Hosted Event (Excludes Paid Gate Events)</fullName>
         <default>false</default>
-        <label>Banner Ads</label>
+        <label>IHS Markit Hosted Event (Excludes Paid Gate Events)</label>
     </standardValue>
     <standardValue>
-        <fullName>Seminar / Conference</fullName>
+        <fullName>IHS Markit Paid Gate Event</fullName>
         <default>false</default>
-        <label>Seminar / Conference</label>
+        <label>IHS Markit Paid Gate Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webcast / Webinar</fullName>
+        <default>false</default>
+        <label>Webcast / Webinar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media (Excludes Advertising)</fullName>
+        <default>false</default>
+        <label>Social Media (Excludes Advertising)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Parent Campaign (Multiple Types)</fullName>
+        <default>false</default>
+        <label>Parent Campaign (Multiple Types)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Brochures &amp; Infographics</fullName>
+        <default>false</default>
+        <label>Product Brochures &amp; Infographics</label>
     </standardValue>
     <standardValue>
         <fullName>Public Relations</fullName>
@@ -32,18 +57,38 @@
         <label>Public Relations</label>
     </standardValue>
     <standardValue>
-        <fullName>Partners</fullName>
+        <fullName>Website/E-commerce (Not Related to Another Type)</fullName>
         <default>false</default>
-        <label>Partners</label>
+        <label>Website/E-commerce (Not Related to Another Type)</label>
     </standardValue>
     <standardValue>
-        <fullName>Referral Program</fullName>
+        <fullName>Partner/Affiliate</fullName>
         <default>false</default>
-        <label>Referral Program</label>
+        <label>Partner/Affiliate</label>
     </standardValue>
     <standardValue>
-        <fullName>Other</fullName>
+        <fullName>Customer Care</fullName>
         <default>false</default>
-        <label>Other</label>
+        <label>Customer Care</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound Telemarketing/Teleprospecting (Cold Calling)</fullName>
+        <default>false</default>
+        <label>Outbound Telemarketing/Teleprospecting (Cold Calling)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound Telemarketing/Teleprospecting (Incoming Phone Calls)</fullName>
+        <default>false</default>
+        <label>Inbound Telemarketing/Teleprospecting (Incoming Phone Calls)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Led</fullName>
+        <default>false</default>
+        <label>Sales Led</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Led (Not Marketing Related)</fullName>
+        <default>false</default>
+        <label>Sales Led (Not Marketing Related)</label>
     </standardValue>
 </StandardValueSet>

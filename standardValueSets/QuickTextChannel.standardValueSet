@@ -2,8 +2,13 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Email</fullName>
+        <fullName>Live Agent</fullName>
         <default>true</default>
+        <label>Live Agent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
         <label>Email</label>
     </standardValue>
     <standardValue>
@@ -20,6 +25,11 @@
         <fullName>Internal</fullName>
         <default>false</default>
         <label>Internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Knowledge</fullName>
+        <default>false</default>
+        <label>Knowledge</label>
     </standardValue>
     <standardValue>
         <fullName>Event</fullName>

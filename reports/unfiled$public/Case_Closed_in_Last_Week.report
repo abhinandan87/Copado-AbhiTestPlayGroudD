@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_43505033</developerName>
+        <masterLabel>Teams</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Brenda McIntyre</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Douglas Mangoli</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ed Tyves</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Erica Stephens</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maxwell Werunga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tim Hecksel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yelena Rozentuler</sourceValue>
+            </sourceValues>
+            <value>VINTELL Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brad Mayes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Collin Rumsey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Craig Maser</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Wilhoite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Lane</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Larry Villeneuve</sourceValue>
+            </sourceValues>
+            <value>Others</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>LAST_UPDATE_BY</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Last day closed count</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>VIN Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>AUTOS | Analytical Solutions - EU,AUTOS | GPHD Americas,AUTOS | GPHD UK,AUTOS | GPHD DE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_WEEK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Collin Rumsey,Jason Wilhoite,Larry Villeneuve,Brad Mayes,Craig Maser,Jennifer Lane,Tim Hecksel,Maxwell Werunga,Douglas Mangoli,Yelena Rozentuler,Erica Stephens,Ed Tyves,Amandeep Singh,Brenda McIntyre,Vinamra Maini</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_UPDATE_BY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Collin Rumsey,Jason Wilhoite,Larry Villeneuve,Brad Mayes,Craig Maser,Jennifer Lane,Tim Hecksel,Maxwell Werunga,Douglas Mangoli,Yelena Rozentuler,Erica Stephens,Ed Tyves,Amandeep Singh,Brenda McIntyre,Vinamra Maini</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LAST_UPDATE_BY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Case Closed in Current Week</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,16 @@
+Dear {!Contact.FirstName},
+
+<br><br>
+
+Good day!
+<br>
+This mail is about the {!Case.CaseNumber} that you raised with us.
+<br><br>
+We tried to reach out to you on Teams so that we can resolve the issue you’ve been facing.
+Please let me know what a good time would be to connect.
+<br><br>
+Feel free to reach out to us if you have any further information or queries.
+<br><br>
+Regards,<br>
+{!Case.OwnerFullName}<br>
+Salesforce Helpdesk

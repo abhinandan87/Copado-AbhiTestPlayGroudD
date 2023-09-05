@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Energy | CDN | DIGLOGORDERS</name>
+    <queueMembers>
+        <users>
+            <user>abby.woods@ihsmarkit.com</user>
+            <user>anita.reilander@ihsmarkit.com</user>
+            <user>anthony.santos@ihsmarkit.com</user>
+            <user>brittaney.bridge@ihsmarkit.com</user>
+            <user>christina.ewert@ihsmarkit.com</user>
+            <user>cindy.gibb@ihsmarkit.com</user>
+            <user>connie.feliciano@ihsmarkit.com</user>
+            <user>connie.pagalilauan@ihsmarkit.com</user>
+            <user>cynthia.ortiz@ihsmarkit.com</user>
+            <user>gwen.burnett@ihsmarkit.com</user>
+            <user>jill.sherret@ihsmarkit.com</user>
+            <user>justin.clarke@ihsmarkit.com</user>
+            <user>kirk.shore@ihsmarkit.com</user>
+            <user>mandy.lee@ihsmarkit.com</user>
+            <user>melisa.olivarez@ihsmarkit.com</user>
+            <user>mimoza.gallani@ihsmarkit.com</user>
+            <user>prima.anderson@ihsmarkit.com</user>
+            <user>teresa.pagalilauan@ihsmarkit.com</user>
+            <user>tom.mcivor@ihsmarkit.com</user>
+            <user>troy.winn@ihsmarkit.com</user>
+            <user>vincent.ducut@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

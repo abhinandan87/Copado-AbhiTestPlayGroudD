@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This event is fired when products are selected from Search Products.</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Holds the selected products</description>
+        <fieldName>selectedProducts</fieldName>
+    </lightningMessageFields>
+    <masterLabel>SelectedProducts</masterLabel>
+</LightningMessageChannel>

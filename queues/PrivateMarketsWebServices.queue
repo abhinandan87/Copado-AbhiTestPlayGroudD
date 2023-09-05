@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Private Markets | Web Services</name>
+    <queueMembers>
+        <users>
+            <user>christopher.mullins@ihsmarkit.com</user>
+            <user>jonathan.couch@ihsmarkit.com</user>
+            <user>kavyasree.kandula@ihsmarkit.com</user>
+            <user>keyton.carr@ihsmarkit.com</user>
+            <user>lamar.thompson@ihsmarkit.com</user>
+            <user>magdalina.atkinson@ihsmarkit.com</user>
+            <user>nisanth.sivaprasad@ihsmarkit.com</user>
+            <user>ryan.smith2@ihsmarkit.com</user>
+            <user>santosh.arelli@ihsmarkit.com</user>
+            <user>shweta.narkhede@ihsmarkit.com</user>
+            <user>siddhant.chourasia@ihsmarkit.com</user>
+            <user>srinivas.munukutla@ihsmarkit.com</user>
+            <user>sudipt.upadhyay@ihsmarkit.com</user>
+            <user>will.richter@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

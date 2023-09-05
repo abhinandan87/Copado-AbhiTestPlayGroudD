@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ProductLogin__c$Name</field>
+    </columns>
+    <columns>
+        <field>ProductLogin__c.AdditionalProductLoginFields__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ProductLogin__c.AdditionalProductLoginFields__r$FileDeliveryContact__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ProductLogin__c.AdditionalProductLoginFields__r$ITContact__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ProductLogin__c.AdditionalProductLoginFields__r$DataOnboardingContact__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ProductLogin__c.AdditionalProductLoginFields__r$DatafeedDeliveryContact__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ProductLogin__c.AdditionalProductLoginFields__r$SignOffContact__c</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>Login: User Type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductLoginwithAdditionalProductLoginFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ProductLogin__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

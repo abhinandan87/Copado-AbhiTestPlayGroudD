@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <icon>SNPCAPIQ__Branding_Do_Not_Delete/SNPCAPIQ__Tab_Gears_Icon.png</icon>
+    <label>Company ID Import</label>
+    <motif>Custom104: TV Widescreen</motif>
+    <page>SNPCAPIQ__MassAccountsImport</page>
+</CustomTab>

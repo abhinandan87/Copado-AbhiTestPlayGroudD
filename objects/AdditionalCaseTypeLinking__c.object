@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFDC1-6246 Used in Additional Case Fields object process to identify the record type of additional case fields</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>AdditionalCaseRecordType__c</fullName>
+        <description>SFDC1-6376: Adding Polk in the pick list
+SFDC-2646: Added AgriBussiness
+SFDC-2757: Added Energy-Piper, Energy-WellTest, Energy-Harmony</description>
+        <externalId>false</externalId>
+        <label>Additional Case Record Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account Receivable</fullName>
+                    <default>false</default>
+                    <label>Account Receivable</label>
+                </value>
+                <value>
+                    <fullName>Agent Validation Service</fullName>
+                    <default>false</default>
+                    <label>Agent Validation Service</label>
+                </value>
+                <value>
+                    <fullName>AgriBusiness</fullName>
+                    <default>false</default>
+                    <label>AgriBusiness</label>
+                </value>
+                <value>
+                    <fullName>Cappitech Regulatory Reporting</fullName>
+                    <default>false</default>
+                    <label>Cappitech Regulatory Reporting</label>
+                </value>
+                <value>
+                    <fullName>CDN Data</fullName>
+                    <default>false</default>
+                    <label>CDN Data</label>
+                </value>
+                <value>
+                    <fullName>Corporate Actions</fullName>
+                    <default>false</default>
+                    <label>Corporate Actions</label>
+                </value>
+                <value>
+                    <fullName>Delivery</fullName>
+                    <default>false</default>
+                    <label>Delivery</label>
+                </value>
+                <value>
+                    <fullName>Delivery Helpdesk</fullName>
+                    <default>false</default>
+                    <label>Delivery Helpdesk</label>
+                </value>
+                <value>
+                    <fullName>Dividend Forecasting</fullName>
+                    <default>false</default>
+                    <label>Dividend Forecasting</label>
+                </value>
+                <value>
+                    <fullName>Enerdeq</fullName>
+                    <default>false</default>
+                    <label>Enerdeq</label>
+                </value>
+                <value>
+                    <fullName>Energy-ETA</fullName>
+                    <default>false</default>
+                    <label>Energy-ETA</label>
+                </value>
+                <value>
+                    <fullName>Energy-Harmony</fullName>
+                    <default>false</default>
+                    <label>Energy-Harmony</label>
+                </value>
+                <value>
+                    <fullName>Energy-Natural</fullName>
+                    <default>false</default>
+                    <label>Energy-Natural</label>
+                </value>
+                <value>
+                    <fullName>Energy-Piper</fullName>
+                    <default>false</default>
+                    <label>Energy-Piper</label>
+                </value>
+                <value>
+                    <fullName>Energy-WellTest</fullName>
+                    <default>false</default>
+                    <label>Energy-WellTest</label>
+                </value>
+                <value>
+                    <fullName>Equities-Data and Analytics</fullName>
+                    <default>false</default>
+                    <label>Equities-Data and Analytics</label>
+                </value>
+                <value>
+                    <fullName>Equities-Reg</fullName>
+                    <default>false</default>
+                    <label>Equities-Reg</label>
+                </value>
+                <value>
+                    <fullName>FieldDirect</fullName>
+                    <default>false</default>
+                    <label>FieldDirect</label>
+                </value>
+                <value>
+                    <fullName>Goldfire</fullName>
+                    <default>false</default>
+                    <label>Goldfire</label>
+                </value>
+                <value>
+                    <fullName>IPREO Core</fullName>
+                    <default>false</default>
+                    <label>IPREO Core</label>
+                </value>
+                <value>
+                    <fullName>Kingdom</fullName>
+                    <default>false</default>
+                    <label>Kingdom</label>
+                </value>
+                <value>
+                    <fullName>Legacy Distribution</fullName>
+                    <default>false</default>
+                    <label>Legacy Distribution</label>
+                </value>
+                <value>
+                    <fullName>Loan Settlement</fullName>
+                    <default>false</default>
+                    <label>Loan Settlement</label>
+                </value>
+                <value>
+                    <fullName>MI Customer Support</fullName>
+                    <default>false</default>
+                    <label>MI Customer Support</label>
+                </value>
+                <value>
+                    <fullName>NRG</fullName>
+                    <default>false</default>
+                    <label>NRG</label>
+                </value>
+                <value>
+                    <fullName>Order Management</fullName>
+                    <default>false</default>
+                    <label>Order Management</label>
+                </value>
+                <value>
+                    <fullName>Order Management Helpdesk</fullName>
+                    <default>false</default>
+                    <label>Order Management Helpdesk</label>
+                </value>
+                <value>
+                    <fullName>OTC DD</fullName>
+                    <default>false</default>
+                    <label>OTC DD</label>
+                </value>
+                <value>
+                    <fullName>OTC Services</fullName>
+                    <default>false</default>
+                    <label>OTC Services</label>
+                </value>
+                <value>
+                    <fullName>PETRA</fullName>
+                    <default>false</default>
+                    <label>PETRA</label>
+                </value>
+                <value>
+                    <fullName>Polk</fullName>
+                    <default>false</default>
+                    <label>Polk</label>
+                </value>
+                <value>
+                    <fullName>Power Tools</fullName>
+                    <default>false</default>
+                    <label>Power Tools</label>
+                </value>
+                <value>
+                    <fullName>Pricing</fullName>
+                    <default>false</default>
+                    <label>Pricing</label>
+                </value>
+                <value>
+                    <fullName>Pricing Operations</fullName>
+                    <default>false</default>
+                    <label>Pricing Operations</label>
+                </value>
+                <value>
+                    <fullName>Private Capital Markets</fullName>
+                    <default>false</default>
+                    <label>Private Capital Markets</label>
+                </value>
+                <value>
+                    <fullName>Processing - Customer Care</fullName>
+                    <default>false</default>
+                    <label>Processing - Customer Care</label>
+                </value>
+                <value>
+                    <fullName>Processing - Onboarding</fullName>
+                    <default>false</default>
+                    <label>Processing - Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Reference Data</fullName>
+                    <default>false</default>
+                    <label>Reference Data</label>
+                </value>
+                <value>
+                    <fullName>Reg and Compliance</fullName>
+                    <default>false</default>
+                    <label>Reg and Compliance</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>Sales Ops</fullName>
+                    <default>false</default>
+                    <label>Sales Ops</label>
+                </value>
+                <value>
+                    <fullName>Securities Finance</fullName>
+                    <default>false</default>
+                    <label>Securities Finance</label>
+                </value>
+                <value>
+                    <fullName>SFTR</fullName>
+                    <default>false</default>
+                    <label>SFTR</label>
+                </value>
+                <value>
+                    <fullName>Trading Analytics</fullName>
+                    <default>false</default>
+                    <label>Trading Analytics</label>
+                </value>
+                <value>
+                    <fullName>Integrated Reporting Solution</fullName>
+                    <default>false</default>
+                    <label>Integrated Reporting Solution</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CaseRecordType__c</fullName>
+        <description>SFDC1-6246 Case Record Type for additional Case Fields object process. SFDC1-7120: Removing Internal Partner pick list. SFDC1-9290 Adding Implementation Value</description>
+        <externalId>false</externalId>
+        <label>Case Record Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Care</fullName>
+                    <default>false</default>
+                    <label>Customer Care</label>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                    <label>Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Order Management/Delivery Help Desk</fullName>
+                    <default>false</default>
+                    <label>Order Management/Delivery Help Desk</label>
+                </value>
+                <value>
+                    <fullName>Implementation</fullName>
+                    <default>false</default>
+                    <label>Implementation</label>
+                </value>
+                <value>
+                    <fullName>Internal Partner</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Internal Partner</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PKIDAdditionalCaseTypeLinking__c</fullName>
+        <description>SFDC1-2445: Creating PK field for Data Migration Support</description>
+        <displayFormat>ACTL-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>PKID AdditionalCaseTypeLinking</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ProductFamily__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC1-6246: Additional case fields record should get spawned based on Product Family record</description>
+        <externalId>false</externalId>
+        <label>Product Family</label>
+        <referenceTo>Family__c</referenceTo>
+        <relationshipLabel>Additional Case Type Linkings</relationshipLabel>
+        <relationshipName>AdditionalCaseTypeLinkings</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductGroup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC1-6246: Additional case fields record should get spawned based on Product Group record</description>
+        <externalId>false</externalId>
+        <label>Product Group</label>
+        <referenceTo>ProductGroup__c</referenceTo>
+        <relationshipLabel>Additional Case Type Linkings</relationshipLabel>
+        <relationshipName>AdditionalCaseTypeLinkings</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Additional Case Type Linking</label>
+    <nameField>
+        <displayFormat>ACTL-{0000}</displayFormat>
+        <label>Additional Case Type Linking Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Additional Case Type Linkings</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

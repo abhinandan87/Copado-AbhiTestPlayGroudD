@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/10560</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Field for reporting purposes only.  10560 = 22 working days, with 8 hrs per working day, 60 min per hour</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent Monthly FTE</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Sime Spent in Hours</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent (Hours)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <currency>GBP</currency>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Case.ContractManagement,Case.SalesforceHelpdesk,Case.OrderManagementDeliveryHelpDesk,Case.GDSA,Case.ResponseManagement,Case.SalesforceSuggestion,Case.SalesOperations,Case.SalesSupport</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>SF Admin,Delete Queue,DCIInterfaceuser,Duplicate Queue,FM | MSERV Delete,FM | MSERV,FM | MSERV Duplicate,FM | MSERV FX | Onboarding,FM | MSERV TradeServ IP Whitelisting,FM | MSERV Product Business Development,FM | MSERV Regulatory Reporting,FM | MSERV MIS,FM | MSERV DS Match UAT,FM | MarkitSERV | MTM Implementation,FM | MSERV FX,FM | MSERV UAT | Projects,FM | MSERV UAT | BAU,FM | MSERV UAT - UNASSIGNED,FM | MSERV UAT | MTM,FM | MSERV API Integration,FM | MSERV FX | Onboarding | TradeSTP,FM | MSERV Membership</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>3rd Party Index Mgmt,ABCDS Reference Cashflow Data,Accounts Receivable,Asset Bank Legacy,Bond Reference Data,Calendar-Vote,CDS Pricing Data,CDS Reference Data,Commission Manager,Corp&amp;Svrgn Bonds Pricing Data,Counterparty Manager-Core,Counterparty Manager-Document Digitisation,Counterparty Manager-FATCA SVC Bureau,Counterparty Manager-ISDA Amend,CTI,CTI Prod,DealHub,DeltaOne,Desktop,Dividend Forecasting,DMS,EDM,Environmental Registry,Feeds/API,Financial Services,Hub,Index Admin &amp; Calculation,Indices Bonds,Indices CDS,Indices Loans,KYV,Loan Pricing Data,Loan Reference Data,Market Share Analysis,Markit Corporate Actions,Markit Loan Settlement,Municipal Bonds Pricing Data,Notice Manager,OTC Derivatives Data,Parsing,Performance Evaluator NA,PMI,Portfolio Valuations,Production Engineering Services,RegOne (Compliance SVC),Research Signals,Securities Finance-Equity,SecuritisedProd Indices,SecuritisedProdPrice Data-ABS,thinkFolio,Totem,Transaction Cost Analysis,Valuations Manager,WSO-Software,WSO-SVC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Access,Billing,Cancel,Cancellation,Data,General Inquiry,Invoice,JIRA,Login/Permission Issue,New Contract,New Renewal Product,Notifications,Product Assistance,Scheduled Termination,Training,Trial,Unscheduled Termination,User Administration</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CLOSED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Time Spent by Product Group - Test Iris</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.ProductGroup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,150 @@
+<template>
+    <div class="slds-card cardstyle"> 
+        <!--Header -->
+        <div class="containerdiv"> 
+            <div>
+                <lightning-icon icon-name="standard:product" size="small"></lightning-icon>
+            </div>
+            <div>
+                <h2><span class="slds-text-heading_small slds-truncate"><b>Select Products</b></span></h2>
+            </div>
+        </div> 
+        <template if:true={showSpinner}>
+            <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+        </template> 
+        <br/>
+        <!-- Scrollable Product List start -->
+        <div class="slds-scrollable slds-var-p-around_x-small">
+            <template if:false={emptyProductList}>
+            <div class="slds-grid slds-wrap">            
+                <table class="slds-table">
+                    <thead>
+                        <tr class="slds-text-body_small boldFont">
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Select">Select</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Product Name">Product Name</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Material Code">Material Code</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Media Type">Media Type</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="AAG">AAG</div>
+                            </th>  
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Internal Business Segment">Internal Business Segment</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Business Line">Business Line</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Sub Business Line">Sub Business Line</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="Product Group">Product Group</div>
+                            </th>
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="SAP Profit Center">SAP Profit Center</div>
+                            </th>                       
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="SAP Family">SAP Family</div>
+                            </th>               
+                            <th class="slds-size--1-of-12" scope="col">
+                                <div class="slds-truncate" title="IP Jurisdiction">IP Jurisdiction</div>
+                            </th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>                     
+                    <template for:each={paginatedProductList} for:item="prod" for:index="prodIndex">    
+                    <tr key={prod.productId}>                                       
+                            <td key={prod.productId}> 
+                                <div data-id={prodIndex} onclick={selectProduct}>
+                                    <lightning-button-icon icon-name="utility:add" variant="brand" alternative-text="Select" title="Select" size="x-small"></lightning-button-icon>
+                                </div>
+                            </td>
+                            <td key={prod.productId}>
+                                <div>{prod.product.Name}</div>
+                            </td>
+                            <td key={prod.productId}>
+                                <div>{prod.product.MaterialCode__c}</div>
+                            </td>
+                            <td key={prod.productId}>
+                                <div>{prod.product.MediaType__c}</div>
+                            </td>
+                            <td key={prod.productId}>
+                                <div>{prod.product.AAG__c}</div>
+                            </td>
+                            <td key={prod.productId}>
+                                <div>{prod.product.InternalBusinessSegment__c}</div>
+                            </td>
+                            <td key={prod.productId}>
+                                <template if:true={prod.product.BusinessLine2__r}>
+                                    <div>{prod.product.BusinessLine2__r.Name}</div>
+                                </template>
+                            </td>
+                            <td key={prod.productId}>
+                                <template if:true={prod.product.SubBusinessLine__r}>
+                                    <div>{prod.product.SubBusinessLine__r.Name}</div>
+                            </template>
+                            </td>
+                            <td key={prod.productId}>
+                                <template if:true={prod.product.ProductGroup__r}>
+                                    <div>{prod.product.ProductGroup__r.Name}</div>
+                                </template>
+                            </td>
+                            <td key={prod.productId}>
+                                <template if:true={prod.product.ProfitCenters__r}>                        
+                                    <div>{prod.product.ProfitCenters__r.Name}</div>
+                                </template>
+                            </td>
+                            <td key={prod.productId}>
+                                <template if:true={prod.product.Family__r}>
+                                    <div>{prod.product.Family__r.Name}</div>
+                                </template>
+                            </td>
+                            <td key={prod.productId}>
+                            <template if:true={prod.product.IPJurisdiction__r}>
+                                <div>{prod.product.IPJurisdiction__r.Name}</div> 
+                            </template>
+                            </td>                
+                    </tr> 
+                    </template>
+                    </tbody>  
+
+                </table>                       
+            </div>
+            </template>
+        
+            <!--Display No Products message-->
+            <template if:true={emptyProductList}> 
+                <div class="slds-m-top_x-large">
+                    <p align="center">There are no products to be displayed. Please reset or change filter values
+                    </p>
+                </div>
+            </template> 
+
+        </div> 
+        <!--Scrollable end-->
+
+        <!--Display Paginator -->
+        <div class="slds-m-bottom_large paginatorDiv"> 
+        <template if:false={emptyProductList}> 
+            <c-paginator
+            page-number={pageNumber}
+            page-size={pageSize}
+            total-item-count={totalItemCount}
+            onprevious={handlePreviousPage}
+            onnext={handleNextPage}
+            onpagesize={handlePageSize}
+            ></c-paginator>
+        </template>
+        </div>
+      
+    </div> <!-- slds card div end-->
+
+</template>

@@ -131,12 +131,10 @@
     <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>BirthDate</fullName>
-        <securityClassification>Confidential</securityClassification>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>CanStorePiiElsewhere</fullName>
-        <securityClassification>Confidential</securityClassification>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -161,22 +159,18 @@
     </fields>
     <fields>
         <fullName>HasOptedOutGeoTracking</fullName>
-        <securityClassification>Confidential</securityClassification>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>HasOptedOutProcessing</fullName>
-        <securityClassification>Confidential</securityClassification>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>HasOptedOutProfiling</fullName>
-        <securityClassification>Confidential</securityClassification>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>HasOptedOutSolicit</fullName>
-        <securityClassification>Confidential</securityClassification>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -185,7 +179,6 @@
     </fields>
     <fields>
         <fullName>IndividualsAge</fullName>
-        <securityClassification>Confidential</securityClassification>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -212,18 +205,15 @@
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
-        <securityClassification>Confidential</securityClassification>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>SendIndividualData</fullName>
-        <securityClassification>Confidential</securityClassification>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>ShouldForget</fullName>
-        <securityClassification>Confidential</securityClassification>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

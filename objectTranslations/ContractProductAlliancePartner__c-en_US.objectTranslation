@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract Product Alliance Partner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contract Product Alliance Partners</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alliance Partner Approval Date --></label>
+        <name>AlliancePartnerApprovalDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alliance Partner Key --></label>
+        <name>AlliancePartnerKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alliance Partner --></label>
+        <name>AlliancePartner__c</name>
+        <relationshipLabel><!-- Contract Product Alliance Partners --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+        <relationshipLabel><!-- Contract Product Alliance Partners --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>ProductGroupText__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

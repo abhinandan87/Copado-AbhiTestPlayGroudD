@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CONTRACT_OWNER</field>
+    </columns>
+    <columns>
+        <field>START_DATE</field>
+    </columns>
+    <columns>
+        <field>END_DATE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_OWNER</field>
+    </columns>
+    <columns>
+        <field>CONTRACT_NAME</field>
+    </columns>
+    <columns>
+        <field>Contract.ContractStatus__c</field>
+    </columns>
+    <columns>
+        <field>Contract.ProductFamily__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Contract.ProductGroupShort__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OTC Derivatives Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.Product__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OTC Derivatives Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.ProductFamily__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OTC Derivatives Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OTC Derivatives Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.ContractStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Validated,Canceled,Expired,Replaced</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>OTC DD Contracts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractList</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>START_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

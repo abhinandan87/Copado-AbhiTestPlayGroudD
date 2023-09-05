@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Activity$Account</field>
+    </columns>
+    <columns>
+        <field>Activity$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Activity$Owner</field>
+    </columns>
+    <columns>
+        <field>Activity$Subject</field>
+    </columns>
+    <columns>
+        <field>Activity$MeetingNote__c.MeetingOutcome__c</field>
+    </columns>
+    <columns>
+        <field>Activity$Description</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+        <criteriaItems>
+            <column>Activity$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Christine Holzinger,Friedrich Schilcher,Geoff Warr,James McLennan,Juan Saito,Lena Li,Lynn Middleton,Lynne Yang,Mark Western,Natalie Stockton,Paul Jackson,Wolfgang Knell,Richard Charlesworth,James Chia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$MeetingNote__c.MeetingOutcome__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ahmed Salem,Anton Shenouda,Asheesh Singh,Bouchra Arabi,Hamza Abdel-Hafez,Jennifer Jumbe,Mohammad AlNawila,Nichola McDonald,Safaa ElBezzi,Eduardo Mechereffe,Alberto Luna,Erica Dalme,Erick Sanchez,Fagner Frangeli Da Silva,Geraldo Calainho,German Alberto Oviedo,Monica Brinez,Thais Hamilko,Tiago Votta,Ximena Garcia,Chase Willett,David Gee,Linda Kinney,Peter Brown,Steve Paetzold,Susan Beury,Lee Shiong Lew,Gene Khor,Jay Shen Chew,Jayden Wong,Jeremy Wong,Leo Chen,Min Park,Nao Terada,Ping Yan,Yoko Okawado,Reda Semmah,Denis Poussin,Karen Moore,Madison Barefoot,Rudolf Kissling,Sarolta Bodi,Cecilia Gauthier,Markus Polag,Patricia Alleyne,Susan  Beury,Jack Norman,Jeff Kopec,Joe Parker,Khizer Khadimally,MaryBeth Wegner,Rema Zuraiqi,Mohammad Kurdi</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>OMDC Meeting Notes - ADB column edits</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Meetings_with_Meeting_Outcomes__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Activity$CompletedDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

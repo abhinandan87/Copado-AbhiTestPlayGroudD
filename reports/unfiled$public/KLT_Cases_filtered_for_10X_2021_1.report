@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>CONTACT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Monthly cases</description>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aethon Energy Management LLC,Antero Resources Corporation,ARC RESOURCES LTD,ARD Operating LLC,Ascent Resources Management Services LLC,Berry Petroleum Company LLC,Birchcliff Energy Ltd,Birch Resources LLC,Blackbeard Operating LLC,Black Stone Minerals Company,BONAVISTA ENERGY CORP,BTA Oil Producers,BUREAU OF LAND MANAGEMENT,Burnett Oil Company,Cabot Oil &amp; Gas Corporation,Callon Petroleum Operating Company,Canadian Natural Resources Limited,Cenovus Energy Inc,Chesapeake Energy Corporation,Chevron Canada Resources,a partnership by its Managing Partner,Chevron,Canada Limited,Cimarex Energy Company,Citation Oil &amp; Gas Corp.,Citizen Energy II LLC,Comstock Resources Inc.,Contango Oil &amp; Gas Co,CPRP SERVICES LLC,CRC Services LLC,Crescent Point Energy U.S. Corp.,Crownquest Operating LLC,Degolyer and Macnaughton Corp,Denbury Inc.,Devon Energy Corporation,Diamondback E&amp;P LLC,Earthstone Operating LLC - (FKA Oak Valley Resources),Encino Energy,LLC,Endeavor Energy Resources LLC,Enerplus Resources (USA) Corporation,Enervest,Ltd.,Eqt Production Company,EXCO Resources,Inc.,Fasken Oil &amp; Ranch Ltd.,Fleur De Lis Energy LLC,Florida Power &amp; Light Company,Grizzly Operating LLC,Gulfport Energy Corporation,Hilcorp Energy Company,Hunt Consolidated Inc.,Hunt Oil Company</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>KLT Cases filtered for 10X 2021 - 1</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

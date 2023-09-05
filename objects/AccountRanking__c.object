@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFDC1-7592 Lift &amp; Shift from Legacy Markit</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <description>SFDC1-7592 Lookup to the account that this ranking is related</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to the account that this ranking is related</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Account Rankings</relationshipLabel>
+        <relationshipName>AccountRankings</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Criteria__c</fullName>
+        <description>SFDC1-7592 Criteria of the Value</description>
+        <externalId>false</externalId>
+        <label>Criteria</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assets</fullName>
+                    <default>false</default>
+                    <label>Assets</label>
+                </value>
+                <value>
+                    <fullName>Assets on Balance Sheet</fullName>
+                    <default>false</default>
+                    <label>Assets on Balance Sheet</label>
+                </value>
+                <value>
+                    <fullName>AUM</fullName>
+                    <default>false</default>
+                    <label>AUM</label>
+                </value>
+                <value>
+                    <fullName>BOE</fullName>
+                    <default>false</default>
+                    <label>BOE</label>
+                </value>
+                <value>
+                    <fullName>Equity Assets</fullName>
+                    <default>false</default>
+                    <label>Equity Assets</label>
+                </value>
+                <value>
+                    <fullName>Equity Trades</fullName>
+                    <default>false</default>
+                    <label>Equity Trades</label>
+                </value>
+                <value>
+                    <fullName>NIC</fullName>
+                    <default>false</default>
+                    <label>NIC</label>
+                </value>
+                <value>
+                    <fullName>Wilshire Index</fullName>
+                    <default>false</default>
+                    <label>Wilshire Index</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LegacyIDUnique__c</fullName>
+        <description>SFDC1-7592 concat of system and ID with @ separator</description>
+        <externalId>true</externalId>
+        <label>LegacyID Unique</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>SFDC1-7592 System ID from migrated records, will be on Markit records only</description>
+        <externalId>true</externalId>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacySystem__c</fullName>
+        <description>SFDC1-7592 Legacy System tells which system the record was migrated from</description>
+        <externalId>false</externalId>
+        <label>Legacy System</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LegacySystem</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MetricsKey__c</fullName>
+        <description>SFDC1-7592 concatenation of Rank Country and Criteria value</description>
+        <externalId>false</externalId>
+        <formula>TEXT(RankCountry__c) &amp; TEXT(Criteria__c)</formula>
+        <label>Metrics Key</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PKIDAccountRanking__c</fullName>
+        <description>SFDC1-7592 PK field for Data Migration Support</description>
+        <displayFormat>AR{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID AccountRanking</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>RankCountry__c</fullName>
+        <defaultValue>&apos;Global&apos;</defaultValue>
+        <description>SFDC1-7592 Rank Country picklist values</description>
+        <externalId>false</externalId>
+        <label>Rank Country/Territory</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>CountriesPicklist</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rank__c</fullName>
+        <description>SFDC1-7592 Read-only as this is a calculated field, should be triggered on record add or edit.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Read-only calculated field</inlineHelpText>
+        <label>Rank</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <description>SFDC1-7592 Source of where the value was received</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Source of where the value was received</inlineHelpText>
+        <label>Source</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Reuters</fullName>
+                    <default>false</default>
+                    <label>Reuters</label>
+                </value>
+                <value>
+                    <fullName>Factset</fullName>
+                    <default>false</default>
+                    <label>Factset</label>
+                </value>
+                <value>
+                    <fullName>Data.com</fullName>
+                    <default>false</default>
+                    <label>Data.com</label>
+                </value>
+                <value>
+                    <fullName>BigDough</fullName>
+                    <default>false</default>
+                    <label>BigDough</label>
+                </value>
+                <value>
+                    <fullName>Investor Relations</fullName>
+                    <default>false</default>
+                    <label>Investor Relations</label>
+                </value>
+                <value>
+                    <fullName>PREQIN</fullName>
+                    <default>false</default>
+                    <label>PREQIN</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ValueAsOf__c</fullName>
+        <description>SFDC1-7592 Value to be considered in ranking</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Value to be considered in ranking</inlineHelpText>
+        <label>Value as of</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <description>SFDC1-7592 Account Ranking Value</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Account Ranking Value</inlineHelpText>
+        <label>Value</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Account Ranking</label>
+    <nameField>
+        <displayFormat>AR-{000}</displayFormat>
+        <label>Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Account Rankings</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>CreateUpdateAccessOnAccountRanking</fullName>
+        <active>true</active>
+        <description>SFDC-2750 Account Ranking  record create &amp; update access
+SFDC-3534 Adding Data governance profile and removing Sales ops</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.AccountRanking__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(
+    OR(
+        ISNEW(),
+        NOT(ISNEW())),
+    $User.Id &lt;&gt; Account__r.OwnerId ,
+    NOT(CONTAINS($Profile.Name, &quot;System Admin&quot;)),
+    NOT(CONTAINS($Profile.Name, &quot;Data Governance&quot;))
+)
+)</errorConditionFormula>
+        <errorMessage>Only Account Owner, Data Governance &amp; System Admin can create &amp; update Account Ranking record.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

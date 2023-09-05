@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.OpportunityLineItems$PricebookEntry.Product2.Name</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>TeamMemberRole</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Alliance Lead</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Account$Id</primaryTableColumn>
+        <relatedTable>AccountTeamMember-User</relatedTable>
+        <relatedTableJoinColumn>Account</relatedTableJoinColumn>
+    </crossFilters>
+    <crossFilters>
+        <criteriaItems>
+            <column>Name</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Miran Park</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>Account$Id</primaryTableColumn>
+        <relatedTable>AccountTeamMember-User</relatedTable>
+        <relatedTableJoinColumn>Account</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>LAST_WEEK</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Alliance newly created Opportunities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Oppy_and_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

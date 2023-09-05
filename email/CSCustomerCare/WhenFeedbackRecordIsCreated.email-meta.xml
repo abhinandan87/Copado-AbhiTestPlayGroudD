@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-4199 Alert feedback creator when oppy feedback is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>When Feedback Record Is Created</name>
+    <style>none</style>
+    <subject>Your Feedback is successfully registered.</subject>
+    <textOnly>{!Feedback__c.CreatedDate}  
+
+Dear {!Feedback__c.CreatedBy},
+
+Thanks for getting in touch! This is an automatic response to let you know that we’ve received your message, and one of the team members will reach out to you as early as possible.
+
+Follow the link below for any updates regarding the feedback.  
+Link to Feedback  
+
+Kind regards,  
+IHS Markit</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

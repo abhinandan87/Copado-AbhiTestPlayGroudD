@@ -169,19 +169,22 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
         <fullName>EndorsementCount</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>ProfileSkillId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>MasterDetail</type>
     </fields>
     <fields>
         <fullName>UserId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>

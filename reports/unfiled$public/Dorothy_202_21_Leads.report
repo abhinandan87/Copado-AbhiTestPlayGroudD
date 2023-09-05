@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CAMPAIGN_NAME</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>COMPANY</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>COUNTRY</field>
+    </columns>
+    <columns>
+        <field>PHONE</field>
+    </columns>
+    <columns>
+        <field>MEMBER_STATUS</field>
+    </columns>
+    <columns>
+        <field>MEMBER_CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PRC-CA-22Sept20-NA CA webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PRC-CA-29Sept20-EMEA CA webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IS-Indices-2020-ESG iBoxx GSS Whitepaper</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FS-SL-EDM-07Sep20-GBL-CT-IDC whitepaper - Energy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FS-SL-EDM-07Sep20-GBL-CT-IDC whitepaper - Maritime</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FS-SL-EDM-07Sep20-GBL-CT-IDC whitepaper - FS Insurance</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FS-IS-IN-06Jan21-ESG Greenium whitepaper</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AUT-Gen-26Jan21-Spanish Clusters Webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ENR-Upstream-17Feb21-Liquids Demand On the Move Webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ENR-GPE-01Oct20-Executive Briefings: Climate and Cleantech</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,FS-PRC-Custodians-GC Webinar on-demand ON24,FS-IS-APAC-20April21-Securities Finance Q1 APAC Webinar,FS-SL-EDM-M-28Apr21-Maritime Market Share Outreach,FS-PRC-Custodians-Global Custodian Whitepaper,DataLake-13Sep21-GBL-Insurance webinar,FS-IS-PVR-22June21-Dynamic Tolerance Webinar,PRC-CPM-2021-Onboarding Accelerator Video campaign,FS-SL-EDM-E-13May21-EDM for Energy OSDU Webinar ON DEMAND,FS-IS-PVR-13Sep21-Bond Pricing Awareness,FS-SL-PM-12Aug21-Private Debt Video - Episode 9- Hg Capital,FS-SL-EDM-E-01Jun21-EDM for Energy webinar with SPE (digital transformation),FS-SL-EDM-21May21-EDM OSDU Google Ads campaign,FS-SL-PM-GP-15Sep21-Mergermarket ESG Report,PRC-CA-11Oct21 - Sibos 2021,ENR-Upstream-17Feb21-Liquids Demand On the Move Webinar,FS-SL-PM-GP-29Oct21- ESG Report InMail,FS-CS-BDC-17Nov21-Capital Access: Quarterly touch point,FS-PRC-Counterparty Manager - Investor Onboarding,FS-PRC IMCA - Corporate Actions experts form fil,PRC-27Apr21-Securities Processing Meet Experts,FS-IS-PVR-11Oct21-Actiam Financial Inclusion Whitepaper</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Dorothy 202/21 Leads</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignWithCampaignMembers</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

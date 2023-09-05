@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_31646577</developerName>
+        <masterLabel>Customer Care</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Kinnerey Patel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evan Gerlack</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Safiya Murray</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melanie Mladenova</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Esma Agzanay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Suneet Raniga</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aishna Jain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shefali Chawla</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rashi Dungale</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tanvi Arora</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chayan Bhattacharjee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Varun Bhutani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samuel Abraham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eri Hasumoto</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Momoi Suda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Janice Chong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kok Han Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Quejado</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Katerani Selvarraju</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kartikey Bisht</sourceValue>
+            </sourceValues>
+            <value>Customer Care</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CONTACT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.TimeSpentMinutes__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All MSF Cases YTD Customer Care Vs Other teams - by Type and sub type</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Securities Finance-Equity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,New,In Progress,On Hold,Re-opened,Active Waiting for info,Closed - Canceled,Closed - Resolved,Assigned to HD Associate,Closed - Referral,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Customer Responded,Delete,Duplicate,Entered Ticket,Reassigned,Referral,Researching,Resolved/Completed,Resolved/No Response,Waiting - 3rd Party,Waiting - Customer,Waiting - Internal Team,Waiting on Approvals,Waiting on Info,Waiting on Requester,Trial Approved,Contract Signed,Connectivity,Live,Closed,Escalated,Testing,User Access Granted,Initial Delivery Complete,Install Complete,Welcome Package Sent,Auto-Closed – No Action Taken,Validated,Validated PO Pending,Rejected,Canceled,Moved to Tier2 Support,Updated,Closed - Moved to Jira</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_31646577</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TYPE</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Subtype__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>All MSF Cases YTD CC Vs Other - by Type</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

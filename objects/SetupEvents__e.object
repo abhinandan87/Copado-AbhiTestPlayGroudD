@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFDC-2865 Platform events to setup meetings/events with correct information in - AccountId, Privacy Level</description>
+    <eventType>HighVolume</eventType>
+    <fields>
+        <fullName>EventId__c</fullName>
+        <description>SFDC-2865 Capture event/meeting record id</description>
+        <externalId>false</externalId>
+        <isFilteringDisabled>false</isFilteringDisabled>
+        <isNameField>false</isNameField>
+        <isSortingDisabled>false</isSortingDisabled>
+        <label>Event Id</label>
+        <length>18</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SetMeetingShare__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is true when apex sharing of related meeting note with Event Attendee users needs to adjusted.</description>
+        <externalId>false</externalId>
+        <isFilteringDisabled>false</isFilteringDisabled>
+        <isNameField>false</isNameField>
+        <isSortingDisabled>false</isSortingDisabled>
+        <label>SetMeetingShare</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SetPrivacyLevel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is checked if the AccountId or PrivacyLevel__c needs to be adjusted on Event.</description>
+        <externalId>false</externalId>
+        <isFilteringDisabled>false</isFilteringDisabled>
+        <isNameField>false</isNameField>
+        <isSortingDisabled>false</isSortingDisabled>
+        <label>SetPrivacyLevel</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>SetupEvents</label>
+    <pluralLabel>SetupEvents</pluralLabel>
+    <publishBehavior>PublishImmediately</publishBehavior>
+</CustomObject>

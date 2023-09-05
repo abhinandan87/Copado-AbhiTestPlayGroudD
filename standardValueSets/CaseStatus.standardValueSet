@@ -2,9 +2,135 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>On Hold</fullName>
+        <fullName>Active Waiting for info</fullName>
         <default>false</default>
-        <label>On Hold</label>
+        <label>Active Waiting for info</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Assigned</fullName>
+        <default>false</default>
+        <label>Assigned</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Assigned to HD Associate</fullName>
+        <default>false</default>
+        <label>Assigned to HD Associate</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Auto-Closed – No Action Taken</fullName>
+        <default>false</default>
+        <label>Auto-Closed – No Action Taken</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Canceled</fullName>
+        <default>false</default>
+        <label>Canceled</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Canceled</fullName>
+        <default>false</default>
+        <label>Closed - Canceled</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Moved to Jira</fullName>
+        <default>false</default>
+        <label>Closed - Moved to Jira</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed- Moved to ADO</fullName>
+        <default>false</default>
+        <label>Closed - Moved to ADO</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - No action required</fullName>
+        <default>false</default>
+        <label>Closed - No action required</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Referral</fullName>
+        <default>false</default>
+        <label>Closed - Referral</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Resolved</fullName>
+        <default>false</default>
+        <label>Closed - Resolved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Resolved by 3rd Party</fullName>
+        <default>false</default>
+        <label>Closed - Resolved by 3rd Party</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Resolved by Customer</fullName>
+        <default>false</default>
+        <label>Closed - Resolved by Customer</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Resolved by IHS Markit</fullName>
+        <default>false</default>
+        <label>Closed - Resolved by IHS Markit</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Unable to reach Customer</fullName>
+        <default>false</default>
+        <label>Closed - Unable to reach Customer</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Connectivity</fullName>
+        <default>false</default>
+        <label>Connectivity</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Signed</fullName>
+        <default>false</default>
+        <label>Contract Signed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Responded</fullName>
+        <default>false</default>
+        <label>Customer Responded</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Delete</fullName>
+        <default>false</default>
+        <label>Delete</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Duplicate</fullName>
+        <default>false</default>
+        <label>Duplicate</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Entered Ticket</fullName>
+        <default>false</default>
+        <label>Entered Ticket</label>
         <closed>false</closed>
     </standardValue>
     <standardValue>
@@ -14,15 +140,207 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>Closed</fullName>
+        <fullName>Initial Delivery Complete</fullName>
         <default>false</default>
-        <label>Closed</label>
+        <label>Initial Delivery Complete</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Install Complete</fullName>
+        <default>false</default>
+        <label>Install Complete</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Live</fullName>
+        <default>false</default>
+        <label>Live</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Merged</fullName>
+        <default>false</default>
+        <label>Merged</label>
         <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Moved to Tier2 Support</fullName>
+        <default>false</default>
+        <label>Moved to Tier2 Support</label>
+        <closed>false</closed>
     </standardValue>
     <standardValue>
         <fullName>New</fullName>
         <default>true</default>
         <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Second Review</fullName>
+        <default>false</default>
+        <label>Pending Second Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Reassigned</fullName>
+        <default>false</default>
+        <label>Reassigned</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral</fullName>
+        <default>false</default>
+        <label>Referral</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Re-opened</fullName>
+        <default>false</default>
+        <label>Re-opened</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Researching</fullName>
+        <default>false</default>
+        <label>Researching</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Resolved/Completed</fullName>
+        <default>false</default>
+        <label>Resolved/Completed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Resolved/No Response</fullName>
+        <default>false</default>
+        <label>Resolved/No Response</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Testing</fullName>
+        <default>false</default>
+        <label>Testing</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Trial Approved</fullName>
+        <default>false</default>
+        <label>Trial Approved</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Updated</fullName>
+        <default>false</default>
+        <label>Updated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>User Access Granted</fullName>
+        <default>false</default>
+        <label>User Access Granted</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validated</fullName>
+        <default>false</default>
+        <label>Validated</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validated-BSI Pending</fullName>
+        <default>false</default>
+        <label>Validated-BSI Pending</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validated by ConsOps</fullName>
+        <default>false</default>
+        <label>Validated by ConsOps</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validated-POD Pending</fullName>
+        <default>false</default>
+        <label>Validated-POD Pending</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Validated PO Pending</fullName>
+        <default>false</default>
+        <label>Validated PO Pending</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting - 3rd Party</fullName>
+        <default>false</default>
+        <label>Waiting - 3rd Party</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting - Customer</fullName>
+        <default>false</default>
+        <label>Waiting - Customer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting - Internal Team</fullName>
+        <default>false</default>
+        <label>Waiting - Internal Team</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting on Approvals</fullName>
+        <default>false</default>
+        <label>Waiting on Approvals</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting on Info</fullName>
+        <default>false</default>
+        <label>Waiting on Info</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting on Requester</fullName>
+        <default>false</default>
+        <label>Waiting on Requester</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting - Sales Team</fullName>
+        <default>false</default>
+        <label>Waiting - Sales Team</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting - Third Party</fullName>
+        <default>false</default>
+        <label>Waiting - Third Party</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Welcome Package Sent</fullName>
+        <default>false</default>
+        <label>Welcome Package Sent</label>
         <closed>false</closed>
     </standardValue>
 </StandardValueSet>

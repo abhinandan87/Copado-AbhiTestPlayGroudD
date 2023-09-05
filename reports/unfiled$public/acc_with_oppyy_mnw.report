@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.OpportunityContactRoles$Name</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>acc with oppyy</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>DDC_clean__Accounts_with_Opportunities_and_Contacts_Clean__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CDF1</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Activity.PrivacyLevel__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_RECORDTYPE</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>CASE(TASK_TYPE,
+    &quot;Call&quot;, &quot;Call&quot;,
+    &quot;Customer Call&quot;, &quot;Call&quot;,
+    &quot;Call - client demo&quot;, &quot;Call&quot;,
+    &quot;Call - client training&quot;, &quot;Call&quot;,
+    
+    &quot;Proposal Acceptance Call&quot;, &quot;Proposal&quot;,
+    &quot;Proposal Accepted meeting&quot;, &quot;Proposal&quot;,
+    &quot;Proposal Delivery Call&quot;, &quot;Proposal&quot;,
+    &quot;Proposal Delivery meeting&quot;, &quot;Proposal&quot;,
+
+    &quot;In Person Meeting&quot;, &quot;Meeting&quot;,
+    &quot;Meeting&quot;, &quot;Meeting&quot;,
+    &quot;Client Visit&quot;, &quot;Meeting&quot;,
+    &quot;Online Customer Meeting&quot;, &quot;Meeting&quot;,
+    &quot;Quarterly Check In&quot;, &quot;Meeting&quot;,
+    &quot;Meeting Face to Face&quot;, &quot;Meeting&quot;,
+    &quot;Meeting Virtual&quot;, &quot;Meeting&quot;,
+    
+    &quot;&quot;, &quot;Blank&quot;,
+    &quot;Email&quot;, &quot;Blank&quot;,
+    &quot;Verification&quot;, &quot;Blank&quot;,
+    &quot;Project Work&quot;, &quot;Blank&quot;,
+    &quot;Training&quot;, &quot;Blank&quot;,
+    &quot;Consulting Lead&quot;, &quot;Blank&quot;,
+    &quot;Internal Call&quot;, &quot;Blank&quot;,
+    &quot;Triage&quot;, &quot;Blank&quot;,
+    
+    &quot;Meeting&quot;
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>ENR Activity Type</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Alena Barford,Alena Barford - OP1,Alexey Gurevich,Amy Fuller-Riley,Amy Singer,Anthony Potter,John Lee,Asheesh Singh,Benjamin Rattner,Chase Willett,Chris Kiser,Diane Braaten,Don Bari,Duncan Fisher,Eduardo Mechereffe,Gang Hao,Graham Helfrick,Isoaki Iwasawa,Jeff Benton,Jennafer Marchetti,Jorgie Ong,Karen Moore,Kim Whipple,Kok Hoe Yong,Terence Yong,Lawrence Jackson,Lawrence Jackson - OP1,Lee Shiong Lew,Leisha Archie,Leisha Archie - FD,Lindsey Bernard,Mark Eramo,Martyn Smith,Matthew Bax,Michael Delgado,Mohammad Kurdi,Nishat Rezvi,Nishat Rezvi - OP1,Perline Tan,Reda Semmah,Sarah Danan,Smarco Ho,Susan Beury,Tatyana Ustyantseva,Tobias Webb,Tze Yan Lo,Xu Wang</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.ActivityType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Internal Meeting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.PrivacyLevel__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Personal appointment,Internal meeting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OMDC: Base Chemicals,OMDC: Info and Same Day Analysis,OMDC: Midstream,OMDC: Oil Markets Downstream,OMDC: Specialty Chemicals,OMDC: Technical Analytics,OMDC: Consulting,OMDC: Other</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProfitCenter__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Info&amp;SameDayAn-Subs,Midstream-Subs</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.ProfitCenter__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>VOC OMDC - BISDA</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityActivity@Account.AdditionalAccountFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>SUBJECT</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$OpportunityOwner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$OpportunityID18Character__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.CampaignInfluence$Id</field>
+    </columns>
+    <columns>
+        <field>Opportunity.CampaignInfluence$Campaign</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CloseDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ForecastCategoryName</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$FirstYearValue__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.CampaignInfluence$Campaign</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Auto FY21 Key Play - Recall Enhanced Data,Auto FY21 Key Play - Recall Outreach Services,Auto FY21 Key Play - Recall Class Action</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Opportunities with without campaignI</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_without__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

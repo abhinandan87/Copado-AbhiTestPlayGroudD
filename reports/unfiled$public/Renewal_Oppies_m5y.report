@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contract.Opportunities2__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contract$OpportunityNumber__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Contract$ContractNumber</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>00189141,00179257,00204771,00175433,00633413,00614177,00175382,00611608,00179241,00618730,00629730,00175432,00174753,00162605,00272056,00175394,00596802,00619619,00205985,00633832,00163852,00579664,00581324,00321165,00184578,00637528,00179243,00179551,00352206,00606497,00323842,00580832,00269833</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contract$ContractNumber</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Renewal Oppies</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contracts_with_Renewal_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contract$ActivatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

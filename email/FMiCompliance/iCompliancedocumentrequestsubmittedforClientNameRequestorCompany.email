@@ -1,0 +1,12 @@
+Dear Collections Team,
+<br>
+<br>
+Ref: {!Case.CaseNumber}
+<br>
+<br>
+Please upload the attached document. A {Document Type} request has been submitted for {Client Name (Requestor Company)}.
+<br>
+<br>
+Kind regards,<br>
+{!Case.OwnerFullName}<br>
+IHS Markit | Customer Care

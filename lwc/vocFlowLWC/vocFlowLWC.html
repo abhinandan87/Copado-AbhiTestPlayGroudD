@@ -1,0 +1,8 @@
+<template>
+    <template if:true={recordId}>
+       <lightning-flow flow-api-name="VOCFeedbackFlow"
+          flow-input-variables={inputVariables}
+          onstatuschange={handleStatusChange}>
+         </lightning-flow>
+    </template>
+</template>

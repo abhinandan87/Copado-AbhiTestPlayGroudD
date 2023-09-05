@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_50564063</developerName>
+        <masterLabel>CaseOwner</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Poonam Choudhary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Akshay Dogra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Abu Nidal Khan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prerna Yadav</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Priya Tyagi</sourceValue>
+            </sourceValues>
+            <value>Helpdesk</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tommy Aarts</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tran Vu Tran</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Uttam Arya</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Harshit Singhal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paras Dhingra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kolli Rohit Reddy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sushma Yadav</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Twan van der Loo</sourceValue>
+            </sourceValues>
+            <value>Development</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Christine Hotz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christopher Ghobashy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alia Geiger</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melanie Aris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deborah Marchand</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sarah Moughan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Laura Harris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Killion</sourceValue>
+            </sourceValues>
+            <value>Product Owner</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Average</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>AGE</column>
+        </chartSummaries>
+        <chartType>Line</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_50564063</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>Case.BusinessArea__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 or (4 AND 5))</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.SalesforceHelpdesk</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Global Access</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Harshit Singhal,Kolli Rohit reddy,Paras Dhingra,Sushma Yadav,Tommy Aarts,Tran Vu Tran,twan Van der Loo,Uttam Arya,Alia Geiger,Christine hotz,Christopher Ghobashy,Deborah Marchand,Laura Harris,Melanie Aris,Mike killion,Sarah Moughan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.BusinessArea__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Business Analysis,Development</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Abu Nidal Khan,Akshay Dogra,Poonam Choudhary,Prerna Yadav,Priya Tyagi,Rahul kumar</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_50564063</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SLA Report test 2</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>AGE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

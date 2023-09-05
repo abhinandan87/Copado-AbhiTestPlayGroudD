@@ -1,0 +1,13 @@
+.icondiv{
+    padding: 8px 0px 8px 16px;
+    background-color: #f1f5f4;
+}
+.containerdiv > div {
+    display: inline-block;
+    padding-top:10px;
+    margin-left: 16px;
+}
+
+.footerDiv{
+    background-color: #f1f5f4;
+}

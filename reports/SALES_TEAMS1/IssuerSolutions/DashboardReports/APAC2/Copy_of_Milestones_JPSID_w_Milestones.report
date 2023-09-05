@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contract$Account</field>
+    </columns>
+    <columns>
+        <field>Contract$Opportunity__c.OpportunityOwner__c</field>
+    </columns>
+    <columns>
+        <field>Contract$ContractNumber</field>
+    </columns>
+    <columns>
+        <field>Contract.Contract_Line_Items__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contract$ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Contract$StartDate</field>
+    </columns>
+    <columns>
+        <field>Contract$OpportunityNumber__c</field>
+    </columns>
+    <columns>
+        <field>Contract$Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Contract$ClientLegalEntityCountryLookup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>with Milestones</description>
+    <filter>
+        <criteriaItems>
+            <column>Contract$Businessline__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Issuer Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$Account.Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - General Service Account,Place Holder - IHS Markit Internal Employees,Place Holder - Sales,Place Holder - Self Registered Users Account,Place Holder - Unknown Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.Contract_Line_Items__r$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Shareholder ID,Share Register Analysis,Sharetracking Services,IHS Markit Intell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$ClientLegalEntityCountryLookup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Japan</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Copy of Milestones JPSID w Milestones</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contracts_with_Line_Items_and_Variable_Billing__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contract$StartDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

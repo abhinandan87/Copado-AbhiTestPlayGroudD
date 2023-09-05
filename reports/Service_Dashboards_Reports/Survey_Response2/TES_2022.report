@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SurveyResponse__c.TESScore__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.ProductGroupLookup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>SurveyResponse__c.TESScore__c/7*100</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>TES %</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>TES% - As of 24 August 2021</description>
+    <filter>
+        <criteriaItems>
+            <column>SurveyResponse__c.AlertStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,New,In-Progress,Assigned,Escalated,Closed - Resolved with Customer,Closed - No Action Required,Closed - Unable to Reach Customer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.AlertType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Hot Alert,Neutral,Commendation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SurveyResponse__c.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.SurveyVersion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.CaseProductGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.AlertStatus__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TES % | 2022</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-08-24</startDate>
+    </timeFrameFilter>
+</Report>

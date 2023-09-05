@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>dl-gge-apac-bd@ihsmarkit.com</email>
+    <name>ENR_Harmony-CLOUDTrials_APAC</name>
+    <queueMembers>
+        <users>
+            <user>jufenilamora.nurak@ihsmarkit.com</user>
+            <user>terence.yong@ihsmarkit.com</user>
+            <user>zhihua.li@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

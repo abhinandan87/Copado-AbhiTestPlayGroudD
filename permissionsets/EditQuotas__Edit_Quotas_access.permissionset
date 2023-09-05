@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>EditQuotas__CalendarUtil</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditQuotas__CurrencyUtil</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditQuotas__ForecastingTypeUtil</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditQuotas__LoadQuotasModel</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditQuotas__PermUtil</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditQuotas__ProductFamilyUtil</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditQuotas__QuotaController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditQuotas__QuotaModel</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditQuotas__RoleNodeModel</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditQuotas__RoleUtils</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EditQuotas__TreeViewController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Allow access to the Edit Quotas tab. 
+This permission set does not govern the ability to view/edit quotas. That is done via user and profile permissions.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Edit Quotas access</label>
+    <license>Salesforce</license>
+    <pageAccesses>
+        <apexPage>EditQuotas__QuotaEdit</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <tabSettings>
+        <tab>EditQuotas__Edit_Quotas</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

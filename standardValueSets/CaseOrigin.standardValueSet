@@ -2,9 +2,49 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
+        <fullName>Account</fullName>
+        <default>false</default>
+        <label>Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Case</fullName>
+        <default>false</default>
+        <label>Case</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract</fullName>
+        <default>false</default>
+        <label>Contract</label>
+    </standardValue>
+    <standardValue>
         <fullName>Email</fullName>
         <default>false</default>
         <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fax</fullName>
+        <default>false</default>
+        <label>Fax</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal</fullName>
+        <default>true</default>
+        <label>Internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead</fullName>
+        <default>false</default>
+        <label>Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mail</fullName>
+        <default>false</default>
+        <label>Mail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
     </standardValue>
     <standardValue>
         <fullName>Phone</fullName>
@@ -12,13 +52,53 @@
         <label>Phone</label>
     </standardValue>
     <standardValue>
+        <fullName>Self Service</fullName>
+        <default>false</default>
+        <label>Self Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Now</fullName>
+        <default>false</default>
+        <label>Service Now</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VM</fullName>
+        <default>false</default>
+        <label>VM</label>
+    </standardValue>
+    <standardValue>
         <fullName>Web</fullName>
         <default>false</default>
         <label>Web</label>
     </standardValue>
     <standardValue>
-        <fullName>Chatter Answers</fullName>
+        <fullName>Web Chat</fullName>
         <default>false</default>
-        <label>Chatter Answers</label>
+        <label>Web Chat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web to Case</fullName>
+        <default>false</default>
+        <label>Web to Case</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email: support@markitserv.com</fullName>
+        <default>false</default>
+        <label>Email: support@markitserv.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email: support@ihsmarkit.com</fullName>
+        <default>false</default>
+        <label>Email: support@ihsmarkit.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Quick Action</fullName>
+        <default>false</default>
+        <label>Quick Action</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualtrics To Case</fullName>
+        <default>false</default>
+        <label>Qualtrics To Case</label>
     </standardValue>
 </StandardValueSet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC1-1062 Provide access to change Operating System object via permission set</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OperatingSystems__c.OperatingSystemType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Operating System Object System Administrator</label>
+    <license>Salesforce</license>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>OperatingSystems__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <tabSettings>
+        <tab>OperatingSystems__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

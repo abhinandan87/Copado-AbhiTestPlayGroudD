@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <description>Migrated from the: UpdateResolvedDateWhenAlertStatusUpdatedToResolved workflow rule
+Workflow rule description: SFDC-4407 - Update Resolved Date field when Hot alert status updated to Resolved&quot;</description>
+    <formulas>
+        <name>UpdateResolvedDateToTodayFormula</name>
+        <dataType>Date</dataType>
+        <expression>IF(OR(ISPICKVAL($Record.AlertStatus__c,&apos;Closed - Resolved with Customer&apos;),ISPICKVAL($Record.AlertStatus__c,&apos;Closed - No Action Required&apos;),ISPICKVAL($Record.AlertStatus__c,&apos;Closed - Unable to Reach Customer&apos;)), Today(), Null)</expression>
+    </formulas>
+    <label>UpdateResolvedDateWhenAlertStatusUpdatedToResolved</label>
+    <migratedFromWorkflowRuleName>UpdateResolvedDateWhenAlertStatusUpdatedToResolved</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>SFDC-4407 - Update Resolved Date field</description>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>ResolvedDate__c</field>
+            <value>
+                <elementReference>UpdateResolvedDateToTodayFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterFormula>AND(ISPICKVAL({!$Record.AlertType__c}, &apos;Hot Alert&apos;),OR(ISNEW(),ISCHANGED({!$Record.AlertStatus__c})))</filterFormula>
+        <object>SurveyResponse__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

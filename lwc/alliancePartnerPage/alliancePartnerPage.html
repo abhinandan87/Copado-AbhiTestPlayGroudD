@@ -1,0 +1,35 @@
+<template>
+	<lightning-record-edit-form object-api-name="ContractProductAlliancePartner__c" onsubmit={handleSubmit} onload={handleCreateLoad} onsuccess={handleSuccess}>
+		<div class="slds-text-heading_medium slds-text-align_center" >
+            Create Alliance Partner </div>
+		<lightning-input-field field-name="AlliancePartner__c"> </lightning-input-field>
+		<lightning-input-field field-name="Contract__c" value={recordId} disabled="true"> </lightning-input-field>
+		<lightning-input-field field-name="AlliancePartnerApprovalDate__c" > </lightning-input-field>
+        <template if:true={showMultipicklist}>
+		<lightning-dual-listbox id="selectOptions" 
+                                name="Select Options" 
+                                label="Product Group" 
+                                source-label="Available Options" 
+                                selected-label="Selected Options" 
+                                options={selectOptions} 
+                                value={defaultOptions} 
+                                required
+                                onchange={handleChange}> </lightning-dual-listbox>
+		<div class="slds-m-top_large slds-grid slds-grid_align-center">
+			<lightning-layout-item padding="around-small">
+				<lightning-button variant="brand" 
+                                    type="submit" 
+                                    label="Create Alliance"> </lightning-button>
+			</lightning-layout-item>
+			<lightning-layout-item padding="around-small">
+				<lightning-button variant="neutral" 
+                                    label="Cancel" 
+                                    title="Cancel" 
+                                    type="text" 
+                                    onclick={handleCancel} 
+                                    class="slds-m-right_small"> </lightning-button>
+			</lightning-layout-item>
+		</div>
+    </template>
+	</lightning-record-edit-form>
+</template>

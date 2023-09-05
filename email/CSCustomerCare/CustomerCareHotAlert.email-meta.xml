@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-4091: Customer Care Survey Response Hot Alert</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Customer Care Hot Alert</name>
+    <style>none</style>
+    <subject>Customer Care Survey Hot Alert: Survey Response {!SurveyResponse__c.Name} for Case {!SurveyResponse__c.Case__c}</subject>
+    <textOnly>Hello,
+
+The following Hot Alert has been triggered from a Customer Care Case Survey, based on the red scores in the customer’s feedback below:
+
+Case Number: {!SurveyResponse__c.Case__c}
+Survey Response: {!SurveyResponse__c.Name}
+
+Survey Response Owner: {!SurveyResponse__c.OwnerFullName}
+Survey Type: {!SurveyResponse__c.SurveyType__c}
+
+Account: {!SurveyResponse__c.Account__c}
+Contact: {!SurveyResponse__c.Contact__c}
+Contact Email: {!SurveyResponse__c.ContactEmail__c}
+Case Owner: {!SurveyResponse__c.CaseOwner__c}
+Product Group: {!SurveyResponse__c.CaseProductGroup__c}
+Date Case closed: {!SurveyResponse__c.CaseClosedDate__c}
+
+Survey Response Date: {!SurveyResponse__c.ResponseDate__c}
+Customer Effort Score: {!SurveyResponse__c.CESScore__c}
+Customer Satisfaction Score: {!SurveyResponse__c.CSATScore__c}
+Rep Satisfaction Score: {!SurveyResponse__c.RSSScore__c}
+Time Expectation Score: {!SurveyResponse__c.TESScore__c}
+Net Promoter Score: {!SurveyResponse__c.NPSScore__c}
+Likelihood to Renew: {!SurveyResponse__c.LikelihoodToRenew__c}
+
+Please review the Survey Response and the Case to action accordingly.
+
+Once the loop is closed with the customer, please ensure you update the Survey Response with the appropriate Hot Alert Status, feedback, supporting notes and actions items.
+
+Kind regards,
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

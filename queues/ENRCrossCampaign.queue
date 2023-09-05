@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>ENR-Cross Campaign</name>
+    <queueMembers>
+        <users>
+            <user>jerrine.chia@ihsmarkit.com</user>
+            <user>serene.yong@ihsmarkit.com</user>
+            <user>stacy-ann.wilson@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

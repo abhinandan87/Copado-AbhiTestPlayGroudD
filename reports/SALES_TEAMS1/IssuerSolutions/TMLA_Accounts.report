@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$TickerSymbol</field>
+    </columns>
+    <columns>
+        <field>Account$AccountID18Character__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>GMI &amp; Targeting Renewals by Product</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>3-Renewal Pending,5-Renewal Contracting,6W-Renewal Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities.OpportunityLineItems$PricebookEntry.Product2.Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Global Mkts,target,bd</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$TickerSymbol</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CMCSA,CPNG,DBD,DMS,DOCS,EPAM,FTCH,FORM,GCI,TV,HPE,IMAX,INTC,JNPR,KEYS,KLAC,KORE,LBRDK,LITE,MSGE,MKFG,MU,MSI,NFLX,NYT,OPAD,OUST,PL,QUOT,QRTEA,RKLY,STX,SKLZ,STRY,SPWR,TRU,UIS,OLED,VLD,WIX,WOLF,ZIP</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TMLA Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Oppy_and_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$LastActivityDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

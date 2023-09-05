@@ -123,10 +123,55 @@
         <fullName>LastOpenedDate</fullName>
     </fields>
     <fields>
+        <fullName>LegacyIDUnique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Created as part for migration exercise to store unique identifier for legacy records</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Unique Id for legacy records</inlineHelpText>
+        <label>LegacyIDUnique</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>SFDC1-7046, MIG-521: Legacy ID field is the system id (unfriendly) referencing the source record.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>System ID referencing the source record Populated at Migration</inlineHelpText>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacySystem__c</fullName>
+        <description>Created as part of migration exercise to identify the system to which the legacy records relates with</description>
+        <externalId>false</externalId>
+        <inlineHelpText>System from which the record was migrated</inlineHelpText>
+        <label>LegacySystem</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LegacySystem</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>MessageDate</fullName>
     </fields>
     <fields>
         <fullName>MessageSize</fullName>
+    </fields>
+    <fields>
+        <fullName>PKIDEmailMessage__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>EMS{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID EmailMessage</label>
+        <type>AutoNumber</type>
     </fields>
     <fields>
         <fullName>ParentId</fullName>

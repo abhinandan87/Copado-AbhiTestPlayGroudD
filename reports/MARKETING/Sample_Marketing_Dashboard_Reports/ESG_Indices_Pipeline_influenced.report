@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPP.CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>OPP.PROBABILITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OPP.AMOUNT.CONVERT</field>
+    </columns>
+    <columns>
+        <field>INFLUENCE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>REVENUE_SHARE.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CampaignInfluence.ExpectedRevenueShare__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>if(contains(Text(OPP.LEAD_SOURCE),&quot;Market&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Push&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Website&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;SEO&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Inbound&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Paid&quot;),&quot;Marketing Sourced&quot;,&quot;Marketing Influenced&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Marketing Sourced/Influenced</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Opportunities For 2020 Marketing Corporate Actions - Pipeline Influenced</description>
+    <filter>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IS-Indices-2020-ESG iBoxx GSS Whitepaper</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPP.FORECAST_CATEGORY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ESG Indices Pipeline influenced</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomizableCampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+</Report>

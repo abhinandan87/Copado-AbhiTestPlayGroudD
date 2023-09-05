@@ -1,0 +1,15 @@
+<design:component label="Related List">
+    <design:attribute name="objectType" label="Object API Name" />
+    <design:attribute name="parentFieldName" label="Parent Field API Name" />
+    <design:attribute name="tableSize" label="Table Size" />
+    <design:attribute name="queryColumns" label="Columns" default="Name, CreatedDate, Description" />
+    <design:attribute name="columnDefinitions" label="Column JSON definitions" default="[]" />
+    <design:attribute name="fieldTransformationRules" label="Flatten parent relations" default="[]" />
+    <design:attribute name="filter" label="Filter" />
+    <design:attribute name="title" label="Title" />
+    <design:attribute name="orderBy" label="Order By" default="CreatedDate DESC" />
+    <design:attribute name="icon" label="Icon" default="standard:solution" />
+    <design:attribute name="showActions" label="Show Actions" datasource="true,false" default="true" />
+    <design:attribute name="showPagination" label="Show Pagination" datasource="true,false" default="true" />
+    <design:attribute name="reportName" label="Report Name - Title" default=""/>
+</design:component>

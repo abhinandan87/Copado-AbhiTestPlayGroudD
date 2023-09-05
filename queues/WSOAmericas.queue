@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>WSO - Americas</name>
+    <queueMembers>
+        <users>
+            <user>alfredo.milera@ihsmarkit.com</user>
+            <user>byron.jones@ihsmarkit.com</user>
+            <user>gary.smeds@ihsmarkit.com</user>
+            <user>hali.mcclelland@ihsmarkit.com</user>
+            <user>joseph.brody@ihsmarkit.com</user>
+            <user>stephen.johnson@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

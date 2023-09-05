@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contract.OpportunityNumber__c</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>Copy of Stage 3 Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractCustomEntity$ProofOfDelivery__c</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>START_DATE</dateColumn>
+        <endDate>2020-11-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-08-01</startDate>
+    </timeFrameFilter>
+</Report>

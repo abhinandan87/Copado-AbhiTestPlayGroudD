@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SALUTATION</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>PHONE1</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TICKER</field>
+    </columns>
+    <columns>
+        <field>Account.ExternalOrgType__c</field>
+    </columns>
+    <columns>
+        <field>Account.InstitutionType__c</field>
+    </columns>
+    <columns>
+        <field>Account.InstitutionSubType__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SALES.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 5) AND 4 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>&quot; IR &quot;,&quot; IRO &quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>&quot; IR&quot;,&quot; IRO&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>&quot;IR &quot;,&quot;IRO &quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>&quot; iron&quot;,&quot; irc&quot;,&quot; ira&quot;,&quot; ire&quot;,&quot; iru&quot;,&quot; irr&quot;,&quot; iri&quot;,&quot; irk&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TITLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Investor Relations</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS2_COUNTRY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>United States</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>IR Magazine Contact List</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

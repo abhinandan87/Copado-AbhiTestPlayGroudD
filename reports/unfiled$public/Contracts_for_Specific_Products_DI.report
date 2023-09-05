@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contract$Account</field>
+    </columns>
+    <columns>
+        <field>Contract$ContractOwner__c</field>
+    </columns>
+    <columns>
+        <field>Contract$ContractNumber</field>
+    </columns>
+    <columns>
+        <field>Contract$ContractStatus__c</field>
+    </columns>
+    <columns>
+        <field>Contract$StartDate</field>
+    </columns>
+    <columns>
+        <field>Contract$EndDate</field>
+    </columns>
+    <columns>
+        <field>Contract.Contract_Line_Items__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contract$ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>Contract$ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Contract$ContractStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sent to Customer,Signed By Customer,Submitted,Validated,Validated PO Pending,Validated-POD Pending,Validated-BSI Pending,Validated by ConsOps</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.Contract_Line_Items__r$AssociatedProduct__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Buy-side Datafeed/Data Insight/Sub</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$ClientLegalEntityCountryLookup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>United States,Canada</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Contracts for Specific Products - DI</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contracts_with_Line_Items_and_Product_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contract$ActivatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

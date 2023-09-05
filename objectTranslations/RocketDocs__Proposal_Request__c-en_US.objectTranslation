@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account City --></label>
+        <name>AccountCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>AccountCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account State --></label>
+        <name>AccountState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Street --></label>
+        <name>AccountStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Zip --></label>
+        <name>AccountZip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Email --></label>
+        <name>OpportunityOwnerEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner HR Title --></label>
+        <name>OpportunityOwnerHRTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Mobile Number --></label>
+        <name>OpportunityOwnerMobileNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Phone Number --></label>
+        <name>OpportunityOwnerPhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Title --></label>
+        <name>OpportunityOwnerTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Department --></label>
+        <name>Opportunity_Owner_Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Email --></label>
+        <name>PrimaryContactEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact First Name --></label>
+        <name>PrimaryContactFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Full Name --></label>
+        <name>PrimaryContactFullName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Phone --></label>
+        <name>PrimaryContactPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Title --></label>
+        <name>PrimaryContactTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>RocketDocs__Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>RocketDocs__Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Integration Details --></label>
+        <name>RocketDocs__Last_Integration_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Integration Message --></label>
+        <name>RocketDocs__Last_Integration_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Sent to RocketDocs --></label>
+        <name>RocketDocs__Last_Sent_to_RocketDocs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated by RocketDocs --></label>
+        <name>RocketDocs__Last_Updated_by_RocketDocs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>RocketDocs__Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- RocketDocs Salesforce Connector 2.0: Lookup to the Opportunity. There should only be one active Proposal Request associated to an Opportunity at any given time. --></help>
+        <label><!-- Opportunity --></label>
+        <name>RocketDocs__Opportunity__c</name>
+        <relationshipLabel><!-- RocketDocs Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proposal Type --></label>
+        <name>RocketDocs__Proposal_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent to RocketDocs --></label>
+        <name>RocketDocs__Sent_to_RocketDocs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>RocketDocs__Status__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- RocketDocs Salesforce Connector 2.0: Record type when a proposal request is closed or completed --></description>
+        <label><!-- Closed Request --></label>
+        <name>RocketDocs__Closed_Proposal_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- RocketDocs Salesforce Connector 2.0: Default Record Type for Open Proposal Requests --></description>
+        <label><!-- Open Request --></label>
+        <name>RocketDocs__Open_Proposal_Request</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Cancel_Proposal_Request_VF --></label>
+        <name>RocketDocs__Cancel_Proposal_Request_VF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Document_VF --></label>
+        <name>RocketDocs__Generate_Document_VF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Get_Proposal_Updates_VF --></label>
+        <name>RocketDocs__Get_Proposal_Updates_VF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Proposal_VF --></label>
+        <name>RocketDocs__Send_Proposal_VF</name>
+    </webLinks>
+</CustomObjectTranslation>

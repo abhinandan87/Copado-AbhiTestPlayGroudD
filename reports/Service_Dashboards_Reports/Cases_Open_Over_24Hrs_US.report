@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_68197659</developerName>
+        <masterLabel>US</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Varun Bhutani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kartikey Bisht</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rashi Dungale</sourceValue>
+            </sourceValues>
+            <value>FS India</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mark Quejado</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Katerani Selvarraju</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bo Yuan Ng</sourceValue>
+            </sourceValues>
+            <value>FS Penang</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Evan Gerlack</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Mitchell</sourceValue>
+            </sourceValues>
+            <value>FS US</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kanika Garg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pooja P Nair</sourceValue>
+            </sourceValues>
+            <value>CS India</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Hashi Khalid Mohamad</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Najah Nadhira Binti Dorohid</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Farah Razali</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Don</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Miaoyin Ng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ann Shee Hong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Frank Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chin Nean Chew</sourceValue>
+            </sourceValues>
+            <value>CS Penang</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Janet Holmes-Boone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Burnett</sourceValue>
+            </sourceValues>
+            <value>CS US</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_61633604</developerName>
+        <masterLabel>US Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>OWNER</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATEONLY</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Chin Nean Chew,Ann Shee Hong,Farah Razali,Haqimi Ashaari,Hashi Khalid Mohamad,Kent Choong,Mehar Banu Mohamed Salib,Michael Don,Felisha Anne Johnson,Girryrajen Veeramuthu,Joanne Ooi,Saifyul Bahry Abdul Shukor,Nathan Valdez,Diksha Bisht,Jennifer Begel,Paul Hughes,Rishi Kapoor,Vera Rasa,Alexandra Bevy Wei Jen Lee,Remela Navarason</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AGE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>24</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>closed,cancelled,duplicate,Resolved/Completed,Resolved/No Response</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Case.Implementation</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Active Cases Open Over 24Hrs</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

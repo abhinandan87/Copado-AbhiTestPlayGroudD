@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_87192908</developerName>
+        <masterLabel>TEAMS</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amy Fuller-Riley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Bruce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Simmons</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tiffany Aspinall</sourceValue>
+            </sourceValues>
+            <value>SAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jeff Benton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steven McKenzie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Travis Hagler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Derek Gonsuron</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James McCarthy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christina Allen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Hernandez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robin Fernandez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jim Conway</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Marshall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nino Pepper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nail Christian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nelson Armstrong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jay Wininger</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandon DeMarsico</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andy Quintero</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Benjamin Rattner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kris McKnight</sourceValue>
+            </sourceValues>
+            <value>SOUTHERN</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Leisha Archie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel Heuston</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Blake</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathy Maher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandon Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nancy Strabala</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Van Nest</sourceValue>
+            </sourceValues>
+            <value>NOTHERN</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Diane Braaten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Caroline Wilson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gina Gurung</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Julie Harper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oliva Unarce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sheila Whitten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eric Hards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aaron Gardner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Arena</sourceValue>
+            </sourceValues>
+            <value>CANADIAN</value>
+        </values>
+        <values>
+            <value>TECHNICAL</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity.OpportunityRegion__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Amount__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.LicenseNumber__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.LicenseType__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>QUANTITY</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonCode__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonDescription__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Kingdom Back-Maintenance for Kim Whipple</description>
+    <filter>
+        <booleanFilter>1 AND 3 AND 4 AND (2 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.MaterialCode__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>2000014054,2000014092,2000014116,2000014117,2000014118,2000014119,2000014120,2000014129,2000014130,2000014131,2000014132,2000014140,2000014143,2000014144,2000014153,2000014161,2000014165,2000014166,2000014167,2000014168,2000014185,2000014188,2000014213,2000014217,2000014218,2000014219,2000014220,2000014229,2000014231,2000014232,2000014269,2000014273,2000014274,2000014275,2000014276,2000015555,2000015556,2000015559,2000015561,2000015562,2000015565,2000031926,2000031933,2000031968,2000033753,2000033816,2000037552,2000037581,2000037605,2000038175,2000038181,2000038184,2000038193,2000038196,2000038205,2000038208,2000038211,2000038214,2000038220,2000038256,2000038262,2000038280,2000038292,2000038295,2000038298,2000038301,2000038310,2000038328,2000038331,2000038337,2000038358,2000038361 2000038400,2000038406,2000038409,2000038412,2000038418,2000038424,2000038430,2000038436,2000038448,2000038451,2000038454,2000038457,2000038475,2000038493,2000038496,2000038499,2000038502,2000038508 2000040602,2000040477,2000040590,2000040596,2000040599</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>6L-Closed Lost,6L-Renewal Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2017 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.MaterialCode__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>2000014054,2000014092,2000014116,2000014117,2000014118,2000014119,2000014120,2000014129,2000014130,2000014131,2000014132,2000014140,2000014143,2000014144,2000014153,2000014161,2000014165,2000014166,2000014167,2000014168,2000014185,2000014188,2000014213,2000014217,2000014218,2000014219,2000014220,2000014229,2000014231,2000014232,2000014269,2000014273,2000014274,2000014275,2000014276,2000015555,2000015556,2000015559,2000015561,2000015562,2000015565,2000031926,2000031933,2000031968,2000033753,2000033816,2000037552,2000037581,2000037605,2000038175,2000038181,2000038184,2000038193,2000038196,2000038205,2000038208,2000038211,2000038214,2000038220,2000038256,2000038262,2000038280,2000038292,2000038295,2000038298,2000038301,2000038310,2000038328,2000038331,2000038337,2000038358,2000038361,2000038400,2000038406,2000038409,2000038412,2000038418,2000038424,2000038430,2000038436,2000038448,2000038451,2000038454,2000038457,2000038475,2000038493,2000038496,2000038499,2000038502,2000038508,2000040602,2000040477,2000040590,2000040596,2000040599,2000014141,2000014142,2000037561,2000037563,2000038433,2000038478,2000014261,2000014262,2000014263,2000014264,2000037617,2000037619,2000038481,2000038487</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>KW - Kingdom Back Maintenance</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity.Opportunitynum__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

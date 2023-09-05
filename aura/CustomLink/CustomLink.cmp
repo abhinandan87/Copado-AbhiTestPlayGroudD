@@ -1,0 +1,58 @@
+<aura:component controller="CustomLinkController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="customLinks" type="Object[]" />
+    <aura:attribute name="paginationList" type="Object[]"/>
+    <aura:attribute name="hideButtons" type="boolean" default="true" />
+    <aura:attribute name="pageSize" type="Integer" default="10" access="global"/>
+    <aura:attribute name="totalSize" type="Integer"/>
+    <aura:attribute name="start" type="Integer" />
+    <aura:attribute name="end" type="Integer"/>
+    <aura:attribute name="initComplete" type="boolean" default="false"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+    
+    <aura:attribute name="domain" type="String" default="" access="global"/>
+    <aura:attribute name="title" type="String" default="Custom Links" access="global"/>
+    <aura:attribute name="currentRecord" type="Object" description="Record on which the links are displayed"/>
+    
+    <div class="slds-card" >
+        <div class="slds-card__header slds-grid" >
+            <header class="slds-has-flexi-truncate" >
+                <h2 >
+                    <b><span class="slds-text-heading_small" >{!v.title}</span></b>
+                </h2>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <ui:spinner aura:id="spinner" class="slds-show"/>
+            <div >                
+                <aura:if  isTrue="{!v.initComplete}">
+                    {!v.customLinks}
+                    <aura:if isTrue="{!or(empty(v.customLinks),lessthan(v.customLinks.length,1))}">
+                        <div id="nolinks" class="message empty" >    
+                            No custom Links available
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!greaterthan(v.customLinks.length,0)}">
+                    <div class="slds-text-align--left " id="links">
+                        <aura:iteration items="{!v.paginationList}" var="item">
+                            	<tr>
+                                    <td>
+                                        <aura:if isTrue="{!and(item.InternalLink__c!='undefined', item.InternalLink__c==true)}">
+                                        	<ui:outputURL value="{!item.URL__c }" label="{!item.CustomLinkName__c}" target="_Self"></ui:outputURL>                                               
+                                            <aura:set attribute="else">
+                                            	<ui:outputURL value="{!item.URL__c }" label="{!item.CustomLinkName__c}" target="_Blank"></ui:outputURL>                                               
+                                            </aura:set>
+                                        </aura:if>
+                                    </td>
+                                </tr>
+                        </aura:iteration>
+                        <div class ="{!v.hideButtons ? 'slds-hide' : ''}" >
+                            <lightning:button label="Previous" disabled="{!v.start == 0}"  onclick="{!c.previous}" />
+                            <lightning:button label="Next" disabled="{!v.end >= v.totalSize}" onclick="{!c.next}" />
+                        </div>
+                    </div>
+                  </aura:if>
+                </aura:if>
+            </div>
+        </div>
+    </div>
+</aura:component>

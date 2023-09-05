@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-4066 creating custom permission to add to the permission ContractLineItemEditAccessFinancialServicesteam to identify in code</description>
+    <isLicensed>false</isLicensed>
+    <label>ContractLineItemEditAccessFinancialServicesteam</label>
+</CustomPermission>

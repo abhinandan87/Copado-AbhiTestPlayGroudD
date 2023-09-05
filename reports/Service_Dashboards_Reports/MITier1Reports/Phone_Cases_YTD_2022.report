@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/10560</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Field for reporting purposes only.  10560 = 22 working days, with 8 hrs per working day, 60 min per hour</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time spent monthly FTE</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_361</developerName>
+        <masterLabel>Bucket by Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Aaron Ching</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Soo Ling Chaiyasu</sourceValue>
+            </sourceValues>
+            <value>FS Penang</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Esma Agzanay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melanie Mladenova</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kinnerey Patel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Safiya Murray</sourceValue>
+            </sourceValues>
+            <value>FS EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tanvi Arora</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samuel Abraham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kartikey Bisht</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chayan Bhattacharjee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rashi Dungale</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Varun Bhutani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shefali Chawla</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Devrach Atawnia</sourceValue>
+            </sourceValues>
+            <value>FS India</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tee Huang Cheah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kent Choong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agnes Ooi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicholas Teo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mehar Banu Mohamed Salib</sourceValue>
+            </sourceValues>
+            <value>CS Penang</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Paul Hughes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vera Rasa</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Begel</sourceValue>
+            </sourceValues>
+            <value>CS EMEA</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_50546321</developerName>
+        <masterLabel>CS &amp; FS Shift Team Members</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <value>CS APAC Shift</value>
+        </values>
+        <values>
+            <value>CS EMEA Shift</value>
+        </values>
+        <values>
+            <value>CS AMER Shift</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mika Sakurai</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aaron Tang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kok Han Lee</sourceValue>
+            </sourceValues>
+            <value>FS APAC Shift</value>
+        </values>
+        <values>
+            <value>FS EMEA Shift</value>
+        </values>
+        <values>
+            <value>FS AMER Shift</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Samuel Abraham</sourceValue>
+            </sourceValues>
+            <value>FS India</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_48382796</developerName>
+        <masterLabel>Regional Shift</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Mika Sakurai</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aaron Tang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kok Han Lee</sourceValue>
+            </sourceValues>
+            <value>FS APAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Esma Agzanay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christelle Dikole</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melanie Mladenova</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Soo Ling Chaiyasu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aaron Ching</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tee Huang Cheah</sourceValue>
+            </sourceValues>
+            <value>FS EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jason Mitchell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohd Rusdi Rahim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bo Yuan Ng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Syarwanni Mustafa</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ling Lim</sourceValue>
+            </sourceValues>
+            <value>FS AMER</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Devrach Atawnia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aman Kumar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chayan Bhattacharjee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anmol Singh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Varun Bhutani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samuel Abraham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gautam Pant</sourceValue>
+            </sourceValues>
+            <value>FS INDIA</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>OWNER</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>BucketField_48382796</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Case.Subtype__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Case.TimeSpentMinutes__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Case.ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>2 AND 1 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Delete Queue</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Closed,Canceled,Resolved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Customer Care Tier 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Kinnerey Patel,Aishna Jain,Chin Nean Chew,Lalit Kumar,Mark Quejado,Sakshi Rajiv Singh,Tanvi Arora,Yashvi Kundra</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Phone,VM</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.ProductGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Phone Cases YTD 2022</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-12-01</startDate>
+    </timeFrameFilter>
+</Report>

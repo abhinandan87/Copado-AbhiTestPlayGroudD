@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Order Management</name>
+    <queueMembers>
+        <roles>
+            <role>OMDelivery</role>
+        </roles>
+        <users>
+            <user>adrian.lewis@ihsmarkit.com.prod</user>
+            <user>alexandra.nicoara@ihsmarkit.com</user>
+            <user>christinehotztestuser@ihsmarkit.testuser.com</user>
+            <user>diksha.khanna@ihsmarkit.com</user>
+            <user>andrew.beck@ihsmarkit.com</user>
+            <user>ireneabrahamtestuser@ihsmarkit.testuser.com</user>
+            <user>kailee.trickey@ihsmarkit.com</user>
+            <user>kavitha.ravichandaran@ihsmarkit.com</user>
+            <user>kenneth.dasher@ihsmarkit.com</user>
+            <user>khyati.vora@ihsmarkit.com</user>
+            <user>khyativoratestuser@ihsmarkit.testuser.com</user>
+            <user>marcus.lim@ihsmarkit.com</user>
+            <user>michael.romagnoli@ihsmarkit.com</user>
+            <user>mohamadhelmi.abdulla@ihsmarkit.com</user>
+            <user>mohsin.bharakathali@ihsmarkit.com</user>
+            <user>mufidah.hassanmydin@ihsmarkit.com</user>
+            <user>niyeta.gupta@ihsmarkit.com</user>
+            <user>nursyuhada.khalid@ihsmarkit.com</user>
+            <user>rizaharyani.johari@ihsmarkit.com</user>
+            <user>shakil.munshi@ihsmarkit.com</user>
+            <user>sonia.sharma@ihsmarkit.com</user>
+            <user>terry.best@ihsmarkit.com</user>
+            <user>toni.wilson@ihsmarkit.com</user>
+            <user>weijien.chee@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

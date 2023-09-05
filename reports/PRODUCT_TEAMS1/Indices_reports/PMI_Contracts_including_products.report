@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Contract.ContractAccount__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ContractLineItemSchedule__c.SalesPrice__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>ContractLineItemSchedule__c.SalesPrice__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Contract.RenewalDate__c</field>
+    </columns>
+    <columns>
+        <field>Contract.SoldToCountry__c</field>
+    </columns>
+    <columns>
+        <field>Contract.ContractStatus__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>PMI contracts including products</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>PMI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract.ContractStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Validated,Delivered to Customer</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PMI Contracts including products</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractCustomEntity$ContractLineItemSchedule__c@ContractLineItemSchedule__c.ContractLineItem__c</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contract.ContractAccount__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>START_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

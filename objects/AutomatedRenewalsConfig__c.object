@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>SFDC-3186 Hierarchical custom setting to store config settings for Automated Renewals creation process.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>DoNotTriggerRenewals__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3186 Check this to stop the trigger(marking an opp 6W to 6WP) for Renewals creation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this to stop the trigger(marking an opp 6W to 6WP) for Renewals creation</inlineHelpText>
+        <label>Do Not Trigger Renewals</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LogEmailRecipient__c</fullName>
+        <description>SFDC-3186 Email id with which batch logs should be shared. User/Profile specific records should not use this.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter recipient email to whom renewal batch logs should be sent. User/Profile specific records should not use this.</inlineHelpText>
+        <label>Log Email Recipient</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RenewalsBatchSize__c</fullName>
+        <defaultValue>200</defaultValue>
+        <description>SFDC-3186 Size of each batch when running renewals scheduled jobs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Set this only for org default record. User/Profile specific records should not use this.</inlineHelpText>
+        <label>RenewalsBatchSize</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Automated Renewals Config</label>
+    <listViews>
+        <fullName>RenewalsBatchConfigs</fullName>
+        <columns>NAME</columns>
+        <columns>SETUP_OWNER_NAME</columns>
+        <columns>DoNotTriggerRenewals__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Renewals Batch Configs</label>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

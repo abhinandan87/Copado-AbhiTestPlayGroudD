@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>AUTOS | GPHD UK</name>
+    <queueMembers>
+        <users>
+            <user>alessio.clapasson@ihsmarkit.com</user>
+            <user>daniel.lim@ihsmarkit.com</user>
+            <user>jason.corn@ihsmarkit.com</user>
+            <user>jemma.warehand@ihsmarkit.com</user>
+            <user>joe.dyer@ihsmarkit.com</user>
+            <user>jon.mccausland@ihsmarkit.com</user>
+            <user>jose.guedes@ihsmarkit.com</user>
+            <user>leah.dunn@ihsmarkit.com</user>
+            <user>leonce.doussaud@ihsmarkit.com</user>
+            <user>martin.woods@ihsmarkit.com</user>
+            <user>michal.frankowski@ihsmarkit.com</user>
+            <user>patrick.weiss@ihsmarkit.com</user>
+            <user>robert.crow@ihsmarkit.com</user>
+            <user>sandra.donaldson@ihsmarkit.com</user>
+            <user>tracy.sickinger@ihsmarkit.com</user>
+            <user>vilesh.amrania@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

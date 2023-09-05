@@ -1,0 +1,2 @@
+Case Number: {!Case.CaseNumber}
+Ref ID: {!Case.Thread_Id}

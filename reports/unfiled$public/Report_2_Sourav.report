@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Opportunitynum__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OP0001484340,OP0001485538,OP0001485512,OP0001486248,OP0001486827,OP0001204497,OP0001329154,OP0001488356,OP0001488247,OP0001490826,OP0001490828,OP0001493056,OP0001493099,OP0001493529,OP0001408263,OP0001408225,OP0001410525,OP0001411507,OP0001335808,OP0001203727,OP0001206148,OP0001413781,OP0001419791,OP0001419438,OP0001416354,OP0001206653,OP0001215778,OP0001418646,OP0001420095,OP0001419859,OP0001420664,OP0001420840,OP0000646617,OP0000646519,OP0000264934,OP0000264339,OP0000264345,OP0000264363,OP0000264365,OP0000265031,OP0000264372,OP0000265082,OP0000238010,OP0000237980,OP0001427840,OP0001436538,OP0001500277,OP0001502702,OP0000172862,OP0000172895,OP0000173017,OP0000176136,OP0000190938,OP0000422489,OP0000490906,OP0000490923,OP0001341886,OP0001362285,OP0001361461,OP0001347330,OP0001346746,OP0001346747,OP0000623851,OP0000638777,OP0001440584,OP0001442948,OP0001443356,OP0001444019,OP0001444191,OP0001450236,OP0001450030,OP0001450810,OP0001452864,OP0001351541,OP0001503246,OP0001503553,OP0001510835,OP0001503751,OP0001504738,OP0001504735,OP0001506703,OP0001368681,OP0001454562,OP0001455036,OP0001460314,OP0001459016,OP0001379427</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.PKIDAccount__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Report 2 - Sourav</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

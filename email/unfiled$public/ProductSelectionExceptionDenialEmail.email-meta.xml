@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-4731: Send email alert to an user when exception is denied</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Product Selection Exception Denial Email</name>
+    <style>none</style>
+    <subject>Exception request for Opportunity {!Opportunity.Opportunitynum__c} has been denied</subject>
+    <textOnly>Hello,
+
+Exception request for Legal Entity {!Opportunity.RequestedLegalEntity__c} on Opportunity {!Opportunity.Opportunitynum__c} has been denied. Please contact the Corporate Tax team for more details. Please find below the Opportunity record.
+
+Opportunity Record: {!Opportunity.Link}
+
+Thanks,
+IHS Markit</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

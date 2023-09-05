@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Debtdomain</name>
+    <queueMembers>
+        <users>
+            <user>aneeb.barnes@ihsmarkit.com</user>
+            <user>anthony.demonte@ipreo.com.prod</user>
+            <user>ashley.jones@ihsmarkit.com</user>
+            <user>chris.bauer@ihsmarkit.com</user>
+            <user>daniel.king@ihsmarkit.com.ipreo.prod</user>
+            <user>gurdeep.singh@ihsmarkit.com</user>
+            <user>james.vettese@ihsmarkit.com</user>
+            <user>jon.chichwak@ihsmarkit.com</user>
+            <user>joy.cottle@ihsmarkit.com</user>
+            <user>lyle.jacobs@ihsmarkit.com</user>
+            <user>nikhil.lamba@ihsmarkit.com</user>
+            <user>ramit.khera@ihsmarkit.com</user>
+            <user>valerie.hom@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

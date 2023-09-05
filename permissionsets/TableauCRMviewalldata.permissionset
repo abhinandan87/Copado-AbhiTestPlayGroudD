@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-4256 Permission set to show all data in Tableau CRM dashboards</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Tableau CRM View All Data</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>InsightsAppUser</name>
+    </userPermissions>
+</PermissionSet>

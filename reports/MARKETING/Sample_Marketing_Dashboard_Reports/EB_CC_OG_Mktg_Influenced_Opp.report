@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN.NAME</field>
+    </columns>
+    <columns>
+        <field>CM.RESPONDED</field>
+    </columns>
+    <columns>
+        <field>PRIMARY</field>
+    </columns>
+    <columns>
+        <field>CONTACT.FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.AMOUNT</field>
+    </columns>
+    <columns>
+        <field>OPP.CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>MODEL.NAME</field>
+    </columns>
+    <columns>
+        <field>INFLUENCE</field>
+    </columns>
+    <columns>
+        <field>REVENUE_SHARE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.TotalOpportunityAmount__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Influence of campaigns for the Executive Briefings: Climate and Cleantech and Executive Briefings: Oil and Gas campaigns FY2021</description>
+    <filter>
+        <booleanFilter>1 AND 3 AND (2 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>OPP.CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>12/1/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ENR-GPE-01Oct20-Executive Briefings: Climate and Cleantech</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MODEL.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Campaign Influence</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProductFamily__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>climate and emissions</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPP.FORECAST_CATEGORY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPP.STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>EB CC &amp; OG Mktg Influenced Opp</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomizableCampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

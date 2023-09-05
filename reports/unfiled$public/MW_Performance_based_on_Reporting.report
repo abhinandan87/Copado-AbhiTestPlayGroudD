@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_4714472</developerName>
+        <masterLabel>Region1</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OpportunityLineItem.ProductOwner__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Arif Butt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shikha Nanda</sourceValue>
+            </sourceValues>
+            <value>Middle East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Hailey Liang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Hu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jean See</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marco Zhenhe Ma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neil Coert</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robert O&apos;Brien</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sewon Park</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alex Poole-Warren</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carter Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Atsushi Higuchi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haiou Ma</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OpportunityLineItem.FirstYear__c.CONVERT</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>ROLLUP_DESCRIPTION</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>OpportunityLineItem.ContractStartDate__c</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Opportunity.SalesRegion__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ProductOwner__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.FirstYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SubBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Status__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Performance for each ECR team, based on the reporting manager; this is critical since we broke EMEA into Europe and ME (which is now part of APW’s org)</description>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - General Service Account,Place Holder - IHS Markit Internal Employees,Place Holder - Sales,Place Holder - Self Registered Users Account,Place Holder - Unknown Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.BusinessLine2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Economic</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.InternalBusinessSegment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Research Advisory Specialty Solutions</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Product2.AAG__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>FiscalQuarter</dateGranularity>
+        <field>OpportunityLineItem.ContractStartDate__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ROLLUP_DESCRIPTION</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Product2.ProductGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MW - Performance based on Reporting</name>
+    <params>
+        <name>open</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.ContractStartDate__c</dateColumn>
+        <endDate>2022-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-12-01</startDate>
+    </timeFrameFilter>
+</Report>

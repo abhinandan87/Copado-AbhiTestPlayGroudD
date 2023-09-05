@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>metazoa3__snapshot_push__c.metazoa3__push_type__c</field>
+    </columns>
+    <columns>
+        <field>metazoa3__snapshot_push__c.metazoa3__source_username__c</field>
+    </columns>
+    <columns>
+        <field>metazoa3__snapshot_push__c.metazoa3__successful_push__c</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <description>All successful pushes executed by snapshot today</description>
+    <filter>
+        <criteriaItems>
+            <column>metazoa3__snapshot_push__c.metazoa3__successful_push__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>All Successful Pushes</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$metazoa3__snapshot_push__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

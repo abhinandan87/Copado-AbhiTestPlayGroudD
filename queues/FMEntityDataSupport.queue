@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Entity Data Support</name>
+    <queueMembers>
+        <users>
+            <user>anjana.mishra@ihsmarkit.com</user>
+            <user>ankur.bhardwaj@ihsmarkit.com</user>
+            <user>kay.huyen@ihsmarkit.com</user>
+            <user>michael.english@ihsmarkit.com</user>
+            <user>priyanka.tiwari@ihsmarkit.com</user>
+            <user>shahzad.niazi@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

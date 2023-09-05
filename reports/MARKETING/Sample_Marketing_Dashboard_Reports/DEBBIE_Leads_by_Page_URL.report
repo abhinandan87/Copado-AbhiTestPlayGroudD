@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_76509098</developerName>
+        <masterLabel>Product Interest Groups</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Lead$ProductInterest__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>ECR - Healthcare MCS - European Pharmacovigilance Reform (12095)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Healthcare Multi-client Studies and Market Research (16103)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Life Sciences MCS - Tiered Pricing (12096)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Industry Intelligence - Healthcare and Pharmaceutical (16082)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - PharmOnline International (16098)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - US Healthcare Cost Service (16099)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - World Markets Healthcare (16083)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - World Markets Pricing &amp; Reimbursement (16095)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR Consulting Healthcare</sourceValue>
+            </sourceValues>
+            <value>Life Sciences</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ECR - Advanced Country Analysis and Forecast (16005)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Canadian Economic Services (16025)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - China Regional Service (16015)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - CntryInd - Country Intelligence (12040)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR Country Intelligence</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Country Intelligence (12040)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Country Intelligence Monitor (16012)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Economic Analytics (16109)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Global Economic Data (16111)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Global ICT Navigator (16141)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Global Link Model/EconoSim (16112)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Global Scenarios (16008)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR Macro Economics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - World Economic Service (16009)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Executive Strategy Council (16013)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - MineSpans Service (12075)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Consumer Goods and Retail Custom Solutions (16042)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - US Consumer Markets Service (16067)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ECR - Global Consumer Markets Service (16065)</sourceValue>
+            </sourceValues>
+            <value>Economics</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <columns>
+        <field>Lead$OriginatingNotes__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_76509098</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Lead$ProductInterest__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>ECR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$LeadSource</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Customer Care,Rep Generated</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead.CampaignMembers$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead$ProductInterest__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead$OriginatingSourceURL__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DEBBIE: Leads by Page URL</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Leads_with_out_Campaign__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Lead$CallbackDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC1-2653 Use this template when you are notifying the customer that a bug has been resolved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Resolved Bug Notification</name>
+    <style>none</style>
+    <subject>IHS Customer Care: {!Case.ProductGroup__c}: The bug you submitted has been fixed</subject>
+    <textOnly>Account: {!Case.Account}
+Contact: {!Case.Contact}
+Case Number: {!Case.CaseNumber}
+Case Description: {!Case.Description}
+
+Hello {!Case.Contact},
+
+This email is to notify you that the bug you submitted with respect to {!Case.ProductGroup__c}, has been resolved.
+
+The latest version of {!Case.ProductGroup__c} contains the fix for this bug. If applicable, please download or install the latest version/patch to resolve the issue that you submitted.
+
+Thank you, and should you require further assistance please do not hesitate to contact us.
+
+Kind regards,
+{!Case.OwnerFirstName} {!Case.OwnerLastName}
+S&amp;P Global | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

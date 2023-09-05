@@ -1,0 +1,1057 @@
+<template>
+  <lightning-card title="Products" icon-name="standard:product">
+    <div class="cardClass">
+      <template if:false={emptyProductList}>
+        <!--Display/hide popup based on isModalOpen value for Delete Confirmation-->
+        <template if:true={isLegalModalOpen}>
+          <!-- Modal/Popup Box LWC starts here -->
+          <section
+            key={legalEntity}
+            role="dialog"
+            tabindex="-1"
+            aria-labelledby={legalEntity}
+            aria-modal="true"
+            aria-describedby={legalEntity}
+            class="slds-modal slds-fade-in-open slds-modal_small"
+          >
+            <div class="slds-modal__container">
+              <div class="slds-float_right">
+                <lightning-button-icon
+                  icon-name="utility:close"
+                  data-id="CloseModal"
+                  alternative-text="Close"
+                  variant="bare-inverse"
+                  size="large"
+                  onclick={closeLegalModal}
+                  ><label></label
+                ></lightning-button-icon>
+              </div>
+              <c-legal-Entity-Selection
+                record-id={recordId}
+                selected-prod-list={legalProdList}
+                mode="editModal"
+                products-removed="true"
+                onclose={closeLegalModal}
+              ></c-legal-Entity-Selection>
+            </div>
+          </section>
+          <div
+            class="slds-backdrop slds-backdrop_open"
+            role="presentation"
+          ></div>
+        </template>
+        <!-- Show Error Message if Sales Price is Negative-->
+        <template if:true={showErrorMsg}>
+          <div class="slds-text-color_error slds-var-m-left_large">
+            <p>{label.NegativeSalesPriceError}</p>
+          </div>
+        </template>
+        <!-- Product Outer Table-->
+        <div class="tableClass">
+          <div class="tableHeaderClass">
+            <div
+              class="slds-m-right_xx-small" 
+              style="width:2%"
+              data-id="Collapse All"
+              onclick={collapseAll}
+            >
+              <lightning-icon
+                icon-name="utility:jump_to_right"
+                size="x-small"
+                title="Expand All"
+                if:false={prodAllShow}
+                class="global-icon icon"
+              ></lightning-icon>
+              <lightning-icon
+                icon-name="utility:jump_to_bottom"
+                size="x-small"
+                title="Collapse All"
+                if:true={prodAllShow}
+                class="global-icon icon"
+              ></lightning-icon>
+            </div>
+            <div class="slds-m-right_xx-small" style="width:4%" title="S No">S No</div>
+            <div class="slds-m-right_xx-small" style="width:25%" title="Product Name">
+              Product Name
+            </div>
+            <div class="slds-m-right_xx-small" style="width:10%" title="Material Code">
+              Material Code
+            </div>
+            <div class="slds-m-right_xx-small" style="width:15%" title="First Year Value">
+              First Year Value
+            </div>
+            <div class="slds-m-right_xx-small" style="width:15%" title="Total Price">
+              Total Price
+            </div>
+            <div
+              class="slds-m-right_xx-small" 
+              style="width:14%"
+              title="Recommended Unit Price"
+            >
+              Recommended Unit Price
+            </div>
+            <div class="slds-m-right_xx-small" style="width:10%" title="Prior Year Price">
+              Prior Year Price
+            </div>
+            <div style="width:5%" title="Action">Action</div>
+          </div>
+          <!--Loop through Product List to be displayed on Current Page-->
+          <template
+            for:each={workingOPSWrapperList}
+            for:item="prod"
+            for:index="productIndex"
+          >
+            <div class="slds-grid tableRowClass" key={prod.prodId}>
+              <!--COllapse/Expand functionality for each Product-->
+              <div
+                class="slds-m-right_xx-small" 
+                style="width:2%"
+                key={prod.prodId}
+                data-id={prod.prodCollapseId}
+                onclick={collapseDtl}
+              >
+                <lightning-icon
+                  icon-name="utility:chevronright"
+                  size="xx-small"
+                  title="Expand"
+                  if:false={prod.prodDtlShow}
+                  class="icon"
+                ></lightning-icon>
+                <lightning-icon
+                  icon-name="utility:chevrondown"
+                  size="xx-small"
+                  title="Collapse"
+                  if:true={prod.prodDtlShow}
+                  class="icon"
+                ></lightning-icon>
+              </div>
+              <div class="slds-m-right_xx-small" style="width:4%" title={prod.prodIndex}>
+                {prod.prodIndex}
+              </div>
+              <div
+                class="slds-m-right_xx-small" 
+                style="width:25%"
+                title={prod.oppyProduct.Product2.Name}
+              >
+                <template if:true={prod.showError}>
+                  <div class="errorText">{prod.oppyProduct.Product2.Name}</div>
+                </template>
+                <template if:false={prod.showError}>
+                  {prod.oppyProduct.Product2.Name}
+                </template>
+              </div>
+              <div
+                class="slds-m-right_xx-small" 
+                style="width:10%"
+                title={prod.oppyProduct.MaterialCode__c}
+              >
+                {prod.oppyProduct.MaterialCode__c}
+              </div>
+              <div
+                class="slds-m-right_xx-small" 
+                style="width:15%"
+                title={prod.prodFirstYearValue}
+              >
+                <lightning-formatted-number
+                  value={prod.prodFirstYearValue}
+                  format-style="currency"
+                  currency-code={oppy.CurrencyIsoCode}
+                  currency-display-as="symbol"
+                ></lightning-formatted-number>
+              </div>
+              <div
+                class="slds-m-right_xx-small" 
+                style="width:15%"
+                title={prod.prodTotalPrice}
+              >
+                <lightning-formatted-number
+                  value={prod.prodTotalPrice}
+                  format-style="currency"
+                  currency-code={oppy.CurrencyIsoCode}
+                  currency-display-as="symbol"
+                ></lightning-formatted-number>
+              </div>
+              <div
+                class="slds-m-right_xx-small" 
+                style="width:14%"
+                title={prod.oppyProduct.RecommendedUnitPrice__c}
+              >
+                <lightning-formatted-number
+                  value={prod.oppyProduct.RecommendedUnitPrice__c}
+                  format-style="currency"
+                  currency-code={oppy.CurrencyIsoCode}
+                  currency-display-as="symbol"
+                ></lightning-formatted-number>
+              </div>
+              <div
+                style="width:10%"
+                class="slds-m-right_xx-small"
+                title={prod.oppyProduct.PriorYearTotalSalesPrice__c}
+              >
+                <lightning-formatted-number
+                  value={prod.oppyProduct.PriorYearTotalSalesPrice__c}
+                  format-style="currency"
+                  currency-code={oppy.CurrencyIsoCode}
+                  currency-display-as="symbol"
+                ></lightning-formatted-number>
+
+                <!--Inactive Product indicator
+                <template if:true={prod.isInactiveProduct}>
+                  <lightning-icon
+                    icon-name="utility:record"
+                    alternative-text="Inactive Product"
+                    title="Inactive Product"
+                    size="x-small"
+                    class="delete-icon slds-float_right slds-m-right_small slds-m-top_xx-small"
+                  ></lightning-icon>
+                </template>  -->
+              </div>
+              <div
+                style="width:5%"
+                title={prod.oppyProduct.Product2.Name}
+              >
+                <!-- Delete button for Opportunity Product having status as New-->
+                <template if:true={prod.disableDelete}>
+                  <div data-id={prod.workingIndex}>
+                    <lightning-icon
+                      icon-name="utility:delete"
+                      alternative-text="Delete"
+                      title="Delete"
+                      size="x-small"
+                      class="delete-fade-icon icon"
+                      disabled="true"
+                    ></lightning-icon>
+                  </div>
+                </template>
+                <template if:false={prod.disableDelete}>
+                  <div data-id={prod.workingIndex} onclick={deleteProd}>
+                    <lightning-icon
+                      icon-name="utility:delete"
+                      alternative-text="Delete"
+                      title="Delete"
+                      size="x-small"
+                      class="delete-icon icon"
+                    ></lightning-icon>
+                  </div>
+                </template>
+                <div class="slds-text-align_right"></div>
+              </div>
+              <!--Display/hide popup based on isModalOpen value for Delete Confirmation-->
+              <template if:true={isModalOpen}>
+                <!-- Modal/Popup Box LWC starts here -->
+                <section
+                  key={prod.prodId}
+                  role="dialog"
+                  tabindex="-1"
+                  aria-labelledby={prod.prodId}
+                  aria-modal="true"
+                  aria-describedby={prod.prodIndex}
+                  class="slds-modal slds-fade-in-open"
+                >
+                  <div class="slds-modal__container">
+                    <div class="slds-float_right">
+                      <lightning-button-icon
+                        icon-name="utility:close"
+                        alternative-text="Close"
+                        variant="bare-inverse"
+                        size="large"
+                        onclick={closeModal}
+                        ><label></label
+                      ></lightning-button-icon>
+                    </div>
+                    <!-- Modal/Popup Box LWC header here -->
+                    <header class="slds-modal__header">
+                      <h2
+                        id={prod.prodId}
+                        class="slds-text-heading_medium slds-hyphenate"
+                      >
+                        Confirm Delete
+                      </h2>
+                    </header>
+                    <!-- Modal/Popup Box LWC body starts here -->
+                    <div
+                      class="slds-modal__content slds-var-p-around_medium"
+                      id={prod.prodIndex}
+                    >
+                      <p>
+                        Please confirm if product
+                        <b> {deleteProdName} </b> needs to be deleted?
+                      </p>
+                    </div>
+                    <!-- Modal/Popup Box LWC footer starts here -->
+                    <footer class="slds-modal__footer">
+                      <lightning-button
+                        class="slds-var-m-left_x-small"
+                        onclick={closeModal}
+                        label="Cancel"
+                        >Cancel</lightning-button
+                      >
+                      <lightning-button
+                        class="slds-var-m-left_x-small"
+                        variant="brand"
+                        data-id={prod.workingIndex}
+                        onclick={deleteProdConfirmed}
+                        label="Delete"
+                        >OK</lightning-button
+                      >
+                    </footer>
+                  </div>
+                </section>
+                <div
+                  key={prod.prodId}
+                  class="slds-backdrop slds-backdrop_open"
+                  role="presentation"
+                ></div>
+              </template>
+            </div>
+            <!--Show Product fields to edit details when Expand button is clicked-->
+            <template if:true={prod.prodDtlShow}>
+              <div key={prod.prodId} class="slds-m-bottom_medium">
+                <div class="rTableDiv">
+                  <table
+                    class="slds-table slds-max-medium-table_stacked-horizontal"
+                  >
+                    <tr>
+                      <th class="slds-cell-wrap slds-size_1-of-12 rTableHead">
+                        <strong
+                          ><div>
+                            Status<span class="required"> *</span>
+                          </div></strong
+                        >
+                      </th>
+                      <th class="slds-cell-wrap slds-size_1-of-12 rTableHead">
+                        <strong><div>Is Product at Risk</div></strong>
+                      </th>
+                      <th class="slds-cell-wrap slds-size_1-of-12 rTableHead">
+                        <strong><div>Risk Status</div></strong>
+                      </th>
+                      <th class="slds-cell-wrap slds-size_2-of-12 rTableHead">
+                        <strong
+                          ><div>
+                            License Type<span class="required"> *</span>
+                          </div></strong
+                        >
+                      </th>
+                      <th class="slds-cell-wrap slds-size_1-of-12 rTableHead">
+                        <strong><div>Quantity</div></strong>
+                      </th>
+                      <th class="slds-cell-wrap slds-size_1-of-12 rTableHead">
+                        <strong><div>Discount Type</div></strong>
+                      </th>
+                      <th class="slds-cell-wrap slds-size_1-of-12 rTableHead">
+                        <strong><div>Years</div></strong>
+                      </th>
+                      <th class="slds-cell-wrap slds-size_1-of-12 rTableHead">
+                        <strong><div>Probability</div></strong>
+                      </th>
+                      <th class="slds-cell-wrap slds-size_1-of-12 rTableHead">
+                        <strong><div>Estimated Value at Risk</div></strong>
+                      </th>
+                      <th class="slds-cell-wrap slds-size_2-of-12 rTableHead">
+                        <strong><div>Description</div></strong>
+                      </th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td class="rTableCell">
+                        <template if:true={prod.prodStatusReadOnly}>
+                          <div>
+                            <lightning-formatted-text
+                              value={prod.status}
+                            ></lightning-formatted-text>
+                          </div>
+                        </template>
+                        <template if:false={prod.prodStatusReadOnly}>
+                          <div>
+                            <lightning-combobox
+                              name="status"
+                              value={prod.status}
+                              dropdown-alignment="auto"
+                              variant="label-hidden"
+                              data-id={productIndex}
+                              data-field="ProductStatus"
+                              options={statusPicklistValues}
+                              onchange={handleProdStatusChange}
+                              disabled={autoRenewNoChanges}
+                            ></lightning-combobox>
+                          </div>
+                        </template>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-combobox
+                            name="ProdAtRisk"
+                            variant="label-hidden"
+                            data-id={productIndex}
+                            data-field="IsProductAtRisk"
+                            value={prod.oppyProduct.IsProductatRisk__c}
+                            options={prodAtRiskOptions}
+                            onchange={handleProdAtRiskChange}
+                            disabled={prod.disableIsProdAtRisk}
+                          ></lightning-combobox>
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-combobox
+                            name="RiskStatus"
+                            variant="label-hidden"
+                            data-id={productIndex}
+                            data-field="RiskStatus"
+                            value={prod.oppyProduct.RiskStatus__c}
+                            options={riskStatusPicklistValues}
+                            onchange={handleRiskStatusChange}
+                            disabled={prod.disableRiskStatus}
+                          ></lightning-combobox>
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-combobox
+                            name="LicenseType"
+                            variant="label-hidden"
+                            data-id={productIndex}
+                            dropdown-alignment="auto"
+                            data-field="LicenseType"
+                            value={prod.oppyProduct.LicenseType__c}
+                            options={licensePicklistValues}
+                            onchange={handleLicenseChange}
+                            disabled={autoRenewNoChanges}
+                          ></lightning-combobox>
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-input
+                            type="number"
+                            value={prod.productQty}
+                            data-id={productIndex}
+                            data-field="Quantity"
+                            onchange={onQtyChange}
+                            variant="label-hidden"
+                            disabled={autoRenewNoChanges}
+                            min="1"
+                          ></lightning-input>
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-combobox
+                            name="DiscountType"
+                            data-id={productIndex}
+                            variant="label-hidden"
+                            value={prod.discountType}
+                            options={discountTypeOptions}
+                            onchange={handleDiscTypeChange}
+                            disabled={disableAmounts}
+                          ></lightning-combobox>
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-combobox
+                            name="Years"
+                            data-id={productIndex}
+                            variant="label-hidden"
+                            value={prod.productTermSelected}
+                            options={yearOptions}
+                            onchange={handleTermChange}
+                            disabled={autoRenewNoChanges}
+                          ></lightning-combobox>
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-input
+                            type="number"
+                            value={prod.oppyProduct.Probability__c}
+                            data-id={productIndex}
+                            variant="label-hidden"
+                            onchange={onProbabilityChange}                            
+                            min="0"
+                            max="100"
+                          ></lightning-input> <!--disabled={autoRenewNoChanges}-->
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-input
+                            type="number"
+                            value={prod.oppyProduct.EstimatedValueatRisk__c}
+                            variant="label-hidden"
+                            formatter="decimal"
+                            data-id={productIndex}
+                            onchange={onEstValChange}
+                            disabled={prod.disableRiskStatus}
+                            step="any"
+                          ></lightning-input>
+                        </div>
+                      </td>
+                      <td colspan="3" class="rTableCell">
+                        <div>
+                          <lightning-input
+                            type="text"
+                            value={prod.oppyProduct.Description}
+                            data-id={productIndex}
+                            onchange={onDescriptionChange}
+                            disabled={autoRenewNoChanges}
+                            variant="label-hidden"
+                            maxlength="255"
+                            message-when-too-long="Description must not be more than 255 characters."
+                          ></lightning-input>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table
+                    class="slds-var-m-top_small slds-table slds-max-medium-table_stacked-horizontal"
+                  >
+                    <tr>
+                      <th style="width: 10%" class="rTableHead">
+                        <strong><div># of Locations /Sites</div></strong>
+                      </th>
+                      <th style="width: 10%" class="rTableHead">
+                        <strong><div># of Concurrent Users</div></strong>
+                      </th>
+                      <th style="width: 10%" class="rTableHead">
+                        <strong><div># of Potential User</div></strong>
+                      </th>
+                      <th style="width: 10%" class="rTableHead">
+                        <strong><div># of Authorized Users</div></strong>
+                      </th>
+                      <th style="width: 30%" class="rTableHead">
+                      </th>
+                      <th style="width: 30%" class="rTableHead">
+                      </th>
+                    </tr>
+                    <tr>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-input
+                            type="number"
+                            value={prod.oppyProduct.NumberofLocationsSites__c}
+                            variant="label-hidden"
+                            data-id={productIndex}
+                            onchange={onLocSitesChange}
+                            disabled={autoRenewNoChanges}
+                            min="0"
+                          ></lightning-input>
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-input
+                            type="number"
+                            value={prod.oppyProduct.NumberofConcurrentUsersSeats__c}
+                            variant="label-hidden"
+                            data-id={productIndex}
+                            onchange={onConUsersChange}
+                            disabled={autoRenewNoChanges}
+                            min="0"
+                          ></lightning-input>
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-input
+                            type="number"
+                            value={prod.oppyProduct.NumberofPotentialUsers__c}
+                            variant="label-hidden"
+                            data-id={productIndex}
+                            onchange={onPotUsersChange}
+                            disabled={autoRenewNoChanges}
+                            min="0"
+                          ></lightning-input>
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                        <div>
+                          <lightning-input
+                            type="number"
+                            value={prod.oppyProduct.AuthorizedUsers__c}
+                            variant="label-hidden"
+                            data-id={productIndex}
+                            onchange={onAuthUsersChange}
+                            disabled={autoRenewNoChanges}
+                            min="0"
+                          ></lightning-input>
+                        </div>
+                      </td>
+                      <td class="rTableCell">
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!--Opportunity Product Schedule Table Section-->
+                <div
+                  class="slds-grid slds-wrap slds-size_1-of-1 slds-scrollable"
+                >
+                  <!--If Proration is not applicable to the Product-->
+                  <template if:false={prod.prorationApplied}>
+                    <table
+                      class="schTable slds-table slds-table_cell-buffer slds-max-medium-table_stacked-horizontal slds-var-m-around_small"
+                    >
+                      <thead>
+                        <th class="rTableHead"><strong>Year</strong></th>
+                        <th class="rTableHead">
+                          <strong>Price Book List Price</strong>
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Updated List Price
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Discount Percent(%)
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Discount Amount
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Net Unit Price
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Total Price
+                            </div></strong
+                          >
+                        </th>
+                      </thead>
+                      <tbody>
+                        <template
+                          for:each={prod.lstOPS}
+                          for:item="prodOPS"
+                          for:index="indexOPS"
+                        >
+                          <tr key={prodOPS.Id}>
+                            <td key={prodOPS.Id}>
+                              <strong>{prodOPS.InstallmentYears__c}</strong>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-formatted-number
+                                value={prodOPS.PriceBookListPrice__c}
+                                format-style="currency"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                currency-display-as="symbol"
+                              ></lightning-formatted-number>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-input
+                                type="number"
+                                formatter="decimal"
+                                step=".01"
+                                variant="label-hidden"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                value={prodOPS.ExternalListPrice__c}
+                                min="0"
+                                data-id={indexOPS}
+                                data-prod-index={productIndex}
+                                data-field="External List Price"
+                                onchange={onListPriceChange}
+                                onfocus={onListPriceFocus}
+                                disabled={disableAmounts}
+                                onblur={resetToolTip}
+                              ></lightning-input>
+                              <!--show tooltip message with Indian Levy-->
+                              <template if:true={prodOPS.displayIndianLevy}>
+                                <div
+                                  class="slds-popover_tooltip slds-nubbin_bottom-left slds-is-fixed"
+                                  role="tooltip"
+                                  data-id={indexOPS}
+                                  style="
+                                    position: absolute;
+                                    top: -35px;
+                                    left: 35px;
+                                  "
+                                >
+                                  <div class="slds-popover__body">
+                                    Adjusted List Price is
+                                    <lightning-formatted-number
+                                      value={tooltipmessage}
+                                      format-style="currency"
+                                      class="slds-var-m-left_xx-small"
+                                      currency-code={prodOPS.CurrencyIsoCode}
+                                      currency-display-as="symbol"
+                                    ></lightning-formatted-number>
+                                    due to Indian Levy.
+                                  </div>
+                                </div>
+                              </template>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-input
+                                type="number"
+                                variant="label-hidden"
+                                value={prodOPS.DiscountPercent__c}
+                                data-id={indexOPS}
+                                data-prod-index={productIndex}
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                data-field="Discount Percent"
+                                min="0.00"
+                                max="100"
+                                disabled={prod.discountPrcReadOnly}
+                                onchange={onDiscPercentChange}
+                                message-when-range-overflow="Discount percent cannot be greater than 100%"
+                              ></lightning-input>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-input
+                                type="number"
+                                formatter="decimal"
+                                step=".01"
+                                variant="label-hidden"
+                                value={prodOPS.DiscountAmount__c}
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                data-id={indexOPS}
+                                data-prod-index={productIndex}
+                                data-field="Discount Amount"
+                                min="0.00"
+                                max={prodOPS.ExternalListPrice__c}
+                                disabled={prod.discountAmtReadOnly}
+                                onchange={onDiscAmountChange}
+                                message-when-range-overflow="Discount cannot be greater than Annualized unit price."
+                              ></lightning-input>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-formatted-number
+                                value={prodOPS.SalesPrice__c}
+                                format-style="currency"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                currency-display-as="symbol"
+                              ></lightning-formatted-number>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-formatted-number
+                                value={prodOPS.TotalPrice__c}
+                                format-style="currency"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                currency-display-as="symbol"
+                              ></lightning-formatted-number>
+                            </td>
+                          </tr>
+                        </template>
+                      </tbody>
+                    </table>
+                  </template>
+                  <!--If Proration is applicable to this Product-->
+                  <template if:true={prod.prorationApplied}>
+                    <table
+                      class="schTable slds-table slds-table_cell-buffer slds-max-medium-table_stacked-horizontal slds-var-m-around_small"
+                    >
+                      <thead>
+                        <th class="rTableHead"><strong>Year</strong></th>
+                        <th class="rTableHead">
+                          <strong>Price Book List Price</strong>
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Annualized Unit Price
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Annualized Discount Percent(%)
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Annualized Discount Amount
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Annualized Total Amount
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Pro-Rated Price
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Discount Percent(%) (Pro-Rated)
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Discount Amount (Pro-Rated)
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong
+                            ><div class="slds-var-m-right_small">
+                              Net Unit Price (Pro-Rated)
+                            </div></strong
+                          >
+                        </th>
+                        <th class="rTableHead">
+                          <strong>Total Price (Pro-Rated)</strong>
+                        </th>
+                      </thead>
+                      <tbody>
+                        <template
+                          for:each={prod.lstOPS}
+                          for:item="prodOPS"
+                          for:index="indexOPS"
+                        >
+                          <tr key={prodOPS.Id}>
+                            <td key={prodOPS.Id}>
+                              <strong>{prodOPS.InstallmentYears__c}</strong>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-formatted-number
+                                value={prodOPS.PriceBookListPrice__c}
+                                format-style="currency"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                currency-display-as="symbol"
+                              ></lightning-formatted-number>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-input
+                                type="number"
+                                formatter="decimal"
+                                step=".01"
+                                variant="label-hidden"
+                                value={prodOPS.AnnualizedUnitPrice__c}
+                                min="0"
+                                data-id={indexOPS}
+                                data-prod-index={productIndex}
+                                onchange={onAnnualPriceChange}
+                                onfocus={onAnnualPriceFocus}
+                                disabled={disableAmounts}
+                                onblur={resetToolTip}
+                              ></lightning-input>
+                              <!--show tooltip message with Indian Levy-->
+                              <template if:true={prodOPS.displayIndianLevy}>
+                                <div
+                                  class="slds-popover_tooltip slds-nubbin_bottom-left slds-is-fixed"
+                                  role="tooltip"
+                                  data-id={indexOPS}
+                                  style="
+                                    position: absolute;
+                                    top: -35px;
+                                    left: 35px;
+                                  "
+                                >
+                                  <div class="slds-popover__body">
+                                    Adjusted List Price is
+                                    <lightning-formatted-number
+                                      value={tooltipmessage}
+                                      format-style="currency"
+                                      currency-code={prodOPS.CurrencyIsoCode}
+                                      class="slds-m-left_xx-small"
+                                      currency-display-as="symbol"
+                                    ></lightning-formatted-number>
+                                    due to Indian Levy.
+                                  </div>
+                                </div>
+                              </template>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-input
+                                type="number"
+                                variant="label-hidden"
+                                data-id={indexOPS}
+                                data-prod-index={productIndex}
+                                data-field="Annualized Discount Percent"
+                                value={prodOPS.AnnualizedDiscountPercent__c}
+                                min="0.00"
+                                max="100"
+                                disabled={prod.discountPrcReadOnly}
+                                onchange={onAnnualizedDiscPrcChange}
+                                message-when-range-overflow="Discount percent cannot be greater than 100%"
+                              ></lightning-input>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-input
+                                type="number"
+                                formatter="decimal"
+                                step=".01"
+                                variant="label-hidden"
+                                data-id={indexOPS}
+                                data-prod-index={productIndex}
+                                data-field="Annualized Discount Amount"
+                                value={prodOPS.AnnualizedDiscountAmount__c}
+                                min="0.00"
+                                max={prodOPS.AnnualizedUnitPrice__c}
+                                disabled={prod.discountAmtReadOnly}
+                                onchange={onAnnualizedDiscAmtChange}
+                                message-when-range-overflow="Discount amount cannot be greater than Annualized unit price."
+                              ></lightning-input>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-formatted-number
+                                value={prodOPS.AnnualizedTotalAmount__c}
+                                format-style="currency"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                currency-display-as="symbol"
+                              ></lightning-formatted-number>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-formatted-number
+                                value={prodOPS.ExternalListPrice__c}
+                                format-style="currency"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                currency-display-as="symbol"
+                              ></lightning-formatted-number>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-formatted-number
+                                value={prodOPS.DiscountPercent__c}
+                                format-style="currency"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                currency-display-as="symbol"
+                              ></lightning-formatted-number>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-formatted-number
+                                value={prodOPS.DiscountAmount__c}
+                                format-style="currency"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                currency-display-as="symbol"
+                              ></lightning-formatted-number>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-formatted-number
+                                value={prodOPS.SalesPrice__c}
+                                format-style="currency"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                currency-display-as="symbol"
+                              ></lightning-formatted-number>
+                            </td>
+                            <td key={prodOPS.Id}>
+                              <lightning-formatted-number
+                                value={prodOPS.TotalPrice__c}
+                                format-style="currency"
+                                currency-code={prodOPS.CurrencyIsoCode}
+                                currency-display-as="symbol"
+                              ></lightning-formatted-number>
+                            </td>
+                          </tr>
+                        </template>
+                      </tbody>
+                    </table>
+                  </template>
+                </div>
+                <!--Warning Message if Indian Levy Is applied-->
+                <template if:true={prod.isIndianLevyProd}>
+                  <div
+                    class="slds-notify slds-notify_alert slds-alert_warning"
+                    role="alert"
+                  >
+                    <span class="slds-assistive-text">info</span>
+                    <h2 data-id="indianLevy">{label.IndianLevyMessage}</h2>
+                  </div>
+                </template>
+                <!--Warning Message for Enterprise License Type-->
+                <template if:true={prod.showLTEnterpriseMessage}>
+                  <div
+                    class="slds-notify slds-notify_alert slds-alert_warning"
+                    role="alert"
+                  >
+                    <span class="slds-assistive-text">info</span>
+                    <h2 data-id="licenseTypes">
+                      {label.LicenseTypeEnterpriseMessage}
+                    </h2>
+                  </div>
+                </template>
+                <!--Warning Message for General License Type-->
+                <template if:true={prod.showLTGeneralMessage}>
+                  <div
+                    class="slds-notify slds-notify_alert slds-alert_warning"
+                    role="alert"
+                  >
+                    <span class="slds-assistive-text">info</span>
+                    <h2 data-id="licenseTypes">
+                      {label.LicenseTypeGeneralMessage}
+                    </h2>
+                  </div>
+                </template>
+                <!--Warning Message for FS Products-->
+                <template if:true={prod.fsAlertMessage}>
+                  <div
+                    class="slds-notify slds-notify_alert slds-alert_warning"
+                    role="alert"
+                  >
+                    <span class="slds-assistive-text">info</span>
+                    <h2 data-id="fsAlertMsg">
+                      {prod.fsAlertMessage}
+                    </h2>
+                  </div>
+                </template>
+              </div>
+            </template>
+          </template>
+        </div>
+        <!--Display Paginator-->
+        <c-paginator
+          page-number={pageNumber}
+          page-size={pageSize}
+          total-item-count={totalItemCount}
+          onprevious={handlePreviousPage}
+          onnext={handleNextPage}
+          onpagesize={handlePageSize}
+        ></c-paginator>
+        <div class="paginatorSpace"></div>
+      </template>
+      <!--Display No Products message-->
+      <template if:true={emptyProductList}>
+        <div
+          class="slds-scoped-notification slds-media slds-media_center slds-theme_info"
+          role="status"
+        >
+          <div class="slds-media__figure">
+            <span
+              class="slds-icon_container slds-icon-utility-info"
+              title="info"
+            >
+              <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                <use
+                  xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info"
+                ></use>
+              </svg>
+              <span class="slds-assistive-text">info</span>
+            </span>
+          </div>
+          <div class="slds-media__body">
+            <p>
+              There is no product to be displayed or edited. Please reset or
+              change filter values.
+            </p>
+          </div>
+        </div>
+      </template>
+    </div>
+  </lightning-card>
+</template>

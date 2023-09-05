@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Referral Country</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Referral Countries</value>
+    </caseValues>
+    <fields>
+        <label><!-- IHS ISO Code --></label>
+        <name>IHS_ISO_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- IHS Name --></label>
+        <name>IHS_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indices ISO Code --></label>
+        <name>Indices_ISO_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indices Name --></label>
+        <name>Indices_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- MI ISO Code --></label>
+        <name>MI_ISO_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- MI Name --></label>
+        <name>MI_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Platts ISO Code --></label>
+        <name>Platts_ISO_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Platts Name --></label>
+        <name>Platts_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ratings ISO Code --></label>
+        <name>Ratings_ISO_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ratings Name --></label>
+        <name>Ratings_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Region --></label>
+        <name>Referral_Region__c</name>
+        <relationshipLabel><!-- Referral Countries --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

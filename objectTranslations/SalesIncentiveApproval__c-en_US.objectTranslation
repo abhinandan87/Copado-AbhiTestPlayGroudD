@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Incentive Approval</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Incentive Approvals</value>
+    </caseValues>
+    <fields>
+        <help><!-- Lookup to Campaign --></help>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- Sales Incentive Approvals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Memo field for Commission Team --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Picklist field for commission team --></help>
+        <label><!-- Commission Status --></label>
+        <name>CommissionStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Lost</masterLabel>
+            <translation><!-- Opportunity Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Finance Info</masterLabel>
+            <translation><!-- Waiting on Finance Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Rep Info</masterLabel>
+            <translation><!-- Waiting on Rep Info --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Lookup to user, when users are creating for others --></help>
+        <label><!-- Incentive Owner --></label>
+        <name>IncentiveOwner__c</name>
+        <relationshipLabel><!-- Sales Incentive Approvals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Memo field --></help>
+        <label><!-- Justification --></label>
+        <name>Justification__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to Opportunity --></help>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Sales Incentive Approvals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Check this field to submit this record for approval. --></help>
+        <label><!-- Ready for Submission --></label>
+        <name>Ready_for_Submission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Opportunity Status --></label>
+        <name>RelatedOpportunityStatus__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New --></label>
+        <name>New</name>
+    </webLinks>
+</CustomObjectTranslation>

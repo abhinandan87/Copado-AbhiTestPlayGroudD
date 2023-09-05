@@ -2,9 +2,21 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>User didn&apos;t attend training</fullName>
+        <fullName>6WP Exception</fullName>
         <default>false</default>
-        <label>User didn&apos;t attend training</label>
+        <label>6WP Exception</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Channel Partner</fullName>
+        <default>false</default>
+        <label>Channel Partner</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Commissions/Xactly Inquiry</fullName>
+        <default>false</default>
+        <label>Commissions/Xactly Inquiry</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -14,9 +26,39 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
+        <fullName>Consulting Claim</fullName>
+        <default>false</default>
+        <label>Consulting Claim</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>CRM/SFA Update</fullName>
+        <default>false</default>
+        <label>CRM/SFA Update</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cross Sell</fullName>
+        <default>false</default>
+        <label>Cross Sell</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
         <fullName>Existing problem</fullName>
         <default>false</default>
         <label>Existing problem</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>General Request</fullName>
+        <default>false</default>
+        <label>General Request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Global Account/GAM</fullName>
+        <default>false</default>
+        <label>Global Account/GAM</label>
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
@@ -26,9 +68,93 @@
         <cssExposed>false</cssExposed>
     </standardValue>
     <standardValue>
+        <fullName>Multiyear</fullName>
+        <default>false</default>
+        <label>Multiyear</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
         <fullName>New problem</fullName>
         <default>false</default>
         <label>New problem</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>PO-related</fullName>
+        <default>false</default>
+        <label>PO-related</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Quota Inquiry / Credit Dispute</fullName>
+        <default>false</default>
+        <label>Quota Inquiry / Credit Dispute</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Reopen SSO</fullName>
+        <default>false</default>
+        <label>Reopen SSO</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Reporting Request/Question</fullName>
+        <default>false</default>
+        <label>Reporting Request/Question</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Incentive/Initiative</fullName>
+        <default>false</default>
+        <label>Sales Incentive/Initiative</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>SAP / IDMS</fullName>
+        <default>false</default>
+        <label>SAP / IDMS</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>SME</fullName>
+        <default>false</default>
+        <label>SME</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Split Request</fullName>
+        <default>false</default>
+        <label>Split Request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>User didn&apos;t attend training</fullName>
+        <default>false</default>
+        <label>User didn&apos;t attend training</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Tool Bug</fullName>
+        <default>false</default>
+        <label>Tool Bug</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Price Data Issue</fullName>
+        <default>false</default>
+        <label>Price Data Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Company Data Issue</fullName>
+        <default>false</default>
+        <label>Company Data Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Tool Enhancement</fullName>
+        <default>false</default>
+        <label>Tool Enhancement</label>
         <cssExposed>false</cssExposed>
     </standardValue>
 </StandardValueSet>

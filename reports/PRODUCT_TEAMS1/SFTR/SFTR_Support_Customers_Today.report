@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>David Williams,Jonathan Tsang,Bill Tsang,Que Phuong Dufournet,Hamza Shah,Shreeya Patel,Majid Azaim,Tori Ogundimu,Miguel Coral,Sahil Nangia,Vijayendra Agarwal,Tushar Suri,Atul Panwar,Manya Gupta,Bhavya Khanna,Dishant Sharma,Biswaraj Paul Choudhury,Mishika Gandhi,Daniel Oluyemi,Biswaraj Paul,Biswaraj Paulchoudh,Biswaraj Choudhury,Ravi Navath,Andrew Hibberd,Surneet Bhatia,Pierre Simonet,Abhishek Yadav,Tushar Gupta,Prachi Bhatt,FM | SFTR | Client Services,Rashid Ali,Gargi Nagar,Deepak Ranjan,Barbara Sobocinska</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New,In Progress,Assigned,On Hold,Re-opened,Closed - Resolved,Closed - Referral,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Reassigned,Resolved/Completed,Waiting - 3rd Party,Waiting - Customer,Waiting - Internal Team,Waiting on Approvals,Waiting on Info,Waiting on Requester</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPEN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SFTR Support Customers Today</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

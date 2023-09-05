@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Loop__Contact__c</name>
+        <relationshipLabel><!-- Document Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Id --></label>
+        <name>Loop__Document_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Name --></label>
+        <name>Loop__Document_Name_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Name (text) --></label>
+        <name>Loop__Document_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Link --></label>
+        <name>Loop__Email_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Loop__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Id --></label>
+        <name>Loop__Error_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>Loop__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Queue Id --></label>
+        <name>Loop__Job_Queue_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Id --></label>
+        <name>Loop__Object_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Loop__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emailed</masterLabel>
+            <translation><!-- Emailed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Looped</masterLabel>
+            <translation><!-- Looped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merged</masterLabel>
+            <translation><!-- Merged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <webLinks>
+        <label><!-- Delete --></label>
+        <name>Loop__Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Download_By_Type --></label>
+        <name>Loop__Download_By_Type</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Download_Zip --></label>
+        <name>Loop__Download_Zip</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Detail --></label>
+        <name>Loop__Email_Detail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP_It_Detail --></label>
+        <name>Loop__LOOP_It_Detail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LOOP_It_List --></label>
+        <name>Loop__LOOP_It_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge_Download --></label>
+        <name>Loop__Merge_Download</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Open_Document --></label>
+        <name>Loop__Open_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Related_To --></label>
+        <name>Loop__Related_To</name>
+    </webLinks>
+</CustomObjectTranslation>

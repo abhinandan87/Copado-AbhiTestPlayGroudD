@@ -1,0 +1,11 @@
+<aura:component implements="force:hasRecordId,force:hasSObjectName,force:lightningQuickActionWithoutHeader">
+       <!--style to incraee width-->
+    <aura:html tag="style">
+        .slds-modal__container{
+        max-width: 80rem !important;
+        width:85% !important;
+        }
+    </aura:html>
+ 	<!--c:cyclicalJobsCustomDataTable recordId="{!v.recordId}"></c:cyclicalJobsCustomDataTable-->
+     <c:workRequestCyclicJobs recordId="{!v.recordId}" actionName="Cyclic" onclose="{!c.closeQA}"></c:workRequestCyclicJobs>
+</aura:component>

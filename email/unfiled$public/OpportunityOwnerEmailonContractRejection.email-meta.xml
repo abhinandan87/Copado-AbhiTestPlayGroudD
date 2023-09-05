@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC1-8759: Send notification to Opportunity Owner when Contract is rejected; SFDC1-10088- Added link</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opportunity Owner Email on Contract Rejection</name>
+    <style>none</style>
+    <subject>Order Management Missing Information: Contract - {!Contract.Name}</subject>
+    <textOnly>The following is the status of documentation related to your Contract.
+
+Once you have attached ALL missing paperwork, you must set the stage of your Contract back to &quot;Ready for Processing&quot;. Order Management will NOT be notified unless you run this workflow.
+
+Contract ID#: {!Contract.ContractNumber} 
+Contract Link: {!Contract.Link}  
+Contract Name: {!Contract.Name}
+Account: {!Contract.ContractAccount__c}
+
+
+Please review the items below and work with your Order Management Representative to resolve any issues.
+
+Reason for Rejection: {!Contract.ReasonforRejection__c}
+Comments: {!Contract.AdditionalRejectionInformation__c}
+
+Thanks.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

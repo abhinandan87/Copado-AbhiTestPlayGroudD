@@ -1,0 +1,35 @@
+<apex:page standardController="Account" extensions="SNPCAPIQ.AccountCustomActions" showQuickActionVfHeader="false" standardStylesheets="false">
+    <apex:includeScript value="{!URLFOR($Resource.SNPCAPIQ__SnP_resources, 'js/jquery.min.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.SNPCAPIQ__SnP_SLDS, 'styles/salesforce-lightning-design-system.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.SNPCAPIQ__SnP_SLDS, 'styles/compatibility-hacks.css')}" />
+    <script type="text/javascript" src="/canvas/sdk/js/publisher.js"></script>
+
+    <div class="slds-modal__custom-height">
+        <div class="slds-modal__header">
+            <h2 class="slds-text-heading--medium">Unlink Account</h2>
+        </div>
+        <div class="slds-modal__content">
+            <apex:outputPanel layout="block" rendered="{!isLinkExist}" styleClass="detail slds-text-align--center">
+                Are you sure that you want to unlink this record from S&amp;P Capital IQ?
+            </apex:outputPanel>
+            <apex:outputPanel layout="block" rendered="{!!isLinkExist}" styleClass="detail slds-text-align--center">
+                This account is not linked to S&amp;P Capital IQ.
+            </apex:outputPanel>
+        </div>
+        <div class="slds-modal__footer">
+            <apex:form >
+                <a href="#cancel" class="slds-button slds-button--neutral">Cancel</a>
+                <apex:commandButton action="{!unlink}" value="Ok" rendered="{!isLinkExist}" styleClass="slds-button slds-button--brand"/>
+            </apex:form>
+        </div>
+    </div>
+
+    <script>
+        $$(function() {
+            $$('.slds-button--neutral').click(function(){
+                Sfdc.canvas.publisher.publish({ name: "publisher.close", payload:{ refresh:"false"}});
+                return false;
+            });
+        });
+    </script>
+</apex:page>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.CESScore__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.ResponseDate__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.SurveyType__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.AlertType__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.AlertStatus__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.AlertComments__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.ContactEmail__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aastha Kejriwal,Amar Naik,Amitpreet Singh,Ashwajit Singh,Chhavi Sharma,Eshan Singh,Gimpi Rawal,Jitesh Jangid,Jolly Sinha,Karan Malhotra,Kavya Sridhar,Kawal Nain Singh,Khushbu Srivastava,Kirti Kumari,Mahima Sharma,Md Danish Akhtar,Mukul Jain,Neeraj Jain,Nikhita Rahul Bhandarkar,Nisha Khurana,Nitin Wadhwa,Parth Vashishth,Prerna Panwar,Rahul Jain2,Rishabh Kumar,Ritika Mehra,Rohit Arora,Shashank Gupta,Shikha kanwar,Subhasish Ranjan Das,Tej Pratap Sohi,Urja Malhotra,Vishveshwar Choudhary,Divesh Singh,Ankur Tripathi,Flora Janting,Kamziana Nazwin Kamarulzaman,Shawn Wei Jian Tan,TzeS Koay,Yuen Jing Low,Catherine Oreta,Chau Ting Lau,GuoXin Li,Mizuna Kaneko,Tonje Langaas,Luca Colelli Riano,Sharon Havilah,Thomas Howse,Daniel Palacio,Angela Jou,Anthony Capra,Daniel Flores-Choto,Dayna Vasilko,Evan Dingle,Evan Hendershot,Joel Somerstein,Megan Heintschel,Mohamad AlDafaee,Aakash Sharma,Hiren Mathur,Timothy Saenger,Hemant Kumar,Nikunj Wasson,Jangdimlung Gondaimei,Bhawana Jain,Poornima Sharma,Anamika Gupta,Mayank Bamola,Yamini Sagar,Tze Hui Lim,Dianne Jeong,Bhumika Bairathi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Abhinav Bhandari,Pragya Pal,Kriti Malhotra,Mayuri Goel,Natasha Chaudhary,Ramit Vohra,Smarak Nayak,Shivani Abrol,Somesh Sinha,Vradhi Srivastava,Vivek Kumar Yadav,Ashu Chanana,Karishma Gupta,Vanshika Gupta,Surbhi Kalra,Shikha Bhardwaj,Sukriti Srivastava,Abir Majumder,Aadra Jain,Presinna Thomas,Candice Jing Er Tan,Catherine Tan,Xi Chen,Gaurav Srivastav,Jellenie Estares,Kuldeep Thakur,Tomas Maliska,Benit Kurian,Milana Kelis,Peter Walker,Robert Schweikert,Wilson Lee,Sam Lucchesi,Saurabh Kapoor,Lokesh Taunk,Vandita Agarwal,Evelyn Jayshree,Allen Wang,Angela Ramirez Gonzalez,Sudhesh Sinha,.Monika Nehra,Karan Rautela,Sachin Mishra</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.CaseOwner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MServ-Survey Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>SurveyResponse__c.ResponseDate__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SurveyResponse__c.ResponseDate__c</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

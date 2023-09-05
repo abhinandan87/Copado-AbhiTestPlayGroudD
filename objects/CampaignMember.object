@@ -130,6 +130,7 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>CampaignId</fullName>
+        <inlineHelpText>The ID of the campaign to which the lead or contact belongs.</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -137,9 +138,11 @@
     </fields>
     <fields>
         <fullName>CompanyOrAccount</fullName>
+        <inlineHelpText>The company, if the campaign member is based on a lead, or the account, if the campaign member is based on a contact.</inlineHelpText>
     </fields>
     <fields>
         <fullName>ContactId</fullName>
+        <inlineHelpText>The ID of the contact, if the campaign member is based on a contact.</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -147,44 +150,120 @@
     </fields>
     <fields>
         <fullName>Description</fullName>
+        <inlineHelpText>Description of the lead or contact.</inlineHelpText>
     </fields>
     <fields>
         <fullName>DoNotCall</fullName>
+        <inlineHelpText>Whether the contact wants to be contacted by phone.</inlineHelpText>
     </fields>
     <fields>
         <fullName>Email</fullName>
+        <inlineHelpText>Email address of the lead or contact.</inlineHelpText>
     </fields>
     <fields>
         <fullName>Fax</fullName>
+        <inlineHelpText>Fax number of the lead or contact.</inlineHelpText>
     </fields>
     <fields>
         <fullName>FirstName</fullName>
     </fields>
     <fields>
         <fullName>FirstRespondedDate</fullName>
+        <inlineHelpText>Date the campaign member first responded. (Read only)</inlineHelpText>
     </fields>
     <fields>
         <fullName>HasOptedOutOfEmail</fullName>
+        <inlineHelpText>Whether the contact wants to receive email. </inlineHelpText>
     </fields>
     <fields>
         <fullName>HasOptedOutOfFax</fullName>
+        <inlineHelpText>Whether the contact wants to be included in broadcast faxes.</inlineHelpText>
     </fields>
     <fields>
         <fullName>HasResponded</fullName>
+        <inlineHelpText>Indicates if the campaign member has responded.</inlineHelpText>
     </fields>
     <fields>
         <fullName>LastName</fullName>
     </fields>
     <fields>
         <fullName>LeadId</fullName>
+        <inlineHelpText>The ID of the lead, if the campaign member is based on a lead.</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>LeadOwner__c</fullName>
+        <description>SFDC-3209 - Created to display Lead Owner Name on Related List View</description>
+        <externalId>false</externalId>
+        <formula>IF( LEFT(Lead.OwnerId, 3) = &apos;005&apos;, 
+Lead.Owner:User.FullName__c,
+Lead.Owner:Queue.QueueName 
+)</formula>
+        <label>Lead Owner</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>LeadSource</fullName>
+        <inlineHelpText>Source of lead, for example, Market Generated or Rep Generated.</inlineHelpText>
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>LeadStatus__c</fullName>
+        <description>SFDC-3209 - Created to display Lead Status on Related List View</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Lead.Status)</formula>
+        <label>Lead Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyIDUnique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Legacy Id unique created for Migration purpose</description>
+        <externalId>true</externalId>
+        <label>LegacyIDUnique</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <description>LegacyID created for migration purpose to track legacy ID</description>
+        <externalId>true</externalId>
+        <inlineHelpText>LegacyId from legacy system</inlineHelpText>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacySystem__c</fullName>
+        <description>Legacy System fields created for migration purpose</description>
+        <externalId>false</externalId>
+        <label>LegacySystem</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LegacySystem</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>MobilePhone</fullName>
+        <inlineHelpText>Mobile phone number for the lead or contact.</inlineHelpText>
+    </fields>
+    <fields>
+        <fullName>PKIDCampaignMember__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>CmM{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID CampaignMember</label>
+        <type>AutoNumber</type>
     </fields>
     <fields>
         <fullName>Phone</fullName>
@@ -194,6 +273,7 @@
     </fields>
     <fields>
         <fullName>Salutation</fullName>
+        <inlineHelpText>The salutation for addressing the person, for example, Mr., Ms., Dr., or Prof.</inlineHelpText>
         <type>Picklist</type>
     </fields>
     <fields>
@@ -201,6 +281,7 @@
     </fields>
     <fields>
         <fullName>Status</fullName>
+        <inlineHelpText>The status of the campaign member, for example, Sent or Responded.</inlineHelpText>
         <type>Picklist</type>
     </fields>
     <fields>
@@ -208,6 +289,7 @@
     </fields>
     <fields>
         <fullName>Title</fullName>
+        <inlineHelpText>The title of the lead or contact, for example, President.</inlineHelpText>
     </fields>
     <sharingModel>ControlledByCampaign</sharingModel>
 </CustomObject>

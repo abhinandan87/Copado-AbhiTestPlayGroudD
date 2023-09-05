@@ -1,0 +1,12 @@
+<aura:component implements="force:hasRecordId,force:hasSObjectName,force:lightningQuickActionWithoutHeader">
+       <!--style to incraee width-->
+    <aura:html tag="style">
+        .slds-modal__container{
+        max-width: 80rem !important;
+        width:80% !important;
+        }
+    </aura:html>
+    <!--c:pLCJobMultipartDataTable recordId="{!v.recordId}" ac></c:pLCJobMultipartDataTable-->
+    <c:workRequestCyclicJobs recordId="{!v.recordId}" actionName="Multipart" onclose="{!c.closeQA}"></c:workRequestCyclicJobs>
+ 	
+</aura:component>

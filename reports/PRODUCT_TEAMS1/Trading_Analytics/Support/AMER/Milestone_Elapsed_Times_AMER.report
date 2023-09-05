@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_94602890</developerName>
+        <masterLabel>Elapsed Times</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>ELPSD_TIME_MINS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>Not Actioned</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+                <to>30</to>
+            </sourceValues>
+            <value>Less than 30 mins</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>30</from>
+                <to>60</to>
+            </sourceValues>
+            <value>30 - 60 mins</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>60</from>
+                <to>120</to>
+            </sourceValues>
+            <value>60 - 120 mins</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>120</from>
+            </sourceValues>
+            <value>More than 120 mins</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ELPSD_TIME_MINS</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ELPSD_TIME_HRS</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Milestone Elapsed Times - AMER</description>
+    <filter>
+        <booleanFilter>1 AND 12 AND (2 OR 3 OR 4 OR 5 OR 6 OR 8 OR 9 OR 10 OR 11) AND 7</booleanFilter>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Trading Analytics</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Janet Burke</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Stephanie Ginsberg</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Daniel DeWitt</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Marco Sprenkle</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Montel Hardy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>First Response Time</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Randy Lii</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Christopher Perry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Paul Rennard</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Colton Spence</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>duplicate</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_94602890</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>IS_VIOLATED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Milestone Elapsed Times - AMER</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseMilestone@Case.ProductFamily__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-06-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_54660173</developerName>
+        <masterLabel>Week</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.CaseAgeBusinessDays__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>7</to>
+            </sourceValues>
+            <value>Week 1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>7</from>
+                <to>14</to>
+            </sourceValues>
+            <value>Week 2</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>14</from>
+                <to>21</to>
+            </sourceValues>
+            <value>Week 3</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>21</from>
+                <to>28</to>
+            </sourceValues>
+            <value>Week 4</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>28</from>
+                <to>35</to>
+            </sourceValues>
+            <value>Week 5</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>35</from>
+                <to>42</to>
+            </sourceValues>
+            <value>Week 6</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>42</from>
+                <to>49</to>
+            </sourceValues>
+            <value>Week 7</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>49</from>
+                <to>56</to>
+            </sourceValues>
+            <value>Week 8</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>56</from>
+                <to>63</to>
+            </sourceValues>
+            <value>Week 9</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>63</from>
+                <to>70</to>
+            </sourceValues>
+            <value>Week 10</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>70</from>
+                <to>77</to>
+            </sourceValues>
+            <value>Week 11</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>77</from>
+                <to>84</to>
+            </sourceValues>
+            <value>Week 12</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>84</from>
+                <to>91</to>
+            </sourceValues>
+            <value>Week 13</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>91</from>
+                <to>98</to>
+            </sourceValues>
+            <value>Week 14</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>98</from>
+                <to>105</to>
+            </sourceValues>
+            <value>Week 15</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>105</from>
+                <to>112</to>
+            </sourceValues>
+            <value>Week 16</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>112</from>
+                <to>119</to>
+            </sourceValues>
+            <value>Week 17</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>119</from>
+                <to>126</to>
+            </sourceValues>
+            <value>Week 18</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>126</from>
+                <to>133</to>
+            </sourceValues>
+            <value>Week 19</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>133</from>
+            </sourceValues>
+            <value>20 or More</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CREATED_DATE</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Goldfire</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DB Case per week Open</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2021-07-28</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-02-01</startDate>
+    </timeFrameFilter>
+</Report>

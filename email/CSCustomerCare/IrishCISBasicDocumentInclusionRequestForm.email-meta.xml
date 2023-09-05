@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request for document inclusion into the Irish Construction Information Service (Core Basic) to 3rd Party Provider Team the NBS: TCIS TCIS@theNBS.com .</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>IHSAutomotiveLetterhead</letterhead>
+    <name>Irish CIS Basic - Document Inclusion Request Form</name>
+    <style>formalLetter</style>
+    <subject>Irish CIS Basic - Document Inclusion Request Form – Case {!Case.CaseNumber}– {!Case.OwnerFullName}</subject>
+    <textOnly>Dear Team,
+
+
+
+Please can you assist with below document inclusion and advise at your earliest convenience?
+
+
+
+Below you will find subscription details:
+
+Call Details
+
+Customer care – Please copy Account Manager
+
+IHS Markit Case ID
+
+{!Case.CaseNumber}
+
+IHS Markit Case Owner
+
+{!Case.OwnerFullName}
+
+Company Name
+
+
+{!Case.Account}
+
+IHS Markit Syst. Account
+
+
+Customer Name
+
+
+{!Case.Contact}
+
+Supplement details
+
+Irish Core Basic (no supplements)
+
+Date Call/Case received
+
+{!Case.CreatedDate}
+
+Document Number
+
+Document Title
+
+
+Request Info from Customer
+
+
+Additional Info from Customer Care
+
+i.e. customer subscribing to other UK Local products such as OHSIS, TSS, Env. Management, etc.
+
+
+NBS Response for Customer
+
+
+Date response sent to Customer Care
+
+
+Any follow up required?
+
+
+
+Looking forward to your response.
+
+
+
+Kind regards,
+
+{!Case.OwnerFirstName} {!Case.OwnerLastName}
+
+IHS Markit | Customer Care</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

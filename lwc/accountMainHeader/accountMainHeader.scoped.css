@@ -1,0 +1,14 @@
+.logo-size{
+    width: 201px;
+    height: auto;
+}
+
+.text-styles{
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline;
+    padding: 0px 8px;
+}

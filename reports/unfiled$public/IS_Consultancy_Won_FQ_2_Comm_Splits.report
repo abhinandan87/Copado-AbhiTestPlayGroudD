@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesSpecialists__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>PROD_SPLIT_PERCENTAGE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>(IF(
+    
+OR(
+
+(Opportunity.ContractEndDate__c-Opportunity.ContractStartDate__c)/365&lt;1,
+(Opportunity.ContractEndDate__c-Opportunity.ContractStartDate__c)=365,
+(Opportunity.ContractEndDate__c-Opportunity.ContractStartDate__c)=364
+
+), 
+
+OpportunityLineItem.AnnualizedTotalAmount__c.CONVERT,
+
+OpportunityLineItem.AnnualizedTotalAmount__c.CONVERT/((Opportunity.ContractEndDate__c-Opportunity.ContractStartDate__c)/365)))*
+
+PROD_SPLIT_PERCENTAGE</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>oppy term/365</description>
+        <developerName>CDF1</developerName>
+        <label>Annualized Value (converted)</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Split Opps with Product - 12/08/2021</description>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - General Service Account,Place Holder - IHS Markit Internal Employees,Place Holder - Sales,Place Holder - Self Registered Users Account,Place Holder - Unknown Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.InternalBusinessSegment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>financial,information,issuer,platform,solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.BusinessLine2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Issuer sol</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.AAG__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Consulting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Expert Connect</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PROD_SPLIT_MEMBER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>IS Consultancy Won FQ - 2% Comm Splits</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProductSplit</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_PREV1</interval>
+    </timeFrameFilter>
+</Report>

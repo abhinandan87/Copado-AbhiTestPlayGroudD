@@ -1,0 +1,4 @@
+<aura:component implements="force:lightningQuickAction">
+    <c:navigateToSNow></c:navigateToSNow>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+</aura:component>

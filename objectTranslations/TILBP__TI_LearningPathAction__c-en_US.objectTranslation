@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TILBP__Contact__c</name>
+        <relationshipLabel><!-- TI Learning Path Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Milestone Name --></label>
+        <name>TILBP__MilestoneName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>TILBP__Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- TI ID --></label>
+        <name>TILBP__TI_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- TI Content --></label>
+        <name>TILBP__TI_SFContent__c</name>
+        <relationshipLabel><!-- TI Learning Path Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timestamp --></label>
+        <name>TILBP__Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TILBP__Type__c</name>
+    </fields>
+</CustomObjectTranslation>

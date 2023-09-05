@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>CDF1:SUM/ PARENTGROUPVAL(RowCount,GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Percent on Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Records</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>PLCJob__c.DefectFree10__c:SUM / PARENTGROUPVAL(RowCount,GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA3</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Percent Error Free</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF(AND(PLCJob__c.DefectFree10__c:SUM=1,PLCJob__c.OnTime1__c:SUM=1),1,0)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>On Time Counter</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>WorkRequestForm__c.PLCJobs__r$Name</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.PLCJobs__r.JobTask__r$Name</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$Name</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$OpportunityNumber__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$PrimarySalesContact__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$SecondarySalesContact__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>WorkRequestForm__c.PLCJobs__r.JobTask__r$EstimatedHours__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>WorkRequestForm__c.PLCJobs__r.JobTask__r$ActualHours__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.PLCJobs__r$OnTime__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(AND(PLCJob__c.OnTime1__c=1,PLCJob__c.DefectFree10__c=1),1,0)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label># On Time</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>(1 OR (4 AND 5)) AND 2 AND 3 AND 6 AND 7 AND 8</booleanFilter>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r$Team1__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>MR-Market Reporting BI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r$NegotiatedDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_FISCAL_YEAR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r$JobStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Job Cancelled,Job On Hold</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r$Team1__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Canada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r.JobTask__r$AssignedTo__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Kiwako Kawanishi,Sonja Kecman,Sameer Setia,Himanshu Sati,Siddhant Pahuja,Swechchha Agarwal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r$JobType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ad Hoc,Cyclical,Lights Out Process</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r$NegotiatedDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>THIS_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r$JobStatusOverride__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Job Cancelled,Job On Hold</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>WorkRequestForm__c.PLCJobs__r$NegotiatedDate__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>WorkRequestForm__c.PLCJobs__r$JobType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>WorkRequestForm__c.PLCJobs__r.JobTask__r$AssignedTo__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Bob PLC Job Task Late</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>WRFwithPLCJobswithJobTasks__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>WorkRequestForm__c.PLCJobs__r$NegotiatedDate__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

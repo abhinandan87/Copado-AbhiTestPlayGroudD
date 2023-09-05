@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_80176257</developerName>
+        <masterLabel>Opportunity Stage</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Proposal Development</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4.1-Proposal/Quote Delivery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4.2-Verbal Commit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Renewal Won</sourceValue>
+            </sourceValues>
+            <value>Closed Won</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_34637288</developerName>
+        <masterLabel>Stage</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Proposal Development</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4.1-Proposal/Quote Delivery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4.2-Verbal Commit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <value>Closed Won</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.TotalSalesPriceRollup__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_MONTH</field>
+    </columns>
+    <columns>
+        <field>NEXT_STEP</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.GlobalSegments__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.InternalBusinessSegment__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProcessedContractNum__c</field>
+    </columns>
+    <columns>
+        <field>CONTRACT.CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.OriginatingContractsAutoRenewal__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Craig Cunningham,Phil Joyce,Joe Binkley,Brian Cahill,Paul Marcus,Robert Gardner,David Bergquist,Daniel Owens</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SalesNewPrice__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.NewBusiness</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>KYLE Report - Weekly Friday</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CLOSE_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

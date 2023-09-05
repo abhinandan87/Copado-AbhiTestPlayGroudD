@@ -20,4 +20,34 @@
         <label>Draft</label>
         <groupingString>Draft</groupingString>
     </standardValue>
+    <standardValue>
+        <fullName>Creation</fullName>
+        <default>false</default>
+        <label>7-Creation</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>InternalApprovals</fullName>
+        <default>false</default>
+        <label>8-Internal Approvals</label>
+        <groupingString>InApproval</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Generation</fullName>
+        <default>false</default>
+        <label>9-Generation</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>ReadyForProcessing</fullName>
+        <default>false</default>
+        <label>10-Ready for Processing</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete</fullName>
+        <default>false</default>
+        <label>11-Completed</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
 </StandardValueSet>

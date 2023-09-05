@@ -1,0 +1,20 @@
+Content Experts,
+
+We have assigned Case number {!Case.CaseNumber} to this issue. Please see the below request and advise
+
+SDO:
+Document Number:
+Date/Dates:
+Revision:
+Product Line: 
+Media:
+PCN/ Sales Order number:
+Title: 
+
+Original Case Description:{!Case.Description}
+
+Looking forward to your response.
+
+Kind regards,
+{!Case.OwnerFirstName} {!Case.OwnerLastName}
+IHS Markit | Customer Care

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product2.MaterialCode__c</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.SubBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Family__c</field>
+    </columns>
+    <columns>
+        <field>Product2.InternalProductName__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Product2.DeliveryReferenceID__c</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>SME Template Updated List</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Product Design,Haystack</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.InternalProductName__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>DO NOT USE,DNU</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>ES Product Listing Template</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList@Product2.BusinessLine2__c</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

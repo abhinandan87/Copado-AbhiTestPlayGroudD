@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Reg and Compliance | Billing</name>
+    <queueMembers>
+        <users>
+            <user>adam.daneke@ihsmarkit.com</user>
+            <user>angelo.francisco@ihsmarkit.com</user>
+            <user>caleb.corbett@ihsmarkit.com</user>
+            <user>connor.mullis@ihsmarkit.com</user>
+            <user>holly.grizzle@ihsmarkit.com</user>
+            <user>jacob.miller@ihsmarkit.com</user>
+            <user>john.matusewicz@ihsmarkit.com</user>
+            <user>julie.han@ihsmarkit.com</user>
+            <user>kerri.willey@ihsmarkit.com</user>
+            <user>lizandra.alvarado@ihsmarkit.com</user>
+            <user>manuel.familiar@ihsmarkit.com</user>
+            <user>mason.mcmillion@ihsmarkit.com</user>
+            <user>meghan.delcastillo@ihsmarkit.com</user>
+            <user>michael.davidson@ihsmarkit.com</user>
+            <user>michele.morgan@ihsmarkit.com</user>
+            <user>michell.arthur@ihsmarkit.com</user>
+            <user>rachel.stolfi@ihsmarkit.com</user>
+            <user>yesenia.mendoza@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Post assigning DocuSign license</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Post DocuSign access</name>
+    <style>none</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Good day!
+
+A DocuSign license has been assigned to you.
+
+You must have received an email with a link to activate your Docusign license. Kindly follow the steps mentioned in that email.
+
+Let me know if I can assist you with anything else.
+
+Regards,
+{!Case.OwnerFullName}
+Salesforce Configuration Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

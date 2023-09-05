@@ -1,0 +1,4 @@
+<apex:page controller="TILBP.TIPortalController" lightningStylesheets="true">
+    <apex:pageMessages escape="false" rendered="{! ISNULL(url) }" />
+    <apex:iframe src="{!url}" scrolling="true" id="iframeId" rendered="{! !ISNULL(url) }"/>
+</apex:page>

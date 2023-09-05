@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CC | Customer Experience Team</name>
+    <queueMembers>
+        <users>
+            <user>aishna.jain@ihsmarkit.com</user>
+            <user>kinnerey.patel@ihsmarkit.com</user>
+            <user>saumya.mody@ihsmarkit.com</user>
+            <user>suneet.raniga@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

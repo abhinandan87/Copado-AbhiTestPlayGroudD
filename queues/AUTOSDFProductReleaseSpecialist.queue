@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>AUTOS | DF – Product Release Specialist</name>
+    <queueMembers>
+        <users>
+            <user>caterina.ienco@ihsmarkit.com</user>
+            <user>jason.corn@ihsmarkit.com</user>
+            <user>jennifer.lane@ihsmarkit.com</user>
+            <user>kelsey.hines@ihsmarkit.com</user>
+            <user>krystyna.brusca@ihsmarkit.com</user>
+            <user>leah.dunn@ihsmarkit.com</user>
+            <user>matt.safran@ihsmarkit.com</user>
+            <user>pallavi.chawla@ihsmarkit.com</user>
+            <user>patrick.weiss@ihsmarkit.com</user>
+            <user>sandra.donaldson@ihsmarkit.com</user>
+            <user>vandana.neuman@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>true</blockedByApiWhitelisting>
+    <consumerKey>3MVG9IHf89I1t8ho3E3rmW6POGTMJJyoIRBlSJV22Zco1owIX_mCy8_epO7vZnnv32_jWaZ25DOcGatoSW2Ce</consumerKey>
+    <consumerName>Slack</consumerName>
+    <masterLabel>BlacklistedConsumer180989812738243</masterLabel>
+</BlacklistedConsumer>

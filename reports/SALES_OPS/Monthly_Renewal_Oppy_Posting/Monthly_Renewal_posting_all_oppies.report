@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Contracts__r$ContractNumber</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$OpportunityCountry__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.NewBusiness,Opportunity.Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Contracts__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contract.Consulting,Contract.OrderForm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Contracts__r$ContractStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Validated,Invoiced,Approved &amp; Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Contracts__r$RenewalDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_FISCAL_YEAR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Contracts__r$RenewalTerm__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Evergreen,One-time Expiring</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Monthly Renewal posting - all oppies</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunitywithContracts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

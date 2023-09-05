@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/10560</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Field for reporting purposes only.  10560 = 22 working days, with 8 hrs per working day, 60 min per hour</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent Monthly FTE</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Sime Spent in Hours</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent (Hours)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_52341685</developerName>
+        <masterLabel>Time Spent Bucket</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.TimeSpentMinutes__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>60</to>
+            </sourceValues>
+            <value>&lt;60 mins</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>60</from>
+                <to>1,440</to>
+            </sourceValues>
+            <value>60 mins - 24 hrs</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1,440</from>
+            </sourceValues>
+            <value>More than 24 hrs</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>GBP</currency>
+    <description>TimeSpent-All Prods by Product-Resources</description>
+    <filter>
+        <booleanFilter>(1 AND 3) AND (2 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Accumap-Data,AccuLogs,Accumap,Accumap-Midstream,Accumap-Software,Asset Valuation,Base Chemcicals,Basin Data,Chemical Consulting,Chemical Cost Curve Service,Chemical Events,Chemical Handbooks: Speciality Chemicals,Chemical Information &amp; Same Day Analysis,Chemical PP,Chemical Reports: Custom,Chemical Reports: PEP,Chemical Technology Analytics Reports,Chemicals Royalties,Coal Consulting,Coal Events,Coal Indices,Coal Publications &amp; Indices,Coal,Community,Companies &amp; Transactions,Company Insight,Company Strategies and Performance,Content Delivery Intl Mid,Content Delivery Intl,Content Delivery NA,Content Delivery Partner,Content Partners NA,Context Distribution/Content,Costs &amp; Technology,Crude Oil Markets,Culture Data NA,Data Management Content Intl,Data Management Content NA,Data Management Services NA,Digital Logs NA,DMS Midstream,DNA,Downstream Analytics,Downstream Consulting,Downstream PP,Drilling Data NA,Drilling Wire NA,E&amp;P Content Intl,E&amp;P Terms &amp; Above Ground Risks,EDM Base,EGIS Can,EGIS Midstream,Energy Documents,Energy News on Demand,Engineering Data NA,Engineering Training &amp; Client Services,Environmental Data NA,eTriever,EV Recharge Locations,Evolution,EWP Consulting,EWP Events,EWP Financial,EWP Non-Financial,EWP Paid Presentations,EWP Trans</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Access,Billing,Data,Notifications,Product Assistance,Training,User Administration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Field Maps NA,FieldDirect,Fuel Prices,General Energy Data Services &amp; Fees,Geopolitical Data NA,GeoSyn Data,GeoWebWorks Can,GIS Data NA,GIS Mistream,Global Gas,Global Markets,Harmony Enterprise,Harmony,Interpreted Tops,Kingdom,Land Data Can,Land Data US,Land Data,LAS Tools,Log Digitizing Services,LogArc / LogTech,Logs &amp; Seismic Data Intl,LPG Events,Market Advisory Service (MAS),Market Daily Services,Metals &amp; Mining,Midstream Oil &amp; Gas Data,Midstream Oil &amp; NGL,Midstream,NAPD Other,NAPD,NAVX Other,NAVX Retail,Oil &amp; Gas Data,OMDC Consulting,OMMD Data,OMMD MCS,OPIS Rack,OPIS Retail,OPIS Spot,Optimize,Paid Presentations,Parking Availability,PCGR Consulting,PCGR MCS,PCGR PP,PCGR Services Trans,PCGR Services,Perform,Performance Evaluator NA,Petra Energy Data,Petra,Petrodata,Piper,Plan Distribution Service,Plays &amp; Basins,PointLogic Energy,Power &amp; Renewables,Power &amp; Transmission Data NA,PowerTools,Production Data NA,Production Engineering Services,Que$tor,Raster Logs NA,Rig Data NA,Seismic Surveys NA,Specialty Chemicals,SubPUMP,Surcharges,Technical Analytics,The Energy Daily,Topography Data NA,Training and Client Services,Trench Data NA,Upstream Consulting,Upstream Intelligence,Upstream Technical Consulting,Upstream View,US Offshore Lease Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>US Well Data,Validata,Valtus,Vantage Discontinued,Well Data Intl,Well Data NA,Well Log Downloader,WellTest,World Analysis</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_52341685</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.TimeSpentMinutes__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TimeSpent-All Prods by Product-Resources</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.ProductGroup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

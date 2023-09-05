@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SWS Delivery Timings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SWS Delivery Timings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Custom Work --></label>
+        <name>CustomWork__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard Plus add on --></label>
+        <name>StandardPlusaddon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard Request --></label>
+        <name>StandardRequest__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

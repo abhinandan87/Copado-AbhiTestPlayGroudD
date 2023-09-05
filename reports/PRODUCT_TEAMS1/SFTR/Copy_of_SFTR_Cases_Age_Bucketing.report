@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_75882076</developerName>
+        <masterLabel>Bucketing of Age</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>2</to>
+            </sourceValues>
+            <value>0-1 Day</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+                <to>5</to>
+            </sourceValues>
+            <value>2 - 5 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>5</from>
+                <to>10</to>
+            </sourceValues>
+            <value>5 - 10 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>10</from>
+                <to>15</to>
+            </sourceValues>
+            <value>10 - 15 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>15</from>
+            </sourceValues>
+            <value>Greater than 15</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_40648822</developerName>
+        <masterLabel>Final Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Re-opened</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Active Waiting for info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - 3rd Party</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - Internal Team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Approvals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Requester</sourceValue>
+            </sourceValues>
+            <value>Waiting</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.CaseAgeBusinessDays__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jonathan Tsang,Bill Tsang,Que Phuong Dufournet,Hamza Shah,Shreeya Patel,Miguel Coral,Sahil Nangia,Atul Panwar,Manya Gupta,Bhavya Khanna,Dishant Sharma,Biswaraj Paul Choudhury,Mishika Gandhi,Daniel Oluyemi,Biswaraj Paul,Biswaraj Paulchoudh,Biswaraj Choudhury,Andrew Hibberd,Pierre Simonet,Abhishek Yadav,Prachi Bhatt,FM | SFTR | Client Services,Rashid Ali,Gargi Nagar,Deepak Ranjan,Barbara Sobocinska,Daniel Gualtieri,Paridhi Garg,Samuel Chan,Eraldo Palamani,Matthew Thomas,Kajal Sharma</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New,In Progress,Assigned,On Hold,Re-opened,Reassigned,Waiting - 3rd Party,Waiting - Customer,Waiting - Internal Team,Waiting on Approvals,Waiting on Info,Waiting on Requester</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SFTR</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_75882076</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SFTR Cases Age Bucketing</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2022-06-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-07-13</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,12 @@
+<template>
+    <template if:true={listDataTypes}>
+        <div class="slds-size_1-of-1 slds-no-print">
+            <lightning-button label="Print" variant="Neutral" onclick={handleWindowPrint}>
+            </lightning-button>
+        </div>
+        <template for:each={listDataTypes} for:item="dataType">
+            <c-wrf-request-type-country-grid-view key={dataType} record-id={recordId} request-type={requestType}
+                d-type-value={dataType}></c-wrf-request-type-country-grid-view>
+        </template>
+    </template>
+</template>

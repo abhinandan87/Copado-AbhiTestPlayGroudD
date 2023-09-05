@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_50556171</developerName>
+        <masterLabel>FCM Sales</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Susan Brennan-Weldon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chris Kiser</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patricia Alleyne</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charles Graves</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patrick Lynch</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sinead Tucker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lindsay Moseley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charles O&apos;Brien</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sarah Danan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chris Alstadt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stuart Rawlings</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Silvina Melendez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emi Kakumaru</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>An Shun Tan</sourceValue>
+            </sourceValues>
+            <value>FCM Sales</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_95621956</developerName>
+        <masterLabel>Opp USD 30K</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Opportunity.Amount__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>30,000</to>
+            </sourceValues>
+            <value>Less than USD 30K</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>30,000</from>
+            </sourceValues>
+            <value>More than USD 30K</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Unique</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Opportunity.Opportunitynum__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Opportunity.ContractEndDate__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_95621956</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Amount__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>BucketField_50556171</field>
+    </columns>
+    <columns>
+        <field>User.HRBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>CON.EMAIL</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.CustomerRegion__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesRegion__c</field>
+    </columns>
+    <columns>
+        <field>Account.PKIDAccount__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY.CURRENCY_ISO_CODE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityRecordType__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND (10 AND 11)</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Upstream Insight,Agri,Crop,Animal Health,Agri Consulting,Agriculture,Biofuels,Chemical,Chemical Cost Curve Service,Chemical Handbooks: Specialty Chemicals,Chemical Information &amp; Same Day Analysis,Chemical Reports: PEP,Climate &amp; Emissions,Commodities &amp; Food,Companies &amp; Transactions,Company Strategies and Performance,Connect,Costs &amp; Technology,Crop Protection &amp; Seeds,Crude Oil Markets,CSG: Investing in Energy,E&amp;P Terms &amp; Above Ground Risks,Energy Technology,EWP Financial,EWP Non-Financial,Fertilizers,Global Gas,GPE Cross Energy,GPE: Financials,Insight Bundle,Midstream Oil &amp; NGL,OMMD Data,P&amp;P Supply Chain - Procurement &amp; Agriculture,PCGR Services,PEPS,Plays &amp; Basins,PointLogic Energy,Policy &amp; Regulation,Power &amp; Renewables,Refining,Specialty Chemicals</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ForecastCategory__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Omitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.BusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>OPIS,Pricing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.LicenseType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>One Off</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Adrianna Duran</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Amount__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.LicenseType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>One Time License</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.NewBusiness,Opportunity.Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ContractEndDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>5/1/2023</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ContractEndDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>7/31/2023</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_95621956</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.BusinessLine__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Opportunity.ContractEndDate__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>6 Month Health Check</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct@Product2.BusinessLine2__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

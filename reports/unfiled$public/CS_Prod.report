@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Case.ClosedReason__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Report for Dashboard presentations!</description>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,New,In Progress,Assigned,On Hold,Re-opened,Active Waiting for info,Closed - Canceled,Closed - Resolved,Assigned to HD Associate,Closed - Referral,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Customer Responded,Delete,Duplicate,Entered Ticket,Reassigned,Referral,Researching,Resolved/Completed,Resolved/No Response,Waiting - 3rd Party,Waiting - Customer,Waiting - Internal Team,Waiting on Approvals,Waiting on Info,Waiting on Requester,Trial Approved,Contract Signed,Connectivity,Live,Closed,Escalated,Testing,User Access Granted,Initial Delivery Complete,Install Complete,Welcome Package Sent,Auto-Closed – No Action Taken,Validated,Validated PO Pending,Validated-POD Pending,Validated-BSI Pending,Validated by ConsOps,Rejected,Canceled,Moved to Tier2 Support,Updated,Closed - Moved to Jira,Merged,Pending Second Review</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | CTI | Client Support</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Trishla Dixit,Ashish Makhija,Vinay Sharma,Heather Scoggins,Emely Javier,Beverly Toby,Candice Bergeron,Prabhpreet Singh,Ayushi Sinha,katelyn moore</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.ProductModule__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>cti</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$AdditionalCaseFields__c.IssueArea__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.PreviousQueue__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CS Prod</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2021-10-06</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-09-30</startDate>
+    </timeFrameFilter>
+</Report>

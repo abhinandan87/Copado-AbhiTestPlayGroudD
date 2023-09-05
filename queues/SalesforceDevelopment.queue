@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Salesforce Development</name>
+    <queueMembers>
+        <users>
+            <user>anjani.shukla@ihsmarkit.com</user>
+            <user>ankita.singh@ihsmarkit.com</user>
+            <user>harshit.singhal@ihsmarkit.com</user>
+            <user>jagadesh.dara@ihsmarkit.com</user>
+            <user>rohit.reddy@ihsmarkit.com</user>
+            <user>mohit.modi@ihsmarkit.com</user>
+            <user>paras.dhingra@ihsmarkit.com</user>
+            <user>poonam.choudhary@ihsmarkit.com</user>
+            <user>prachi.bhasin@ihsmarkit.com</user>
+            <user>sruti.srivastava@ihsmarkit.com</user>
+            <user>tommy.aarts@ihsmarkit.com</user>
+            <user>tran-vu.tran@ihsmarkit.com</user>
+            <user>twan.vanderloo@ihsmarkit.com</user>
+            <user>uttam.arya@ihsmarkit.com</user>
+            <user>vishnu.vardhan@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

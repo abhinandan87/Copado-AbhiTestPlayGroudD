@@ -1,0 +1,14 @@
+<template>
+    <lightning-record-view-form record-id={recordId} object-api-name="PLCJob__c">
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+            <template for:each={listFields} for:item="field" for:index="index">
+                <div key={field} class={styleClass}>
+                    <div class="slds-m-around_xx-small">
+                        <lightning-output-field key={field.apiName} field-name={field}>
+                            </lightning-output-field>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-record-view-form>
+</template>

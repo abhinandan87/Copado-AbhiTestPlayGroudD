@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>mk-csinvestmentservices@markit.com</email>
+    <name>FM | MarkitHub</name>
+    <queueMembers>
+        <users>
+            <user>beth.emmert@ihsmarkit.com</user>
+            <user>robert.curtis@ihsmarkit.com</user>
+            <user>brandon.murnane@ihsmarkit.com</user>
+            <user>fraser.morris@ihsmarkit.com</user>
+            <user>gary.ge@ihsmarkit.com</user>
+            <user>joel.gamzon@ihsmarkit.com</user>
+            <user>ksenija.shambrook@ihsmarkit.com</user>
+            <user>makhosi.dlamini@ihsmarkit.com</user>
+            <user>olga.scerbatiuk@ihsmarkit.com</user>
+            <user>priscilla.kim@ihsmarkit.com</user>
+            <user>shellie.howard@ihsmarkit.com</user>
+            <user>terri.ditlow@ihsmarkit.com</user>
+            <user>thomas.hodds@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

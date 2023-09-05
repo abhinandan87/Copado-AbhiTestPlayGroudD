@@ -2,6 +2,12 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
+        <fullName>Approved/Published</fullName>
+        <default>false</default>
+        <label>Approved/Published</label>
+        <reviewed>false</reviewed>
+    </standardValue>
+    <standardValue>
         <fullName>Draft</fullName>
         <default>true</default>
         <label>Draft</label>

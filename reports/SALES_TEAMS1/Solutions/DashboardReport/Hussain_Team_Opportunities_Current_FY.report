@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_31889171</developerName>
+        <masterLabel>Opp Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Renewal Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6WP-Closed Won/Order Processed</sourceValue>
+            </sourceValues>
+            <value>Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Open</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Proposal Development</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Renewal Pending</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4.1-Proposal/Quote Delivery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4.2-Verbal Commit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Renewal Contracting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6L-Renewal Lost</sourceValue>
+            </sourceValues>
+            <value>Cancel</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6L-Closed Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>7-Revisit-No Decision</sourceValue>
+            </sourceValues>
+            <value>Lost Pipe</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Opportunity.SalesNewPrice__c.CONVERT</column>
+        </chartSummaries>
+        <chartSummaries>
+            <aggregate>Unique</aggregate>
+            <axisBinding>y2</axisBinding>
+            <column>OPPORTUNITY.NAME</column>
+        </chartSummaries>
+        <chartType>VerticalColumnLine</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_31889171</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.InstitutionSubType__c</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SubBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.FirstYearValue__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.SalesNewPrice__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesRenewal__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesLostBus__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesRegion__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2) AND 3 AND 4 AND 5 AND 6 AND ((7 AND 8) OR (9 AND 10))</booleanFilter>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Faizal (Michael) Hussain,Thomas Gift,Uati Oahimin-Akhimien,Julianna Iran Zhang,Eric Dias,Katherine Blansett,Kiet Trinh,Alexandra Howard,Morgan Burch,Eugenio Fortes,Elliot Green,Samuele Demartini,Eric Lesner,Richmond Donnelly,Kara Graves,Elvin Rodriguez,Kevin Seery,Paul Darnell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Faizal (Michael) Hussain,Thomas Gift,Uati Oahimin-Akhimien,Julianna Iran Zhang,Eric Dias,Katherine Blansett,Kiet Trinh,Alexandra Howard,Morgan Burch,Eugenio Fortes,Elliot Green,Samuele Demartini,Eric Lesner,Richmond Donnelly,Kara Graves,Elvin Rodriguez,Kevin Seery,Paul Darnell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Michael Stewart</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Jim Coley,Terry Sanabria,Thierry Klotz,Thomas Gilligan,Tim Harris,Victoria Kent,Sharon Tham,Sheetal Patel,Stephen Baxter,Steve Paetzold,Tatsuya Ichisaka,Taylor Sullivan,Scott Kortgard,Shana Crockett,Nishat Rezvi,Paddy Turner,Paige Pierce,Paul Kisslinger,Peter Renner,Piers Dixon,Robert Kolpin,Ryan Lee,Sanjuro Takeuchi,Kris Lee,Matthew Newman,Max Merrill,Mehmet Gurtin,Meredith Chavel,Michael Bird,Mike Patella,Kashyap parikh,Katy Mulroney,Marina hubenova,Jim Savitsky,Jonathan Nutter,Jordan Charalampous,Joseph Brody,Joseph Santangelo,Justin Quinn,James Woodford,Jennifer Sivley,Jennifer Weisbard,Jennifer Yoo,Jeremy Rosenthal,Hassan Salih,James McLennan,Eric Maldonado,Erin Sheepo,Fil Lorinc,Gary Bullard,Gary Smeds,Grant Pollworth,Con O&apos;Donnell,Dan Buell,Daniel Esteve,Daniel Kalyan,Daniel Mistretta,Dan Palmer,David Del Zotto,Casper Sanderson,Christopher Pashley,Christopher Zoog,Chris Walsh,Clay Willingham,Billy Dechert,Brian Oliver,Brinley Tilley,Byron Jones,Cameron Crawford,Anne Montana,Barton Haneberg,Alfredo Milera,Amanda Prentiss,Alvin Lee,Joost Bongers,Adam Johnson,Bo Zhou,Ellen Schubert,Faizan Minhas,SF Admin,Armins Rusis,Christian Kirschbaum,John Regan,Jason Hahn,Charlotte Whipman</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - General Service Account,Place Holder - IHS Markit Internal Employees,Place Holder - Sales,Place Holder - Self Registered Users Account,Place Holder - Unknown Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SalesNewPrice__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.NewBusiness,Opportunity.Placeholder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_FISCAL_YEAR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.InnerYear,Opportunity.Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_FISCAL_YEAR</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>FISCAL_QUARTER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_31889171</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MEMBER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Hussain Team Created Opps Current FY</name>
+    <params>
+        <name>include</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_OWNER</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>field_key</field>
+    </columns>
+    <columns>
+        <field>OLDVAL</field>
+    </columns>
+    <columns>
+        <field>NEWVAL</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CASE_CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <currency>GBP</currency>
+    <description>Case Assignment Calculation
+Case assigned within 3 days</description>
+    <filter>
+        <criteriaItems>
+            <column>CASE_OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Benit Kurian,Milana Kelis,Peter Walker,Robert Schweikert,Wilson Lee,Sam Lucchesi,Candice Jing Er Tan,Shashank Gupta,Anthony Capra,Tonje Langaas,Sharon Basils Balakrishnan,Mai Adachi,Divesh Singh,Daniel Palacio,Mohamad AlDafaee,Aakash Sharma,Hiren Mathur,Timothy Saenger,Saurabh Kapoor,Hemant Kumar,Nikunj Wasson,Allen Wang,Angela Ramirez Gonzalez,Jangdimlung Gondaimei,Bhawana Jain,Sudhesh Sinha,Monika Nehra,Karan Rautela,Sachin Mishra,Mohammad Shahzeb,Saumya Singh,Poornima Sharma,Anamika Gupta,Mayank Bamola,Yamini Sagar,Tze Hui Lim,Bhumika Bairathi,Deepak Dutt,Himani Goel,Shweta Mishra,Yogesh Khurana,Jasmeet Singh,Nicholas Rivera,Yolanda Omigie,Azza Zakaria,Keara Hallam,Abhishek Khandelwal,Pooja Verma,Aashi Garg,Nicholas Etheridge,Arushi Ratti,Sahil Arora,Shivam Gupta,Aidan Mulvey,Ghanishtha Talwar,Gurjot Bagga,Pooja Agarwal,Robin Sharma</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>field_key</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case Owner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OLDVAL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | MW| Onboarding,FM | MW | High Priority,FM | MW | User Setup,FM | MW | Static Data,FM | MW | User Deactivations,FM | DS Match,FM | MSERV UAT | BAU,FM | Integrated Reporting,FM | TSERV Client Services,FM | MSERV TClear FX,FM | MarkitSERV | MTM Implementation,FM | MW | L1,FM | MSERV FX,FM | Trade Processing,FM | MW | CPS Onboarding,FM | All Japanese Client Queries,FM | MSERV CS-ES BuySide,FM | MSERV Regulatory Reporting,FM | MW | All Other,FM | MW | Clearing,FM | MW | Reports,FM | MSERV UAT - UNASSIGNED,FM | MW | Password Reset,FM | MSERV CS-ES MarkitWire,FM | MW | Book Updates,FM | MSERV Engineering Services,FM | MW | User Clones Static Conf.,FM | MSERV MIS,FM | MSERV Duplicate,IHS Markit Customer Care,FM | MSERV Membership,FM | DS Match | Implementation,FM | Counterparty Manager Onboarding,FM | MW | Management,FM | MSERV UAT | Projects,FM | MSERV POD Cases,FM | MSERV API Integration,FM | MSERV,FM | MSERV FX | UAT,LRC | Response Management,FM | MSERV Delete,FM | Onboarding</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NEWVAL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>FM | MW| Onboarding,FM | MW | High Priority,FM | MW | User Setup,FM | MW | Static Data,FM | MW | User Deactivations,FM | DS Match,FM | MSERV UAT | BAU,FM | Integrated Reporting,FM | TSERV Client Services,FM | MSERV TClear FX,FM | MarkitSERV | MTM Implementation,FM | MW | L1,FM | MSERV FX,FM | Trade Processing,FM | MW | CPS Onboarding,FM | All Japanese Client Queries,FM | MSERV CS-ES BuySide,FM | MSERV Regulatory Reporting,FM | MW | All Other,FM | MW | Clearing,FM | MW | Reports,FM | MSERV UAT - UNASSIGNED,FM | MW | Password Reset,FM | MSERV CS-ES MarkitWire,FM | MW | Book Updates,FM | MSERV Engineering Services,FM | MW | User Clones Static Conf.,FM | MSERV MIS,FM | MSERV Duplicate,IHS Markit Customer Care,FM | MSERV Membership,FM | DS Match | Implementation,FM | Counterparty Manager Onboarding,FM | MW | Management,FM | MSERV UAT | Projects,FM | MSERV POD Cases,FM | MSERV API Integration,FM | MSERV,FM | MSERV FX | UAT,LRC | Response Management,FM | MSERV Delete,FM | Onboarding</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Case Assignment Calculation - Part2</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseAuditHistory</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OPP.AMOUNT.CONVERT</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CAMPAIGN.NAME</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OPP.STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>OPP.CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPP.CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>OPP.PROBABILITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OPP.AMOUNT.CONVERT</field>
+    </columns>
+    <columns>
+        <field>INFLUENCE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>REVENUE_SHARE.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CampaignInfluence.ExpectedRevenueShare__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>if(contains(Text(OPP.LEAD_SOURCE),&quot;Market&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Push&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Website&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;SEO&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Inbound&quot;)||contains(Text(OPP.LEAD_SOURCE),&quot;Paid&quot;),&quot;Marketing Sourced&quot;,&quot;Marketing Influenced&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Marketing Sourced/Influenced</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Opportunities For 2020 Marketing Corporate Actions - Pipeline Influenced</description>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13) AND 14</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PRC-CA-22Sept20-NA CA webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PRC-CA-29Sept20-EMEA CA webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IS-Indices-2020-ESG iBoxx GSS Whitepaper</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FS-SL-EDM-07Sep20-GBL-CT-IDC whitepaper - Energy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FS-SL-EDM-07Sep20-GBL-CT-IDC whitepaper - Maritime</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FS-IS-IN-06Jan21-ESG Greenium whitepaper</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FS-SL-EDM-07Sep20-GBL-CT-IDC whitepaper - FS Insurance</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AUT-Gen-26Jan21-Spanish Clusters Webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ENR-Upstream-17Feb21-Liquids Demand On the Move Webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ENR-GPE-01Oct20-Executive Briefings: Climate and Cleantech,PRC-CPM-09June21-ISDA Working Group,FS-SL-EDM-E-13May21-EDM for Energy OSDU Webinar ON DEMAND,FS-PRC-Custodians-Ceros-RequestMeeting,FS-SL-EDM-E-29Apr21-EDM for Energy OSDU Blog Post,FS-PRC-Custodians-GC Webinar on-demand ON24</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.PARENT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PRC-Custodians</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.PARENT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PRC-Securities Processing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,FS-PRC-Custodians-GC Webinar on-demand ON24,FS-IS-APAC-20April21-Securities Finance Q1 APAC Webinar,FS-SL-EDM-M-28Apr21-Maritime Market Share Outreach,FS-PRC-Custodians-Global Custodian Whitepaper,DataLake-13Sep21-GBL-Insurance webinar,FS-IS-PVR-22June21-Dynamic Tolerance Webinar,PRC-CPM-2021-Onboarding Accelerator Video campaign,FS-SL-EDM-E-13May21-EDM for Energy OSDU Webinar ON DEMAND,FS-IS-PVR-13Sep21-Bond Pricing Awareness,FS-SL-PM-12Aug21-Private Debt Video - Episode 9- Hg Capital,FS-SL-EDM-E-01Jun21-EDM for Energy webinar with SPE (digital transformation),FS-SL-EDM-21May21-EDM OSDU Google Ads campaign,FS-SL-PM-GP-15Sep21-Mergermarket ESG Report,PRC-CA-11Oct21 - Sibos 2021,ENR-Upstream-17Feb21-Liquids Demand On the Move Webinar,IS-EQ-06Oct21- Research Signals Free Trial,FS-CS-BDC-17Nov21-Capital Access: Quarterly touch point,FS-IS-PVR-11Oct21-Actiam Financial Inclusion Whitepaper,FS-SL-PM-GP-29Oct21- ESG Report InMail,FS-PRC-Counterparty Manager - Investor Onboarding,FS-IS-EQ -Brokerage,Research,Sales and Trading Form fills,FS-SL-EDM-24Jun21-EDM Modernization Webinar (EMEA),FS-SL-EDM-23Jun21-EDM Modernization Webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2019 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPP.FORECAST_CATEGORY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPP.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Dorothy 2020/21 Pipeline influenced</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomizableCampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+</Report>

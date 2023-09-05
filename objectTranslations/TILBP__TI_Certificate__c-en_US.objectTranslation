@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TILBP__Contact__c</name>
+        <relationshipLabel><!-- TI Certificates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>TILBP__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Date --></label>
+        <name>TILBP__IssueDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Progress Was Reset --></label>
+        <name>TILBP__ProgressWasReset__c</name>
+    </fields>
+    <fields>
+        <label><!-- TI ID --></label>
+        <name>TILBP__TI_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- TI Content --></label>
+        <name>TILBP__TI_SFContent__c</name>
+        <relationshipLabel><!-- TI Certificates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- URL --></label>
+        <name>TILBP__URL__c</name>
+    </fields>
+</CustomObjectTranslation>

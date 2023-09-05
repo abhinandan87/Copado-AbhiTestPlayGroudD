@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Contracts__r$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$OpportunityOwner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contracts__r$ContractNumber</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contracts__r$Status</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contracts__r$ContractStatus__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunitynum__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Opportunties Closed Won (Laura)</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$OpportunityOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>james mccarthy,derek gonsuron,jim conway,andy quintero,nail christian,juan hernandez</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Opportunties Closed Won</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunitywithContracts__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

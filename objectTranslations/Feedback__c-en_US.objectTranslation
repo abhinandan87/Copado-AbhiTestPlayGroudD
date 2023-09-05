@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Feedback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Feedbacks</value>
+    </caseValues>
+    <fields>
+        <label><!-- Business Line --></label>
+        <name>BusinessLine__c</name>
+    </fields>
+    <fields>
+        <help><!-- Associated Contract --></help>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+        <relationshipLabel><!-- Feedbacks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Account Name of the Opportunity --></help>
+        <label><!-- Customer Legal Entity --></label>
+        <name>CustomerLegalEntity__c</name>
+        <relationshipLabel><!-- Feedbacks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Email Id of a person who has raised the case --></help>
+        <label><!-- Email Address --></label>
+        <name>EmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Summary --></label>
+        <name>FeedbackSummary__c</name>
+    </fields>
+    <fields>
+        <help><!-- IssueType --></help>
+        <label><!-- Issue Type --></label>
+        <name>IssueType__c</name>
+        <picklistValues>
+            <masterLabel>Improvement</masterLabel>
+            <translation><!-- Improvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Feature</masterLabel>
+            <translation><!-- New Feature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requirement</masterLabel>
+            <translation><!-- Requirement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Num --></label>
+        <name>OpportunityNum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Record Type --></label>
+        <name>OpportunityRecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Feedbacks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Originating Feedback --></label>
+        <name>OriginatingFeedback__c</name>
+        <relationshipLabel><!-- Child Feedbacks --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product groups from Opportunity --></help>
+        <label><!-- Product Group --></label>
+        <name>ProductGroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue at Risk --></label>
+        <name>RevenueAtRisk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT</field>
+    </columns>
+    <columns>
+        <field>COMMENT_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT_CREATED_BY</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT_UPDATED_BY</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Chase Comments- Open Cases</description>
+    <filter>
+        <booleanFilter>((2 or 5) AND 1 AND 3 AND 4)</booleanFilter>
+        <criteriaItems>
+            <column>CASE_COMMENT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>#SPOC,Brokertc,BrokerTC,#broker,brokerGS,#brokerTH#,#brokerTH,SPOCGS,SPOC,SPOCTH,spoc:,SPOC:,spoc-,#SPOC-</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Citigroup inc.,UBS AG,Jpmorgan Chase &amp; Co.,SCHRODER INVESTMENT MANAGEMENT LIMITED,BlackRock,LEGAL &amp; GENERAL INVESTMENT MANAGEMENT LIMITED,Bank of America Merrill Lynch (Global Parent)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Undeliverable,SOX,Overlay,Zero,Brexit,Automatische Antwort:,Auto Reply,DELIVERY FAILURE,Out of Office,Generic leaver notification,MarkitSERV Customer Experience Survey,Retirement,FCA,Delivery Status Notification (Failure),Returned mail:,Automatic reply:,Delivery delayed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Onboarding,Case.CustomerCare,Case.Implementation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>TFS Derivatives Limited,Tradition,ICAP,PREBON,tulletts,BGC,cantor,Aurel,GFI,Martin Brokers,Sunrise Brokers,RP Martin</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MSERV - SPOC Activity This Month</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>COMMENT_CREATED_DATE</dateColumn>
+        <endDate>2022-09-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-07-01</startDate>
+    </timeFrameFilter>
+</Report>

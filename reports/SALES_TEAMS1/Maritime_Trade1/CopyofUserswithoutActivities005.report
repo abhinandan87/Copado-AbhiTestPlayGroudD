@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$UserRole</field>
+    </columns>
+    <columns>
+        <field>User$Title</field>
+    </columns>
+    <columns>
+        <field>User$Profile</field>
+    </columns>
+    <columns>
+        <field>User$Manager</field>
+    </columns>
+    <columns>
+        <field>User$LastLoginDate</field>
+    </columns>
+    <columns>
+        <field>User$Email</field>
+    </columns>
+    <columns>
+        <field>User$CountryCode</field>
+    </columns>
+    <crossFilters>
+        <operation>without</operation>
+        <primaryTableColumn>User$Id</primaryTableColumn>
+        <relatedTable>Activity</relatedTable>
+        <relatedTableJoinColumn>Owner</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <description>Users without Activities (Activities Dashboard)</description>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND 5) OR 4</booleanFilter>
+        <criteriaItems>
+            <column>User$IsActive</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$UserRole</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Anthony Few,Aliet Martinez,Amy Middle1broo1k,Anne-Sophie Purtell,T1ara MacDevitt,Charlie Ng,Barnaby Dobson,Sidney Leung,Graham Butler,Jack Power,Benjamin Ooi,Kenny Fu,Tim McLaughlin,Alex Gray,Chiranjib Kar,Jay Kalahasty,Muzafar Ahmad,Tobias Schenck,Jun Saito,Tony Stein,Wael Jarous,Richard Veale,Rhiannon James-Van,Martime &amp; Trade</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$UserRole</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Sales Ops</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Division</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Maritime &amp; Trade</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$UserRole</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Inactive</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Division</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of Users without Activities 005</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_with_Managers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

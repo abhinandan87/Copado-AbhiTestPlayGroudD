@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Pricing | Operations</name>
+    <queueMembers>
+        <users>
+            <user>allan.barshtak@ihsmarkit.com</user>
+            <user>ankit.khatri@ihsmarkit.com</user>
+            <user>christopher.fenske@ihsmarkit.com</user>
+            <user>errol.wee@ihsmarkit.com</user>
+            <user>feng.li@ihsmarkit.com</user>
+            <user>frank.dossantos@ihsmarkit.com</user>
+            <user>georgie.slater@ihsmarkit.com</user>
+            <user>gurpreet.randhawa@ihsmarkit.com</user>
+            <user>joseph.jin@ihsmarkit.com</user>
+            <user>kevin.chen@ihsmarkit.com</user>
+            <user>kiet.tran@ihsmarkit.com</user>
+            <user>krishna.shetty@ihsmarkit.com</user>
+            <user>matthew.fiordaliso@ihsmarkit.com</user>
+            <user>nathan.kirk@ihsmarkit.com</user>
+            <user>nitin.jha@ihsmarkit.com</user>
+            <user>patrick.okelly@ihsmarkit.com</user>
+            <user>prabhat.rawat@ihsmarkit.com</user>
+            <user>raghusudershan.vedula@ihsmarkit.com</user>
+            <user>rajiv.tripathi@ihsmarkit.com</user>
+            <user>reetika.mehta@ihsmarkit.com</user>
+            <user>roman.gorelik@ihsmarkit.com</user>
+            <user>silky.natani@ihsmarkit.com</user>
+            <user>simon.ng@ihsmarkit.com</user>
+            <user>tomasz.cholewik@ihsmarkit.com</user>
+            <user>udit.sharma2@ihsmarkit.com</user>
+            <user>valerie.yuen@ihsmarkit.com</user>
+            <user>weelynn.low@ihsmarkit.com</user>
+            <user>yogita.negi@ihsmarkit.com</user>
+            <user>zhudong.tan@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

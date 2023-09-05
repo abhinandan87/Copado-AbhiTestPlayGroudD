@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>LAST_STAGE_CHANGE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(Opportunity.ContractStartDate__c&gt; Opportunity.ContractEndDate__c, Opportunity.ContractStartDate__c, Opportunity.ContractEndDate__c)</calculatedFormula>
+        <dataType>DateOnly</dataType>
+        <description>Comparing start and end date</description>
+        <developerName>CDF1</developerName>
+        <label>Start Date&gt; End Date</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <format>Tabular</format>
+    <name>Contract START DATE&gt; END DATE Formula</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

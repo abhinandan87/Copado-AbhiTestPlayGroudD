@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CMD | Customer Master Data</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>DataGovernanceUsers</publicGroup>
+            <publicGroup>SalesOps</publicGroup>
+        </publicGroups>
+        <users>
+            <user>deepak.tiwari1@ihsmarkit.com</user>
+            <user>kanika.sharma@ihsmarkit.com</user>
+            <user>manjunath.p@ihsmarkit.com</user>
+            <user>paras.dhingra@ihsmarkit.com</user>
+            <user>prateeksingh.dhami@ihsmarkit.com</user>
+            <user>santosh.mourya@ihsmarkit.com</user>
+            <user>saurabh.dhawan@ihsmarkit.com</user>
+            <user>sourav.sindhikar@ihsmarkit.com</user>
+            <user>vidhi.sharma@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

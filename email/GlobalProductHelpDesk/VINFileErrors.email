@@ -1,0 +1,29 @@
+Dear {!Contact.FirstName} {!Contact.LastName}, 
+
+Thank you for contacting the IHS Automotive Global Product Help Desk. 
+
+We are writing to advise you that we have completed the investigation into Case number {!Case.CaseNumber} and can provide the following resolution:
+
+The event(s) we predicted was (were) triggered by the VIN-file information, which we hold on our database for the vehicle(s) in question and from that perspective, the prediction(s) we presented you with was (were) correct. 
+
+Based on the information you provided us with in your initial email, we note that the VIN file, which forms part of the correct functionality of our product, requires amendment and we regret that this error (outside the influence of R.L. Polk UK Ltd) caused inconvenience to you.
+
+In order to rectify the matter we kindly ask for your co-operation. Please check on Dialogue, whether the vehicle(s) listed underneath is (are) flagged as:
+
+[INSERT TEXT HERE]
+
+If the information found on Dialogue corresponds with our (false) information, please get this amended manually. Providing Dialogue accepted the change(s), our system will automatically update itself, when we receive the next VIN-file, which the brand provides for us via T-Systems on a monthly basis. (We strongly recommend checking on Dialogue whether the update was successful, after completing your entry).
+
+Should you find the information on Dialogue conflicting with ours, please get back to us as soon as possible, stating the relevant vehicle registration(s) and we will get the necessary amendments executed via the brand/T Systems.
+
+We hope this has solved the issue to your satisfaction.  However, should there be any further questions related to this matter, please do not hesitate to contact us again, quoting the above referenced Case number. 
+
+** If you would like to reply via email please address your message to Product_Helpdesk@ihs.com.  Please do not reply to this email as this mailbox is for distribution only.  **
+
+Kind Regards,
+
+{!User.FirstName} {!User.LastName} 
+IHS Automotive Global Product Help Desk
+01727733800 
+Product_Helpdesk@ihs.com
+www.ihs.com

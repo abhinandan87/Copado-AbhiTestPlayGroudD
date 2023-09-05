@@ -1,0 +1,22 @@
+<design:component label="Two headers and three columns layout ">
+    <flexipage:template>
+        <flexipage:region name="headerLeft" defaultWidth="MEDIUM" />
+        <flexipage:region name="headerRight" defaultWidth="MEDIUM" />
+        <flexipage:region name="details" defaultWidth="LARGE"/>
+        <flexipage:region name="activity" defaultWidth="LARGE"/>
+        <flexipage:region name="left" defaultWidth="MEDIUM" />
+        <flexipage:region name="center" defaultWidth="MEDIUM" />
+        <flexipage:region name="right" defaultWidth="MEDIUM" />
+        <flexipage:region name="tcrmDashboard" defaultWidth="LARGE"/>
+        <flexipage:region name="tcrmDashboard2" defaultWidth="LARGE"/>
+        <flexipage:region name="customerInsights" defaultWidth="LARGE" />
+        <flexipage:region name="sfaDoc1" defaultWidth="LARGE"/>
+        <flexipage:region name="sfaDoc2" defaultWidth="LARGE"/>
+        <flexipage:region name="linkedIn1" defaultWidth="LARGE" />
+        <flexipage:region name="linkedIn2" defaultWidth="LARGE" />        
+    </flexipage:template>
+    <design:supportedFormFactors>
+            <design:supportedFormFactor type="Small"/>
+            <design:supportedFormFactor type="Large"/>
+    </design:supportedFormFactors>
+</design:component>

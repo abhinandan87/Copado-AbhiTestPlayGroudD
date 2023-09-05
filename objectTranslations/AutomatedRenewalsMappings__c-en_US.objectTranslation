@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Automated Renewals Mappings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Automated Renewals Mappings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Must be marked active if in use. --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true, represents that the custom setting record is a criteria mapping used in business criteria evaluations. --></help>
+        <label><!-- Criteria Mapping? --></label>
+        <name>CriteriaMapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true, represents that the custom setting record is a field to field mapping --></help>
+        <label><!-- Field Mapping? --></label>
+        <name>FieldMapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Name --></label>
+        <name>RuleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Field --></label>
+        <name>SourceField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Object --></label>
+        <name>SourceObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Value --></label>
+        <name>SourceValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Field --></label>
+        <name>TargetField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Object --></label>
+        <name>TargetObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Value --></label>
+        <name>TargetValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true, represents that the custom setting record is a value to value mapping. Please populate Source Value and Target Value fields. --></help>
+        <label><!-- Value Mapping? --></label>
+        <name>ValueMapping__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

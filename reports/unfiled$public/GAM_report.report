@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.PKIDAccount__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.GAM__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.UltimateParentPKID__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.PKIDAccount__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Act1099379 Act1100443 Act1100186 Act1117476 Act1628204 Act1601373 Act1099105 Act1333010 Act1095268 Act1129251 Act1087178 Act1093590 Act1105469 Act1120805 Act1095951 Act1551601 Act1507727 Act1118724 Act1118961 Act1093861 Act1537443 Act1649297 Act1638559 Act1129405 Act1128928 Act1125100 Act1525399 Act1090490 Act1086049 Act1537076 Act1553550 Act1552270 Act1087111 Act1251058 Act1522406 Act1547498 Act1112315 Act1551107 Act1138119 Act1109424 Act1098966 Act1536151 Act1118438 Act1099406 Act1626383 Act1458649 Act1099495 Act1109034 Act1127172 Act1107326 Act1097134 Act1106706 Act1643593 Act1116387 Act1092838 Act1095128 Act1128003 Act1537327 Act1626353 Act1086215 Act1096874 Act1100089 Act1087661 Act1099816 Act1094028 Act1096607 Act1110075 Act1125948 Act1100690 Act1099592 Act1137588 Act1331011 Act1640919 Act1119591 Act1100444 Act1094055 Act1085403 Act1158608 Act1643186 Act1086115 Act1085701 Act1100127 Act1643219 Act1639003 Act1640657 Act1598430</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>GAM report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList@Account.AccountCountry__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

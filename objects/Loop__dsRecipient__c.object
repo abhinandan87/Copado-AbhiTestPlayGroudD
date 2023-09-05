@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Loop__Address__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Calc_Signing_Order__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASE( Loop__dsRoutingOrder__c , 0 , &quot;Carbon Copy&quot; , TEXT(Loop__dsRoutingOrder__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Signing Order</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__CustomAccessCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Access Code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This can be made dynamic by using tags from the Field Tagger.</inlineHelpText>
+        <label>Access Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__DisplayTitle__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This option will display the recipient(s)&apos;s (contact, user, lead) title when initiating DDPs.</inlineHelpText>
+        <label>Display Title</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__EmailText__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Email Text</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__Embedded_Signer__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Embedded Signer</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Routed via LOOPlus</fullName>
+                    <default>false</default>
+                    <label>Routed via LOOPlus</label>
+                </value>
+                <value>
+                    <fullName>Routed via Client Code</fullName>
+                    <default>false</default>
+                    <label>Routed via Client Code</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__Host_Address__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Host Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Host_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Host Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Host Recipients</relationshipLabel>
+        <relationshipName>Host_Recipients</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Host_Role_Group_Names__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Host Role/Group Names</label>
+        <length>7000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__Host_Static_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Host Static Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Host_Static_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Host Static Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Host_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Host User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Host_Recipients</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Loop__IntegrationOption__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Delivery Option</label>
+        <referenceTo>Loop__DDP_Integration_Option__c</referenceTo>
+        <relationshipLabel>Recipients</relationshipLabel>
+        <relationshipName>Recipients</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Language__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OnAccessCodeFailed__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>On Access Code Failed</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OnCancel__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>On Cancel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OnDecline__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>On Decline</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OnException__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>On Exception</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OnIdCheckFailed__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>On Id Check Failed</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OnSessionTimeout__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>On Session Timeout</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OnSigningComplete__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>On Signing Complete</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OnTTLExpired__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>On TTL Expired</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OnViewingComplete__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>On Viewing Complete</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__RoleGroupNames__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Type the Role or User Group names separated by double commas for this recipient.</inlineHelpText>
+        <label>Role/Group Names</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__SigningGroupId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Signing Group Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__SigningGroupName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Signing Group Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__SigningOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When using the standard signing options, this number is used in the document to denote which options belong to this recipient. For example, if Recipient # is 2, the dl.signhere option will be typed into the document as &quot;dl.signhere.2&quot;.</inlineHelpText>
+        <label>Recipient #</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Specified_Host__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>For an In Person Signer recipient, this is the person that will &quot;host&quot; the in person signing event (who the email is sent to).</inlineHelpText>
+        <label>Specified Host</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Current User</fullName>
+                    <default>false</default>
+                    <label>Current User</label>
+                </value>
+                <value>
+                    <fullName>User Selected Contact</fullName>
+                    <default>false</default>
+                    <label>User Selected Contact</label>
+                </value>
+                <value>
+                    <fullName>Selected Contact</fullName>
+                    <default>false</default>
+                    <label>Selected Contact</label>
+                </value>
+                <value>
+                    <fullName>Selected User</fullName>
+                    <default>false</default>
+                    <label>Selected User</label>
+                </value>
+                <value>
+                    <fullName>User Lookup</fullName>
+                    <default>false</default>
+                    <label>User Lookup</label>
+                </value>
+                <value>
+                    <fullName>Contact Lookup</fullName>
+                    <default>false</default>
+                    <label>Contact Lookup</label>
+                </value>
+                <value>
+                    <fullName>Static Name-Email</fullName>
+                    <default>false</default>
+                    <label>Static Name-Email</label>
+                </value>
+                <value>
+                    <fullName>User Selected Name-Email</fullName>
+                    <default>false</default>
+                    <label>User Selected Name-Email</label>
+                </value>
+                <value>
+                    <fullName>Dynamic Name-Email</fullName>
+                    <default>false</default>
+                    <label>Dynamic Name-Email</label>
+                </value>
+                <value>
+                    <fullName>Roles or Groups</fullName>
+                    <default>false</default>
+                    <label>Roles or Groups</label>
+                </value>
+                <value>
+                    <fullName>Object Owner</fullName>
+                    <default>false</default>
+                    <label>Object Owner</label>
+                </value>
+                <value>
+                    <fullName>Object Creator</fullName>
+                    <default>false</default>
+                    <label>Object Creator</label>
+                </value>
+                <value>
+                    <fullName>Current User&apos;s Manager</fullName>
+                    <default>false</default>
+                    <label>Current User&apos;s Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__StaticEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Static Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__StaticName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Static Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Subject__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__dsAllowAccessCode__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Allow Access Code</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__dsCheckId__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Require Id Check</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__dsContact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Recipients</relationshipLabel>
+        <relationshipName>Recipients</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Loop__dsRequired__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__dsRoleName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Role Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__dsRoutingOrder__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This specifies the order in which recipients receive the document to sign.</inlineHelpText>
+        <label>Signing Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__dsSignOptions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sign Options</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>dl.signhere</fullName>
+                    <default>false</default>
+                    <label>dl.signhere</label>
+                </value>
+                <value>
+                    <fullName>dl.signhereoptional</fullName>
+                    <default>false</default>
+                    <label>dl.signhereoptional</label>
+                </value>
+                <value>
+                    <fullName>dl.initialhere</fullName>
+                    <default>false</default>
+                    <label>dl.initialhere</label>
+                </value>
+                <value>
+                    <fullName>dl.initialhereoptional</fullName>
+                    <default>false</default>
+                    <label>dl.initialhereoptional</label>
+                </value>
+                <value>
+                    <fullName>dl.fullname</fullName>
+                    <default>false</default>
+                    <label>dl.fullname</label>
+                </value>
+                <value>
+                    <fullName>dl.company</fullName>
+                    <default>false</default>
+                    <label>dl.company</label>
+                </value>
+                <value>
+                    <fullName>dl.title</fullName>
+                    <default>false</default>
+                    <label>dl.title</label>
+                </value>
+                <value>
+                    <fullName>dl.datesign</fullName>
+                    <default>false</default>
+                    <label>dl.datesign</label>
+                </value>
+                <value>
+                    <fullName>dl.envelopeid</fullName>
+                    <default>false</default>
+                    <label>dl.envelopeid</label>
+                </value>
+                <value>
+                    <fullName>dl.signerattachment</fullName>
+                    <default>false</default>
+                    <label>dl.signerattachment</label>
+                </value>
+                <value>
+                    <fullName>dl.firstname</fullName>
+                    <default>false</default>
+                    <label>dl.firstname</label>
+                </value>
+                <value>
+                    <fullName>dl.lastname</fullName>
+                    <default>false</default>
+                    <label>dl.lastname</label>
+                </value>
+                <value>
+                    <fullName>dl.emailaddress</fullName>
+                    <default>false</default>
+                    <label>dl.emailaddress</label>
+                </value>
+                <value>
+                    <fullName>dl.approve</fullName>
+                    <default>false</default>
+                    <label>dl.approve</label>
+                </value>
+                <value>
+                    <fullName>dl.decline</fullName>
+                    <default>false</default>
+                    <label>dl.decline</label>
+                </value>
+                <value>
+                    <fullName>dl.capture</fullName>
+                    <default>false</default>
+                    <label>dl.capture</label>
+                </value>
+                <value>
+                    <fullName>dl.mobilecapture</fullName>
+                    <default>false</default>
+                    <label>dl.mobilecapture</label>
+                </value>
+                <value>
+                    <fullName>dl.acceptance</fullName>
+                    <default>false</default>
+                    <label>dl.acceptance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>9</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__dsStaticRecipient__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This changes which recipients the user can select from.</inlineHelpText>
+        <label>Specified Recipient</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>User Selected Contact</fullName>
+                    <default>false</default>
+                    <label>User Selected Contact</label>
+                </value>
+                <value>
+                    <fullName>Current User</fullName>
+                    <default>false</default>
+                    <label>Current User</label>
+                </value>
+                <value>
+                    <fullName>Selected Contact</fullName>
+                    <default>false</default>
+                    <label>Selected Contact</label>
+                </value>
+                <value>
+                    <fullName>Selected User</fullName>
+                    <default>false</default>
+                    <label>Selected User</label>
+                </value>
+                <value>
+                    <fullName>User Lookup</fullName>
+                    <default>false</default>
+                    <label>User Lookup</label>
+                </value>
+                <value>
+                    <fullName>Contact Lookup</fullName>
+                    <default>false</default>
+                    <label>Contact Lookup</label>
+                </value>
+                <value>
+                    <fullName>Static Name-Email</fullName>
+                    <default>false</default>
+                    <label>Static Name-Email</label>
+                </value>
+                <value>
+                    <fullName>User Selected Name-Email</fullName>
+                    <default>false</default>
+                    <label>User Selected Name-Email</label>
+                </value>
+                <value>
+                    <fullName>Dynamic Name-Email</fullName>
+                    <default>false</default>
+                    <label>Dynamic Name-Email</label>
+                </value>
+                <value>
+                    <fullName>Roles or Groups</fullName>
+                    <default>false</default>
+                    <label>Roles or Groups</label>
+                </value>
+                <value>
+                    <fullName>Object Owner</fullName>
+                    <default>false</default>
+                    <label>Object Owner</label>
+                </value>
+                <value>
+                    <fullName>Object Creator</fullName>
+                    <default>false</default>
+                    <label>Object Creator</label>
+                </value>
+                <value>
+                    <fullName>Current User&apos;s Manager</fullName>
+                    <default>false</default>
+                    <label>Current User&apos;s Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__dsType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Signer</fullName>
+                    <default>true</default>
+                    <label>Signer</label>
+                </value>
+                <value>
+                    <fullName>Carbon Copy</fullName>
+                    <default>false</default>
+                    <label>Carbon Copy</label>
+                </value>
+                <value>
+                    <fullName>Certified Delivery</fullName>
+                    <default>false</default>
+                    <label>Certified Delivery</label>
+                </value>
+                <value>
+                    <fullName>In Person Signer</fullName>
+                    <default>false</default>
+                    <label>In Person Signer</label>
+                </value>
+                <value>
+                    <fullName>Agent</fullName>
+                    <default>false</default>
+                    <label>Agent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__dsUser__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Recipients</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Recipient</label>
+    <nameField>
+        <displayFormat>R-{00000}</displayFormat>
+        <label>Recipient</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Recipients</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Loop__Recipient_Address</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISPICKVAL( Loop__dsStaticRecipient__c , &quot;Static Name-Email&quot; ) ,  AND(ISBLANK( Loop__Address__c ), ISBLANK( Loop__StaticEmail__c )) , NOT( BEGINS( Loop__StaticName__c , &quot;!&quot; ) ) )</errorConditionFormula>
+        <errorDisplayField>Loop__Address__c</errorDisplayField>
+        <errorMessage>An address is required for a Static Name-Email recipient.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Loop__Recipient_Dynamic_Name</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISPICKVAL( Loop__dsStaticRecipient__c , &quot;Dynamic Name-Email&quot; ) ,  ISBLANK( Loop__StaticName__c )  )</errorConditionFormula>
+        <errorDisplayField>Loop__StaticName__c</errorDisplayField>
+        <errorMessage>A parameter is required for a Dynamic Name-Email recipient.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Loop__Recipient_Selected_Contact</fullName>
+        <active>true</active>
+        <description>Recipient must be related to a contact if Selected Contact is chosen.</description>
+        <errorConditionFormula>AND( ISPICKVAL( Loop__dsStaticRecipient__c, &quot;Selected Contact&quot;),  Loop__dsContact__c = &quot;&quot;)</errorConditionFormula>
+        <errorDisplayField>Loop__dsContact__c</errorDisplayField>
+        <errorMessage>Selected contact static recipient requires a contact.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Loop__Recipient_Selected_User</fullName>
+        <active>true</active>
+        <description>Recipient must be related to a user if Selected User is chosen.</description>
+        <errorConditionFormula>AND( ISPICKVAL( Loop__dsStaticRecipient__c, &quot;Selected User&quot;),  Loop__dsUser__c  = &quot;&quot;)</errorConditionFormula>
+        <errorDisplayField>Loop__dsUser__c</errorDisplayField>
+        <errorMessage>Selected user static recipient requires a user.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Loop__Recipient_Static_Email</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISPICKVAL( Loop__dsStaticRecipient__c , &quot;Static Name-Email&quot; ) ,  AND(ISBLANK( Loop__Address__c ), ISBLANK( Loop__StaticEmail__c )) , NOT( BEGINS( Loop__StaticName__c , &quot;!&quot; ) ) )</errorConditionFormula>
+        <errorDisplayField>Loop__Address__c</errorDisplayField>
+        <errorMessage>An address is required for a Static Name-Email recipient.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Loop__Recipient_Static_Name</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISPICKVAL( Loop__dsStaticRecipient__c , &quot;Static Name-Email&quot; ) ,  ISBLANK( Loop__StaticName__c )  )</errorConditionFormula>
+        <errorDisplayField>Loop__StaticName__c</errorDisplayField>
+        <errorMessage>A static name is required for a Static Name-Email recipient.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Loop__SignNow_Signer_requires_Role_Name</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( Loop__IntegrationOption__r.RecordType.DeveloperName = &apos;SignNow&apos;,  ISPICKVAL( Loop__dsType__c , &apos;Signer&apos;), ISBLANK( Loop__dsRoleName__c ) )</errorConditionFormula>
+        <errorDisplayField>Loop__dsRoleName__c</errorDisplayField>
+        <errorMessage>A SignNow Recipient with Type of Signer requires a Role Name.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

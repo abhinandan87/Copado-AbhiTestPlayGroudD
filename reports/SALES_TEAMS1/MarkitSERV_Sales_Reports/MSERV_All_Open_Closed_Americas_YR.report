@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_46950870</developerName>
+        <masterLabel>Deal Size</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>OpportunityLineItem.SalesNewPrice__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>Zero value opps</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+                <to>20,000</to>
+            </sourceValues>
+            <value>Small</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>20,000</from>
+                <to>100,000</to>
+            </sourceValues>
+            <value>Medium</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>100,000</from>
+                <to>500,000</to>
+            </sourceValues>
+            <value>Large</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>500,000</from>
+            </sourceValues>
+            <value>V.Large</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_19391856</developerName>
+        <masterLabel>Open &amp; Closed</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FORECAST_CATEGORY</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Pipeline</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Best Case</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Commit</sourceValue>
+            </sourceValues>
+            <value>OPEN</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Won</sourceValue>
+            </sourceValues>
+            <value>CLOSED</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_89910567</developerName>
+        <masterLabel>Prof Svcs</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CREATED</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>MarkitWire EndUser/Pro Svcs/Svc</sourceValue>
+            </sourceValues>
+            <value>Prof Svcs</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_10625709</developerName>
+        <masterLabel>Professional Svcs</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>PRODUCT_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>MarkitWire EndUser/Pro Svcs/Svc</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitWire EndUser/Implmnt/SOW</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitWire EndUser/Implmnt/One-Time</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitWire Dlr/Implementation/One-Time</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitWire Custom Proc/Svc</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitWire API Implementation/Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitSERV Trade Mgr/Proc/Svc</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitWire LeasedLine/Implmnt/One-Time</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitWire EndUser/Pro Svcs/Reimb.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitSERV Trade Mgr/Paper WF&amp;Rpt/Svc</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitSERV Trade Mgr/Implmnttn/One-Time</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitSERV Trade Mgr/Implmnttn/SOW</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MarkitSERV Trade Mgr/Enh Cnnctvty/Svc</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IntegratedRptg Solution/Cons</sourceValue>
+            </sourceValues>
+            <value>Pro Svcs Opps</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DealHub Post Trade Apps/Implmt-Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FX Execution Connectivity Pro Svcs/Reimb</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FX Execution Connectivity Implmnt/Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FX Execution Connectivity Pro Svcs/SOW</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FX Broker Affirmation Pro Svcs/Reimb</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FX Broker Affirmation PS Implment/Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Post Trade Apps/Expenses</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Post Trade Apps/Pro Svcs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Post Trade Connect/Implmt-Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Post Trade Connect/Expenses</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Post Trade Connect/Pro Svcs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Trading Apps/Implmt-Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Trading Apps/Expenses</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Trading Apps/Pro Svcs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Trading Connect/Implmt-Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Trading Connect/Expenses</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DealHub Trading Connect/Pro Svcs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FX Broker Affirmation Implmnt Fee/Trans</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FX Broker Affirmation Pro Svcs/SOW</sourceValue>
+            </sourceValues>
+            <value>Pro Svcs Opps FX</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DS Match/End User/Implmtnt/Trans</sourceValue>
+            </sourceValues>
+            <value>Pro Svcs Opps DSM</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>FISCAL_QUARTER</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_ACTIVE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.SalesNewPrice__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.RCLostBiz__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Amount__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityRegion__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityGeography__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TOTAL_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>CON.TITLE</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FISCAL_YEAR</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityCountry__c</field>
+    </columns>
+    <columns>
+        <field>CON.EMAIL</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All Opps open and closed for Current Fiscal year</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.BusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>derivatives processing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SalesRegion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>americas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder,6L-Closed Lost,6L-Renewal Lost,6L-Forecasting Placeholder,6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Yuliana Rendon,Geoff Stowell,Casper sanderson,robert kolpin,Ryan Kelleher,Todd Burrows</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FISCAL_QUARTER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.SalesRegion__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MSERV  - All Open &amp; Closed_Americas_YR</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2021-07-26</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-12-01</startDate>
+    </timeFrameFilter>
+</Report>
