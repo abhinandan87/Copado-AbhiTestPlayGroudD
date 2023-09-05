@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.DoNotSurveyReason__c</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Do not Survey report created</description>
+    <filter>
+        <booleanFilter>(3 AND 2) AND 1</booleanFilter>
+        <criteriaItems>
+            <column>Case.DoNotSurvey__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Nicholas Teo,Aaron Ching,Tanvi Arora,Rashi Dungale,Jennifer Begel,Susan Knauf,Paul Hughes,Vera Rasa,Melanie Mladenova,Kinnerey Patel,Safiya Murray,Esma Agzanay,Kent Choong,Kevin Lim,Mehar Banu Mohamed Salib,Tee Huang Cheah,Chayan Bhattacharjee,Agnes Ooi,Shefali Chawla,Komal Kajal,Samuel Abraham,Varun Bhutani,Kartikey Bisht</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ALIAS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>nteo,Aaron,VRasa,SKnauf,JBegel,PHughes3,TeeHuang,Mehar,KLim,KChoong,mmlad,eagza,KPat,smurr,TAro,cbhat,RDun,aooi,schaw,kkaja,sabra,vbhut,kbish</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.DoNotSurvey__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>EMEA: DO NOT SURVEY YTD 2021</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_56953502</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ASSIGNED</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Christopher Pashley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ross Hunt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chris Walsh</sourceValue>
+            </sourceValues>
+            <value>Australia</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sanjuro Takeuchi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rie Nakao</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tatsuya Ichisaka</sourceValue>
+            </sourceValues>
+            <value>Japan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alvin Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hannah Goh</sourceValue>
+            </sourceValues>
+            <value>ASEAN</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bo Zhou</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eric Liu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>HanYun Wang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Don Tang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mehmet Gurtin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Naeyoon Kang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Olivia Jiahui Su</sourceValue>
+            </sourceValues>
+            <value>North Asia</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>ASSIGNED</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_BY</field>
+    </columns>
+    <columns>
+        <field>TASK_TYPE</field>
+    </columns>
+    <columns>
+        <field>ACTIVITY_ID</field>
+    </columns>
+    <columns>
+        <field>START_DATE_TIME</field>
+    </columns>
+    <columns>
+        <field>END_DATE_TIME</field>
+    </columns>
+    <columns>
+        <field>OWNER_ROLE</field>
+    </columns>
+    <columns>
+        <field>LOCATION</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY</field>
+    </columns>
+    <columns>
+        <field>Activity.Lead__c</field>
+    </columns>
+    <columns>
+        <field>EVENT_SUBTYPE</field>
+    </columns>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <field>PRIORITY</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>TASK</field>
+    </columns>
+    <columns>
+        <field>Activity.MeetingNote__c</field>
+    </columns>
+    <columns>
+        <field>Activity.ProductFamilyLookup__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>ACCOWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Christopher Pashley,Ross Hunt,Chris Walsh,Sanjuro Takeuchi,Rie Nakao,Tatsuya Ichisaka,Alvin Lee,Hannah Goh,Bo Zhou,Eric Liu,HanYun Wang,Don Tang,Mehmet Gurtin,Naeyoon Kang,Olivia Jiahui Su</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_56953502</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Team meetings this FY</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>e</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

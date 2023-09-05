@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.Case$LastModifiedById$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>User.Case$LastModifiedById$Owner</field>
+    </columns>
+    <columns>
+        <field>User*User$HRBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>User*User$HRSubBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>User$Division</field>
+    </columns>
+    <columns>
+        <field>User*User$SubDivision__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>User.Case$LastModifiedById$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Chandra Sekhar Pallepogu,Faiza Bibi,Rashmi Ghate,Harshita Wardhan,Muskan Munjal,Abhishek Bakshi,Andri Oinam,Chirag Arora,Prerna Yadav,Rishi Arora,Rohan Singh,Sunny Nasa,Vikash Sharma,Raveena Bhagat</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Case$LastModifiedById$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.SalesforceHelpdesk</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Case$LastModifiedById$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Delete Queue,Duplicate Queue,Merged Queue</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Case Closed by division/Subdivision</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_User_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User.Case$LastModifiedById$ClosedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

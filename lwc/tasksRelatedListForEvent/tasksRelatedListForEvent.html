@@ -1,0 +1,39 @@
+<template>
+    <article class="slds-card slds-card_boundary">
+            
+        <lightning-card icon-name="standard:task" variant="base">
+            <h1 slot="title" style="font-weight:bold">{titleMsg}</h1>
+            
+            <lightning-button title="Refresh" icon-name="utility:refresh" onclick={handleRefresh} slot="actions"></lightning-button>
+            <lightning-button label="New" onclick={handleNewClick} slot="actions"></lightning-button>
+        
+        <!--<p slot="footer">View All</p>-->
+        </lightning-card>
+        <template if:true={hasTasks}>
+            <!-- DATATABLE Without Sorting -->
+            <lightning-datatable
+                key-field="Id"
+                data={data}
+                columns={columns}
+                hide-checkbox-column                
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+            <!-- DATATABLE With Sorting - Uncomment this and relevant js code to enable sorting
+            <lightning-datatable
+                key-field="Id"
+                data={data}
+                columns={columns}
+                hide-checkbox-column                
+                onrowaction={handleRowAction}
+                
+                default-sort-direction={defaultSortDirection}
+                sorted-direction={sortDirection}
+                sorted-by={sortedBy}
+                onsort={onHandleSort}>                
+            </lightning-datatable>-->
+        </template>            
+        <template if:true={showSpinner}>
+            <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+        </template>
+    </article>    
+</template>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Customer Experience Team</name>
+    <queueMembers>
+        <users>
+            <user>aishna.jain@ihsmarkit.com</user>
+            <user>becky.sy@ihsmarkit.com</user>
+            <user>eri.hasumoto@ihsmarkit.com</user>
+            <user>iris.karabatos@ihsmarkit.com</user>
+            <user>kinnerey.patel@ihsmarkit.com</user>
+            <user>mark.quejado@ihsmarkit.com</user>
+            <user>saumya.mody@ihsmarkit.com</user>
+            <user>suneet.raniga@ihsmarkit.com</user>
+            <user>tanvi.arora@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | DeltaOne | Custom Baskets</name>
+    <queueMembers>
+        <users>
+            <user>arun.nanjundappa@ihsmarkit.com</user>
+            <user>avinash.thankappanrosemary@ihsmarkit.com</user>
+            <user>ayobami.adeshina@ihsmarkit.com</user>
+            <user>chloe.koprucki@markit.com.prod</user>
+            <user>christine.chow@ihsmarkit.com</user>
+            <user>fe.gonzalezzamora@ihsmarkit.com</user>
+            <user>joanna.stawicka@ihsmarkit.com</user>
+            <user>karan.naresh@ihsmarkit.com</user>
+            <user>naveen.veedu@ihsmarkit.com</user>
+            <user>olrick.olenga@ihsmarkit.com</user>
+            <user>raju.noor@ihsmarkit.com</user>
+            <user>rayna.qian@ihsmarkit.com</user>
+            <user>satish.dindwar@ihsmarkit.com</user>
+            <user>shiva.ramakrishna@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

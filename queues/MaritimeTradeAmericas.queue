@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Maritime &amp; Trade - Americas</name>
+    <queueMembers>
+        <users>
+            <user>benjamin.ooi@ihsmarkit.com</user>
+            <user>cathy.martinez@ihsmarkit.com</user>
+            <user>cheryl.walsh@ihsmarkit.com</user>
+            <user>dhrity.singh@ihsmarkit.com</user>
+            <user>gajemugan@ihsmarkit.com</user>
+            <user>kailing.khaw@ihsmarkit.com</user>
+            <user>lessley.jacob@ihsmarkit.com</user>
+            <user>penny.carroll@ihsmarkit.com</user>
+            <user>poobalan.shamugam@ihsmarkit.com</user>
+            <user>sachin.raveendran@ihsmarkit.com</user>
+            <user>tara.macdevitt@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

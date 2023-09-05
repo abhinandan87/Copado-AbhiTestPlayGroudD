@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_34357429</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>SPLIT_MEMBER_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Anton Borisov</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Doris Schindler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Florian Troescher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jaydeep Marwaha</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Laura Lamb</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Luan Vrapqani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Natalie Dark</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nisha Pattni</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Richard Brent</sourceValue>
+            </sourceValues>
+            <value>Alexander Bateman</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Arif Butt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gabrielle Morin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>George Hilton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joao Vilas-Boas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Luc Meier</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthieu Delannoy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oleg Golovenko</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Richard Mayer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Safa Abdul Rasul</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>William Edwards</sourceValue>
+            </sourceValues>
+            <value>Silvana Spano</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>BucketField_34357429</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesSpecialists__c</field>
+    </columns>
+    <columns>
+        <field>SPLIT_TYPE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SPLIT_AMOUNT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SPLIT_PERCENTAGE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_MONTH</field>
+    </columns>
+    <columns>
+        <field>OpportunitySplit.TeamMemberCountry__c</field>
+    </columns>
+    <columns>
+        <field>FISCAL_QUARTER</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.SalesNewPrice__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>SPLIT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>sales specialists</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SalesNewPrice__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.BusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Economic</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Algo,Rpt on Jobs,Bellwether,Sponsored,ReDist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - General Service Account,Place Holder - IHS Markit Internal Employees,Place Holder - Sales,Place Holder - Self Registered Users Account,Place Holder - Unknown Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.NewBusiness</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunitySplit.SalesRegion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SPLIT_MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Johan Boshoff,Richard Willis</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>OpportunitySplit.SalesRegion__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SPLIT_MEMBER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ECR Closed Opp Splits with Products YTD1</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunitySplit</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

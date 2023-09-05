@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>true</blockedByApiWhitelisting>
+    <consumerKey>3MVG9cHH2bfKACZaeRt.LMqM1mGQ.6qAEREyYOn4g6tLg_sEkQPLRw1S2A8n0tQuY67Q070txCgJy.2eqqSe0</consumerKey>
+    <consumerName>Easymorph Dev Connected App</consumerName>
+    <masterLabel>BlacklistedConsumer2031144020106835</masterLabel>
+</BlacklistedConsumer>

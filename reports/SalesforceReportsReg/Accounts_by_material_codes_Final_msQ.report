@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.Owner</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 14 AND ((2 AND 6 AND 10) OR (3 AND 7 AND 11) OR (4 AND 8 AND 12) OR (5 AND 9 AND 13))</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity$StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,1-Open,1-Sales Qualified,2-Need Confirmed,3-Proposal Development,3-Renewal Pending,4.1-Proposal/Quote Delivery,4.2-Verbal Commit,5-Contracting,5-Renewal Contracting,7-Revisit-No Decision,6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder,6L-Closed Lost,6L-Renewal Lost,6L-Forecasting Placeholder,6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.InternalBusinessSegment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Information Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.InternalBusinessSegment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Issuer Services &amp; Global Insights</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.InternalBusinessSegment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Platforms &amp; Regulatory Compliance</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.InternalBusinessSegment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.BusinessLine2__c.Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Equities Info,Financial Risk Analytics,Global Markets Group,Indices,Pricing Valuations and Reference</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.BusinessLine2__c.Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Issuer Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.BusinessLine2__c.Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Derivatives Processing,Regulatory Compliance</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.BusinessLine2__c.Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Debtdomain,EDM,Loan Platforms,Notice Manager,Private Markets,thinkFolio,WSO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EQI: Data Lake,EQI: DeltaOne,EQI: Research Signals,EQI: Trading Analytics,ANL: Data Lake,ANL: Financial Risk Analytics,GMG: Data Lake,GMG: Equities,GMG: Fixed Income,GMG: Municipals,IND: Data Lake,IND: Indices,PVR: Data Lake,PVR: Delivery Services,PVR: PE,PVR: Pricing Data,PVR: Reference Data,PVR: Valuation Services I,PVR: Valuation Services II,ISS: Advisory Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ISS: Advisory Solutions,ISS: Data Lake,ISS: Digital Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>DVP: Credit,DVP: Data Lake,DVP: Leased Lines,DVP: MTM,DVP: Other,RRC: Data Lake,RRC: KY3P</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$PricebookEntry.Product2.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>DD: Debtdomain,EDM: Data Lake,EDM: EDM,LNP: Data Lake,LNP: Loan Platforms,NM: Data Lake,NM: Notice Manager,PM: Data Lake,PM: Private Markets,OMS: thinkFolio,WSO: Data Lake,WSO: WSO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$ContractEndDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2018</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Accounts by material codes Final</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Oppty_with_Product__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

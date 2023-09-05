@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Entity List</fullName>
+        <default>false</default>
+        <label>Entity List</label>
+    </customValue>
+    <customValue>
+        <fullName>Russia Directive 1; Payment terms not &gt; 14 days</fullName>
+        <default>false</default>
+        <label>Russia Directive 1; Payment terms not &gt; 14 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Russia Directive 2; Payment terms not &gt; 60 days</fullName>
+        <default>false</default>
+        <label>Russia Directive 2; Payment terms not &gt; 60 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Russia Directive 2 and 4; Payment terms cannot exceed 60 days, and end use certificate or due diligence questionnaire required</fullName>
+        <default>false</default>
+        <label>Russia Directive 2 and 4; Payment terms cannot exceed 60 days, and end use certificate or due diligence questionnaire required</label>
+    </customValue>
+    <customValue>
+        <fullName>Russia Directive 3; Payment terms not &gt; 30 days</fullName>
+        <default>false</default>
+        <label>Russia Directive 3; Payment terms not &gt; 30 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Russia Directive 4; End use certificate or due diligence questionnaire required </fullName>
+        <default>false</default>
+        <label>Russia Directive 4; End use certificate or due diligence questionnaire required </label>
+    </customValue>
+    <customValue>
+        <fullName>Sanctioned Customer</fullName>
+        <default>false</default>
+        <label>Sanctioned Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>Unverified List</fullName>
+        <default>false</default>
+        <label>Unverified List</label>
+    </customValue>
+    <customValue>
+        <fullName>Venezuela; Payment terms not &gt; 90 days</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Venezuela; Payment terms not &gt; 90 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Venezuela; Payment terms not &gt; 30 days</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Venezuela; Payment terms not &gt; 30 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Prohibited Customer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Prohibited Customer</label>
+    </customValue>
+    <masterLabel>Compliance Restrictions</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

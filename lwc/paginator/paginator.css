@@ -1,0 +1,16 @@
+.nav-info {
+    text-align: center;
+}
+
+.nav-next {
+    text-align: right;
+    height: 24px;
+}
+
+.selectClass {
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 12px;
+    border-color: #808080;
+}

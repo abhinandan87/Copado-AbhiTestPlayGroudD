@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <chartTheme>dark</chartTheme>
+    <colorPalette>unity</colorPalette>
+    <dashboardChartTheme>dark</dashboardChartTheme>
+    <dashboardColorPalette>unity</dashboardColorPalette>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>1-Open,1-Sales Qualified,2-Need Confirmed,3-Proposal Development,3-Renewal Pending,4.1-Proposal/Quote Delivery,4.2-Verbal Commit,5-Contracting,5-Renewal Contracting</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder,6WP-Closed Won/Order Processed</values>
+        </dashboardFilterOptions>
+        <name>Opportunity: Stage</name>
+    </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Adrian Goh,Alena Barford,Calista William,James Kat,Jason Foong,Kulalmozli Kaliasundram,Linda Li,Masanori Wakabayashi,Patrick Maguire,Shobana Pandian</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Alexey Gurevich,Andrey Gavrikov,Anton Shemelin,Darya Gorbatova,Dmitry Retunsky,Ekaterina Galkina,Irina Zamarina,Olga Ilyushkina,Viktoria Malysheva</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Aaron Gardner,Abigail Cregger,Alex Blizzard,Alireza Haghighat,Amy Fuller-Riley,Amy Singer,Andy Quintero,Benjamin Rattner,Brandon DeMarsico,Brandon Jones,Caroline Wilson,Christina Allen,Daniel Heuston,David Arena,Derek Gonsuron,Diane Braaten,Eric Hards,Gina Gurung,Graham Helfrick,Greg Hamby,Jake Sherman,James Ewert,James McCarthy,Jay Wininger,Jeff Benton,Jim Bock,Jim Conway,John Van Nest,Juan Hernandez,Julie Harper,Justin Simmons,Kari L. Parson,Kathy Maher,Kevin Blake,Kim Whipple,Kris McKnight,Leisha Archie,Michael Delgado,Moises Silva,Nail Christian,Nancy Strabala,Nelson Armstrong,Nino Pepper,Oliva Unarce,Patrick Gideon,Robin Fernandez,Ryan Marshall,Sabrina Ousmaal,Sheila Whitten,Steven McKenzie,Tiffany Aspinall,Toby Burrough,Travis Hagler,Vladimir Rybakov,Walter Bruce,Yohana Vivas</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Anup Nair,Asheesh Singh,Pawan Sharma,Sunil Kothari</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Andy Quintero,Benjamin Rattner,Brandon DeMarsico,Jay Wininger,Nail Christian,Nelson Armstrong,Nino Pepper,Sabrina Ousmaal</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Chase Willett,David Gee,Jeff Kopec,Jesse Quinones,Joe Parker,Khizer Khadimally,Linda Kinney,Peter Brown,Rema Zuraiqi,Ryan Johnson,Steve Paetzold,Susan Beury,TeRon Greene</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Charles O&apos;Brien,Chris Kiser,Dick Tam,Emi Kakumaru,Javier Pastor,John Paul Minett,Lindsay Moseley,Pat Barczak,Patricia Alleyne,Patrick Lynch,Susan Brennan-Weldon</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Aaron Gardner,Caroline Wilson,David Arena,Diane Braaten,Eric Hards,Gina Gurung,Julie Harper,Oliva Unarce,Sheila Whitten</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Alexey Gurevich,Andrey Gavrikov,Anton Shemelin,Darya Gorbatova,Dmitry Retunsky,Ekaterina Galkina,Irina Zamarina,Olga Ilyushkina,Viktoria Malysheva,David Choules,Duncan Fisher,Graeme Johannessen,Matthew Jones,Mike Larkin,Samuel Edwards,Donald Escott,Duncan Matheson,Lawrence Jackson,Sarah Stuart,Sinead Tucker,Dillon Watts,Nicole Ryan,Sarah Danan,Stuart Rawlings,Toby Swadling</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Alberto Luna,Eduardo Mechereffe,Erica Dalme,Erick Sanchez,Gabriel Roisenberg,Geraldo Calainho,German Alberto Oviedo,Juan Lopez Ricaurte</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Gang Hao,Hitoshi Shinzawa,John Kim,Livvy Tan,Peng Zhang</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Isoaki Iwasawa,Natsuki Yoshikawa,Sayaka Koyanagi</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Alex Blizzard,Andy Quintero,Benjamin Rattner,Brandon DeMarsico,Christina Allen,Derek Gonsuron,James McCarthy,Jay Wininger,Jeff Benton,Jim Conway,Juan Hernandez,Nail Christian,Nelson Armstrong,Nino Pepper,Patrick Gideon,Robin Fernandez,Ryan Marshall,Sabrina Ousmaal,Steven McKenzie,Travis Hagler</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Alex Garber,Chip Miller,Denise Owens,Edward Shulman,Jennafer Marchetti,Rachel Hobbs,Tiago Votta</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Carlos Lima,Cecilia Gauthier,Karen Moore,Markus Polag</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Donald Escott,Duncan Matheson,Lawrence Jackson,Sarah Stuart,Sinead Tucker</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Jeremy Wong,Lee Shiong Lew,Leo Chen,Min Park,Nao Terada,Ping Yan,Sooi Phing Chee,Yoko Okawado,Young Kim</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Brandon Jones,Daniel Heuston,Greg Hamby,Jake Sherman,John Van Nest,Kathy Maher,Kevin Blake,Leisha Archie,Nancy Strabala</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Adrian Goh,Alena Barford,Alex Garber,Calista William,Chip Miller,David Gillick,Denise Owens,Edward Shulman,Eleni Hanton,Heather MacKenzie,James Kat,Jason Foong,Jelena Bariman,Jennafer Marchetti,Kulalmozli Kaliasundram,Linda Li,Masanori Wakabayashi,Matthew Fox,Matthew Stamp,Patrick Maguire,Rachel Hobbs,Shobana Pandian,Tiago Votta,Tobias Webb</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Anup Nair,Asheesh Singh,Pawan Sharma,Sunil Kothari,Ahmed Salem,Alberto Zoboli,Anton Shenouda,Bouchra Arabi,Hamza Abdel-Hafez,Ish Walia,Karen Logue,Mohammad Kurdi,Nichola McDonald,Safaa Elbezzi</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Christian Peranovic,Christopher Tosello,Martyn Smith,Shane Burnett</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Ashley LeBlanc,Aylin Tumer,Charles O&apos;Brien,Charyl Poche,Chris Kiser,Dillon Watts,Dominik Rozwadowski,Emi Kakumaru,Estiben Garcia,Gang Hao,Hitoshi Shinzawa,Javier Pastor,John Kim,Karen Logue,Lindsay Moseley,Livvy Tan,Massimiliano Cervetti,Maureen Kenyon,Nishat Rezvi,Patricia Alleyne,Patrick Lynch,Peng Zhang,Quintin Stevenson,Sarah Danan,Sinead Tucker,Stuart Rawlings,Susan Brennan-Weldon,Tatyana Ustyantseva,Thomas Krause</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Ayush Ishwar,Cel Montilla,Deanise Moi,Douglas Law,Jorgie Ong,Mohd Afiq Bin Mohd Rafidi,Perline Tan,Poobalan Shamugam,Swamathy Saravanan</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Andy Ranson,Carlos Lima,Cecilia Gauthier,Cosimo Angelilli,Karen Moore,Madison Barefoot,Markus Polag,Reda Semmah,Rudolf Kissling,Sarolta Bodi</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Greg Hamby,Jake Sherman,Rick Griffin</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Dillon Watts,Sarah Danan,Stuart Rawlings,Sinead Tucker</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,An Shun Tan,Ayush Ishwar,Cel Montilla,Christian Peranovic,Christopher Tosello,Deanise Moi,Didiana Idrus,Douglas Law,Han Ju Lee,Henry Liu,Indra Suryata,Isoaki Iwasawa,Jorgie Ong,Kok Hoe Yong,Mandy Gang,Martyn Smith,Mohd Afiq Bin Mohd Rafidi,Natsuki Yoshikawa,Nisa Pujiresya,Perline Tan,Poobalan Shamugam,Renfei Wang,Sayaka Koyanagi,Shane Burnett,Smarco Ho,Supada Wapatthai,Swamathy Saravanan,Tze Yan Lo,Vorarat Vongpadungkiat,Xu Wang,Zhihua Li</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Cina Lee,Emi Kakumaru,Richard Ting</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Ben Coleman,Jeff Kopec,Joe Parker,Khizer Khadimally,Lynn Urban,Michael Sahinen,Nick Grimm,Quintin Stevenson,Rema Zuraiqi,Roger Martin,Susan Beury,Vicky Bray,Zoltan Raffai</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,Aylin Tumer,Estiben Garcia,Karen Logue,Massimiliano Cervetti,Tatyana Ustyantseva,Thomas Krause</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,David Gillick,Eleni Hanton,Heather MacKenzie,Jelena Bariman,Matthew Fox,Matthew Stamp,Tobias Webb</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>,An Shun Tan,Didiana Idrus,Indra Suryata,Nisa Pujiresya,Tze Yan Lo,Vorarat Vongpadungkiat</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Greg Hamby,Jake Sherman,Rick Griffin</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Hailey Liang,Henry Liu,Mandy Gang,Renfei Wang,Xinlei Zhu,Xu Wang</values>
+        </dashboardFilterOptions>
+        <name>Manager</name>
+    </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>12/1/2020 12:00 AM</values>
+            <values>12/31/2020 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>1/1/2021 12:00 AM</values>
+            <values>1/31/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>2/1/2021 12:00 AM</values>
+            <values>2/28/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>3/1/2021 12:00 AM</values>
+            <values>3/31/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>4/1/2021 12:00 AM</values>
+            <values>4/30/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>5/1/2021 12:00 AM</values>
+            <values>5/31/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>6/1/2021 12:00 AM</values>
+            <values>6/30/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>7/1/2021 12:00 AM</values>
+            <values>7/31/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>8/1/2021 12:00 AM</values>
+            <values>8/31/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>9/1/2021 12:00 AM</values>
+            <values>9/30/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>10/1/2021 12:00 AM</values>
+            <values>10/31/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>11/1/2021 12:00 AM</values>
+            <values>11/30/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>12/1/2020 12:00 AM</values>
+            <values>2/28/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>3/1/2021 12:00 AM</values>
+            <values>5/31/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>6/1/2021 12:00 AM</values>
+            <values>8/31/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>between</operator>
+            <values>9/1/2021 12:00 AM</values>
+            <values>11/30/2021 12:00 AM</values>
+        </dashboardFilterOptions>
+        <name>Sales Incentive Approval: Created Date</name>
+    </dashboardFilters>
+    <dashboardGridLayout>
+        <dashboardGridComponents>
+            <colSpan>12</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>FK_$Opportunity.FirstYearValue__c.CONVERT</column>
+                </chartSummary>
+                <componentType>Donut</componentType>
+                <dashboardFilterColumns>
+                    <column>FK_OPP_STAGE_NAME</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>SalesIncentiveApproval__c.IncentiveOwner__c</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>true</expandOthers>
+                <groupingColumn>BucketField_51762712</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>Combined Incentive - FY21</header>
+                <legendPosition>Right</legendPosition>
+                <report>ENR_Sales_Incentives_Report/Combined_Incentive_FY21</report>
+                <showPercentage>false</showPercentage>
+                <showTotal>true</showTotal>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>0</rowIndex>
+            <rowSpan>8</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>FK_$Opportunity.FirstYearValue__c.CONVERT</column>
+                </chartSummary>
+                <componentType>Donut</componentType>
+                <dashboardFilterColumns>
+                    <column>FK_OPP_STAGE_NAME</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>SalesIncentiveApproval__c.IncentiveOwner__c</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>true</expandOthers>
+                <groupingColumn>BucketField_51762712</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>ENR Consulting Incentive - FY21</header>
+                <legendPosition>Right</legendPosition>
+                <report>ENR_Sales_Incentives_Report/ENR_Consulting_Incentive_FY21</report>
+                <showPercentage>false</showPercentage>
+                <showTotal>true</showTotal>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>8</rowIndex>
+            <rowSpan>9</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>4</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>FK_$Opportunity.FirstYearValue__c.CONVERT</column>
+                </chartSummary>
+                <componentType>Donut</componentType>
+                <dashboardFilterColumns>
+                    <column>FK_OPP_STAGE_NAME</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>SalesIncentiveApproval__c.IncentiveOwner__c</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>true</expandOthers>
+                <groupingColumn>BucketField_36598277</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>ENR Cross-sell Incentive - FY21</header>
+                <legendPosition>Right</legendPosition>
+                <report>ENR_Sales_Incentives_Report/ENR_Cross_sell_Incentive_FY21</report>
+                <showPercentage>false</showPercentage>
+                <showTotal>true</showTotal>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>8</rowIndex>
+            <rowSpan>9</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>8</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>FK_$Opportunity.FirstYearValue__c.CONVERT</column>
+                </chartSummary>
+                <componentType>Donut</componentType>
+                <dashboardFilterColumns>
+                    <column>FK_OPP_STAGE_NAME</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>SalesIncentiveApproval__c.IncentiveOwner__c</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>true</expandOthers>
+                <groupingColumn>BucketField_8821106</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>ENR Multi-National Client Incentive FY21</header>
+                <legendPosition>Right</legendPosition>
+                <report>ENR_Sales_Incentives_Report/ENR_Multi_National_Client_Incentive_FY21</report>
+                <showPercentage>false</showPercentage>
+                <showTotal>true</showTotal>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>8</rowIndex>
+            <rowSpan>9</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <dashboardFilterColumns>
+                    <column>FK_OPP_STAGE_NAME</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>SalesIncentiveApproval__c.IncentiveOwner__c</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <groupingSortProperties/>
+                <header>ENR Consulting Incentive - FY21</header>
+                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <metricLabel>Count of Oppys</metricLabel>
+                <report>ENR_Sales_Incentives_Report/ENR_Consulting_Incentive_FY21</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>17</rowIndex>
+            <rowSpan>7</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>4</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <dashboardFilterColumns>
+                    <column>FK_OPP_STAGE_NAME</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>SalesIncentiveApproval__c.IncentiveOwner__c</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <groupingSortProperties/>
+                <header>ENR Cross-sell Incentive - FY21</header>
+                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <metricLabel>Count of Oppys</metricLabel>
+                <report>ENR_Sales_Incentives_Report/ENR_Cross_sell_Incentive_FY211</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>17</rowIndex>
+            <rowSpan>7</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>8</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <dashboardFilterColumns>
+                    <column>FK_OPP_STAGE_NAME</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>SalesIncentiveApproval__c.IncentiveOwner__c</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <groupingSortProperties/>
+                <header>ENR Multi-National Client Incentive FY21</header>
+                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <metricLabel>Count of Oppys</metricLabel>
+                <report>ENR_Sales_Incentives_Report/ENR_Multi_National_Client_Incentive_FY21</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>17</rowIndex>
+            <rowSpan>7</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Bar</componentType>
+                <dashboardFilterColumns>
+                    <column>FK_OPP_STAGE_NAME</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>SalesIncentiveApproval__c.IncentiveOwner__c</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>SalesIncentiveApproval__c.IncentiveOwner__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortColumn>RowCount</sortColumn>
+                        <sortOrder>d</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>ENR Consulting Incentive - FY21</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>ENR_Sales_Incentives_Report/ENR_Consulting_Incentive_FY211</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>24</rowIndex>
+            <rowSpan>7</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>4</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Bar</componentType>
+                <dashboardFilterColumns>
+                    <column>FK_OPP_STAGE_NAME</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>SalesIncentiveApproval__c.IncentiveOwner__c</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>SalesIncentiveApproval__c.IncentiveOwner__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortColumn>RowCount</sortColumn>
+                        <sortOrder>d</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>ENR Cross-sell Incentive - FY21</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>ENR_Sales_Incentives_Report/ENR_Cross_sell_Incentive_FY211</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>24</rowIndex>
+            <rowSpan>7</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>8</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Bar</componentType>
+                <dashboardFilterColumns>
+                    <column>FK_OPP_STAGE_NAME</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>SalesIncentiveApproval__c.IncentiveOwner__c</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
+                    <column>CUST_CREATED_DATE</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>SalesIncentiveApproval__c.IncentiveOwner__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortColumn>RowCount</sortColumn>
+                        <sortOrder>d</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>ENR Multi-National Client Incentive FY21</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>ENR_Sales_Incentives_Report/ENR_Multi_National_Client_Incentive_FY211</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>24</rowIndex>
+            <rowSpan>7</rowSpan>
+        </dashboardGridComponents>
+        <numberOfColumns>12</numberOfColumns>
+        <rowHeight>36</rowHeight>
+    </dashboardGridLayout>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <isGridLayout>true</isGridLayout>
+    <runningUser>anitra.matthews@ihsmarkit.com</runningUser>
+    <textColor>#000000</textColor>
+    <title>Incentives Dashboard_FY21 v2</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Sales Incentive Approval Queue</name>
+    <queueMembers>
+        <users>
+            <user>anitra.matthews@ihsmarkit.com</user>
+            <user>ethel.chan@ihsmarkit.com</user>
+            <user>fangting.tan@ihsmarkit.com</user>
+            <user>gemma.barnes@ihsmarkit.com</user>
+            <user>jacqui.cossar@ihsmarkit.com</user>
+            <user>julie.mccole@ihsmarkit.com</user>
+            <user>matthew.simper@ihsmarkit.com</user>
+            <user>michael.vymetal@ihsmarkit.com</user>
+            <user>nicole.certain@ihsmarkit.com.prod</user>
+            <user>paul.bates@ihsmarkit.com</user>
+            <user>rachael.lim@ihsmarkit.com</user>
+            <user>sophie.mok@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>SalesIncentiveApproval__c</sobjectType>
+    </queueSobject>
+</Queue>

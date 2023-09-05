@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Close the case using this template in case we do not receive any response from the customer</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>No reply from customer</name>
+    <style>none</style>
+    <subject>No reply</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+As I have not heard back from you, I hope your request has been resolved to your desired satisfaction.
+
+&lt;You will shortly recieve a system generated email informing you of the closure of the case&gt; .
+&lt;In that email, you will find a link to a feedback survey regarding your support experience today and how we may serve you better in the future&gt; .
+
+If you require any further assistance, please do not hesitate to  contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care
+Support Portal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

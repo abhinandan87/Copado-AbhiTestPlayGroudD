@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Inactive User Form (due to last login &gt; 30 days)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Inactive User Form (due to last login &gt; 30 days)</name>
+    <style>none</style>
+    <subject>Inactive User Form</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Your license has been deactivated because your last login was greater than 30 days ago.
+
+What you must do?
+If you would like to have your license reissued and login details reactivated, please complete the form (Link Below) and submit it online by pressing the ‘Submit’ button at the end of the form.
+
+Inactive user form
+
+You will be asked to outline the reason for inactivity and the business reason for reissuing the license.
+
+What happens next
+Once we receive your submitted form we will assign a Salesforce License to the Inactive user.
+Upon activation, user will receive a welcome email from our team with instructions on how to login.
+
+IHS Markit Salesforce Helpdesk contact details
+Please contact the Salesforce Helpdesk for any further inquiries or help at salesforce@ihsmarkit.com.
+
+We work proactively in resolving all the salesforce related queries of our users.
+
+Regards,
+{!Case.OwnerFullName}
+Salesforce Configuration Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

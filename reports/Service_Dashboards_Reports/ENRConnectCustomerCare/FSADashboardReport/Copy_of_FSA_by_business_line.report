@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_64053104</developerName>
+        <masterLabel>Business Line</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>WorkOrder.FieldServiceActivityProducts__r$ProductGroup__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Commodities &amp; Food</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertilizers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Biofuels</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Crop Protection &amp; Seeds</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Policy &amp; Regulation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Animal Health</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agriculture</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agri Consulting</sourceValue>
+            </sourceValues>
+            <value>Agribusiness</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chemical Cost Curve Service</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Handbooks: Speciality Chemicals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Information &amp; Same Day Analysis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Technology Analytics Reports</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>World Analysis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Market Advisory Service (MAS)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Specialty Chemicals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Handbooks: Info &amp; Same Day</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Reports: PEP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Reports: Specialty Chemicals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Base Chemicals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemical Reports: Custom</sourceValue>
+            </sourceValues>
+            <value>Chemical</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Costs &amp; Technology</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Companies &amp; Transactions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Plays &amp; Basins</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>E&amp;P Terms &amp; Above Ground Risks</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PEPS</sourceValue>
+            </sourceValues>
+            <value>Upstream</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Coal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Coal Publications &amp; Indices</sourceValue>
+            </sourceValues>
+            <value>CMM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Global Gas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>GPE: Financials</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>GPE Cross Energy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Power &amp; Renewables</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PCGR Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EWP Financial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EWP Non-Financial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Energy Technology</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CSG: Financials</sourceValue>
+            </sourceValues>
+            <value>Climate and Sustainability</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Crude Oil Markets</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Midstream Oil &amp; NGL</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Midstream Oil &amp; Gas Data</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Midstream</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>OMMD Data</sourceValue>
+            </sourceValues>
+            <value>OMD</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_64053104</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>WorkOrder.FieldServiceActivityProducts__r$Name</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Account</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>WorkOrder$NumberOfProducts__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$PrimaryInstructor__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$StartDate</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Name</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$ActivityType__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>WorkOrder$TotalSeats__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>WorkOrder$NumberOfAttendees__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>FSA by business line</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR (3 AND 4))</booleanFilter>
+        <criteriaItems>
+            <column>WorkOrder$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Delivered</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$PrimaryInstructor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Loic Bolomo,Adam Baker,Ashli Kular,Beatriz Rodriguez,Christa Huber,Curt Jones,Daniela Guadagni,Dilys,Faisal Ali,Mims,Hannah Tan,Isabelly Fernandes,Jessica Frame,Johanna Tischbierek,Laura Mora,Lisa Olschner,Michael Homburger,Michele Maumus,Mounir El Agouz,Nadezhda Gutman,Olivier Tambwe,Salida Baharum,Sarah Faizan,Serge Lomago,Shakeel Rouf,Sharelle Fortuin,Staci Stark,Larsen Mabika,Olivia Du,Mayra Marinero,Susan Machiri,Ditiro Hlongwane,Yew Ru Chin,Jenny Smith,Mirza Aslam Baig Aslam,Nicole Pierson,Jessica Phillips,Nathalia Perez</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$PrimaryInstructor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Marcin Kopicki</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$ProductGroups__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Animal Health,Agri Consulting,Agriculture,Biofuels,Chemical,Chemical Cost Curve Service,Chemical Handbooks: Specialty Chemicals,Chemical Information &amp; Same Day Analysis,Chemical Reports: PEP,Climate &amp; Emissions,Coal,Coal Publications &amp; Indices,Commodities &amp; Food,Companies &amp; Transactions,Company Strategies and Performance,Connect,Costs &amp; Technology,Crop Protection &amp; Seeds,Crude Oil Markets,CSG: Investing in Energy,E&amp;P Terms &amp; Above Ground Risks,Energy Technology,EWP Financial,EWP Non-Financial,Fertilizers,Global Gas,GPE Cross Energy,GPE: Financials,Insight Bundle,Market Advisory Service,Midstream Oil &amp; NGL,OMMD Data,P&amp;P Supply Chain - Procurement &amp; Agriculture,PCGR Services,PEPS,Plays &amp; Basins,PointLogic Energy,Policy &amp; Regulation,Power &amp; Renewables,Refining,Specialty Chemicals,The Energy Daily,World Analysis,Crops,Agri</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_64053104</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>WorkOrder.FieldServiceActivityProducts__r$ProductGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of FSA by business line</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FSA_members_with_products__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>WorkOrder$StartDate</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

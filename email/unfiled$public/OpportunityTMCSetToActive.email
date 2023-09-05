@@ -1,0 +1,33 @@
+Dear {!Opportunity.OwnerFullName},
+
+This is a reminder regarding your opportunity: 
+
+Opportunity name: "{!Opportunity.Name}" 
+
+Account: {!Opportunity.Account}
+
+Link to your Opportunity: {!Opportunity.Link}"
+
+Close Date: {!Opportunity.CloseDate}
+
+Total Opportunity Amount : {!Opportunity.Amount__c}
+
+First Year Value - {!Opportunity.FirstYearValue__c}
+
+Product/s :  {!Opportunity.ProductGroup__c}
+
+Sales Specialist/s - {!Opportunity.SalesSpecialists__c}
+
+Account Manager/s -  {!Opportunity.AccountManagers__c}
+
+Opportunity Geography - {!Opportunity.OpportunityGeography__c}
+
+which shall be reviewed at the upcoming Transactions Management Committee on {!Opportunity.NextReview__c}
+
+If you haven't already done so, 
+
+Please confirm your attendance by email to "MK-Transaction Management Committee Administration" and a meeting invitation will be forwarded with dial-in details. 
+
+Thank you. 
+
+Transactions Management Committee

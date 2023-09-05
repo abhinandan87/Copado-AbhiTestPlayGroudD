@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Case.ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Abhinav Bhandari,Abhishek Dixit,Alice Morgan,Amanda Murray,Angela conti,Anitha Charoth,Aurea Colon,Benit Kurian,Brooke Bliven,Charles Branch,Clare Lloyd,Cleo Koay,Clinton Mak,Colin Burbury,Debra Mastrogiulio,Deepak Dutt,Dom O&apos;Halloran,Gaurav Srivastav,george barker,Ghirender Kumar Palange,Hyewon Hwang,Iftekhar Bhuiyan,Jellenie Estares,Jessie Wang,Jim Bowater,Kar Yip Mak,Kaushal Sharma,Khushboo Nagpal,Kriti Malhotra,Mayuri Goel,Mel Nguyen,Michael Wilshere,mizael poh,Mohamedali Visram,Mudassir Khan,Nikita Goyal,Nikita Narang,Paul Rasay,Peter Walker,Ping Leong Ng,Poonam Singh,Ramit Vohra,Robert Schweikert,Sahil Jain,Sahilah Shiekh Mahamud,Sean Klein,Shivani Abrol,Smarak Nayak,Somesh Sinha,Subhasish Ranjan Das,Swati Gupta,TzeS Koay,Vandita Agarwal,Wilson Lee,Yumi Matsumoto,Mel Yap,Xi Chen</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | DS Match | Implementation,FM | MSERV UAT | BAU,FM | MW | Onboarding,FM | MarkitSERV | MTM Implementation,FM | MSERV Membership,FM | MSERV FX | Onboarding | TradeSTP,FM | MSERV DS Match UAT</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>IS Cases - Since Dec 2018</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2019-04-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-01-01</startDate>
+    </timeFrameFilter>
+</Report>

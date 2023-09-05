@@ -112,6 +112,15 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>PKIDMilestone__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>Mst{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID Milestone</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
         <fullName>ParentEntityId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>

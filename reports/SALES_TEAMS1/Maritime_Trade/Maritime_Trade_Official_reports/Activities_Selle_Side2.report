@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>Activity.MeetingNote__c</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>LOCATION</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.ExternalOrgType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sell-Side,Financial Sell-Side</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Anthony Few,Tristan James,James Drogalis,Tim Roxby,Richard Hanft,Aliet Martinez,Carlos Thimann,Claudia Rojas,Daniel Stafford,Maria Elena Barrios,Max Jallad,Misty Giordano Belser,Richard Powers,Rosalina Barragan,German Diego Duque,aliet martinez,Jack Power,Bradley Koekemoer,Briac Lemee,Edward Marsh,Louise Lasfer,Muzafar Ahmad,Roberta Migliorini,Sam Chamberlain,Soren Bruun,Victoria Fitch,justin heron,Tara MacDevitt,Benjamin Ooi,Jiayeen Tan,Shanthy.P Pakirisamy,Vladimir Tikhvinskiy,Charlie Ng,Alex Lee,Chonghooi Goh,Enrico Perini,Felicia Kar Mun Yeow,Felicia Yeow,Joe Chuah,Mohamed Ouail Drouiche,Nicole Lim,Reuben Lim,Siddhartha Selvanathan,Kenny Fu,Ahmad Sayuti Ibrahim,Amarjeet Gigindar Singh,Azman Ali Mohd Baharudeen,Guang Xuan Lee,Khaleerurrahman ShaikDawood,Mohamed Fauzi Bin Mohamed Johan,Mohamed Fauzi,Mohd Firdaus Haikal Abdullah,Raymond Firdaus,Sin Yian Lau,Terence Soo,KaiLing Khaw,Carl Aeria,Yeap,hazelle,Barnaby Dobson,Anthony Lim,Cameron Gumley,Rishad Lilani,Sidney Leung,Jonathan Wei,Takashi Sekimoto,Sachiko Koide,Richard Katsuta,Rina Arai,Sally Kim,Xiaolong Song,Stella Huang,Ron Pan,Lorena Zanol,Eddie Zhao,Alexander Dodds,mei ping liew,jaeseung lee,Alexander Geoffrey James Dodds,sam au yeung</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Activities Sell Side - Account level</name>
+    <params>
+        <name>closed</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountActivity@Account.AdditionalAccountFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

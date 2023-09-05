@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FieldServiceActivityProduct__c$Name</field>
+    </columns>
+    <columns>
+        <field>FieldServiceActivityProduct__c$FieldServiceActivity__c.Account.ExternalOrgType__c</field>
+    </columns>
+    <columns>
+        <field>FieldServiceActivityProduct__c$FieldServiceActivity__c.Account.InstitutionType__c</field>
+    </columns>
+    <columns>
+        <field>FieldServiceActivityProduct__c$ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>FieldServiceActivityProduct__c$FieldServiceActivity__c.Status</field>
+    </columns>
+    <columns>
+        <field>FieldServiceActivityProduct__c$FieldServiceActivity__c.Account</field>
+    </columns>
+    <columns>
+        <field>FieldServiceActivityProduct__c$FieldServiceActivity__c.Owner.Name</field>
+    </columns>
+    <columns>
+        <field>FieldServiceActivityProduct__c$FieldServiceActivity__c.Contact.Name</field>
+    </columns>
+    <columns>
+        <field>FieldServiceActivityProduct__c$FieldServiceActivity__c.ActivityType__c</field>
+    </columns>
+    <columns>
+        <field>FieldServiceActivityProduct__c$FieldServiceActivity__c.StartDate</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6)</booleanFilter>
+        <criteriaItems>
+            <column>FieldServiceActivityProduct__c$FieldServiceActivity__c.Account.ExternalOrgType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Buy-Side,Financial Buy-Side,Sell-Side,Financial Sell-Side,&quot;Government, NGOs and Non-profit&quot;,Professional and Business Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FieldServiceActivityProduct__c$FieldServiceActivity__c.Account.InstitutionType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Asset Management - Holding Company,Asset Management,Bank - Central,Bank - Development,Consulting and Advisory,Credit Union,Direct Lender,Fund Administrator/Custodian/Trustee/Servicer,Fund of Funds,Insurance Company,International Bank,Investment Bank/Securities Firm,Investment Consultants,National Bank,Pension Fund,Professional and Business Services - Other,Supranational or National Lender/Investor,SEF,Wealth Management &amp; Family Offices</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FieldServiceActivityProduct__c$ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Accumap-Data,AccuLogs,Accumap,Accumap-Midstream,Accumap-Software,Asset Valuation,Base Chemcicals,Basin Data,Chemical Consulting,Chemical Cost Curve Service,Chemical Events,Chemical Handbooks: Speciality Chemicals,Chemical Information &amp; Same Day Analysis,Chemical PP,Chemical Reports: Custom,Chemical Reports: PEP,Chemical Technology Analytics Reports,Chemicals Royalties,Coal Consulting,Coal Events,Coal Indices,Coal Publications &amp; Indices,Coal,Community,Companies &amp; Transactions,Company Insight,Company Strategies and Performance,Content Delivery Intl Mid,Content Delivery Intl,Content Delivery NA,Content Delivery Partner,Content Partners NA,Context Distribution/Content,Costs &amp; Technology,Crude Oil Markets,Culture Data NA,Data Management Content Intl,Data Management Content NA,Data Management Services NA,Digital Logs NA,DMS Midstream,DNA,Downstream Analytics,Downstream Consulting,Downstream PP,Drilling Data NA,Drilling Wire NA,E&amp;P Content Intl,E&amp;P Terms &amp; Above Ground Risks,EDM Base,EGIS Can,EGIS Midstream,Energy Documents,Energy News on Demand,Engineering Data NA,Engineering Training &amp; Client Services,Environmental Data NA,eTriever,EV Recharge Locations,Evolution,EWP Consulting,EWP Events,EWP Financial,EWP Non-Financial,EWP Paid Presentations,EWP,Field Maps NA,FieldDirect,Fuel Prices</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FieldServiceActivityProduct__c$ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>General Energy Data Services &amp; Fees,Geopolitical Data NA,GeoSyn Data,GeoWebWorks Can,GIS Data NA,GIS Mistream,Global Gas,Global Markets,Harmony Enterprise,Harmony,Interpreted Tops,Kingdom,Land Data Can,Land Data US,Land Data,LAS Tools,Log Digitizing Services,LogArc / LogTech,Logs &amp; Seismic Data Intl,LPG Events,Market Advisory Service (MAS),Market Daily Services,Metals &amp; Mining,Midstream Oil &amp; Gas Data,Midstream Oil &amp; NGL,Midstream,NAPD Other,NAPD,NAVX Other,NAVX Retail,Oil &amp; Gas Data,OMDC Consulting,OMMD Data,OMMD MCS,OPIS Rack,OPIS Retail,OPIS Spot,Optimize,Paid Presentations,Parking Availability,PCGR Consulting,PCGR MCS,PCGR PP,PCGR Services Trans,PCGR Services,Perform,Performance Evaluator NA,Petra Energy Data,Petra,Petrodata,Piper,Plan Distribution Service,Plays &amp; Basins,PointLogic Energy,Power &amp; Renewables,Power &amp; Transmission Data NA,PowerTools,Production Data NA,Production Engineering Services,Que$tor,Raster Logs NA,Rig Data NA,Seismic Surveys NA,Specialty Chemicals,SubPUMP,Surcharges,Technical Analytics,The Energy Daily,Topography Data NA,Training and Client Services,Trench Data NA,Upstream Consulting,Upstream Intelligence,Upstream Technical Consulting,Upstream View,US Offshore Lease Data Trans,Field Maps NA,FieldDirect,Fuel Prices</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FieldServiceActivityProduct__c$ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>GeoWebWorks Can,GIS Data NA,GIS Mistream,Global Gas,Global Markets,Harmony Enterprise,Harmony,Interpreted Tops,Kingdom,Land Data Can,Land Data US,Land Data,LAS Tools,Log Digitizing Services,LogArc / LogTech,Logs &amp; Seismic Data Intl,LPG Events,Market Advisory Service (MAS),Market Daily Services,Metals &amp; Mining,Midstream Oil &amp; Gas Data,Midstream Oil &amp; NGL,Midstream,NAPD Other,NAPD,NAVX Other,NAVX Retail,Oil &amp; Gas Data,OMDC Consulting,OMMD Data,OMMD MCS,OPIS Rack,OPIS Retail,OPIS Spot,Optimize,Paid Presentations,Parking Availability,PCGR Consulting,PCGR MCS,PCGR PP,PCGR Services Trans,PCGR Services,Perform,Performance Evaluator NA,Petra Energy Data,Petra,Petrodata,Piper,Plan Distribution Service,Plays &amp; Basins,PointLogic Energy,Power &amp; Renewables,Power &amp; Transmission Data NA,PowerTools,Production Data NA,Production Engineering Services,Que$tor,Raster Logs NA,Rig Data NA,Seismic Surveys NA,Specialty Chemicals,SubPUMP,Surcharges,Technical Analytics,The Energy Daily,Topography Data NA,Training and Client Services,Trench Data NA,Upstream Consulting,Upstream Intelligence,Upstream Technical Consulting,Upstream View,US Offshore Lease Data,US Well Data,Validata,Valtus,Vantage Discontinued,Well Data Intl,Well Data NA,Well Log Downloader,WellTest,World Analysis,Agri Coal,Agri Consulting,Agri Events,Agri Gas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FieldServiceActivityProduct__c$ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Agri Multi-Client Studies,Animal Health,Animal Health-Advertising,Biofuels,Commodities &amp; Food,Commodities &amp; Food-Advertising,Crop Protection &amp; Seeds,Crop Protection &amp; Seeds-Advertising,Fertilizers,Policy &amp; Regulation,Policy &amp; Regulation-Advertising,Agriculture</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>FSA by Account Type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FSAProducts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FieldServiceActivityProduct__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURPREV1</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_8682586</developerName>
+        <masterLabel>Product Name 1</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>PMD/Agraspire/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PMD/Agreworld/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PMD/Agriservice/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PMD/Biologicals/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PMD/Seed Service/Online/Subs</sourceValue>
+            </sourceValues>
+            <value>PMD</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>FO Licht/Coffee/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FO Licht/Ethanol &amp; Biofuels/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FO Licht/Ethanol Data/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FO Licht/Ethanol Price Rpt/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FO Licht/Molasses &amp; Feed/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FO Licht/Molasses Feed Data/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FO Licht/Sugar &amp; Sweetener/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FO Licht/Sugar Data/Online/Subs</sourceValue>
+            </sourceValues>
+            <value>FO Licht</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_73517154</developerName>
+        <masterLabel>Product Name 2</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Policy/US Food Policy/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Policy/US Agri/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Policy/EU Food Law/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Policy/EU Agri/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Policy/Complete/OL/Subs</sourceValue>
+            </sourceValues>
+            <value>Policy</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Food&amp;Agri Mkt Rpt/Dried Frt&amp;Nut/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt Rpt/Sugar/OL/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt Rpt/Grains/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt Rpt/Frozen/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt Rpt/Dairy/OL/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt Rpt/Coffee/OL/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt Rpt/Cocoa/OL/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt Rpt/Can&amp;Tom/OL/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt Rpt/Beverage/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt Rpt/API Data/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt/Spice&amp;Exotic/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt/PL Bundle/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt/Oils&amp;Oilseed/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt/Meat&amp;Lvstk/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt/Fruit&amp;Veg/OL/Sub</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Food &amp; Agri Comm Mkt/FN Bundle/OL/Sub</sourceValue>
+            </sourceValues>
+            <value>FACMR</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_20894721</developerName>
+        <masterLabel>Product Name 3</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Fertecon/Nitrates Outlook/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Nitrates Outlook/Print/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Nitrogen Data File/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Nitrogen Market/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Phosphate Futures/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Phosphate Market/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Phosphate Outlook/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Phosphate Outlook/Print/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Potash Market Report/Email/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Potash Outlook/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Potash Outlook/Print/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Sulphur Futures/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Sulphuric Acid Mkt/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Sulphur Market Rpt/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Sulphur Outlook/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Urea Futures/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Urea Outlook/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Urea Outlook/Print/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/US Market Review/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/World Market Review/Online/Subs</sourceValue>
+            </sourceValues>
+            <value>Fertecon 1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Fertecon/Ammonia Futures/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Ammonia Market Rpt/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Ammonia Outlook/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Ammonia Outlook/Print/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Animal Feed Phosphates/One-off</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/API - Data Feed/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/EU Fertiliser/Online/Subs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fertecon/Nitrates Futures/Online/Subs</sourceValue>
+            </sourceValues>
+            <value>Fertecon 2</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CONTACT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Case.ResolutionDescription__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Duplicate Queue,Delete Queue,Merged</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Agriculture,Agri Consulting,Animal Health,Commodities &amp; Food,Crop Protection &amp; Seeds,Policy &amp; Regulation,Fertilizers,Biofuels</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Subtype__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AgriBusiness,Data Challenge</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Product Name</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseCustomEntity$CaseProducts__c@CaseProducts__c.Product__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

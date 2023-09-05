@@ -1,0 +1,7 @@
+<template>
+    <template for:each={listDrdt} for:item="drdt" for:index="index">
+        <h3 class="slds-section-title--divider slds-text-title_bold" key={drdt}> {drdt} Details</h3>
+      <!--  <div class="slds-text-heading_small" key={drdt}> {drdt} Details</div>-->
+        <c-vindicator-table key={drdt} drdt-type={drdt}></c-vindicator-table>
+    </template>
+</template>

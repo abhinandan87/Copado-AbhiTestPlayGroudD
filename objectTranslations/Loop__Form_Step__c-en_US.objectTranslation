@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DocGen Package --></label>
+        <name>Loop__DDP__c</name>
+        <relationshipLabel><!-- Form Steps --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the desired width in pixels or percent for the field input column of the form, e.g. 100px or 30%. --></help>
+        <label><!-- Input Column Width --></label>
+        <name>Loop__Input_Column_Width__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the desired width in pixels or percent for the field label column of the form, e.g. 100px or 30%. --></help>
+        <label><!-- Label Column Width --></label>
+        <name>Loop__Label_Column_Width__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Loop__Order__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Clone_Form --></label>
+        <name>Loop__Clone_Form</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditForm --></label>
+        <name>Loop__EditForm</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Form --></label>
+        <name>Loop__Edit_Form</name>
+    </webLinks>
+</CustomObjectTranslation>

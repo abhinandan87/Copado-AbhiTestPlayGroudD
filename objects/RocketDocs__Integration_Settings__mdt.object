@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>RocketDocs Salesforce Connector 2.0: Setup for customer specific integration settings</description>
+    <fields>
+        <fullName>RocketDocs__API_Endpoint__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: Core endpoint to the RocketDocs Instance to be set by the SFDC Admin</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>API Endpoint</label>
+        <length>255</length>
+        <required>false</required>
+        <securityClassification>Public</securityClassification>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RocketDocs__API_Token__c</fullName>
+        <businessStatus>Hidden</businessStatus>
+        <deprecated>false</deprecated>
+        <description>RocketDocs Salesforce Connector 2.0: JWT bearer token to be generated and set by the SFDC Admin to allow authenticated connection from SFDC to RocketDocs</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>API Token</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Integration Settings</label>
+    <pluralLabel>Integration Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

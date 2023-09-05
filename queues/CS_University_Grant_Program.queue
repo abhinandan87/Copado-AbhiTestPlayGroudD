@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>universityprograms_energy@ihsmarkit.com</email>
+    <name>CS | University Grant Program</name>
+    <queueMembers>
+        <users>
+            <user>cheryl.adams@ihsmarkit.com</user>
+            <user>jessica.mayor@ihsmarkit.com</user>
+            <user>larry.gerken@ihsmarkit.com</user>
+            <user>louise.harvey@ihsmarkit.com</user>
+            <user>maria.van@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

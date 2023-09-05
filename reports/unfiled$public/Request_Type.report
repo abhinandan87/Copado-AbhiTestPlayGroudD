@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Case.ContractManagement,Case.SalesforceHelpdesk,Case.Onboarding,Case.OrderManagementDeliveryHelpDesk,Case.GDSA,Case.CustomerCare,Case.ResponseManagement,Case.Implementation,Case.OrderManagement,Case.JoinerTransferLeaver,Case.SalesforceSuggestion,Case.SalesOperations</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ankit jain,ankit rajvanshi,supriya saroha,gaurav chaudhary,himanshu gehaney,j</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.RequestType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Business Continuity,Client Query,Compliance,Due Diligence,Follow Up Questions,Formatting,Insurance,Project,RFP – Agreement,RFP – Follow Up,RFP – Grant,RFP – NDA,RFP – Prequalification,RFP – Proposal,RFP – Request for Information,RFP – Request for Proposal,RFP – Request for Quote,RFP – Request for Submission,Risk Assessment,Security Questionnaire,Site Visit,SSAE Request,Vendor Questionnaire,Risk Reporting,Acquisition Onboarding,Assignments and Transfer,Continuation Letters,Contract Attachments,Contract Templates,Data Update,Fee Waiver,Legal Requests and Queries,Non-Renewal and Termination,Other,Price Increase,Process and Training,Signing Policy</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.RequestType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Request Type</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2019-09-10</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-12-01</startDate>
+    </timeFrameFilter>
+</Report>

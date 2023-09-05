@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>mk-datagovernancerefdata@ihsmarkit.com</email>
+    <name>FM | Reference Data | Data Governance</name>
+    <queueMembers>
+        <users>
+            <user>akshay.aggarwal@ihsmarkit.com</user>
+            <user>jeff.snow@ihsmarkit.com</user>
+            <user>mallika.kohli@ihsmarkit.com</user>
+            <user>neha.tiwari@ihsmarkit.com</user>
+            <user>nitin.jha@ihsmarkit.com</user>
+            <user>prabhat.rawat@ihsmarkit.com</user>
+            <user>raghusudershan.vedula@ihsmarkit.com</user>
+            <user>rahul.bhatia@ihsmarkit.com</user>
+            <user>rajiv.tripathi@ihsmarkit.com</user>
+            <user>reetika.mehta@ihsmarkit.com</user>
+            <user>silky.natani@ihsmarkit.com</user>
+            <user>udit.sharma2@ihsmarkit.com</user>
+            <user>vamshi.saggam@ihsmarkit.com</user>
+            <user>yogita.negi@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

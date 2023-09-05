@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- TI Content --></label>
+        <name>TILBP__TIContent__c</name>
+        <relationshipLabel><!-- TI Course Authors --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

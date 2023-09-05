@@ -1,0 +1,9 @@
+Hello {!Contact.FirstName},
+
+(Text)
+
+You will receive an email on the case closure regarding a short SURVEY about your experience. Please spare a moment to provide your valuable feedback.
+
+Regards,
+{!User.FirstName} {!User.LastName}
+{!User.Title}

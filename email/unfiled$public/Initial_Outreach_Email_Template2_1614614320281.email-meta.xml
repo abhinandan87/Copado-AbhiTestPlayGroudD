@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>IO – CONT. REG./RESP. FROM PREVIOUS REQUEST</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Initial Outreach Email Template2</name>
+    <relatedEntityType>Case</relatedEntityType>
+    <style>none</style>
+    <subject>Vendor Name - Client Name Due Diligence</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

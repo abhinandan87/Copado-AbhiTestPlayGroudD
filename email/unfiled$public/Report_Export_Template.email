@@ -1,0 +1,26 @@
+Dear {!Contact.FirstName},
+<br><br>
+
+To assign report export permission, we would require approval from the Steering committee member of your division.
+<br><br>
+
+Kindly submit your business justification to any Steering Committee members listed below for approval. Approval must be obtained from a member who is representing the Business Division you belong to:
+<br><br>
+
+   (Steering Committee Members)<br>
+1.	Edouard Tavernier - Mobility<br>
+2.	Eric Maldonado - Market Intelligence<br>
+3.	Ken Honroth - Engineering Solutions<br>
+4.	Rich Dodds - Commodity Insights<br>
+5.	Amy Gradnik - Finance<br>
+6.	Anne Thomas - Digital Technology Services
+<br><br>
+
+Upon receiving the approval, please complete the Salesforce GDPR Training in case you have not.<br>
+The link is - <a href= "https://www.myworkday.com/ihsmarkit/learning/offering/b1810a2c579801321986e365c21898d4?record=3ebf4dbf472f0101f419418138d90000&type=7c48590b5257100009485b7a25ae0068">GDPR TRAINING</a>. After the completion of training, you may reply to this email to obtain permission. 
+<br><br>
+Feel free to reach out to us in case of any further queries.
+<br><br>
+Regards,<br>
+{!Case.OwnerFullName}<br>
+Salesforce Configuration Team

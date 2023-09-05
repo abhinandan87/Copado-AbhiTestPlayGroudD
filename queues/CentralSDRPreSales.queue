@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Central SDR Pre-Sales</name>
+    <queueMembers>
+        <users>
+            <user>ainakhalilah.izmank@ihsmarkit.com</user>
+            <user>angela.clayton@ihsmarkit.com</user>
+            <user>antoan.michev@ihsmarkit.com</user>
+            <user>blagoja.petrovski@ihsmarkit.com</user>
+            <user>bojan.mircheski@ihsmarkit.com</user>
+            <user>claudia.ng@ihsmarkit.com</user>
+            <user>devia.kamalanathan@ihsmarkit.com</user>
+            <user>jason.winn@ihsmarkit.com</user>
+            <user>kee.shabudin@ihsmarkit.com</user>
+            <user>kirangeorge.mathew@ihsmarkit.com</user>
+            <user>mariyah.lia@ihsmarkit.com</user>
+            <user>martina.graffam@ihsmarkit.com</user>
+            <user>mohamadfauzan.binch@ihsmarkit.com</user>
+            <user>nalina.kaniasan@ihsmarkit.com</user>
+            <user>nikolay.zhelyazkov@ihsmarkit.com</user>
+            <user>ravin.nagarajan@ihsmarkit.com</user>
+            <user>renee.ong@ihsmarkit.com</user>
+            <user>subash.magaindren@ihsmarkit.com</user>
+            <user>teodor.dinev@ihsmarkit.com</user>
+            <user>trinh.nguyen@ihsmarkit.com</user>
+            <user>victoriaa.kyle@ihsmarkit.com</user>
+            <user>wenjern.cheah@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

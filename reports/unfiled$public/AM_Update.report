@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.PKIDAccount__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.PKIDAccount__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Act1044598,Act1086264,Act1093169,Act1093959,Act1094474,Act1095267,Act1099244,Act1099245,Act1099288,Act1099406,Act1100186,Act1104908,Act1108020,Act1110880,Act1111171,Act1113139,Act1119316,Act1120236,Act1126818,Act1137739,Act1260409,Act1411848,Act1508254,Act1595323,Act1599106,Act1609414,Act1616334,Act1616342,Act1623062,Act1626383,Act1637781,Act1647386,Act1655319,Act1656452,Act961952,Act1085564,Act1091129,Act1092908,Act1125100,Act1215074,Act1331011,Act1452055,Act1516116</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>AM Update</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

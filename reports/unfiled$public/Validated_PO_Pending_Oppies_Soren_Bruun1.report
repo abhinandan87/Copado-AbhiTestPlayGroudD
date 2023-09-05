@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$ProductOwner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$PricebookEntry.Product2.Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.OpportunityLineItems$FirstYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityLineItems$ContractEndDate__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.OpportunityLineItems$ProductOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Soren Bruun</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$RelatedContract__c.ContractStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Validated PO Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Contract.ContractStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Validated PO Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$ContractBeingRenewed__c.ContractStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Validated PO Pending</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Opportunitynum__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Validated PO Pending Oppies -Soren Bruun</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Oppty_with_Product__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity.OpportunityLineItems$ProductOwner__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

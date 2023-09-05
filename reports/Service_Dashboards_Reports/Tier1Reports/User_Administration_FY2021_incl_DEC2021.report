@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <currency>GBP</currency>
+    <description>USer Administration Type Cases</description>
+    <filter>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>User Administration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>leaver notification,reset,unregister,web chat</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Subtype__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Create New User,Remove User,Update User</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aaron Ching,Aaron Tang,Anmol Singh,Aman Kumar,Bo Yuan Ng,Chayan Bhattacharjee,Devrach Atawania,Esma Agzanay,Evan Gerlack,Gautam Pant,Janice Chong,Jason Mitchell,Kartikey Bisht,Katerani Selvarraju,Kinnerey Patel,Kok Han Lee,Ling Lim,Mark Quejado,Melanie Mladenova,Mika Sakurai,Mohd Rusdi Rahim,Rashi Dungale,Safiya Murray,Samuel Abraham,Shefali Chawla,Syarwanni Mustafa,Tanvi Arora,Varun Bhutani,Aishna Jain,Eri Hasumoto,Nathan Valdez,Suneet Raniga,Iris Karabatos,Becky Sy</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>User Administration FY2021 incl. DEC2021</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2021-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-12-01</startDate>
+    </timeFrameFilter>
+</Report>

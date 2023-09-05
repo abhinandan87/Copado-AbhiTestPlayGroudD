@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>CIRef_SPG_Referral_Lead_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>CIRef_SPG_Referral_Lead_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>CIRef_SPG_Referral_Lead_CL</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>CIRef_SPG_Referral_Lead_CL</fullName>
+        <fields>Name</fields>
+        <fields>Division_Referred_To__c</fields>
+        <fields>Division_Referred_From__c</fields>
+        <fields>Referral_Submitted_By__c</fields>
+        <fields>Lead_Type__c</fields>
+        <fields>Routing_Status__c</fields>
+        <fields>Routing_Date_Time__c</fields>
+        <label>SPG Referral Lead CL</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>US-3969135: DO NOT MODIFY/DELETE. Referrals auto-created to track the each lead created in unique divisions.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account_Referred__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of account from original referral.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; &amp;  SPG_Referral__r.Account__r.Id,  SPG_Referral__r.Account__r.Name)</formula>
+        <label>Account Referred</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Division_Referred_From_Org_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3977246: DO NOT MODIFY/DELETE. Auto-populates with the name of the division where the referral was submitted (originating referral).</description>
+        <externalId>false</externalId>
+        <label>Division Sent From Org ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Division_Referred_From__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3977246: DO NOT MODIFY/DELETE. Auto-populates with the name of the division where the referral was submitted (originating referral).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Division where referral was submitted.</inlineHelpText>
+        <label>Division Sent From</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Division_Referred_To__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. The name of division where the Informatica should create a lead. This field will be automatically populated based on which divisional checkbox fields are marked TRUE.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Division where the referral will be routed as a lead.</inlineHelpText>
+        <label>Division Sent To</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Referral_Lead_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Used to match records for upserts made by Informatica.</description>
+        <externalId>false</externalId>
+        <label>External Referral Lead ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Disqualified_Reason_Notes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-4167836: Notes if disqualified reason is &quot;Other&quot; or &quot;Prospect Didn&apos;t Want to Buy&quot;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Notes available only if disqualified reason is &quot;Other&quot; or &quot;Prospect Didn&apos;t Want to Buy&quot;.</inlineHelpText>
+        <label>Lead Disqualified Reason Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Disqualified_Reason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Informatica updates this field if and when the divisional lead is disqualified by a sales rep.</description>
+        <externalId>false</externalId>
+        <label>Lead Disqualified Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Last_Modified_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Tracks the last modified date/time of lead.</description>
+        <externalId>false</externalId>
+        <label>Lead Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Owner_Region__c</fullName>
+        <description>US-4742552: Informatica updates region of lead owner on source referral lead from HUB Division Lead Owner Region field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Region of lead owner.</inlineHelpText>
+        <label>Lead Owner Region</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Owner__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Informatica updates with the name of the divisional lead owner.</description>
+        <externalId>false</externalId>
+        <label>Lead Owner</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Informatica updates with the lead status of the divisional referral.</description>
+        <externalId>false</externalId>
+        <label>Lead Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Formula to display record type of parent record.</description>
+        <externalId>false</externalId>
+        <formula>IF(SPG_Referral__r.Pre_load__c = TRUE, &quot;Pre-Load Referral&quot;, SPG_Referral__r.RecordType.Name)</formula>
+        <inlineHelpText>Indicates the type of lead, transfer or referral.</inlineHelpText>
+        <label>Lead Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Informatica updates with the opportunity amount if lead is converted.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Close_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Informatica updates with the opportunity close date if the lead is converted.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Close Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Created_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Informatica updates with the opportunity created date/time if the lead is converted.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Created Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Last_Modified_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Informatica updates with the opportunity last modified if the lead is converted.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Owner__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Informatica updates with the opportunity owner if the lead is converted.</description>
+        <externalId>false</externalId>
+        <label>Opportunity Owner</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Stage_Probability__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Informatica updates with a concatenation of opportunity stage and probability (standard values) if the lead is converted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Displays the standardized opportunity stage and probability percentage.</inlineHelpText>
+        <label>Opportunity Stage Probability</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_loaded_Referral__c</fullName>
+        <description>US-4520409: If Pre-Load on referral is checked then child records inherit the same value.</description>
+        <externalId>false</externalId>
+        <formula>SPG_Referral__r.Pre_load__c</formula>
+        <inlineHelpText>Checked if referral is a pre-load.</inlineHelpText>
+        <label>Pre-loaded Referral</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Referral_Submitted_By__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. Track the user submitting the referral.</description>
+        <externalId>false</externalId>
+        <formula>SPG_Referral__r.Owner:User.FirstName + &quot; &quot; +  SPG_Referral__r.Owner:User.LastName</formula>
+        <label>Lead Submitted By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Routing_Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Informatica will update with the date/time stamp of when the lead was routed/transferred to division.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When the lead is successfully routed, the date/time is stamped once routing is completed.</inlineHelpText>
+        <label>Routing Date/Time</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Routing_Status__c</fullName>
+        <defaultValue>&quot;Created&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Tracks status of informatica routing the referral to each individual division. If Informatica does not route the referral successfully, the status will remain &quot;Created&quot; until the issue is fixed and the referrals is picked up in the next batch.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If status is &quot;routed&quot;, this lead is successfully created in the receiving division. If the status is &quot;Created&quot; or &quot;Transferred&quot;, then the lead has not be received by the division.</inlineHelpText>
+        <label>Routing Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Created</fullName>
+                    <default>false</default>
+                    <label>Created</label>
+                </value>
+                <value>
+                    <fullName>Routed</fullName>
+                    <default>false</default>
+                    <label>Routed</label>
+                </value>
+                <value>
+                    <fullName>Transferred</fullName>
+                    <default>false</default>
+                    <label>Transferred</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SPG_Referral__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US-3969135: DO NOT MODIFY/DELETE. The parent referral that will be automatically populated to link the child referrals via a process builder.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The referral made by the divisional account manager.</inlineHelpText>
+        <label>SPG Referral</label>
+        <referenceTo>SPG_Referral__c</referenceTo>
+        <relationshipName>SPG_Referral_Leads</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>SPG Referral Lead</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Referred__c</columns>
+        <columns>Routing_Status__c</columns>
+        <columns>Routing_Date_Time__c</columns>
+        <columns>Division_Referred_From__c</columns>
+        <columns>Referral_Submitted_By__c</columns>
+        <columns>Division_Referred_To__c</columns>
+        <columns>Lead_Status__c</columns>
+        <columns>Lead_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Referral_Leads</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Referred__c</columns>
+        <columns>Routing_Status__c</columns>
+        <columns>Routing_Date_Time__c</columns>
+        <columns>Division_Referred_From__c</columns>
+        <columns>Referral_Submitted_By__c</columns>
+        <columns>Division_Referred_To__c</columns>
+        <columns>Lead_Status__c</columns>
+        <columns>Lead_Owner__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Referral Leads</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Lead-{000000}</displayFormat>
+        <label>SPG Referral Lead Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>SPG Referral Leads</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <searchResultsAdditionalFields>Account_Referred__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Division_Referred_From__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Referral_Submitted_By__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Division_Referred_To__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Lead_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Lead_Owner__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -105,6 +105,15 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>PKIDPBE__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>PBE{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID PBE</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
         <fullName>Pricebook2Id</fullName>
         <type>Lookup</type>
     </fields>

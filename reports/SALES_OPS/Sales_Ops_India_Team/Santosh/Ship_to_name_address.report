@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STREET</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ShipToCity__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ShipToStateProvince__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_ZIP</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NEW NORTH RESOURCES LTD,HIGHWOOD OIL COMPANY LTD,12TH MAN ENERGY LLC,1476347 ALBERTA LTD,1626020 ALBERTA LTD,1776 ENERGY OPERATORS LLC,1836 RESOURCES LLC,1849 ENERGY PARTNERS LLC,1852797 ALBERTA ULC,1919385 ALBERTA LTD,2163972 ALBERTA LTD,2340816 ALBERTA INC,2WOOD OIL &amp; GAS LLC,3 STONES EXPLORATION INC,3D GEO STERRING,LLC,3-D OIL,3-T EXPLORATION INC,4-G CONTRACTORS,4JW LTD,4K VENTURES LLC,557503 ALBERTA LTD.,5MCC COMPANY LLC,5METIS,80 DEGREES ENERGY LLC,912 INVESTMENTS LLC,A C RILEY COTTON COMPANY,ACT OPERATING,AB KAUNO GAUDAI,ABACO OPERATING LLC,ABBVIE INC,BANCO SANTANDER,ABU QIR FERTILIZERS &amp; CHEM. CO,AC PIENAS LT,GAB CONSULTING GMBH,A2N ENERGY,ACCESS ENERGY LLC,ACERO ENGINEERING INC,ACETO CORP,ACETO LIFE SCIENCES LLC,ACETOP ENERGY LLC,ACOUSTIC GEOSCIENCE CONSULTING,ACOUSTIC GEOSCIENCES CONSULTING,TERRASOND LTD.,AÇUCAR E ALCOOL OSWALDO RIBEIRO DE MENDONÇA LTDA,ACUCAREIRA QUATA S/A,AD TERRA ENERGY,TOM SMITH CONSULTANT,ADAMA BRASIL S/A,ADDAX PETROLEUM CAMEROON LTD,VOG,NICHINO AMERICA INC,NICHINO EUROPE CO LTD,NIHON NOHYAKU CO LTD,NIHON NOHYAKU CO LTD ASSISTANT,ADEX,ADMINISTRADORA DALLARI AGRONEGOCIOS LTDA,ADMINTERMARE A DIVISION OF,ALMACENES DE TEJAS LP,ADUBOS ARAGUAIA,ADVACHEM S.A,ADVANCE ENERGY PARTNERS,ADVANCE ENERGY PARTNERS LLC,HUVEPHARMA EOOD</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Ship to name &amp; address</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>US-3852477: DO NOT MODIFY OR DELETE. Part of SPG Referral functionality to submit referrals from an account.</description>
+    <fieldOverrides>
+        <field>Account__c</field>
+        <formula>Contact.AccountId</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Account_CAPIQ_ID__c</field>
+        <formula>Contact.Account.SNPCAPIQ__CapitalIQCompanyId_txt__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Account_Country__c</field>
+        <formula>Contact.Account.BillingCountry</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Account_State_Province__c</field>
+        <formula>Contact.Account.BillingState</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Contact_City__c</field>
+        <formula>IF(ISBLANK(Contact.MailingAddress), Contact.Account.BillingCity, Contact.MailingCity)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Contact_Country__c</field>
+        <formula>IF(ISBLANK(Contact.MailingAddress), Contact.Account.BillingCountry, Contact.MailingCountry)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Contact_Email__c</field>
+        <formula>Contact.Email</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Contact_Phone__c</field>
+        <formula>If(
+ISBLANK(Contact.Phone), Contact.MobilePhone, Contact.Phone)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Contact_Postal_Code__c</field>
+        <formula>IF(ISBLANK(Contact.MailingAddress), Contact.Account.BillingPostalCode, Contact.MailingPostalCode)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Contact_State_Province__c</field>
+        <formula>IF(ISBLANK(Contact.MailingAddress), Contact.Account.BillingState, Contact.MailingState)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Contact_Street__c</field>
+        <formula>IF(ISBLANK(Contact.MailingAddress), Contact.Account.BillingStreet, Contact.MailingStreet)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Contact_Title__c</field>
+        <formula>Contact.Title</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Division_Sent_From__c</field>
+        <formula>IF($User.HRBusinessLine__c = &quot;Consolidated Markets and Solutions&quot;, &quot;CMS/Product Design&quot;,
+IF($User.HRBusinessLine__c = &quot;Financial Services&quot;, &quot;Financial Services&quot;,
+IF($User.HRBusinessLine__c = &quot;Resources&quot;, &quot;ENR&quot;,
+IF($User.HRBusinessLine__c = &quot;Transportation&quot;, &quot;Automotive&quot;,
+null))))</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <formula>&quot;Created&quot;</formula>
+    </fieldOverrides>
+    <label>Create SPG Referral</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Contact__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Contact_Title__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Contact_Email__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Contact_Phone__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Contact_Street__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Contact_City__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Contact_Postal_Code__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Division__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Interested_Product_Type__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Notes__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>IHS_Subject_Matter_Expert__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Division_Sent_From__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Account__c</field>
+                <uiBehavior>Readonly</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Industry__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Account_Country__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Account_State_Province__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Contact_State_Province__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Contact_Country__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <successMessage>Your referral has been successfully submitted and will be automatically routed to a division.</successMessage>
+    <targetObject>SPG_Referral__c</targetObject>
+    <targetParentField>Contact__c</targetParentField>
+    <targetRecordType>SPG_Referral__c.CIRef_Created_Referral</targetRecordType>
+    <type>Create</type>
+</QuickAction>

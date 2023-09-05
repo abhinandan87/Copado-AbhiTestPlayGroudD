@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contract.ContractID18Character__c</field>
+    </columns>
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Contract.GlobalSegments__c</field>
+    </columns>
+    <columns>
+        <field>Contract.InternalBusinessSegment__c</field>
+    </columns>
+    <columns>
+        <field>Contract.PriceIncreaseClause__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contract.ContractedPriceIncrease__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Contract.PriceIncreaseClause__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,&quot;Consumer Price Index (CPI, RPI or similar)&quot;,&quot;Consumer Price Index (CPI, RPI) incl. Initial Term&quot;,Contractually Stated - Discretionary,Contractually Stated %,Contractually Stated Maximum %,&quot;Lesser of CPI, RPI or Contractually Stated %&quot;,No Increase Allowed</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Price Increase Clause Report Contract</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractList</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

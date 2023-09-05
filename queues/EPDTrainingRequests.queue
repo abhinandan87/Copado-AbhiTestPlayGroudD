@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>E&amp;PD | Training Requests</name>
+    <queueMembers>
+        <users>
+            <user>alex.andrade@ihsmarkit.com</user>
+            <user>andres.martinez@ihsmarkit.com</user>
+            <user>blake.short@ihsmarkit.com</user>
+            <user>cliff.allen@ihsmarkit.com</user>
+            <user>david.wagner@ihsmarkit.com</user>
+            <user>frankie.tse@ihsmarkit.com</user>
+            <user>mary.durham@ihsmarkit.com</user>
+            <user>megan.fehn@ihsmarkit.com</user>
+            <user>travis.miller@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>WorkOrder</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,48 @@
+:host{
+    --lwc-heightInput:1.5rem;
+ }
+.containerdiv > div {
+    display: inline-block;
+    margin-left: 16px;
+    padding-top: 5px;   
+    padding-bottom: 5px; 
+}
+.theadclass{
+    margin-top: 16px;
+}
+.lookupcell{
+    padding-top: 21px;
+}
+.whiteSpaceClass {
+    white-space: nowrap;
+}
+.whiteSpaceNormal {
+    white-space: normal;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: grey;  
+    color: #fff;
+    text-align: right;
+    border-radius: 6px;
+    padding: 5px 0;
+    top: 100%;
+    float: left;
+    overflow-wrap: normal !important;  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+  
+.tooltip:hover .tooltiptext {
+    overflow-wrap: normal !important; 
+    height: auto;
+    visibility: visible; 
+}

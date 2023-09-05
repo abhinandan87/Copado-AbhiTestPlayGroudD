@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_26271986</developerName>
+        <masterLabel>Case Origin</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ORIGIN</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <value>Email</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_69093434</developerName>
+        <masterLabel>Case Origin / Groups</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ORIGIN</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: support@markitserv.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: support@ihsmarkit.com</sourceValue>
+            </sourceValues>
+            <value>Email</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Phone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VM</sourceValue>
+            </sourceValues>
+            <value>Phone</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Web</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web to Case</sourceValue>
+            </sourceValues>
+            <value>Web to Case</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Web Chat</sourceValue>
+            </sourceValues>
+            <value>Webchat</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Self Service</sourceValue>
+            </sourceValues>
+            <value>Self Service</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Quick Action</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Internal</sourceValue>
+            </sourceValues>
+            <value>Internal</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Account</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Case</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contract</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fax</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lead</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mail</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marketing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Service Now</sourceValue>
+            </sourceValues>
+            <value>Others</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_63675266</developerName>
+        <masterLabel>Group / Case Origin</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ORIGIN</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Phone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VM</sourceValue>
+            </sourceValues>
+            <value>Phone</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Web Chat</sourceValue>
+            </sourceValues>
+            <value>Webchat</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Self Service</sourceValue>
+            </sourceValues>
+            <value>Self Service</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Web</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web to Case</sourceValue>
+            </sourceValues>
+            <value>Web to Case</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email: support@markitserv.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: support@ihsmarkit.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mail</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Quick Action</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fax</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Account</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Case</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contract</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lead</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marketing</sourceValue>
+            </sourceValues>
+            <value>Email</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>BucketField_63675266</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All Cases by Support Channel for CMS</description>
+    <filter>
+        <booleanFilter>(1 AND 2) AND (3 OR 4) AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Access,Billing,Data,Notifications,Product Assistance,Training,User Administration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Above Ground,Advantage,AFNOR LOCAL,Agriculture,AVDATA,Benchmarking,BOM Manager,CAPS,Connect,Caps Universe,CatalogXpress,CIS,CIS Advertising,Consolidated Law Registers,Cost Benchmarking,Deposit Accounts,ECR Consulting,ECR Consulting Healthcare,ECR Consulting Macro Econ,ECR Consulting Supply Chain,ECR Country Intelligence,ECR Events,ECR Events NA,ECR Industry Services,ECR Macro Economics,ECR Macro Services,ECR Risk Services,ECR South Africa,ECR Suites,ECR US Regional Services,EIATrack,Engineering Workbench – KC,Engineering Workbench – Other,Engineering Workbench Platform,Engineering Workbench - S&amp;S,Engineering Workbench - S&amp;S UK Local,Engineering Workbench Training,Engineer-it,Environment,Environmental Performance,EQADS (ERC),Equipment,ESDU,ESG,ESG Custom,Facilities Management,FastrackCAD,Food and Drink,Foresight,Goldfire,Goldfire Services,Gov,HDB Data – Financial,HDB Software (Aremos,IDDS,FAME,Other),HDB Software (DataInsight),Healthcare - Life Sciences,Healthcare MSC/PP,HFIS,HMMS Consulting,Info4 Portals,IntraSource,Irish CIS,Irish OHSIS,ISS,Knowledge Collection,Legacy Dataware Maintenance,Legacy Dataware Services,Legacy Dataware Subs,Not in SAP Product Master,OHSIS,OHSIS Adverts,Operational Excellence,P&amp;P Supply Chain – Procurement,Parts,Parts Data Services,PARTsolutions,PCNalert</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Performance Benchmarking Perinorm,Portals,Product Design Consulting,Product Design Custom,Product Design Events,Product Design Maintenance,Product Design Services,Product Design Services UK,Product Design Support Services,Product Design Tools,Reference Linking Service,Retail,Shared,Specify,Specify-It,Specs &amp; Standards-Retail,TDNet,Tools,Trading Standards Specialist,US Military/DODISS,World Economic Service,World Markets Monitor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2019 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Delete,Spam</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.ProductGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CMS | Case Volume | Support Channels |</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

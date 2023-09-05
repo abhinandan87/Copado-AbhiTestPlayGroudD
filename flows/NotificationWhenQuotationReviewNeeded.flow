@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send Email for Quotation Review</description>
+        <name>Send_Email_for_Quotation_Review</name>
+        <label>Send Email for Quotation Review</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>Opportunity.QuotationReviewNeededonOpportunityEmailAlert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.QuotationReviewNeededonOpportunityEmailAlert</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Validate_Sub_Business_Line</name>
+        <label>Validate Sub Business Line</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NA_Market_Reporting</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SubBusinessLine__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Auto: NA Market Reporting</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_for_Quotation_Review</targetReference>
+            </connector>
+            <label>NA Market Reporting</label>
+        </rules>
+    </decisions>
+    <description>IHSMUS-5248722 Quote Approval Request for NA Market Reporting Products</description>
+    <environments>Default</environments>
+    <interviewLabel>NotificationWhenQuotationReviewNeeded {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>NotificationWhenQuotationReviewNeeded</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Validate_Sub_Business_Line</targetReference>
+        </connector>
+        <filterFormula>AND(ISPICKVAL({!$Record.StandardListPriceorAbove__c}, &apos;No&apos;), 
+OR(ISNEW(), ISCHANGED({!$Record.StandardListPriceorAbove__c}))
+)</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

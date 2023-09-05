@@ -100,11 +100,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -112,8 +115,349 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>OpptyProductCompactLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>OpptyProductCompactLayout</fullName>
+        <fields>Product2Id</fields>
+        <fields>Quantity</fields>
+        <fields>UnitPrice</fields>
+        <fields>Status__c</fields>
+        <label>OpptyProductCompactLayout</label>
+    </compactLayouts>
     <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActiveInactiveNetUnitPrice__c</fullName>
+        <description>SFDC1-487 Field to hold salesprice in case opportunity product is inactive</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sales price for Opportunity product</inlineHelpText>
+        <label>Active/Inactive Net Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ActiveInactiveTotalPrice__c</fullName>
+        <description>SFDC1-487 Ghost field created for reporting purposes. It holds total price for both active and inactive products</description>
+        <externalId>false</externalId>
+        <formula>ActiveInactiveNetUnitPrice__c  * Quantity</formula>
+        <inlineHelpText>Automatically calculated total price for product</inlineHelpText>
+        <label>Active/Inactive Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AnnualizedDiscountAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>SFDC1-7082 Annualized discount amount to be copied over from discount amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Annualized discount amount auto calculated by system</inlineHelpText>
+        <label>Annualized Discount Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AnnualizedPrice__c</fullName>
+        <description>SFDC1-173 This field holds the annualized price. Entered by the rep.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Annualized Price</inlineHelpText>
+        <label>Annualized Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AnnualizedTotalAmount__c</fullName>
+        <description>SFDC1-7082 Annualized Total Amount calculated field</description>
+        <externalId>false</externalId>
+        <formula>(( AnnualizedUnitPrice__c - AnnualizedDiscountAmount__c )*Quantity)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Calculates total amount using AnnualizedUnitPrice , AnnualizedDiscountAmount and Quantity</inlineHelpText>
+        <label>Annualized Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AnnualizedUnitPrice__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>SFDC1-7082 annualized unit price for subscription products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Annualized unit price calculated from unit price automatically</inlineHelpText>
+        <label>Annualized Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AssociatedTo__c</fullName>
+        <description>US-5101086: add associatedTo in OpportunityProduct object.</description>
+        <externalId>false</externalId>
+        <label>Associated To</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>AssociatedTo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AuthorizedUsers__c</fullName>
+        <description>SFDC1-9306 : This field will have information related to Authorized users</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter Authorized users</inlineHelpText>
+        <label>Authorized Users</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillToCity__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To : City</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillToClientName__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To : Client Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillToCompanySAP__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To : Company SAP#</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillToCountryNew__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To : Country/Territory</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillToPostalZipCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To : Postal/Zip Code</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillToStateProvince__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To : State/Province</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillToStreet__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To : Street</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CCID__c</fullName>
+        <description>SFDC1-1832 Custom Collection ID</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Custom Collection ID</inlineHelpText>
+        <label>CCID</label>
+        <length>25</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CCQuoteID__c</fullName>
+        <description>SFDC1-1832 Custom Collection QuoteID</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Custom Collection QuoteID</inlineHelpText>
+        <label>CCQuoteID</label>
+        <length>25</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CIDivision__c</fullName>
+        <description>SFDC-5699  : Update rollup information from Global Segment/Internal Business Segment to CIDivision on Opportunity.</description>
+        <externalId>false</externalId>
+        <formula>IF(Text(Status__c)!=&apos;Lost&apos;,
+IF(OR(PricebookEntry.Product2.InternalBusinessSegment__c =&apos;Issuer Solutions &amp; Global Insights&apos;, PricebookEntry.Product2.InternalBusinessSegment__c=&apos;Maritime Trade&apos;), &apos;Financial Services&apos;, IF(OR(PricebookEntry.Product2.Division__c =&apos;Financial Services&apos;, PricebookEntry.Product2.Division__c=&apos;Financial Svcs-Info&apos;), &apos;Financial Services&apos;,
+IF(PricebookEntry.Product2.Division__c =&apos;Consolidated Markets &amp; Solutions&apos;, &apos;Engineering Solutions&apos;,
+IF(PricebookEntry.Product2.Division__c =&apos;Transportation&apos;, &apos;Mobility&apos;,
+IF(PricebookEntry.Product2.Division__c =&apos;Resources&apos;,&apos;ENR&apos;, NULL) ) ) ) ), NULL )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CI Division</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContractEndDate__c</fullName>
+        <description>SFDC1-7027: Date field to store Opportunity’s Contract End Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Updates to the Contract End Date on the Opportunity will overwrite Contract End Date on the Opportunity Product</inlineHelpText>
+        <label>Contract End Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ContractStartDate__c</fullName>
+        <description>SFDC1-7027: Date field to store Opportunity’s Contract Start Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Updates to the Contract Start Date on the Opportunity will overwrite Contract Start Date on the Opportunity Product</inlineHelpText>
+        <label>Contract Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ContractStartQuarter__c</fullName>
+        <description>SFDC-5520: Calculate &apos;Contract Start Date&apos; Quarter Year as per 13month changes for FY2022 and 12month for other Financial Years.</description>
+        <externalId>false</externalId>
+        <formula>IF( YEAR(ContractStartDate__c) &gt; 2021,
+IF(OR(MONTH(ContractStartDate__c) = 1, MONTH(ContractStartDate__c) = 2, MONTH(ContractStartDate__c) = 3), TEXT(YEAR(ContractStartDate__c))&amp;&apos;-Q1&apos;,
+IF(OR(MONTH(ContractStartDate__c) = 4, MONTH(ContractStartDate__c) = 5, MONTH(ContractStartDate__c) = 6), TEXT(YEAR(ContractStartDate__c))&amp;&apos;-Q2&apos;,
+IF(OR(MONTH(ContractStartDate__c) = 7, MONTH(ContractStartDate__c) = 8, MONTH(ContractStartDate__c) = 9), TEXT(YEAR(ContractStartDate__c))&amp;&apos;-Q3&apos;,
+IF(OR(MONTH(ContractStartDate__c) = 10, MONTH(ContractStartDate__c) = 11, MONTH(ContractStartDate__c) = 12), TEXT(YEAR(ContractStartDate__c))&amp;&apos;-Q4&apos;,null)))),
+IF( YEAR(ContractStartDate__c) &lt; 2022,IF(OR(MONTH(ContractStartDate__c) = 12, MONTH(ContractStartDate__c) = 1, MONTH(ContractStartDate__c) = 2), TEXT(YEAR(ADDMONTHS(ContractStartDate__c,1)))&amp;&apos;-Q1&apos;,
+IF(OR(MONTH(ContractStartDate__c) = 3, MONTH(ContractStartDate__c) = 4, MONTH(ContractStartDate__c) = 5), TEXT(YEAR(ADDMONTHS(ContractStartDate__c,1)))&amp;&apos;-Q2&apos;,
+IF(OR(MONTH(ContractStartDate__c) = 6, MONTH(ContractStartDate__c) = 7, MONTH(ContractStartDate__c) = 8), TEXT(YEAR(ADDMONTHS(ContractStartDate__c,1)))&amp;&apos;-Q3&apos;,
+IF(OR(MONTH(ContractStartDate__c) = 9, MONTH(ContractStartDate__c) = 10, MONTH(ContractStartDate__c) = 11), TEXT(YEAR(ADDMONTHS(ContractStartDate__c,1)))&amp;&apos;-Q4&apos;,null)))),null))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contract Start Quarter</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContractStartYear__c</fullName>
+        <description>SFDC-5520: Calculate &apos;Contract Start Date&apos; Year as per 13month changes for FY2022 and 12month for other Financial Years.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(ContractStartDate__c)),IF(YEAR(ContractStartDate__c) &lt;= 2021,TEXT(YEAR(ADDMONTHS(ContractStartDate__c,1))),TEXT(YEAR(ContractStartDate__c))),null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contract Start Year</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CountyDescription__c</fullName>
+        <description>SFDC-5356 county description for CPT integration to populate for some products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>County description</inlineHelpText>
+        <label>County Description</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DeliveryPlatform__c</fullName>
+        <description>SFDC1-543 : Integration Partner Field for sales ops - petrik 
+This data will be used for reporting: closed business, forward looking pipeline and to see which opportunities (full oppy prod details) have revenue share and with who.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Legacy Markit field, please enter a value</inlineHelpText>
+        <label>Delivery Platform</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BlackRock Aladdin</fullName>
+                    <default>false</default>
+                    <label>BlackRock Aladdin</label>
+                </value>
+                <value>
+                    <fullName>Bloomberg</fullName>
+                    <default>false</default>
+                    <label>Bloomberg</label>
+                </value>
+                <value>
+                    <fullName>FactSet</fullName>
+                    <default>false</default>
+                    <label>FactSet</label>
+                </value>
+                <value>
+                    <fullName>MSCI</fullName>
+                    <default>false</default>
+                    <label>MSCI</label>
+                </value>
+                <value>
+                    <fullName>Snowflake Hosted Account</fullName>
+                    <default>false</default>
+                    <label>Snowflake Hosted Account</label>
+                </value>
+                <value>
+                    <fullName>Snowflake Reader Account</fullName>
+                    <default>false</default>
+                    <label>Snowflake Reader Account</label>
+                </value>
+                <value>
+                    <fullName>Workbench</fullName>
+                    <default>false</default>
+                    <label>Workbench</label>
+                </value>
+                <value>
+                    <fullName>Xpressfeed</fullName>
+                    <default>false</default>
+                    <label>Xpressfeed</label>
+                </value>
+                <value>
+                    <fullName>CloudMargin</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>CloudMargin</label>
+                </value>
+                <value>
+                    <fullName>IRESS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>IRESS</label>
+                </value>
+                <value>
+                    <fullName>SunGard</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SunGard</label>
+                </value>
+                <value>
+                    <fullName>WRDS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>WRDS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <fields>
         <fullName>Description</fullName>
     </fields>
@@ -121,14 +465,783 @@
         <fullName>Discount</fullName>
     </fields>
     <fields>
+        <fullName>DiscountOverThreshold__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC1-4275 Indicates whether the opportunity product has been discounted over threshold</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked when product has been discounted over threshold</inlineHelpText>
+        <label>Discount Over Threshold</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DiscountPercentage__c</fullName>
+        <description>SFDC1-173 Denotes the discount percentage to be applied to the UnitPrice. Used in the pricing calculation customization.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify the discount percentage to be applied to the Updated List Price. Only required when the Discount Type is set to &quot;Percentage&quot;.</inlineHelpText>
+        <label>Discount %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>DiscountThreshold__c</fullName>
+        <description>SFDC1-4275 Discount threshold flag calculated from product and product schedules</description>
+        <externalId>false</externalId>
+        <formula>IF(
+DiscountPercentage__c &gt;  PricebookEntry.Product2.DiscountThreshold__c,
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &apos;red&apos;, 30,30) + &quot; This discount is higher than the discount threshold and will trigger an alert to your supervisor once you move the Opportunity into the negotiation stage!&quot;,
+IMAGE(&quot;/img/samples/flag_green.gif&quot;, &apos;green&apos;, 30,30)
+)</formula>
+        <inlineHelpText>The flag will set to Red if discount is over discount threshold on the Product</inlineHelpText>
+        <label>Discount Threshold</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DiscountType__c</fullName>
+        <description>Specify what, if any, type of discount to be applied to the sales price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field denotes the type of discount that is being applied.</inlineHelpText>
+        <label>Discount Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Discount</fullName>
+                    <default>true</default>
+                    <label>No Discount</label>
+                </value>
+                <value>
+                    <fullName>Amount</fullName>
+                    <default>false</default>
+                    <label>Amount</label>
+                </value>
+                <value>
+                    <fullName>Percentage</fullName>
+                    <default>false</default>
+                    <label>Percentage</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Discount_Amount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>SFDC1-173 Denotes the discount amount to be applied to the UnitPrice. Used in the pricing calculation customization.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify the discount amount to be applied to the Updated List Price. Only required when the Discount Type is set to &quot;Amount&quot;.</inlineHelpText>
+        <label>Discount Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>EstimatedValueOfVariableVolBilling__c</fullName>
+        <description>SFDC1-10361 New Field added</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter estimated value of this product (mainly used for Variable and Consultancy estimates in reporting)</inlineHelpText>
+        <label>Estimated Product Value (Var/Cons)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>EstimatedValueatRisk__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Holds the estimated value at risk</inlineHelpText>
+        <label>Estimated Value at Risk</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ExpectedFirstYearValue__c</fullName>
+        <description>SFDC-152 calculated by Opportunity Probability * Opportunity Product First Year Value</description>
+        <externalId>false</externalId>
+        <formula>Opportunity.Probability * FirstYear__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula: Opportunity Probability * Opportunity Product First Year Value</inlineHelpText>
+        <label>Expected First Year Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FirstYear__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>SFDC1-905 This fields holds the first year price for opportunity line items</description>
+        <externalId>false</externalId>
+        <inlineHelpText>First Year Value</inlineHelpText>
+        <label>First Year Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IPJurisdiction__c</fullName>
+        <description>SFDC1-215. Contains the Tax Country field pulled in from the product. Complies with the US Supreme Court Wayfair Decision and Tax Reform Act effective Jan. 1, 2019. 
+SFDC-723. Renamed and replaced the fields.</description>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.IPJurisdiction__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Complies with the US Supreme Court Wayfair Decision and Tax Reform Act effective Jan. 1, 2019.</inlineHelpText>
+        <label>IP Jurisdiction</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IntegrationPartnerRevenueShare__c</fullName>
+        <description>SFDC1-543 : Integration Partner Field for sales ops - petrik
+This data will be used for reporting: closed business, forward looking pipeline and to see which opportunities (full oppy prod details) have revenue share and with who.
+SFDC1-8427: Added picklist value</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Legacy Markit field, please enter a value</inlineHelpText>
+        <label>Integration Partner/Revenue Share</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ascendant Compliance Management</fullName>
+                    <default>false</default>
+                    <label>Ascendant Compliance Management</label>
+                </value>
+                <value>
+                    <fullName>BlackRock Aladdin</fullName>
+                    <default>false</default>
+                    <label>BlackRock Aladdin</label>
+                </value>
+                <value>
+                    <fullName>CloudMargin</fullName>
+                    <default>false</default>
+                    <label>CloudMargin</label>
+                </value>
+                <value>
+                    <fullName>Compliance Solutions Strategies</fullName>
+                    <default>false</default>
+                    <label>Compliance Solutions Strategies</label>
+                </value>
+                <value>
+                    <fullName>Comyno</fullName>
+                    <default>false</default>
+                    <label>Comyno</label>
+                </value>
+                <value>
+                    <fullName>IRESS</fullName>
+                    <default>false</default>
+                    <label>IRESS</label>
+                </value>
+                <value>
+                    <fullName>Simplitium</fullName>
+                    <default>false</default>
+                    <label>Simplitium</label>
+                </value>
+                <value>
+                    <fullName>SunGard</fullName>
+                    <default>false</default>
+                    <label>SunGard</label>
+                </value>
+                <value>
+                    <fullName>WRDS</fullName>
+                    <default>false</default>
+                    <label>WRDS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsProRated__c</fullName>
+        <description>SFDC1-7082 flag to determine if the underlying product is pro-rated or not</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Flag to handle pro-ration of subscription products</inlineHelpText>
+        <label>Is Pro-Rated?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsProductatRisk__c</fullName>
+        <defaultValue>&quot;No&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Product at Risk?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LegacyIDUnique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>SFDC1-7046: Legacy ID Unique field is a concatenation of the source system name and a source system record id to ensure record is uniquely identified.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This field store the concatenation of the source system name and a source system record id to ensure the record is uniquely identified.</inlineHelpText>
+        <label>LegacyIDUnique</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <description>SFDC1-7046: Legacy ID field is the system id (unfriendly) referencing the source record.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This is the system id referencing the source record and is populated via migration</inlineHelpText>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyReference__c</fullName>
+        <description>SFDC1-7046: Legacy Reference field is a friendly system reference to the source record.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This is the reference to the source record populated via migration</inlineHelpText>
+        <label>LegacyReference</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LegacySystem__c</fullName>
+        <description>SFDC1-7046: Legacy System field is a picklist that represents the original system the record came from.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the CRM system the source record came from</inlineHelpText>
+        <label>LegacySystem</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LegacySystem</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LicenseNumber__c</fullName>
+        <description>SFDC1-4689 License Number is a field on the Opportunity Product Detail. The field is Editable on New Business opportunities, and is Read Only for Renewals. It is populated by the Renewal Integration.
+When the Contract is created the License Number from the Opportunity Product Detail should be sent to the License Number on the Contract Product Line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Actual license number for a customer to access a sold product</inlineHelpText>
+        <label>License Number</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LicenseType__c</fullName>
+        <description>SFDC1-4327 : Additional fields for Opportunity Product Detail - License Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the contracted license type with the customer</inlineHelpText>
+        <label>License Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer License</fullName>
+                    <default>false</default>
+                    <label>Customer License</label>
+                </value>
+                <value>
+                    <fullName>Departmental License</fullName>
+                    <default>false</default>
+                    <label>Departmental License</label>
+                </value>
+                <value>
+                    <fullName>Divisional License</fullName>
+                    <default>false</default>
+                    <label>Divisional License</label>
+                </value>
+                <value>
+                    <fullName>Enterprise Wide License</fullName>
+                    <default>false</default>
+                    <label>Enterprise Wide License</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>One Time License</fullName>
+                    <default>false</default>
+                    <label>One Time License</label>
+                </value>
+                <value>
+                    <fullName>Site License</fullName>
+                    <default>false</default>
+                    <label>Site License</label>
+                </value>
+                <value>
+                    <fullName>Standalone License</fullName>
+                    <default>false</default>
+                    <label>Standalone License</label>
+                </value>
+                <value>
+                    <fullName>User License</fullName>
+                    <default>false</default>
+                    <label>User License</label>
+                </value>
+                <value>
+                    <fullName>Client License</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Client License</label>
+                </value>
+                <value>
+                    <fullName>Departmental</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Departmental</label>
+                </value>
+                <value>
+                    <fullName>Site(s)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Site(s)</label>
+                </value>
+                <value>
+                    <fullName>Standalone</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Standalone</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>ListPrice__c</fullName>
+        <description>SFDC1-173 Currency Field populated with the List Price from the Price Book at when a Product is added to an Opportunity. Used in customization for Pricing and Discounting.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>First Year Price Book List Price from Product Schedules</inlineHelpText>
+        <label>PriceBook List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ListPriceformula__c</fullName>
+        <description>SFDC1-7845 This field holds the List Price Field on Opportunity Product</description>
+        <externalId>false</externalId>
+        <formula>IF(ListPrice__c&lt;&gt;0,  ListPrice__c , PricingOpsListUnitPrice__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The List price from the price book or provided through the renewal process</inlineHelpText>
+        <label>List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>MaterialCode__c</fullName>
+        <description>SFDC1-173 This formula field pulls in the material code from the related product.</description>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.MaterialCode__c</formula>
+        <inlineHelpText>Material Code from Product Master</inlineHelpText>
+        <label>Material Code</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MinimumFeeValue__c</fullName>
+        <description>SFDC-1784: Minimum Fee Value on Opp Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the annual minimum fixed fee value for this product.</inlineHelpText>
+        <label>zzzMinimum Fixed Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Name</fullName>
     </fields>
     <fields>
+        <fullName>NumberofConcurrentUsersSeats__c</fullName>
+        <description>SFDC1-4327 : Additional fields for Opportunity Product Detail - Number of Concurrent Users/Seats</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of unique users or concurrent users licensed to access purchased product (supports pricing and licensing)</inlineHelpText>
+        <label>Number of Concurrent Users/Seats</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberofLocationsSites__c</fullName>
+        <description>SFDC1-4327 : Additional fields for Opportunity Product Detail - Number of Locations/Sites</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of locations licensed to access purchased product (supports pricing and licensing)</inlineHelpText>
+        <label>Number of Locations/Sites</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberofPotentialUsers__c</fullName>
+        <description>SFDC1-4327 : Additional fields for Opportunity Product Detail - Number of Potential Users</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of potential users licensed to access purchased product (supports pricing and licensing)</inlineHelpText>
+        <label>Number of Potential Users</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>OpportunityId</fullName>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityProductID18Character__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>OpportunityProductID 18 Character</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityStage__c</fullName>
+        <description>SFDC-660 This field is calculated by triggers - to store the Opportunity&apos;s Stage and used in the Sales Classification formula fields for Opportunity Product (we need this field because Salesforce doesn&apos;t allow circular references)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is populated from Opportunity&apos;s Stage</inlineHelpText>
+        <label>Opportunity Stage</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Opportunity Product</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PKIDOppLine__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>OpL{000000}</displayFormat>
+        <externalId>true</externalId>
+        <inlineHelpText>System generated Id in salesforce used for data migration purposes</inlineHelpText>
+        <label>PKID Opp Line</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>PassThroughRoyaltyAnnualValue__c</fullName>
+        <description>SFDC-3330: to indicate on oppy products that they are subject to subsidies, pass-through fess or royalties.</description>
+        <externalId>false</externalId>
+        <label>Pass-through/Royalty Annual Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PriceChangePercentage__c</fullName>
+        <description>SFDC-3187 price change formula field for price increase auto renewal opportunities. This for reporting purposes to report on high percent change renewals</description>
+        <externalId>false</externalId>
+        <formula>IF(( PriorYearTotalSalesPrice__c - ListPrice__c)&lt;&gt;0,((PriorYearTotalSalesPrice__c - ListPrice__c)/ListPrice__c),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is for reporting purposes for Price Increase auto-renewals</inlineHelpText>
+        <label>Price Change (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PriceReasonCode__c</fullName>
+        <description>SFDC1-292 Price reason code to track who and what updated the price</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Only populated on Renewals represents the status of the pricing fields on a renewal opportunity line - description on worksheet in this document</inlineHelpText>
+        <label>Price Reason Code</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PricingOpsListUnitPrice__c</fullName>
+        <description>SFDC1-7650 New Pricing Fields on the Opportunity Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List price updated from Pricing Ops through the renewal process</inlineHelpText>
+        <label>Pricing Ops List Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PriorApproved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-5500: This field will indicate if the product for the current opportunity legal entity on opportunity has been approved by the Tax team.</description>
+        <externalId>false</externalId>
+        <label>Prior Approved</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PriorPassthroughRoyaltyAnnualValue__c</fullName>
+        <description>SFDC-3913: to indicate on oppy products that they are subject to subsidies, pass-through fess or royalties.</description>
+        <externalId>false</externalId>
+        <label>Prior Pass-through/Royalty Annual Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PriorYearDiscountPrice__c</fullName>
+        <description>SFDC1-8201;Prior Year Discount field needed on the Opportunity Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated by SAP</inlineHelpText>
+        <label>Prior Year Discount Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PriorYearLicenseType__c</fullName>
+        <description>SFDC1-7847: Text field for displaying prior year license type information</description>
+        <externalId>false</externalId>
+        <inlineHelpText>License type used for the prior year contract</inlineHelpText>
+        <label>Prior Year License Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriorYearNetUnitPrice__c</fullName>
+        <description>SFDC1-7847: Currency field for displaying Prior year net unit price</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prior year net unit based on the list unit minus unit discount</inlineHelpText>
+        <label>Prior Year Net Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PriorYearNumberOfConcurrentUsersSeats__c</fullName>
+        <description>SFDC1-7847: Text field for number of concurrent users/seats during prior year</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prior Year Number of Concurrent Users/Seats</inlineHelpText>
+        <label>Prior Year Num of Concurrent Users/Seats</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriorYearNumberOfLocationsSites__c</fullName>
+        <description>SFDC1-7847: Text field for displaying Number of Locations/Sites during prior year</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prior Year Number of Locations/Sites</inlineHelpText>
+        <label>Prior Year Number of Locations/Sites</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriorYearPotentialUsers__c</fullName>
+        <description>SFDC1-7847: Text field for displaying potential users information during prior year</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prior Year Potential Users</inlineHelpText>
+        <label>Prior Year Potential Users</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriorYearQuantity__c</fullName>
+        <description>SFDC1-370 to be populated by SAP integration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prior year contracted quantity for the product</inlineHelpText>
+        <label>Prior Year Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriorYearTotalDiscountAmt__c</fullName>
+        <description>SFDC1-370 to be populated by SAP integration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated from SAP integration</inlineHelpText>
+        <label>Prior Year Total Discounted Amt</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PriorYearTotalSalesPrice__c</fullName>
+        <description>SFDC1-370 to be populated by SAP integration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated from SAP integration</inlineHelpText>
+        <label>Prior Year Total Sales Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PriorYearUnit__c</fullName>
+        <description>SFDC1-370 Prior Year unit to be populated by SAP
+SFDC1-7847: Re-labelled field to Prior Year List Unit Price</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated from SAP integration</inlineHelpText>
+        <label>Prior Year List Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ProRatedDiscountAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>SFDC1-7082 the discount amount applied on pro-rated price</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Auto calculated based on discount</inlineHelpText>
+        <label>Pro-Rated Discount Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ProRatedPrice__c</fullName>
+        <description>SFDC1-173 When the Opportunity is not for 12 months - need to calculate the Pro-Rated price automatically for the user based on Annualized Price.  Use SAP&apos;s 360 Calcualation. Calculation to follow with trigger/formula</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ProRated price based on SAP 360 day calculation</inlineHelpText>
+        <label>ProRated Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ProRatedTotalAmount__c</fullName>
+        <description>SFDC1-7082 Pro rated amount auto-calculated</description>
+        <externalId>false</externalId>
+        <formula>( ProRatedUnitPrice__c - ProRatedDiscountAmount__c )* Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Pro-Rated total amount auto-calculated by system</inlineHelpText>
+        <label>Pro-Rated Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ProRatedUnitPrice__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>SFDC1-7082 field calculated if user decides to pro-rate the</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field auto calculated for field subscription pro-rated products</inlineHelpText>
+        <label>Pro-Rated Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Probability__c</fullName>
+        <description>SFDC - 1924 : This field will save the opportunities probability on Opportunity Probability.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Probability</inlineHelpText>
+        <label>Probability</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ProcessedContractNum__c</fullName>
+        <description>SFDC1-7765: This field holds Processed Contract Number coming from SAP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Once an Opportunity is closed won and processed by Order Management in SAP - a job will fill this field in with the Contract Number that was just added to SAP</inlineHelpText>
+        <label>Processed Contract Num</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProcessedSAPLineItem__c</fullName>
+        <description>SFDC1-7765: This field holds Processed SAP Line Item coming from SAP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Once an Opportunity is closed won and processed by Order Management in SAP - a job will fill this field in with the Line Item Number that was just created in SAP for this product</inlineHelpText>
+        <label>Processed SAP Line Item</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Product2Id</fullName>
@@ -138,18 +1251,2133 @@
         <fullName>ProductCode</fullName>
     </fields>
     <fields>
+        <fullName>ProductOwner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-1646 Product owner field to report upon individual product owners.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Owner of the product</inlineHelpText>
+        <label>Product Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>OpportunityProduct</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductType__c</fullName>
+        <description>SFDC1-772 : This field will be populated from the &apos;AAG&apos; field of Product.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(PricebookEntry.Product2.ProfitCenters__r.SaleType__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sale Type from the Profit Center on the Product Master</inlineHelpText>
+        <label>Product Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProjectedUnitPrice__c</fullName>
+        <description>SFDC1-370 Proejected unit price to be populated by SAP integration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prior year list price + uplift - initiall price loaded into Updated List Price field when oppy is generated</inlineHelpText>
+        <label>Projected Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>RCLostBiz__c</fullName>
+        <description>SFDC1-7946 Reporting field for Upgrade and Downgrades
+SFDC1-10928 update logic to use First Year Value instead of Updated List Price
+SFDC-304 Include a check on Opportunity Stage containing &quot;6L&quot; (Lost)</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISPICKVAL(Status__c  , &apos;Lost&apos;)) &amp;&amp; NOT(Contains(OpportunityStage__c, &apos;6L&apos;)),
+  IF(PriorYearTotalSalesPrice__c &gt; FirstYear__c, PriorYearTotalSalesPrice__c - FirstYear__c, 0),
+  PriorYearTotalSalesPrice__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Reporting field for Upgrade and Downgrades</inlineHelpText>
+        <label>Sales - Lost Bus</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RCLostPipe__c</fullName>
+        <description>SFDC1-7946 Reporting field for Upgrade and Downgrades
+SFDC1-10928 update logic to use First Year Value instead of Updated List Price
+SFDC-304 Replace &quot;Pricing Ops List Unit Price&quot; with &quot;Recommended Unit Price&quot; in the formula, and include a check on Opportunity Stage containing &quot;6L&quot; (Lost)</description>
+        <externalId>false</externalId>
+        <formula>IF ((RecommendedUnitPrice__c*Quantity)  &gt; PriorYearTotalSalesPrice__c &amp;&amp; (RecommendedUnitPrice__c*Quantity) &gt;= FirstYear__c, 
+  IF (FirstYear__c &gt; PriorYearTotalSalesPrice__c &amp;&amp; NOT(ISPICKVAL(Status__c , &apos;Lost&apos;)) &amp;&amp; NOT(Contains(OpportunityStage__c, &apos;6L&apos;)), 
+    (RecommendedUnitPrice__c*Quantity) - FirstYear__c,
+    (RecommendedUnitPrice__c*Quantity)  - PriorYearTotalSalesPrice__c
+  ), 
+  IF (PriorYearTotalSalesPrice__c != 0 &amp;&amp; FirstYear__c &gt; PriorYearTotalSalesPrice__c &amp;&amp; (ISPICKVAL(Status__c , &apos;Lost&apos;) || Contains(OpportunityStage__c, &apos;6L&apos;)), 
+    FirstYear__c - PriorYearTotalSalesPrice__c,
+    IF (PriorYearTotalSalesPrice__c = 0 &amp;&amp; (ISPICKVAL(Status__c , &apos;Lost&apos;) || Contains(OpportunityStage__c, &apos;6L&apos;)),
+      FirstYear__c, 
+      0
+    )
+  )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Reporting field for Upgrade and Downgrades</inlineHelpText>
+        <label>Sales - Lost Pipe</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RCNew__c</fullName>
+        <description>SFDC1-7946 Reporting field for Upgrade and Downgrades
+SFDC1-10928 update logic to use First Year Value instead of Updated List Price
+SFDC-304 Replace &quot;Pricing Ops List Unit Price&quot; with &quot;Recommended Unit Price&quot; in the formula, and include a check on Opportunity Stage containing &quot;6L&quot; (Lost)</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISPICKVAL(Status__c , &apos;Lost&apos;)) &amp;&amp; NOT(Contains(OpportunityStage__c, &apos;6L&apos;)),
+  IF(RecommendedUnitPrice__c != 0 &amp;&amp; FirstYear__c &gt; (RecommendedUnitPrice__c * Quantity) &amp;&amp; (RecommendedUnitPrice__c * Quantity) &gt;= PriorYearTotalSalesPrice__c, FirstYear__c - (RecommendedUnitPrice__c * Quantity),
+  IF((RecommendedUnitPrice__c = 0 || (RecommendedUnitPrice__c * Quantity) &lt; PriorYearTotalSalesPrice__c) &amp;&amp; PriorYearTotalSalesPrice__c != 0 &amp;&amp; FirstYear__c &gt; PriorYearTotalSalesPrice__c, FirstYear__c - PriorYearTotalSalesPrice__c,
+  IF(PriorYearTotalSalesPrice__c = 0, FirstYear__c, 0))),
+  0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Reporting field for Upgrade and Downgrades</inlineHelpText>
+        <label>Sales - New</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RCPriceIncrease__c</fullName>
+        <description>SFDC1-7946 Reporting field for Upgrade and Downgrades
+SFDC1-10928 update logic to use First Year Value instead of Updated List Price
+SFDC-304 Replace &quot;Pricing Ops List Unit Price&quot; with &quot;Recommended Unit Price&quot; in the formula, and include a check on Opportunity Stage containing &quot;6L&quot; (Lost)</description>
+        <externalId>false</externalId>
+        <formula>IF ((RecommendedUnitPrice__c*Quantity) != 0 &amp;&amp; FirstYear__c &gt; PriorYearTotalSalesPrice__c &amp;&amp; (RecommendedUnitPrice__c*Quantity) &gt; PriorYearTotalSalesPrice__c &amp;&amp; NOT(ISPICKVAL(Status__c , &apos;Lost&apos;))  &amp;&amp; NOT(Contains(OpportunityStage__c, &apos;6L&apos;)), 
+  IF ((RecommendedUnitPrice__c*Quantity) &gt; FirstYear__c, FirstYear__c - PriorYearTotalSalesPrice__c, (RecommendedUnitPrice__c*Quantity) - PriorYearTotalSalesPrice__c), 
+  0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Reporting field for Upgrade and Downgrades</inlineHelpText>
+        <label>Sales - Price Incr</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RCRenewal__c</fullName>
+        <description>SFDC1-7946 Reporting field for Upgrade and Downgrades
+SFDC1-10928 update logic to use First Year Value instead of Updated List Price
+SFDC-304 include a check on Opportunity Stage containing &quot;6L&quot; (Lost)</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISPICKVAL(Status__c , &apos;Lost&apos;)) &amp;&amp; NOT(Contains(OpportunityStage__c, &apos;6L&apos;)),
+  IF(FirstYear__c &lt; PriorYearTotalSalesPrice__c, FirstYear__c, PriorYearTotalSalesPrice__c),
+  0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Reporting field for Upgrade and Downgrades</inlineHelpText>
+        <label>Sales - Renewal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RecommendedUnitPrice__c</fullName>
+        <description>SFDC1-370 to be populated by SAP integration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The recommended unit price is provided by Pricing Ops through the renewal process which is a target net unit price for the offering on the renewal</inlineHelpText>
+        <label>Recommended Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RiskComments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Hold comments related to risk on the product</inlineHelpText>
+        <label>Risk Comments</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RiskProbability__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Holds the product risk probability</inlineHelpText>
+        <label>Risk Probability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>RiskStatus__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Holds the status of the product risk</inlineHelpText>
+        <label>Risk Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open - Pending Resolution</fullName>
+                    <default>false</default>
+                    <label>Open - Pending Resolution</label>
+                </value>
+                <value>
+                    <fullName>Closed - Risk Mitigated</fullName>
+                    <default>false</default>
+                    <label>Closed - Risk Mitigated</label>
+                </value>
+                <value>
+                    <fullName>Closed - Non-Renewal</fullName>
+                    <default>false</default>
+                    <label>Closed - Non-Renewal</label>
+                </value>
+                <value>
+                    <fullName>Closed - Downgraded</fullName>
+                    <default>false</default>
+                    <label>Closed - Downgraded</label>
+                </value>
+                <value>
+                    <fullName>Closed – Downgraded</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Closed – Downgraded</label>
+                </value>
+                <value>
+                    <fullName>Closed – Non-Renewal</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Closed – Non-Renewal</label>
+                </value>
+                <value>
+                    <fullName>Closed – Risk Mitigated</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Closed – Risk Mitigated</label>
+                </value>
+                <value>
+                    <fullName>Open – Pending Resolution</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Open – Pending Resolution</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SAPContractNumber__c</fullName>
+        <description>SFDC-1523: Add a new field called “SAP Contract Number” on the Opportunity Product visible for all users to see</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Will be populated with the Contract Number automatically from SAP.</inlineHelpText>
+        <label>SAP Contract Number</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAPLineItem__c</fullName>
+        <description>SFDC1-5206 SAP Line Item field for Opportunity Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Will be populated with the Line Item number from the SAP Contract - populated when Renewal is created, does not apply to new business</inlineHelpText>
+        <label>SAP Line Item</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAPPriceNote__c</fullName>
+        <description>SFDC1-4976: This field holds SAP Price Updates</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP sends price updates to SF via integration. The pricing team will use this field to comment regarding the pricing provided</inlineHelpText>
+        <label>SAP Price Note</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMEParts__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-5765 Create a new Opportunity Team Role</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product SME name</inlineHelpText>
+        <label>SME-Parts</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>OpportunityProduct2</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SME__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-1779 to indicate product SME name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product SME name</inlineHelpText>
+        <label>SME</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>OpportunityProduct1</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SalesNewExpected__c</fullName>
+        <description>SFDC-704 
+Sales new multiplied by probability.</description>
+        <externalId>false</externalId>
+        <formula>RCNew__c * Opportunity.Probability</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sales new multiplied by probability.</inlineHelpText>
+        <label>Sales-New (expected)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SalesNewPriceExpected__c</fullName>
+        <description>SFDC-704. 
+Sales New + Sales Price multiplied by the probability field.</description>
+        <externalId>false</externalId>
+        <formula>( SalesNewPrice__c ) * Opportunity.Probability</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sales New + Sales Price multiplied by the probability field.</inlineHelpText>
+        <label>Sales-New&amp;Price (expected)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SalesNewPrice__c</fullName>
+        <description>SFDC-704 
+Sum of Sales New and Sales Price fields.</description>
+        <externalId>false</externalId>
+        <formula>RCNew__c + RCPriceIncrease__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sum of Sales New and Sales Price fields.</inlineHelpText>
+        <label>Sales-New&amp;Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SalesPriceIncrExpected__c</fullName>
+        <description>SFDC-704. 
+Sales Price Incr field multiplied by the probability.</description>
+        <externalId>false</externalId>
+        <formula>RCPriceIncrease__c * Opportunity.Probability</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sales Price Incr field multiplied by the probability.</inlineHelpText>
+        <label>Sales-Price Incr (expected)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SalesRenewalExpected__c</fullName>
+        <description>SFDC-704. 
+Sales Renewal multiplied by the probability.</description>
+        <externalId>false</externalId>
+        <formula>RCRenewal__c * Opportunity.Probability</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sales Renewal multiplied by the probability.</inlineHelpText>
+        <label>Sales-Renewal (expected)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>ServiceDate</fullName>
     </fields>
     <fields>
+        <fullName>ServiceDeliveryDate__c</fullName>
+        <description>SFDC-1819. 
+Contains the Service Delivery date for the associated product.</description>
+        <externalId>false</externalId>
+        <label>Service Delivery Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ShipToCity__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To : City</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShipToClientName__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To : Client Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShipToCompanySAP__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To : Company SAP#</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShipToCountryNew__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To : Country/Territory</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShipToPostalZipCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To : Postal/Zip Code</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShipToStateProvince__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To : State/Province</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShipToStreet__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To : Street</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Is this an existing, add on, or removal of this product compared to the previous opportunity?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status for that opportunity product - New, Existing or Lost</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Existing</fullName>
+                    <default>false</default>
+                    <label>Existing</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Lost</fullName>
+                    <default>false</default>
+                    <label>Lost</label>
+                </value>
+                <value>
+                    <fullName>Add On</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Add On</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Removal</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Removal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SubsidyRoyaltyPassthroughPartner__c</fullName>
+        <description>SFDC-3330: to indicate on oppy products that they are subject to subsidies, pass-through fess or royalties.</description>
+        <externalId>false</externalId>
+        <label>Subsidy/Royalty/Passthrough Partner</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Chevron</fullName>
+                    <default>false</default>
+                    <label>Chevron</label>
+                </value>
+                <value>
+                    <fullName>Continental Stock Transfer</fullName>
+                    <default>false</default>
+                    <label>Continental Stock Transfer</label>
+                </value>
+                <value>
+                    <fullName>Factset</fullName>
+                    <default>false</default>
+                    <label>Factset</label>
+                </value>
+                <value>
+                    <fullName>NYSE</fullName>
+                    <default>false</default>
+                    <label>NYSE</label>
+                </value>
+                <value>
+                    <fullName>S&amp;P Global</fullName>
+                    <default>false</default>
+                    <label>S&amp;P Global</label>
+                </value>
+                <value>
+                    <fullName>TSX</fullName>
+                    <default>false</default>
+                    <label>TSX</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SubsidyRoyaltyPassthroughType__c</fullName>
+        <description>SFDC-3330: to indicate on oppy products that they are subject to subsidies, pass-through fess or royalties.</description>
+        <externalId>false</externalId>
+        <label>Subsidy/Royalty/Passthrough Type</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass-through</fullName>
+                    <default>false</default>
+                    <label>Pass-through</label>
+                </value>
+                <value>
+                    <fullName>Royalty</fullName>
+                    <default>false</default>
+                    <label>Royalty</label>
+                </value>
+                <value>
+                    <fullName>Subsidy</fullName>
+                    <default>false</default>
+                    <label>Subsidy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
         <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>SynergyTheme__c</fullName>
+        <externalId>false</externalId>
+        <label>Synergy Theme</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1. Expand MI Desktop</fullName>
+                    <default>false</default>
+                    <label>1. Expand MI Desktop</label>
+                </value>
+                <value>
+                    <fullName>2. Data Distribution</fullName>
+                    <default>false</default>
+                    <label>2. Data Distribution</label>
+                </value>
+                <value>
+                    <fullName>3. Private Markets</fullName>
+                    <default>false</default>
+                    <label>3. Private Markets</label>
+                </value>
+                <value>
+                    <fullName>4. Corporates</fullName>
+                    <default>false</default>
+                    <label>4. Corporates</label>
+                </value>
+                <value>
+                    <fullName>5. Risk &amp; Compliance</fullName>
+                    <default>false</default>
+                    <label>5. Risk &amp; Compliance</label>
+                </value>
+                <value>
+                    <fullName>6. Research and Advisory</fullName>
+                    <default>false</default>
+                    <label>6. Research and Advisory</label>
+                </value>
+                <value>
+                    <fullName>9. Wealth Management and Retail Investing</fullName>
+                    <default>false</default>
+                    <label>9. Wealth Management and Retail Investing</label>
+                </value>
+                <value>
+                    <fullName>PD - Expand EWB</fullName>
+                    <default>false</default>
+                    <label>PD - Expand EWB</label>
+                </value>
+                <value>
+                    <fullName>PD - Other</fullName>
+                    <default>false</default>
+                    <label>PD - Other</label>
+                </value>
+                <value>
+                    <fullName>TRANS - pending 1</fullName>
+                    <default>false</default>
+                    <label>TRANS - pending 1</label>
+                </value>
+                <value>
+                    <fullName>Consulting</fullName>
+                    <default>false</default>
+                    <label>Consulting</label>
+                </value>
+                <value>
+                    <fullName>Energy Transition</fullName>
+                    <default>false</default>
+                    <label>Energy Transition</label>
+                </value>
+                <value>
+                    <fullName>Financials Expansion</fullName>
+                    <default>false</default>
+                    <label>Financials Expansion</label>
+                </value>
+                <value>
+                    <fullName>Insights to Pricing Solution</fullName>
+                    <default>false</default>
+                    <label>Insights to Pricing Solution</label>
+                </value>
+                <value>
+                    <fullName>Non Energy Commodities Penetration</fullName>
+                    <default>false</default>
+                    <label>Non Energy Commodities Penetration</label>
+                </value>
+                <value>
+                    <fullName>Technology, Data &amp; Platforms</fullName>
+                    <default>false</default>
+                    <label>Technology, Data &amp; Platforms</label>
+                </value>
+                <value>
+                    <fullName>Auto Data Expansion</fullName>
+                    <default>false</default>
+                    <label>Auto Data Expansion</label>
+                </value>
+                <value>
+                    <fullName>10. M&amp;T</fullName>
+                    <default>false</default>
+                    <label>10. M&amp;T</label>
+                </value>
+                <value>
+                    <fullName>8. APAC Other</fullName>
+                    <default>false</default>
+                    <label>8. APAC Other</label>
+                </value>
+                <value>
+                    <fullName>6. Supply Chain</fullName>
+                    <default>false</default>
+                    <label>6. Supply Chain</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>7. ESG &amp; Climate</fullName>
+                    <default>false</default>
+                    <label>7. ESG &amp; Climate</label>
+                </value>
+                <value>
+                    <fullName>12. Digital</fullName>
+                    <default>false</default>
+                    <label>12. Digital</label>
+                </value>
+                <value>
+                    <fullName>11. Investment Management</fullName>
+                    <default>false</default>
+                    <label>11. Investment Management</label>
+                </value>
+                <value>
+                    <fullName>10. EDM</fullName>
+                    <default>false</default>
+                    <label>10. EDM</label>
+                </value>
+                <value>
+                    <fullName>11.Unassigned</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>11.Unassigned</label>
+                </value>
+                <value>
+                    <fullName>8. APAC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>8. APAC</label>
+                </value>
+                <value>
+                    <fullName>99.Unassigned</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>99.Unassigned</label>
+                </value>
+                <value>
+                    <fullName>Non-Energy Commodities Penetration</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Non-Energy Commodities Penetration</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SynergyType__c</fullName>
+        <externalId>false</externalId>
+        <label>Synergy Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>SynergyTheme__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1.1 Cross sell FS Issuance solutions Book Building products</fullName>
+                    <default>false</default>
+                    <label>1.1 Cross sell FS Issuance solutions Book Building products</label>
+                </value>
+                <value>
+                    <fullName>1.2 Cross sell FS BRST data to MI clients</fullName>
+                    <default>false</default>
+                    <label>1.2 Cross sell FS BRST data to MI clients</label>
+                </value>
+                <value>
+                    <fullName>1.3 FS Issuance to MI clients</fullName>
+                    <default>false</default>
+                    <label>1.3 FS Issuance to MI clients</label>
+                </value>
+                <value>
+                    <fullName>3 FS PVR, Equities Info and Private Vals to MI clients</fullName>
+                    <default>false</default>
+                    <label>3 FS PVR, Equities Info and Private Vals to MI clients</label>
+                </value>
+                <value>
+                    <fullName>7.1 FS Notice Manager, Private Markets, WSO, and Debt Domain to MI clients</fullName>
+                    <default>false</default>
+                    <label>7.1 FS Notice Manager, Private Markets, WSO, and Debt Domain to MI clients</label>
+                </value>
+                <value>
+                    <fullName>7.2 FS Notice Manager, Private Markets, WSO, and Debt Domain to MI clients</fullName>
+                    <default>false</default>
+                    <label>7.2 FS Notice Manager, Private Markets, WSO, and Debt Domain to MI clients</label>
+                </value>
+                <value>
+                    <fullName>7.3 FS Notice Manager, Private Markets, WSO, and Debt Domain to MI clients</fullName>
+                    <default>false</default>
+                    <label>7.3 FS Notice Manager, Private Markets, WSO, and Debt Domain to MI clients</label>
+                </value>
+                <value>
+                    <fullName>10.1 FS Issuer services solutions to MI clients</fullName>
+                    <default>false</default>
+                    <label>10.1 FS Issuer services solutions to MI clients</label>
+                </value>
+                <value>
+                    <fullName>10.2 FS Issuer services solutions to MI clients</fullName>
+                    <default>false</default>
+                    <label>10.2 FS Issuer services solutions to MI clients</label>
+                </value>
+                <value>
+                    <fullName>13. FS KYC to MI IB, IM, and CB clients</fullName>
+                    <default>false</default>
+                    <label>13. FS KYC to MI IB, IM, and CB clients</label>
+                </value>
+                <value>
+                    <fullName>14. FS KY3P to MI clients</fullName>
+                    <default>false</default>
+                    <label>14. FS KY3P to MI clients</label>
+                </value>
+                <value>
+                    <fullName>19.2 Cross sell ECR Supply Chain data to MI clients</fullName>
+                    <default>false</default>
+                    <label>19.2 Cross sell ECR Supply Chain data to MI clients</label>
+                </value>
+                <value>
+                    <fullName>20. FS cross sell ECR PMI to MI clients</fullName>
+                    <default>false</default>
+                    <label>20. FS cross sell ECR PMI to MI clients</label>
+                </value>
+                <value>
+                    <fullName>21. FS ECR content to MI clients</fullName>
+                    <default>false</default>
+                    <label>21. FS ECR content to MI clients</label>
+                </value>
+                <value>
+                    <fullName>24. FS Markit Digital to MI DMS customers</fullName>
+                    <default>false</default>
+                    <label>24. FS Markit Digital to MI DMS customers</label>
+                </value>
+                <value>
+                    <fullName>Engineering Workbench to Platts Customers</fullName>
+                    <default>false</default>
+                    <label>Engineering Workbench to Platts Customers</label>
+                </value>
+                <value>
+                    <fullName>PD - Other</fullName>
+                    <default>false</default>
+                    <label>PD - Other</label>
+                </value>
+                <value>
+                    <fullName>P/R Cons Chemicals - Cross Sell #75</fullName>
+                    <default>false</default>
+                    <label>P/R Cons Chemicals - Cross Sell #75</label>
+                </value>
+                <value>
+                    <fullName>P/R Cons Power consulting - Cross Sell #76</fullName>
+                    <default>false</default>
+                    <label>P/R Cons Power consulting - Cross Sell #76</label>
+                </value>
+                <value>
+                    <fullName>P/R Cons Agri &amp; OMD consulting - Cross Sell #77</fullName>
+                    <default>false</default>
+                    <label>P/R Cons Agri &amp; OMD consulting - Cross Sell #77</label>
+                </value>
+                <value>
+                    <fullName>P/R Cons Financials - Cross Sell #80</fullName>
+                    <default>false</default>
+                    <label>P/R Cons Financials - Cross Sell #80</label>
+                </value>
+                <value>
+                    <fullName>P/R ET CSM &amp; Climate Scenarios - Cross Sell #11</fullName>
+                    <default>false</default>
+                    <label>P/R ET CSM &amp; Climate Scenarios - Cross Sell #11</label>
+                </value>
+                <value>
+                    <fullName>P/R ET Mobility &amp; energy futures - Cross Sell #45</fullName>
+                    <default>false</default>
+                    <label>P/R ET Mobility &amp; energy futures - Cross Sell #45</label>
+                </value>
+                <value>
+                    <fullName>P/R ET Clean Energy Tech &amp; hydrogen - Cross Sell #70</fullName>
+                    <default>false</default>
+                    <label>P/R ET Clean Energy Tech &amp; hydrogen - Cross Sell #70</label>
+                </value>
+                <value>
+                    <fullName>P/R ET Corporate Emissions Solutions - Cross Sell #70.2</fullName>
+                    <default>false</default>
+                    <label>P/R ET Corporate Emissions Solutions - Cross Sell #70.2</label>
+                </value>
+                <value>
+                    <fullName>P/R ET EnergyView Climate/Energy Adv - Cross Sell #71</fullName>
+                    <default>false</default>
+                    <label>P/R ET EnergyView Climate/Energy Adv - Cross Sell #71</label>
+                </value>
+                <value>
+                    <fullName>P/R FE Upstream to financials - Cross Sell #23</fullName>
+                    <default>false</default>
+                    <label>P/R FE Upstream to financials - Cross Sell #23</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Crude News &amp;  Analytics - Cross Sell #22</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Crude News &amp;  Analytics - Cross Sell #22</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Waterborne LPG - Cross Sell #41</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Waterborne LPG - Cross Sell #41</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Carve out R&amp;M Market Profiles - Cross Sell #44</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Carve out R&amp;M Market Profiles - Cross Sell #44</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Freight News &amp; Pricing - Cross Sell #50</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Freight News &amp; Pricing - Cross Sell #50</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Power/Electricity Analytics - Cross Sell #59</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Power/Electricity Analytics - Cross Sell #59</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Power, Gas, LNG Forward Curves - Cross Sell #64</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Power, Gas, LNG Forward Curves - Cross Sell #64</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Gas Power Analytics - Cross Sell #64.2</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Gas Power Analytics - Cross Sell #64.2</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP APAC Regional Views - Cross Sell #69</fullName>
+                    <default>false</default>
+                    <label>P/R ITP APAC Regional Views - Cross Sell #69</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Global gas - Cross Sell #73</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Global gas - Cross Sell #73</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Market Advisory Service (MAS) - Cross Sell #82</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Market Advisory Service (MAS) - Cross Sell #82</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Chemical Week - Cross Sell #83</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Chemical Week - Cross Sell #83</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Resources Cost/Margin Analysis - Cross Sell #84</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Resources Cost/Margin Analysis - Cross Sell #84</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Chemical Economics Handbook - Cross Sell #85</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Chemical Economics Handbook - Cross Sell #85</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Agri refining News &amp; Insights - Cross Sell #165</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Agri refining News &amp; Insights - Cross Sell #165</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP Upstream Not yet defined - Cross Sell #166</fullName>
+                    <default>false</default>
+                    <label>P/R ITP Upstream Not yet defined - Cross Sell #166</label>
+                </value>
+                <value>
+                    <fullName>P/R NEC Agri News &amp; Pricing - Cross Sell #1</fullName>
+                    <default>false</default>
+                    <label>P/R NEC Agri News &amp; Pricing - Cross Sell #1</label>
+                </value>
+                <value>
+                    <fullName>P/R NEC Fertecon/Fertilizers - Cross Sell #2.1</fullName>
+                    <default>false</default>
+                    <label>P/R NEC Fertecon/Fertilizers - Cross Sell #2.1</label>
+                </value>
+                <value>
+                    <fullName>P/R NEC Grains - Cross Sell #2.2</fullName>
+                    <default>false</default>
+                    <label>P/R NEC Grains - Cross Sell #2.2</label>
+                </value>
+                <value>
+                    <fullName>P/R NEC Sugar Economics / Analytics - Cross Sell #4</fullName>
+                    <default>false</default>
+                    <label>P/R NEC Sugar Economics / Analytics - Cross Sell #4</label>
+                </value>
+                <value>
+                    <fullName>P/R NEC Commodities at Sea - Cross Sell #5</fullName>
+                    <default>false</default>
+                    <label>P/R NEC Commodities at Sea - Cross Sell #5</label>
+                </value>
+                <value>
+                    <fullName>P/R NEC Steel &amp; Raw Materials Pricing - Cross Sell #49</fullName>
+                    <default>false</default>
+                    <label>P/R NEC Steel &amp; Raw Materials Pricing - Cross Sell #49</label>
+                </value>
+                <value>
+                    <fullName>P/R NEC Ethanol &amp; Biofuels - Cross Sell #143</fullName>
+                    <default>false</default>
+                    <label>P/R NEC Ethanol &amp; Biofuels - Cross Sell #143</label>
+                </value>
+                <value>
+                    <fullName>P/R TDP Goldfire - Cross Sell #147</fullName>
+                    <default>false</default>
+                    <label>P/R TDP Goldfire - Cross Sell #147</label>
+                </value>
+                <value>
+                    <fullName>P/R TDP The Learning Center training - Cross Sell #153</fullName>
+                    <default>false</default>
+                    <label>P/R TDP The Learning Center training - Cross Sell #153</label>
+                </value>
+                <value>
+                    <fullName>Autos cross sell to MI clients</fullName>
+                    <default>false</default>
+                    <label>Autos cross sell to MI clients</label>
+                </value>
+                <value>
+                    <fullName>31. FS Tax Solutions to MI clients</fullName>
+                    <default>false</default>
+                    <label>31. FS Tax Solutions to MI clients</label>
+                </value>
+                <value>
+                    <fullName>38. FS corporate actions to MI IB, IM, and CB clients</fullName>
+                    <default>false</default>
+                    <label>38. FS corporate actions to MI IB, IM, and CB clients</label>
+                </value>
+                <value>
+                    <fullName>P/R TDP Engineering Work Bench - Cross Sell #207</fullName>
+                    <default>false</default>
+                    <label>P/R TDP Engineering Work Bench - Cross Sell #207</label>
+                </value>
+                <value>
+                    <fullName>P/R Other WhiteSpace Upstream - Cross Sell #990</fullName>
+                    <default>false</default>
+                    <label>P/R Other WhiteSpace Upstream - Cross Sell #990</label>
+                </value>
+                <value>
+                    <fullName>P/R Other WhiteSpace Chemicals - Cross Sell #992</fullName>
+                    <default>false</default>
+                    <label>P/R Other WhiteSpace Chemicals - Cross Sell #992</label>
+                </value>
+                <value>
+                    <fullName>P/R Other WhiteSpace Agri - Cross Sell #993</fullName>
+                    <default>false</default>
+                    <label>P/R Other WhiteSpace Agri - Cross Sell #993</label>
+                </value>
+                <value>
+                    <fullName>P/R Other Whitespace CSG - Cross Sell #994</fullName>
+                    <default>false</default>
+                    <label>P/R Other Whitespace CSG - Cross Sell #994</label>
+                </value>
+                <value>
+                    <fullName>39. FS Maritime, Risk &amp; Compliance to MI clients</fullName>
+                    <default>false</default>
+                    <label>39. FS Maritime, Risk &amp; Compliance to MI clients</label>
+                </value>
+                <value>
+                    <fullName>40. FS Trade Analytics &amp; Supply Chain to MI clients</fullName>
+                    <default>false</default>
+                    <label>40. FS Trade Analytics &amp; Supply Chain to MI clients</label>
+                </value>
+                <value>
+                    <fullName>41. FS Commodity Analytics &amp; Shipping Intelligence</fullName>
+                    <default>false</default>
+                    <label>41. FS Commodity Analytics &amp; Shipping Intelligence</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>2.1.1 Data Lake + Marketplace</fullName>
+                    <default>false</default>
+                    <label>2.1.1 Data Lake + Marketplace</label>
+                </value>
+                <value>
+                    <fullName>2.2.1 Ref Data + Entity Linking</fullName>
+                    <default>false</default>
+                    <label>2.2.1 Ref Data + Entity Linking</label>
+                </value>
+                <value>
+                    <fullName>2.3.1a DMS (DVA)</fullName>
+                    <default>false</default>
+                    <label>2.3.1a DMS (DVA)</label>
+                </value>
+                <value>
+                    <fullName>2.3.1b DMS (RASS)</fullName>
+                    <default>false</default>
+                    <label>2.3.1b DMS (RASS)</label>
+                </value>
+                <value>
+                    <fullName>2.3.2a Desktop</fullName>
+                    <default>false</default>
+                    <label>2.3.2a Desktop</label>
+                </value>
+                <value>
+                    <fullName>2.3.2b Desktop</fullName>
+                    <default>false</default>
+                    <label>2.3.2b Desktop</label>
+                </value>
+                <value>
+                    <fullName>2.4.1 Automotive</fullName>
+                    <default>false</default>
+                    <label>2.4.1 Automotive</label>
+                </value>
+                <value>
+                    <fullName>2.4.2 ECR / Credit</fullName>
+                    <default>false</default>
+                    <label>2.4.2 ECR / Credit</label>
+                </value>
+                <value>
+                    <fullName>2.4.3 Supply Chain (incl. M&amp;T)</fullName>
+                    <default>false</default>
+                    <label>2.4.3 Supply Chain (incl. M&amp;T)</label>
+                </value>
+                <value>
+                    <fullName>2.5.1 MI IR Desktop</fullName>
+                    <default>false</default>
+                    <label>2.5.1 MI IR Desktop</label>
+                </value>
+                <value>
+                    <fullName>2.5.2 IR Advisory</fullName>
+                    <default>false</default>
+                    <label>2.5.2 IR Advisory</label>
+                </value>
+                <value>
+                    <fullName>2.5.3 IR Capital Access</fullName>
+                    <default>false</default>
+                    <label>2.5.3 IR Capital Access</label>
+                </value>
+                <value>
+                    <fullName>2.5.4.1 Capital Markets 1 &amp; 2</fullName>
+                    <default>false</default>
+                    <label>2.5.4.1 Capital Markets 1 &amp; 2</label>
+                </value>
+                <value>
+                    <fullName>2.5.4.2 Capital Markets 1 &amp; 2</fullName>
+                    <default>false</default>
+                    <label>2.5.4.2 Capital Markets 1 &amp; 2</label>
+                </value>
+                <value>
+                    <fullName>2.6.1 MI Data into iLevel</fullName>
+                    <default>false</default>
+                    <label>2.6.1 MI Data into iLevel</label>
+                </value>
+                <value>
+                    <fullName>2.6.2 Preqin Data into iLevel</fullName>
+                    <default>false</default>
+                    <label>2.6.2 Preqin Data into iLevel</label>
+                </value>
+                <value>
+                    <fullName>2.6.3 Private Asset Valuations</fullName>
+                    <default>false</default>
+                    <label>2.6.3 Private Asset Valuations</label>
+                </value>
+                <value>
+                    <fullName>2.6.4 Reg &amp; Compliance</fullName>
+                    <default>false</default>
+                    <label>2.6.4 Reg &amp; Compliance</label>
+                </value>
+                <value>
+                    <fullName>2.7.1 Portfolio Analytics</fullName>
+                    <default>false</default>
+                    <label>2.7.1 Portfolio Analytics</label>
+                </value>
+                <value>
+                    <fullName>2.7.2 BD</fullName>
+                    <default>false</default>
+                    <label>2.7.2 BD</label>
+                </value>
+                <value>
+                    <fullName>2.7.2.2 Capital Access &amp; ESG</fullName>
+                    <default>false</default>
+                    <label>2.7.2.2 Capital Access &amp; ESG</label>
+                </value>
+                <value>
+                    <fullName>2.7.3 DeltaOne</fullName>
+                    <default>false</default>
+                    <label>2.7.3 DeltaOne</label>
+                </value>
+                <value>
+                    <fullName>2.7.4.1 Private Companies &amp; Information Services</fullName>
+                    <default>false</default>
+                    <label>2.7.4.1 Private Companies &amp; Information Services</label>
+                </value>
+                <value>
+                    <fullName>2.7.4.2 Private Companies &amp; Information Services</fullName>
+                    <default>false</default>
+                    <label>2.7.4.2 Private Companies &amp; Information Services</label>
+                </value>
+                <value>
+                    <fullName>2.7.5 Integration of ESG datasets via DMS and Desktop</fullName>
+                    <default>false</default>
+                    <label>2.7.5 Integration of ESG datasets via DMS and Desktop</label>
+                </value>
+                <value>
+                    <fullName>2.8.1a Digital - Digitization / Automation of Pitchbooks</fullName>
+                    <default>false</default>
+                    <label>2.8.1a Digital - Digitization / Automation of Pitchbooks</label>
+                </value>
+                <value>
+                    <fullName>2.8.1b Digital - Desktop Enhancements: Mobile, Newsletter, Teams</fullName>
+                    <default>false</default>
+                    <label>2.8.1b Digital - Desktop Enhancements: Mobile, Newsletter, Teams</label>
+                </value>
+                <value>
+                    <fullName>2.8.2 Investment Management</fullName>
+                    <default>false</default>
+                    <label>2.8.2 Investment Management</label>
+                </value>
+                <value>
+                    <fullName>2.8.3 EDM</fullName>
+                    <default>false</default>
+                    <label>2.8.3 EDM</label>
+                </value>
+                <value>
+                    <fullName>2.8.4 MI Fundamental Data into Markit Digital EMEA + APAC Channels</fullName>
+                    <default>false</default>
+                    <label>2.8.4 MI Fundamental Data into Markit Digital EMEA + APAC Channels</label>
+                </value>
+                <value>
+                    <fullName>2.8.5 Build out comprehensive credit analytics offering to be more competitive with large incumbents</fullName>
+                    <default>false</default>
+                    <label>2.8.5 Build out comprehensive credit analytics offering to be more competitive with large incumbents</label>
+                </value>
+                <value>
+                    <fullName>2.x ClariFI Modernization</fullName>
+                    <default>false</default>
+                    <label>2.x ClariFI Modernization</label>
+                </value>
+                <value>
+                    <fullName>26.021 FS to MI: combined sales footprint in APAC (BRST)</fullName>
+                    <default>false</default>
+                    <label>26.021 FS to MI: combined sales footprint in APAC (BRST)</label>
+                </value>
+                <value>
+                    <fullName>26.061 FS to MI: combined sales footprint in APAC (ISS: Advisory Solutions)</fullName>
+                    <default>false</default>
+                    <label>26.061 FS to MI: combined sales footprint in APAC (ISS: Advisory Solutions)</label>
+                </value>
+                <value>
+                    <fullName>26.062 FS to MI: combined sales footprint in APAC (ISS: Digital Solutions)</fullName>
+                    <default>false</default>
+                    <label>26.062 FS to MI: combined sales footprint in APAC (ISS: Digital Solutions)</label>
+                </value>
+                <value>
+                    <fullName>26.071 FS to MI: combined sales footprint in APAC (PVR: Pricing Data)</fullName>
+                    <default>false</default>
+                    <label>26.071 FS to MI: combined sales footprint in APAC (PVR: Pricing Data)</label>
+                </value>
+                <value>
+                    <fullName>26.081 FS to MI: combined sales footprint in APAC (PVR: PE)</fullName>
+                    <default>false</default>
+                    <label>26.081 FS to MI: combined sales footprint in APAC (PVR: PE)</label>
+                </value>
+                <value>
+                    <fullName>26.091 FS to MI: combined sales footprint in APAC (PVR: Delivery Services)</fullName>
+                    <default>false</default>
+                    <label>26.091 FS to MI: combined sales footprint in APAC (PVR: Delivery Services)</label>
+                </value>
+                <value>
+                    <fullName>26.111 FS to MI: combined sales footprint in APAC (EDM)</fullName>
+                    <default>false</default>
+                    <label>26.111 FS to MI: combined sales footprint in APAC (EDM)</label>
+                </value>
+                <value>
+                    <fullName>26.121 FS to MI: combined sales footprint in APAC (thinkFolio)</fullName>
+                    <default>false</default>
+                    <label>26.121 FS to MI: combined sales footprint in APAC (thinkFolio)</label>
+                </value>
+                <value>
+                    <fullName>26.161 FS to MI: combined sales footprint in APAC (PM: Private Markets)</fullName>
+                    <default>false</default>
+                    <label>26.161 FS to MI: combined sales footprint in APAC (PM: Private Markets)</label>
+                </value>
+                <value>
+                    <fullName>26.171 FS to MI: combined sales footprint in APAC (WSO)</fullName>
+                    <default>false</default>
+                    <label>26.171 FS to MI: combined sales footprint in APAC (WSO)</label>
+                </value>
+                <value>
+                    <fullName>26.181 FS to MI: combined sales footprint in APAC (DD: Debtdomain)</fullName>
+                    <default>false</default>
+                    <label>26.181 FS to MI: combined sales footprint in APAC (DD: Debtdomain)</label>
+                </value>
+                <value>
+                    <fullName>26.211 FS to MI: combined sales footprint in APAC (EQI: Dividend Forecast)</fullName>
+                    <default>false</default>
+                    <label>26.211 FS to MI: combined sales footprint in APAC (EQI: Dividend Forecast)</label>
+                </value>
+                <value>
+                    <fullName>26.221 FS to MI: combined sales footprint in APAC (EQI: Research Signals)</fullName>
+                    <default>false</default>
+                    <label>26.221 FS to MI: combined sales footprint in APAC (EQI: Research Signals)</label>
+                </value>
+                <value>
+                    <fullName>26.241 FS to MI: combined sales footprint in APAC (RRC: KY3P)</fullName>
+                    <default>false</default>
+                    <label>26.241 FS to MI: combined sales footprint in APAC (RRC: KY3P)</label>
+                </value>
+                <value>
+                    <fullName>26.242 FS to MI: combined sales footprint in APAC (RRC: CPM)</fullName>
+                    <default>false</default>
+                    <label>26.242 FS to MI: combined sales footprint in APAC (RRC: CPM)</label>
+                </value>
+                <value>
+                    <fullName>1.1 FS Issuance to MI clients</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>1.1 FS Issuance to MI clients</label>
+                </value>
+                <value>
+                    <fullName>1.2 FS Issuance to MI clients</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>1.2 FS Issuance to MI clients</label>
+                </value>
+                <value>
+                    <fullName>11.Unassigned</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>11.Unassigned</label>
+                </value>
+                <value>
+                    <fullName>17. FS Debtdomain, Notice Manager, WSO, and PVR to MI clients</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>17. FS Debtdomain, Notice Manager, WSO, and PVR to MI clients</label>
+                </value>
+                <value>
+                    <fullName>2.3.1 DMS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>2.3.1 DMS</label>
+                </value>
+                <value>
+                    <fullName>2.x ClariFI Modernazation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>2.x ClariFI Modernazation</label>
+                </value>
+                <value>
+                    <fullName>20. FS cross sell ECR to MI DMS, Desktop, and Risk Services customers</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>20. FS cross sell ECR to MI DMS, Desktop, and Risk Services customers</label>
+                </value>
+                <value>
+                    <fullName>21. FS ECR content (CCAR, CECL and IFRS) to MI customers</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>21. FS ECR content (CCAR, CECL and IFRS) to MI customers</label>
+                </value>
+                <value>
+                    <fullName>26. FS to MI: combined sales footprint in APAC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>26. FS to MI: combined sales footprint in APAC</label>
+                </value>
+                <value>
+                    <fullName>26.091 FS to MI: combined sales footprint in APAC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>26.091 FS to MI: combined sales footprint in APAC</label>
+                </value>
+                <value>
+                    <fullName>26.111 FS to MI: combined sales footprint in APAC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>26.111 FS to MI: combined sales footprint in APAC</label>
+                </value>
+                <value>
+                    <fullName>26.121 FS to MI: combined sales footprint in APAC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>26.121 FS to MI: combined sales footprint in APAC</label>
+                </value>
+                <value>
+                    <fullName>26.181 FS to MI: combined sales footprint in APAC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>26.181 FS to MI: combined sales footprint in APAC</label>
+                </value>
+                <value>
+                    <fullName>26.211 FS to MI: combined sales footprint in APAC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>26.211 FS to MI: combined sales footprint in APAC</label>
+                </value>
+                <value>
+                    <fullName>26.242 FS to MI: combined sales footprint in APAC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>26.242 FS to MI: combined sales footprint in APAC</label>
+                </value>
+                <value>
+                    <fullName>28. FS Private Evaluations to MI insurance and IM clients</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>28. FS Private Evaluations to MI insurance and IM clients</label>
+                </value>
+                <value>
+                    <fullName>3. FS PVR, Equities Info, BRST, and Private Markets to MI clients</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>3. FS PVR, Equities Info, BRST, and Private Markets to MI clients</label>
+                </value>
+                <value>
+                    <fullName>39. FS Maritime Intelligence Risk Suite (MIRS) to MI clients</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>39. FS Maritime Intelligence Risk Suite (MIRS) to MI clients</label>
+                </value>
+                <value>
+                    <fullName>40. FS Global Trade Analytics Suite (GTAS) to MI clients</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>40. FS Global Trade Analytics Suite (GTAS) to MI clients</label>
+                </value>
+                <value>
+                    <fullName>41. FS Maritime Data (Sea-web and AISLive)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>41. FS Maritime Data (Sea-web and AISLive)</label>
+                </value>
+                <value>
+                    <fullName>5. FS Valuation Engagements to MI Commercial Banks</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>5. FS Valuation Engagements to MI Commercial Banks</label>
+                </value>
+                <value>
+                    <fullName>99.Unassigned</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>99.Unassigned</label>
+                </value>
+                <value>
+                    <fullName>Engineering &amp; Product Design&apos;s growth in China standards</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Engineering &amp; Product Design&apos;s growth in China standards</label>
+                </value>
+                <value>
+                    <fullName>Goldfire to Platt&apos;s Customers</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Goldfire to Platt&apos;s Customers</label>
+                </value>
+                <value>
+                    <fullName>P/R FE Exec Briefs to financials - Cross Sell #66</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>P/R FE Exec Briefs to financials - Cross Sell #66</label>
+                </value>
+                <value>
+                    <fullName>P/R FE Upstream cost analysis - Cross Sell #23</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>P/R FE Upstream cost analysis - Cross Sell #23</label>
+                </value>
+                <value>
+                    <fullName>P/R FE Upstream to financials - Cross Sell #21</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>P/R FE Upstream to financials - Cross Sell #21</label>
+                </value>
+                <value>
+                    <fullName>P/R ITP ENR forward curves - Cross Sell #64.2</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>P/R ITP ENR forward curves - Cross Sell #64.2</label>
+                </value>
+                <value>
+                    <fullName>P/R NEC Fertecon/Fertilizers - Cross Sell #2</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>P/R NEC Fertecon/Fertilizers - Cross Sell #2</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>P/R Other WhiteSpace Upstream - Cross Sell #990</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>P/R Other WhiteSpace Chemicals - Cross Sell #992</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>P/R Other WhiteSpace Agri - Cross Sell #993</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>P/R Other Whitespace CSG - Cross Sell #994</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Non Energy Commodities Penetration</controllingFieldValue>
+                <valueName>P/R NEC Agri News &amp; Pricing - Cross Sell #1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Non Energy Commodities Penetration</controllingFieldValue>
+                <valueName>P/R NEC Fertecon/Fertilizers - Cross Sell #2.1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Non Energy Commodities Penetration</controllingFieldValue>
+                <valueName>P/R NEC Grains - Cross Sell #2.2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Non Energy Commodities Penetration</controllingFieldValue>
+                <valueName>P/R NEC Sugar Economics / Analytics - Cross Sell #4</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Non Energy Commodities Penetration</controllingFieldValue>
+                <valueName>P/R NEC Commodities at Sea - Cross Sell #5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Non Energy Commodities Penetration</controllingFieldValue>
+                <valueName>P/R NEC Steel &amp; Raw Materials Pricing - Cross Sell #49</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Non Energy Commodities Penetration</controllingFieldValue>
+                <valueName>P/R NEC Ethanol &amp; Biofuels - Cross Sell #143</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7. ESG &amp; Climate</controllingFieldValue>
+                <valueName>2.7.1 Portfolio Analytics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7. ESG &amp; Climate</controllingFieldValue>
+                <valueName>2.7.2 BD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7. ESG &amp; Climate</controllingFieldValue>
+                <valueName>2.7.2.2 Capital Access &amp; ESG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7. ESG &amp; Climate</controllingFieldValue>
+                <valueName>2.7.3 DeltaOne</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7. ESG &amp; Climate</controllingFieldValue>
+                <valueName>2.7.4.1 Private Companies &amp; Information Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7. ESG &amp; Climate</controllingFieldValue>
+                <valueName>2.7.4.2 Private Companies &amp; Information Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7. ESG &amp; Climate</controllingFieldValue>
+                <valueName>2.7.5 Integration of ESG datasets via DMS and Desktop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>12. Digital</controllingFieldValue>
+                <valueName>2.8.1a Digital - Digitization / Automation of Pitchbooks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>12. Digital</controllingFieldValue>
+                <valueName>2.8.1b Digital - Desktop Enhancements: Mobile, Newsletter, Teams</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>12. Digital</controllingFieldValue>
+                <valueName>2.8.4 MI Fundamental Data into Markit Digital EMEA + APAC Channels</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>12. Digital</controllingFieldValue>
+                <valueName>2.x ClariFI Modernization</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>11. Investment Management</controllingFieldValue>
+                <valueName>2.8.2 Investment Management</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>10. EDM</controllingFieldValue>
+                <valueName>2.8.3 EDM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PD - Other</controllingFieldValue>
+                <valueName>PD - Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consulting</controllingFieldValue>
+                <valueName>P/R Cons Chemicals - Cross Sell #75</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consulting</controllingFieldValue>
+                <valueName>P/R Cons Power consulting - Cross Sell #76</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consulting</controllingFieldValue>
+                <valueName>P/R Cons Agri &amp; OMD consulting - Cross Sell #77</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consulting</controllingFieldValue>
+                <valueName>P/R Cons Financials - Cross Sell #80</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Energy Transition</controllingFieldValue>
+                <valueName>P/R ET CSM &amp; Climate Scenarios - Cross Sell #11</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Energy Transition</controllingFieldValue>
+                <valueName>P/R ET Mobility &amp; energy futures - Cross Sell #45</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Energy Transition</controllingFieldValue>
+                <valueName>P/R ET Clean Energy Tech &amp; hydrogen - Cross Sell #70</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Energy Transition</controllingFieldValue>
+                <valueName>P/R ET Corporate Emissions Solutions - Cross Sell #70.2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Energy Transition</controllingFieldValue>
+                <valueName>P/R ET EnergyView Climate/Energy Adv - Cross Sell #71</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financials Expansion</controllingFieldValue>
+                <valueName>P/R FE Upstream to financials - Cross Sell #23</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Crude News &amp;  Analytics - Cross Sell #22</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Waterborne LPG - Cross Sell #41</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Carve out R&amp;M Market Profiles - Cross Sell #44</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Freight News &amp; Pricing - Cross Sell #50</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Power/Electricity Analytics - Cross Sell #59</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Power, Gas, LNG Forward Curves - Cross Sell #64</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Gas Power Analytics - Cross Sell #64.2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP APAC Regional Views - Cross Sell #69</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Global gas - Cross Sell #73</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Market Advisory Service (MAS) - Cross Sell #82</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Chemical Week - Cross Sell #83</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Resources Cost/Margin Analysis - Cross Sell #84</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Chemical Economics Handbook - Cross Sell #85</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Agri refining News &amp; Insights - Cross Sell #165</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insights to Pricing Solution</controllingFieldValue>
+                <valueName>P/R ITP Upstream Not yet defined - Cross Sell #166</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technology, Data &amp; Platforms</controllingFieldValue>
+                <valueName>P/R TDP Goldfire - Cross Sell #147</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technology, Data &amp; Platforms</controllingFieldValue>
+                <valueName>P/R TDP The Learning Center training - Cross Sell #153</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technology, Data &amp; Platforms</controllingFieldValue>
+                <valueName>P/R TDP Engineering Work Bench - Cross Sell #207</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Auto Data Expansion</controllingFieldValue>
+                <valueName>Autos cross sell to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>10. M&amp;T</controllingFieldValue>
+                <valueName>39. FS Maritime, Risk &amp; Compliance to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>10. M&amp;T</controllingFieldValue>
+                <valueName>40. FS Trade Analytics &amp; Supply Chain to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>10. M&amp;T</controllingFieldValue>
+                <valueName>41. FS Commodity Analytics &amp; Shipping Intelligence</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1. Expand MI Desktop</controllingFieldValue>
+                <valueName>1.1 Cross sell FS Issuance solutions Book Building products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1. Expand MI Desktop</controllingFieldValue>
+                <valueName>1.2 Cross sell FS BRST data to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1. Expand MI Desktop</controllingFieldValue>
+                <valueName>1.3 FS Issuance to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1. Expand MI Desktop</controllingFieldValue>
+                <valueName>2.5.4.1 Capital Markets 1 &amp; 2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1. Expand MI Desktop</controllingFieldValue>
+                <valueName>2.5.4.2 Capital Markets 1 &amp; 2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2. Data Distribution</controllingFieldValue>
+                <valueName>3 FS PVR, Equities Info and Private Vals to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2. Data Distribution</controllingFieldValue>
+                <valueName>2.1.1 Data Lake + Marketplace</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2. Data Distribution</controllingFieldValue>
+                <valueName>2.2.1 Ref Data + Entity Linking</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2. Data Distribution</controllingFieldValue>
+                <valueName>2.3.1a DMS (DVA)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2. Data Distribution</controllingFieldValue>
+                <valueName>2.3.1b DMS (RASS)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2. Data Distribution</controllingFieldValue>
+                <valueName>2.3.2a Desktop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2. Data Distribution</controllingFieldValue>
+                <valueName>2.3.2b Desktop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3. Private Markets</controllingFieldValue>
+                <valueName>7.1 FS Notice Manager, Private Markets, WSO, and Debt Domain to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3. Private Markets</controllingFieldValue>
+                <valueName>7.2 FS Notice Manager, Private Markets, WSO, and Debt Domain to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3. Private Markets</controllingFieldValue>
+                <valueName>7.3 FS Notice Manager, Private Markets, WSO, and Debt Domain to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3. Private Markets</controllingFieldValue>
+                <valueName>2.6.1 MI Data into iLevel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3. Private Markets</controllingFieldValue>
+                <valueName>2.6.2 Preqin Data into iLevel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3. Private Markets</controllingFieldValue>
+                <valueName>2.6.3 Private Asset Valuations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3. Private Markets</controllingFieldValue>
+                <valueName>2.6.4 Reg &amp; Compliance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>4. Corporates</controllingFieldValue>
+                <valueName>10.1 FS Issuer services solutions to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>4. Corporates</controllingFieldValue>
+                <valueName>10.2 FS Issuer services solutions to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>4. Corporates</controllingFieldValue>
+                <valueName>2.5.1 MI IR Desktop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>4. Corporates</controllingFieldValue>
+                <valueName>2.5.2 IR Advisory</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>4. Corporates</controllingFieldValue>
+                <valueName>2.5.3 IR Capital Access</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>5. Risk &amp; Compliance</controllingFieldValue>
+                <valueName>13. FS KYC to MI IB, IM, and CB clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>5. Risk &amp; Compliance</controllingFieldValue>
+                <valueName>14. FS KY3P to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>5. Risk &amp; Compliance</controllingFieldValue>
+                <valueName>31. FS Tax Solutions to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>5. Risk &amp; Compliance</controllingFieldValue>
+                <valueName>38. FS corporate actions to MI IB, IM, and CB clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>5. Risk &amp; Compliance</controllingFieldValue>
+                <valueName>2.8.5 Build out comprehensive credit analytics offering to be more competitive with large incumbents</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>9. Wealth Management and Retail Investing</controllingFieldValue>
+                <valueName>24. FS Markit Digital to MI DMS customers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PD - Expand EWB</controllingFieldValue>
+                <valueName>Engineering Workbench to Platts Customers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.021 FS to MI: combined sales footprint in APAC (BRST)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.061 FS to MI: combined sales footprint in APAC (ISS: Advisory Solutions)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.062 FS to MI: combined sales footprint in APAC (ISS: Digital Solutions)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.071 FS to MI: combined sales footprint in APAC (PVR: Pricing Data)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.081 FS to MI: combined sales footprint in APAC (PVR: PE)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.091 FS to MI: combined sales footprint in APAC (PVR: Delivery Services)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.111 FS to MI: combined sales footprint in APAC (EDM)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.121 FS to MI: combined sales footprint in APAC (thinkFolio)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.161 FS to MI: combined sales footprint in APAC (PM: Private Markets)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.171 FS to MI: combined sales footprint in APAC (WSO)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.181 FS to MI: combined sales footprint in APAC (DD: Debtdomain)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.211 FS to MI: combined sales footprint in APAC (EQI: Dividend Forecast)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.221 FS to MI: combined sales footprint in APAC (EQI: Research Signals)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.241 FS to MI: combined sales footprint in APAC (RRC: KY3P)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8. APAC Other</controllingFieldValue>
+                <valueName>26.242 FS to MI: combined sales footprint in APAC (RRC: CPM)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>6. Supply Chain</controllingFieldValue>
+                <valueName>19.2 Cross sell ECR Supply Chain data to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>6. Supply Chain</controllingFieldValue>
+                <valueName>20. FS cross sell ECR PMI to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>6. Supply Chain</controllingFieldValue>
+                <valueName>21. FS ECR content to MI clients</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>6. Supply Chain</controllingFieldValue>
+                <valueName>2.4.1 Automotive</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>6. Supply Chain</controllingFieldValue>
+                <valueName>2.4.2 ECR / Credit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>6. Supply Chain</controllingFieldValue>
+                <valueName>2.4.3 Supply Chain (incl. M&amp;T)</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TaxCountry__c</fullName>
+        <description>SFDC1-215. Contains the Tax Country field pulled in from the product. Complies with the US Supreme Court Wayfair Decision and Tax Reform Act effective Jan. 1, 2019.</description>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.TaxCountry__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Complies with the US Supreme Court Wayfair Decision and Tax Reform Act effective Jan. 1, 2019.</inlineHelpText>
+        <label>Tax Country/Territory</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalDiscountValue__c</fullName>
+        <description>SFDC1-173 This denotes the total discount.</description>
+        <externalId>false</externalId>
+        <formula>(UnitListPrice__c -Discount_Amount__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Updated List Price with the Discount Amount or Discount % applied</inlineHelpText>
+        <label>Discounted Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>TotalPrice</fullName>
     </fields>
     <fields>
+        <fullName>UnitListPrice__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>SFDC1-173 Currency field that displays the intial value pre discount as entered by the rep</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List Price for the product populated by sales from pricing tools or through renewal process</inlineHelpText>
+        <label>Updated List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>UnitPrice</fullName>
     </fields>
+    <fields>
+        <fullName>WeightedValueatRisk__c</fullName>
+        <externalId>false</externalId>
+        <formula>EstimatedValueatRisk__c  *  RiskProbability__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Weighted Value at Risk</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <validationRules>
+        <fullName>CCIDAndCCQuoteIdSalesGeneralEdit</fullName>
+        <active>true</active>
+        <description>SFDC-2424 : sales needs to edit CCID and CCQUOTEID on opportunity Product.</description>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(
+OR(ISCHANGED( CCID__c ), ISCHANGED( CCQuoteID__c )),
+NOT(OR(Opportunity.RecordType.Name = &quot;New Business&quot;, 
+	Opportunity.RecordType.Name = &quot;Forecasting Placeholder&quot;,
+Opportunity.RecordType.Name = &quot;Renewal&quot;)
+),
+		CONTAINS($Profile.Name, &quot;General&quot;)
+)
+)</errorConditionFormula>
+        <errorMessage>CCID and CCQuoteId can only be edited for New Business Opportunities, Auto-Renewal Opportunities with changes or Non Auto-Renewal Opportunities.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ContractEndDtCantExceedContractStartDt</fullName>
+        <active>true</active>
+        <description>SFDC1-7027: The Contract End Date cannot precede the Contract Start Date on the Opportunity Product</description>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+
+AND(NOT(ISNULL(ContractEndDate__c)), NOT(ISNULL(ContractStartDate__c)), ContractEndDate__c &lt;  ContractStartDate__c  )
+&amp;&amp;(NOT ($Permission.ValidationByPassPermission ))
+)</errorConditionFormula>
+        <errorDisplayField>ContractEndDate__c</errorDisplayField>
+        <errorMessage>Contract End Date needs to be greater than or equal to the Contract Start Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ContractEndDtCantPrecedeOppContractEndDt</fullName>
+        <active>true</active>
+        <description>SFDC1-7027: The Contract End Date can not exceed the Opportunity’s Contract End Date</description>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+OR(AND(NOT(ISNULL(ContractEndDate__c)), ContractEndDate__c &gt; Opportunity.ContractEndDate__c ),
+AND(NOT(ISNULL(ContractEndDate__c)),ISNULL(Opportunity.ContractEndDate__c))
+)
+&amp;&amp;(NOT ($Permission.ValidationByPassPermission ))
+)</errorConditionFormula>
+        <errorDisplayField>ContractEndDate__c</errorDisplayField>
+        <errorMessage>Dates need to be within Opportunity Contract Dates.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ContractStartDtCantPrecedeOppConStartDt</fullName>
+        <active>true</active>
+        <description>SFDC1-7027: The Contract Start Date can not precede the Opportunity’s Contract Start Date</description>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+OR(AND(NOT(ISNULL(ContractStartDate__c)), ContractStartDate__c &lt; Opportunity.ContractStartDate__c ),
+AND(NOT(ISNULL(ContractStartDate__c)),ISNULL(Opportunity.ContractStartDate__c))
+)
+&amp;&amp;(NOT ($Permission.ValidationByPassPermission ))
+)</errorConditionFormula>
+        <errorDisplayField>ContractStartDate__c</errorDisplayField>
+        <errorMessage>Dates need to be within Opportunity Contract Dates</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EstimatedRiskExceedsAnnualizedAmount</fullName>
+        <active>false</active>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+        EstimatedValueatRisk__c &gt;  AnnualizedTotalAmount__c
+        )</errorConditionFormula>
+        <errorDisplayField>EstimatedValueatRisk__c</errorDisplayField>
+        <errorMessage>Estimated Value at Risk shouldn’t be greater than Annualized Total Amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EstimatedRiskExceedsPriorYearSalesPrice</fullName>
+        <active>true</active>
+        <description>Estimated Value at Risk cannot be greater than Prior Year Total Sales Price</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Opportunity__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+OR(
+ EstimatedValueatRisk__c &gt; PriorYearTotalSalesPrice__c,
+ AND(ISNULL(PriorYearTotalSalesPrice__c),
+     EstimatedValueatRisk__c != 0
+    )
+ )
+)</errorConditionFormula>
+        <errorDisplayField>EstimatedValueatRisk__c</errorDisplayField>
+        <errorMessage>Estimated Value at Risk shouldn’t be greater than Prior Year Total Sales Price</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>InnerYearRecordValidationCheck</fullName>
+        <active>false</active>
+        <description>SFDC1-7676 Disable modification for everyone but system admin.</description>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND( 
+   $Profile.Name &lt;&gt; &apos;IHSMarkit System Admin&apos;, 
+   $Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+   Opportunity.RecordType.Name = &apos;Inner Year&apos;,
+   NOT($Permission.AllowInnerYearOpptyLineItemUpdate) 
+)
+)</errorConditionFormula>
+        <errorMessage>You are not authorized to update Opportunity Product values.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OpportunityGratisProductValueZero</fullName>
+        <active>true</active>
+        <description>SFDC1-6554;Users cannot put an amount for gratis opportunity in opportunity product</description>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND( (Opportunity.RecordType.Name = &apos;Gratis&apos; ),
+    (TotalPrice &gt; 0))
+)</errorConditionFormula>
+        <errorMessage>Please note Opportunity Product Total price for Gratis Opportunity should be zero</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OpportunityProductStatusAccess</fullName>
+        <active>false</active>
+        <description>SFDC-1788
+Allows editing of the opportunity product status if the user has the &quot;Renewal Opportunity Product Status&quot; or is a System Admin.</description>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(
+	ISPICKVAL(Opportunity.SourceSystem__c, &quot;SAP&quot;),
+	$Permission.RenewalOpportunityProductStatus,
+	ISCHANGED(Status__c),
+	Opportunity.RecordTypeId = &quot;0120P000000kKaZ&quot;
+	)
+	)</errorConditionFormula>
+        <errorMessage>You can only edit this field if the renewal opportunity is manually created.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OppproductStatusCanNotChangedFromNew</fullName>
+        <active>true</active>
+        <description>SFDC1-5780 : Once Opportunity Product status is set to New, can not be Changed back to Existing.By passing this validation rule for admin and API  profile as per ticket SFDC1-6247
+SFDC-701 allow Sales Ops to bypass this validation rule</description>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND ( 
+    TEXT(PRIORVALUE(Status__c))  = &apos;New&apos;,
+    OR (
+        TEXT(Status__c) =&apos;Existing&apos;,
+        TEXT(Status__c) =&apos;&apos;
+    ),
+    $Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+    $Profile.Name &lt;&gt; &quot;IHSMarkit System Admin&quot;, 
+    $Profile.Name &lt;&gt; &quot;IHSMarkit System Admin: API&quot;,
+    NOT(CONTAINS($Profile.Name, &quot;Sales Ops&quot;)),
+    NOT(CONTAINS($Profile.Name, &quot;User Support&quot;)),
+    NOT($Permission.RenewalOpportunityProductStatus),
+    NOT($Permission.EnhancedSalesPermission)
+)
+)</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Status can not be changed from New to Existing or None. If you wish to remove it, please delete the product.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ProbabilityRangeError</fullName>
+        <active>true</active>
+        <description>SFDC-1924 : Probability must have a minimum value of 0 and maximum value of 100.</description>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+OR(
+   Probability__c &gt; 1.0,
+   Probability__c &lt; 0.0
+)
+)</errorConditionFormula>
+        <errorMessage>Probability must have a value between 0 and 100.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ProdCannotbeAtRiskWithNewLostStatus</fullName>
+        <active>true</active>
+        <description>The product can not be at Risk when the status is New/Loss. Only existing Product can be marked at risk</description>
+        <errorConditionFormula>If(OR( $Setup.SystemMutedValidationRules__c.Opportunity__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+AND(
+NOT(ISPICKVAL( Status__c , &apos;Existing&apos;)),
+ISPICKVAL( IsProductatRisk__c , &apos;Yes&apos;),
+ISPICKVAL(  RiskStatus__c , &apos;Open - Pending Resolution&apos;)
+)
+)</errorConditionFormula>
+        <errorDisplayField>IsProductatRisk__c</errorDisplayField>
+        <errorMessage>Product can not be at Risk when the status is New/Loss</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>RenewalsLicenseNumberEditableOnlyToAPI</fullName>
+        <active>true</active>
+        <description>SFDC1-4689 License Number on Renewals Opportunity Products is editable only to &quot;IHSMarkit System Admin: API&quot; profile</description>
+        <errorConditionFormula>If(OR($Setup.SystemMutedValidationRules__c.OpportunityLineItem__c, $Setup.SystemMutedValidationRules__c.All__c ), False,
+ISCHANGED(LicenseNumber__c)
+&amp;&amp; ISPICKVAL(Status__c, &apos;Existing&apos;)
+&amp;&amp; $Profile.Name != &apos;IHSMarkit System Admin: API&apos;
+&amp;&amp; $Profile.Name != &apos;System Administrator&apos;
+)</errorConditionFormula>
+        <errorDisplayField>LicenseNumber__c</errorDisplayField>
+        <errorMessage>License Number on Renewals Opportunity Products is editable only to &quot;IHSMarkit System Admin: API&quot; profile</errorMessage>
+    </validationRules>
 </CustomObject>

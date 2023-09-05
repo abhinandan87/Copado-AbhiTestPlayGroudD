@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Issuer Solutions - Shareholder ID</name>
+    <queueMembers>
+        <users>
+            <user>andreas.posavac@ihsmarkit.com</user>
+            <user>angelika.horstmeier@ihsmarkit.com</user>
+            <user>arnold.cai@ihsmarkit.com</user>
+            <user>atsushi.matsunaga@ihsmarkit.com</user>
+            <user>brad.pottberg@ihsmarkit.com</user>
+            <user>chad.stephenson@ihsmarkit.com</user>
+            <user>christina.yoo@ihsmarkit.com</user>
+            <user>clara.vissani@ihsmarkit.com</user>
+            <user>elizabeth.rakowski@ihsmarkit.com</user>
+            <user>emily.rubin-delanchy@ihsmarkit.com</user>
+            <user>emma.kinghorn@ihsmarkit.com</user>
+            <user>frankie.lam@ihsmarkit.com</user>
+            <user>gabriella.baron@ihsmarkit.com</user>
+            <user>hidemi.kawahara@ihsmarkit.com</user>
+            <user>hidekatsu.yamamoto@ihsmarkit.com</user>
+            <user>hirokazu.osaki@ihsmarkit.com</user>
+            <user>ilkay.sarpdag@ihsmarkit.com</user>
+            <user>inge.buitendag@ihsmarkit.com</user>
+            <user>jekaterina.vorobjova@ihsmarkit.com</user>
+            <user>john.karageorge@ihsmarkit.com</user>
+            <user>kazu.sugiyama@ihsmarkit.com</user>
+            <user>kenya.kitagawa@ihsmarkit.com</user>
+            <user>koichi.nakayama@ihsmarkit.com</user>
+            <user>marissa.stuart@ihsmarkit.com</user>
+            <user>sabrina.zhang@ihsmarkit.com</user>
+            <user>sachiko.arae@ihsmarkit.com</user>
+            <user>saori.kato@ihsmarkit.com</user>
+            <user>siphokuhle.zwane@ihsmarkit.com.prod</user>
+            <user>tracymasengu.bashala@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

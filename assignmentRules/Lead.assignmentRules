@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Assignment Rules 2018</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>LeadGenerationTeamAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4) AND (5 OR 6 OR 7)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Financial Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Corporate Actions,Counterparty Manager,Tax Solutions,Loan Trade Settlement,Private asset valuation services,Dividend forecasting and research signals,Pricing and valuation data,Short interest</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>&quot;FS: Data, Valuations &amp; Analytics (Pricing, Vals, Ref Data, Equities)&quot;,FS: Markit Indices</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Risk Compliance &amp; Reporting,Financial Technology Solutions,Post Trade Processing</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LeadGenerationTeamEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4) AND (5 OR 6 OR 7)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Financial Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Corporate Actions,Counterparty Manager,Tax Solutions,Loan Trade Settlement,Private asset valuation services,Dividend forecasting and research signals,Pricing and valuation data,Short interest</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>&quot;FS: Data, Valuations &amp; Analytics (Pricing, Vals, Ref Data, Equities)&quot;,FS: Markit Indices</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Risk Compliance &amp; Reporting,Financial Technology Solutions,Post Trade Processing</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LeadGenerationTeamAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4) AND (5 OR 6 OR 7)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Financial Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Corporate Actions,Counterparty Manager,Tax Solutions,Loan Trade Settlement,Private asset valuation services,Dividend forecasting and research signals,Pricing and valuation data,Short interest</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>&quot;FS: Data, Valuations &amp; Analytics (Pricing, Vals, Ref Data, Equities)&quot;,FS: Markit Indices</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Risk Compliance &amp; Reporting,Financial Technology Solutions,Post Trade Processing</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EconomicCountryRiskAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>Division_Sent_To__c = &apos;Financial Services&apos; &amp;&amp; CalculatedRegion__c = &apos;Americas&apos; &amp;&amp; (( RecordType.Name = &apos;SPG Referral Leads&apos; || ISPICKVAL(LeadSource , &apos;Transfer&apos;)) &amp;&amp; ((CONTAINS(Description , &apos;Supply Chain Risk &amp; Analytics&apos;) || CONTAINS(Description , &apos;Supply Chain Spend Analytics&apos;)||CONTAINS(Description , &apos;Country Risk Investment Model&apos;)|| CONTAINS(Description , &apos;Economic Data&apos;)|| CONTAINS(Description , &apos;Global Pricing and Purchasing Service&apos;)|| CONTAINS(Description , &apos;Integrity Due Diligence&apos;)|| CONTAINS(Description , &apos;Scenario Modeling&apos;)||CONTAINS(Description , &apos;Economics &amp; Country Risk&apos;)) || INCLUDES(SPG_Referral_Product_Interest__c , &apos;FS: RA&amp;SS - ECR (Economics, Country Risk, Industry, Supply Chain, PMI)&apos;)))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EconomicCountryRiskAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>Division_Sent_To__c = &apos;Financial Services&apos; &amp;&amp; CalculatedRegion__c = &apos;APAC&apos;  &amp;&amp; (( RecordType.Name = &apos;SPG Referral Leads&apos; || ISPICKVAL(LeadSource , &apos;Transfer&apos;)) &amp;&amp; ((CONTAINS(Description , &apos;Supply Chain Risk &amp; Analytics&apos;) || CONTAINS(Description , &apos;Supply Chain Spend Analytics&apos;)||CONTAINS(Description , &apos;Country Risk Investment Model&apos;)|| CONTAINS(Description , &apos;Economic Data&apos;)|| CONTAINS(Description , &apos;Global Pricing and Purchasing Service&apos;)|| CONTAINS(Description , &apos;Integrity Due Diligence&apos;)||  CONTAINS(Description , &apos;Scenario Modeling&apos;)||CONTAINS(Description , &apos;Economics &amp; Country Risk&apos;)) || INCLUDES(SPG_Referral_Product_Interest__c , &apos;FS: RA&amp;SS - ECR (Economics, Country Risk, Industry, Supply Chain, PMI)&apos;)))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EconomicCountryRiskEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>Division_Sent_To__c = &apos;Financial Services&apos; &amp;&amp; CalculatedRegion__c = &apos;EMEA&apos; &amp;&amp; (( RecordType.Name = &apos;SPG Referral Leads&apos; || ISPICKVAL(LeadSource , &apos;Transfer&apos;)) &amp;&amp; ((CONTAINS(Description , &apos;Supply Chain Risk &amp; Analytics&apos;) || CONTAINS(Description , &apos;Supply Chain Spend Analytics&apos;)||CONTAINS(Description , &apos;Country Risk Investment Model&apos;)|| CONTAINS(Description , &apos;Economic Data&apos;)|| CONTAINS(Description , &apos;Global Pricing and Purchasing Service&apos;)|| CONTAINS(Description , &apos;Integrity Due Diligence&apos;)|| CONTAINS(Description , &apos;Scenario Modeling&apos;)||CONTAINS(Description , &apos;Economics &amp; Country Risk&apos;)) || INCLUDES(SPG_Referral_Product_Interest__c , &apos;FS: RA&amp;SS - ECR (Economics, Country Risk, Industry, Supply Chain, PMI)&apos;)))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IssuerSolutionsAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR ( 3 AND ((4 OR 5) AND (6 OR 8 OR 7))))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>High Level (38000),ESG and Corporate Governance (38010),Global Markets Intelligence (38020),Investor CRM (38030),Investor Targeting (38040),Investor Relations Strategy and Advisory (38050),Perception Analytics (38060),Issuer Capital Access (38070)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Financial Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>BigDough Advanced,ESG Advisory Services,ESG Reporting,Investor ESG Intelligence,Capital Access Platform,Investor Targeting &amp; Perception Analytics,Stock Surveillance &amp; Advisory Services,Issuers Solutions,ESG &amp; Sustainability</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>FS: RA&amp;SS - Issuer Solutions (Investor Relations)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Investor Targeting and Perception Analytics,Issuer Solutions</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IssuerSolutionsAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR (3 AND ((4 OR 5) AND (6 OR 8 OR 7))))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>High Level (38000),ESG and Corporate Governance (38010),Global Markets Intelligence (38020),Investor CRM (38030),Investor Targeting (38040),Investor Relations Strategy and Advisory (38050),Perception Analytics (38060),Issuer Capital Access (38070)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Financial Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>BigDough Advanced,ESG Advisory Services,ESG Reporting,Investor ESG Intelligence,Capital Access Platform,Investor Targeting &amp; Perception Analytics,Stock Surveillance &amp; Advisory Services,Issuers Solutions,ESG &amp; Sustainability</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>FS: RA&amp;SS - Issuer Solutions (Investor Relations)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Investor Targeting and Perception Analytics,Issuer Solutions</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IssuerSolutionsEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR (3 AND ((4 OR 5) AND (6 OR 8 OR 7))))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>High Level (38000),ESG and Corporate Governance (38010),Global Markets Intelligence (38020),Investor CRM (38030),Investor Targeting (38040),Investor Relations Strategy and Advisory (38050),Perception Analytics (38060),Issuer Capital Access (38070)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Financial Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>BigDough Advanced,ESG Advisory Services,ESG Reporting,Investor ESG Intelligence,Capital Access Platform,Investor Targeting &amp; Perception Analytics,Stock Surveillance &amp; Advisory Services,Issuers Solutions,ESG &amp; Sustainability</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>FS: RA&amp;SS - Issuer Solutions (Investor Relations)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Investor Targeting and Perception Analytics,Issuer Solutions</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LMTforAssignment</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>Division_Sent_To__c = &apos;Financial Services&apos; &amp;&amp; ( RecordType.Name = &apos;SPG Referral Leads&apos; || ISPICKVAL(LeadSource , &apos;Transfer&apos;)) &amp;&amp; ((CONTAINS(Description , &apos;Global Trade Analytics Suite&apos;) || CONTAINS(Description , &apos;Maritime &amp; Trade&apos;)||CONTAINS(Description , &apos;Port Performance&apos;)) || INCLUDES(SPG_Referral_Product_Interest__c , &apos;FS: RA&amp;SS - Maritime &amp; Trade (GTAS, MIRS)&apos;))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FinancialRiskAnalyticsGlobal</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR (2 AND 5) OR (3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>Analytics (30001)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>FS: Credit &amp; Risk (Financial Risk Analytics)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Financial Risk Analytics</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Financial Services</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IPREOPMAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND ((2 OR 3 OR 4) OR (5 AND ((6 OR 7) AND (8 OR 9))))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>FS - IBOR Transition (30036),WSO (30028),EDM (30005),Thinkfolio (30025),FS-PM - Private Markets (35000),FS-PM - Private Equity (35010),FS-PM - Venture Capital (35020),FS-PM - Private Debt Solution (35031),EDM (30005),FS-PM - FOF-Secondaries (35040)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>FS - Solutions - Liquid Credit (35041),FS-PM - Limited Partner (35060),FS-PM - Private Company (35070),FS-PM - Real Estate (35080),FS-PM - Valuation Solutions (35090),FS-PM - iLEVEL (35200),FS-SL - Private Debt Solution (35350)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>FS-PM - Family Offices (35050),FS-PM - PRISM (35300),FS-PM - Private Credit (35030)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Financial Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Loan Pricing and Reference Data,Portfolio and Agency Administration,Portfolio Modelling,Syndication and Agency Management,iLEVEL portfolio monitoring software,Enterprise Data Management,Leveraged Loans,Private Credit Solutions</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>&quot;FS: Solutions (Private Markets, iLEVEL, WSO, Debt Domain)&quot;</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IPREOPMAMER</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND ((2 OR 3 OR 4) OR (5 AND ((6 OR 7) AND (8 OR 9))))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>FS - IBOR Transition (30036),WSO (30028),EDM (30005),Thinkfolio (30025),FS-PM - Private Markets (35000),FS-PM - Private Equity (35010),FS-PM - Venture Capital (35020),FS-PM - Private Debt Solution (35031),EDM (30005),FS-PM - FOF-Secondaries (35040)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>FS - Solutions - Liquid Credit (35041),FS-PM - Limited Partner (35060),FS-PM - Private Company (35070),FS-PM - Real Estate (35080),FS-PM - Valuation Solutions (35090),FS-PM - iLEVEL (35200),FS-SL - Private Debt Solution (35350)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>FS-PM - Family Offices (35050),FS-PM - PRISM (35300),FS-PM - Private Credit (35030)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Financial Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Loan Pricing and Reference Data,Portfolio and Agency Administration,Portfolio Modelling,Syndication and Agency Management,iLEVEL portfolio monitoring software,Enterprise Data Management,Leveraged Loans,Private Credit Solutions</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>&quot;FS: Solutions (Private Markets, iLEVEL, WSO, Debt Domain)&quot;</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IPREOPMEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND ((2 OR 3 OR 4) OR (5 AND ((6 OR 7) AND (8 OR 9))))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>FS - IBOR Transition (30036),WSO (30028),EDM (30005),Thinkfolio (30025),FS-PM - Private Markets (35000),FS-PM - Private Equity (35010),FS-PM - Venture Capital (35020),FS-PM - Private Debt Solution (35031),EDM (30005),FS-PM - FOF-Secondaries (35040)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>FS - Solutions - Liquid Credit (35041),FS-PM - Limited Partner (35060),FS-PM - Private Company (35070),FS-PM - Real Estate (35080),FS-PM - Valuation Solutions (35090),FS-PM - iLEVEL (35200),FS-SL - Private Debt Solution (35350)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>FS-PM - Family Offices (35050),FS-PM - PRISM (35300),FS-PM - Private Credit (35030)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Financial Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Loan Pricing and Reference Data,Portfolio and Agency Administration,Portfolio Modelling,Syndication and Agency Management,iLEVEL portfolio monitoring software,Enterprise Data Management,Leveraged Loans,Private Credit Solutions</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>&quot;FS: Solutions (Private Markets, iLEVEL, WSO, Debt Domain)&quot;</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LMTforAssignment</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5) AND (2 OR 3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>Automotive</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>CMS/Product Design</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Division_Sent_To__c</field>
+                <operation>equals</operation>
+                <value>ENR</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FSMarketing</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>((1 OR 2) AND 3 ) OR (4 AND 5)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.CampaignType__c</field>
+                <operation>notContain</operation>
+                <value>Sales Led</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CampaignType__c</field>
+                <operation>notContain</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>startsWith</operation>
+                <value>FS</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>KY3P,KYC Services</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>RegulatoryComplianceGlobal</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR (2 AND 3)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>KYV,Know Your Third Party (30013),KYC Services (30014),KY3P Google Referral (30035)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>includes</operation>
+                <value>&quot;FS: Network &amp; Reg - (Brokerage, Research, Sales &amp; Trading)&quot;,&quot;FS: Network &amp; Reg (KYC, KY3P, Tax, Corp Actions)&quot;</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MODAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2) OR (3 OR 4) AND 5</booleanFilter>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>Digital (30031),Adhesion (30029),Chartworks (30030)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>Markit_Digital</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SPG Referral Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPG_Referral_Product_Interest__c</field>
+                <operation>equals</operation>
+                <value>FS: Markit Digital</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>GMGBRSTGlobal</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR (2 AND 3)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>FS-GMG High Level (36500),FS-GMG Equities (36510),FS-GMG Fixed Income (36520),FS-GMG Munis (36530)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Global Markets Group</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OSTTRAGlobal</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>contains</operation>
+                <value>MarkitSERV,MarkitSERV (30017),MarkitSERV FX (30018),OSTTRA (30042)</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LeadGenerationTeamAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>CalculatedRegion__c = &apos;Americas&apos;  &amp;&amp;( CASE( ProductInterest__c,&quot;FS - PRC CPO Campaign (30040)&quot;,1,&quot;FS - INFO Services (30039)&quot;,1,&quot;Corporate actions (30003)&quot;,1, &quot;FS - Cryptocurrency Solutions (30043)&quot;,1,&quot;Alternative Data (30032)&quot;,1, &quot;FRTB (30010)&quot;,1,&quot;Securities Finance (30024)&quot;,1, &quot;Equities  - Data &amp; Analytics (30009)&quot;,1, &quot;Equities - Reg Products (30007)&quot;,1, &quot;Equities - Software (30008)&quot;,1, &quot;Pricing data (30022)&quot;,1, &quot;OTC Services (30021)&quot;,1, &quot;Indices (30012)&quot;,1, &quot;Index Administration &amp; Calculation (30011)&quot;,1, &quot;CTI (30004)&quot;,1, &quot;MCPM - Core (30019)&quot;,1, &quot;MCPM - ISDA Amend (30020)&quot;,1, &quot;Commodity Tracker (30002)&quot;,1, &quot;Highlevel Rollup (30000)&quot;,1, &quot;Highlevel - Unknown Prod Int (30000)&quot;,1, &quot;Valuations (30027)&quot;,1, &quot;Reference data (30023)&quot;,1, &quot;Valuation Services (30026)&quot;,1, &quot;Legacy Distribution (30015)&quot;,1, &quot;Environmental Registry (30006)&quot;,1,&quot;Loan settlement (30016)&quot;,1, &quot;Data Lake (30500)&quot;,1,&quot;FS-PRC-Managed Services (30034)&quot;,1,&quot;FS - PRC Securities Processing (30037)&quot;,1,&quot;FS - PRC Custodians (30038)&quot;,1,0) = 1)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LeadGenerationTeamAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>CalculatedRegion__c = &apos;APAC&apos;  &amp;&amp;( CASE( ProductInterest__c,&quot;FS - PRC CPO Campaign (30040)&quot;,1,&quot;FS - INFO Services (30039)&quot;,1,&quot;CTI (30004)&quot;,1, &quot;MCPM - Core (30019)&quot;,1,&quot;MCPM - ISDA Amend (30020)&quot;,1,&quot;Corporate actions (30003)&quot;,1, &quot;FS - Cryptocurrency Solutions (30043)&quot;,1,&quot;Alternative Data (30032)&quot;,1, &quot;FRTB (30010)&quot;,1,&quot;Securities Finance (30024)&quot;,1, &quot;Equities  - Data &amp; Analytics (30009)&quot;,1, &quot;Equities - Reg Products (30007)&quot;,1, &quot;Equities - Software (30008)&quot;,1, &quot;Pricing data (30022)&quot;,1, &quot;Valuations (30027)&quot;,1, &quot;Reference data (30023)&quot;,1, &quot;OTC Services (30021)&quot;,1, &quot;Indices (30012)&quot;,1, &quot;Index Administration &amp; Calculation (30011)&quot;,1, &quot;Valuation Services (30026)&quot;,1, &quot;Digital (30031)&quot;,1, &quot;Adhesion (30029)&quot;,1, &quot;Chartworks (30030)&quot;,1,&quot;Loan settlement (30016)&quot;,1, &quot;Highlevel Rollup (30000)&quot;,1, &quot;Highlevel - Unknown Prod Int (30000)&quot;,1,&quot;Legacy Distribution (30015)&quot;,1, &quot;Environmental Registry (30006)&quot;,1, &quot;Data Lake (30500)&quot;,1,&quot;FS-PRC-Managed Services (30034)&quot;,1,&quot;FS - PRC Securities Processing (30037)&quot;,1,&quot;FS - PRC Custodians (30038)&quot;,1,0) = 1)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LeadGenerationTeamEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>CalculatedRegion__c = &apos;EMEA&apos;  &amp;&amp;( CASE( ProductInterest__c,&quot;FS - PRC CPO Campaign (30040)&quot;,1,&quot;FS - INFO Services (30039)&quot;,1,&quot;CTI (30004)&quot;,1, &quot;MCPM - Core (30019)&quot;,1,&quot;MCPM - ISDA Amend (30020)&quot;,1,&quot;Corporate actions (30003)&quot;,1, &quot;FS - Cryptocurrency Solutions (30043)&quot;,1,&quot;Alternative Data (30032)&quot;,1, &quot;FRTB (30010)&quot;,1,&quot;Securities Finance (30024)&quot;,1, &quot;Equities  - Data &amp; Analytics (30009)&quot;,1, &quot;Equities - Reg Products (30007)&quot;,1, &quot;Equities - Software (30008)&quot;,1, &quot;Pricing data (30022)&quot;,1, &quot;Valuations (30027)&quot;,1, &quot;Reference data (30023)&quot;,1, &quot;OTC Services (30021)&quot;,1, &quot;Indices (30012)&quot;,1, &quot;Index Administration &amp; Calculation (30011)&quot;,1, &quot;Valuation Services (30026)&quot;,1, &quot;Digital (30031)&quot;,1, &quot;Adhesion (30029)&quot;,1, &quot;Chartworks (30030)&quot;,1,&quot;Loan settlement (30016)&quot;,1, &quot;Highlevel Rollup (30000)&quot;,1, &quot;Highlevel - Unknown Prod Int (30000)&quot;,1,&quot;Legacy Distribution (30015)&quot;,1, &quot;Environmental Registry (30006)&quot;,1, &quot;Data Lake (30500)&quot;,1,&quot;FS-PRC-Managed Services (30034)&quot;,1,&quot;FS - PRC Securities Processing (30037)&quot;,1,&quot;FS - PRC Custodians (30038)&quot;,1,0) = 1)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CDSModelWebsite</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>CDS Model</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>LMTforAssignment</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>notContain</operation>
+                <value>FS</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>automotiveMastermindAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>automotiveMastermind</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>automotiveMastermindEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>automotiveMastermind</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>automotiveMastermindAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>automotiveMastermind</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AerospaceDefenseSecurityAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Aerospace Defense &amp; Security</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AerospaceDefenseSecurityAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Aerospace Defense &amp; Security</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AerospaceDefenseSecurityAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Aerospace Defense &amp; Security</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CarfaxAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Carfax</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CarfaxEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Carfax</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CarfaxAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Carfax</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CarproofAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Carproof</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CarproofEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Carproof</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CarproofAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Carproof</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EconomicCountryRiskAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Economic &amp; Country Risk</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EconomicCountryRiskEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Economic &amp; Country Risk</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EconomicCountryRiskAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Economic &amp; Country Risk</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EnergyWidePerspectives</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Energy-Wide Perspectives</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>TechnologyMediaTelecommAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Technology Media &amp; Telecomm</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>TechnologyMediaTelecommEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Technology Media &amp; Telecomm</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>TechnologyMediaTelecommAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Technology Media &amp; Telecomm</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UpstreamAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Upstream</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UpstreamEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Upstream</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UpstreamAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Upstream</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OMDCAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Oil Midstream Downstream &amp; Chemicals</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OMDCEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Oil Midstream Downstream &amp; Chemicals</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OMDCAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Oil Midstream Downstream &amp; Chemicals</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>PowerGasCoalRenewablesAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Power Gas Coal &amp; Renewables</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>PowerGasCoalRenewablesEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Power Gas Coal &amp; Renewables</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>PowerGasCoalRenewablesAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Power Gas Coal &amp; Renewables</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OPISAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>OPIS</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OPISEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>OPIS</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OPISAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>equals</operation>
+                <value>OPIS</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ProductDesignPartsAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>equals</operation>
+                <value>4D Online,BOM Intelligence,BOM Manager,CAPS Universe,Product Content Management: Parts,Parts - Supplier Risk,Parts Consulting</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ProductDesignPartsAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.ProductInterest__c</field>
+                <operation>equals</operation>
+                <value>4D Online,BOM Intelligence,BOM Manager,CAPS Universe,Product Content Management: Parts,Parts - Supplier Risk,Parts Consulting</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ProductDesignPartsEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>4D Online,BOM Intelligence,BOM Manager,CAPS Universe,Product Content Management: Parts,Parts - Supplier Risk,Parts Consulting</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ProductDesignAPAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Product Design</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ProductDesignEMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Product Design</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ProductDesignAmericas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Product Design</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UnassignedEloqua</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Global</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UnassignedOther</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>notEqual</operation>
+                <value>Marketing Generated,Analyst Generated</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UnassignedEloqua</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Rep Generated,Marketing Generated,Customer Care,Analyst Generated</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CentralSDRPreSales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Maritime &amp; Trade</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>EMEA</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CentralSDRPreSales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Maritime &amp; Trade</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>Americas</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>CentralSDRPreSales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.BusinessLineInterest__c</field>
+                <operation>equals</operation>
+                <value>Maritime &amp; Trade</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CalculatedRegion__c</field>
+                <operation>equals</operation>
+                <value>APAC</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

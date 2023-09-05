@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>accumaptops@ihsmarkit.com</email>
+    <name>CS | Energy | CDN | AccuMap Tops Version</name>
+    <queueMembers>
+        <users>
+            <user>anthony.santos@ihsmarkit.com</user>
+            <user>brittaney.bridge@ihsmarkit.com</user>
+            <user>gwen.burnett@ihsmarkit.com</user>
+            <user>karen.morgan@ihsmarkit.com</user>
+            <user>kim.toten@ihsmarkit.com</user>
+            <user>mandy.lee@ihsmarkit.com</user>
+            <user>merry.gao@ihsmarkit.com</user>
+            <user>troy.winn@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action --></label>
+        <name>slackv2__Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Data --></label>
+        <name>slackv2__Record_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Id --></label>
+        <name>slackv2__Subscription_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

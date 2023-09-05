@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Order Management Helpdesk - Noida</name>
+    <queueMembers>
+        <users>
+            <user>amitkumar.roy@ihsmarkit.com</user>
+            <user>asima.chatterjee@ihsmarkit.com</user>
+            <user>brijesh.gupta@ihsmarkit.com</user>
+            <user>chander.kant@ihsmarkit.com</user>
+            <user>deepti.bhardwaj@ihsmarkit.com</user>
+            <user>deodas.ojha@ihsmarkit.com</user>
+            <user>gaurav.bhatia@ihsmarkit.com</user>
+            <user>karan.sardana2@ihsmarkit.com</user>
+            <user>manas.dawar@ihsmarkit.com</user>
+            <user>manish.modi@ihsmarkit.com</user>
+            <user>mukesh.kinger@ihsmarkit.com</user>
+            <user>munish.anand@ihsmarkit.com</user>
+            <user>nidhi.bhalla@ihsmarkit.com</user>
+            <user>nitin.bagga2@ihsmarkit.com</user>
+            <user>niyeta.gupta@ihsmarkit.com</user>
+            <user>piyushshanker.trivedi@ihsmarkit.com</user>
+            <user>ruchi.dhingra@ihsmarkit.com</user>
+            <user>sidhant.kalra@ihsmarkit.com</user>
+            <user>sonam.kakkar@ihsmarkit.com</user>
+            <user>stephen.beevor@ihsmarkit.com</user>
+            <user>sumit.agarwal@ihsmarkit.com</user>
+            <user>suraj.kumar1@ihsmarkit.com</user>
+            <user>versha.tewari@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

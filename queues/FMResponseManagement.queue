@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>LRC | Response Management</name>
+    <queueMembers>
+        <users>
+            <user>adam.bee@ihsmarkit.com</user>
+            <user>ankit.jain2@ihsmarkit.com</user>
+            <user>ankit.rajvanshi@ihsmarkit.com</user>
+            <user>babnish.bhatia@ihsmarkit.com</user>
+            <user>cathryn.rich@ihsmarkit.com</user>
+            <user>darla.boettcher@ihsmarkit.com</user>
+            <user>dianna.toomey@ihsmarkit.com</user>
+            <user>edward.gordon@ihsmarkit.com</user>
+            <user>gaurav.chaudhary@ihsmarkit.com</user>
+            <user>himanshu.gehaney@ihsmarkit.com</user>
+            <user>joanna.martini@ihsmarkit.com</user>
+            <user>john.lambros@ihsmarkit.com</user>
+            <user>kamal.manshani@ihsmarkit.com</user>
+            <user>lauren.wallace@ihsmarkit.com</user>
+            <user>michael.firestone@ihsmarkit.com</user>
+            <user>mohit.handa@ihsmarkit.com</user>
+            <user>omar.koshin@ihsmarkit.com</user>
+            <user>pantos.yantsides@ihsmarkit.com</user>
+            <user>philippe.osterwind@markit.com.prod</user>
+            <user>sabrina.fitch@ihsmarkit.com</user>
+            <user>supriya.saroha@ihsmarkit.com</user>
+            <user>xinniella.khubchandani@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

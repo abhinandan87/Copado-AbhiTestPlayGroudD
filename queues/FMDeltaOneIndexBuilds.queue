@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | DeltaOne | Index Builds</name>
+    <queueMembers>
+        <users>
+            <user>avinash.thankappanrosemary@ihsmarkit.com</user>
+            <user>christine.chow@ihsmarkit.com</user>
+            <user>fe.gonzalezzamora@ihsmarkit.com</user>
+            <user>karan.naresh@ihsmarkit.com</user>
+            <user>nrupali.shetty@ihsmarkit.com</user>
+            <user>olrick.olenga@ihsmarkit.com</user>
+            <user>raju.noor@ihsmarkit.com</user>
+            <user>rayna.qian@ihsmarkit.com</user>
+            <user>sunny.lee@ihsmarkit.com</user>
+            <user>sydney.liberman@ihsmarkit.com</user>
+            <user>tom.wong@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

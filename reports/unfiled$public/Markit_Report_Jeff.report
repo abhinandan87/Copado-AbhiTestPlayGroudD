@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case.ProofOfDeliveries__r$Name</field>
+    </columns>
+    <columns>
+        <field>Case.ProofOfDeliveries__r$Id</field>
+    </columns>
+    <columns>
+        <field>Case$Contract__c</field>
+    </columns>
+    <columns>
+        <field>Case$Subject</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18 OR 19) AND 20</booleanFilter>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Asima Chatterjee</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Bharat Vij</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jitesh Pant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Karan Bharti</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Meenakshi Gulati</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Munish Anand</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Niyeta Gupta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sidhant Kalra</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Versha Tewari</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Manas Dawar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brijesh Gupta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Gaurav Bhatia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Rohit Makkar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Karan Sardana</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Mukesh Kinger</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Chander Kant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Deodas Ojha</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Nidhi Bhalla</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Amit Kumar Roy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Implementation</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Markit Report - Jeff</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_or_without_Proof_of_Delivery__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case$ClosedDate</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

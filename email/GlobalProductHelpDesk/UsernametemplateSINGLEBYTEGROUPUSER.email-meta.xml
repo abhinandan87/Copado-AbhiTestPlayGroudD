@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template used to provide the username to new single byte Polkconnect group users</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Username template SINGLE BYTE GROUP USER</name>
+    <style>none</style>
+    <subject>Polkconnect login information - case #{!Case.CaseNumber}</subject>
+    <textOnly>Please note that these credentials will only be active within 24hrs
+
+Dear {!Contact.FirstName},
+
+Please find enclosed, your access credentials and the web address for PolkConnect 2.0 Predictive Marketing, which includes Key Performance Indicators and Service Marketing modules.
+
+A full User Guide can be found in ‘Resources’ portlet on the Home Page. For future reference it is recommended to save this document to your hard drive. Please be patient during the download and refrain from carrying out further commands until the download is complete.
+
+When you first log-in you will be presented with a security screen to retrieve your passwords if forgotten in the future. Please select and answer your three preferred questions using the drop down tab. There is no confirmation when you have completed this task, so please proceed to the top of the screen and select the module you require in the dark blue header i.e. Home Page, Predictive Marketing, KPI’s, Service Marketing Module.
+
+Credentials are E-mail sensitive, so please do not share the password with a third party. If further credentials are required i.e. outsourced/internal call centre’s, then please contact the Helpdesk as per instructions below.
+
+User Name:
+
+PolkConnect URL: https://polkconnect.polk.com
+
+The group logins give access to all sites as specified above. If you require any assistance on how to navigate through the group access please call us and someone will assist you.
+
+Please note, for security reasons your password will follow in a separate delayed communication.
+
+If you require any further information, please do not hesitate to contact the IHS Automotive Product Helpdesk on 01727-733800 - or Email at - product_helpdesk@ihs.com
+
+{!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

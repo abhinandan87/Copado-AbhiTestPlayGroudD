@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be used to educate customer on how to create a new account on Markit Hub platform</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Markit Hub new account</name>
+    <style>none</style>
+    <subject>Markit Hub new account</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for contacting Customer Care at IHS Markit.
+
+To access Markit Hub, please visit www.markithub.com and complete the registration form. Once complete, you will automatically receive your login credentials to your registered email address.
+
+To get access to  &lt;research provider&apos;s&gt;  research via Markit Hub, please send an email to each entitlement firm&apos;s support team requesting them to enable their content for your profile. Please also copy in that email, a sales sponsor (your contact person in the bank whose research you wish to access).
+
+If you require any further assistance, please do not hesitate to contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

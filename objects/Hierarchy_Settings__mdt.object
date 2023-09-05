@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Column_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US 3537066: Represents the order in which the columns will appear from left to right. Column number cant be greater than 13</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Represents the order in which the columns will appear from left (1) to right (13).</inlineHelpText>
+        <label>Column Number</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Field_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US 3537066: Column header text that appears in the divisional view.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Enter the text that should appear as the column header.</inlineHelpText>
+        <label>Field Label</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>US 3537066: Include the API name of the field that should be included in the hierarchy table.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Enter the API name of the field that should be in the hierarchy table.</inlineHelpText>
+        <label>Field Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Hierarchy Settings</label>
+    <pluralLabel>Hierarchy Settings</pluralLabel>
+    <validationRules>
+        <fullName>Column_Number_not_greater_than_13</fullName>
+        <active>true</active>
+        <errorConditionFormula>Column_Number__c &lt; 1 || Column_Number__c &gt; 13</errorConditionFormula>
+        <errorDisplayField>Column_Number__c</errorDisplayField>
+        <errorMessage>Please enter column number less than or equal to 13, but greater than 0.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

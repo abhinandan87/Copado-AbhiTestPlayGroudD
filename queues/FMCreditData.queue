@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Credit Data</name>
+    <queueMembers>
+        <users>
+            <user>ajay.singh@ihsmarkit.com</user>
+            <user>alex.coronel@ihsmarkit.com</user>
+            <user>ali.sheikholeslami@ihsmarkit.com</user>
+            <user>andrey.pakhomov@ihsmarkit.com</user>
+            <user>ankur.panchkaran@ihsmarkit.com</user>
+            <user>anthony.diplarides@ihsmarkit.com.prod</user>
+            <user>apar.bansal1@markit.com.prod</user>
+            <user>azam.chaudhri@ihsmarkit.com</user>
+            <user>bart.vanoploo@ihsmarkit.com</user>
+            <user>ben.evans@ihsmarkit.com</user>
+            <user>crystal.liu@ihsmarkit.com.prod</user>
+            <user>jan.mehlhorn@ihsmarkit.com</user>
+            <user>kai.liu@ihsmarkit.com</user>
+            <user>keith.corr@ihsmarkit.com</user>
+            <user>matthias.cheong@ihsmarkit.com</user>
+            <user>min.ng@markit.com.prod</user>
+            <user>naman.gupta1@ihsmarkit.com</user>
+            <user>neha.tiwari@ihsmarkit.com</user>
+            <user>patrick.okelly@ihsmarkit.com</user>
+            <user>philip.adcock@markit.com.prod</user>
+            <user>praveen.hosdrug@ihsmarkit.com</user>
+            <user>rahul.bhatia@ihsmarkit.com</user>
+            <user>rahul.singh@ihsmarkit.com</user>
+            <user>saloni.bhatia@ihsmarkit.com</user>
+            <user>shivam.yadav@ihsmarkit.com</user>
+            <user>sourabh.chugh@ihsmarkit.com</user>
+            <user>sushil.tomar@ihsmarkit.com</user>
+            <user>vijay.mogha@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

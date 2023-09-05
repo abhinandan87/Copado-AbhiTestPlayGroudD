@@ -1,0 +1,27 @@
+<template>
+    <div if:true={isLoaded} class="slds-is-relative">
+        <lightning-spinner alternative-text="Loading..." variant="brand">
+        </lightning-spinner>
+    </div>
+    <div class="slds-m-top_medium">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            Please review below before proceeding for clone.
+        </h2>
+        <div class="slds-text-body_small">
+            <p>
+                <template for:each={cloneMsgs} for:item="msg">
+                    <p key={msg}> {msg} </p>
+                </template>
+            </p>
+        </div>
+        <h2 class="slds-text-heading_medium slds-m-bottom_small">
+            <br>Click OK to proceed.</br>
+        </h2>
+
+    </div>
+    <!-- Button group: simple buttons -->
+    <lightning-button-group class="slds-align_absolute-center">
+        <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+        <button class="slds-button slds-button_brand" onclick={submitDetails} title="OK" disabled={isLoaded}>OK</button>
+    </lightning-button-group>
+</template>

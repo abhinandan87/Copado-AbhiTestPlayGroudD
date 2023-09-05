@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>usabspricing@markit.com</email>
+    <name>FM | USABS Pricing</name>
+    <queueMembers>
+        <users>
+            <user>errol.wee@ihsmarkit.com</user>
+            <user>gurpreet.randhawa@ihsmarkit.com</user>
+            <user>jeremy.reed@ihsmarkit.com</user>
+            <user>nathan.kirk@ihsmarkit.com</user>
+            <user>roman.gorelik@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

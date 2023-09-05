@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <columns>
+        <field>Account.PKIDAccount__c</field>
+    </columns>
+    <columns>
+        <field>Account.SNPCAPIQ__CapitalIQCompanyId_txt__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LUIZ JOSE FABIANI,MANOEL CARLOS BARBOSA,CLOVIS CORDEIRO RUDGE RAMOS,LEONARDO KEHDI MOLAN,MCKINSEY &amp; COMPANY,INC. DO BRASIL CONSULTORIA LTD,GUABI NUTRICAO E SAUDE ANIMAL S/A,OMAR CAMARGO PARTICIP.,ADM. DE BENS E CONSULT. LT,PECPLAN ABS IMPORTACAO E EXPORTACAO LTDA,REGIS SOUZA DE CARVALHO BRITO,REINALDO BELLI PIMENTA,RIMA AGROFLORESTAL LTDA,ROBERTO CLARK  REIS FILHO,LOUIS DREYFUS COMMODITIES BRASIL S.A.,RUY PEIXOTO FILHO,SECRETARIA DE ESTADO DA AGRICULTURA E DO ABASTECIM,SIND INDS DE CARNES E DERIVADOS NO EST DO PR,TECHNES AGRICOLA LTDA,UNIAGRO - COOPERATIVA DE TRABALHO DOS PROFISSIONAI,VICENTE DE PAULA ALMEIDA PRADO NETO,WALTER BRUM CARDINAL,CORTEVA AGRISCIENCE DO BRASIL LTDA.,IACO AGRÍCOLA S/A.,WALDIR MARTINEZ ROSSI,ALLTECH DO BRASIL AGROINDUSTRIAL LTDA,AJINOMOTO DO BRASIL INDUSTRIA E COMERCIO DE ALIMEN,AGROPECUARIA TRES SALTOS LTDA,FABIO SABO,BANCO DE DESENVOLVIMENTO DE MINAS GERAIS S.A. - BD,MARCONI DE FARIA CASTRO,RAPHAEL ANTÔNIO NOGUEIRA DE FREITAS,LMC INTERNATIONAL LTD.,EMPRESA BRASILEIRA DE PESQUISA AGROPECUARIA - EMBR,USINA SAO JOSE DA ESTIVA S/A ACUCAR E ALCOOL,EMBAIXADA DOS ESTADOS UNIDOS DA AMERICA,BANCO RABOBANK INTERNATIONAL BRASIL S/A,AGROPECUÁRIA GUAPIARA LTDA,TIMAC AGRO INDUSTRIA E COMERCIO DE FERTILIZANTES L,CORRENTEZA CONSULTORIA RURAL</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Account ID lookup 2</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

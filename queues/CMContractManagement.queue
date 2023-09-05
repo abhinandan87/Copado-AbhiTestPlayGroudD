@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CM | Contract Management</name>
+    <queueMembers>
+        <users>
+            <user>abhigyan.sharma@ihsmarkit.com</user>
+            <user>ankur.salotra@ihsmarkit.com</user>
+            <user>anne.thomas@ihsmarkit.com</user>
+            <user>anubhav.saxena@ihsmarkit.com</user>
+            <user>deepak.karumuthil@ihsmarkit.com</user>
+            <user>deepak.tiwari1@ihsmarkit.com</user>
+            <user>divyank.kohli@ihsmarkit.com</user>
+            <user>esha.farrell@markit.com.prod</user>
+            <user>kasmini.mohamedelias@ihsmarkit.com</user>
+            <user>mansi.behl@ihsmarkit.com</user>
+            <user>michelle.loader@ihsmarkit.com</user>
+            <user>mohit.handa@ihsmarkit.com</user>
+            <user>narendra.kumar@ihsmarkit.com</user>
+            <user>nurulnadia.jamaludi@ihsmarkit.com</user>
+            <user>prince.kumar@ihsmarkit.com</user>
+            <user>priyanka.bhandari@ihsmarkit.com</user>
+            <user>ridhima.rana@ihsmarkit.com</user>
+            <user>sakshi.sinha@ihsmarkit.com</user>
+            <user>saurabh.dhawan@ihsmarkit.com</user>
+            <user>shilpa.tara@ihsmarkit.com</user>
+            <user>shoeb.mohammad@ihsmarkit.com</user>
+            <user>shreya.raj@ihsmarkit.com</user>
+            <user>shubham.ramchandani@ihsmarkit.com</user>
+            <user>sonia.sharma@ihsmarkit.com</user>
+            <user>swati.singh2@ihsmarkit.com</user>
+            <user>tanya.tiwari@ihsmarkit.com</user>
+            <user>varun.kumar1@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

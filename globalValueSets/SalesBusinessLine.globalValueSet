@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AD&amp;S (Aerospace, Defense and Security)</fullName>
+        <default>false</default>
+        <label>AD&amp;S (Aerospace, Defense and Security)</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics</fullName>
+        <default>false</default>
+        <label>Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Actions</fullName>
+        <default>false</default>
+        <label>Corporate Actions</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital</fullName>
+        <default>false</default>
+        <label>Digital</label>
+    </customValue>
+    <customValue>
+        <fullName>ECR</fullName>
+        <default>false</default>
+        <label>ECR</label>
+    </customValue>
+    <customValue>
+        <fullName>EDM/Vista</fullName>
+        <default>false</default>
+        <label>EDM/Vista</label>
+    </customValue>
+    <customValue>
+        <fullName>Equities</fullName>
+        <default>false</default>
+        <label>Equities</label>
+    </customValue>
+    <customValue>
+        <fullName>ERC/PMI (Economic Country Risk)</fullName>
+        <default>false</default>
+        <label>ERC/PMI (Economic Country Risk)</label>
+    </customValue>
+    <customValue>
+        <fullName>Indices</fullName>
+        <default>false</default>
+        <label>Indices</label>
+    </customValue>
+    <customValue>
+        <fullName>M&amp;T (Maritime and Trade)</fullName>
+        <default>false</default>
+        <label>M&amp;T (Maritime and Trade)</label>
+    </customValue>
+    <customValue>
+        <fullName>OMDC (Oil, Midstream, Downstream, Chemicals)</fullName>
+        <default>false</default>
+        <label>OMDC (Oil, Midstream, Downstream, Chemicals)</label>
+    </customValue>
+    <customValue>
+        <fullName>OMS</fullName>
+        <default>false</default>
+        <label>OMS</label>
+    </customValue>
+    <customValue>
+        <fullName>OPIS</fullName>
+        <default>false</default>
+        <label>OPIS</label>
+    </customValue>
+    <customValue>
+        <fullName>PD (Product Design)</fullName>
+        <default>false</default>
+        <label>PD (Product Design)</label>
+    </customValue>
+    <customValue>
+        <fullName>PGCR (Power, Gas, Coal and Renewables)</fullName>
+        <default>false</default>
+        <label>PGCR (Power, Gas, Coal and Renewables)</label>
+    </customValue>
+    <customValue>
+        <fullName>Processing &amp; Platforms</fullName>
+        <default>false</default>
+        <label>Processing &amp; Platforms</label>
+    </customValue>
+    <customValue>
+        <fullName>PVR</fullName>
+        <default>false</default>
+        <label>PVR</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk &amp; Compliance</fullName>
+        <default>false</default>
+        <label>Risk &amp; Compliance</label>
+    </customValue>
+    <customValue>
+        <fullName>TMT (Technology Media Telecom)</fullName>
+        <default>false</default>
+        <label>TMT (Technology Media Telecom)</label>
+    </customValue>
+    <customValue>
+        <fullName>Upstream</fullName>
+        <default>false</default>
+        <label>Upstream</label>
+    </customValue>
+    <customValue>
+        <fullName>WSO</fullName>
+        <default>false</default>
+        <label>WSO</label>
+    </customValue>
+    <description>SFDC1-5516 Create a Global Picklist Value set which will be used by other objects</description>
+    <masterLabel>Sales Business Line</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

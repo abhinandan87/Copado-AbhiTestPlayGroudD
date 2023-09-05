@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <available>true</available>
+    <description>SFDC-2734 email template for event object</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ActivitiesManagementTemplate</name>
+    <style>none</style>
+    <subject>Meeting</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

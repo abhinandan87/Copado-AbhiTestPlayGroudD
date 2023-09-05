@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,FM | SFTR | Client Services,Andrew Shanaghy,Chris Newman,Colette Naughton,Omer Zeltcer,Saurabh Sajal,Daniel Gualtieri,Alex Rhodes,Barbara Sobocinska,Terence Heaver,Jonathan Tsang,Judy To,Andrew Hibberd,Gargi Nagar,Supriya Gaur,Eraldo Palamani,Samuel Chan,Shi Quan Lim,Junseok Kim,Shelvy Lestari Chandra Tjing,Idit Benudiz,Abhishek Yadav,Atul Panwar,Bhavya Khanna,Biswaraj Paul Coudhury,Deepak Ranjan,Dishant Sharma,Hamza Ali Shah,Kajal Sharma,Manya Gupta,Matthew Thomas,Mishika Ghandi,Miguel Coral,Paridhi Garg,Pierre Simonet,Prachi Bhatt,Rashid Ali,Sahil Nangia,Shreeya Patel,David Williams,Bill Tsang,Que Phuong Dufournet,Hamza Shah,Majid Azaim,Tori Ogundimu,Vijayendra Agarwal,Tushar Suri,Biswaraj Paul Choudhury,Mishika Gandhi,Daniel Oluyemi,Biswaraj Paul,Biswaraj Paulchoudh,Biswaraj Choudhury,Ravi Navath,Surneet Bhatia,Tushar Gupta,Romaine Brighton</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed - Resolved,Closed - Referral,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SFTR</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Monthly Closed SFTR Case Owners</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

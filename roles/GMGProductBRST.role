@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>GMG Product - BRST</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>GMG Product - BRST</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>GlobalMarketsGroup</parentRole>
+</Role>

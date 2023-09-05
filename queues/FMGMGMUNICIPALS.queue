@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM |GMG | MUNICIPALS</name>
+    <queueMembers>
+        <users>
+            <user>alexander.kaye@ihsmarkit.com</user>
+            <user>andrew.terentyev@ihsmarkit.com</user>
+            <user>anthony.prettitore@ihsmarkit.com</user>
+            <user>brandon.goldberg@ihsmarkit.com</user>
+            <user>daniel.costa@ihsmarkit.com</user>
+            <user>dimitris.veltsistas@ihsmarkit.com</user>
+            <user>edward.rae@ihsmarkit.com</user>
+            <user>eric.washington@ihsmarkit.com</user>
+            <user>ethan.bartlett@ihsmarkit.com</user>
+            <user>felita.herring@ihsmarkit.com</user>
+            <user>francesco.nuccio@ihsmarkit.com</user>
+            <user>gibran.augustine@ihsmarkit.com</user>
+            <user>james.bishop@ihsmarkit.com</user>
+            <user>james.kellum@ihsmarkit.com</user>
+            <user>john.hester@ihsmarkit.com</user>
+            <user>joy.cummings@ihsmarkit.com</user>
+            <user>justin.wolfe@ihsmarkit.com</user>
+            <user>michael.patella@ihsmarkit.com</user>
+            <user>olivia.yarborough@ihsmarkit.com</user>
+            <user>patrick.white@ihsmarkit.com</user>
+            <user>peter.standish@ihsmarkit.com</user>
+            <user>wendy.palumbo@ihsmarkit.com</user>
+            <user>wesley.rodriguez@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

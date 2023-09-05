@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Version</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Versions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Version’s Build Date --></help>
+        <label><!-- Build Date --></label>
+        <name>BuildDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Version’s Build Number --></help>
+        <label><!-- Build Number --></label>
+        <name>BuildNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Owner of the Product Version --></help>
+        <label><!-- Product Version Owner --></label>
+        <name>ProductVersionOwner__c</name>
+        <relationshipLabel><!-- Product Versions --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

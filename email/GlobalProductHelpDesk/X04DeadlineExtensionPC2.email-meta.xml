@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to confirm the GPHD has received an extension request for PC2</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>04 Deadline Extension PC2</name>
+    <style>none</style>
+    <subject>IHS Automotive Resolution for Case # {!Case.CaseNumber} - Deadline Extension Request</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for contacting the IHS Automotive Global Product Help Desk.
+
+We are writing to confirm that we have extended the deadline for event list submission until this Thursday at 17:30.
+
+Should you have any further questions, please do not hesitate to contact us again and reference Case # {!Case.CaseNumber}.
+
+Kind regards,
+{!User.FirstName} {!User.LastName}
+IHS Automotive Help Desk
+01727733800
+automotive_support@ihsmarkit.com
+
+Your query was logged under Case # {!Case.CaseNumber} with the following description:
+
+--------------------------------------------------------------------------
+
+{!Case.Description}
+
+--------------------------------------------------------------------------</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

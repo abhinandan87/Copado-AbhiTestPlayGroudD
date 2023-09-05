@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_65842033</developerName>
+        <masterLabel>Team Leaders</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>MEMBER_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Aleksandra Maguire</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christian Schena</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Duyen Phan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Laura Hand</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Kulikova</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Martin Seban</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maureen Maguire</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohsen Bonakdarpour</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patrick Thomson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Ciannavei</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scott Hazelton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brendan O&apos;Neil</sourceValue>
+            </sourceValues>
+            <value>Patrick&apos;s Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alexia Ash</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anna Boyd</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Camille Zanni</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karim Elassir</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rashmi Nain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anna Mathewson</sourceValue>
+            </sourceValues>
+            <value>Nathalie&apos;s Team</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ForecastCategory__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.SalesNewPrice__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ReferredByContact__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Real Estate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Algo,Rpt on Jobs,Bellwether,Sponsored,ReDist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.BusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Economic</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Consultant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.NewBusiness</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Opportunity.ContractStartDate__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_65842033</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MEMBER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ECR Cons New Biz Pipe Team by Stage- CFY</name>
+    <params>
+        <name>include</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.ContractStartDate__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

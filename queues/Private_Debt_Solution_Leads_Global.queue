@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Private Debt Solution Leads - Global</name>
+    <queueMembers>
+        <users>
+            <user>alfredo.milera@ihsmarkit.com</user>
+            <user>anne.montana@ihsmarkit.com</user>
+            <user>byron.jones@ihsmarkit.com</user>
+            <user>griffin.swanwick@ihsmarkit.com</user>
+            <user>jennifer.theiss@ihsmarkit.com</user>
+            <user>jocelyn.lewis@ihsmarkit.com</user>
+            <user>keith.viverito@ihsmarkit.com</user>
+            <user>lauren.weiner@ihsmarkit.com</user>
+            <user>matthew.mezzancello@ihsmarkit.com</user>
+            <user>michael.laykind@ihsmarkit.com</user>
+            <user>suzanne.hewitt@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

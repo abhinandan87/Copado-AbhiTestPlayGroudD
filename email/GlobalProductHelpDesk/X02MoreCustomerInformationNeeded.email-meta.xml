@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to request more information or details from the customer.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>02 More Customer Information Needed</name>
+    <style>none</style>
+    <subject>IHS MARKIT Case # {!Case.CaseNumber} - Follow-Up Information Request</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for contacting the IHS Automotive Global Product Help Desk.
+
+After a preliminary review of your query, we find that we need the following information to continue our investigation:
+
+-  When sending your response, please reference Case number {!Case.CaseNumber}.
+
+Kind regards,
+{!User.FirstName} {!User.LastName}
+IHS Automotive Global Product Help Desk
+01727733800
+automotive_support@ihsmarkit.com
+Your original query was logged under Case number {!Case.CaseNumber} with the following description:
+
+--------------------------------------------------------------------------
+
+{!Case.Description}
+
+--------------------------------------------------------------------------</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

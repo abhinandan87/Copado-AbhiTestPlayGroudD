@@ -1,0 +1,13 @@
+<template>
+    <template if:true={deliveryTimingsData}>
+     <c-wrf-country-section-header section-header=' Estimated SWS Delivery Timies (Business Days)'></c-wrf-country-section-header>
+              <lightning-datatable
+                 key-field="id"
+                 hide-checkbox-column="true" 
+                 data={deliveryTimingsData}
+                 columns={columns}>          
+             </lightning-datatable>
+     </template>
+     <br>
+
+</template>

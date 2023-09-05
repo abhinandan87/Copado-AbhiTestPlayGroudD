@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To educate customer how to bookmark research providers on Markit Hub</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Bookmark Hub entitlements</name>
+    <style>none</style>
+    <subject>Markit Hub new account</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for contacting Customer Care at IHS Markit.
+
+We have checked your Markit Hub account and confirm that you have access to the research entitlements. In case you are unable to see the  &lt;Research Provider  Name&gt;  tabs, please click the &quot;+&quot; icon to bookmark them again.
+
+If you require any further assistance, please do not hesitate to contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

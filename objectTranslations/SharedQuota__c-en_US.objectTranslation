@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Shared Quota</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Shared Quotas</value>
+    </caseValues>
+    <fields>
+        <help><!-- Only active records will be considered for quota sharing. --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share with User --></label>
+        <name>ShareWithUser__c</name>
+        <relationshipLabel><!-- Shared Quotas (Share with User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Shared Quotas (User) --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- User and Share with User cannot be the same --></errorMessage>
+        <name>UniqueSharingUser</name>
+    </validationRules>
+</CustomObjectTranslation>

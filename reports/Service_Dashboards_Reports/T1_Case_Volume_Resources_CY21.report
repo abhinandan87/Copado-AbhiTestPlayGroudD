@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All Cases Closed by Type-Resources</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 8) AND 5 AND 6 AND 7 AND 9</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Onboarding,Case.CustomerCare,Case.Implementation,Case.JoinerTransferLeaver</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AccuLogs,Accumap,Accumap-Midstream,Accumap-Software,Agri Coal,Agri Consulting,Agri Events,Agri Gas,Agri Multi-Client Studies,Analytics Explorer,Animal Health,Asset Valuation,Base Chemicals,Basin Data,Biofuels,Capital Costs/Downstream,Chemical Consulting,Chemical Cost Curve Service,Chemical Events,Chemical Handbooks: Speciality Chemicals,Chemical Information &amp; Same Day Analysis,Chemical MCS,Chemical PP,Chemical Reports: Custom,Chemical Reports: PEP,Chemical Reports: Specialty Chemicals,Chemicals Royalties,Chemical Technology Analytics Reports,Chemical Week,Coal,Coal (Energy Tech),Coal Consulting,Coal Events,Coal Indices,Coal Publications &amp; Indices,Commodities &amp; Food,Community,Companies &amp; Transactions,Company Insight,Company Strategies and Performance,Compliance Manager,Content Delivery Intl,Content Delivery Intl Mid,Content Delivery NA,Content Delivery Partner,Content Partners NA,Context Distribution/Content,Costs &amp; Technology,Crop Forecasting Consulting,Crop Protection &amp; Seeds,Crude Oil Markets,Culture Data NA,Data Delivery,Data Management Content Intl,Data Management Content NA,Data Management Services NA,Digital Logs NA,Discontinued Insight,DMS Midstream,DNA,Downstream Analytics,Downstream Consulting,Downstream PP,Drilling Data NA,Drilling Wire NA,DTC Agri Coal,E&amp;P Content Intl,E&amp;P Terms &amp; Above Ground Risks</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EGIS Can,EGIS Midstream,Energy Documents,Energy News on Demand,Energy Studio,Engineering Data NA,Engineering Training &amp; Client Services,Environmental Data NA,eTriever,Evolution,EV Recharge Locations,EWP Consulting,EWP Events,EWP Paid Presentations,EWP Trans,Fertilizers,FieldDirect,Field Maps NA,FieldNotes,Fuel Prices,General Energy Data Services &amp; Fees,Geopolitical Data NA,GeoSyn Data,GeoWebWorks Can,GIS Data NA,GIS Mistream,Global Gas,Global Markets,GPE: Financials,GPE Cross Energy,Harmony,Harmony Enterprise,Insight Bundle,Interpreted Tops,Kingdom,Land Data,Land Data Can,Land Data US,LAS Tools,LogArc / LogTech,Log Digitizing Services,Logs &amp; Seismic Data Intl,LPG,LPG Events,MapIt,Market Advisory Service (MAS),Market Daily Services,Metals &amp; Mining,Midstream,Midstream Oil &amp; Gas Data,Midstream Oil &amp; NGL,MINT Midstream,NAPD,NAPD Other,NAVX Other,NAVX Retail,Oil &amp; Gas Data,OMDC Consulting,OMMD Data,OMMD MCS,OPIS Rack,OPIS Retail,OPIS Spot,Paid Presentations,Parking Availability,PCGR Consulting,PCGR MCS,PCGR PP,PCGR Services,PCGR Services Trans,Perform,Performance Evaluator NA,Petra,Petra Energy Data,Petrodata,Piper,Plan Distribution Service,Plays &amp; Basins,PointLogic Energy,Policy &amp; Regulation,Power &amp; Renewables,Power &amp; Transmission Data NA,PowerTools,Production Data NA,Production Engineering</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Production Engineering Services,Que$tor,Raster Logs NA,Reservoir Engineering Pkg,Rig Data NA,Rushmore,Seismic Surveys NA,SmartPM Consulting,SmartPM Other,Specialty Chemicals,SubPUMP,Surcharges,Technical Analytics,The Energy Daily,Topography Data NA,Training and Client Services,Trench Data NA,Upstream Consulting,Upstream Intelligence,Upstream Technical Consulting,Upstream View,US Offshore Lease Data,US Well Data,Validata,Valtus,Vantage,Waterborne,Web-Facility Documents,Well Data Intl,Well Data NA,Well Log Downloader,WellTest,World Analysis</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Not in SAP Product Master,Not an SAP Product</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Delete,Spam,Duplicate,Dupe,Merged</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>DCS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Agriculture,Content Usage (DRM),Energy Technology,P&amp;P Supply Chain - Procurement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Diksha Bisht,Rishi Kapoor,Gautam Pant,Aman Kumar,Girryrajen Veeramuthu,Soo Ling Chaiyasu,Syarwanni Mustafa,Mohd Rusdi Rahim,Theresa Tracy Alawangsa,Joanne Ooi,Devrach Atawnia,Felisha Anne Johnson,Ling Lim,Anmol Singh,Nicholas Teo,Bo Yuan Ng,Ann Shee Hong,Aaron Tang,Aaron Ching,Aishna Jain,Becky Sy,Chayan Bhattacharjee,Chin Nean Chew,Eri Hasumoto,Esma Agzanay,Farah Razali,Haqimi Ashaari,Hashi Khalid Mohamad,Iris Karabatos,Janet Holmes-Boone,Jason Mitchell,Jennifer Begel,Kent Choong,Kevin Lim,Kok Han Lee,Mark Quejado,Mehar Banu Mohamed Salib,Melanie Mladenova,Miaoyin Ng,Michael Don,Mika Sakurai,Najah Nadhira Binti Dorohid,Nathan Valdez,Paul Hughes,Safiya Murray,Samuel Abraham,Tanvi Arora,Tee Huang Cheah,Varun Bhutani,Vera Rasa,Zi Yun Lim,Agnes Ooi</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>ORIGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CLOSED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>T1 *Case Volume | Resources | CY21</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_PREVFY</interval>
+    </timeFrameFilter>
+</Report>

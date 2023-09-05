@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-2734 Send meeting notes quick action to send meeting notes from event object</description>
+    <height>600</height>
+    <label>Send Meeting Notes</label>
+    <lightningComponent>sendMeetingNotesQuickAction</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

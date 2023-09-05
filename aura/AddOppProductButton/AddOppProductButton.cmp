@@ -1,0 +1,7 @@
+<aura:component  controller="ProductSelectorController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+	<lightning:navigation aura:id="navService"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="quickActionName" type="String" default="AddOppProductButton"/>   
+    <aura:handler name="init" value="{!this }" action="{!c.doInit }"/>
+     <aura:attribute name="isCommunity" type="Boolean" access="global"/>
+</aura:component>

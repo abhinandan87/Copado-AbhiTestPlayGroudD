@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>AUTOS | DF - Custom Geography</name>
+    <queueMembers>
+        <users>
+            <user>hans.mosher@ihsmarkit.com</user>
+            <user>hemlata.tomar@ihsmarkit.com</user>
+            <user>jason.corn@ihsmarkit.com</user>
+            <user>kelsey.hines@ihsmarkit.com</user>
+            <user>leah.dunn@ihsmarkit.com</user>
+            <user>patrick.weiss@ihsmarkit.com</user>
+            <user>sandra.donaldson@ihsmarkit.com</user>
+            <user>sherri.daniel@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

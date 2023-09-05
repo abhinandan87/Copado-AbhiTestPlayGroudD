@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC1-5359 : Used on Case closure</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Live Chat Transcript</name>
+    <style>none</style>
+    <subject>Your Chat Transcript from IHS Markit</subject>
+    <textOnly>Chat Transcript
+
+Here&apos;s a copy of the chat transcript you requested:
+
+General Information
+Case Number   {!LiveChatTranscript.CaseNumber__c}
+Product   {!LiveChatTranscript.ProductGroup__c}
+Chat Start Time   {!SUBSTITUTE(TEXT(DATETIMEVALUE(LiveChatTranscript.StartTime)), &apos;Z&apos;, &apos; GMT&apos;)}
+Chat End Time   {!SUBSTITUTE(TEXT(DATETIMEVALUE(LiveChatTranscript.EndTime)), &apos;Z&apos;, &apos; GMT&apos;)}
+Agent   {!LiveChatTranscript.OwnerFirstName}
+
+
+Chat Transcript
+{!LiveChatTranscript.Body}
+
+
+Thank you, and should you require further assistance please do not hesitate to  contact us.
+
+Kind Regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care
+Support Portal | Start Live Chat</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

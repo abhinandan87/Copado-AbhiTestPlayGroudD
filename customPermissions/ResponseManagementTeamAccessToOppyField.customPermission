@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-4992 Giving access Response Management team to an LWC. This LWC can update an oppy field- Associated with Response Management Team</description>
+    <isLicensed>false</isLicensed>
+    <label>Response Management Team Access to Oppy Field</label>
+</CustomPermission>

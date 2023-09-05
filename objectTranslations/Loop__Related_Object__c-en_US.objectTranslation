@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Example: 1 AND (2 OR 3) --></help>
+        <label><!-- Advanced Filter Conditions --></label>
+        <name>Loop__Advanced_Filter_Conditions__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field applies when using line items and determines whether rows, tables, or sections should be duplicated for each child record. --></help>
+        <label><!-- Copy Type --></label>
+        <name>Loop__Copy_Type__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hierarchy</masterLabel>
+            <translation><!-- Hierarchy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Row</masterLabel>
+            <translation><!-- Row --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section</masterLabel>
+            <translation><!-- Section --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Table</masterLabel>
+            <translation><!-- Table --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DocGen Package --></label>
+        <name>Loop__DDP__c</name>
+        <relationshipLabel><!-- Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If checked, this specifies that you want the table(s) for this object to be deleted if there are no records in the list. --></help>
+        <label><!-- Delete Table (if no records) --></label>
+        <name>Loop__Delete_Table__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Conditions --></label>
+        <name>Loop__Filter_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group By --></label>
+        <name>Loop__Group_By_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group By Sort Orders --></label>
+        <name>Loop__Group_By_SortOrders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Field --></label>
+        <name>Loop__Hierarchy_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- # --></label>
+        <name>Loop__Index__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field specifies the order of the related objects. --></help>
+        <label><!-- Order By --></label>
+        <name>Loop__Order_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is used to identify the correct Child-Parent relationship. If there are multiple lookup / master-detail fields that can determine this Child-Parent relationship, select the appropriate one for the necessary data. --></help>
+        <label><!-- Related By --></label>
+        <name>Loop__Parent_Object_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the API Name of the standard or custom object that is the parent of this related object. --></help>
+        <label><!-- Parent Object --></label>
+        <name>Loop__Parent_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Relationship --></label>
+        <name>Loop__Parent_Relationship__c</name>
+        <relationshipLabel><!-- Child Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related By (What you have) --></label>
+        <name>Loop__Parent__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many records should be included? Leave blank to include all records. If the Copy Type is Hierarchy, this will limit the number of levels instead of records. --></help>
+        <label><!-- How many records --></label>
+        <name>Loop__Record_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to distinguish between two or more of the same related object. The value entered here will replace the object name in all merge tags. Salesforce Field Name validation rules apply. --></help>
+        <label><!-- Alias --></label>
+        <name>Loop__Related_Object_Alias__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOQL --></label>
+        <name>Loop__SOQL__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Custom_Delete --></label>
+        <name>Loop__Custom_Delete</name>
+    </webLinks>
+</CustomObjectTranslation>

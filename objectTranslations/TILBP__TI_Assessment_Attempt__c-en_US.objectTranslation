@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Company --></label>
+        <name>TILBP__Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course --></label>
+        <name>TILBP__Course__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created At --></label>
+        <name>TILBP__CreatedAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grade --></label>
+        <name>TILBP__Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passed? --></label>
+        <name>TILBP__Passed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Questions With Choices Count --></label>
+        <name>TILBP__QuestionsWithChoicesCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>TILBP__SFContact__c</name>
+        <relationshipLabel><!-- TI Assessment Attempts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Course --></label>
+        <name>TILBP__SFContent__c</name>
+        <relationshipLabel><!-- TI Assessment Attempts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>TILBP__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- TI ID --></label>
+        <name>TILBP__TIID__c</name>
+    </fields>
+    <fields>
+        <label><!-- TI ID (DEPRECATED) --></label>
+        <name>TILBP__TI_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic Title --></label>
+        <name>TILBP__TopicTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic Type --></label>
+        <name>TILBP__TopicType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>TILBP__Topic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unanswered Questions Count --></label>
+        <name>TILBP__UnansweredQuestionsCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated At --></label>
+        <name>TILBP__UpdatedAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>TILBP__User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Answered Questions Count --></label>
+        <name>TILBP__answeredQuestionsCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correct Questions Count --></label>
+        <name>TILBP__correctQuestionsCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Elapsed In Seconds --></label>
+        <name>TILBP__timeElapsedInSeconds__c</name>
+    </fields>
+</CustomObjectTranslation>

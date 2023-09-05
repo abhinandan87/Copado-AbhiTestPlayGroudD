@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>ActivityDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_FISCAL_QUARTER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CreatedBy</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>labounty,Sachiko Arae,Peter Saar,Zhenhe Ma,Nathan buhr,Conlin Hughes,Margareta Chudnovsky,brian mooney,brent falcon,laura weaver,laura dodge,daniel owens,marianne baik,jorge mere,neugebauer,scott amling,Goodroe,Netanya asfour,Julie Hellen,Kristine Henningsen,Ysaure de Mas Latrie,Gesa Gosenheimer,Hiroshi Kure,Kaori Nebashi,Michelle Cheung,rita wong</value>
+        </criteriaItems>
+        <operation>without</operation>
+        <primaryTableColumn>ACCOUNT_ID</primaryTableColumn>
+        <relatedTable>Activity</relatedTable>
+        <relatedTableJoinColumn>Account</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>labounty,Sachiko Arae,andre little,margareta,conlin,Peter Saar,nathan buhr,brian mooney,brent falcon,marianne baik,jorge mere,neugebauer,scott amling,Goodroe,Netanya asfour,Julie Hellen,Kristine Henningsen,Ysaure de Mas Latrie,Gesa Gosenheimer,Hiroshi Kure,Michelle Cheung,rita wong,Lillian Zhang</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Product Specialist</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MEMBER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Accounts w/o Activities Previous Quarter</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

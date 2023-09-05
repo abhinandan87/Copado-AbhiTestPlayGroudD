@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Escalation email template for Axxis during Out of Hours</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Out of Hours Escalation Template</name>
+    <style>none</style>
+    <subject>Axxis Software After-Hours Emergency Assistance Request</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

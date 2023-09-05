@@ -1,0 +1,9 @@
+Please attach the new purchase order for contract: <b>{!Contract.ContractNumber}</b> </br></br>
+
+The new document needs to be uploaded in a new system-created Contract Attachment record: <b>{!ContractAttachment__c.Name}</b> </br></br>
+
+To view the Contract Attachment record, <a href={!ContractAttachment__c.Link}>Click here</a></br></br></br>
+
+
+Thanks,</br>
+Order Management Team

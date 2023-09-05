@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomHelpMenuSection xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customHelpMenuItems>
+        <linkUrl>https://infocorp365.sharepoint.com/sites/communities/groups/32/pages/salesforce-crm-training-resources.aspx</linkUrl>
+        <masterLabel>Infonet Resources</masterLabel>
+        <sortOrder>1</sortOrder>
+    </customHelpMenuItems>
+    <masterLabel>Salesforce Help</masterLabel>
+</CustomHelpMenuSection>

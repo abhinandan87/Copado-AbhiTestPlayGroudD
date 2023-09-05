@@ -2,53 +2,68 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Analyst</fullName>
-        <default>false</default>
-        <label>Analyst</label>
+        <fullName>Direct</fullName>
+        <default>true</default>
+        <label>Direct</label>
     </standardValue>
     <standardValue>
-        <fullName>Competitor</fullName>
+        <fullName>Channel Partner</fullName>
         <default>false</default>
-        <label>Competitor</label>
+        <label>Channel Partner</label>
     </standardValue>
     <standardValue>
-        <fullName>Customer</fullName>
+        <fullName>Global Alliance - Core</fullName>
         <default>false</default>
-        <label>Customer</label>
+        <label>Global Alliance - Core</label>
     </standardValue>
     <standardValue>
-        <fullName>Integrator</fullName>
+        <fullName>Global Alliance - HSP</fullName>
         <default>false</default>
-        <label>Integrator</label>
+        <label>Global Alliance - HSP</label>
     </standardValue>
     <standardValue>
-        <fullName>Investor</fullName>
+        <fullName>Global Alliance - Prospect</fullName>
         <default>false</default>
-        <label>Investor</label>
+        <label>Global Alliance - Prospect</label>
     </standardValue>
     <standardValue>
-        <fullName>Partner</fullName>
+        <fullName>Global Alliances - Strategic</fullName>
         <default>false</default>
-        <label>Partner</label>
+        <label>Global Alliances - Strategic</label>
     </standardValue>
     <standardValue>
-        <fullName>Press</fullName>
+        <fullName>Global Alliances - Technology</fullName>
         <default>false</default>
-        <label>Press</label>
+        <label>Global Alliances - Technology</label>
     </standardValue>
     <standardValue>
-        <fullName>Prospect</fullName>
+        <fullName>Individual</fullName>
         <default>false</default>
-        <label>Prospect</label>
+        <label>Individual</label>
     </standardValue>
     <standardValue>
-        <fullName>Reseller</fullName>
+        <fullName>Place Holder - General Service Account</fullName>
         <default>false</default>
-        <label>Reseller</label>
+        <label>Place Holder - General Service Account</label>
     </standardValue>
     <standardValue>
-        <fullName>Other</fullName>
+        <fullName>Place Holder - IHS Markit Internal Employees</fullName>
         <default>false</default>
-        <label>Other</label>
+        <label>Place Holder - IHS Markit Internal Employees</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Place Holder - Sales</fullName>
+        <default>false</default>
+        <label>Place Holder - Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Place Holder - Self Registered Users Account</fullName>
+        <default>false</default>
+        <label>Place Holder - Self Registered Users Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Place Holder - Unknown Account</fullName>
+        <default>false</default>
+        <label>Place Holder - Unknown Account</label>
     </standardValue>
 </StandardValueSet>

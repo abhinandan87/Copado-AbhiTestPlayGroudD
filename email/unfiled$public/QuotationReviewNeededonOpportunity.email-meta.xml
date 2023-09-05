@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>IHSMUS-5248722: Send email alert for Quotation Review Needed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Quotation Review Needed on Opportunity</name>
+    <style>none</style>
+    <subject>Quotation Review Needed: Opportunity # [{!Opportunity.Opportunitynum__c}]</subject>
+    <textOnly>Dear Team,
+
+The quotation for the Opportunity {!Opportunity.Opportunitynum__c} needs to be reviewed. Below are the details:
+
+Opportunity No: {!Opportunity.Opportunitynum__c}
+Opportunity Owner: {!Opportunity.OpportunityOwner__c}
+Opportunity Amount: {!Opportunity.Amount__c}
+Opportunity Close Date: {!Opportunity.CloseDate}
+
+Please click on the link to access the record and provide approval: {!Opportunity.Opportunitynum__c}
+
+Thanks,
+Salesforce Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

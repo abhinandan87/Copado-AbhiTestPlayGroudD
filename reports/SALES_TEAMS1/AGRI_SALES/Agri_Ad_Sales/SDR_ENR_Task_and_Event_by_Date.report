@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>DUE_DATE</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>TASK_TYPE</field>
+    </columns>
+    <columns>
+        <field>OWNER_ROLE</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>START_DATE_TIME</field>
+    </columns>
+    <columns>
+        <field>END_DATE_TIME</field>
+    </columns>
+    <columns>
+        <field>LOCATION</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>ACTIVITY_ID</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Activity.NotesCompleted__c</field>
+    </columns>
+    <columns>
+        <field>WHO_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY</field>
+    </columns>
+    <columns>
+        <field>EVENT_SUBTYPE</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>CASE(TASK_TYPE,
+    &quot;Call&quot;, &quot;Call&quot;,
+    &quot;Customer Call&quot;, &quot;Call&quot;,
+    
+    &quot;Proposal Acceptance Call&quot;, &quot;Proposal&quot;,
+    &quot;Proposal Accepted meeting&quot;, &quot;Proposal&quot;,
+    &quot;Proposal Delivery Call&quot;, &quot;Proposal&quot;,
+    &quot;Proposal Delivery meeting&quot;, &quot;Proposal&quot;,
+
+    &quot;In Person Meeting&quot;, &quot;Meeting&quot;,
+    &quot;Meeting&quot;, &quot;Meeting&quot;,
+    &quot;Client Visit&quot;, &quot;Meeting&quot;,
+    &quot;Online Customer Meeting&quot;, &quot;Meeting&quot;,
+    &quot;Quarterly Check In&quot;, &quot;Meeting&quot;,
+    &quot;Meeting Face to Face&quot;, &quot;Meeting&quot;,
+    &quot;Meeting Virtual&quot;, &quot;Meeting&quot;,
+    
+    &quot;Email&quot;, &quot;Email&quot;,
+    &quot;Verification&quot;, &quot;Blank&quot;,
+    &quot;Project Work&quot;, &quot;Blank&quot;,
+    &quot;Training&quot;, &quot;Blank&quot;,
+    &quot;Consulting Lead&quot;, &quot;Blank&quot;,
+    &quot;Internal Call&quot;, &quot;Blank&quot;,
+    &quot;Triage&quot;, &quot;Blank&quot;,
+    
+    &quot;Meeting&quot;
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>ENR Activity Type</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>ENR Task and Event Activities</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Event.TimeTracking</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.PrivacyLevel__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Personal appointment,Internal meeting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Jesse Cisneros,Amanda Meadows</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>DUE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TASK_SUBTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SDR ENR Task and Event</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <roleHierarchyFilter>Sales203963</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <endDate>2021-11-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-12-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Capital Connect</name>
+    <queueMembers>
+        <users>
+            <user>david.dong@ihsmarkit.com</user>
+            <user>madhukar.ramu@ihsmarkit.com</user>
+            <user>satyaprakash.bhagat@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

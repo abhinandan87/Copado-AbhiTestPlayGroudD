@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Insight Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Insight Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Must be an org-wide email address --></help>
+        <label><!-- Error Message From Address --></label>
+        <name>Error_Message_From_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message To Address --></label>
+        <name>Error_Message_To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Key --></label>
+        <name>Mapping_Key__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

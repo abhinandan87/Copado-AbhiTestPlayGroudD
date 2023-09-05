@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>WorkOrder$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Name</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Account</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Description</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Owner</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Status</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>WorkOrder$ActivityName__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Contact</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$SecondaryInstructor__c</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>NOW()-WorkOrder.StartDate</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Account Bin time</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Gives the situation of accounts SSO migration.</description>
+    <filter>
+        <criteriaItems>
+            <column>WorkOrder$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Proposed,Confirmed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Richard Huffman,Akash Biswal,hemanth Beera</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Richard Huffman,Akash Biswal,hemanth Beera</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Report/chart-SSO BIN</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Field_Service_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>WorkOrder$LastModifiedDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>WorkOrder$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

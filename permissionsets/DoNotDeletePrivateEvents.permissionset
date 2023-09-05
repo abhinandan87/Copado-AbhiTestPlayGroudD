@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>DoNotDeletePrivateEvents</name>
+    </customPermissions>
+    <description>SFDC-2872 Permission set created to exclude the users having outlook sync enabled in the private events deletion process. The users having this permission set assigned, will not get their private events deleted.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Do Not Delete Private Events</label>
+</PermissionSet>

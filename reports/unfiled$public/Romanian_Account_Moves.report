@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TICKER</field>
+    </columns>
+    <columns>
+        <field>Account.LegacySystem__c</field>
+    </columns>
+    <columns>
+        <field>Account.Relationship__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.OpenOpportunityCount__c</field>
+    </columns>
+    <columns>
+        <field>Account.AdditionalAccountFields__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_COUNTRY_CODE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>CS and PG</description>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Cocor S.A.,T.H.R. Marea Neagra-The Tourism,T.M.K.-Artrom S.A.,SSIF Broker S.A.,Mat Sa Craiova,Utilaj Greu S.A.,Uztel S.A.,Turism Covasna SA,Mercur SA Cariova,Zentiva S.A.,Condmag S.A.,Conpet S.A.,Remarul 16 Februarie S.A.,Aerostar S.A.,Argus S.A.,Relay S.A.,Rafo S.A.,Palace SA Sinaia,Albalact S.A.,Comnord S.A.,Compa S.A.,Imotrust S.A.,Impact Developer &amp; Contractor S.A.,Banca Comerciala Carpatica S.A.,Banca Transilvania S.A.,Perla Maj,Bermas S.A.,Legume-Fructe SA,SIF Banat Crisana S.A.,SIF Oltenia S.A.,Biofarm S.A.,Constructii Feroviare Craiova SA,Contactoare SA,Artego S.A.,Rusca SA,Lido SA,Casa de Bucovina ? Club de Munte S.A.,Oil Terminal S.A.,Neptun Olimp S.A.,Societatea Comerciala de Distributie si Furnizare a Energiei Electrice Electrica S.A.,Societatea Nationala de Gaze Naturale Romgaz S.A.,Societatea Nationala Nuclearelectrica S.A.,Unirea Shopping Center S.A.,Nord SA,Transgaz S.A.,Transilvania Estival,Turbomecanica SA,Socep S.A.,Prospectiuni S.A.,Vrancart S.A.,Antibiotice S.A.,Ior SA Bucuresti,Vultural S.A.,Chimcomplex Borzesti SA Onesti,Mecanica Rotes S.A.,Mecon S.A.,Mecanica Ceahlau S.A.,Mecanica Codlea S.A.,Siretul Pascani S.A.,Romgaz S.A.,Rompetrol Well Services S.A.,Ropharma S.A.,Express Transports S.A.,Independenta S.A.,Forconcid S.A.,ArcelorMittal Tubular Produ</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS1_COUNTRY_CODE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>RO</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Romanian Account Moves</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

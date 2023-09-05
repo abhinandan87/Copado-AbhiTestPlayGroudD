@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_56060858</developerName>
+        <masterLabel>TEAM</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Aishna Jain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shefali Chawla</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samuel Abraham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rashi Dungale</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kartikey Bisht</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chayan Bhattacharjee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tanvi Arora</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Varun Bhutani</sourceValue>
+            </sourceValues>
+            <value>INDIA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Safiya Murray</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kinnerey Patel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Esma Agzanay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Melanie Mladenova</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Momoi Suda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kok Han Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Janice Chong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eri Hasumoto</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Evan Gerlack</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Mitchell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aaron Ching</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Katerani Selvarraju</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Quejado</sourceValue>
+            </sourceValues>
+            <value>US</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case.TimeSpentMinutes__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Closed cases - Team wise</description>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Esma Agzanay,Aishna Jain,Shefali Chawla,Eri Hasumoto,Melanie Mladenova,Samuel Abraham,Rashi Dungale,Tanvi Arora,Kinnerey Patel,Momoi Suda,Evan Gerlack,Safiya Murray,Kartikey Bisht,Varun Bhutani,Chayan Bhattacharjee,Kok Han Lee,Janice Chong,Katerani Selvarraju,Mark Quejado,Aaron Ching,Jason Mitchell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>New,In Progress,On Hold</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Phone</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_56060858</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Closed cases - Team wise</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

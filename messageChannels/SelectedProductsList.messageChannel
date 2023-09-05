@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This event is fired when proceed button on Search Products and publish the SelectedProducts List to Aura component.</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Holds the selected products List</description>
+        <fieldName>selectedProductsList</fieldName>
+    </lightningMessageFields>
+    <masterLabel>SelectedProductsList</masterLabel>
+</LightningMessageChannel>

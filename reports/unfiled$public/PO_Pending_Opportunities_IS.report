@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$OpportunityOwner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Cases__r$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CloseDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Cases__r$Status</field>
+    </columns>
+    <currency>USD</currency>
+    <description>PO Pending Opps Sales View</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Cases__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.OrderManagement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Cases__r$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>delete,consulting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Cases__r$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Validated PO Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$BusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Issuer Solutions</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PO Pending Opportunities - IS</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Cases__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

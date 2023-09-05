@@ -1,0 +1,60 @@
+<template>
+    <!-- Header -->
+    <div class="slds-grid slds-card icondiv">
+        <div class="slds-media__figure">
+            <lightning-icon icon-name="standard:product" size="medium"></lightning-icon>
+        </div>
+        <div class="slds-media__body">
+            <h1 class="slds-page-header__title slds-m-top_xx-small slds-m-right_xx-small slds-align-middle slds-truncate" title="Search Products">
+                <b> Search Products</b>
+            </h1>
+        </div>
+    </div>
+    <!-- Selected Product List -->
+    <div>   
+        <c-selected-Product-List oppy-id={recordId} onselprodlist={handleSelectedProdList}></c-selected-Product-List>    
+    </div> 
+    <!-- Collapsed/Expand Filter, Search Product List, Footer -->
+    <div class="slds-grid slds-wrap containerDiv">   
+            <!-- Collapse Filter -->      
+            <div data-id="CollapsedFilter">  
+                <div class="slds-card collapsedDiv">
+                    <div  onclick={handleFilterDisplay}>
+                        <lightning-icon icon-name="utility:right" size="x-small" class="slds-m-top_medium"></lightning-icon>
+                    </div> 
+                </div>    
+            </div>  
+            <!-- Expand Filter -->
+            <div class="slds-card slds-col" data-id="ExpandFilter">               
+                    <div class="expanddiv">        
+                        <div>
+                            <lightning-icon icon-name="standard:calibration" size="small"></lightning-icon>
+                        </div>
+                        <div>
+                            <h2><span class="slds-text-heading_small slds-truncate"><b>Filters</b></span></h2>
+                        </div>
+                        <div class="utilitydiv" onclick={handleFilterDisplay}>
+                            <lightning-icon icon-name="utility:left" size="x-small"></lightning-icon>
+                        </div>
+                    </div>          
+                    <c-search-Product-Filter onfilterprodlist={handleFilterSearchList} filters-list={filterProductsList}></c-search-Product-Filter>             
+            </div>           
+            <!-- Searched Product List -->
+            <div class="slds-col" data-id="prodlist"> 
+                <template if:true={recordId}>
+                    <c-search-Product-List oppy-id={recordId}></c-search-Product-List> 
+                </template>
+            </div>              
+    </div>   
+    <!-- Footer -->  
+    <div class="slds-docked-form-footer slds-m-bottom_x-large">
+        <lightning-layout horizontal-align="space" vertical-align="top" >
+            <lightning-button icon-name="utility:chevronright" icon-position="right" class="slds-m-left_x-small" variant="brand"  label="Proceed"  onclick={handleProceed} disabled={emptyProductList}></lightning-button>
+            <lightning-button icon-name="utility:close" icon-position="right" class="slds-m-left_x-small" variant="brand" label="Cancel" onclick={handleCancel}></lightning-button>
+        </lightning-layout>
+        <lightning-layout horizontal-align="space" vertical-align="top" >
+            <lightning-layout-item></lightning-layout-item>
+            <lightning-layout-item></lightning-layout-item>
+        </lightning-layout>
+        </div>   
+</template>

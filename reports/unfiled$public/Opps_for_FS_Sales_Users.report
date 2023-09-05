@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ROLLUP_DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>FISCAL_QUARTER</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.InternalBusinessSegment__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SubBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesRegion__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.CustomerRegion__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_SOURCE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13) AND 14 AND 15</booleanFilter>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Yueyue Guo,Sydney Liberman,Hidemi Kawahara,Fernando Carneiro,Joshua Backman,Seiichiro Miyaoka,Aleksandra Maguire,Maria Bertram,Nirmal Shani,Shane Norton,Lynn Middleton,Paul Hunt,Rajeevee Panditharatna,Zbyszko Tabernacki,Alexia Ash,Nathalie Wlodarczyk,Laura Hodges,Maria Kulikova,Estee Leow,Jun Saito,Martin Seban,Maria Lucia Gioioso,Laura Hand,Naomi Levy,Matt Weiler,Karim Elassir,Scott Hazelton,Jason Gatewood,Mohsen Bonakdarpour,Camille Zanni,Janice Branco,Henna Mumtaz,Paul Ciannavei,Andrew Spencer,Brendan O&apos;Neil,Cameron Lockwood,Bob Flanagan,Ralf Wiegert,Gustav Ando,Elina Gokh,Andrew Eisen,Tommy Ros,Dan Buell,Maureen Maguire,Anna Boyd,Patrick Dwyer,Simon Martin,Chris Walsh,Anna Mathewson,Brian Crotty,Renee Spampinato,Tania Paccolat,Jennifer Yoo,Charles Silva,Jack Dibble,Ryan Smith,Alex Merola,Con O&apos;Donnell,Rishi Kotecha,Darin Malter,Tyler Reed,Santosh Arelli,Daniel Mistretta,Jason Hahn,Fil Lorinc,Kris Lee,Shweta Narkhede,Samantha Croy,Siddhant Chourasia,Will McLoughlin,Jon Couch,Jason Powell,Lauren Blanchet,Craig Brothers,Shanrong Xiong,Joseph Santangelo,Bret Nelson,Sayoko Yoshida,Lamar Thompson,Brett Suchor,Frank Hoffman,Lewis Khatibi,karolina Krol,George Procopiou,Chris Bauer,Douglas French,Deron Tross,Thomas Levine,Gabe Lopes,Kelly Sanchez,Charlene Braganza Morris,Katherine Blansett,Amel Erramli,Austin Chang</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sara Seppanen,Morris Nadjar,Austin Wysota,Margo Francis,Gianluca D&apos;Avino,Chris Sparenberg,Laetitia Wong,Alyssa Grzelak,Shintaro Toba,Amber Payne,Wilhelm Greyling,Louis Wong,Noriko Sakaba,Sarah Miceli,Makoto Ono,Shinnosuke Mizuyama,Samuel Champanhet,Greg Farrington,Wee Ngee Lim,Rashmi Nain,Karine Wong,Roelof Middeljans,Paul McGrath,Floriane Reinaud,Swagat Banerjee,Paul Bingham,Mark Stephens,Sahil Virmani,Hem Patel,Jessie Pappas,Arun Kumar Nanjundappa,Priscilla Kim,Mason Caldwell,Hemali Varn,Colette Davies,Gauri Jauhar,Vinod Raghothamarao,Atul Arya,Abhishek Kumar,Rob Bruce,Gina Angulo,Mark Findlay,Craig Zolan,Nehal Kenia,Marta Gambarini,Natalia Isajenko,Gavin Rhodes,Dimitri Kaltsas,Katherine Bierman,Peter Clark,Will Meldrum,Kimberly Russell,Alex Valuev,Christoph Stuebbe,Hannah Tan,Wei Lin Lee,Silviu Gafita,Sam Jones,Natasha Barnetche,Kerry Daniel,Ken Nishimura,Peter Altero,James Irwin,Stephanie Rawlinson,Hali McClelland,Curan Brah,Brian Sulkies,James Vettese,Dorothy Luk,Louis Bearn,Diana Siwik,Denise Conn,Angela Baker,David Jesson,Melanie Vaughan,Ed Chidsey,Kiet Tran,Kathy Benini,Nyeong Lee,Soffia Alarcon,Andrew Fleeter,Chris Sztam,David Baranes,Mark Fisher,Joel Walker,Simon Alcock,Guillaume Holdner,Stephen Vinyard,Tracy Carlile,Ian Johns,Gaspare Zambito,Marion Leuchtmann,Emin Zhou,Rick Belani,Jonathan Silver</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Erik Woodling,Mark Briant-Evans,Gabriel Staunton,Ryan Welley,Lawrence Williamson,Mikael Isaxon Plougmann,Jamie Rhodes,Fabien Romero,Fay Hassett,Adelene Tan,Kamini Karunamurthy,Sebastian Cruces,Eunice Ventura,Adam Daneke,Kate Henson,Vasiliki Koutoupi,Leila Bouhafs,Jackie Harr,Askalane Souffiane,Anthony Danzilo,Stephanie Erichson,Andy Luten,Jonathan Gear,Shane Akeroyd,Friedrich Schilcher,Geoff Warr,Christine Holzinger,Wolfgang Knell,Natalie Stockton,Paul Jackson,Joost Bongers,Martin Six,Christopher Pashley,Marco Di Addezio,Charlotte Whipman,Ross Hunt,Lynne Yang,Adam Kansler,John Barneson,Stephen Halloran,Rena Murakoshi,Micheal Murphy,Mark Winslet,Peter Copsey,Joanne Hall,Mark Gray,Louise Allen,Fiaz Hussain,Murray Scott,Charlie Godfrey,Ian Moralee,Martin Johnston,Kevin Floyd,Susan Beury,Khizer Khadimally,Jeff Kopec,Joe Parker,Rema Zuraiqi,Jesse Quinones,TeRon Greene,Ryan Johnson,Jason Connelly,Joelyn Low,Ann Ignatius,Nicole Chamberlain,Siva Prasad,Thi Thuy Vi Nguyen,Amanda Khoo,Robert Kolpin,Todd Burrows,Geoffrey Stowell,Ryan Kelleher,Robert Styles,Aliet Martinez,Chase Willett,Linda Kinney,Adrienne Booth,Peter Brown,David Gee,Steve Paetzold,Bob Braasch,Katie O&apos;Connor,Doug Corrigan,Michael Bird,Travis Moore,Chris Henderson,Kirsten Anderson,Sarah Potosky,George Philippou,Philippe Rivet,Thomas Gilligan,Sanjay Kashyap</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Omar Salici,Tom Platt,Eric Maldonado,Richard Willis,Scott Kirschbaum,Brendon Seeto,Tara Jay,Marianne Antonicelli,Seath Tan,Laura Torres,Pilar Covarrubias Miguel,Rodrigo Plata,Mario Ximenes,Chris Wheeler,Alexander Stovell,Michael Waite,Kathleen Huerta,David Agnew,Rosette Aksterowicz,Cheryl Laduke,Sylvain Dion,Vladimir Rybakov,Stan Berry,Meredith Chavel,Diana Illing,Allan Barshtak,Lara Edwards,Alfredo Rubina,Marjorie Patton,Kenneth Deon,Jim Savitsky,Robb Croasdaile,Nicole Katz,Shaun Peters,Jim Bock,Abigail Cregger,Kari L. Parson,William Edwards,Alex Poole-Warren,Safa Abdul Rasul,Laura Lamb,Richard Mayer,Matthieu Delannoy,Jaydeep Marwaha,Anton Borisov,George Hilton,Gabrielle Morin,Joao Vilas-Boas,Maureen Wall,Stefanie Hughes,Jessica Michael,Bob Rutherford,Sidney Barton,Heidi Menglibaeva,Gregory Washburn,Gary Payne,Kirsty Thomson,Jacqueline Lubin,Diego Crawford,Anna Beletskaya,Christopher Craddock,Laura Bigwood,Tondi Busse,Charles Louis Moreau,Vilde Grimsmo,David Kaufman,Brinley Tilley,Katy Mulroney,Casper Sanderson,Cameron Lounsbery,Armins Rusis,Justin Quinn,Dan Palmer,Jonathan Nutter,Brendan O&apos;Connor,Barton Haneberg,Jennifer Theiss,Jocelyn Lewis,Anne Montana,Jim Cannon,Dalen Chow,Grant Pollworth,Erin Sheepo,Andy McQuarrie,Christopher Eng,Ryan Lee,Daniel Kalyan,Ellen Bunyard,George Emmerson,Tim Harris</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Rudolf Kissling,Sarolta Bodi,Cosimo Angelilli,Andy Ranson,Madison Barefoot,David Dupuis,Andrea Vaghi,Anoush Rahamanekan,Stephanie Poure,Cedric Giromini,Ignacio Garrido,James Fanjoy,Yukari Sasaki,Eiji Hirasawa,Tatsuya Suzuki,Ryo Miyazaki,David Banwell,Roman Gorelik,Daniel Eiber,Tamara Oprea,Michael Patrizio,John La Vecchia,Lindsey Bernard,Jeffrey Humbert,Benjamin Watkins,Deanna Halton,Mark Mitchell,Tom Ahdoot,An Shun Tan,Peter Renner,Thierry Klotz,Jamie Penniman,Faizal (Michael) Hussain,Andrew O&apos;Rourke,Carolyn Crawford,Kyle Rattray,Ronald DiPietro,JD Singh,Yogita Mehta,Simon Rae,Suhyeon Park,Tracy Wang,Darren Brown,Peter Smith,Marina Hubenova,Melissa Hidalgo,Evan Truesdale,Ana Ramos,Robert Herion,Anthony Few,Anne Shalom,Magiel de Groes,Luc Vincent Avent,Brett Moffat,Savannah Lansing,Bryan Huynh,Kelli Martindale,Eduardo Mechereffe,Ron Roveda,Tony Budd,Sarika Pundit,Patrick Joyce,Michele Rowan,Mark Schreiner,Andrew Knapp,Ashley Butler,Dylan Olsen,Shea Amdur,Mike Greenlund,Peter Nagy,Daniel Macauley,Stephen King,Cina Lee,Christopher Tosello,Nathan Eason,Eric Takigawa,Nathan Li,Julian Chesser,Yugo Iseya,Rebecca Rennie,Suthan Sathkuru,Srigouri Dondeti,Lizzie Eng,Aditi Yadav,Sharon Tang,Yuting Cai,Hailey Liang,Ken Honroth,James Shen,Doris Liang,Wenjun Yu,Manish Gupta,William Sun,Joyce Liu,Frank Liu,Huihui Liu</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Peter Yang,Viktoria Malysheva,Mark Iida,Haruomi Tsuzuki,Takahisa Tatsumi,Yoshinori Asada,Rocky Sun,Yuki Yoshida,Koji Odamiya,Kenji Uegaki,Raphael Bader,Sanjuro Takeuchi,Tatsuya Ichisaka,Rie Nakao,Kyoko Mizuno,Paul Fox,Gary Stokes,Eddie Deevy,Dearbhaile O&apos;Hare,Prashant Ayipuzha,Gerard Bermingham,John Kehoe,Adam Scott,John Fickle,Lee Shiong Lew,Min Park,Nao Terada,Yoko Okawado,Ping Yan,Jeremy Wong,Leo Chen,Keith Viverito,Jordan Charalampous,Neslihan Yegul,Mark Hamilton,Stephen Baxter,Steve Shone,Aurelien Podvin,Matt Cipolaro,Sandrine Markham,Kelly Carter,Edward Down,Graham Maxfield,Morten Ibsen,Dorte Blichfeldt Schatt,Mathieu Alazard,Hitoshi Tsuji,John Keough,Rich Buethe,Kris Mapes,Cassie Wages,John Toth,Yung Murphy,Grant Toschi,Mike Reilly,Samuele Marello,Noam Shefi,Andrew Innes,Banri Kobayashi,Satish Chandra,Vishal Kapadia,Vicki Wong,Toshita Chettranda,Victoria Kent,Emma Vassallo,Paddy Turner,Alex Reynolds,Brian Oliver,Charles Bedford-Forde,Kudzai Phiri,Jonathan Chen,Stuart Cornock,Gavin Marcus,Oliver Madden,Torjus Dalen,Peter Harker,Doug King,Alex Wassiliew,Julian Jansen,Daniel Pratt,Patrick Thomson,Derek Liu,Andre Azevedo,Francisco Mora,Zayaan Arend,Chris Kiser,Bo Zhou,Helge Ferentiuk,Tristan James,James Drogalis,Richard Powers,Carlos Thimann,Misty Giordano Belser,Maria Elena Barrios,Daniel Stafford</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Justin Heron,Elena Raimondi,Tracey Hoover,Mehmet Gurtin,NaeYoon Kang,HanYun Wang,Don Tang,Eric Liu,John Sinski,Igor Kaplun,Byron Jones,Joseph Brody,Alfredo Milera,Gary Smeds,Billy Dechert,Terry Sanabria,John Trentos,Sebastian Dalheimer,Anton Shemelin,Harry Gibson,Stefan Veigel,Edward Shulman,Jesse Cisneros,Chip Miller,Colin Brunton,Stanley Yu,Darren Lee,Benton Wong,Wendy Yip,Hiroko Machida,Olivier Dermaux,Nathalie Catillon,Christopher Thompson,Marco Loiacono,Piers Dixon,Jamie Klein,Jonathan Cross,Donald Shannon,Eric Romiza,Jeremy Rosenthal,Nobu Ohara,April Wu,Masaki Ogawa,Matt Mezzancello,Christian Kirschbaum,Steven Armanetti,Max Bauer,Hassan Salih,Andrew Flynn,Griffin Swanwick,ethan schneider,John Turner,Nader Balute,Josh Mallory,Christie Rentschler,Sharon Tham,Alvin Lee,Hannah Goh,Marcello Vicentini,Martin Crawley,Sevaan Bazil,Christopher Frederick,Ellen Schubert,John Regan,Kashyap Parikh,Jennifer Weisbard,Paul Kisslinger,James Bryson,Christopher Zoog,Faizan Minhas,Scott Kortgard,Matthew Newman,Amanda Prentiss,Stefan Nicodemou,Hitomi Yamamoto,Julianna Iran Zhang,Richmond Donnelly,Colleen Stimac,Kara Graves,Claire Tung,Elvin Rodriguez,Eugenio Fortes,Kevin Seery,Paul Darnell,Michael Stewart,Eric Dias,Thomas Gift,Uati Oahimin-Akhimien,Eric Lesner,Samuele Demartini,Sally Moore,Kristian Sorensen,David Austin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jessica Linder,Allison Matty,Nikita Collardova,Juli Mosier,Rakesh Kumar Singh,Priyanka Sood,MiRan Park,Peter Delamere,David Glover,James Woodford,Scott Phillips,Sean Luoma,Peter Chalcraft,Elizabeth Patock,Robby Vaughn,Richard Garcia,Jim Goundry,Nathan Amery,James Kwan,Emma Wood,Howard Talbot,Hunter Vogel,Monique de Kluidt,Tim Roach,Chris Lynch,Carmine Salute,Daniel Esteve,Torrance Burnes,Matthew Brewer,Emily Granger,Daniel Kot,Michael Wall,Denise Moody,Tricia Downs,Isabelle Brooker,Kevin Bourne,O&apos;Hara Macken,Benoît Belliat,Genevieve Halloran,Richard Lee,Timothy Carr,Ellis Farrell,Hidi Yamamoto,Aaron Dougherty,John Karageorge,Allie O&apos;Hara,Christina Yoo,Austin Debevec,Arnold Cai,Pete Morse,Shivani Saxena,Rita Antonelli,Kat Johnson,Gareth Williams,Natalie Williams,Pierre Goffinet,Karl Palsgaard,Michelle Parker,Stuart Strachan,Cheryl Tan,Rahul Kapoor,Guy Sear,Luciana Salles,Byron McKinney,Ravi Amin,Yingzhi Zhang,Charlene Panopio,Darryl Rogers,Ed Glatzer,Karen Jones,Weipeng Jiang,Kent Williamson,Karl Lindstrom,Philippe Frangules,Don Bari,Adam Breen,Fernando Covas,Martha Rivera,Larry Tan,Rodrigo Vaz,Glenn Giacobbe,Victor Shum,Chris Beeston,Rob Taylor,Hormuzd Karanjia,Mark Eramo,Noor Abu Sharekh,Richard Charlesworth,Gene Khor,Carol Zu Liqun,Delphine Meslin,Gaurav Srivastava,Aaron Duffus,Ben Kinberg,Kobboon Chadcham</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Divya Arora,Prasanna Rao,Julien Zigliani,Ajay Kumar,Vedant Patil,Kimberly Bari,Bianca Braiotta,Philip Koh,Hill Vaden,Dylan Mair,Jacob Pittman,Michelle Turnbull,Jean Cherbonnier,Sandra Ortega,Barclay Gibbs,Sam Shoro,Chris Holmes,Peter Augustini,Alex Connell,Laurent Ruseckas,Rafael McDonald,Anna Varfolomeeva,Ilke Karayigitoglu,Simon Wood,Jie Li,Paulina Mirenkova,Angela Pitcher,Carlos Pascual,Martha O&apos;Connor,Alejandra Rocha Salas,Diego Sierra,Brian Cozzens,Nada Zabaneh,Paul Hamilton,Jenny Quinn,Natalie Kilkenny,Usha Pall,Mark Davis,Nancy Culver,Grace Heng,Alison Mitchell,Hooi Lin Teoh,Lisa Sagaser,Sameh Shalaby,Jasgit Ranjeet Singh,Greg Jaknunas,Scott Wilson,Shannon Schuster,Thomas Devaraj,Cindy Boyce,Mimi Syafri,Michelle Slingsby,Dave Lochridge,Masa Mori,Arnab Ghosh,Justin Katzman,Brenda Covarrubias,Leanne Kok,Hosel Goh,Yuliana Rendon,Andrew Wallace,Reto Gurini,Brandi Rapp,Kristopher Alley,Mayumi Yoshidome,Geoff Sieron,Peter Meurer,Kimiyasu Ozeki,Siti Mohamed,Ross Beiler,Dave Minsk,Alexander Piscia,Heather Fairfield,Chester Sykes,Brett Mallory,Steve Bremer,Annabelle Shrieves,Karen King,Kevin Tapley,Pearleen Tan,Alessio Evangelista,Jack Farrelly,Michael Lucas,Giulia Ferrari,Siamak Mashoof,David Del Zotto,Jillian Hurley,Jake Elkins,Paige Pierce,Quinn McCabe,Matthew O&apos;Kelly,Daniela Suarez,Samuel Elphick,Brian Pash</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sean Adelhelm,Tim Hlavacek,Brandon Jones,Kat Gilmore,Brian Long,James Carnahan,John Cannon,Mary Husted,Peter Schneider,Rob Brooks,Sheldon Miller,Will Deines,Kathleen Thaxton,Michael Cartwright,Lois Brown Vera,Bill Hughes,Frances Harrison,Leah Smurthwaite,Alexa Johnson,Jennifer Hockley,Sophia Pepperrell,Don Natwick,Christy Cisneros,Bill Johnson,Denise Collins,Akash Singh,Ariel Parrottino,Edward O&apos;Connell,Matthew Reddy,Jacqui Clarke,Dave Martin,Keith Dorrell,Joe Marlino,Steve Haas,Adam Gromko,Tom Baker,Zaina Zaki,Elizabeth Anderson,Chris Varvares,Ryan Grazier,Nick Rutherford,Paul Fuda,Anne Catillo,Catherine Christ,Ian VanderHorn,Ariel Austin,Leandro Meneses,Alexander Bateman,Silvana Spano,Luc Meier,Oleg Golovenko,Lucy Tinnes,Doris Schindler,Natalie Dark,Florian Troescher,Arif Butt,Richard Brent,Nisha Pattni,Dan Campion,Walter Ng,Robert O&apos;Brien,Sewon Park,James Hu,Neil Coert,Sune Vagner,Peter Carrol,Svetlana Sidorova,May-Britt Jacobsen,Andy Mayer,Gary Kearns,Mike Zalewski,Natalie Noble,Alena Barford,James Kat,Jason Foong,Calista William,Shobana Pandian,Adrian Goh,Kulalmozli Kaliasundram,Tobias Webb,Karen Moore,Cecilia Gauthier,Carlos Lima,Markus Polag,Thais Hamilko,Juan Lopez Ricaurte,Geraldo Calainho,Erica Dalme,Erick Sanchez,German Alberto Oviedo,Gabriel Roisenberg,Mohammad Kurdi,Bouchra Arabi,Hamza Abdel-Hafez</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Mohammed AlNawila,Jennifer Jumbe,Susan Brennan-Weldon,Charles O&apos;Brien,Patricia Alleyne,Lindsay Moseley,Patrick Lynch,John Paul Minett,Javier Pastor,Deanise Moi,Ryan Hodgins,Deniss Telle,Sarah Danan,Nicole Ryan,Dillon Watts,Stuart Rawlings,Brad Wigle,Amy Singer,Rose Ferrara,Richard Veale,Barnaby Dobson,Sam Devine,Rishad Lilani,Xiaolong Song,Lorena Zanol,Stella Huang,Alexander Dodds,Sidney Leung,Jonathan Wei,Takashi Sekimoto,Sachiko Koide,Richard Katsuta,Mei Ping Liew,Jaeseung Lee,Jack Power,Soren Bruun,Sam Chamberlain,Muzafar Ahmad,Edward Marsh,Roberta Migliorini,Bradley Koekemoer,Louise Lasfer,Victoria Fitch,Tara MacDevitt,Elayarasi Nagarajan,Kenny Fu,Amarjeet Gigindar Singh,Guang Xuan Lee,Azman Ali Mohd Baharudeen,Ahmad Sayuti Ibrahim,Mohamed Fauzi,Khaleerurrahman ShaikDawood,Mohd Firdaus Haikal Abdullah,Tim McLaughlin,Mike Wiman,Brendan Neary,Mabel Ng,Alex Gray,Jeremy Domballe,Alice Gladen,Chiranjib Kar,Jay Kalahasty,Benjamin Ooi,Shanthy.P Pakirisamy,Jiayeen Tan,Vladimir Tikhvinskiy,Terence Soo,Charlie Ng,Alex Lee,Siddhartha Selvanathan,Nicole Lim,Reuben Lim,Chonghooi Goh,Joe Chuah,Mohamed Ouail Drouiche,Hazelle Yeap,Carl Michael Aeria,Michelle Tan,Ryan Donnelly,Muju Tsay,Michael Thompson,Michael Gunga,Jennifer Rankine,Paul Ratner,Tony Jessop,Joerg Berkemeyer,Diane McFall,Chris Hilby,Vincent Magnifico</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Betsy Freeze,Adel Hallak,Nicola Tame,Nourane Mahmoud,Marlen Walrond,Holger Gross,Thorsten Bolz,Ilona Wegener,Andrea Heidt,Peter Plomer,Michael Hutto,Edward Soon,Saori Aoyama,Samantha Chan,Atsuko Ogino,Una Lin,Julie Rhee,Hayato Nonaka,Vivian Liu2,Camille Zhao,Clay Willingham,Jason Tuthill,Brian Cahill,Phillip Joyce,Mike Shea,Andrew Parven,Matthew McKay,Dan Sestito,Robert Leidl,Micah Ellise,Sean Henderson,Josh Williams,Colin Tobias,Erika Olsen,Michael Lynch,David Bergquist,Paul Marcus,Robert Gardner,Craig Cunningham,Peter Gotke,Felix Barnard-Weston,Christian Csomos,Karine Deroche,Patrick Tobias,Alessandro Belluschi,Harry Rimmer,Myriam Gourden,David Timothy,Benoit Bergua,Eva Bowles,Hannah Graham,Brett Cahill,Jamie Malam,Selina Navarro,Pete Bentson,Robert Weaver,Adam Venanzi,Michael Palacios,Gary Bullard,Jonathon Kennedy,Charles Balancia,Christopher Morales,James Kellum,John Hester,James McLennan,Jeff Benton,Ryan Marshall,Alex Blizzard,Gang Hao,Hitoshi Shinzawa,Livvy Tan,Emi Kakumaru,John Kim,Peng Zhang,Amy Fuller-Riley,Tiffany Aspinall,Justin Simmons,Kageyuki Nagao,Haruki Kudo,Hajime Kawano,Ian Mitchell,Arnaud Bedu,Dave Tingley,Dan Ike,Christopher Holden,Sara Foxworth,Maisie Greene,Jason Wong2,Wenruo Wang,Hyewon Song,Allison Li,Vincent Huang,Juliet Zhang,Will li,Douglas Law,Swamathy Saravanan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>MOHD AFIQ BIN MOHD RAFIDI,Nishat Rezvi,Tatyana Ustyantseva,Ashley LeBlanc,Maureen Kenyon,Quintin Stevenson,Dominik Rozwadowski,Charyl Poche,Thomas Krause,Massimiliano Cervetti,Aylin Tumer,Estiben Garcia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - General Service Account,Place Holder - IHS Markit Internal Employees,Place Holder - Sales,Place Holder - Self Registered Users Account,Place Holder - Unknown Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Opportunity.InnerYear,Opportunity.Renewal</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opps for FS Sales Users</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_PREV2FY</interval>
+    </timeFrameFilter>
+</Report>

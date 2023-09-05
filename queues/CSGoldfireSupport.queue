@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Goldfire | Support</name>
+    <queueMembers>
+        <users>
+            <user>arnaud.bedu@ihsmarkit.com</user>
+            <user>brandon.weiss@ihsmarkit.com</user>
+            <user>brian.harris@ihsmarkit.com</user>
+            <user>evan.shelby@ihsmarkit.com</user>
+            <user>g.a.lasseigne@ihsmarkit.com.prod</user>
+            <user>gerald.schildger@ihsmarkit.com</user>
+            <user>greg.dance@ihsmarkit.com</user>
+            <user>hajime.kawano@ihsmarkit.com.prod</user>
+            <user>haruki.kudo@ihsmarkit.com.prod</user>
+            <user>ian.mitchell@ihsmarkit.com</user>
+            <user>jay.urbanowicz@ihsmarkit.com.prod</user>
+            <user>john.moyles@ihsmarkit.com.prod</user>
+            <user>kageyuki.nagao@ihsmarkit.com</user>
+            <user>mark.kaprielian@ihsmarkit.com</user>
+            <user>matthias.katzmaier@ihsmarkit.com</user>
+            <user>peter.suhorukov@ihsmarkit.com</user>
+            <user>robert.eddy@ihsmarkit.com.prod</user>
+            <user>sarah.bethlehem@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

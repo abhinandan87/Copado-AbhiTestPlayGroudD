@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Acknowledgment Mail (When you take ownership of the case)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Acknowledgement Mail</name>
+    <style>none</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Good day!
+Thanks for reaching out to the Salesforce Helpdesk Team.
+
+I have taken ownership of this case and will be working proactively to provide you with a solution at the earliest.
+
+Feel free to reach out to us if you have any further queries.
+
+Regards,
+{!Case.OwnerFullName}
+Salesforce Helpdesk</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

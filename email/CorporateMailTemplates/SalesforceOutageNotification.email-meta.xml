@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Salesforce Outage Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Salesforce Outage Notification</name>
+    <style>none</style>
+    <subject>Salesforce Outage Notification - 27 June 2019</subject>
+    <textOnly>{!Today()}
+
+Dear IHS Markit Salesforce Users,
+
+Some users are currently seeing intermittent errors, slow load times, or an inability to login to IHS Markit Salesforce. We are aware of the issue and are working on it urgently with Salesforce Support.
+
+As a temporary workaround for those experiencing this issue, please clear your browser cache/cookies or try to login to Salesforce in a different browser such as Edge, Chrome, or Firefox.
+
+Kind regards,
+IHS Markit Salesforce Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

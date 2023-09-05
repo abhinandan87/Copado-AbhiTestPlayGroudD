@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>KY3P Referrals</name>
+    <queueMembers>
+        <users>
+            <user>ankita.girdhar@ihsmarkit.com</user>
+            <user>avita.barnes@ihsmarkit.com</user>
+            <user>christine.bradford@ihsmarkit.com</user>
+            <user>farha.habeeb-burnett@ihsmarkit.com</user>
+            <user>forrest.nettles@ihsmarkit.com</user>
+            <user>georgiamay.parrish@ihsmarkit.com</user>
+            <user>harsh.sathwara@ihsmarkit.com</user>
+            <user>mackenzie.murdock@ihsmarkit.com</user>
+            <user>meghan.delcastillo@ihsmarkit.com</user>
+            <user>mical.ghebrehiwot@ihsmarkit.com</user>
+            <user>michah.casper@ihsmarkit.com</user>
+            <user>mirzaaslambaig.aslam@ihsmarkit.com</user>
+            <user>nidhi.parasher@ihsmarkit.com</user>
+            <user>samantha.kluesner@ihsmarkit.com</user>
+            <user>shirsh.kumar@ihsmarkit.com</user>
+            <user>shubhendu.gupta@ihsmarkit.com</user>
+            <user>shweta.sachdeva@ihsmarkit.com</user>
+            <user>tarun.gupta@ihsmarkit.com</user>
+            <user>vikrant.sharma2@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

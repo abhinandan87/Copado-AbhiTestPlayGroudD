@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/10560</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Field for reporting purposes only.  10560 = 22 working days, with 8 hrs per working day, 60 min per hour</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent Monthly FTE</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Time Spent in Hours</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent (Hours)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Case.Subtype__c</field>
+    </columns>
+    <columns>
+        <field>Case.ProductFamily__c</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 AND 3) AND 2</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Joanne Ooi,Felisha Anne Johnson,Ling Lim,Shefali Chawla,Hye-Won Choi,Frank Lee,Ann Shee Hong,Aaron Ching,Aaron Tang,Agnes Ooi,Bo Yuan Ng,Chayan Bhattacharjee,Esma Agzanay,Evan Gerlack,Farah Razali,Haqimi Ashaari,Hashi Khalid Mohamad,Janet Holmes-Boone,Jason Mitchell,Jennifer Begel,Kanika Garg,Kartikey Bisht,Katerani Selvarraju,Kent Choong,Kevin Lim,Kinnerey Patel,Kok Han Lee,Mark Quejado,Mehar Banu Mohamed Salib,Melanie Mladenova,Miaoyin Ng,Michael Burnett,Michael Don,Mika Sakurai,Najah Nadhira Binti Dorohid,Nicholas Teo,Paul Hughes,Pooja P Nair,Rashi Dungale,Safiya Murray,Samuel Abraham,Tanvi Arora,Tee Huang Cheah,Varun Bhutani,Vera Rasa,Zi Yun Lim</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Closed,Resolved,Canceled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ALIAS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>asing,jooi,fjohn,llim,schaw,HyeWon,flee,ahong,Aaron,atang,aooi,bng,cbhat,eagza,egerl,FRazali,HAshaari,nkhal,JHolmes-,jmitc,JBegel,kgarg,kbish,Kselvarr,KChoong,KLim,Kpat,khlee,mquejado,Mehar,mmlad,mng,Burnett,michael,msaku,NN,nteo,PHughes3,pp na,RDun,smurr,sabra,Taro,TeeHuang,vbhut,VRasa,ZiYun</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases Closed by FTEs Current Month</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

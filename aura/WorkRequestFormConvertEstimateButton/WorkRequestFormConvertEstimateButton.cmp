@@ -1,0 +1,4 @@
+<aura:component implements="lightning:actionOverride,force:hasRecordId,force:hasSObjectName,force:lightningQuickActionWithoutHeader">
+    <aura:attribute name="recordId" type="String" />
+    <c:workRequestFormClone objectApiName='WorkRequestForm__c' recordId="{!v.recordId}" actionName='ConvertEstimate' onclose="{!c.closeQA}"></c:workRequestFormClone>
+</aura:component>

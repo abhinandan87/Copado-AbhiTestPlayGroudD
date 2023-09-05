@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | SFTR | Product Management</name>
+    <queueMembers>
+        <users>
+            <user>bill.tsang@ihsmarkit.com</user>
+            <user>david.williams2@ihsmarkit.com</user>
+            <user>jonathan.tsang@ihsmarkit.com</user>
+            <user>majid.azaim@ihsmarkit.com</user>
+            <user>quephuong.dufournet@ihsmarkit.com</user>
+            <user>vijayendra.agarwal@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

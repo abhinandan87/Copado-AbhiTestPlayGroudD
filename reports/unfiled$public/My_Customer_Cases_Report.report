@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Cases__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Cases__r$Subject</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Cases__r$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Cases__r$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Cases__r$Status</field>
+    </columns>
+    <currency>USD</currency>
+    <description>A/M&apos;s cases by customer sort</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Cases__r$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Active Waiting for info,Assigned,Assigned to HD Associate,Auto-Closed – No Action Taken,Canceled,Closed,Closed - Canceled,Closed - Moved to Jira,Closed - No action required,Closed - Referral,Closed - Resolved,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Closed - Unable to reach Customer,Connectivity,Contract Signed,Customer Responded,Delete,Duplicate,Entered Ticket,Escalated,Initial Delivery Complete,In Progress,Install Complete,Live,Merged,Moved to Tier2 Support,New,On Hold,Pending Second Review,Reassigned,Referral,Rejected,Re-opened,Researching,Resolved/Completed,Resolved/No Response,Testing,Trial Approved,Updated,User Access Granted,Validated,Validated-BSI Pending,Validated by ConsOps,Validated-POD Pending,Validated PO Pending,Waiting - 3rd Party,Waiting - Customer,Waiting - Internal Team,Waiting on Approvals,Waiting on Info,Waiting on Requester,Waiting - Sales Team,Waiting - Third Party,Welcome Package Sent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Cases__r$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>David Choules</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>My Customer Cases Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Cases__c</reportType>
+    <roleHierarchyFilter>Sales200834_1</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>Opportunity.Cases__r$CreatedDate</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_PREVCUR2FY</interval>
+    </timeFrameFilter>
+</Report>

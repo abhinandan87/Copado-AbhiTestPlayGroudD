@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vindicator</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vindicators</value>
+    </caseValues>
+    <fields>
+        <label><!-- DRDTTYPE --></label>
+        <name>DRDTTYPE__c</name>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_01</masterLabel>
+            <translation><!-- DRDTTYPE_01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_02</masterLabel>
+            <translation><!-- DRDTTYPE_02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_03</masterLabel>
+            <translation><!-- DRDTTYPE_03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_04</masterLabel>
+            <translation><!-- DRDTTYPE_04 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_05</masterLabel>
+            <translation><!-- DRDTTYPE_05 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_06</masterLabel>
+            <translation><!-- DRDTTYPE_06 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_07</masterLabel>
+            <translation><!-- DRDTTYPE_07 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_08</masterLabel>
+            <translation><!-- DRDTTYPE_08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_09</masterLabel>
+            <translation><!-- DRDTTYPE_09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_10</masterLabel>
+            <translation><!-- DRDTTYPE_10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_11</masterLabel>
+            <translation><!-- DRDTTYPE_11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRDTTYPE_12</masterLabel>
+            <translation><!-- DRDTTYPE_12 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property --></label>
+        <name>Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Input</masterLabel>
+            <translation><!-- Input --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Output</masterLabel>
+            <translation><!-- Output --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

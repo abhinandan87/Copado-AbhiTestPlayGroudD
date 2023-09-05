@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Closed cases &amp; turnaround</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Onboarding,Case.CustomerCare,Case.Implementation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | MW | Clearing,FM | MW | Reports,FM | MW | CPS Onboarding,FM | MW | Static Data,FM | MW | Book Updates,FM | MW | User Clones Static Conf.,FM | MW | User Deactivations,FM | MW | Password Reset,FM | MW | User Setup</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>john.chu@anz.com,simon.johnston@ashmoregroup.com,reema.mistry@asx.com.au,adam.perllman@avivainvestors.com,alexei.geoghegan@bis.org,stephen.gretton@baml.com,alex.kennedy@boigm.com,antonio.garcia.vinuelas@bbva.com,mirna.martinez@bbva.com,caroline.deridder@belfius.be,joerg.auth@berlinhyp.de,geethan.rayan@bmo.com,mark.wendland@citadel.com,cecil.woo@citi.com,daniel.fogle@citi.com,jethandra.kumar@cba.com.au,dan.stevenson@cba.com.au,chris.fowler@ca-cib.com,rashmi.priya@outsourcing.ca-cib.com,Ecns@natixis.com,james.neale@daiwa.co.jp,johas@danskebank.dk,judy.chiu@fhlbny.com,squinn@fideuramireland.ie,ssiano@bancafideuram.it,wilfred.chettiar@bankfab.com,patrickccleung@hkex.com.hk,ajith.vijaykumar@hsbc.co.in,lalit.gulhane@hsbc.com,silke.sagner@hsh-nordbank.com,michiel.smid@ingbank.com,jason.bishop@jupiteram.com,jskelly@latamsef.com,markus.berjak@lgt.com,misa_minami@tr.mufg.jp,lucy.ragone@mizuhocap.com,yuhui.wang@morganstanley.com,tony.holland@mufgsecurities.com,alison.higgins@nbad.com,ecns@natixis.com,michael.webb@nomura.com,jesper.rossen.moller@nordea.com,linda_tong@otpp.com,fionamcmahon@optiver.com,jbrahami@pictet.com,jo.billiard@pimco.com,richard.garry@pioneerinvestments.com,rob.burnett@market-securities.com,daniel.gillen@rabobank.com,sujir.nayak@rabobank.com,michael.uebel@rbinternational.com,victoria.slater@rbs.com,tine</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>CLOSED_DATEONLY</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.PreviousQueue__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Customer Success - Closed cases &amp; age</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

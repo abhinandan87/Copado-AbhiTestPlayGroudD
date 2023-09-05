@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-5688 : Sending Case Closure Email for Contract Management Team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NotifyWhenContractManagementCaseIsClosed</name>
+    <style>none</style>
+    <subject>IHS Markit Contract Management Case {!Case.CaseNumber} - has been completed, Feedback Required</subject>
+    <textOnly>Hello,
+Your Contract Management case has been marked as completed.
+
+Case Number: {!Case.CaseNumber}
+Type: Contract Management
+Subject: {!Case.Subject}
+Owner/Support Rep: {!Case.OwnerFullName}
+Resolution:{!Case.ResolutionDescription__c}
+SFDC link to case: {!Case.Link}
+
+You are invited to take a short SURVEY  about your experience with the case. The survey will take less than a minute and will be used by the Contract Management team to improve the service you receive.
+
+Click here for the SURVEY
+
+Thank you,
+The Contract Management Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

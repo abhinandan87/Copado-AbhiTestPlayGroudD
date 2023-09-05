@@ -1,0 +1,123 @@
+<template>
+    <div class="slds-card">
+        <div class="slds-grid icondiv">
+            <div class="slds-media__figure">
+                <lightning-icon icon-name="standard:employee_job" size="medium"></lightning-icon>
+            </div>
+            <div class="slds-media__body" >
+                <h1 class="slds-page-header__title slds-m-top_xx-small slds-m-right_xx-small slds-align-middle slds-truncate" title="Legal Entity">
+                    <b>Legal Entity</b>
+                </h1>
+            </div>
+        </div>
+        <!--Display Spinner while saving details-->
+        <template if:true={showSpinner}>
+            <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+        </template>
+   
+        <div class="slds-card slds-grid slds-wrap" style="height:30rem">
+            <div class="slds-col slds-size_1-of-2">
+                <div class="containerdiv">
+                    <div>
+                        <lightning-icon icon-name="standard:approval" size="small"></lightning-icon>
+                    </div>
+                    <div>
+                        <h2><span class="slds-text-heading_small slds-truncate"><b>Select Legal Entity</b></span></h2>
+                    </div>
+                </div>  
+                <br/>
+                <div class="slds-size--1-of-1 slds-p-horizontal_small">
+                    <p>{label.RecommendedLegalEntityHeaderLabel}</p>
+                </div>
+                <div class="slds-size--1-of-1 slds-p-horizontal_small slds-text-color_error">
+                    <p>{label.RecommendedLegalEntityNoteLabel}</p>
+                </div>   
+                <div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-2">
+                    <lightning-combobox
+                    name="recommendedLegalEntity" 
+                    value={recommendedLegalEntity}                                                         
+                    options={lstRecommendedLegalEntity}  
+                    data-id="recmLegEntityVal"   
+                    onchange={handleChange} 
+                    disabled={isCheck}                     
+                    ></lightning-combobox>
+                </div>
+                
+                <br/><br/><br/><br/>
+    
+                <div class="slds-col--padded slds-size--1-of-1">
+                    <lightning-input
+                    label={label.ExceptionCheckboxLabel}
+                    name="exceptionCheckbox"
+                    type="checkbox"  
+                    data-id="exceptionCheckboxVal"
+                    checked={isCheck}
+                    onchange={handleCheckboxChange}              
+                ></lightning-input>
+                </div>
+    
+                <br/>
+                <template if:true={isCheck}>
+                    <div class="slds-size--2-of-3 slds-p-horizontal_small slds-text-color_error">
+                        <p>{label.ExceptionInformativeMessageLabel}</p>
+                    </div>
+                </template>
+                <br/>
+            </div>
+            <template if:true={isCheck}>
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="containerdiv">
+                        <div>
+                            <lightning-icon icon-name="standard:form" size="small"></lightning-icon>
+                        </div>
+                        <div>
+                            <h2><span class="slds-text-heading_small slds-truncate"><b>Offline Exceptions Detail Form</b></span></h2>
+                        </div>
+                    </div>  
+                    <br/>
+                    <div class="slds-col--padded slds-size--2-of-3">
+                        <lightning-input type="text" label="Reason for the Request" name="requestReason" value={requestReason} data-id="requestReasonVal" onchange={handleChange} required="true" style="padding-top: 0px"></lightning-input>
+                        <lightning-combobox
+                            name="requestedLegalEntity"
+                            label="Requested Legal Entity" 
+                            value={requestedLegalEntity}                                                         
+                            options={lstRequestedLegalEntity}  
+                            data-id="reqLegEntityVal"   
+                            required="true"  
+                            onchange={handleChange}                 
+                        ></lightning-combobox>
+                        <lightning-input type="number" label="US Dollar Value (For approval purpose only)" name="dollarValue" value={dollarValue} data-id="dollarVal" onchange={handleChange} required="true" formatter="currency" step="0.01"></lightning-input> 
+                        <lightning-input type="text" label="Country/Territory" name="countryTerritory" value={countryTerritory} disabled="true" required="true"></lightning-input>
+                        <lightning-input type="text" label="SAP Product Codes" name="productCodes" value={materialCodes} disabled="true" required="true"></lightning-input>
+                    </div>
+                </div>  
+            </template>                 
+        </div>
+        <!--Display buttons in Modal if Redirected from Edit Screen on prod remove-->
+        <template if:true={openModal}>
+            <div align="center" class="footerDiv">                     
+                <lightning-button icon-name="utility:chevronleft"  class="slds-m-left_x-small" variant="brand" label="Back" onclick={onBack} disabled={hideBack}></lightning-button>
+                <lightning-button icon-name="utility:chevronright"  class="slds-m-left_x-small" variant="brand" label="Proceed" disabled={hideProceed} onclick={onProceed}></lightning-button>
+                <lightning-button icon-name="utility:save"  class="slds-m-left_x-small" variant="brand" label="Save" disabled={hideShow} onclick={onSave}></lightning-button>
+                <lightning-button icon-name="utility:close" class="slds-m-left_x-small" variant="brand" label="Cancel" disabled="true"></lightning-button>                       
+            </div> 
+        </template>        
+    
+    </div>
+    <!--Display buttons in footer default-->
+    <template if:false={openModal}>
+        <div class="slds-m-bottom_x-large  slds-docked-form-footer" >
+            <lightning-layout horizontal-align="space" vertical-align="top" >
+                <lightning-button icon-name="utility:chevronleft"  icon-position="left" class="slds-m-left_x-small" variant="brand" label="Back" onclick={onBack} disabled={hideBack}></lightning-button>
+                <lightning-button icon-name="utility:chevronright"  icon-position="right" class="slds-m-left_x-small" variant="brand" label="Proceed" disabled={hideProceed} onclick={onProceed}></lightning-button>
+                <lightning-button icon-name="utility:save"  icon-position="right" class="slds-m-left_x-small" variant="brand" label="Save" disabled={hideShow} onclick={onSave}></lightning-button>
+                <lightning-button icon-name="utility:close" icon-position="right" class="slds-m-left_x-small" variant="brand" label="Cancel" onclick={onCancel}></lightning-button>
+            </lightning-layout>
+            <lightning-layout horizontal-align="space" vertical-align="top" >
+                <lightning-layout-item></lightning-layout-item>
+                <lightning-layout-item></lightning-layout-item>
+            </lightning-layout>
+            </div> 
+    </template>
+
+</template>

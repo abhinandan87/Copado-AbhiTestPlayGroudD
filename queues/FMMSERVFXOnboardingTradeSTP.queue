@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | MSERV FX | Onboarding | TradeSTP</name>
+    <queueMembers>
+        <users>
+            <user>kaushal.sharma@ihsmarkit.com</user>
+            <user>kuldeep.thakur@ihsmarkit.com</user>
+            <user>mel.yap@ihsmarkit.com</user>
+            <user>natasha.chaudhary@ihsmarkit.com</user>
+            <user>nikita.narang@ihsmarkit.com</user>
+            <user>sarita.monga@ihsmarkit.com</user>
+            <user>smarak.nayak@ihsmarkit.com</user>
+            <user>srigouri.dondeti@ihsmarkit.com</user>
+            <user>xi.chen@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

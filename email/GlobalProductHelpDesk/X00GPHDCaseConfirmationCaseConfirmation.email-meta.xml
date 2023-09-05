@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to inform the customer that a Case has been opened.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>00 GPHD Case Confirmation Case Confirmation</name>
+    <style>none</style>
+    <subject>IHS Automotive Helpdesk Case Confirmation, # {!Case.CaseNumber} - {!Case.Subject}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for contacting the IHS Automotive Help Desk.
+
+Your query was logged under Case #{!Case.CaseNumber} with the below description:
+
+We will provide a resolution as soon as possible. Should you have any further questions, please do not hesitate to contact us again and reference Case #{!Case.CaseNumber}.
+
+Regards,
+
+IHS Automotive Helpdesk
+automotive_support@ihsmarkit.com
+--------------------------------------------------------------------------
+
+{!Case.Description}
+
+--------------------------------------------------------------------------
+
+{!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

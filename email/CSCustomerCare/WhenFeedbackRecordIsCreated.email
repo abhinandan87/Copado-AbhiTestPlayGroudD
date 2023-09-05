@@ -1,0 +1,15 @@
+{!Feedback__c.CreatedDate}
+</br></br>
+Dear {!Feedback__c.CreatedBy},
+</br>
+<p>Thanks for getting in touch! This is an automatic response to let you know that we’ve received your message, and one of the team members will reach out to you as early as possible.</p>
+
+Follow the link below for any updates regarding the feedback.
+</br>
+<a href="{!Feedback__c.Link}">Link to Feedback</a>
+</br></br></br>
+
+
+Kind regards,
+</br>
+IHS Markit

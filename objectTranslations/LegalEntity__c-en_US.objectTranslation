@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Legal Entity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Legal Entities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>AddressLine1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>AddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 3 --></label>
+        <name>AddressLine3__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country/Territory --></label>
+        <name>Country__c</name>
+        <relationshipLabel><!-- Legal Entities (Country) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current IP Text --></label>
+        <name>CurrentIPText__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this legal entity is eligible for continuation contract record types ? Yes/No --></help>
+        <label><!-- Eligible for Continuation --></label>
+        <name>EligibleforContinuation__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this legal entity is eligible for DPA contract record types ? Yes/No --></help>
+        <label><!-- Eligible for DPA --></label>
+        <name>EligibleforDPA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this legal entity is eligible for exhibit contract record types ? Yes/No --></help>
+        <label><!-- Eligible for Exhibit --></label>
+        <name>EligibleforExhibit__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this legal entity is eligible for manged service terms contract record types ? Yes/No --></help>
+        <label><!-- Eligible for Manged Service Terms --></label>
+        <name>EligibleforMangedServiceTerms__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this legal entity is eligible for master agreement contract record types ? Yes/No --></help>
+        <label><!-- Eligible for Master Agreement --></label>
+        <name>EligibleforMasterAgreement__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Is this legal entity eligible for NDA contract record types ? Yes/No --></help>
+        <label><!-- Eligible for NDA --></label>
+        <name>EligibleforNDA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this legal entity is eligible for order form contract record types ? Yes/No --></help>
+        <label><!-- Eligible for Order Form --></label>
+        <name>EligibleforOrderForm__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this legal entity is eligible for consulting contract record types ? Yes/No --></help>
+        <label><!-- Eligible for Consulting --></label>
+        <name>EligibleforStatementofWork__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this legal entity is eligible for trial addendum contract record types ? Yes/No --></help>
+        <label><!-- Eligible for Trial Addendum --></label>
+        <name>EligibleforTrialAddendum__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this legal entity is eligible for trial schedule contract record types ? Yes/No --></help>
+        <label><!-- Eligible for Trial Schedule --></label>
+        <name>EligibleforTrial__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the Governing Jurisdiction --></help>
+        <label><!-- Governing Law Jurisdiction --></label>
+        <name>GoverningLawJurisdiction__c</name>
+        <picklistValues>
+            <masterLabel>Alberta</masterLabel>
+            <translation><!-- Alberta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>England and Wales</masterLabel>
+            <translation><!-- England and Wales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOD State of New York</masterLabel>
+            <translation><!-- MOD State of New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>People’s Republic of China</masterLabel>
+            <translation><!-- People’s Republic of China --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singapore</masterLabel>
+            <translation><!-- Singapore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>the State of New York</masterLabel>
+            <translation><!-- the State of New York --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Incorporated in Country/Territory --></label>
+        <name>IncorporatedinCountry__c</name>
+        <relationshipLabel><!-- Legal Entities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incorporated in State --></label>
+        <name>IncorporatedinState__c</name>
+    </fields>
+    <fields>
+        <label><!-- LegacyID --></label>
+        <name>LegacyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity Text (US) --></label>
+        <name>LegalEntityTextUS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity Text --></label>
+        <name>LegalEntityText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- PKID LegalEnt --></label>
+        <name>PKIDLegalEnt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>PostalCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Residual Court --></help>
+        <label><!-- Residual Courts --></label>
+        <name>ResidualCourts__c</name>
+        <picklistValues>
+            <masterLabel>the Singapore courts</masterLabel>
+            <translation><!-- the Singapore courts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>the courts residing in London, England, United Kingdom</masterLabel>
+            <translation><!-- the courts residing in London, England, United Kingdom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>the courts residing in the Province of Alberta</masterLabel>
+            <translation><!-- the courts residing in the Province of Alberta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>the state and federal courts residing in New York County, New York</masterLabel>
+            <translation><!-- the state and federal courts residing in New York County, New York --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Populate this field if country is United States --></help>
+        <label><!-- State or Province --></label>
+        <name>StateOrProvinceNew__c</name>
+    </fields>
+    <fields>
+        <label><!-- State or Province --></label>
+        <name>StateOrProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this legal entity is eligible for third party processor agreement contract record types ? Yes/No --></help>
+        <label><!-- Third Party Processor Agreement --></label>
+        <name>ThirdPartyProcessorAgreement__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

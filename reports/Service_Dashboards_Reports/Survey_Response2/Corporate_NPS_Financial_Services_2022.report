@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.RecipientFirstName__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.RecipientLastName__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.RecipientEmail__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>FK_$Account.CorporateNPS__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.SurveySystemReference__c</field>
+    </columns>
+    <currency>GBP</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>SurveyResponse__c.SurveyType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Corporate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.SurveyVersion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Corporate Survey Version 2021</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.ProductGroupLookup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Analytics Prod,BD Advanced (Equity),BD Advanced,BD Corporate,BD IR Consultant,Bond Reference Data,BRST Partnerships,Calendar-Vote,Cappitech Regulatory Reporting,CDS Pricing Data,CDS Reference Data,Chemical Handbooks: Speciality Chemicals,Collateral Manager,Commission Manager,Corp&amp;Svrgn Bonds Pricing Data,Counterparty Manager-Core,Counterparty Manager-FATCA SVC Bureau,Counterparty Manager-iCompliance,Counterparty Manager-ISDA Amend,Counterparty Manager-KYC,Counterparty Manager-RFA,CTI Consulting,CTI Prod,CTI,Data Feed (Fixed Income),Debtdomain - Agency Sites,Debtdomain - Amendment Voting,Debtdomain - Compliance Subscription,Debtdomain - CRM Subscription,Debtdomain - Custom Development,Debtdomain - Dataroom Sites,Debtdomain - Institutional Loan Ownership,Debtdomain - Portfolio Valuation,Debtdomain - Syndication Sites,DeltaOne,Desktop,Digital External,Dividend Forecasting,ECR Consulting Healthcare,ECR Consulting Macro Econ,ECR Consulting,ECR Country Intelligence,ECR Financial Data,ECR Global Economics,ECR Industry Services,ECR Industry,ECR Life Sciences,ECR Macro Economics,ECR Macro Services,ECR NA Macro,ECR Risk Intelligence,ECR Risk Services,ECR South Africa,ECR Suites,ECR Supply Chain,ECR US Regional Services,EDM,Environmental Registry,Equity Bookbuild</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.ProductGroupLookup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ESG,Expert Connect-ECR,FactSet Workstation,Fair Value,Feeds/API,Foresight,Gameday,Global Markets Intelligence,Hub,iCompliance (Equity),iLevel Enterprise,iLevel iVal,iLevel Private Label,Index Administration Services,Indices Bonds,Indices CDS,Indices Equities,Indices Loans,Indices Structured Finance,Information Mosaic,Integrated Reporting Solution,Investor Access (Fixed Income),iPlanner (Equity),iProspectus (Equity),iProspectus (Municipals),IR Roadmap,IssueBook,IssueNet,KY3P-Assessment Service,KY3P-Due Diligence &amp; Monitoring,KY3P-Implementation,KY3P-Managed Services,KY3P-Other,KYC,KYV,Loan Pricing Data,Loan Reference Data,Managed Data Services GP,Managed Data Services Val,Market Share Analysis,Markit Corporate Actions,Markit Loan Settlement,Muni Bidcomp,Muni Bookrunning,Municipal Bonds Pricing Data,Notice Manager,OTC Derivatives Data,PMI,Portfolio Valuations,Pricing &amp; Purchasing,PrimeOne,Prism Virtual Data Room,Prism,Private Equity,Profile Builder (Equity),Qval,Real Estate,RegOne (Compliance SVC),Research Signals,Securities Finance-Equity,SecuritisedProd Indices,SecuritisedProdPrice Data-ABS,SecuritisedProdPrice Data-US,SFTR,Shareholder ID,Tax Solutions-Tax Utility,Tax Solutions-Validations,Term Risk Free Rates,thinkFolio,Totem</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyResponse__c.ProductGroupLookup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Transaction Cost Analysis,Valuations Manager,WSO-Software,WSO-SVC</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.ProductGroupLookup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.AlertType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Corporate NPS | Financial Services| 2021</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-10-04</startDate>
+    </timeFrameFilter>
+</Report>

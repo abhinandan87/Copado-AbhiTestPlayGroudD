@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_30701549</developerName>
+        <masterLabel>Forecast</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Renewal Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6WP-Closed Won/Order Processed</sourceValue>
+            </sourceValues>
+            <value>6-WP</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>5-Renewal Contracting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Renewal Pending</sourceValue>
+            </sourceValues>
+            <value>Forecasted-Renewals</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Open</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Proposal Development</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4.1-Proposal/Quote Delivery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4.2-Verbal Commit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <value>Forecasted -Non renewals</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FORECAST_CATEGORY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Probability__c</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.FirstYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(Opportunity.LegalEntity__c=&quot;IHS Markit Global Sarl&quot;, OpportunityLineItem.FirstYear__c.CONVERT,
+
+IF(Opportunity.OpportunityRecordType__c=&quot;New Business&quot;, 
+	CASE(Opportunity.ChannelPartner__c, 
+		&quot;NATIONAL CONSULTING BUREAU&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;National Consulting Bureau&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES (TWOS)&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES LLC&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ADVANCED CONSTRUCTION TECHNOLOGY SERVICES - QATAR&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Services Lebanon&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Service Company KSA LLC&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Banhill Nigeria Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Bateman Watling &amp; Associates (Pty) Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;BATEMAN WATLING &amp; ASSOCIATES&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Cadoc SARL&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;MERCURY PAS LIMITED&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ONLINE BILGI HIZMETLERI EGITIM VE YAYINCILIK SANAYI TICARET AS&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Teldan Information Systems Ltd&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Alex Centre for Multimedia &amp; Libraries&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Logiser Sa&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+	OpportunityLineItem.FirstYear__c.CONVERT), 
+
+	CASE(Opportunity.BillToClientName__c, 
+		&quot;NATIONAL CONSULTING BUREAU&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;National Consulting Bureau&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES (TWOS)&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES LLC&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0,
+		&quot;ADVANCED CONSTRUCTION TECHNOLOGY SERVICES - QATAR&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Services Lebanon&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ADVANCED CONSTRUCTION TECHNOLOGY SERVICES (ACTS)&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Service Company KSA LLC&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Banhill Nigeria Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Bateman Watling &amp; Associates (Pty) Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;BATEMAN WATLING &amp; ASSOCIATES&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Cadoc SARL&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;MERCURY PAS LIMITED&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;MERCURY PAS LTD&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ONLINE BILGI HIZMETLERI EGITIM VE YAYINCILIK SANAYI TICARET AS&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Teldan Information Systems Ltd&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Alex Centre for Multimedia &amp; Libraries&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ALEX CENTER FOR MULTIMEDIA &amp; LIBRARIES&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;LOGISER SA&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+	OpportunityLineItem.FirstYear__c.CONVERT)))</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>First Year value Net/ADH</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1-Open,1-Sales Qualified,2-Need Confirmed,3-Proposal Development,3-Renewal Pending,4.1-Proposal/Quote Delivery,4.2-Verbal Commit,5-Contracting,5-Renewal Contracting,7-Revisit-No Decision,6W-Closed Won,6W-Renewal Won,6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Probability__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>80.0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>PD: Parts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Product Design/Deposit Account</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>OpportunityLineItem.ContractStartDate__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <aggregateType>Sum</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_NAME</field>
+        <sortByName>PROBABILITY</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Opportunitynum__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Forecast Total NewBiz+Ren</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductOpportunity@Opportunity.AdditionalOpportunityFields__c</reportType>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

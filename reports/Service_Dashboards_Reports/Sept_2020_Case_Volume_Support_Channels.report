@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_26271986</developerName>
+        <masterLabel>Case Origin</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ORIGIN</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <value>Email</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_69093434</developerName>
+        <masterLabel>Case Origin / Groups</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ORIGIN</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: support@markitserv.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email: support@ihsmarkit.com</sourceValue>
+            </sourceValues>
+            <value>Email</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Phone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VM</sourceValue>
+            </sourceValues>
+            <value>Phone</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Web</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web to Case</sourceValue>
+            </sourceValues>
+            <value>Web to Case</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Web Chat</sourceValue>
+            </sourceValues>
+            <value>Webchat</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Self Service</sourceValue>
+            </sourceValues>
+            <value>Self Service</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Quick Action</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Internal</sourceValue>
+            </sourceValues>
+            <value>Internal</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Account</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Case</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contract</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fax</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lead</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mail</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marketing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Service Now</sourceValue>
+            </sourceValues>
+            <value>Others</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_63675266</developerName>
+        <masterLabel>Group / Case Origin</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ORIGIN</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Phone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>VM</sourceValue>
+            </sourceValues>
+            <value>Phone</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Web Chat</sourceValue>
+            </sourceValues>
+            <value>Webchat</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Self Service</sourceValue>
+            </sourceValues>
+            <value>Self Service</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Web</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Web to Case</sourceValue>
+            </sourceValues>
+            <value>Web to Case</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Email: support@ihsmarkit.com</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mail</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Internal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Quick Action</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fax</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Account</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Case</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contract</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lead</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marketing</sourceValue>
+            </sourceValues>
+            <value>Email</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All Cases Closed by Support Channel</description>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11) AND 12 AND 13 AND 14 AND 15</booleanFilter>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PMI,Profile Builder (Equity),Profile Builder (Fixed Income),BD Advanced,BD Advanced (Derivatives),BD Advanced (Equity),BD Advanced (Fixed Income),BD Vision,Data Feed (Equity),Data Feed (Fixed Income),iConference (Equity),iConference (Fixed Income),iPlanner (Equity),iPlanner (Fixed Income),Pitch Builder (Equity),Pitch Builder (Fixed Income),Global Markets Intelligence,Beneficial Ownership,Fixed Income ID,Targeting,Investor Day,IR Roadmap,M&amp;A Analysis,Perception Studies,Proxy,Shareholder ID,BD Corporate,Activist Intelligence (Shark Repellent),BD Corporate Governance,BD IR Consultant,BuysideIQ,Events &amp; Transcripts,FactSet Excel Add-in,FactSet Workstation,Quotes &amp; News,Research &amp; Estimates,Buyside Portal,Deal Services (API) (Fixed Income),Deal Services (API) (Muni),Equity Bookbuild,Capital Markets Analytics (Equity),Daily Market Summaries (Equity),Directed Share Program,Equity Deals Database,iCompliance (Equity),Investor Profiles (Equity),iProspectus (Equity),IssueNet (Equity),Issuer View,Roadshow Access (Equity),Roadshow Access (Retail Equity),Investor Access (EQ),Investor Access (Fixed Income),Buyside Portal (Fixed Income),Fixed Income Wires,Investor Profiles (Fixed Income),iProspectus (Fixed Income),IssueBook,IssueNet,Roadshow Access (Fixed Income)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Roadshow Access (Loan),Compliance Workstation (Fixed Income),Deal Monitor (Fixed Income),Primary OM (Fixed Income),Gameday,iProspectus (Municipals),Muni Analytics,Muni Bidcomp,Muni Bookrunning,Muni Data (BRS),Muni Deal Track,Muni Electronic Order Entry,Muni Non-Managed Deals,Muni Wires,Roadshow Access (Municipals),Variable Rate Trading,Deal Monitor (Muni),Retail Bookbuild (Equity),Retail Bookbuild (Fixed Income),Retail Bookbuild (Municipals),Premium Security (CORP),Premium Security (EQ),Premium Security (FI),Premium Security (GMG Other),Premium Security (Loans),Premium Security (MU),Premium Security (PCM),Premium Security (Retail),Debtdomain - Syndication Sites,Debtdomain - Agency Sites,Debtdomain - Compliance Subscription,Debtdomain - Dataroom Sites,Debtdomain - Portfolio Valuation,Debtdomain - Secondary Sites,Debtdomain - Sentry Subscription,Debtdomain - CRM Subscription,Debtdomain - Custom Development,Debtdomain - Institutional Loan Ownership,Debtdomain - Pipeline Reporting,Managed Data Services Val,FS Valuation 157,FS Valuation 409a,iLevel Enterprise,iLevel Fusion,iLevel iVal,iLevel Private Label,iLevel ViewPoint,Managed Data Services GP,Managed Data Services LP,Qval,BoD Portal (CORP),BoD Portal (PCS),LP Portal (PCM),LP Portal (PCS)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Prism Virtual Data Room,Prism Virtual Data Room (CORP),Prism Virtual Data Room (GMG),Prism Virtual Data Room (PCM),Private Company Platform,iCompliance (2111),iCompliance (2242),iCompliance (Fixed Income),iCompliance (SMMP),Hub,Calendar-Vote,Commission Manager,Information Mosaic,Markit Corporate Actions,Auctions,Environmental Registry,MarkitSERV-FX,MarkitSERV-Business Dev,MarkitWire,DSMatch,DealHub,EGUS,Digital External,Adhesion,Real Estate,EDM Prof SVC,EDM,VistaOne (vData),VistaOne (vReporter),DeltaOne,Securities Finance-Equity,SFTR,Dividend Forecasting,RegOne (Compliance SVC),Transaction Cost Analysis,Research Signals,Market Share Analysis,PrimeOne,Analytics Prod,Analytics Prof SVC,Index Admin &amp; Calculation,Calculation Agent SVC,Indices Bonds,Indices CDS,Other Index Initiatives,SecuritisedProd Indices,Indices Loans,Notice Manager,Loan Reference Data,Markit Loan Settlement,Feeds/API,Desktop,Private Equity,CDS Pricing Data,SecuritisedProdPrice Data-US,SecuritisedProdPrice Data-ABS,Loan Pricing Data,Corp&amp;Svrgn Bonds Pricing Data,Fair Value,Parsing,Municipal Bonds Pricing Data,Metrics,Bond Reference Data,CDS Reference Data,ABCDS Reference Cashflow Data,Portfolio Valuations,Valuations Manager,DeriveXperts-DxVal,Prism,Totem,OTC Derivatives Data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>DeriveXperts-Mercure,FRTB VSII,Counterparty Manager-Core,KYC2,KYC,Counterparty Manager-Document Digitisation,Counterparty Manager-ISDA Amend,Counterparty Manager-LEI Procurement SVC,CTI Prod,CTI,CTI Consulting,Counterparty Manager-FATCA SVC Bureau,KYV,thinkFolio,thinkFolio Prof SVC,WSO-Software,Portfolio Analytics,WSO-SVC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ECR Suites,World Economic Service,ECR Country Intelligence,ECR Risk Services,Above Ground,World Markets Monitor,ECR Events,HDB Data - Financial,Foresight,ECR Macro Services,HMMS Consulting,ECR Consulting,HDB Software (Aremos,IDDS,FAME,Other),HDB Software (DataInsight),Healthcare - Life Sciences,Healthcare MSC/PP,ECR Industry Services,P&amp;P Supply Chain - Procurement,ECR Consulting Healthcare,Equipment,ECR US Regional Services,ECR Macro Economics,ECR Consulting Macro Econ,ECR Events NA,Agriculture,ECR South Africa,ECR Consulting Supply Chain,Not in SAP Product Master,Consumer Devices,Semiconductors,Security Technology,Networks &amp; Data Center,Manufacturing Technology,Healthcare Technology,Building Technology,Service Provider &amp; Platforms,Media &amp; Advertising,Transformative Technology,Displays,Shared,Energy Technology,Financial Services,Operational Excellence,Environmental Performance,Caps Universe,PCNalert,BOM Manager,Parts Data Services,Parts,Legacy Dataware Subs,Legacy Dataware Services,Legacy Dataware Maintenance,CAPS Connect,Engineering Workbench Platform,Engineering Workbench Training,Goldfire,Knowledge Collection,Engineering Workbench - KC,Product Design Services,Product Design Events,Engineering Workbench - Other,Product Design Consulting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Goldfire Services,Engineering Workbench - S&amp;S,IntraSource,Tools,US Military/DODISS,Advantage,Perinorm,Gov,Product Design Support Services,Reference Linking Service,Retail,Product Design Custom,AFNOR LOCAL,PARTsolutions,ESDU,Product Design Tools,Product Design Maintenance,EIATrack,AVDATA,EQADS (ERC),ESG Custom,Deposit Accounts,Info4 Portals,CatalogXpress,Portals,Irish CIS,Irish OHSIS,ISS,Engineering Workbench - S&amp;S UK Local,OHSIS Adverts,OHSIS,Environment,Specify,Specify-It,TDNet,Trading Standards Specialist,ESG,Product Design Services UK,CIS Advertising,CIS,Facilities Management,HFIS,Consolidated Law Registers,Engineer-it,FastrackCAD,Food and Drink,Benchmarking,Performance Benchmarking,Cost Benchmarking</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EWP Events,Crop Protection &amp; Seeds,Animal Health,Policy &amp; Regulation,Commodities &amp; Food,Biofuels,Agri Coal,DTC Agri Coal,Agri Consulting,Agri Multi-Client Studies,Agri Events,Fertilizers,Agri Gas,Crop Forecasting Consulting,Agriculture,P&amp;P Supply Chain - Procurement,Chemical Week,Market Advisory Service (MAS),Base Chemicals,World Analysis,Downstream Consulting,Chemical Consulting,Chemical Reports: Custom,OMDC Consulting,OMMD MCS,Company Strategies and Performance,Content Delivery Intl Mid,Accumap-Midstream,Chemical Events,Midstream,Global Markets,Midstream Oil &amp; Gas Data,NAPD,Chemical Information &amp; Same Day Analysis,LPG Events,US Offshore Lease Data,Context Distribution/Content,NAPD Other,DMS Midstream,EGIS Midstream,GIS Mistream,OMMD Data,Crude Oil Markets,Midstream Oil &amp; NGL,Chemicals Royalties,Chemical PP,Downstream PP,Chemical Handbooks: Speciality Chemicals,Specialty Chemicals,Chemical Reports: PEP,Technical Analytics,Chemical Technology Analytics Reports,Downstream Analytics,Chemical Cost Curve Service,Not in SAP Product Master,Coal Publications &amp; Indices,Metals &amp; Mining,Coal,Coal Events,Coal Indices,Market Daily Services,The Energy Daily,PointLogic Energy,OPIS Rack,OPIS Retail,NAVX Retail,NAVX Other,EV Recharge Locations,Fuel Prices</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Parking Availability,OPIS Spot,EWP Financial,EWP Non-Financial,EWP Trans,EWP Consulting,PCGR Services,Coal Consulting,Power &amp; Renewables,Global Gas,PCGR Consulting,PCGR Services Trans,PCGR MCS,PCGR PP,Energy Technology,Rushmore,Que$tor,Kingdom,Accumap,Petra,Optimize,FieldDirect,PowerTools,Perform,Production Engineering Services,SubPUMP,Harmony Enterprise,Engineering Training &amp; Client Services,Energy Documents,Harmony,Evolution,Piper,Validata,WellTest,Accumap-Software,Community,Training and Client Services,Upstream Consulting,Costs &amp; Technology,Company Insight,E&amp;P Terms &amp; Above Ground Risks,Plays &amp; Basins,Companies &amp; Transactions,Paid Presentations,Upstream Intelligence,Content Delivery Partner,Content Delivery Intl,Petrodata,E&amp;P Content Intl,Basin Data,Data Delivery,Logs &amp; Seismic Data Intl,Content Delivery NA,Upstream Technical Consulting,General Energy Data Services &amp; Fees,Well Data NA,LogArc / LogTech,Drilling Data NA,AccuLogs,Petra Energy Data,Seismic Surveys NA,Digital Logs NA,US Well Data,Culture Data NA,Raster Logs NA,Production Data NA,Land Data US,GIS Data NA,Data Management Services NA,GeoSyn Data,EGIS Can,Data Management Content NA,Asset Valuation,Engineering Data NA,Oil &amp; Gas Data,Environmental Data NA,Land Data Can</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Trench Data NA,Topography Data NA,Geopolitical Data NA,GeoWebWorks Can,Power &amp; Transmission Data NA,Interpreted Tops,EDM Base,Land Data,Content Partners NA,Well Log Downloader,Log Digitizing Services,LAS Tools,Plan Distribution Service,Valtus,Performance Evaluator NA,Surcharges,Well Data Intl,Data Management Content Intl,Drilling Wire NA,Energy News on Demand,Field Maps NA,Rig Data NA,eTriever,Vantage,Upstream View,DNA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Haystack,AIS Data Other,AD&amp;S Data Other,AD&amp;S Data,AD&amp;S Consulting,AD&amp;S Events/Training,AD&amp;S Subs,Not in SAP Product Master,Auto Events/Training,Auto Consulting,Auto Advisory,MHCV Advisory,Aftermarket Management,Aftersales Marketing,Commercial Account File,TIPNET,Auto Consulting DND,AutoTechInsight,Forecasting,Component Forecasting,LV Sales,LV Ptrain,MHCV,LV Production,World Markets Automotive,Auto Conferences,Auto Technology,International Marketing Report,LV Sales IMR,Dealer Network Planning,Auto Multi Channel Marketing,N America Market Reporting,Auto Other,Recall Postage,Recall,VIN Solutions,Global Trade Atlas,SeaWeb,MINT Maritime,Maritime Portal Desktop,Maritime Portal,Commodities at Sea,AIS Data,Maritime AISLive,Maritime Data Services,AIS Data (EE),Global Trade Atlas Trans,Maritime Trade,Trade Finance,Maritime Data,Maritime Distance,Maritime News,Maritime Statistics,Shipping Markets,World Register of Ships,World Shipping Encyclopedia,Maritime Other,World Trade Atlas,PIERS Data Files,iPIERS,PIERS Enterprise,PIERS,Piers Solutions,JOC Reports,Ports &amp; Harbours,Maritime &amp; Trade Events,Safety at Sea,JOC Membership,JOC.com,Maritime Fairplay,Maritime Books Trans,Ports Guide,Maritime Consulting,JOC Magazine</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Maritime Fairplay Events,Maritime Data Trans,Maritime Royalties,Martime Training,iPiers Data Files Trans,Maritime Custom</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2019 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ORIGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,Email: support@markitserv.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Delete,Spam</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Access,Billing,Data,Notifications,Product Assistance,Training,User Administration</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_63675266</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Sept 2020 Case Volume | Support Channels</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

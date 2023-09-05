@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Academic</fullName>
+        <default>false</default>
+        <label>Academic</label>
+    </customValue>
+    <customValue>
+        <fullName>Accountant</fullName>
+        <default>false</default>
+        <label>Accounting and Tax</label>
+    </customValue>
+    <customValue>
+        <fullName>Aerospace and Defense</fullName>
+        <default>false</default>
+        <label>Aerospace and Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Agriculture and Food - Other</fullName>
+        <default>false</default>
+        <label>Agriculture and Food - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Airlines/Airports</fullName>
+        <default>false</default>
+        <label>Airlines/Airports</label>
+    </customValue>
+    <customValue>
+        <fullName>Asset Management - Holding Company</fullName>
+        <default>false</default>
+        <label>Alternative Asset Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Aluminum</fullName>
+        <default>false</default>
+        <label>Aluminum</label>
+    </customValue>
+    <customValue>
+        <fullName>Asset Management</fullName>
+        <default>false</default>
+        <label>Asset Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </customValue>
+    <customValue>
+        <fullName>Bank - Central</fullName>
+        <default>false</default>
+        <label>Bank - Central</label>
+    </customValue>
+    <customValue>
+        <fullName>Bank - Development</fullName>
+        <default>false</default>
+        <label>Bank - Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomass</fullName>
+        <default>false</default>
+        <label>Biomass</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotechnology</fullName>
+        <default>false</default>
+        <label>Biotechnology</label>
+    </customValue>
+    <customValue>
+        <fullName>Carbon Agency</fullName>
+        <default>false</default>
+        <label>Carbon Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Carbon Retailer</fullName>
+        <default>false</default>
+        <label>Carbon Retailer</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemicals</fullName>
+        <default>false</default>
+        <label>Chemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>Coal</fullName>
+        <default>false</default>
+        <label>Coal</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial</fullName>
+        <default>false</default>
+        <label>Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>Communications Other</fullName>
+        <default>false</default>
+        <label>Communications Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Construction - Other</fullName>
+        <default>false</default>
+        <label>Construction - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting and Advisory</fullName>
+        <default>false</default>
+        <label>Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Electronics</fullName>
+        <default>false</default>
+        <label>Consumer Electronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer - Other</fullName>
+        <default>false</default>
+        <label>Consumer - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Services</fullName>
+        <default>false</default>
+        <label>Consumer Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Containers and Packaging</fullName>
+        <default>false</default>
+        <label>Containers and Packaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Credit Union</fullName>
+        <default>false</default>
+        <label>Credit Union</label>
+    </customValue>
+    <customValue>
+        <fullName>Direct Lender</fullName>
+        <default>false</default>
+        <label>Direct Lender</label>
+    </customValue>
+    <customValue>
+        <fullName>Diversified Mining and Metals</fullName>
+        <default>false</default>
+        <label>Diversified Mining and Metals</label>
+    </customValue>
+    <customValue>
+        <fullName>Downstream</fullName>
+        <default>false</default>
+        <label>Downstream</label>
+    </customValue>
+    <customValue>
+        <fullName>Electrical Equipment</fullName>
+        <default>false</default>
+        <label>Electrical Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Electricity Network and Grid Management</fullName>
+        <default>false</default>
+        <label>Electricity Network and Grid Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Trading</fullName>
+        <default>false</default>
+        <label>Energy Trading</label>
+    </customValue>
+    <customValue>
+        <fullName>Equipment</fullName>
+        <default>false</default>
+        <label>Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Equipment and Supplies</fullName>
+        <default>false</default>
+        <label>Equipment and Supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>Equipment Trading Companies and Distributors</fullName>
+        <default>false</default>
+        <label>Equipment Trading Companies and Distributors</label>
+    </customValue>
+    <customValue>
+        <fullName>Exchange/Clearer/Trading Venue</fullName>
+        <default>false</default>
+        <label>Exchange/Clearer/Trading Venue</label>
+    </customValue>
+    <customValue>
+        <fullName>Farming/Production Agriculture</fullName>
+        <default>false</default>
+        <label>Farming/Production Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Food/Feed/Biofuel Processing and Manufacturing</fullName>
+        <default>false</default>
+        <label>Food/Feed/Biofuel Processing and Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Food and Beverage Products</fullName>
+        <default>false</default>
+        <label>Food and Beverage Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Retail Service</fullName>
+        <default>false</default>
+        <label>Food Retail Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Freight and Logistics</fullName>
+        <default>false</default>
+        <label>Freight and Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Fund Administrator/Custodian/Trustee/Servicer</fullName>
+        <default>false</default>
+        <label>Fund Administrator/Custodian/Trustee/Servicer</label>
+    </customValue>
+    <customValue>
+        <fullName>Fund of Funds</fullName>
+        <default>false</default>
+        <label>Fund of Funds</label>
+    </customValue>
+    <customValue>
+        <fullName>Gold, Silver, Copper</fullName>
+        <default>false</default>
+        <label>Gold, Silver, Copper</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Institutions &amp; Regulators</fullName>
+        <default>false</default>
+        <label>Government and Government Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare - Other</fullName>
+        <default>false</default>
+        <label>Healthcare - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare Services</fullName>
+        <default>false</default>
+        <label>Healthcare Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Home Furnishings</fullName>
+        <default>false</default>
+        <label>Home Furnishings</label>
+    </customValue>
+    <customValue>
+        <fullName>Household</fullName>
+        <default>false</default>
+        <label>Household</label>
+    </customValue>
+    <customValue>
+        <fullName>Individuals (for personal use)</fullName>
+        <default>false</default>
+        <label>Individuals (for personal use)</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Conglomerates</fullName>
+        <default>false</default>
+        <label>Industrial Conglomerates</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Machinery</fullName>
+        <default>false</default>
+        <label>Industrial Machinery</label>
+    </customValue>
+    <customValue>
+        <fullName>Industry Associations</fullName>
+        <default>false</default>
+        <label>Industry Associations</label>
+    </customValue>
+    <customValue>
+        <fullName>Input Suppliers</fullName>
+        <default>false</default>
+        <label>Input Suppliers</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Company</fullName>
+        <default>false</default>
+        <label>Insurance Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrated Oil &amp; Gas</fullName>
+        <default>false</default>
+        <label>Integrated Energy Companies</label>
+    </customValue>
+    <customValue>
+        <fullName>International Bank</fullName>
+        <default>false</default>
+        <label>International Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>Investment Bank/Securities Firm</fullName>
+        <default>false</default>
+        <label>Investment Bank/Securities Firm</label>
+    </customValue>
+    <customValue>
+        <fullName>Investment Consultants</fullName>
+        <default>false</default>
+        <label>Investment Consultants</label>
+    </customValue>
+    <customValue>
+        <fullName>Law Firm</fullName>
+        <default>false</default>
+        <label>Legal</label>
+    </customValue>
+    <customValue>
+        <fullName>Leisure Products</fullName>
+        <default>false</default>
+        <label>Leisure Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Local/Municipal/State Authority</fullName>
+        <default>false</default>
+        <label>Local/Municipal/State Authority</label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing - Other</fullName>
+        <default>false</default>
+        <label>Manufacturing - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Maritime</fullName>
+        <default>false</default>
+        <label>Maritime</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing and Advertising</fullName>
+        <default>false</default>
+        <label>Marketing and Advertising</label>
+    </customValue>
+    <customValue>
+        <fullName>Materials</fullName>
+        <default>false</default>
+        <label>Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Media/Press/PR</fullName>
+        <default>false</default>
+        <label>Media and Entertainment</label>
+    </customValue>
+    <customValue>
+        <fullName>Midstream</fullName>
+        <default>false</default>
+        <label>Midstream</label>
+    </customValue>
+    <customValue>
+        <fullName>Mining and Metals - Other</fullName>
+        <default>false</default>
+        <label>Mining and Metals - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>National Bank</fullName>
+        <default>false</default>
+        <label>National Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>NGO</fullName>
+        <default>false</default>
+        <label>Non-Governmental Organization</label>
+    </customValue>
+    <customValue>
+        <fullName>Non - Profit</fullName>
+        <default>false</default>
+        <label>Non - Profit</label>
+    </customValue>
+    <customValue>
+        <fullName>Nuclear</fullName>
+        <default>false</default>
+        <label>Nuclear</label>
+    </customValue>
+    <customValue>
+        <fullName>Oilfield Services and Equipment</fullName>
+        <default>false</default>
+        <label>Oilfield Services and Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Precious Metals and Minerals</fullName>
+        <default>false</default>
+        <label>Other Precious Metals and Minerals</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Service Providers</fullName>
+        <default>false</default>
+        <label>Other Service Providers</label>
+    </customValue>
+    <customValue>
+        <fullName>Paper and Forest Products</fullName>
+        <default>false</default>
+        <label>Paper and Forest Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Pension Fund</fullName>
+        <default>false</default>
+        <label>Pension Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Personal Products</fullName>
+        <default>false</default>
+        <label>Personal Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceuticals</fullName>
+        <default>false</default>
+        <label>Pharmaceuticals</label>
+    </customValue>
+    <customValue>
+        <fullName>Power and Utilities - Other</fullName>
+        <default>false</default>
+        <label>Power and Utilities - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Power Producers and Traders</fullName>
+        <default>false</default>
+        <label>Power Producers and Traders</label>
+    </customValue>
+    <customValue>
+        <fullName>Professional and Business Services - Other</fullName>
+        <default>false</default>
+        <label>Professional and Business Services - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Railroad</fullName>
+        <default>false</default>
+        <label>Railroad</label>
+    </customValue>
+    <customValue>
+        <fullName>Regional Bank</fullName>
+        <default>false</default>
+        <label>Regional Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>Residential</fullName>
+        <default>false</default>
+        <label>Residential</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Self-Regulatory Organization (SRO)</fullName>
+        <default>false</default>
+        <label>Self-Regulatory Organization (SRO)</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductors</fullName>
+        <default>false</default>
+        <label>Semiconductors</label>
+    </customValue>
+    <customValue>
+        <fullName>Services</fullName>
+        <default>false</default>
+        <label>Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Solar</fullName>
+        <default>false</default>
+        <label>Solar</label>
+    </customValue>
+    <customValue>
+        <fullName>Sovereign Wealth Fund</fullName>
+        <default>false</default>
+        <label>Sovereign Wealth Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Steel</fullName>
+        <default>false</default>
+        <label>Steel</label>
+    </customValue>
+    <customValue>
+        <fullName>Supranational or National Lender/Investor</fullName>
+        <default>false</default>
+        <label>Supranational or National Lender/Investor</label>
+    </customValue>
+    <customValue>
+        <fullName>SEF</fullName>
+        <default>false</default>
+        <label>Swap Exchange Facility (SEF)</label>
+    </customValue>
+    <customValue>
+        <fullName>Technology / Solution Provider</fullName>
+        <default>false</default>
+        <label>Technology / Solution Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Telecommunication</fullName>
+        <default>false</default>
+        <label>Telecommunication</label>
+    </customValue>
+    <customValue>
+        <fullName>Textiles, Apparel and Luxury Goods</fullName>
+        <default>false</default>
+        <label>Textiles, Apparel and Luxury Goods</label>
+    </customValue>
+    <customValue>
+        <fullName>Trade/Industry Association</fullName>
+        <default>false</default>
+        <label>Trade/Industry Association</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation - Other</fullName>
+        <default>false</default>
+        <label>Transportation - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Trucking</fullName>
+        <default>false</default>
+        <label>Trucking</label>
+    </customValue>
+    <customValue>
+        <fullName>Upstream</fullName>
+        <default>false</default>
+        <label>Upstream</label>
+    </customValue>
+    <customValue>
+        <fullName>Utility</fullName>
+        <default>false</default>
+        <label>Utilities and Retailers</label>
+    </customValue>
+    <customValue>
+        <fullName>Wealth Management &amp; Family Offices</fullName>
+        <default>false</default>
+        <label>Wealth Management &amp; Family Offices</label>
+    </customValue>
+    <customValue>
+        <fullName>Wind</fullName>
+        <default>false</default>
+        <label>Wind</label>
+    </customValue>
+    <customValue>
+        <fullName>Government/Government Research Authority</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Government/Government Research Authority</label>
+    </customValue>
+    <customValue>
+        <fullName>Governmental Market/Securities Regulators</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Governmental Market/Securities Regulators</label>
+    </customValue>
+    <customValue>
+        <fullName>Hedge Fund</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Information Service Provider</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Information Service Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Company - Healthcare</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance Company - Healthcare</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Company - Life</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance Company - Life</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Company - Monoline</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance Company - Monoline</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Company - Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance Company - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Company - P&amp;C</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance Company - P&amp;C</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Company - Reinsurance</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Insurance Company - Reinsurance</label>
+    </customValue>
+    <customValue>
+        <fullName>Intermediaries</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Intermediaries</label>
+    </customValue>
+    <customValue>
+        <fullName>National Oil Company (NOC)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>National Oil Company (NOC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Equity/Venture Capital</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Private Equity/Venture Capital</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Developer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Project Developer</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Retirement Fund</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Public Retirement Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Quant</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Quant</label>
+    </customValue>
+    <customValue>
+        <fullName>Ratings Agency</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ratings Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Refiner</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Refiner</label>
+    </customValue>
+    <customValue>
+        <fullName>Registered Investment Advisor</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Registered Investment Advisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Research, Independent</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Research, Independent</label>
+    </customValue>
+    <customValue>
+        <fullName>Standards Organisation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Standards Organisation</label>
+    </customValue>
+    <customValue>
+        <fullName>Systems Integrator</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Systems Integrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Trading Company</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Trading Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Turn Key Asset Provider</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Turn Key Asset Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>US Regionals</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>US Regionals</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendor - Data</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vendor - Data</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendor - Hardware</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vendor - Hardware</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendor - Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vendor - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendor - Recruitment</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vendor - Recruitment</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendor - Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vendor - Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendor - Software</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vendor - Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendor - Technology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vendor - Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Verifier/Validator</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Verifier/Validator</label>
+    </customValue>
+    <customValue>
+        <fullName>Governmental Market/Securities Regulator</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Governmental Market/Securities Regulator</label>
+    </customValue>
+    <customValue>
+        <fullName>Foundations &amp; Endowments</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Foundations &amp; Endowments</label>
+    </customValue>
+    <customValue>
+        <fullName>ETF Issuer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ETF Issuer</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Utilities</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Energy Utilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Oil or Gas Company</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Energy Oil or Gas Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Merchants</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Energy Merchants</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Broker</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Corporate Broker</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate (Non-Financial)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Corporate (Non-Financial)</label>
+    </customValue>
+    <customValue>
+        <fullName>Commodity Producer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Commodity Producer</label>
+    </customValue>
+    <customValue>
+        <fullName>Clearing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Clearing</label>
+    </customValue>
+    <customValue>
+        <fullName>Alias Account</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Alias Account</label>
+    </customValue>
+    <customValue>
+        <fullName>Central Bank/Bank Supervisor</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Central Bank/Bank Supervisor</label>
+    </customValue>
+    <masterLabel>Institution Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

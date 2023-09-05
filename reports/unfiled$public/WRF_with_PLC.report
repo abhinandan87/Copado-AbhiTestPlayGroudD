@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>WorkRequestForm__c$Name</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.PLCJobs__r$Name</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.PLCJobs__r.JobTask__r$Name</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.PLCJobs__r$NegotiatedDate__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>WorkRequestForm__c$PrimarySalesContact__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>rusty nichols</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>WRF with PLC</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>WRFwithPLCJobswithJobTasks__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>WorkRequestForm__c$ApprovalDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

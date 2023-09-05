@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_187823</developerName>
+        <masterLabel>NA-TEAMS</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <value>SAM</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_68923058</developerName>
+        <masterLabel>TEAM</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <value>SAM</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_28050001</developerName>
+        <masterLabel>TEAMS</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amy Fuller-Riley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Simmons</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tiffany Aspinall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Bruce</sourceValue>
+            </sourceValues>
+            <value>SAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jeff Benton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steven McKenzie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Travis Hagler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Derek Gonsuron</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James McCarthy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christina Allen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Hernandez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robin Fernandez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jim Conway</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Marshall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nino Pepper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nail Christian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nelson Armstrong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jay Wininger</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandon DeMarsico</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andy Quintero</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Benjamin Rattner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kris McKnight</sourceValue>
+            </sourceValues>
+            <value>SOUTHERN</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Leisha Archie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel Heuston</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathy Maher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Blake</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandon Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nancy Strabala</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Van Nest</sourceValue>
+            </sourceValues>
+            <value>NOTHERN</value>
+        </values>
+        <values>
+            <value>TECHNICAL</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Diane Braaten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gina Gurung</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Julie Harper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oliva Unarce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sheila Whitten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eric Hards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Arena</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Caroline Wilson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aaron Gardner</sourceValue>
+            </sourceValues>
+            <value>CANADIAN</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TOTAL_PRICE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TOTAL_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Product2.ProfitCenterCode__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ProfitCenters__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SubBusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.LicenseNumber__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.LicenseType__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>QUANTITY</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>NA SALES - LEGACY HARMONY</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 AND 7) AND 8 AND 9</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.ContractStartDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2019</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>3-Renewal Pending,5-Renewal Contracting,6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder,6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityCountry__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>united states,canada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Existing,New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.ProfitCenterCode__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>119,121,128,133,142</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>harmony</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>harmony enterprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Existing,New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_28050001</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NA SALES - LEGACY HARMONY</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity.Opportunitynum__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

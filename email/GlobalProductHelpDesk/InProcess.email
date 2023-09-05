@@ -1,0 +1,29 @@
+Dear {!Contact.FirstName},
+
+Thank you for contacting the IHS Automotive Global Product Help Desk.
+
+We are writing to advise you that Case number {!Case.CaseNumber} is still in the process of being investigated and we will provide a resolution as soon as possible.
+
+
+Should you have any further questions, please do not hesitate to contact us again, quoting Case # {!Case.CaseNumber}. 
+
+Thank you for your patience.
+
+Kind regards, 
+
+{!User.FirstName} {!User.LastName} 
+IHS Automotive Help Desk 
+01727733800 
+Product_Helpdesk@ihs.com
+www.ihs.com
+
+
+A complete description of the Case is as follows:
+
+--------------------------------------------------------------------------
+
+{!Case.Description}
+
+--------------------------------------------------------------------------
+
+{!Case.Thread_Id}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>msf-product_management@markit.com</email>
+    <name>FM | Sec Fin | Product Management</name>
+    <queueMembers>
+        <users>
+            <user>hayley.borriello@ihsmarkit.com</user>
+            <user>jason.yang@ihsmarkit.com</user>
+            <user>neivetha.thiruchelvam@ihsmarkit.com</user>
+            <user>oliver.b.smith@ihsmarkit.com.prod</user>
+            <user>pam.menzies@markit.com.prod</user>
+            <user>pierre.khemdoudi@ihsmarkit.com</user>
+            <user>willa.appleyard@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

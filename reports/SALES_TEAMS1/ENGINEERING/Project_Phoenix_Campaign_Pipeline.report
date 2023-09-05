@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_86001499</developerName>
+        <masterLabel>SAM Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OPP.OWNER_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amy Fuller-Riley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Bruce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tiffany Aspinall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Simmons</sourceValue>
+            </sourceValues>
+            <value>SAM Team</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_12433517</developerName>
+        <masterLabel>Teams</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OPP.OWNER_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amy Fuller-Riley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Bruce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tiffany Aspinall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Simmons</sourceValue>
+            </sourceValues>
+            <value>SAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jeff Benton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Derek Gonsuron</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James McCarthy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christina Allen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Hernandez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robin Fernandez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jim Conway</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Marshall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Benjamin Rattner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nino Pepper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nail Christian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nelson Armstrong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jay Wininger</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andy Quintero</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alex Blizzard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steven McKenzie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patrick Gideon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Diana Osorio</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Benjamin Day</sourceValue>
+            </sourceValues>
+            <value>Southern</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Leisha Archie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel Heuston</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathy Maher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Blake</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandon Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nancy Strabala</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Van Nest</sourceValue>
+            </sourceValues>
+            <value>Northern</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Diane Braaten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Caroline Wilson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gina Gurung</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Julie Harper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oliva Unarce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sheila Whitten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eric Hards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aaron Gardner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Arena</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bob Grier</sourceValue>
+            </sourceValues>
+            <value>Canadian</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Campaign.CampaignNumber__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>OPP.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityOwner__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>INFLUENCE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>OPP.DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>OPP.STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonCode__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonDescription__c</field>
+    </columns>
+    <columns>
+        <field>OPP.FORECAST_CATEGORY</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>Opportunity.TotalSalesPriceRollup__c.CONVERT * INFLUENCE</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Campaign Sales Value</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>(1 OR 6) AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>Campaign.CampaignNumber__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PC022920,PC022919,PC022917,PC022918</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>TEST</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MODEL.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>campaign influence</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ContractStartDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2021</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPP.CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPP.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>PC022920,PC022919,PC022917,PC022918</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>OPP.LAST_UPDATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.OpportunityRegion__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Project Phoenix Campaigns Pipeline</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomizableCampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>INFLUENCE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+</Report>

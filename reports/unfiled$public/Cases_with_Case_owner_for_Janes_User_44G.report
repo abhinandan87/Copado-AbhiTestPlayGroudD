@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Freddy Martin,Joao Gomes,Joanne Singhavara,Anastasia Divnenko,Jack Borthwick,Louis Lee,Seth Drewry,Beau Gailey,Joshua Halbert,Bill Edgar,Joshua Wales,Gregory Goodell,Michelle Judd,Ammar Sakran,Paul How,Eileen Tan,Simon Pollack,Anthony Moeskops,Eric Feddal,John O&apos;Halloran,Justin Speight,Sebastian Kidson,Stacy Lick,Andre Pascal Forkert,Kal Vaughan,Diane Janeway,Rakesh Paul,Lisa Williams,Rashika Anand,Dae Yeon Bae,Thomas Gerard,Jake Ramsay,Bryan Pearsall,Inigo Guevara Moyano,Edward Allen,Sixte Jallot,Mike Knight,James Lucas,Andreea Iurniuc,Hannah Brockwell,Anna Gorbaciene,Giorgio Massa,Frank Clark III,Dejan Dokmanovic,Azneil Luqman,Terry Pattar,Michele Capeleto,Kavya Puttamadaiah,Tim Pippard,Alex Hazell,Xenia Sapanidi,Mark Wilson,Kimberley Flanagan,Ayaka Ishikura,Alana Harrison,Doug Swiggart,Douglas Dixon,Delwyn Salter,Carly Litchfield,Christie Thornton,Harry Kemsley,Darcy Maynard,Neil Dempsey,Mike McGrath,Kavya Kukkur Puttamadaiah,Drucie De Vries,Blake Bartlett,Robert Sitch,James Dickey,Ali Siali,Richard West,Chad Peltier,Anu Rajan,Richard Evans,Jake Abel,Erwan deCherisey,Fatima Germanwala,kyle mcgroarty,Paul Bjernklo,James Baker</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Cases with Case owner for Janes User</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

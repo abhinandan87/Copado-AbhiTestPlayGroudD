@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT</field>
+    </columns>
+    <columns>
+        <field>ALIAS</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Team Pricing Closed Cases - requested by Faisal</description>
+    <filter>
+        <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5 OR 6))</booleanFilter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed - Canceled,Closed - Resolved,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Resolved/Completed,Live,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Praveen Hosdrug,Sushil Tomar,Alex Coronel,Jing Xu,Ben Evans,Azam Chaudhri,Chaitanya Sharma,James Frempong,Matthias Cheong,Bart Van Oploo,Divyank Dhanjal,Rahul Singh,Ajay Singh,Vijay Mogha,Shivam Yadav,Saloni Bhatia,Sourabh Chugh,Ammar Salloum,Vihar Shah,Jitendra Prasad Thakur,Sadrul Islam,Ankit Khatri,Naveel Ahmed,Udit Sharma2,Prabhat Rawat,Nitin Jha,Raghu Sudershan Vedula,Rajiv Tripathi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Reetika Mehta,Silky Natani,Anthony Portannese,Krishna Shetty,Marc Bertucci,Michael Skorcynski,Christopher Yook,Georgia Slater,Gurpreet Randhawa,John Oyo,Michael Osborne,John David Yearwood,Bharat Parameswaran,Rory McSwiggan,Paras Gupta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Zameer Ahmad,Hanish Chhabra,Ravi Kant Jaysawal,Sahil Bhola,Atif Masood,Suraj Negi,Gaurav Garg,Chirag Jain,Huney Srivastava,Kevin Chen,Andrew Jacobson,Dimas Pridady,Edward Lee,Gary Neumann,Jan Hansen,Josh Ippolito,Tozar Gandhi,Adrienne Cerniglia,Catherine Ng,Christopher Taddoni,Valerie Yuen,Michael Mahoney,Thomas Marecki,Tomasz Cholewik</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Vihar Shah,Arun Rajesh,Kay Huyen,Suvidha Anjutgi,Sakshi Khandelwal,Abhishek Sarkar,Ankit Kumar,Anurag Tyagi,Damanpreet Singh,Gagan Monga,Natasha Dudeja,Rahul Kumar,Ritika Khokhar,Rohit Khanna,Sarungbam Dennis,Shashank Pandey,Snehil Srivastava,Vinay Goyal,Vinita Kumari,Vivek Jaiswal,Ketan Garg,Nausher Sukhera,Siddhant Gautam,Mohd Sameer,Rajat Bansal2,Neha Tiwari</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Vamshi Krishna Saggam,Naman Gupta,Akshay Aggarwal,Mallika Kohli,Jason Chan,Sakshi Goel,Abhinav Vaish,Colby Wallace,Akshay bajaj,Alex Collins,richie singh</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Team Pricing Closed Cases</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

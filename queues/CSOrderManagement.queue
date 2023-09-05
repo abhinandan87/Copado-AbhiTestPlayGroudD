@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>helpdeskordermanagement@ihsmarkit.com</email>
+    <name>CS | Order Management</name>
+    <queueMembers>
+        <users>
+            <user>adam.paul@ihsmarkit.com</user>
+            <user>anita.barnett@ihsmarkit.com</user>
+            <user>apryl.perry@ihsmarkit.com</user>
+            <user>barbara.grant@ihsmarkit.com</user>
+            <user>benedict.kelly@ihsmarkit.com</user>
+            <user>brijesh.gupta@ihsmarkit.com</user>
+            <user>chander.kant@ihsmarkit.com</user>
+            <user>david.stevens@ihsmarkit.com</user>
+            <user>deanna.belfrage@ihsmarkit.com</user>
+            <user>donna.sierra@ihsmarkit.com</user>
+            <user>gaurav.bhatia@ihsmarkit.com</user>
+            <user>jakub.sadowski@ihsmarkit.com</user>
+            <user>julie.venhaus@ihsmarkit.com</user>
+            <user>layna.frodine@ihsmarkit.com</user>
+            <user>mary.callahan@ihsmarkit.com</user>
+            <user>meghan.gilmore@ihsmarkit.com</user>
+            <user>nidhi.bhalla@ihsmarkit.com</user>
+            <user>piyushshanker.trivedi@ihsmarkit.com</user>
+            <user>richard.henke@ihsmarkit.com</user>
+            <user>sharon.hickman@ihsmarkit.com</user>
+            <user>stacey.medina@ihsmarkit.com</user>
+            <user>stephen.beevor@ihsmarkit.com</user>
+            <user>tim.belfrage@ihsmarkit.com</user>
+            <user>zoe.sands@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

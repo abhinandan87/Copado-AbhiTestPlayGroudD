@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>ES Global Sales Coordinators</name>
+    <queueMembers>
+        <users>
+            <user>amanda.connolly@ihsmarkit.com</user>
+            <user>armando.calderon@ihsmarkit.com</user>
+            <user>audrey.lim@ihsmarkit.com</user>
+            <user>beenar.chew@ihsmarkit.com</user>
+            <user>carol.white@ihsmarkit.com</user>
+            <user>charlotte.buckley@ihsmarkit.com</user>
+            <user>chrissy.martin@ihsmarkit.com</user>
+            <user>dorota.kruczkowska@ihsmarkit.com</user>
+            <user>kazue.tanabe@ihsmarkit.com</user>
+            <user>nina.zhu@ihsmarkit.com</user>
+            <user>simona.degueldre@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>
