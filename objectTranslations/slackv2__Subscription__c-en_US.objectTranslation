@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Channel Id --></label>
+        <name>slackv2__Channel_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel Name --></label>
+        <name>slackv2__Channel_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field --></label>
+        <name>slackv2__Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>slackv2__Object_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Id --></label>
+        <name>slackv2__Record_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Id --></label>
+        <name>slackv2__Subscription_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Type Lookup --></label>
+        <name>slackv2__Subscription_Type_Lookup__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription Type --></label>
+        <name>slackv2__Subscription_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>slackv2__User__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>slackv2__Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workspace Id --></label>
+        <name>slackv2__Workspace_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

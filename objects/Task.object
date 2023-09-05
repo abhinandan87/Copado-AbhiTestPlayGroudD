@@ -113,6 +113,13 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>LID__Tasks</fullName>
+        <fields>Subject</fields>
+        <fields>WhoId</fields>
+        <fields>WhatId</fields>
+        <label>Tasks</label>
+    </compactLayouts>
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>ActivityDate</fullName>
@@ -136,6 +143,10 @@
     </fields>
     <fields>
         <fullName>CompletedDateTime</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -193,6 +204,7 @@
     </fields>
     <fields>
         <fullName>Type</fullName>
+        <inlineHelpText>Event Type</inlineHelpText>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -328,6 +340,7 @@
     </listViews>
     <listViews>
         <fullName>TodaysTasks</fullName>
+        <booleanFilter>(1 AND 2 AND (3 or 4))</booleanFilter>
         <columns>SUBJECT</columns>
         <columns>WHO_NAME</columns>
         <columns>WHAT_NAME</columns>
@@ -351,9 +364,14 @@
         <filters>
             <field>DUE_DATE</field>
             <operation>equals</operation>
-            <value>TODAY,LAST_N_DAYS:30</value>
+            <value>TODAY</value>
         </filters>
-        <label>ENCODED:{!FilterNames.z_TodaysTasks}</label>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
     </listViews>
     <listViews>
         <fullName>UnscheduledTasks</fullName>
@@ -383,6 +401,59 @@
         </filters>
         <label>ENCODED:{!FilterNames.Task_UnscheduledTasks}</label>
     </listViews>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>RestrictTaskCreateandEditbyProfiles</fullName>
+        <active>true</active>
+        <description>SFDC1-4739 : Restrict some Profiles from Task creation and edit</description>
+        <errorConditionFormula>AND(
+OR(
+ISNEW(), 
+ISCHANGED(Subject),
+ISCHANGED(WhoId),
+ISCHANGED(CurrencyIsoCode),
+ISCHANGED(OwnerId),
+ISCHANGED(Lead__c),
+ISCHANGED(Description),
+ISCHANGED(Priority),
+ISCHANGED(Status),
+ISCHANGED(ActivityDate),
+ISCHANGED(WhatId),
+ISCHANGED(Type)
+), 
+OR(
+CONTAINS($Profile.Name, &apos;Read Only Profile&apos;),
+CONTAINS($Profile.Name, &apos;Data Governance&apos;),
+CONTAINS($Profile.Name, &apos;Sales: Product Manager&apos;),
+CONTAINS($Profile.Name, &apos;Sales: Marketing&apos;)
+),
+LEFT(WhatId, 3) == &apos;800&apos;
+)</errorConditionFormula>
+        <errorMessage>You are not authorized to create or edit Tasks.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>slackv2__Send_to_Slack</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Send to Slack</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.slackv2__Setup_Settings__c.slackv2__Namespace_Api__c}sendToSlack?recordId={!CASESAFEID (Task.Id)}&amp;objectApiName=Task</url>
+    </webLinks>
+    <webLinks>
+        <fullName>slackv2__Slack_Alerts</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Slack Alerts</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/{!$Setup.slackv2__Setup_Settings__c.slackv2__Namespace_Api__c}slackAlerts?recordId={!CASESAFEID (Task.Id)}&amp;objectApiName=Task</url>
+    </webLinks>
 </CustomObject>

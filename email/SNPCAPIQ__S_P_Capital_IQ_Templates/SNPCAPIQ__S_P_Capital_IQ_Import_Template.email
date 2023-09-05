@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title></title>
+
+	<style type="text/css">
+		ReadMsgBody { width:100%; }
+		ExternalClass { width:100%; }
+
+		body, div, p, span, strong, b, em, i, a, li, td {
+			-webkit-text-size-adjust:none;
+		}
+		body {
+			padding:0px;
+			margin:0px;
+		}
+		table {
+			border-collapse:collapse;
+			mso-table-lspace:0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		@media only screen and (max-width:600px) {
+			#wrapper {
+				width:100% !important;
+			}
+		}
+	</style>
+</head>
+
+<body bgcolor="#ffffff">
+	<table width="100%" border="0" cellspacing="0" cellpadding="20" align="left" bgcolor="#ffffff" style="border-collapse: collapse;">
+		<tr>
+			<td valign="top" align="left" bgcolor="#ffffff" style="font-family:Arial, Helvetica, sans-serif; font-size:1px; line-height:1px; color:#222222;">
+
+				<table id="wrapper" width="600" border="0" cellspacing="0" cellpadding="0" align="left" style="border-collapse: collapse;">
+					<tr>
+						<td height="3" bgcolor="#df1e30" colspan="3">
+						</td>
+					</tr>
+					<tr>
+						<td width="1" bgcolor="#e5e5e5">
+						</td>
+						<td bgcolor="#f6f7f7">
+
+
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" style="border-collapse: collapse;">
+								<!-- space -->
+								<tr>
+									<td height="5">
+									</td>
+								</tr>
+
+								<!-- header cell -->
+								<tr>
+									<td>
+										<table width="100%" border="0" cellspacing="0" cellpadding="15" style="border-collapse: collapse;">
+											<tr>
+												<td valign="top" align="left" bgcolor="#f6f7f7" style="font-size:16px; font-weight:bold; color:#df1e30;">
+S&amp;P Capital IQ
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+								<!-- space -->
+								<tr>
+									<td height="5">
+									</td>
+								</tr>
+
+								<!-- separator -->
+								<tr>
+									<td height="1" bgcolor="#d0d2d3">
+									</td>
+								</tr>
+								<tr>
+									<td height="1" bgcolor="#ffffff">
+									</td>
+								</tr>
+
+								<!-- content cell -->
+								<tr>
+									<td>
+										<table width="100%" border="0" cellspacing="0" cellpadding="15" style="border-collapse: collapse;">
+											<tr>
+												<td valign="top" align="left" bgcolor="#f6f7f7" style="font-size:12px; line-height:20px; color:#222222;">
+{!User.Name},<br/>
+The mass import of S&amp;P Capital IQ accounts has been completed. Please find the additional details in attachment(s).
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+
+
+						</td>
+						<td width="1" bgcolor="#e5e5e5">
+						</td>
+					</tr>
+					<tr>
+						<td height="1" bgcolor="#e5e5e5" colspan="3">
+						</td>
+					</tr>
+
+					<!-- footer cell -->
+					<tr>
+						<td bgcolor="#ffffff" colspan="3">
+
+							<!-- footer -->
+							<table width="100%" border="0" cellspacing="0" cellpadding="15" bgcolor="#ffffff" style="border-collapse: collapse;">
+								<tr>
+									<td valign="top" align="left" style="font-size:12px; line-height:20px; color:#666666;">
+<!-- footer text here -->
+									</td>
+								</tr>
+							</table>
+
+						</td>
+					</tr>
+				</table>
+
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

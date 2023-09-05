@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Data Delivery | Price Viewer</name>
+    <queueMembers>
+        <users>
+            <user>agnes.clarke@ihsmarkit.com</user>
+            <user>ana.campos@ihsmarkit.com</user>
+            <user>bas.hagen@ihsmarkit.com</user>
+            <user>caitlin.fortunato@markit.com.prod</user>
+            <user>chandrakant.silver@ihsmarkit.com</user>
+            <user>christian.curtis@ihsmarkit.com</user>
+            <user>hagay.cohen@ihsmarkit.com</user>
+            <user>irena.talaganova@ihsmarkit.com</user>
+            <user>ivan.kravic@ihsmarkit.com</user>
+            <user>kawing.lee@ihsmarkit.com</user>
+            <user>kit.fung@ihsmarkit.com</user>
+            <user>leon.lee@ihsmarkit.com</user>
+            <user>nyju.raju@ihsmarkit.com</user>
+            <user>onno.roep@ihsmarkit.com</user>
+            <user>pamela.poungoue@markit.com.prod</user>
+            <user>sandeep.khattar@ihsmarkit.com</user>
+            <user>shruti.solanki@markit.com.prod</user>
+            <user>ziqi.ye@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

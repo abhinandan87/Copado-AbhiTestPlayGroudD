@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>KY3P_Data_Security_Technology_Brief</masterLabel>
+    <versions>
+        <version>
+            <number>2</number>
+            <pathOnClient>KY3P Data Security  Technology Briefing_Revised 2022.pdf</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

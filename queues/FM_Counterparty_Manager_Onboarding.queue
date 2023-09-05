@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>cpm-implementation@ihsmarkit.com</email>
+    <name>FM | Counterparty Manager Onboarding</name>
+    <queueMembers>
+        <users>
+            <user>anurag.singh@ihsmarkit.com</user>
+            <user>brian.nguyen@ihsmarkit.com</user>
+            <user>carol.hernandez@ihsmarkit.com</user>
+            <user>debra.wagner@ihsmarkit.com</user>
+            <user>hemant.arya@ihsmarkit.com</user>
+            <user>irene.yen@ihsmarkit.com</user>
+            <user>jordan.kipp@ihsmarkit.com</user>
+            <user>josue.mendez@ihsmarkit.com</user>
+            <user>kanika.malik@ihsmarkit.com</user>
+            <user>kerri.willey@ihsmarkit.com</user>
+            <user>kinnan.zaloom@ihsmarkit.com</user>
+            <user>kritika.agarwal@ihsmarkit.com</user>
+            <user>nastassja.biles@ihsmarkit.com</user>
+            <user>peter.otuwehinmi@ihsmarkit.com</user>
+            <user>pranay.gupta@ihsmarkit.com</user>
+            <user>tala.arshouk@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

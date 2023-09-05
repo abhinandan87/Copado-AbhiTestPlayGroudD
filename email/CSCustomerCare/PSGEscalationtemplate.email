@@ -1,0 +1,16 @@
+Customer Care Case number is {!Case.CaseNumber} <br/><br/>
+
+Product: {!Case.ProductGroup__c}<br/>
+Case Description: {!Case.Description}<br/>
+Case Origin:  {!Case.Origin}<br/><br/>
+ 
+Email: (Insert requesting account manager/customer email address here)<br/><br/>
+ 
+Customer Contact Information:<br/>
+{!Case.Contact}<br/>
+{!Case.Account}<br/>
+{!Case.ContactMailingAddress__c}<br><br>
+
+Kind regards,<br>
+{!Case.OwnerFullName}<br>
+IHS Markit | Customer Care

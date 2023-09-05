@@ -1,0 +1,51 @@
+<template>    
+   <template if:true={conRoles}>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered"
+        aria-labelledby="element-with-table-label other-element-with-table-label">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Contact Name">Contact Name</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Role">Role</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Primary">Primary</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Phone">Phone</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Email">Email</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={conRoles} for:item="oppyCon" for:index="index">
+                <tr key={oppyCon.Id}> 
+                      <td scope="row" data-label="Contact">
+                          <div class="slds-truncate" title={oppyCon.Name} ><a href={oppyCon.comLink} target="_blank">{oppyCon.Name }</a>
+                          </div>
+                      </td>
+                      <td scope="row" data-label="Role">
+                          <div class="slds-truncate" title={oppyCon.Role} ><p>{oppyCon.Role}</p>
+                          </div>
+                      </td>
+                      <td scope="row" data-label="IsPrimary">
+                          <lightning-input type="checkbox"  checked={oppyCon.IsPrimary}  disabled="disabled"></lightning-input>
+                      </td>
+                      <td scope="row" data-label="Phone">
+                          <div class="slds-truncate" title={oppyCon.Contact.Phone} ><p>{oppyCon.Contact.Phone}</p>
+                          </div>
+                      </td>
+                      <td scope="row" data-label="Email">
+                          <div class="slds-truncate" title={oppyCon.Contact.Email}><p>{oppyCon.Contact.Email}</p>
+                          </div>
+                      </td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+ </template>
+</template>

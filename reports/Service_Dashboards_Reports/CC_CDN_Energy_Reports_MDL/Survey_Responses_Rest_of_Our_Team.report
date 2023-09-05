@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SurveyResponse__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.CaseProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.Contact__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.ResponseDate__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SurveyResponse__c.CESScore__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.CaseOwner__c</field>
+    </columns>
+    <columns>
+        <field>SurveyResponse__c.Case__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Survey Responses - All Time</description>
+    <filter>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>simon davies,tracy brenner,muhammad atif,aleksandr antonov,jose inciarte,ali awada,ehsan motamed</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Survey Responses - Rest of Our Team</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>SurveyResponse__c.ResponseDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SurveyResponse__c.CaseClosedDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

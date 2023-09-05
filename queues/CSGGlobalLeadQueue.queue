@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>dl-csg-leadqueue@ihsmarkit.com</email>
+    <name>CSG_GlobalLeadQueue</name>
+    <queueMembers>
+        <users>
+            <user>aylin.tumer@ihsmarkit.com</user>
+            <user>beth.foote@ihsmarkit.com</user>
+            <user>chris.kiser@ihsmarkit.com</user>
+            <user>cristian.muresan@ihsmarkit.com</user>
+            <user>estiben.garcia@ihsmarkit.com</user>
+            <user>gang.hao@ihsmarkit.com</user>
+            <user>kavery.sharma@ihsmarkit.com</user>
+            <user>lessley.jacob@ihsmarkit.com</user>
+            <user>manish.pawar@ihsmarkit.com</user>
+            <user>mike.zyglicki@ihsmarkit.com</user>
+            <user>nishat.rezvi@ihsmarkit.com</user>
+            <user>peter.augustini@ihsmarkit.com</user>
+            <user>quintin.stevenson@ihsmarkit.com</user>
+            <user>sandhya.ns@ihsmarkit.com</user>
+            <user>silvina.melendez@ihsmarkit.com</user>
+            <user>tatyana.ustyantseva@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

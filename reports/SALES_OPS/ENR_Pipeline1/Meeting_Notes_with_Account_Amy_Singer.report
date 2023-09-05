@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Achieved__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.Info__c</field>
+    </columns>
+    <columns>
+        <field>MeetingNote__c.NextSteps__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Meeting notes for Amy Singer team</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>,Charles O&apos;Brien,Chris Kiser,Dick Tam,Javier Pastor,John Paul Minett,Lindsay Moseley,Pat Barczak,Patricia Alleyne,Patrick Lynch,Susan Brennan-Green,Brian Robak,Caroline Wilson,Diane Braaten,Dominik Rozwadowski,Gina Gurung,Julie Harper,Oliva Unarce,Sheila Whitten,Tamara Ritzel,Andrew Peloso,Elizabeth Lopez,Francesca Beaumont,Greg Willis,Kris McKnight,Mitch Luehr,Steven McKenzie,Travis Hagler,Yahya Mehdizadeh,Daniel Heuston,Derek Gonsuron,James McCarthy,Kathy Maher,Kevin Blake,Leisha Archie,Paul Hughes,Scott King,Shane Patrick,Wally Reed,0Amy Singer,0Benjamin Rattner,Brandon DeMarsico,Cathy Eschrich,CJ Chippendale,Debbie Bourgeois,Jay Wininger,John Van Nest,Nail Christian,Nancy Strabala,Nelson Armstrong,Nick Grimm,Nino Pepper,Robb Doerksen,Sabrina Ousmaal</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Meeting Notes with Account - Amy Singer</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$MeetingNote__c@MeetingNote__c.Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MeetingNote__c.When__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

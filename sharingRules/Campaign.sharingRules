@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>MarketingAdminRule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFDC1-10504: Creating a sharing rule to allow Marketing Admin users to edit any Campaign</description>
+        <label>Marketing Admin Rule</label>
+        <sharedTo>
+            <group>MarketingAdmin</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MarketingSharingRule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SFDC1-10504: Sharing rule, to allow all the Marketing role users to edit any campaign</description>
+        <label>Marketing Sharing Rule</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Marketing</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

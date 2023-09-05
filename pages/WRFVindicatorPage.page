@@ -1,0 +1,17 @@
+<apex:page showHeader="false" standardController="WorkRequestForm__c" sidebar="false">
+    <apex:includeLightning />
+    <div id="LightningComponentid" style="width=100%" />
+
+    <script>
+        $Lightning.use("c:wrfVindicatorGridApp", function () {
+            $Lightning.createComponent("c:vindicatorGrid",
+                {
+                    recordId: "{!JSENCODE(WorkRequestForm__c.Id)}",
+                },
+                "LightningComponentid",
+                function (cmp) {
+                    console.log('LWC Componenet added in VF page');
+                });
+        });
+    </script>
+</apex:page>

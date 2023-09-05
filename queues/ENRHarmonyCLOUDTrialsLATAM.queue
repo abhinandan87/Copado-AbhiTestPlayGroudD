@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>dl-gge-latam-bd@ihsmarkit.com</email>
+    <name>ENR_Harmony-CLOUDTrials_LATAM</name>
+    <queueMembers>
+        <users>
+            <user>fagner.frangeli@ihsmarkit.com</user>
+            <user>monica.brinez@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>msf-contentspecialists@markit.com</email>
+    <name>FM | MSF | Bespoke Data Requests</name>
+    <queueMembers>
+        <users>
+            <user>jason.yang@ihsmarkit.com</user>
+            <user>jonny.taylor@ihsmarkit.com</user>
+            <user>pam.menzies@markit.com.prod</user>
+            <user>teresa.knox@ihsmarkit.com.prod</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

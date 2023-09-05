@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>IHS Markit KY3P Google Assessment Referral</name>
+    <style>none</style>
+    <subject>IHS Markit KY3P Google Assessment Referral</subject>
+    <textOnly>Thank you for registering your interest in Google Cloud Platform due diligence information through KY3P® by IHS Markit.
+
+KY3P® Assessment Services offers a range of information options to our customers, including:
+
+Vendor self-attested due diligence question responses.
+KY3P® by IHS Markit assessment reports – these are structured around a blended framework of over 100 control objectives across numerous risk domains. Reports are offered in varying tiers, dependent upon the particular risk driven needs of a user, and contain data from multiple sources, including third party security providers, with observations included from a market leading audit firm.
+
+The following due diligence options are available via KY3P for Google Cloud Platform:
+
+Option What’s Covered Price (USD)
+Google Cloud Platform self-attested responses to the KY3P Due Diligence Questionnaire (DDQ)  Access to view the Google Cloud Platform responses through the KY3P platform   Free
+Express Assessment  Assessment report leveraging vendor’s publicly facing information and outside in data sources to provide a view of vendor risk.  750
+Remote Desktop Assessment  Assessment conducted by remote vendor interview, including review of vendor provided documentation, clarifications and outside in data sources to provide a view of vendor risk.  2500
+Enhanced Desktop Assessment  Assessment conducted onsite at a vendor to provide maximum coverage over due diligence requirements.
+N.B. Due to the Covid-19 pandemic onsite visits have been replaced with remote screen sharing sessions.  5500
+
+
+To request access to the DDQ or request to purchase an assessment for Google Cloud Platform, please contact Ky3psupport@ihsmarkit.com. Delivery will be made back to the referred email address, which may take up to 15 business days dependent upon the information requested.
+
+If you are interested in hearing more about the solutions KY3P can provide, we would be happy to arrange a call with our specialists.
+
+If you have any questions please reach out to us at the contact details below.
+
+KY3P Hotline US: + 1 844 210 KY3P (5937)
+KY3P UK: + 44 207 113 KY3P (5937)
+Email: ky3psupport@ihsmarkit.com.
+
+We look forward to working with you.
+
+Best Regards,
+
+KY3P Customer Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

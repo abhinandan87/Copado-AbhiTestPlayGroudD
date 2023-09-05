@@ -1,0 +1,37 @@
+.borderedTableHeader{
+    background-color: #08ac4b;
+    color: white;
+    border-radius:5px;
+    border: 2px solid #ffffff !important;
+    user-select: none; /* CSS3 (little to no support) */
+    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: none; /* Gecko (Firefox) */
+    -webkit-user-select: none; /* Webkit (Safari, Chrome) */
+    padding-top: .35em;
+    padding-bottom: .35em;
+    padding-left: 2px;
+}
+
+.borderedTableHeaderSmall{
+    background-color: #08ac4b;
+    color: white;
+    border-radius:5px;
+    border: 2px solid #ffffff !important;
+    user-select: none; /* CSS3 (little to no support) */
+    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: none; /* Gecko (Firefox) */
+    -webkit-user-select: none; /* Webkit (Safari, Chrome) */
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.borderedTableCell{
+    border: 1px dotted #6aafac !important;
+    border-radius:5px;
+    color: rgba(8, 172, 75, 0.35);
+    font-size: .75em;
+    user-select: none; /* CSS3 (little to no support) */
+    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: none; /* Gecko (Firefox) */
+    -webkit-user-select: none; /* Webkit (Safari, Chrome) */
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | The Learning Center</name>
+    <queueMembers>
+        <users>
+            <user>cheryl.adams@ihsmarkit.com</user>
+            <user>curt.jones@ihsmarkit.com</user>
+            <user>jessica.mayor@ihsmarkit.com</user>
+            <user>kirk.shore@ihsmarkit.com</user>
+            <user>louise.harvey@ihsmarkit.com</user>
+            <user>maria.van@ihsmarkit.com</user>
+            <user>michelle.turnbull@ihsmarkit.com</user>
+            <user>zubin.maliel@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

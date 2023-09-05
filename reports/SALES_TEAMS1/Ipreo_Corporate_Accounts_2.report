@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesRegion__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18) AND 19</booleanFilter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>3-Renewal Pending,5-Renewal Contracting,6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Tencent Music Entertainment,Conuma Coal Resources,GSX Techedu,Neoenergia SA,KLA-Tencor,Cotiviti,Rapid7,BGC,Vertiv,Black Swan Energy,Slack Technologies,Hill+Knowlton Strategies,Bill.com,Blade Therapeutics,MALTA FREEPORT,Exide International,IAA,Myovant Sciences,Jhuan  International Resources,Foundation Building Materials,RMS,Sunnova Energy International,Addo Communications,Portsmouth Water,Compania General de Combustibles,Brookfield Asset,Equity Watch,Aritzia,Vistra Energy,Japfa,Green Peak Innovations,Konecranes,LaSalle Logiport,McGraw-Hill Education,Johnson Controls International,Reply,FS KKR Capital,J.Jill,Dow,Konica Minolta,YETI,Koninklijke DSM,China Literature,Sharon Merrill Associates,Univar Solutions,Logitech International,S M Berger,Five Point,Rhythm Pharmaceuticals,Fastly,Korian,Loln National,Kraton,Baker Hughes,EnergyTech Investor,Northwest Hardwoods,Oasis Midstream,ENEOS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Wave Life Sciences,MongoDB,Alpha,Kyushu Railway,Huize,MinebeaMitsumi,Aptiv,L&amp;T Finance,Goodman Networks,Advanced Disposal Services,McDonald&apos;s,Techniplas,UroGen Pharma,LafargeHolcim,Lazar,Leopalace21,Miraial,Logo Yazilim Sanayi ve Ticaret,LivaNova,Clarivate Analytics,Lockheed Martin,Mitsui Chemicals,Newell Brands,Nitto Denko,Pola Orbis,Loews,Bursa Malaysia Berhad,Arcus Biosciences,MediPharm Labs,Makinson Cowell,LSR,Lundin Gold,Power  of Canada,MBS Value,Wyndham Hotels &amp; Resorts,LKQ,Marktplaats,MACOM Technology Solutions,Macy&apos;s,Alta Equipment,OGE Energy,Nexans,Canadian National Railway,Linamar,Ligand Pharmaceuticals,McKesson,Medallia,Makita,BorgWarner,Brown-Forman,CorePoint Lodging,Poseida Therapeutics,Black Stone Minerals,Chart Industries,L Brands,Brunswick,Malaysian Airline System Berhad,Marriott International</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Mirati Therapeutics,Carlsberg,Marriott Vacations Worldwide,Fenwick &amp; West,Martin Marietta Materials,Laurentian Bank of Canada,Masco,Polaris Industries,McCormick mpany orporated,Mueller Water Products,Gateway,CooTek(Cayman),Roots,BlackBerry,McEwen Mining,MCUBS MidCity Investment,Meredith,Caterpillar,Mersen,Brunswick,Nippon Kayaku,Carvana,Methode Electronics,Orbia Advance,APi,Oi,Jacobs Entertainment,Shinwa,Charah Solutions,Kyoei Steel,Canacol Energy,Chimera Investment,Blackstone Mortge Trust,Nakano Refrigerators,VICI Properties,AMTD International,Methanex,NetSTREIT Corp,Deutsche Bank Trust  Americas,WuXi AppTec,METRO,Canadian Apartment Properties,Noah,Ingersoll Rand,Cameco,Cedar Fair,Mapfre,Mani,BRP,Contura Energy,Neiman Marcus,Metsa Board,Kontoor Brands,Diversified Gas &amp; Oil,GreenTree Hospitality,Nippon Prologis,Lannett,Brown &amp; Brown</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>MSC Industrial Direct,Deutsche Pfandbriefbank Aktiengesellschaft,U.S. Xpress Enterprises,Virgin Atlantic Airways,Weidai,Lions Gate Entertainment,Boston Pizza Royalties ome Fund,New Residential Investment Corp,Asanuma,Jushi,MATTIO Communications,Nexon,Lazard,Micron Technology,Clear Channel Outdoor,ACE Consulting,Macdougall Biocommunications,Tricida,Naspers,Cactus,New Senior Investment,Celanese,Sprout Social,Arconic,Brookfield Infrastructure,Microsoft,Clermont,Coca-Cola Bottlers Japan,Bright Horizons Family Solutions,Migros Ticaret,OrganiGram,Canadian Imperial Bank Of Commerce,MBIA,Bright Scholar Education,Equitrans Midstream,PSeguro Digital,Major Drilling  International,Mitsubishi  - UBS Realty,Mitsui E&amp;S,MODEC,Optorun,CGN Energy International,Molson Coors Brewing,Mitsui-Soko  Co,MPLX,Lear,La-Z-Boy orporated,Natura,Münchener Rückversicherungs-Gesellschaft,Myar Telekom Public,Aberdeen Diversified ome and Growth Trust,Venus Medtech,Alcon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>,Vireo Health,Capstead Mortge,Nabors Industries,Blue Apron,Corporación América Airports,National Fuel Gas,CNH Industrial,Coface,Prudential Financial,Russo,Natixis,RingCentral,Crestwood Equity,Deckers Outdoor,Neenah,Spire,Morina,Conn&apos;s,Cooper Tire &amp; Rubber,Advanced Draine Systems,ABM Industries,Neoen,Public Store,Razer,Nevro Corp,News,Rent-A-Center,Canadian Natural Resources,PG&amp;E,Rinnai,Digital Realty Trust,Southwest Airlines,Nexity,SBA Communications,Corcept Therapeutics orporated,Chipotle Mexican Grill,MOL Hungarian Oil and Gas,NextEra Energy,Continental Resources,Nielsen,Alamos Gold,CenturyLink,8x8,Party City Holdco,NORMA,Molina Healthcare,Daiwa House  Investment,Daiwa Investor Relations,Royal Caribbean Cruise,Royal Dutch Shell,Corporate Office Properties Trust,Nikkiso,Nine Energy Service,The Japan Wool Textile,SCHAEFFLER,Parsley Energy,China Harmony New Energy Auto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Nippon Building Fund,CNX Resources,Primoris Services,Nippon Steel,Repligen,Nippon Suisan Kaisha,Societe de la Tour Eiffel,The Geo,COSCO Shipping Energy Transportation,NiSource,Public Service Enterprise,Canadian Pacific Railway,Daiwa Office Investment,SL Green Realty,NN,Darling Ingredients,NOMURA RESEARCH INSTITUTE,Earthstone Energy,Norfolk Southern,DAIWA SECURITIES,Norwegian Cruise Line,Daido Metal,Novartis,Solebury Trout,A. O. Smith,Novozymes,Pan American Silver,NRG Energy,Patterson Companies,PAX Global Technology,Qualcomm,Cleveland-Cliffs,NTT Data,NTT Docomo,Northern Oil and Gas,Royal Gold,Seacor,Suncor Energy,Dave &amp; Buster&apos;s Entertainment,Software,SOHO China,Patterson-UTI Energy,nVent Electric,OceanFirst Financial,Mood Media,OC Oerlikon,Occidental Petroleum,Cigna,Oceaneering International,Oesterreichische Post,Cresco Labs,Abbvie,Olympus,Element Solutions,OMRON,OMV,On Deck Capital,Ono Pharmaceutical</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Puma Biotechnology,ONTEX,Covanta,Compania de Minas Buenaventura,Onto Innovation,Rx Communications,Onxeo,Onxeo SA,The Hartford Financial Services,Pennsylvania Real Estate Investment Trust,Core-Mark,PennyMac Mortge Investment Trust,Piedmont Office Realty Trust,Orion,Orion Engineered Carbons,Coeur Mining,Moody&apos;s,Palo Alto Networks,Panasonic,Q2,PDL BioPharma,Paramount,Parsons,Sealed Air,Paypal,PBF Energy,Regis,Schlumberger,A10 Networks,Cemex,Pentair,Perrigo,Perspecta Engineering,PGT Innovations,SSR Mining,Sandstorm Gold,Ping An HealthCare and Technology,Clearway Energy,Pinnacle West Capital,Modine Manufacturing,Commercial International Bank,Pierre &amp; Vacances,Cree,RigNet,Pinterest,Sempra  Energy,Semtech,Plains All American Pipeline,Pilgrim&apos;s Pride,Citigate Dewe Rogerson,Crescendo Communications,Plastic Omnium,Portland General Electric,Powszechny Zaklad Ubezpieczen,TDK,TTEC,PPL,PQ</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Dynacor Gold Mines,PRA,Prosus,Finantec,Xebio,Discover Financial Services,Pulte,Abbott Laboratories,Vishay Precision,Stepan,QEP Resources,Quadient,Quanta Services,Alibaba Pictures,Quest Dinostics,Van Materials,Wacker Chemie,Radian,Valhi,Telefonica,Sumitomo Mitsui Trust Bank,Diamond Offshore Drilling,Monte Resources,UGI,Avangrid,Equity Commonwealth,Voltalia,Randstad,Ventas,Range Resources,Valero Energy,St Industrial,The Procter &amp; Gamble,Sumitomo Osaka Cement,Vicat,Realogy,Everi,United Natural Foods,Equity Lifestyle Properties,Vuzix,Fubon Financial,Recruit,FGL,Regal Beloit,Theoria Research Institute,Regions Financial,DiamondRock Hospitality,RENOVA,Endo International,Retail Properties of America,Alico,Alior Bank,Adeka,Universal,Universal Insurance,W. P. Carey,Rexel,Sumitomo Riko</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Thor Industries,Molecular Templates,Acorda Therapeutics,Sysco,Tidewater Midstream and Infrastructure,Ritchie Bros. Auctioneers,Strategic Education,Universal Display,W.R. Grace mpany,Waste,Verastem Oncology,Toppan Printing,Waters,AT&amp;T,Rocket Companies,Xencor,DIRTT Environmental Solutions,Roper Technologies,Andritz,FormFactor,UNUM,H&amp;R Block,Rose,Starwood Property Trust,Dundee Precious Metals,Tidewater,RPT Realty,Ryohin Keikaku,Ryosan,Safehold,Sprott,The Brink&apos;s,Sysmex,Sanrio,Titan International,FTI Consulting,Arista Networks,Sansan,Vitasoy International,FACC,Facebook,Santen Pharmaceutical,Sawai Pharmaceutical,Allegheny Technologies,Schneider Electric,Schneider Electric S.E,AES,Scorpio Tankers,Three Part Advisors,Howmet Aerospace,Air Canada,Scout24,SCSK,Argo  International,First Horizon National,Se Therapeutics,Sea,Seate Technology</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Seattle Genetics,Square Enix,The Charles Schwab,Sun Communities,Teneo,Alpha IR,Target,Empire,Sekisui House,Amarin,Fleishman Hillard,Financial PR Hong Kong,Synopsys,Sensata Technologies,ServiceNow,AerCap,TimkenSteel,Taiheiyo Cement,TLG Immobilien,Shanghai Electric,Pyxus international,First Pacific,X5 Retail,Fiskars  Abp,Shenzhen Expressway,Shibaura Machine,Shun Tak,State Street,Expeditors International of Washington,Siltronic,Tokio Marine,SINGAPORE EXCHANGE,Employers,Skyworks Solutions,Verisk Analytics,Slair Broadcast,Snap-on,NortonLifeLock,Amcor,ZOZO,Taikisha,Element Fleet,Technovator International,Tessenderlo Chemie,Tyson Foods,Shimao Property,SoftBank,CyrusOne,Soft-World International,Tronox,FleetCor Technologies,Tokyo Kiraboshi Financial,Tokyu Construction,Haemonetics,Spirit AeroSystems,Spirit Airlines,Franklin Resources</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Aeroflot Russian Airlines,United Microelectronics,Applied Industrial Technologies,Innisfree M&amp;A,Barclays Capital,Bayer,GoDaddy,Sogou,Etalon,HSBC,Hanger,Americas Gold and Silver,ASM Pacific Technology,Soitec,SolarWinds Corp,Healthcare Trust of America,XPO Logistics,House Foods,Solocal,Solocal  SA,Glaukos,Archrock Services,Zoetis,Sopra Steria,Sopra Steria  SA,Energisa,SPIE,SPIE SA,Hecla Mining Co,SINA,Vante Drilling International,Harmonic,Trupanion,WestRock,MZHCI,Genesis Crude Oil,First Financial,Gogo,Harte Gold,Granite Construction,Spirit Realty Capital,Western Digital,SRP e,SRP e SA,International Business Machines,Genesis Healthcare,ArcBest Corp,Zayo,Stanley Black &amp; Decker,Stryker,Sumitomo Densetsu,Grupo Financiero Banorte,Whitestone,Gedeon Richter,Genesis Select,InVitae Corp,JD.com,Summit Materials</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Sun Life Financial,SunPower,JCR Pharmaceuticals,Johnson &amp; Johnson,Sunrise Communications,Superior Energy Services,Avanti Communications,Legend,Yuanta Financial,Wells Fargo mpany,BioNano Genomics,Truist Financial,Superior Plus,HCI,Synchrony Financial,Synovus Financial,Horizon Global,Kimco Realty,ZEAL Network,TAISHIN FINANCIAL,Kohlberg Kravis Roberts,Grubhub,Grupo Televisa,Bilfinger,Takeda Pharmaceutical,Tanger Factory Outlet Centers,Genuine Parts,Itau Unibanco,Autobacs Seven,Hersha Hospitality Trust,Gruma,Targa Resources,Hugo Boss,Tatung,Herc,Autohome,Taylor Morrison Home,Humana,BARCLAYS BANK,TE Connectivity,In-Site Communications,TechnipFMC,Teijin,Juniper Networks,Teladoc Health,Autoliv,Intertrust,Kosmos Energy,ION Geophysical,Tele2 AB,Gregory FCA Communications,Grayling,HMS,Metro De Lima Linea 2,Genworth Financial,Telekom Austria,Teleperformance,Teleperformance SA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>BBX Capital,Investment Bridge,Investors Real Estate Trust,Tenet Healthcare,Insulet,Inte,Teradata,RenaissanceRe,Genworth MI Canada,AutoCanada,Thales,Industrial Bank of Korea,Koenig &amp; Bauer,Kawasaki Kisen Kaisha,WesBanco,Kinder Morgan,The AZEK,Zenkoku Hosho,The Bank of New York Mellon,The Boeing,The Chiba Bank,Hyatt Hotels,The Coca-Cola,Illinois Tool Works,Leju,Xoma,The Greenbrier Companies,Japan Hotel  Investment,InnerWorkings,Ares,The Hershey,The Kroger,JAFCO,Bibicoff &amp; MacInnis,EP Energy,First Capital Real Estate Investment Trust,WESCO International,e Bruxelles Lambert,Intarcia Therapeutics,The Mosaic,Extreme Networks,The New York Times,The Southern,The Timken,The Williams Companies,Thermo Fisher Scientific,Arbor Advisory,ARC Resources,KCSA Strategic Communications,T-Mobile US,KAR Auction Services,T-Mobile,TMX Finance,TOKAI,Cloudera,Kekst CNC,American Axle &amp; Manufacturing,Enav</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Tokai Tokyo Financial,Tokyu Fudosan,Awaken Advisors,TopBuild,Donnelley Financial Solutions,American Campus Communities,Toshiba,Dufry,YUM,Activision Blizzard,Esprit,Gartner,Tourmaline Oil,Ipsos,TPG Specialty Lending,GK Investor Relations,Freeport-McMoRan,Trane Technologies,Transgene,Deutsche Lufthansa,Avantor,Ping Identity,China Galaxy Securities,PPG Industries,Everbridge,Nokian Renkaat,NOMURA INVESTOR RELATIONS,NC Investment,Naturgy Energy,ADEUS Aktienregister-Service,Trilogy International,Trinseo,Dollar General,Cellnex Telecom,Factset Research Systems,First Financial Bancorp,ARMOUR Residential,SiteOne Landscape Supply,Triumph,Tsumura,Tsumura &amp;,TUI,Liberty Sirius XM,Azul Linhas Aereas Brasileiras,Veritiv,Tupperware Brands,Essential Utilities,GasLog,Voya Financial,TrueCar,Liberty Atlanta Braves,Cellectis,Vocera Communications,Sojitz  Advisors K.K.,Edelweiss Financial Services,Edenred,Anritsu,Turk Telekomunikasyon</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Turkcell Iletisim hizmetleri,IMAX,Spotify Technology,Nomura,Esperion Therapeutics,Turkiye Garanti Bankasi,Graco,Assurant,DTE Energy,Salzgitter,Liberty Oilfield Services,Yadea,Frank&apos;s International,Uber Technologies,UBS,Ubiquiti,DocuSign,FHL Banks,Bertner Advisors,Nokia,Vectrus,L3Harris Technologies,GrafTech International,Hi-Crush,Flex,Equity Residential,Bezeq The Israeli Telecommunication,Bundesrepublik Deutschland Finanzentur,Azure Power India,Valuetronics,Saudi Electricity,Industrias Unidas,American Renal Associates,Zymeworks,VMware,Ultra International Investments,Prism,Federal Farm Credit Banks Funding,EBRD,Western Alliance Ban,Unibail-Rodamco-Westfield,GlaxoSmithKline,Talos Energy,Select Energy Services,HEXO,AdvanSix,IPG Photonics,Uniper,Uniper SE,UNIQA Insurance,Vista Gold,Unisys,Omnicom,Afiniti,BrightView,UnitedHealth,Weg,Empire State Realty Trust</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Easterly Government Properties,Insttif,United Therapeutics,Bristol Myers Squibb,Zillow,Vontier Corp,QTS Realty Trust,SVB Financial,BAW,Strab,UBM Development,Matthews International,Equinox Gold,Elastic,Uniti,FS KKR Capital,Yatra Online,The Siam Commercial Bank Public,Ushio,iQIYI,V.F.,Ryerson,Mackenzie,Nordson,TJX Companies,Valaris,China Shandong Hi-Speed Financial,NeoGenomics,CBRE,Saab,Stora Enso,Valneva,Valvoline,Oak Street Health,Palantir Technologies,Elanco Animal Health orporated,Cervus Equipment,Hamilton Beach Brands,Hanesbrands,Yum! Brands,ChannelAdvisor,Varian Medical Systems,Paylocity,FNK IR,Power Integrations,VIA optronics,Veeco Instruments,Paycom Software,D.R. Horton,Addiko Bank,Veoneer,TransAlta,CMS Energy,Vericast,Rexnord Corp,Vi,Forestar,Aselsan Elektronik Sanayi ve Ticaret</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Acushnet,Garrett Motion,Hyliion,Boardwalk,Las Vegas Sands,Porr,Vilmorin &amp; Cie,Virgin Galactic,Livent,BOK Financial,Visa,Vista Outdoor,Assured Guaranty,Verano,Vivint Smart Home,Hypoport,RealPe,voestalpine,Nidec,Quantum International,Douglas Dynamics,The Equity,Atlas Copco,Serta Simmons Bedding,W&amp;T Offshore,Vornado Realty Trust,Watts Water Technologies,Wayfair,Nisshinbo,Atlantica Yield,Wendel,Emera,Fraport,Vonovia SE,Firm IR,Orla Mining,Sun Hung Kai mpany,nico-Ele Mines,Washington Real Estate Investment Trust,New Work SE,Criteria Caixa,Wheaton Precious Metals,Wheaton Precious Metals Corp,Whirlpool,Whiting Petroleum,Grape King Bio,Datto,Cathay Financial,Anaplan,Maxar Technologies,Hanover Insurance,Verbund,Essent,Snowflake,Wienerberger,CRISPR Therapeutics,Adient,Lightspeed POS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>digital solutions,advisory solutions</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Corp Clients w/ non-Corp Products 2</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>template to supply CFA usernames to VWPC</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>VWPC CFA username welcome pack</name>
+    <style>none</style>
+    <subject>CFA Welcome pack - case #{!Case.CaseNumber}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Please find below your new Audi Catalyst for Aftersales username and a link to the login page.
+
+Username:
+
+Please click here  to login.
+
+Upon first login you will be required to change the initial password and set up your personalised security questions and answers. This will allow you to reset your password in future if forgotten.
+
+All user logins are unique and Retailer/Group specific so please do not share yours with anyone else. If additional users are required for your retailer, please contact the Helpdesk for further information.
+
+Please click here  to download your Welcome Pack which will help you to quickly understand and apply this solution
+
+Your initial password will follow in a separate communication.
+
+If you have any questions, please email us at:  automotive_support@ihsmarkit.com</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

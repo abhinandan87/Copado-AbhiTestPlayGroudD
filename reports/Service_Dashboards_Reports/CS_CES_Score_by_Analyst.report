@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>SurveyResponse__c.CESScore__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>SurveyResponse__c.Response3Score__c</field>
+    </columns>
+    <currency>GBP</currency>
+    <filter>
+        <criteriaItems>
+            <column>SurveyResponse__c.CaseOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jennifer Begel,Susan Knauf,Paul Hughes,Vera Rasa,Zi Yun Lim,Tee Huang Cheah,Michael Burnett,Kevin Lim,Kent Choong,Hye-Won Choi,Haqimi Ashaari,Farah Razali,Chin Nean Chew,Kanika Garg,Lucy Bean,Janet Holmes-Boone,Mehar Banu Mohamed Salib,Kanesir Govindarajaloo,Hashi Khalid Mohamad,Najah Nadhira Binti Dorohid,Frank Lee,Michael Don</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SurveyResponse__c.CaseOwner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CS - CES Score by Analyst</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyResponse__c@SurveyResponse__c.Case__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>SurveyResponse__c.CESScore__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SurveyResponse__c.CaseClosedDate__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.MaterialCode__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Product2.BusinessLine2__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Division__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductStatus__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Markit Shipping Point Loading Group and related products (active)</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Markit Shipping Point</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.ProductStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Available for Sale</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Copy of Markit Shipping Point Loading Gr</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList@Product2.LoadingGroup__c</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to map and translate region values primarily for IHS Markit for use in their lead routing</description>
+    <fields>
+        <fullName>IHS_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the region according to IHS Markit</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>IHS Name</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Referral Region</label>
+    <pluralLabel>Referral Regions</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,74 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName,force:lightningQuickActionWithoutHeader" access="global" >
+    <aura:attribute name="programmer" type="String" />
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="pageReference" type="Object"/>
+    <aura:attribute name="loaded" type="Boolean" default="false" />
+	<aura:attribute name="sObjectName" type="String" />
+    <aura:attribute name="requestStatus" type="String" default="Approval Pending" />
+    
+    <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }       
+        .slds-modal__content{
+        overflow-y:hidden !important;
+        height:unset !important;
+        max-height:unset !important;
+        }      
+        
+        }
+    </aura:html>    
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_large">
+        <div class="slds-modal__container">
+            
+            <header class="slds-modal__header">
+                <lightning:buttonIcon size="large" iconName="utility:close" variant="border-inverse" onclick="{! c.handleCancel }" alternativeText="Close this window." class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"/>
+                <h4 class="title slds-text-heading--medium" >Assign without Approval</h4>                
+            </header>
+            <!-- MODAL BODY / INPUT FORM -->    
+            <div class="slds-modal__content slds-p-around--x-small slds-align_absolute-left slds-size_1-of-1 slds-is-relative" aura:id="modalbody" id="modalbody">
+                <form class="slds-form--stacked">
+                    <!-- All the fields for the form input -->
+                    <aura:if isTrue="{!v.sObjectName == 'ChangeLog__c'}">
+                        <lightning:recordEditForm recordId="{!v.recordId}" aura:id="editForm"
+                                              objectApiName="ChangeLog__c"     
+                                              onsuccess="{!c.handleSuccess}"
+                                              onload="{!c.handleOnLoad}">                        
+                        <lightning:messages />                      
+                        <lightning:inputField aura:id="programmerCL" fieldName="Programmer__c" value="{!v.programmer}" required="true" />
+                        <lightning:inputField aura:id="requestStatusCL" fieldName="RequestStatus__c" label="Name" value="{!v.requestStatus}" class="slds-hidden" />
+                    </lightning:recordEditForm>
+                    </aura:if>
+                    <aura:if isTrue="{!v.sObjectName == 'WorkRequestForm__c'}">
+                        <lightning:recordEditForm recordId="{!v.recordId}" aura:id="editForm"
+                                              objectApiName="WorkRequestForm__c"     
+                                              onsuccess="{!c.handleSuccess}"
+                                              onload="{!c.handleOnLoad}">                        
+                        <lightning:messages />                      
+                        <lightning:inputField aura:id="programmerWF" fieldName="ProgrammerAssigned__c" value="{!v.programmer}" required="true" />
+                        <lightning:inputField aura:id="requestStatusWF" fieldName="RequestStatus__c" label="Name" value="{!v.requestStatus}" class="slds-hidden" />
+                    </lightning:recordEditForm>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{! v.loaded }">            
+                        <lightning:spinner alternativeText="Loading" />
+                    </aura:if>               
+                </form> 
+                
+            </div>   <!-- End of Modal Content -->  
+            <!-- MODAL FOOTER -->
+            <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+                <div class="forceChangeRecordTypeFooter">
+                    <!--<ui:button class="slds-button slds-button_neutral" label="Cancel" press="{! c.cancel}" /> -->
+                    <lightning:button class="slds-m-top_small" variant="brand" type="cancel" name="cancel" label="Cancel" onclick="{!c.handleCancel}"/>
+                    <!-- <ui:button class="slds-button slds-button-brand"
+                       label="Save" press="{!c.save}"/> -->
+                    <lightning:button class="slds-m-top_small" variant="brand" type="submit" name="save" label="Save" onclick="{!c.handleOnSubmit}"/>
+                </div>
+            </div>
+        </div>
+    </section>  
+</aura:component>

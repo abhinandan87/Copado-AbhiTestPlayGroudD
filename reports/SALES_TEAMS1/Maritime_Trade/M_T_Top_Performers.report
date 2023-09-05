@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_66785211</developerName>
+        <masterLabel>Sales Managers1</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>CREATED</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Reuben Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bradley Koekemoer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Edward Marsh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Emir Osmanovic</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fedor Moisseyev</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lirak Krasniqi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Muzafar Ahmad</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oliver Cottam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sam Chamberlain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Soren Bruun</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Victoria Fitch</sourceValue>
+            </sourceValues>
+            <value>Jack Power</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cesar Morales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel Stafford</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Drogalis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kimberly Gustin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Heron</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Elena Barrios</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Richard Powers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tristan James</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jim Nagahama</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Elena Raimondi</sourceValue>
+            </sourceValues>
+            <value>Aliet Martinez</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alex Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alex (Seng Liang) Chan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carl Michael Aeria</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michelle Tan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hazelle Yeap</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joe Chuah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sofiane Djemili</sourceValue>
+            </sourceValues>
+            <value>Charlie Ng</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>David Yap</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Terence Tan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jiayeen Tan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Naresh Tegarajan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shanthy.P Pakirisamy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Terence Soo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vladimir Tikhvinskiy</sourceValue>
+            </sourceValues>
+            <value>Benjamin Ooi</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OpportunityLineItem.SalesNewPrice__c.CONVERT</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>OpportunityLineItem.ProductOwner__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesRegion__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_66785211</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.SalesNewPrice__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - General Service Account,Place Holder - IHS Markit Internal Employees,Place Holder - Sales,Place Holder - Self Registered Users Account,Place Holder - Unknown Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.BusinessLine2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Maritime and Trade</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>6L-Closed Lost,6L-Renewal Lost,6L-Forecasting Placeholder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSE_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.ProductOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jack Power,Reuben Lim,Bradley Koekemoer,Edward Marsh,Emir Osmanovic,Jack Power - A,Jack Power - D,Fedor Moisseyev,Lirak Krasniqi,Muzafar Ahmad,Oliver Cottam,Sam Chamberlain,Soren Bruun,Victoria Fitch</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.SalesNewPrice__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.InternalBusinessSegment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Research Advisory Specialty Solutions</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OpportunityLineItem.ProductOwner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>M&amp;T Top Performers - New Biz+Upticks-YTD</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2022-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-12-01</startDate>
+    </timeFrameFilter>
+</Report>

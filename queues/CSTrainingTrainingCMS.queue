@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Training |  Training CMS</name>
+    <queueMembers>
+        <users>
+            <user>alex.andrade@ihsmarkit.com</user>
+            <user>andres.martinez@ihsmarkit.com</user>
+            <user>blake.short@ihsmarkit.com</user>
+            <user>cliff.allen@ihsmarkit.com</user>
+            <user>david.wagner@ihsmarkit.com</user>
+            <user>eva-christina.peterzens@ihsmarkit.com</user>
+            <user>frankie.tse@ihsmarkit.com</user>
+            <user>john.toth@ihsmarkit.com</user>
+            <user>lana.simic@ihsmarkit.com</user>
+            <user>mary.durham@ihsmarkit.com</user>
+            <user>megan.fehn@ihsmarkit.com</user>
+            <user>sharon.shu@ihsmarkit.com.prod</user>
+            <user>travis.miller@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

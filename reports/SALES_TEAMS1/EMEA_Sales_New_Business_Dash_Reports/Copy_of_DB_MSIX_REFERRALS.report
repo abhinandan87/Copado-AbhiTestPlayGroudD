@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_35270393</developerName>
+        <masterLabel>Open Pipeline</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Open</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Renewal Pending</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <value>Open Pipeline</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6WP-Closed Won/Order Processed</sourceValue>
+            </sourceValues>
+            <value>Closed Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6L-Closed Lost</sourceValue>
+            </sourceValues>
+            <value>Closed Lost/Revisit</value>
+        </values>
+        <values>
+            <value>Invalid Creation</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_61051124</developerName>
+        <masterLabel>Other</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <value>Open Pipeline</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6WP-Closed Won/Order Processed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <value>Closed Pipeline</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6L-Closed Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>7-Revisit-No Decision</sourceValue>
+            </sourceValues>
+            <value>Lost Pipeline</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_65363693</developerName>
+        <masterLabel>Proba Sales</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>PROBABILITY</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>Lost</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+                <to>49</to>
+            </sourceValues>
+            <value>Pipeline</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>49</from>
+                <to>74</to>
+            </sourceValues>
+            <value>Best Case</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>74</from>
+                <to>99</to>
+            </sourceValues>
+            <value>commit</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>99</from>
+            </sourceValues>
+            <value>Won</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_38594439</developerName>
+        <masterLabel>Stage</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <value>Open Pipeline</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6WP-Closed Won/Order Processed</sourceValue>
+            </sourceValues>
+            <value>Closed Pipeline</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6L-Closed Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>7-Revisit-No Decision</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <value>Lost Pipeline</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Open</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Renewal Pending</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Renewal Contracting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Renewal Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Renewal Lost</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.SalesNewPrice__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.SalesLostPipe__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BusinessLine__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SalesSpecialists__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.AccountManagers__c</field>
+    </columns>
+    <columns>
+        <field>SPLIT_TYPE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>EMEA – Continental Europe AM Dashboard</description>
+    <filter>
+        <criteriaItems>
+            <column>SPLIT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account Managers</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.NewBusiness,Opportunity.Placeholder</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ReferredByContact__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunitySplit.SalesRegion__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.LostReasonCode__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Duplicate/Existing Opp</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.GlobalSegments__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Financial Services</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.ReferredByContact__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FORECAST_CATEGORY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DB KVHMSIX REFERRALS</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunitySplit</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

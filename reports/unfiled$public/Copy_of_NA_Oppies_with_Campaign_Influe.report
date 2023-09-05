@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_578018</developerName>
+        <masterLabel>TEAMS</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Opportunity$Owner.UserRole</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales:Amy Fuller–Riley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Amy Fuller–Riley Reportees</sourceValue>
+            </sourceValues>
+            <value>SAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales:Leisha Archie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Leisha Archie Reportees</sourceValue>
+            </sourceValues>
+            <value>Northern</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales:Jeff Benton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>sales:Jeff Benton Reportees</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Benjamin Rattner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Benjamin Rattner Reportees</sourceValue>
+            </sourceValues>
+            <value>Southern</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales:Diane Braaten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Diane Braaten Reportees</sourceValue>
+            </sourceValues>
+            <value>Canadian</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity$Owner.UserRole</field>
+    </columns>
+    <columns>
+        <field>Opportunity.CampaignInfluence$Campaign.CampaignNumber__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$OpportunityOwner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ProductGroup__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$TotalSalesPriceRollup__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.CampaignInfluence$Influence</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Description</field>
+    </columns>
+    <columns>
+        <field>Opportunity$LostReasonCode__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$LostReasonDescription__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ForecastCategoryName</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>Opportunity.TotalSalesPriceRollup__c.CONVERT * CampaignInfluence.Influence</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Campaign Sales Value</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.CampaignInfluence$Campaign.CampaignNumber__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>pc019692,pc019757,pc019758,pc019817,pc019818,pc019918</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Account</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.CampaignInfluence$Model.MasterLabel</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>campaign influence</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_578018</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.CampaignInfluence$Campaign</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$StageName</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of NA - Oppies with Campaign Influe</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Campaign_Influence__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$ContractStartDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

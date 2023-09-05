@@ -1,0 +1,34 @@
+Dear {!Contact.Name}, 
+
+We are writing to inform you that we have concluded our investigation into your enquiry, The resolution was as follows: 
+
+Subject:
+{!Case.Subject}
+
+Original message: 
+
+Resolution: 
+
+--------------------------------------------------------------------------
+
+{!Case.Resolution__c} 
+
+--------------------------------------------------------------------------
+
+
+Could you please review the resolution provided and confirm your acceptance of the resolution so that we can update our records. 
+
+Regards, 
+
+{!User.FirstName} {!User.LastName} 
+IHS Automotive Help Desk 
+(01727) 733 800 
+Product_Helpdesk@ihs.com 
+www.ihs.com
+
+
+--------------------------------------------------------------------------
+
+{!Case.Description}
+
+---------------------------------------------------------------------------

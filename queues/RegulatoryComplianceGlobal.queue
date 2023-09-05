@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Regulatory Compliance - Global</name>
+    <queueMembers>
+        <users>
+            <user>bryan.huynh1@ihsmarkit.com</user>
+            <user>daniel.kot@ihsmarkit.com</user>
+            <user>denise.moody@ihsmarkit.com</user>
+            <user>emily.granger@ihsmarkit.com</user>
+            <user>gus.wilson@ihsmarkit.com</user>
+            <user>janos.zsiros@ihsmarkit.com</user>
+            <user>kelli.martindale1@ihsmarkit.com</user>
+            <user>kirsty.thomson@ihsmarkit.com</user>
+            <user>maira.profitteri@ihsmarkit.com</user>
+            <user>matthew.brewer@ihsmarkit.com</user>
+            <user>michael.wall@ihsmarkit.com</user>
+            <user>stephen.king@ihsmarkit.com</user>
+            <user>tim.roach@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

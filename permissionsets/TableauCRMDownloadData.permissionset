@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-5054 Permission set to allow Data Download from Tableau Dashboards</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Tableau CRM Download Data</label>
+    <license>EinsteinAnalyticsPlusPsl</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>WaveTabularDownload</name>
+    </userPermissions>
+</PermissionSet>

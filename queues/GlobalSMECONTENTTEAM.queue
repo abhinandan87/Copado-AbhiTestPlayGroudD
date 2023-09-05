@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>Global SME CONTENT TEAM</name>
+    <queueMembers>
+        <users>
+            <user>adelene.tan@ihsmarkit.com</user>
+            <user>amanda.tan@ihsmarkit.com</user>
+            <user>brandi.rapp@ihsmarkit.com</user>
+            <user>gaspare.zambito@ihsmarkit.com</user>
+            <user>haofeng.yu@ihsmarkit.com</user>
+            <user>kamini.karunamurthy@ihsmarkit.com</user>
+            <user>kristopher.alley@ihsmarkit.com</user>
+            <user>marion.leuchtmann@ihsmarkit.com</user>
+            <user>mayumi.yoshidome@ihsmarkit.com</user>
+            <user>nada.zabaneh@ihsmarkit.com</user>
+            <user>natalie.kilkenny@ihsmarkit.com</user>
+            <user>rick.belani@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

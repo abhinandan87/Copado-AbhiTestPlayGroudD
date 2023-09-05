@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_93552620</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>CREATED</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Yahaya Abu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicole Pierson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ian Johnson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Esther Ali</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Judith Faughnan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ellen Stence</sourceValue>
+            </sourceValues>
+            <value>US</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cristina Akerman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tymon Skrzynik</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Akbar Rehan Mirza</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hasan Ahmed</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>kingdom</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Nicole Pierson,Akbar Rehan Mirza,Hasan Ahmed,Syaza Putri,Ellen Stence,Ian Johnson,Judith Faughnan,Esther Ali,Yahaya Abu,Cristina Akerman</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_93552620</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Kingdom Cases by Colleague Region</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>

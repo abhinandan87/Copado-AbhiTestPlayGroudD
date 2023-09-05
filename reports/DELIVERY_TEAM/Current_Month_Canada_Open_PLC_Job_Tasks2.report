@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_1865412</developerName>
+        <masterLabel>OEM</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>WorkRequestForm__c$AccountName__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Audi Canada Inc</sourceValue>
+            </sourceValues>
+            <value>Audi/Bentley</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Aston Martin Lagonda of North America, Inc.</sourceValue>
+            </sourceValues>
+            <value>Aston Martin</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>BMW Canada Inc</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BMW of North America, LLC</sourceValue>
+            </sourceValues>
+            <value>BMW/Mini</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>FCA Canada Inc</sourceValue>
+            </sourceValues>
+            <value>FCA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ferrari North America, Inc.</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Automobili Lamborghini America LLC</sourceValue>
+            </sourceValues>
+            <value>Ferrari/Lamborghini</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ford Motor Company of Canada, Limited</sourceValue>
+            </sourceValues>
+            <value>Ford/Lincoln</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>General Motors of Canada Company</sourceValue>
+            </sourceValues>
+            <value>GM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Harley-Davidson Canada LP</sourceValue>
+            </sourceValues>
+            <value>Harley Davidson</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Hyundai Auto Canada Corp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hyundai Capital Canada Inc</sourceValue>
+            </sourceValues>
+            <value>Hyundai</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Honda Canada Inc</sourceValue>
+            </sourceValues>
+            <value>Honda/Acura</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jaguar Land Rover Canada ULC</sourceValue>
+            </sourceValues>
+            <value>Jaguar/Land Rover</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kia Canada Inc</sourceValue>
+            </sourceValues>
+            <value>Kia</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mazda Canada Inc</sourceValue>
+            </sourceValues>
+            <value>Mazda</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mercedes-Benz Canada Inc</sourceValue>
+            </sourceValues>
+            <value>Mercedes-Benz</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mitsubishi Motor Sales of Canada, Inc</sourceValue>
+            </sourceValues>
+            <value>Mitsubishi</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Nissan Canada Inc</sourceValue>
+            </sourceValues>
+            <value>Nissan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Porsche Cars Canada, Ltd</sourceValue>
+            </sourceValues>
+            <value>Porsche</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Subaru Canada, Inc</sourceValue>
+            </sourceValues>
+            <value>Subaru</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Toyota Canada Inc</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Toyota Motor North America, Inc.</sourceValue>
+            </sourceValues>
+            <value>Toyota</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Volvo Car Canada Limited</sourceValue>
+            </sourceValues>
+            <value>Volvo</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_2993776</developerName>
+        <masterLabel>OEMs</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>WorkRequestForm__c$AccountName__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Audi Canada Inc</sourceValue>
+            </sourceValues>
+            <value>Audi</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Aston Martin Lagonda of North America, Inc.</sourceValue>
+            </sourceValues>
+            <value>Aston Martin</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>WorkRequestForm__c.PLCJobs__r$NegotiatedDate__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c.PLCJobs__r.JobTask__r$Name</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$Name</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$AccountName__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$OpportunityNumber__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$PrimarySalesContact__c</field>
+    </columns>
+    <columns>
+        <field>WorkRequestForm__c$SecondarySalesContact__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>WorkRequestForm__c.PLCJobs__r.JobTask__r$EstimatedHours__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>1</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label># Job Tasks</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r$JobCompletedDelivered__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r.JobTask__r$AssignedTo__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Alex Panetta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r$JobStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Job Cancelled,Job On Hold</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r$Team1__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Canada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkRequestForm__c.PLCJobs__r.JobTask__r$AssignedTo__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Kiwako Kawanishi,Sonja Kecman,Sameer Setia,Himanshu Sati,Siddhant Pahuja,Swechchha Agarwal</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_1865412</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>WorkRequestForm__c.PLCJobs__r.JobTask__r$AssignedTo__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>WorkRequestForm__c$JobType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Current Month Canada Open PLC Job Tasks</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>WRFwithPLCJobswithJobTasks__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>WorkRequestForm__c.PLCJobs__r$NegotiatedDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>WorkRequestForm__c.PLCJobs__r$NegotiatedDate__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

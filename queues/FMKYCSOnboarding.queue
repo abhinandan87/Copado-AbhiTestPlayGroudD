@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>in-gpsmdemeioperations@markit.com</email>
+    <name>FM | KYCS | Onboarding</name>
+    <queueMembers>
+        <users>
+            <user>aanchal.goswami@ihsmarkit.com</user>
+            <user>narendra.kumar@ihsmarkit.com</user>
+            <user>poonam.choudhary@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

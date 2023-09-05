@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contract$ContractNumber</field>
+    </columns>
+    <columns>
+        <field>Contract.Contract_Line_Items__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contract.Contract_Line_Items__r$MaterialCode__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contract$TotalContractValue2__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contract$CurrentAnnualValue__c</field>
+    </columns>
+    <columns>
+        <field>Contract$BillToCountryCodeLookup__c</field>
+    </columns>
+    <columns>
+        <field>Contract$BillToCompanySAP__c</field>
+    </columns>
+    <columns>
+        <field>Contract$ContractOwner__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>shows contracts with product line items</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>Contract$ContractStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Validated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$Account.UltimateParent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Provident Financial Services,Valley National Bancorp,Annaly Capital Management,CVB Financial,NBT Bancorp,Bftg Holding Company,Bosshard Financial Group,The RMR Group,Los Angeles Police Federal Credit Union,Cushman Wakefield,South Atlantic Bancshares,Midland Financial Co,Independent Bank Corp,United Bankshares,First Busey Corporation,LendingClub Corporation,VEREIT,Woodforest Financial Group,Middlesex Savings Bank,Midwest BankCentre,Canadian Western Bank,AMG National Corp,Primis Financial Corp,First Merchants Corporation,Atlantic Union Bankshares Corporation,Customers Bancorp,First National Bankers Bankshares,First Foundation,Level One Bancorp,Lauritzen Corporation,Forbright Bank,WSFS Financial Corporation,New York Community Bancorp,CB&amp;S Bank,First State Bancshares,Park National Corporation,Red River Bancorp,Sandy Spring Bancorp,Glacier Bancorp,Calculated Risk Analytics,Civista Bancshares,First Financial Bancorp,Independent Bank Group</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$InternalBusinessSegment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Information Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$Businessline__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Equities Info</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contract$Account.UltimateParent__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contract$Account</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contract$InternalBusinessSegment__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Top 100 Accounts (Second Half)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contracts_with_Line_Items_and_Product_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contract$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

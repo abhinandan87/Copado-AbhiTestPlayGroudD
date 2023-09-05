@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send email to users deleting implementation cases</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Delivery Deleted/Dup Implementation Cases</name>
+    <style>none</style>
+    <subject>Implementation Case - Closed-Resolved/Deleted</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

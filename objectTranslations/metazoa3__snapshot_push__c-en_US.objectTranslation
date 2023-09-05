@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Apex Tests --></label>
+        <name>metazoa3__apex_tests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apply Transforms --></label>
+        <name>metazoa3__apply_transforms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code Quality --></label>
+        <name>metazoa3__code_quality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Arrow --></label>
+        <name>metazoa3__created_arrow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Company --></label>
+        <name>metazoa3__created_company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>metazoa3__created_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Fullname --></label>
+        <name>metazoa3__created_fullname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created GMT --></label>
+        <name>metazoa3__created_gmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created GUID --></label>
+        <name>metazoa3__created_guid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Orgid --></label>
+        <name>metazoa3__created_orgid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Userid --></label>
+        <name>metazoa3__created_userid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Username --></label>
+        <name>metazoa3__created_username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deploy Managed --></label>
+        <name>metazoa3__deploy_managed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Company --></label>
+        <name>metazoa3__destination_company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Date --></label>
+        <name>metazoa3__destination_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Folder --></label>
+        <name>metazoa3__destination_folder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Fullname --></label>
+        <name>metazoa3__destination_fullname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination GUID --></label>
+        <name>metazoa3__destination_guid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Item --></label>
+        <name>metazoa3__destination_item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Orgid --></label>
+        <name>metazoa3__destination_orgid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Userid --></label>
+        <name>metazoa3__destination_userid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Username --></label>
+        <name>metazoa3__destination_username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detailed Comments --></label>
+        <name>metazoa3__detailed_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Empty Recycle --></label>
+        <name>metazoa3__empty_recycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Field One --></label>
+        <name>metazoa3__extra_field_one__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Field Two --></label>
+        <name>metazoa3__extra_field_two__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Flag One --></label>
+        <name>metazoa3__extra_flag_one__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Flag Two --></label>
+        <name>metazoa3__extra_flag_two__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ignore Warnings --></label>
+        <name>metazoa3__ignore_warnings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Create --></label>
+        <name>metazoa3__job_create__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Delete --></label>
+        <name>metazoa3__job_delete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job GUID --></label>
+        <name>metazoa3__job_guid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job History --></label>
+        <name>metazoa3__job_history__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Limits --></label>
+        <name>metazoa3__job_limits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Name --></label>
+        <name>metazoa3__job_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Quality --></label>
+        <name>metazoa3__job_quality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Reference --></label>
+        <name>metazoa3__job_reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Status --></label>
+        <name>metazoa3__job_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Tests --></label>
+        <name>metazoa3__job_tests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Transforms --></label>
+        <name>metazoa3__job_transforms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Made Changes --></label>
+        <name>metazoa3__made_changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minmax Quality --></label>
+        <name>metazoa3__minmax_quality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push Action --></label>
+        <name>metazoa3__push_action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push Results --></label>
+        <name>metazoa3__push_results__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push Type --></label>
+        <name>metazoa3__push_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quick Deploy --></label>
+        <name>metazoa3__quick_deploy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remove References --></label>
+        <name>metazoa3__remove_references__c</name>
+    </fields>
+    <fields>
+        <label><!-- Searchable Tags --></label>
+        <name>metazoa3__searchable_tags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Company --></label>
+        <name>metazoa3__source_company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Date --></label>
+        <name>metazoa3__source_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Folder --></label>
+        <name>metazoa3__source_folder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Fullname --></label>
+        <name>metazoa3__source_fullname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source GUID --></label>
+        <name>metazoa3__source_guid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Item --></label>
+        <name>metazoa3__source_item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Orgid --></label>
+        <name>metazoa3__source_orgid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Userid --></label>
+        <name>metazoa3__source_userid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Username --></label>
+        <name>metazoa3__source_username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Successful Push --></label>
+        <name>metazoa3__successful_push__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workspace Name --></label>
+        <name>metazoa3__workspace_name__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/10560</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Field for reporting purposes only.  10560 = 22 working days, with 8 hrs per working day, 60 min per hour</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent Monthly FTE</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Case.TimeSpentMinutes__c:SUM/60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Sime Spent in Hours</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Time Spent (Hours)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_50016423</developerName>
+        <masterLabel>Customer Care</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Aishna Jain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Iris Karabatos</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eri Hasumoto</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deepak Karumuthil</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samuel Khoo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Suneet Raniga</sourceValue>
+            </sourceValues>
+            <value>CC Managers</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Michael Burnett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lucy Bean</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Janet Holmes-Boone</sourceValue>
+            </sourceValues>
+            <value>CS CC AMER</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Susan Knauf</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Hughes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jennifer Begel</sourceValue>
+            </sourceValues>
+            <value>CS CC EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chin Nean Chew</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haqimi Ashaari</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kent Choong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Frank Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mehar Banu Mohamed Salib</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tee Huang Cheah</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Don</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Zi Yun Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kanesir Govindarajaloo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nur Hashi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Najah Nadhira Binti Dorohid</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kanika Garg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Farah Razali</sourceValue>
+            </sourceValues>
+            <value>CS CC APAC/INDIA</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_39885188</developerName>
+        <masterLabel>Group/Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OWNER_ROLE</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Customer Care Agent</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Customer Care Manager</sourceValue>
+            </sourceValues>
+            <value>Customer Care</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <currency>GBP</currency>
+    <description>Closed By - in time spent (FTE)</description>
+    <filter>
+        <booleanFilter>(1 AND 3) AND (2 OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Above Ground,Advantage,AFNOR LOCAL,Agriculture,AVDATA,Benchmarking,BOM Manager,CAPS Connect,Caps Universe,CatalogXpress,CIS Advertising,CIS,Consolidated Law Registers,Cost Benchmarking,Deposit Accounts,ECR Consulting Healthcare,ECR Consulting Macro Econ,ECR Consulting Supply Chain,ECR Consulting,ECR Country Intelligence,ECR Events NA,ECR Events,ECR Industry Services,ECR Macro Economics,ECR Macro Services,ECR Risk Services,ECR South Africa,ECR Suites,ECR US Regional Services,EIATrack,Energy Technology,Engineering Workbench - KC,Engineering Workbench - Other,Engineering Workbench - S&amp;S UK Local,Engineering Workbench - S&amp;S,Engineering Workbench Platform,Engineering Workbench Training,Engineer-it,Environment,Environmental Performance,EQADS (ERC),Equipment,ESDU,ESG Custom,ESG,Facilities Management,FastrackCAD,Food and Drink,Foresight,Goldfire Services,Goldfire,Gov,Haystack,HDB Data - Financial,HDB Software (Aremos,IDDS,FAME,Other),HDB Software (DataInsight),Healthcare - Life Sciences,Healthcare MSC/PP,HFIS,HMMS Consulting,Info4 Portals</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Access,Billing,Data,Notifications,Product Assistance,Training,User Administration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IntraSource,Irish CIS,Irish OHSIS,ISS,Knowledge Collection,Legacy Dataware Maintenance,Legacy Dataware Services,Legacy Dataware Subs,Not in SAP Product Master OHSIS Adverts,OHSIS,Operational Excellence,P&amp;P Supply Chain - Procurement,Parts Data Services,Parts,PARTsolutions,PCNalert,Performance Benchmarking,Perinorm,Portals,Product Design Consulting,Product Design Custom,Product Design Events,Product Design Maintenance,Product Design Services UK,Product Design Services,Product Design Support Services,Product Design Tools,Reference Linking Service,Retail,Shared,Specify,Specify-It,TDNet,Tools,Trading Standards Specialist,US Military/DODISS,World Economic Service,World Markets Monitor</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_39885188</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>CLOSED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Closed By - in time spent (FTE) - CS</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.ProductGroup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

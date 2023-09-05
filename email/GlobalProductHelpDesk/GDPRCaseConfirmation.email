@@ -1,0 +1,10 @@
+Dear {!Contact.FirstName},
+
+Thank you for contacting the IHS Automotive Help Desk. 
+
+Your query was logged under Case #{!Case.CaseNumber} 
+
+We will provide a resolution as soon as possible. Should you have any further questions, please do not hesitate to contact us again and reference Case #{!Case.CaseNumber}.
+
+Regards,
+{!Case.Thread_Id}

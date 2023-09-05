@@ -1,0 +1,4216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Delivery Options for DocGen Packages</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Loop__Agreement_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If left blank, the file name of the PDF will be used.</inlineHelpText>
+        <label>Agreement Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__AllowOutputAttachment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows the user to choose to store the Document Package based on the Attach As field.</inlineHelpText>
+        <label>Allow Document Storage</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Attach_As__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Attachment will create a Salesforce attachment; LOOP Storage will create a document in the LOOP Storage interface; Content and Content - User Selected will create a Content document in the appropriate Workspace.</inlineHelpText>
+        <label>Store As</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Attachment</fullName>
+                    <default>false</default>
+                    <label>Attachment</label>
+                </value>
+                <value>
+                    <fullName>LOOP Storage</fullName>
+                    <default>false</default>
+                    <label>LOOP Storage</label>
+                </value>
+                <value>
+                    <fullName>Box</fullName>
+                    <default>false</default>
+                    <label>Box</label>
+                </value>
+                <value>
+                    <fullName>Content</fullName>
+                    <default>false</default>
+                    <label>Content</label>
+                </value>
+                <value>
+                    <fullName>Content - User Selected</fullName>
+                    <default>false</default>
+                    <label>Content - User Selected</label>
+                </value>
+                <value>
+                    <fullName>FTP</fullName>
+                    <default>false</default>
+                    <label>FTP</label>
+                </value>
+                <value>
+                    <fullName>SFTP</fullName>
+                    <default>false</default>
+                    <label>SFTP</label>
+                </value>
+                <value>
+                    <fullName>SpringCM</fullName>
+                    <default>false</default>
+                    <label>SpringCM</label>
+                </value>
+                <value>
+                    <fullName>Veeva Vault</fullName>
+                    <default>false</default>
+                    <label>Veeva Vault</label>
+                </value>
+                <value>
+                    <fullName>Office 365</fullName>
+                    <default>false</default>
+                    <label>Office 365</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__Authoritative_Copy__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>None or Default will use the default Authoritative Copy setting specified in your DocuSign account configuration.</inlineHelpText>
+        <label>Authoritative Copy</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Default</fullName>
+                    <default>false</default>
+                    <label>Default</label>
+                </value>
+                <value>
+                    <fullName>Standard Copy</fullName>
+                    <default>false</default>
+                    <label>Standard Copy</label>
+                </value>
+                <value>
+                    <fullName>Authoritative Copy</fullName>
+                    <default>false</default>
+                    <label>Authoritative Copy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__Brand_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Brand Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__CC__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Email a Copy to</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__CI_Additional_To__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This will default the &apos;Additional To&apos; field when delivering the Document Package via email. Use the Field Tagger to use dynamic email addresses.</inlineHelpText>
+        <label>Additional To</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Loop__CI_BCC__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This will default the &apos;BCC&apos; field when delivering the Document Package via email. Use the Field Tagger to use dynamic email addresses.</inlineHelpText>
+        <label>BCC</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Loop__CI_CC__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This will default the &apos;CC&apos; field when delivering the Document Package via email. Use the Field Tagger to use dynamic email addresses.</inlineHelpText>
+        <label>CC</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Content_Workspace__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF ( OR( ISPICKVAL( Loop__Attach_As__c , &quot;Content&quot;) , ISPICKVAL( Loop__Attach_As__c , &quot;Content - User Selected&quot;) ) , IF ( Loop__WorkspaceId__c = &quot;&quot; , &quot;Personal&quot; , HYPERLINK(&quot;/&quot; &amp;  Loop__WorkspaceId__c , IF ( Loop__WorkspaceName__c = &quot;&quot; , Loop__WorkspaceId__c , Loop__WorkspaceName__c ) ) ) &amp; &quot; [&quot; &amp; HYPERLINK(&quot;/apex/loop__ddpContentWorkspace?type=workspace&amp;cioId=&quot; &amp; Id , &quot;Change&quot; , &quot;_self&quot; ) &amp; &quot;]&quot; , &quot;None&quot;)</formula>
+        <label>Content Library</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__DDP_File_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DDP File Template</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__DDP__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DocGen Package</label>
+        <referenceTo>Loop__DDP__c</referenceTo>
+        <relationshipName>Custom_Integration_Options</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Loop__Data_Mapping_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Data Mapping Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Data_Mapping_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Data Mapping Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Data_Mapping__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( Loop__Data_Mapping_Id__c ) , &quot;None&quot; ,  HYPERLINK(&quot;/&quot; &amp; Loop__Data_Mapping_Id__c ,  IF( ISBLANK( Loop__Data_Mapping_Name__c ) , &quot;Mapping&quot; ,  Loop__Data_Mapping_Name__c )  ) ) 
+&amp; &quot; [&quot; &amp; HYPERLINK(&quot;/apex/loop__ddpEdit?type=dataMapping&amp;cioId=&quot; &amp; Id , &quot;Change&quot; , &quot;_self&quot; ) &amp; &quot;]&quot;</formula>
+        <label>Data Mapping</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Decryption_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Decryption is currently only supported with CipherCloud. Contact Nintex to enable this for your organization.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Decryption is currently only supported with CipherCloud. Contact Drawloop to enable this for your organization.</inlineHelpText>
+        <label>Decryption Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Delivery_Data__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Delivery Data</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__Description_Hover__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Text entered here will be displayed when users hover over this option&apos;s info icon.</inlineHelpText>
+        <label>Help Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Disable_Wet_Sign__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This option prevents all recipients from using the Print, Sign, and Fax option during the signing process.</inlineHelpText>
+        <label>Disable Sign on Paper</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Email_Doc_Links__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>You can use Box share links in your email templates. Use the appropriate tags from the Field Tagger.</inlineHelpText>
+        <label>Use Box Links</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Email_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(Loop__Template__c=&quot;&quot;, IF( RecordType.DeveloperName = &quot;SMTPService&quot;, &quot;Use Subject and Email Text fields below or &quot;, &quot;&quot; ) &amp; HYPERLINK(&quot;/apex/loop__selectemailtemplate?cioId=&quot; &amp; Id &amp; &quot;&amp;ddpId=&quot; &amp; Loop__DDP__c, &quot;Select Email Template&quot;,&quot;_self&quot;),IF(BEGINS(Loop__Template__c,&quot;00X&quot;), HYPERLINK(&quot;/&quot; &amp; Loop__Template__c &amp; &quot;/s?id=&quot; &amp; Loop__Template__c &amp; &quot;&amp;previewMode=1&quot;, IMAGE(&quot;/img/icon/mail16.png&quot;, &quot;Preview&quot;) &amp; &quot; Preview&quot;,&quot;_blank&quot;), HYPERLINK(&quot;/&quot; &amp; Loop__DDP_File_Template__c, IMAGE(&quot;/img/icon/mail16.png&quot;, &quot;Preview&quot;) &amp; &quot; Preview&quot;,&quot;_blank&quot;)) &amp; &quot; &quot; &amp; HYPERLINK(&quot;/apex/loop__selectemailtemplate?cioId=&quot; &amp; Id &amp; &quot;&amp;ddpId=&quot; &amp; Loop__DDP__c, &quot;[Change]&quot;,&quot;_self&quot;)&amp; &quot; &quot; &amp; HYPERLINK(&quot;/apex/loop__selectemailtemplate?cioId=&quot; &amp; Id &amp; &quot;&amp;ic=None&quot;, &quot;[None]&quot;,&quot;_self&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Use a DDP File or Salesforce Email Template for email deliveries.</inlineHelpText>
+        <label>Email Template</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Enable_Revisions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Allow 1st recipient to suggest revisions</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Encrypted_Token__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Encrypted Token</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__EnforceSignerVisibility__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enforce Signer Visibility</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__FTPDomain__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The FTP domain where you wish to store the document including any subfolders (e.g. ftp.yoursite.com/folder1/folder2/). The folders can be made dynamic using the Field Tagger.</inlineHelpText>
+        <label>FTP Domain</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__FTPUserName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The user name for your FTP domain.</inlineHelpText>
+        <label>Username</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__FTP__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( OR( ISPICKVAL( Loop__Attach_As__c , &quot;FTP&quot;), ISPICKVAL( Loop__Attach_As__c , &quot;SFTP&quot;) ) ,  IF( OR( ISBLANK( Loop__FTPDomain__c ) , ISBLANK( Loop__FTPUserName__c ) ) , &quot;None&quot; , Loop__FTPUserName__c &amp; &quot; @ &quot; &amp; IF( ISPICKVAL( Loop__Attach_As__c , &quot;SFTP&quot;), &quot;s&quot;, &quot;&quot;) &amp; &quot;ftp&quot; &amp; IF( AND ( Loop__SSL__c , ISPICKVAL( Loop__Attach_As__c , &quot;FTP&quot; ) ) , &quot;s&quot; , &quot;&quot; ) &amp; &quot;://&quot; &amp; Loop__FTPDomain__c ) &amp; &quot; [&quot; &amp; HYPERLINK(&quot;/apex/loop__smtpPassword?ftp=true&amp;id=&quot; &amp; Id &amp; IF( ISPICKVAL( Loop__Attach_As__c , &quot;SFTP&quot;), &quot;&amp;sftp=true&quot;, &quot;&quot;) , &quot;Change&quot; , &quot;_self&quot; ) &amp; &quot;]&quot; , &quot;None&quot; )</formula>
+        <label>FTP</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__HTML_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if your Email Text includes HTML markup.</inlineHelpText>
+        <label>HTML Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Hosted_Signing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Host Signing for the First Signer</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Internal_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking this option will remove the contact or lead reference on the email page.</inlineHelpText>
+        <label>Internal Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Language__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>English (United States)</fullName>
+                    <default>true</default>
+                    <label>English (United States)</label>
+                </value>
+                <value>
+                    <fullName>French (France)</fullName>
+                    <default>false</default>
+                    <label>French (France)</label>
+                </value>
+                <value>
+                    <fullName>German (Germany)</fullName>
+                    <default>false</default>
+                    <label>German (Germany)</label>
+                </value>
+                <value>
+                    <fullName>Russian (Russia)</fullName>
+                    <default>false</default>
+                    <label>Russian (Russia)</label>
+                </value>
+                <value>
+                    <fullName>Italian (Italy)</fullName>
+                    <default>false</default>
+                    <label>Italian (Italy)</label>
+                </value>
+                <value>
+                    <fullName>Dutch (Netherlands)</fullName>
+                    <default>false</default>
+                    <label>Dutch (Netherlands)</label>
+                </value>
+                <value>
+                    <fullName>Finnish (Finland)</fullName>
+                    <default>false</default>
+                    <label>Finnish (Finland)</label>
+                </value>
+                <value>
+                    <fullName>Danish (Denmark)</fullName>
+                    <default>false</default>
+                    <label>Danish (Denmark)</label>
+                </value>
+                <value>
+                    <fullName>Swedish (Sweden)</fullName>
+                    <default>false</default>
+                    <label>Swedish (Sweden)</label>
+                </value>
+                <value>
+                    <fullName>Spanish (Spain)</fullName>
+                    <default>false</default>
+                    <label>Spanish (Spain)</label>
+                </value>
+                <value>
+                    <fullName>Norwegian (Norway)</fullName>
+                    <default>false</default>
+                    <label>Norwegian (Norway)</label>
+                </value>
+                <value>
+                    <fullName>Portuguese (Portugal)</fullName>
+                    <default>false</default>
+                    <label>Portuguese (Portugal)</label>
+                </value>
+                <value>
+                    <fullName>Icelandic (Iceland)</fullName>
+                    <default>false</default>
+                    <label>Icelandic (Iceland)</label>
+                </value>
+                <value>
+                    <fullName>Japanese (Japan)</fullName>
+                    <default>false</default>
+                    <label>Japanese (Japan)</label>
+                </value>
+                <value>
+                    <fullName>Chinese Simplified (China)</fullName>
+                    <default>false</default>
+                    <label>Chinese Simplified (China)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__Limit_Availability__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Limit Availability</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Non-Mass Only</fullName>
+                    <default>false</default>
+                    <label>Non-Mass Only</label>
+                </value>
+                <value>
+                    <fullName>Mass Only</fullName>
+                    <default>false</default>
+                    <label>Mass Only</label>
+                </value>
+                <value>
+                    <fullName>Hidden</fullName>
+                    <default>false</default>
+                    <label>Hidden</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__Location__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Message__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Message</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__Order__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Display Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OrgWideEmailAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>OrgWideEmailAddress</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OrgWideEmailId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Org-Wide Email Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__OrgWideEmailName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>OrgWideEmailName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Org_Wide_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( Loop__OrgWideEmailId__c ) ,
+    IF( RecordType.DeveloperName = &apos;SMTPService&apos;,
+        IF( ISBLANK( Loop__OrgWideEmailName__c ),
+            IF( ISBLANK( Loop__OrgWideEmailAddress__c ),
+                &quot;None&quot;,
+                Loop__OrgWideEmailAddress__c ) ,
+            Loop__OrgWideEmailName__c
+                &amp; &quot; (&quot;
+                &amp; IF( ISBLANK( Loop__OrgWideEmailAddress__c ),
+                    Loop__SMTPUserName__c ,
+                    Loop__OrgWideEmailAddress__c )
+                &amp; &quot;)&quot; ),
+        &quot;None&quot; ),
+    IF( ISBLANK( Loop__OrgWideEmailName__c ),
+        IF( ISBLANK( Loop__OrgWideEmailAddress__c ),
+            Loop__OrgWideEmailId__c,
+            Loop__OrgWideEmailAddress__c ),
+        IF( ISBLANK( Loop__OrgWideEmailAddress__c ),
+            Loop__OrgWideEmailName__c,
+            Loop__OrgWideEmailName__c
+                &amp; &quot; (&quot;
+                &amp; Loop__OrgWideEmailAddress__c
+                &amp; &quot;)&quot; ) ) )
+&amp; &quot; [&quot; &amp; HYPERLINK(&quot;/apex/loop__ddpEdit?type=orgwideemail&amp;cioId=&quot; &amp; Id, &quot;Change&quot; , &quot;_self&quot; ) &amp; &quot;]&quot;</formula>
+        <label>Org-Wide Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Output__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Document Output Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PDF</fullName>
+                    <default>true</default>
+                    <label>PDF</label>
+                </value>
+                <value>
+                    <fullName>Separate PDFs</fullName>
+                    <default>false</default>
+                    <label>Separate PDFs</label>
+                </value>
+                <value>
+                    <fullName>Originals</fullName>
+                    <default>false</default>
+                    <label>Originals</label>
+                </value>
+                <value>
+                    <fullName>PDF and Originals</fullName>
+                    <default>false</default>
+                    <label>PDF and Originals</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__PDF_Option__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If no option is selected, the default is Enhanced.</inlineHelpText>
+        <label>PDF Option</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Loop__Output__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Enhanced</fullName>
+                    <default>false</default>
+                    <label>Enhanced</label>
+                </value>
+                <value>
+                    <fullName>Basic</fullName>
+                    <default>false</default>
+                    <label>Basic</label>
+                </value>
+                <value>
+                    <fullName>PDF/A</fullName>
+                    <default>false</default>
+                    <label>PDF/A</label>
+                </value>
+                <value>
+                    <fullName>PDF/A Basic</fullName>
+                    <default>false</default>
+                    <label>PDF/A Basic</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>PDF</controllingFieldValue>
+                <controllingFieldValue>Separate PDFs</controllingFieldValue>
+                <controllingFieldValue>PDF and Originals</controllingFieldValue>
+                <valueName>Enhanced</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PDF</controllingFieldValue>
+                <controllingFieldValue>Separate PDFs</controllingFieldValue>
+                <controllingFieldValue>PDF and Originals</controllingFieldValue>
+                <valueName>Basic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PDF</controllingFieldValue>
+                <controllingFieldValue>Separate PDFs</controllingFieldValue>
+                <controllingFieldValue>PDF and Originals</controllingFieldValue>
+                <valueName>PDF/A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PDF</controllingFieldValue>
+                <controllingFieldValue>Separate PDFs</controllingFieldValue>
+                <controllingFieldValue>PDF and Originals</controllingFieldValue>
+                <valueName>PDF/A Basic</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__Password__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Use the Field Tagger to make this value dynamic.</inlineHelpText>
+        <label>Password</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__PasswordonPDF__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Password required to view PDF</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__PasswordtoSign__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Password required to sign</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__PostParameters__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Format the parameters as if on a query string (paramName=smplVal&amp;p2=sV2). This can be made dynamic using tags from the Field Tagger.</inlineHelpText>
+        <label>Post Parameters</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__Preview_Step_Help_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Text entered here will be displayed if there is a preview step.</inlineHelpText>
+        <label>Preview Step Help Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Queue_Folder_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Queue Folder Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Redirect_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>A URL used to redirect 3rd party processes.</inlineHelpText>
+        <label>Redirect URL</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__Remind_Recipient__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Remind Recipient to Sign</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Never</fullName>
+                    <default>false</default>
+                    <label>Never</label>
+                </value>
+                <value>
+                    <fullName>Every Day, Until Signed</fullName>
+                    <default>false</default>
+                    <label>Every Day, Until Signed</label>
+                </value>
+                <value>
+                    <fullName>Every Week, Until Signed</fullName>
+                    <default>false</default>
+                    <label>Every Week, Until Signed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__RequireOutputAttachment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Document Package file will be stored in Salesforce as an attachment, activity history, or LOOP Storage document on the originating object.</inlineHelpText>
+        <label>Require Document Storage</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__SMTPDomain__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Domain</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__SMTPUserName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>User Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__SMTP_Password__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>&quot;***** [&quot; &amp; HYPERLINK(&quot;/apex/loop__smtpPassword?id=&quot; &amp; Id, &quot;Change&quot;, &quot;_top&quot;) &amp; &quot;]&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Password</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__SSL__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If selected, the transfer will be done over SSL.</inlineHelpText>
+        <label>Secure</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__SenderSigns__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>I also need to sign this document</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Signature_Order__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Signature Order</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Recipient signs, then I sign</fullName>
+                    <default>false</default>
+                    <label>Recipient signs, then I sign</label>
+                </value>
+                <value>
+                    <fullName>I sign, then the Recipient signs</fullName>
+                    <default>false</default>
+                    <label>I sign, then the Recipient signs</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__Signature_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Signature Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>e-Signature</fullName>
+                    <default>true</default>
+                    <label>e-Signature</label>
+                </value>
+                <value>
+                    <fullName>Written Signature</fullName>
+                    <default>false</default>
+                    <label>Written Signature</label>
+                </value>
+                <value>
+                    <fullName>Print, Sign, Fax</fullName>
+                    <default>false</default>
+                    <label>Print, Sign, Fax</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__SkipPreview__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically send the Document Package to its destination (no PDF preview).</inlineHelpText>
+        <label>Auto Send</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Storage_Data__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Storage Data</label>
+        <length>10000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__Storage_Folder__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Type the folder structure for where you want to store the output. You can use the Field Tagger to dynamically determine your folders. Example: folder/sub folder/last folder</inlineHelpText>
+        <label>Storage Folder</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Storage_Location__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(
+    OR(ISPICKVAL(Loop__Attach_As__c,&quot;FTP&quot;),ISPICKVAL(Loop__Attach_As__c,&quot;SFTP&quot;)),
+    Loop__FTP__c,
+    IF(
+        OR(ISPICKVAL(Loop__Attach_As__c,&quot;Content&quot;),ISPICKVAL(Loop__Attach_As__c,&quot;Content - User Selected&quot;)),
+        Loop__Content_Workspace__c,
+        IF(
+            ISPICKVAL(Loop__Attach_As__c,&quot;Veeva Vault&quot;),
+            &quot;Vault Options [&quot; &amp; HYPERLINK(&quot;/apex/loop__ddpEdit?type=storageData&amp;cioId=&quot; &amp; Id, &quot;Change&quot;, &quot;_self&quot;) &amp; &quot;]&quot;,
+            IF(
+                NOT(ISBLANK(TEXT(Loop__Attach_As__c))),
+                IF(ISBLANK( Loop__Storage_Folder__c ), &quot;Root&quot;, Loop__Storage_Folder__c ) &amp; &quot; [&quot; &amp; HYPERLINK(&quot;/apex/loop__ddpEdit?type=storageFolder&amp;cioId=&quot; &amp; Id , &quot;Change&quot; , &quot;_self&quot; ) &amp; &quot;]&quot;,
+                &quot;&quot;
+            )
+        )
+    )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Storage Location</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__Tag_Before_Sending__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This option allows the user to add or move signatures and other signing options on the file before sending out to the recipients.</inlineHelpText>
+        <label>Signing Preview and Edit</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Email template id</description>
+        <externalId>false</externalId>
+        <label>Email Template Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__TurnTrackingOn__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If returning an original Word document, this option will turn on tracking within the file.</inlineHelpText>
+        <label>Turn Tracking On</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Letter</fullName>
+                    <default>false</default>
+                    <label>Letter</label>
+                </value>
+                <value>
+                    <fullName>Print</fullName>
+                    <default>false</default>
+                    <label>Print</label>
+                </value>
+                <value>
+                    <fullName>Postcard</fullName>
+                    <default>false</default>
+                    <label>Postcard</label>
+                </value>
+                <value>
+                    <fullName>Area Mail</fullName>
+                    <default>false</default>
+                    <label>Area Mail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loop__Wait__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If unchecked, the user does not see the processing screen while the Document Package is being generated.</inlineHelpText>
+        <label>Wait for document to process</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__WorkspaceId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>WorkspaceId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__WorkspaceName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>WorkspaceName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__dsAllowEmailCustomizations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, users will be able to change the subject and email text when running a Document Package.</inlineHelpText>
+        <label>Allow Subject and Email Changes</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__dsCustomFields__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Comma-semicolon delimited string: each field separated by a semicolon, each parameter per field separated by a comma. E.g. &quot;custmFld1Name, custmFld1Val; custmFld2Name, &lt;&lt;Account_Id&gt;&gt;&quot;. This value is dynamic, see the associated help topic.</inlineHelpText>
+        <label>Custom Envelope Fields</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__dsEmailText__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Use the Field Tagger to make this dynamic.</inlineHelpText>
+        <label>Email Text</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Loop__dsExpireAfter__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Expire signing in # days. 0 days will never expire.</inlineHelpText>
+        <label>Days till Signing Expires</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__dsExpireWarn__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Warn of expiration # days prior to expiration.</inlineHelpText>
+        <label>Warn of Expiration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__dsExposeExpirations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If selected, the user will be able to change the defaults for the expirations and reminders.</inlineHelpText>
+        <label>Allow Remind and Expire Changes</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loop__dsReminderDelay__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Send Reminder in # days. 0 days will not send a reminder.</inlineHelpText>
+        <label>Reminder Delay</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__dsReminderFrequency__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Repeat reminder every # days until complete.</inlineHelpText>
+        <label>Reminder Frequency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__dsSubject__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Use the Field Tagger to make this dynamic. Examples: &quot;Quote &lt;&lt;Opportunity_Quote_Num&gt;&gt;&quot; or &quot;&lt;&lt;Account_Name&gt;&gt; Proposal&quot;.</inlineHelpText>
+        <label>Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loop__dsTemplateId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Template Id from the DocuSign Console. When using a Template Id, the roles of the recipients in the template must match the roles of the recipients in the related list below.</inlineHelpText>
+        <label>Template Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Delivery Option</label>
+    <nameField>
+        <label>Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Delivery Options</pluralLabel>
+    <recordTypes>
+        <fullName>Loop__Attach</fullName>
+        <active>true</active>
+        <description>Allows you to run a DocGen Package to be attached to a record.</description>
+        <label>Attach</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__ContentDelivery</fullName>
+        <active>true</active>
+        <description>Create an option to route this DocGen Package to Content Delivery</description>
+        <label>Content Delivery</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Content</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__DocuSign</fullName>
+        <active>true</active>
+        <description>Create an option to route this DocGen Package to DocuSign</description>
+        <label>DocuSign</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__Document_Queue</fullName>
+        <active>true</active>
+        <description>Allows the DocGen Package to be sent to the DocGen Queue tab</description>
+        <label>DocGen Queue</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__Download</fullName>
+        <active>true</active>
+        <description>Create an option to download this DocGen Package</description>
+        <label>Download</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__EchoSign</fullName>
+        <active>true</active>
+        <description>Create an option to route this DocGen Package to Adobe Sign / Nintex Sign</description>
+        <label>Adobe Sign / Nintex Sign</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>Chinese Simplified %28China%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Danish %28Denmark%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dutch %28Netherlands%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finnish %28Finland%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>French %28France%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>German %28Germany%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Icelandic %28Iceland%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italian %28Italy%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Japanese %28Japan%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norwegian %28Norway%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portuguese %28Portugal%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Russian %28Russia%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish %28Spain%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swedish %28Sweden%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__Email</fullName>
+        <active>true</active>
+        <description>Create a Delivery Option to route the DocGen Package via email.</description>
+        <label>Email</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__HTTP_Service</fullName>
+        <active>true</active>
+        <description>Create an option to route this DocGen Package to any HTTP Service</description>
+        <label>HTTP Service</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__LOOP</fullName>
+        <active>false</active>
+        <description>Allows the DocGen Package to be sent to the LOOP tab</description>
+        <label>LOOP</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__Lob</fullName>
+        <active>true</active>
+        <description>Create an option to route this DocGen Package to Lob</description>
+        <label>Lob (Deprecated)</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__NWC_External_Start</fullName>
+        <active>true</active>
+        <description>Create an option to route this DocGen Package to a Nintex Workflow Cloud External Start workflow</description>
+        <label>Start Nintex Workflow</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__SMTPService</fullName>
+        <active>true</active>
+        <description>Create an option to automatically email this DocGen Package through a 3rd party email account</description>
+        <label>SMTP Service</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__Sertifi</fullName>
+        <active>true</active>
+        <description>Create an option to route this DocGen Package to Sertifi</description>
+        <label>Sertifi</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>Chinese Simplified %28China%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Danish %28Denmark%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dutch %28Netherlands%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Finnish %28Finland%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>French %28France%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>German %28Germany%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Icelandic %28Iceland%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italian %28Italy%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Japanese %28Japan%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norwegian %28Norway%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portuguese %28Portugal%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Russian %28Russia%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish %28Spain%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swedish %28Sweden%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print%2C Sign%2C Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__SignNow</fullName>
+        <active>true</active>
+        <description>Create an option to route this DocGen Package to SignNow</description>
+        <label>SignNow</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>Chinese Simplified %28China%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Danish %28Denmark%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dutch %28Netherlands%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Finnish %28Finland%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>French %28France%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>German %28Germany%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Icelandic %28Iceland%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italian %28Italy%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Japanese %28Japan%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norwegian %28Norway%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portuguese %28Portugal%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Russian %28Russia%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish %28Spain%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swedish %28Sweden%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>PDF</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print%2C Sign%2C Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Loop__e_SignLive</fullName>
+        <active>true</active>
+        <description>Create an option to route this DocGen Package to e-SignLive</description>
+        <label>e-SignLive</label>
+        <picklistValues>
+            <picklist>Loop__Attach_As__c</picklist>
+            <values>
+                <fullName>Attachment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content - User Selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LOOP Storage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office 365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SpringCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veeva Vault</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Authoritative_Copy__c</picklist>
+            <values>
+                <fullName>Authoritative Copy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Copy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Language__c</picklist>
+            <values>
+                <fullName>English %28United States%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Limit_Availability__c</picklist>
+            <values>
+                <fullName>Hidden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mass Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Mass Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Output__c</picklist>
+            <values>
+                <fullName>Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF and Originals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate PDFs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__PDF_Option__c</picklist>
+            <values>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enhanced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF%2FA Basic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Remind_Recipient__c</picklist>
+            <values>
+                <fullName>Every Day%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every Week%2C Until Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Never</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Order__c</picklist>
+            <values>
+                <fullName>I sign%2C then the Recipient signs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recipient signs%2C then I sign</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Signature_Type__c</picklist>
+            <values>
+                <fullName>Written Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e-Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loop__Type__c</picklist>
+            <values>
+                <fullName>Area Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postcard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Loop__Deprecate_Lob</fullName>
+        <active>true</active>
+        <errorConditionFormula>$RecordType.DeveloperName == &quot;Lob&quot;</errorConditionFormula>
+        <errorMessage>The Lob record type is deprecated.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Loop__Custom_Delete</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>(Deprecated) Delete</masterLabel>
+        <openType>sidebar</openType>
+        <page>Loop__viewDeliveryOption</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Loop__Field_Tagger</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>675</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Field Tagger</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/loop__fieldTagger?id={!Loop__DDP_Integration_Option__c.Loop__DDPId__c}</url>
+        <width>840</width>
+    </webLinks>
+</CustomObject>

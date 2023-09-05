@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_44126331</developerName>
+        <masterLabel>Stages</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STAGE_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <value>Interested</value>
+        </values>
+        <values>
+            <value>Trials and Proposals</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <value>Verbal Agreement</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6WP-Closed Won/Order Processed</sourceValue>
+            </sourceValues>
+            <value>Contract Signed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Open</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Renewal Pending</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Renewal Contracting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>7-Revisit-No Decision</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Renewal Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Closed Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Renewal Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Opportunity.FirstYearValue__c.CONVERT</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>ACCOUNT_NAME</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductFamily__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.FirstYearValue__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonCode__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonDescription__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>PROBABILITY</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Copper Won Opportunities Report</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.NewBusiness</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM-Oct18-AP-Indices-SEA ChinaBond Calling Campaign,FM-16Dec18-iBoxxChinaBond-calling campaign-APAC-SGHK,FM-16Oct18-iBoxxChinaBond-calling campaign-APAC-HK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Indices Bonds</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copper Won Opportunities</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityCampaign</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CAMPAIGN_STARTDATE</dateColumn>
+        <endDate>2019-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-10-01</startDate>
+    </timeFrameFilter>
+</Report>

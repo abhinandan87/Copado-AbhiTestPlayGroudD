@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>na-salesleadgen@ihsmarkit.com</email>
+    <name>Lead Generation Team - Americas</name>
+    <queueMembers>
+        <users>
+            <user>alessandra.haversat@ihsmarkit.com</user>
+            <user>andrew.hancock@ihsmarkit.com</user>
+            <user>brian.hoffman@ihsmarkit.com</user>
+            <user>daniela.suarez@ihsmarkit.com</user>
+            <user>emily.siew@ihsmarkit.com</user>
+            <user>haley.sinicropi@ihsmarkit.com</user>
+            <user>megan.barwick@ihsmarkit.com</user>
+            <user>philip.thompson@ihsmarkit.com</user>
+            <user>richard.labelle@ihsmarkit.com</user>
+            <user>robert.lewis1@ihsmarkit.com</user>
+            <user>ruby.chen@ihsmarkit.com</user>
+            <user>savannah.lansing@ihsmarkit.com</user>
+            <user>thomas.raia@ihsmarkit.com</user>
+            <user>timothy.ford@ihsmarkit.com</user>
+            <user>vyshok.shetty@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,23 @@
+An opportunity has just changed status to "Closed Won". 
+
+Link: {!Opportunity.Link} 
+
+Opportunity Name: {!Opportunity.Name} 
+
+Account: {!Opportunity.Account} 
+
+Close Date: {!Opportunity.CloseDate} 
+
+Contract Start Date: {!Opportunity.ContractStartDate__c} 
+
+Total Opportunity Amount : {!Opportunity.Amount__c}
+
+First Year Value- {!Opportunity.FirstYearValue__c}
+
+Product/s : {!Opportunity.ProductGroup__c}
+
+Sales Specialist/s - {!Opportunity.SalesSpecialists__c}
+
+Account Manager/s - {!Opportunity.AccountManagers__c}
+
+Opportunity Geography - {!Opportunity.OpportunityGeography__c}

@@ -1,0 +1,196 @@
+<aura:component controller="QuickRecordCreationController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable,lightning:utilityItem" access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="contactRecord" type="Object"/>
+    <aura:attribute name="oppRecord" type="Object"/>
+    <aura:attribute name="accRecord" type="Object"/>
+    <aura:attribute name="userRecord" type="Object"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:attribute name="showSpinActivity" type="Boolean" default="false" />
+    <aura:attribute name="justSaved" type="Boolean" default="false" />
+    <aura:attribute name="disableButton" type="Boolean" default="false"/>
+    <aura:attribute name="disableButton1" type="Boolean" default="false"/>
+    <aura:attribute name="contactId" type="String" default=""/>
+    <aura:attribute name="accId" type="String"  default=""/>
+    <aura:attribute name="oppId" type="String"  default=""/>
+    <aura:attribute name="userId" type="String"  default=""/>
+    <aura:attribute name="eventStartTime" type="DateTime" default=''/>
+    <aura:attribute name="eventEndTime" type="DateTime" default=''/>
+    <aura:attribute name="eventLocation" type="String" default=''/>
+    <aura:attribute name="taskDueDate" type="String" default=''/>
+    <aura:attribute name="priority" type="String" default=''/>
+    <aura:attribute name="status" type="String" default=''/>
+    <aura:attribute name="supportsPopOut" type="Boolean" default="false" />
+    <aura:attribute name="types" type="String[]"/>
+    <aura:attribute name="selectedType" type="String"/>
+    <!--<aura:attribute name="eventSubjectTypes" type="String[]"/>
+    <aura:attribute name="taskSubjectTypes" type="String[]"/>-->
+    <aura:attribute name="subject" type="String" default=""/>
+    <!--<aura:attribute name="selectedEventSubject" type="String" default="-None-"/>
+    <aura:attribute name="selectedTaskSubject" type="String" default="-None-"/>-->
+    <aura:attribute name="selectedRelatedToType" type="String"/>
+    <aura:attribute name="taskPriorityValues" type="String[]"/>
+    <aura:attribute name="taskStatusValues" type="String[]"/>
+    <aura:attribute name="hasEventCreateAccess" type="Boolean"/>
+    <aura:attribute name="hasTaskCreateAccess" type="Boolean"/>
+    <aura:attribute name="addMoreDetail" type="Boolean" default="false"/>
+    <aura:attribute name="taskWhatId" type="String" default=''/>
+    <aura:attribute name="eventWhatId" type="String" default=''/>
+    <aura:attribute name="onEventPage" type="Boolean" default="false"/>
+    <aura:attribute name="initLoad" type="Boolean" default="false"/>
+    <aura:attribute name="activitySubTypeValues" type="String[]"/>
+    <aura:attribute name="subType" type="String" default=''/>
+    <aura:if isTrue="{!v.showSpinner}"><lightning:spinner aura:id="Spin" alternativeText="Loading.." size="medium" class="spinnerHolder" /></aura:if>
+    <aura:handler name="change" value="{!v.contactId}" action="{!c.fetchAccountId}"/>  
+    <aura:handler name="change" value="{!v.accId}" action="{!c.fetchAccountId}"/> 
+    <aura:handler name="change" value="{!v.oppId}" action="{!c.fetchAccountId}"/> 
+    <lightning:utilityBarAPI aura:id="utilitybar"/>
+    <aura:if isTrue="{!and(or(v.hasEventCreateAccess==true, v.hasTaskCreateAccess==true),v.showSpinner==false) }">
+        <div class="slds-text-align--left slds-p-around--small slds-p-bottom--small">
+            <lightning:layout class="slds-p-bottom--small">
+                <lightning:layoutItem size="6" class="columns slds-p-right_small" >
+                    <lightning:select value="{!v.selectedType}" label="Type" required="true">
+                        <aura:if isTrue="{!and(v.hasEventCreateAccess==true, v.onEventPage==false)}">
+                        	<option value="Meeting">Meeting</option>
+                            <option value="Call">Call</option>
+                        </aura:if>
+						<aura:if isTrue="{!v.hasTaskCreateAccess==true}">
+                            <option value="Task">Task</option>
+                        </aura:if>
+                    </lightning:select>
+                </lightning:layoutItem>
+                <!--<aura:if isTrue="{!or(v.selectedType=='Meeting', v.selectedType=='Call')}">
+                    <lightning:layoutItem size="6" >
+                        <ui:inputSelect label="Subject" class="dynamic" required="true" aura:id="EventSubjectType" value="{!v.selectedEventSubject}">
+                            <aura:iteration items="{!v.eventSubjectTypes}" var="b">
+                                <ui:inputSelectOption text="{!b.label}" label="{!b.value}"/>
+                            </aura:iteration>
+                        </ui:inputSelect>     
+                    </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.selectedType=='Task'}">
+                    <lightning:layoutItem size="6" >
+                        <ui:inputSelect label="Subject" class="dynamic" required="true" aura:id="TaskSubjectType" value="{!v.selectedTaskSubject}">
+                            <aura:iteration items="{!v.taskSubjectTypes}" var="b">
+                                <ui:inputSelectOption text="{!b.label}" label="{!b.value}"/>
+                            </aura:iteration>
+                        </ui:inputSelect>     
+                    </lightning:layoutItem>
+                </aura:if>-->
+                <lightning:layoutItem size="6" class="columns">
+                    <lightning:input label="Subject" required="true" value="{!v.subject}"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <lightning:layout class="slds-p-bottom--small">
+                <lightning:layoutItem size="6" class="columns slds-p-right_small">
+                    <lightning:select aura:id="subType" value="{!v.subType}" name="Sub-Type" label="Sub-Type" required="False">
+                        <option value="">--None--</option>
+                        <aura:iteration items="{!v.activitySubTypeValues}" var="ind" indexVar="key">
+                            <option text="{!ind.value}" value="{!ind.value}" />
+                        </aura:iteration>
+                    </lightning:select>
+                </lightning:layoutItem>                    
+            </lightning:layout>   
+            <lightning:layout>
+                <lightning:layoutItem size="12" class="columns" >
+                    <c:customLookup objectAPIName="Contact" 
+                                    IconName="standard:contact"
+                                    selectedRecord="{!v.contactRecord}"
+                                    selectedRecordId="{!v.contactId}"
+                                    label="Name"
+                                    secondaryFieldName="Account.Name"
+                                    isChanged="{!v.contactId}"	/>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <lightning:layout class="slds-p-top_small">
+                <lightning:layoutItem size="6" class="columns" >
+                    <ui:inputSelect label="Related To" required="false" aura:id="EventRelatedToType" value="{!v.selectedRelatedToType}" change="{!c.validateRelatedTo}">
+                        <ui:inputSelectOption text="Account" label="Account"/>
+                        <ui:inputSelectOption text="Opportunity" label="Opportunity"/>
+                    </ui:inputSelect>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <lightning:layout class="slds-p-bottom--xx-small">
+                <lightning:layoutItem size="12" class="slds-p-bottom--small">
+                    <aura:if isTrue="{!v.selectedRelatedToType=='Account'}">
+                        <c:customLookup objectAPIName="Account" 
+                                        IconName="standard:account"
+                                        selectedRecord="{!v.accRecord}"
+                                        selectedRecordId="{!v.accId}"
+                                        label=""
+                                        isChanged="{!v.accId}"	/>
+                    </aura:if>
+                    <aura:if isTrue="{!v.selectedRelatedToType=='Opportunity'}">
+                        <c:customLookup objectAPIName="Opportunity" 
+                                        IconName="standard:opportunity"
+                                        selectedRecord="{!v.oppRecord}"
+                                        selectedRecordId="{!v.oppId}"
+                                        label=""
+                                        isChanged="{!v.oppId}"	/>
+                    </aura:if>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <aura:if isTrue="{!or(v.selectedType=='Meeting', v.selectedType=='Call')}">
+                <lightning:layout class="slds-p-bottom--small">
+                    <lightning:layoutItem size="6" class="slds-p-right--x-small">
+                        <lightning:input type="datetime" name="eventStartDateTime" label="Start" value="{!v.eventStartTime}" required="true" onchange="{!c.handleEventEndTime}"/>
+                    </lightning:layoutItem>
+                    
+                    <lightning:layoutItem size="6">
+                        <lightning:input type="datetime" name="eventEndDateTime" label="End" value="{!v.eventEndTime}" required="true"/>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </aura:if>
+            <lightning:layout>
+                <lightning:layoutItem size="6" class="slds-p-right--x-small">
+                    <c:customLookup objectAPIName="User" 
+                                    IconName="standard:user"
+                                    selectedRecord="{!v.userRecord}"
+                                    selectedRecordId="{!v.userId}"
+                                    label="Assigned To"
+                                    isChanged="{!v.userId}"	
+                                    showAsRequired="true"/>
+                </lightning:layoutItem>
+                <aura:if isTrue="{!or(v.selectedType=='Meeting', v.selectedType=='Call')}">
+                    <lightning:layoutItem size="6">
+                        <lightning:input label="Location" value="{!v.eventLocation}" aura:id="EventLocation"/>
+                    </lightning:layoutItem>
+                </aura:if>
+                <aura:if isTrue="{!v.selectedType=='Task'}">
+                    <lightning:layoutItem size="6">
+                        <lightning:input type="Date" name="taskDueDate" label="Due Date" auraid="taskDueDate" value="{!v.taskDueDate}"/>
+                    </lightning:layoutItem>
+                </aura:if>
+            </lightning:layout>
+            
+            <aura:if isTrue="{!v.selectedType=='Task'}">
+                <lightning:layout class="slds-p-bottom--small">
+                    <lightning:layoutItem size="6" class="columns slds-p-right_small">
+                        <ui:inputSelect label="Priority" class="dynamic" required="true" aura:id="priority" value="{!v.priority}">
+                            <aura:iteration items="{!v.taskPriorityValues}" var="b">
+                                <ui:inputSelectOption text="{!b.label}" label="{!b.value}"/>{!b.label}
+                            </aura:iteration>
+                        </ui:inputSelect>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="6">
+                        <ui:inputSelect label="Status" class="dynamic" required="true" aura:id="status" value="{!v.status}">
+                            <aura:iteration items="{!v.taskStatusValues}" var="b">
+                                <ui:inputSelectOption text="{!b.label}" label="{!b.value}"/>
+                            </aura:iteration>
+                        </ui:inputSelect>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </aura:if>
+            <div class="slds-align_absolute-center">
+                <lightning:button class="slds-m-top--small" variant="brand" aura:id="submitBtn" label="Save" onclick="{!c.handleSaveRecord}" disabled="{!v.disableButton}" />
+                <aura:if isTrue="{!or(v.selectedType=='Meeting', v.selectedType=='Call')}">
+                    <lightning:button class="slds-m-top--small" variant="brand" aura:id="saveBtn" label="Save and add detail" onclick="{!c.handleAddMoreDetail}" disabled="{!v.disableButton1}" />
+                </aura:if>
+            </div>
+        </div>
+        <aura:if isTrue="{!v.showSpinActivity}"><lightning:spinner aura:id="spinnerActivity" alternativeText="Saving.." size="medium" class="spinnerHolder" /></aura:if>
+    </aura:if>
+    <aura:if isTrue="{!and(and(v.hasEventCreateAccess==false, v.hasTaskCreateAccess==false),!v.showSpinner)}">
+        <div class="slds-text-align--center slds-p-around--large" style="font-size: 150%;"><h1>Not authorized to add an activity.</h1></div>
+    </aura:if>
+    
+</aura:component>

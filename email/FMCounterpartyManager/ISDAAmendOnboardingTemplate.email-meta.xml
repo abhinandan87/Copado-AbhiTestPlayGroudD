@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>ISDA Amend Onboarding Template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ISDA Amend Onboarding Template</name>
+    <style>none</style>
+    <subject>Your IHS Markit Customer Care Case {!Case.CaseNumber} - Markit Document Negotiation powered by SmartDX</subject>
+    <textOnly>Dear {!Case.Contact},
+
+Thank you for requesting more information on the Markit Document Negotiation tool powered by SmartDX. SmartDX provides a platform for both buy side and sell side firms to electronically conduct negotiations on any type of document. The negotiations are executed centrally and securely and include a full audit trail which works across multiple teams and organizations. In addition, buy side and sell side firms can meet regulatory timeframes by the use of pre-approved industry standard templates which expedites the drafting process. The agreed terms of the document is then generated as PDF and can be extracted for internal use. Please see the information sheet attached.
+
+If you would like to hear more or receive a demonstration of the tool, please reply to this email with the following information:
+
+Contact phone number
+Title/role within your organization
+
+
+If this request came to you in error please let us know by emailing: mcpmsupport@markit.com.
+
+Kind regards,
+
+{!Case.Thread_Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

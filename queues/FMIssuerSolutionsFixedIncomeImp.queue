@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Issuer Solutions - Fixed Income Imp</name>
+    <queueMembers>
+        <users>
+            <user>aaron.dougherty@ihsmarkit.com</user>
+            <user>chad.stephenson@ihsmarkit.com</user>
+            <user>clara.vissani@ihsmarkit.com</user>
+            <user>ellis.farrell@ihsmarkit.com</user>
+            <user>john.karageorge@ihsmarkit.com</user>
+            <user>kimberly.laclair@ihsmarkit.com</user>
+            <user>martin.railton@ihsmarkit.com</user>
+            <user>peter.gotke@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

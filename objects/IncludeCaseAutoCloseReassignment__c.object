@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>SFDC-1652 Custom setting to identify case record types for which auto-assignment of cases from a queue to the logged-in user on case closure should happen.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>IncludeCaseAutoCloseReassignment</label>
+    <visibility>Public</visibility>
+</CustomObject>

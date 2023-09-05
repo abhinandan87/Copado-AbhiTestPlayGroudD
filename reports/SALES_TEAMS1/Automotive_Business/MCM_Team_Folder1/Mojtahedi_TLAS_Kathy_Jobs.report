@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.JobName__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.StartDate__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.NegotiatedDate__c</field>
+    </columns>
+    <columns>
+        <field>PLCJob__c.DateTimeOfDelivery__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>PLCJob__c.LateDeliverables__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>PLCJob__c.DefectiveDeliverables__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>PLCJob__c.TotalDeliverables__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>MCM Team Completed Jobs</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>PLCJob__c.JobCompletedDelivered__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>JobTask__c.AssignedTo__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Melissa Carpenter,Anne Bowman,Kim Preston,Beverly Craggs,Lynn VanWulfen,Jackie Swift,Debby Shelton,Joseph Berges,Delon Fulford,Ritika Jain,Siddharth Pillai</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PLCJob__c.DateTimeOfDelivery__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>3/1/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PLCJob__c.DateTimeOfDelivery__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>4/1/2020 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PLCJob__c.JobType__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Mojtahedi (TLAS) - Kathy Jobs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$PLCJob__c$JobTask__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>PLCJob__c.NegotiatedDate__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>PLCJob__c.CycleStart__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

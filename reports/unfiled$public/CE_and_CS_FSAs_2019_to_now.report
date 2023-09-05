@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>WorkOrder$Name</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$ActivityType__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$Account</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$PrimaryInstructor__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$ProductGroups__c</field>
+    </columns>
+    <columns>
+        <field>WorkOrder$EndDate</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>WorkOrder$ActivityType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Customer Consulting,Customer Training,Sales Demos,Support Requirement Meeting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$PrimaryInstructor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>David Wagner,Travis Miller,Andres Martinez,Alex Andrade,Diviya Sangkaranara,Sathyakala Muthukrishnan,Hung-Fai Tse,Elzette Truebody,Lana Simic,Eva-Christina Peterzens,Eunice Ooi,Jervin Wong,Megan Fehn,Tim Dulik,Paul Griffin,Jenny Smith,Frankie Tse,Eva Peterzens,Minerva Najera,Tina Peterzens,Cliff Allen,Clifford Allen,Blake Short,Mary Durham,John Toth,Christopher James</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WorkOrder$EndDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2019 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CE and CS FSAs 2019 to now</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Field_Service_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>WorkOrder$CreatedDate</dateColumn>
+        <endDate>2022-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-01-01</startDate>
+    </timeFrameFilter>
+</Report>

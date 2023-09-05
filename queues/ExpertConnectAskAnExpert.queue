@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>dl-ec-sales@ihsmarkit.com</email>
+    <name>ExpertConnect_AskAnExpert</name>
+    <queueMembers>
+        <users>
+            <user>gary.godinho@ihsmarkit.com</user>
+            <user>penny.carroll@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

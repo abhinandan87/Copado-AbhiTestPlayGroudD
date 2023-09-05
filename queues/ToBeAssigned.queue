@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>To Be Assigned</name>
+    <queueMembers>
+        <users>
+            <user>aishna.jain@ihsmarkit.com</user>
+            <user>anmol.singh@ihsmarkit.com</user>
+            <user>anton.stienen@ihsmarkit.com</user>
+            <user>deepak.karumuthil@ihsmarkit.com</user>
+            <user>deepak.srivastav@ihsmarkit.com</user>
+            <user>eri.hasumoto@ihsmarkit.com</user>
+            <user>esma.agzanay@ihsmarkit.com</user>
+            <user>evan.gerlack@ihsmarkit.com</user>
+            <user>gary.ge@ihsmarkit.com</user>
+            <user>iris.karabatos@ihsmarkit.com</user>
+            <user>kinnerey.patel@ihsmarkit.com</user>
+            <user>melanie.mladenova@ihsmarkit.com</user>
+            <user>momoi.suda@ihsmarkit.com</user>
+            <user>nathan.valdez@ihsmarkit.com</user>
+            <user>rashi.dungale@ihsmarkit.com</user>
+            <user>safiya.murray@ihsmarkit.com</user>
+            <user>samuel.abraham@ihsmarkit.com</user>
+            <user>saumya.mody@ihsmarkit.com</user>
+            <user>shefali.chawla@ihsmarkit.com</user>
+            <user>sherry.lau@ihsmarkit.com</user>
+            <user>suneet.raniga@ihsmarkit.com</user>
+            <user>tanvi.arora@ihsmarkit.com</user>
+            <user>tracey.bookall@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

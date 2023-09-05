@@ -1,0 +1,5 @@
+<aura:component controller="CheckUserLicenseController">
+    <aura:attribute name="licenseName" type="String" />
+    <aura:attribute name="isAssigned" type="Boolean" default="false" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+</aura:component>

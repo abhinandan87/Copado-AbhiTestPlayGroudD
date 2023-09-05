@@ -113,8 +113,553 @@
         <type>Default</type>
     </actionOverrides>
     <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ActivityType__c</fullName>
+        <description>SFDC1-6039: To track time for non BAU work
+SFDC1-7727: Adding new picklist values</description>
+        <externalId>false</externalId>
+        <label>Activity Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal Meeting</fullName>
+                    <default>false</default>
+                    <label>Internal Meeting</label>
+                </value>
+                <value>
+                    <fullName>In person meeting</fullName>
+                    <default>false</default>
+                    <label>In person meeting</label>
+                </value>
+                <value>
+                    <fullName>Online customer meeting</fullName>
+                    <default>false</default>
+                    <label>Online customer meeting</label>
+                </value>
+                <value>
+                    <fullName>Proposal Accepted meeting</fullName>
+                    <default>false</default>
+                    <label>Proposal Accepted meeting</label>
+                </value>
+                <value>
+                    <fullName>Proposal Delivery meeting</fullName>
+                    <default>false</default>
+                    <label>Proposal Delivery meeting</label>
+                </value>
+                <value>
+                    <fullName>Project Work</fullName>
+                    <default>false</default>
+                    <label>Project Work</label>
+                </value>
+                <value>
+                    <fullName>Triage</fullName>
+                    <default>false</default>
+                    <label>Triage</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Mentoring</fullName>
+                    <default>false</default>
+                    <label>Mentoring</label>
+                </value>
+                <value>
+                    <fullName>Client Visit</fullName>
+                    <default>false</default>
+                    <label>Client Visit</label>
+                </value>
+                <value>
+                    <fullName>Management Tasks</fullName>
+                    <default>false</default>
+                    <label>Management Tasks</label>
+                </value>
+                <value>
+                    <fullName>Report Generation</fullName>
+                    <default>false</default>
+                    <label>Report Generation</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Internal Training</fullName>
+                    <default>false</default>
+                    <label>Internal Training</label>
+                </value>
+                <value>
+                    <fullName>Meetings</fullName>
+                    <default>false</default>
+                    <label>Meetings</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AssociatedTo__c</fullName>
+        <description>US-5101086 : add associatedTo in activity object.</description>
+        <externalId>false</externalId>
+        <label>Associated To</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>AssociatedTo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Attributed_sequence_name__c</fullName>
+        <description>US-5102665: New Outreach activity fields (task &amp; events)</description>
+        <externalId>false</externalId>
+        <label>Attributed sequence name</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Bounced__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>US-5102665: indicates that the email has bounced.</description>
+        <externalId>false</externalId>
+        <label>Bounced</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Bounced_at__c</fullName>
+        <description>US-5102665:indicates when the email bounced.</description>
+        <externalId>false</externalId>
+        <label>Bounced At</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC1-6039: To track time for non BAU work</description>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clicked_At__c</fullName>
+        <description>US-5102665:indicates when the email was last clicked on.</description>
+        <externalId>false</externalId>
+        <label>Clicked At</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Clicked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>US-5102665: indicates that the email was clicked on by the recipient.</description>
+        <externalId>false</externalId>
+        <label>Clicked</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CommentsPreview__c</fullName>
+        <description>SFDC-3979: Notes / Comments Added Checkbox on Tasks</description>
+        <externalId>false</externalId>
+        <label>Comments Preview</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country/Territory</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsChild__c</fullName>
+        <description>SFDC-3003 A custom formula field for reporting to represent if an Event is a child event. Standard IsChild field on event is not available on reports.</description>
+        <externalId>false</externalId>
+        <formula>IsChild</formula>
+        <label>Is Child</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC1-5196 Lead field on Task to track the Lead from which it is being converted</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup for Lead, for the Task which is converted from Lead</inlineHelpText>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LegacyIDUnique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>SFDC1-7046: related to Legacy ID and Legacy system, this field is a concatenation of those two fields to create a unique legacy UD that can be used as an external key for updates by the migration team, will not be visible to sales profiles to avoid confusion with related legacy ids object.
+This field store the concatenation of the source system name and a source system record id to ensure the record is uniquely identified.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This field store the concatenation of the source system name and a source system record id to ensure the record is uniquely identified.</inlineHelpText>
+        <label>LegacyIDUnique</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Legacy field created as part of migration exercise to hold legacy Id</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Unique identifier from legacy System</inlineHelpText>
+        <label>LegacyID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacyReference__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Legacy Reference field is a friendly system reference to the source record.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>This is a friendly system reference to the source record.</inlineHelpText>
+        <label>LegacyReference</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LegacySystem__c</fullName>
+        <description>related to Legacy ID, this field identifies the legacy system from which the legacy ID is from, will not be visible to Sales profiles to avoid confusion with related legacy ids object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the CRM system the source record came from</inlineHelpText>
+        <label>LegacySystem</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LegacySystem</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Marked_as_Spam__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>US-5102665 : indicates that the recipient has marked the email as spam.</description>
+        <externalId>false</externalId>
+        <label>Marked as Spam</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Marked_as_Spam_at__c</fullName>
+        <description>US-5102665: indicates when the recipient has marked the email as spam.</description>
+        <externalId>false</externalId>
+        <label>Marked as Spam At</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>MeetingNote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Event Wrapper</label>
+        <referenceTo>MeetingNote__c</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NotesCompleted__c</fullName>
+        <description>SFDC-2752 If meeting outcome is populated on related meeting note, mark Notes Completed on event as true.</description>
+        <externalId>false</externalId>
+        <formula>MeetingNote__r.NotesCompleted__c ||  IF(ISBLANK(CommentsPreview__c),False,True)</formula>
+        <label>Notes Completed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opened_At__c</fullName>
+        <description>US-5102665: indicates when the email was last opened.</description>
+        <externalId>false</externalId>
+        <label>Opened At</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Opened__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>US-5102665: indicates that the email was opened by the recipient.</description>
+        <externalId>false</externalId>
+        <label>Opened</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PKIDActivity__c</fullName>
+        <description>SFDC1-2445 : Creating PK field for Data Migration Support</description>
+        <displayFormat>Aty{000000}</displayFormat>
+        <externalId>true</externalId>
+        <label>PKID Activity</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ParentId__c</fullName>
+        <description>SFDC-3331 field to hold the id for the event so that it will get copied over to child events to establish a link</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Auto populated via workflow</inlineHelpText>
+        <label>ParentId</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrivacyLevel__c</fullName>
+        <description>SFDC-2865 Represent if an event is customer facing, internal or private based on AccountId.</description>
+        <externalId>false</externalId>
+        <label>Privacy Level</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Personal appointment</fullName>
+                    <default>false</default>
+                    <label>Personal appointment</label>
+                </value>
+                <value>
+                    <fullName>Internal meeting</fullName>
+                    <default>false</default>
+                    <label>Internal meeting</label>
+                </value>
+                <value>
+                    <fullName>Customer-facing meeting</fullName>
+                    <default>false</default>
+                    <label>Customer-facing meeting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProductFamilyLookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC1-3843 : This field will hold the values from the Product Family field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please Enter the Product Family</inlineHelpText>
+        <label>Product Family</label>
+        <referenceTo>Family__c</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDC-3100: Activity Product Tagging</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Replied_At__c</fullName>
+        <description>US-5102665: indicates when the email was replied on.</description>
+        <externalId>false</externalId>
+        <label>Replied At</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Replied__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>US-5102665 : indicates that the email was replied to by the recipient.</description>
+        <externalId>false</externalId>
+        <label>Replied</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Reply_Sentiment__c</fullName>
+        <description>US-5102665: indicates the sentiment(attitude of the prospect replying) outreach.io assigned to this email.</description>
+        <externalId>false</externalId>
+        <label>Reply Sentiment</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Sequence_Name__c</fullName>
+        <description>US-5102665 : indicates the outreach.io sequence name to which the task is scheduled under.</description>
+        <externalId>false</externalId>
+        <label>Sequence Name</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SourceGlobalAction__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-3012 Captures if an event was created using New Event global action.</description>
+        <externalId>false</externalId>
+        <label>Source Global Action?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>StateProvince__c</fullName>
+        <externalId>false</externalId>
+        <label>State Province</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SubType__c</fullName>
+        <description>SFDC-4107 Subtype field for Activity object</description>
+        <externalId>false</externalId>
+        <label>Sub Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Call</fullName>
+                    <default>false</default>
+                    <label>Customer Call</label>
+                </value>
+                <value>
+                    <fullName>Internal Call</fullName>
+                    <default>false</default>
+                    <label>Internal Call</label>
+                </value>
+                <value>
+                    <fullName>New Business Proposal</fullName>
+                    <default>false</default>
+                    <label>New Business Proposal</label>
+                </value>
+                <value>
+                    <fullName>Proposal Acceptance Call</fullName>
+                    <default>false</default>
+                    <label>Proposal Acceptance Call</label>
+                </value>
+                <value>
+                    <fullName>Proposal Delivery Call</fullName>
+                    <default>false</default>
+                    <label>Proposal Delivery Call</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Synergy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC-204: Add &quot;Synergy&quot; Check Box field on Activity (Task and Event)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check box if Activity is related to Synergy.</inlineHelpText>
+        <label>Synergy</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TaskToRevisitOpportunity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>SFDC1-9500 This checkbox will be checked if task is created via &apos;Revisit Opportunity&apos; button</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Task To Revisit Opportunity</inlineHelpText>
+        <label>Task To Revisit Opportunity</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TimeSpentMinutes__c</fullName>
+        <description>SFDC1-6039:This field  track time related non-BAU work</description>
+        <externalId>false</externalId>
+        <label>Time Spent(Minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unsubscribed_At__c</fullName>
+        <description>US-5102665 : indicates when the email recipient has unsubscribed from further communications.</description>
+        <externalId>false</externalId>
+        <label>Unsubscribed At</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Unsubscribed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>US-5102665:indicates that the recipient has unsubscribed from further communications.</description>
+        <externalId>false</externalId>
+        <label>Unsubscribed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ZipPostalCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <listViews>
         <fullName>MyActivities</fullName>
+        <columns>ACTIVITY_SUBTYPE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>EVENT.LOCATION</columns>
         <filterScope>Mine</filterScope>
         <label>My Activities</label>
     </listViews>

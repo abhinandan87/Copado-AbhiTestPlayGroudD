@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to confirm the GPHD has received an extension request.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Deadline Extension PC2</name>
+    <style>none</style>
+    <subject>IHS Automotive Resolution for Case # {!Case.CaseNumber} - Deadline Extension Request</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

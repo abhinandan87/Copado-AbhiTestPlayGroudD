@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>enrsalessupport@ihsmarkit.com</email>
+    <name>Sales Support/ENR</name>
+    <queueMembers>
+        <users>
+            <user>agnes.demontecler@ihsmarkit.com</user>
+            <user>aimee.johnson@ihsmarkit.com</user>
+            <user>bruno.maiadecastro@ihsmarkit.com</user>
+            <user>hafizah.bajuri@ihsmarkit.com</user>
+            <user>irene.teo@ihsmarkit.com</user>
+            <user>karen.harris@ihsmarkit.com</user>
+            <user>karine.leroux@ihsmarkit.com</user>
+            <user>kesavaraja.subraman@ihsmarkit.com</user>
+            <user>koto.hamano@ihsmarkit.com</user>
+            <user>mandy.kong@ihsmarkit.com</user>
+            <user>sandra.will-krile@ihsmarkit.com</user>
+            <user>ziyuan.geng@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

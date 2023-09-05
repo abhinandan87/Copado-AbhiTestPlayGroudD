@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC1-5581;New case from lead page layout</description>
+    <fieldOverrides>
+        <field>AccountId</field>
+        <formula>Lead.Account__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Description</field>
+        <formula>&quot;Lead Details are &quot; + Lead.Email + &quot; &quot; +  Lead.Phone + BR() +  &quot;Originating Notes - &quot; + Lead.OriginatingNotes__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>LeadReference__c</field>
+        <formula>Lead.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>LeadToCase__c</field>
+        <formula>true</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Origin</field>
+        <literalValue>Lead</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>RunCaseAssignmentRule__c</field>
+        <formula>True</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SourceLead__c</field>
+        <formula>Lead.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status</field>
+        <literalValue>New</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Subject</field>
+        <formula>Lead.FirstName + &quot; &quot; + Lead.LastName   + &quot; - Lead to Customer Care Case&quot;</formula>
+    </fieldOverrides>
+    <label>Convert to Case</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>ContactId</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>AccountId</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Subject</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Description</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Case</targetObject>
+    <targetParentField>LeadReference__c</targetParentField>
+    <targetRecordType>Case.CustomerCare</targetRecordType>
+    <type>Create</type>
+</QuickAction>

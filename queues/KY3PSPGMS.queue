@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>KY3P SPG MS</name>
+    <queueMembers>
+        <users>
+            <user>aditi.srivastava@ihsmarkit.com</user>
+            <user>mukul.jain1@ihsmarkit.com</user>
+            <user>syedmohammad.anas@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

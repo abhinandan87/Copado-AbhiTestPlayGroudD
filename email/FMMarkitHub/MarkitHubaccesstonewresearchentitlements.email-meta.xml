@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be used for informing customer on how to get access to research entitlements</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Markit Hub - access to new research entitlements</name>
+    <style>none</style>
+    <subject>Markit Hub - access to new research entitlements</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for contacting Customer Care at IHS Markit.
+
+You already have an active Markit Hub account and details of which are further provided below:
+
+Username: {!Case.ContactEmail__c}
+You are already entitled to :
+&lt;list all research providers entitled&gt;
+
+All correspondence in relation to your Markit Hub account will be sent to the email address registered to your profile, {!Case.ContactEmail__c}.
+
+To get access to &lt;list of all research providers required&gt; research via Markit Hub, please send an email to each entitlement firm&apos;s support team requesting them to enable their content for your profile. Please also copy in that email, a sales sponsor (your contact person in the bank whose research you wish to access).
+
+The Markit Hub platform provides third-party unified access to multiple research providers, who are common customers with IHSMarkit. The content is managed direcly by each research provider and not by Markit Hub.
+
+If you require any further assistance, please do not hesitate to contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

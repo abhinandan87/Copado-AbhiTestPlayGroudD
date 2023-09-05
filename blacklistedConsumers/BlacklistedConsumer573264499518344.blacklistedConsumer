@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlacklistedConsumer xmlns="http://soap.sforce.com/2006/04/metadata">
+    <blockedByApiWhitelisting>true</blockedByApiWhitelisting>
+    <consumerKey>SfdcMobileInsightsForiOS</consumerKey>
+    <consumerName>Analytics for iOS</consumerName>
+    <masterLabel>BlacklistedConsumer573264499509024</masterLabel>
+</BlacklistedConsumer>

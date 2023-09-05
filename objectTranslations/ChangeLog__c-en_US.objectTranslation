@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Change Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Change Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Change Description --></label>
+        <name>ChangeDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Documented By --></label>
+        <name>ChangeDocumentedBy__c</name>
+        <relationshipLabel><!-- Change Logs (Change Documented By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Create Date --></label>
+        <name>CreateDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Approved --></label>
+        <name>IsApproved__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field store the concatenation of the source system name and a source system record id to ensure the record is uniquely identified. --></help>
+        <label><!-- LegacyIDUnique --></label>
+        <name>LegacyIDUnique__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used for data integration to store legacy system id in WRF POLK application. --></help>
+        <label><!-- LegacyID --></label>
+        <name>LegacyID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a friendly system reference to the source record. --></help>
+        <label><!-- LegacyReference --></label>
+        <name>LegacyReference__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the CRM system the source record came from --></help>
+        <label><!-- LegacySystem --></label>
+        <name>LegacySystem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Negotiated Date --></label>
+        <name>NegotiatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- PLC Job --></label>
+        <name>PLCJob__c</name>
+        <relationshipLabel><!-- Change Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PLC Start Date --></label>
+        <name>PLCStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Comments --></label>
+        <name>ProductionComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmer --></label>
+        <name>Programmer__c</name>
+        <relationshipLabel><!-- Change Logs (Programmer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Status --></label>
+        <name>RequestStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approval Pending</masterLabel>
+            <translation><!-- Approval Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved without Job</masterLabel>
+            <translation><!-- Approved without Job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revised Request Date --></label>
+        <name>RevisedRequestDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted Date/Time --></label>
+        <name>SubmittedDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Programmer&apos;s Team --></label>
+        <name>Team1__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aftersales-Chrysler</masterLabel>
+            <translation><!-- Aftersales-Chrysler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESS-Delivery</masterLabel>
+            <translation><!-- ESS-Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forecasting</masterLabel>
+            <translation><!-- Forecasting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCM-Analytics</masterLabel>
+            <translation><!-- MCM-Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCM-Market Research</masterLabel>
+            <translation><!-- MCM-Market Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCM-Marketing Databases</masterLabel>
+            <translation><!-- MCM-Marketing Databases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCM-Target Marketing Services</masterLabel>
+            <translation><!-- MCM-Target Marketing Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEL-Delivery</masterLabel>
+            <translation><!-- MEL-Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Aftermarket</masterLabel>
+            <translation><!-- MR-Aftermarket --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Commercial</masterLabel>
+            <translation><!-- MR-Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Loyalty</masterLabel>
+            <translation><!-- MR-Loyalty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Market Reporting BI</masterLabel>
+            <translation><!-- MR-Market Reporting BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Network Management</masterLabel>
+            <translation><!-- MR-Network Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning Solutions</masterLabel>
+            <translation><!-- Planning Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PolkConnect Analytics</masterLabel>
+            <translation><!-- PolkConnect Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PolkConnect System</masterLabel>
+            <translation><!-- PolkConnect System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIN-Recall</masterLabel>
+            <translation><!-- VIN-Recall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIN-VIN Decoders</masterLabel>
+            <translation><!-- VIN-VIN Decoders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIN-VVS</masterLabel>
+            <translation><!-- VIN-VVS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visualization Team</masterLabel>
+            <translation><!-- Visualization Team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- WR Status --></label>
+        <name>WRStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Request Form --></label>
+        <name>WorkRequestForm__c</name>
+        <relationshipLabel><!-- Change Logs --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Approval Pending status will not be there inthis record type --></description>
+        <label><!-- Change Log --></label>
+        <name>Change_Log</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Status can&apos;t be moved to Draft or Submitted from Approval Pending status. --></errorMessage>
+        <name>ApprovalPendingNottoSubmitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t move the status to Approval pending from Draft or Rejected status. --></errorMessage>
+        <name>ErrorForApprovalPending</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status can&apos;t be moved to Approved or Approved without Job from Rejected --></errorMessage>
+        <name>ErrorForApprovedStatusFromRejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorized to make this change as you are not an approver. --></errorMessage>
+        <name>ErrorForNonApprovers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorized to change to this Request Status. --></errorMessage>
+        <name>NewRecordStatusDraftOrSubmitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Production comments are required when rejecting a Change Log. --></errorMessage>
+        <name>ProductionCommentsRequiredToReject</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please update the status to Submitted or Draft from Rejected. --></errorMessage>
+        <name>RejectedLogtoSubmitOrDraft</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please move the Request Status to Submitted. --></errorMessage>
+        <name>RequeststatustoSubmitfromDraft</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Change Log can&apos;t be moved back to Draft. --></errorMessage>
+        <name>SubmittedRecordtoDraft</name>
+    </validationRules>
+</CustomObjectTranslation>

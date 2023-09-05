@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be used while reaching out to Account Manager for approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Alliance cases</name>
+    <style>none</style>
+    <subject>Alliance case</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Thank you for contacting Customer Care at IHS Markit.
+
+We have reached out to our sales team to review your request and will provide a further update as soon as we have any additional information from them. Thank you for your patience.
+
+If you require any further assistance, please do not hesitate to  contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+IHS Markit | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

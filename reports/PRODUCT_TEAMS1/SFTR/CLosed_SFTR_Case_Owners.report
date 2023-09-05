@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>David Williams,Jonathan Tsang,Bill Tsang,Que Phuong Dufournet,Hamza Shah,Shreeya Patel,Majid Azaim,Tori Ogundimu,Miguel Coral,Sahil Nangia,Vijayendra Agarwal,Tushar Suri,Atul Panwar,Manya Gupta,Bhavya Khanna,Dishant Sharma,Biswaraj Paul Choudhury,Mishika Gandhi,Daniel Oluyemi,Biswaraj Paul,Biswaraj Paulchoudh,Biswaraj Choudhury,Ravi Navath,Andrew Hibberd,Surneet Bhatia,Pierre Simonet,Abhishek Yadav,Tushar Gupta,Prachi Bhatt,FM | SFTR | Client Services,Rashid Ali,Gargi Nagar,Deepak Ranjan,Barbara Sobocinska,Daniel Gualtieri,Paridhi Garg,Samuel Chan,Eraldo Palamani,Matthew Thomas,Kajal Sharma,Romaine Brighton</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed - Resolved,Closed - Referral,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SFTR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Active Waiting for info,Assigned,Assigned to HD Associate,Auto-Closed – No Action Taken,Canceled,Closed,Closed - Canceled,Closed - Moved to Jira,Closed- Moved to ADO,Closed - No action required,Closed - Referral,Closed - Resolved,Closed - Resolved by 3rd Party,Closed - Resolved by Customer,Closed - Resolved by IHS Markit,Closed - Unable to reach Customer,Connectivity,Contract Signed,Customer Responded,Delete,Duplicate,Entered Ticket,Escalated,Initial Delivery Complete,In Progress,Install Complete,Live,Merged,Moved to Tier2 Support,New,On Hold,Pending Second Review,Reassigned,Referral,Rejected,Re-opened,Researching,Resolved/Completed,Resolved/No Response,Testing,Trial Approved,Updated,User Access Granted,Validated,Validated-BSI Pending,Validated by ConsOps,Validated-POD Pending,Validated PO Pending,Waiting - 3rd Party,Waiting - Customer,Waiting - Internal Team,Waiting on Approvals,Waiting on Info,Waiting on Requester,Waiting - Sales Team,Waiting - Third Party,Welcome Package Sent</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Daily Closed SFTR Case Owners</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

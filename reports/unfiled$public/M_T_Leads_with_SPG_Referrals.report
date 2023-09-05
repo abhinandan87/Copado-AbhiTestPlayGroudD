@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <columns>
+        <field>Lead.SPG_Referrals__r$Name</field>
+    </columns>
+    <columns>
+        <field>Lead$BusinessLineInterest__c</field>
+    </columns>
+    <columns>
+        <field>Lead$ProductInterest__c</field>
+    </columns>
+    <columns>
+        <field>Lead.SPG_Referrals__r$Id</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Lead.SPG_Referrals__r$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>SPG Referral</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Prioritized,Pre-SalesWorking,Pre-Sales Working,Pre-SalesQualified,Pre-Sales Qualified,SalesWorking,Sales Working</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>M&amp;T - Leads with SPG Referrals</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Leads_with_SPG_Referrals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Lead.SPG_Referrals__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

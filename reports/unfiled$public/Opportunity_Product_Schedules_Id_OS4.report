@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Id</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityProductSchedules__r$OpportunityProductID__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityProductSchedules__r$Id</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityProductSchedules__r$Product__c.MaterialCode__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityProductSchedules__r$Product__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.OpportunityProductSchedules__r$OpportunityProductID__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>00k1B000013uZybQAE,00k4v0000153gG5AAI,00k4v0000153gG6AAI,00k4v0000153gG7AAI,00k1B000013uZyfQAE,00k1B000013uZylQAE,00k1B000013uZydQAE,00k1B000013uZygQAE,00k1B000013uZynQAE,00k1B000013uZySQAU,00k1B000013uZyXQAU,00k1B000013uZyiQAE,00k1B000013uZyUQAU,00k1B000013uZyaQAE,00k1B000013uZymQAE,00k1B000013uZyNQAU,00k1B000013uZyMQAU,00k1B000013uZy0QAE,00k1B000013uZyEQAU,00k1B000013uZy1QAE,00k1B000013uZy6QAE,00k1B000013uZyFQAU,00k1B000013uZy2QAE,00k1B000013uZzDQAU,00k1B000013uZzEQAU,00k1B000013uaF5QAI,00k1B000013uaF6QAI,00k1B000013uaF7QAI,00k1B000013uZyOQAU,00k1B000013uZyPQAU,00k1B000013uZyQQAU,00k1B000013uZy8QAE,00k1B000013uZyGQAU,00k1B000013uZy3QAE,00k1B000013uZyTQAU,00k1B000013uZyYQAU,00k1B000013uZykQAE,00k1B000013uZyAQAU,00k1B000013uZyIQAU,00k1B000013uZy4QAE,00k1B000013uZyBQAU,00k1B000013uZyJQAU,00k1B000013uZy5QAE,00k1B000013uZyCQAU,00k1B000013uZyKQAU,00k1B000013uZy7QAE,00k1B000013uZyDQAU,00k1B000013uZyLQAU,00k1B000013uZy9QAE,00k1B000013uZyHQAU,00k1B000013uZyhQAE,00k4v0000154g2JAAQ,00k4v0000154g2MAAQ,00k4v0000154g2LAAQ,00k4v0000154g2KAAQ,00k4v0000154g2CAAQ,00k4v0000154g2BAAQ,00k1B000013uPbeQAE,00k1B000013uPbiQAE,00k1B000013uPfYQAU</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Opportunity Product Schedules Id</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>test2__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

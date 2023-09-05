@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ProductLogin__c$Name</field>
+    </columns>
+    <columns>
+        <field>ProductLogin__c.ProductEntitlements__r$Name</field>
+    </columns>
+    <columns>
+        <field>ProductLogin__c$Email__c</field>
+    </columns>
+    <columns>
+        <field>ProductLogin__c.ProductEntitlements__r$ProductLicense__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>ProductLicense__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>SecuritiesFinance-Product-Risk Explorer</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>ProductLogin__c$Id</primaryTableColumn>
+        <relatedTable>ProductEntitlement__c</relatedTable>
+        <relatedTableJoinColumn>ProductLogin__c</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <description>MSF All Risk Explorer Users</description>
+    <filter>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <column>ProductLogin__c.ProductEntitlements__r$ProductLicense__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SecuritiesFinance-Product-Risk Explorer</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MSF All Risk Explorer Users</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductLoginwithwithoutProductEntitlements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ProductLogin__c$Email__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>ProductLogin__c.ProductEntitlements__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

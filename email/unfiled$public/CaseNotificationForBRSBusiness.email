@@ -1,0 +1,8 @@
+{!Case.CaseNumber} has been assigned to queue.
+Please visit the link below for more details-
+{!Case.Link}
+
+Kind regards,
+IHS Markit SFDC
+
+{!Case.Thread_Id}

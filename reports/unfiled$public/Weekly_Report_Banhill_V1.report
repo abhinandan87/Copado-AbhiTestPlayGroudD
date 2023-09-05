@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_83903194</developerName>
+        <masterLabel>ADH-Forecast</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Opportunity$Probability</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>49</to>
+            </sourceValues>
+            <value>Pipeline</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>49</from>
+                <to>79</to>
+            </sourceValues>
+            <value>BestCase</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>79</from>
+            </sourceValues>
+            <value>Commit</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_65257566</developerName>
+        <masterLabel>Oppy Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity$StageName</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1-Open</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1-Sales Qualified</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2-Need Confirmed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Proposal Development</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>3-Renewal Pending</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4.1-Proposal/Quote Delivery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4.2-Verbal Commit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Contracting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5-Renewal Contracting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>7-Revisit-No Decision</sourceValue>
+            </sourceValues>
+            <value>Open Oppys</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6W-Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6W-Renewal Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6WP-Closed Won/Order Processed</sourceValue>
+            </sourceValues>
+            <value>Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>6L-Closed Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Renewal Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>6L-Forecasting Placeholder</sourceValue>
+            </sourceValues>
+            <value>Lost</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_31736092</developerName>
+        <masterLabel>Oppy Type 2</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Opportunity$Name</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>renewal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Car</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Winback - ADNOC GAS PROCESSING - 20201006 - Standards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>contains(renewal)</sourceValue>
+            </sourceValues>
+            <value>1-Pending Renewals</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>Opportunity$Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <field>BucketField_83903194</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$FirstYearValue__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$PrimaryContact__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact.Title</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact.Phone</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact.Email</field>
+    </columns>
+    <columns>
+        <field>Opportunity$PreviousYearOpportunitylink__c.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$PreviousYearOpportunitylink__c.Amount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$OpportunityOwner__c</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(contains(text(Opportunity.StageName), &quot;Won&quot;), &quot;6-Won&quot;,
+IF(contains(text(Opportunity.StageName), &quot;Lost&quot;), &quot;7-Lost&quot;,
+IF (CONTAINS(Upper(Opportunity.Name), &quot;RENEWAL&quot;),&quot;1-Pending Renewals&quot;,
+
+IF(CONTAINS(Upper(Opportunity.Name), &quot;WINBACK&quot;), &quot;2-NewBiz Winback&quot;,
+IF(CONTAINS(Upper(Opportunity.Name), &quot;WIN BACK&quot;), &quot;2-NewBiz Winback&quot;,
+
+IF(CONTAINS(Upper(Opportunity.Name), &quot;LEAD&quot;), &quot;3-NewBiz Leads&quot;,
+
+IF(CONTAINS(Upper(Opportunity.Name), &quot;COMPETITIVE&quot;), &quot;3-NewBiz Competitive&quot;,
+
+IF(CONTAINS(Upper(Opportunity.Name), &quot;ASTM CAMPAIGN&quot;), &quot;4-ASTM Campaign&quot;,
+
+IF(CONTAINS(Upper(Opportunity.Name), &quot;NEW&quot;), &quot;5-NewBiz General&quot;,
+
+&quot;8-Unclassified Error&quot;))))
+)
+))))</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Oppy Type</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity$ChannelPartner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Banhill Nigeria Ltd</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Weekly Report Banhill(V1)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunitiesWithActivities__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>Opportunity$ContractStartDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$ContractStartDate__c</dateColumn>
+        <interval>INTERVAL_CURNEXT1</interval>
+    </timeFrameFilter>
+</Report>

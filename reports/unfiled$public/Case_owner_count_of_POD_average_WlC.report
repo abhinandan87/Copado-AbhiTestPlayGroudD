@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount / 9</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>BucketField_94330904</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average case</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_94330904</developerName>
+        <masterLabel>POD Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>CONTACT.NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Cassie Wages</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Grant Toschi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kris Mapes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alexander Piscia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brett Mallory</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chester Sykes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Natalie Noble</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Svetlana Sidorova</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andy Mayer</sourceValue>
+            </sourceValues>
+            <value>POD Team</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_49804094</developerName>
+        <masterLabel>Sales Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>CONTACT.NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Alexander Piscia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brett Mallory</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chester Sykes</sourceValue>
+            </sourceValues>
+            <value>POD 1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Andy Mayer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Natalie Noble</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Svetlana Sidorova</sourceValue>
+            </sourceValues>
+            <value>POD 3</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cassie Wages</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Grant Toschi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kris Mapes</sourceValue>
+            </sourceValues>
+            <value>POD 2</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_94330904</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>OWNER_ROLE</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Account.SourceCase__c</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>Case.ActionTaken__c</field>
+    </columns>
+    <columns>
+        <field>CONTACT.NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.ContactRegion__c</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(AGE&gt;5,&quot;Exceeded Goal&quot;,&quot;Goal&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Goal</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Case owner count by pod reps</description>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>armando calderon,nina zhu,kazue tanabe,carol white,jennifer reish,charlotte buckley,simona degueldre,amanda connolly,lai mascardo,Chrissy Martin,dorota  kruczkowska,Suha Kaniapan,Amylia Chandra,Shashi Mohan,Alejandro Calderon,Steven Ho,SK Teoh,sze kei Foong,Nasyitah Subhan,Noradilla Azman</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Channel Partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Cassie Wages,Grant Toschi,Kris Mapes,Alexander Piscia,Brett Mallory,Chester Sykes,Andy Mayer,Natalie Noble,Svetlana Sidorova</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_94330904</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Case owner count of POD average</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

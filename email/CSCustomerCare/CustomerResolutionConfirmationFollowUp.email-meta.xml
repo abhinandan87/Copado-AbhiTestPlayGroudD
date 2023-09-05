@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC1-2648 : Use this email when we have sent a resolution to the customer and are awaiting confirmation</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Customer Resolution Confirmation Follow Up</name>
+    <style>none</style>
+    <subject>IHS Customer Care: {!Case.ProductGroup__c}: Confirmation Requested</subject>
+    <textOnly>Account: {!Case.Account}
+Contact: {!Case.Contact}
+Case Number: {!Case.CaseNumber}
+Case Description: {!Case.Description}
+Hello {!Case.Contact},
+
+I wanted to confirm that the resolution offered in case number {!Case.CaseNumber}  with respect to {!Case.ProductGroup__c} was indeed what you needed to resolve your inquiry.  If no response is received within the next 24 hours the case will be archived with the assumption that the inquiry is resolved.
+
+Please note that if you wish to continue working this issue you can contact S&amp;P Global Customer Care to reactivate this case at your convenience by providing the case number in the header of this email.
+
+Thank you, and should you require further assistance please do not hesitate to  contact us.
+
+Kind regards,
+{!Case.OwnerFullName}
+S&amp;P Global | Customer Care</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

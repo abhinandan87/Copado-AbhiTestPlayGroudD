@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_97531268</developerName>
+        <masterLabel>Groups</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>MEMBER_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Aleksandra Maguire</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christian Schena</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Duyen Phan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Laura Hand</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Kulikova</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Martin Seban</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maureen Maguire</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohsen Bonakdarpour</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patrick Thomson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Ciannavei</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scott Hazelton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brendan O&apos;Neil</sourceValue>
+            </sourceValues>
+            <value>Macro Economics</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Arif Butt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gabrielle Morin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>George Hilton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Joao Vilas-Boas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Luc Meier</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthieu Delannoy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oleg Golovenko</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Richard Mayer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Safa Abdul Rasul</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>William Edwards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anna Mathewson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rahul Bedmutha</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Quynh Le</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pierino Branella</sourceValue>
+            </sourceValues>
+            <value>Risks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cameron Lockwood</sourceValue>
+            </sourceValues>
+            <value>LS</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ForecastCategory__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.SalesNewPrice__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>MEMBER_ROLE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS1_COUNTRY_CODE</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ReferralType__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ReferredByContact__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ReferralPartner__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Closed Won Deals by CFY</description>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Real Estate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Algo,Rpt on Jobs,Bellwether,Sponsored,ReDist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.BusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Economic</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Consultant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.NewBusiness</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>6W-Closed Won,6W-Renewal Won,6W-Forecasting Placeholder,6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_97531268</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MEMBER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Closed Won by Consultant - CFY</name>
+    <params>
+        <name>include</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.ContractStartDate__c</dateColumn>
+        <endDate>2022-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-12-01</startDate>
+    </timeFrameFilter>
+</Report>

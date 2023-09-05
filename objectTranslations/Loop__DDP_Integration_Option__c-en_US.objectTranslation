@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- If left blank, the file name of the PDF will be used. --></help>
+        <label><!-- Agreement Name --></label>
+        <name>Loop__Agreement_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows the user to choose to store the Document Package based on the Attach As field. --></help>
+        <label><!-- Allow Document Storage --></label>
+        <name>Loop__AllowOutputAttachment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Attachment will create a Salesforce attachment; LOOP Storage will create a document in the LOOP Storage interface; Content and Content - User Selected will create a Content document in the appropriate Workspace. --></help>
+        <label><!-- Store As --></label>
+        <name>Loop__Attach_As__c</name>
+        <picklistValues>
+            <masterLabel>Attachment</masterLabel>
+            <translation><!-- Attachment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation><!-- Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content</masterLabel>
+            <translation><!-- Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content - User Selected</masterLabel>
+            <translation><!-- Content - User Selected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FTP</masterLabel>
+            <translation><!-- FTP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOOP Storage</masterLabel>
+            <translation><!-- LOOP Storage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office 365</masterLabel>
+            <translation><!-- Office 365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFTP</masterLabel>
+            <translation><!-- SFTP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SpringCM</masterLabel>
+            <translation><!-- SpringCM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veeva Vault</masterLabel>
+            <translation><!-- Veeva Vault --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- None or Default will use the default Authoritative Copy setting specified in your DocuSign account configuration. --></help>
+        <label><!-- Authoritative Copy --></label>
+        <name>Loop__Authoritative_Copy__c</name>
+        <picklistValues>
+            <masterLabel>Authoritative Copy</masterLabel>
+            <translation><!-- Authoritative Copy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default</masterLabel>
+            <translation><!-- Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Copy</masterLabel>
+            <translation><!-- Standard Copy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Brand Id --></label>
+        <name>Loop__Brand_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email a Copy to --></label>
+        <name>Loop__CC__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will default the &apos;Additional To&apos; field when delivering the Document Package via email. Use the Field Tagger to use dynamic email addresses. --></help>
+        <label><!-- Additional To --></label>
+        <name>Loop__CI_Additional_To__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will default the &apos;BCC&apos; field when delivering the Document Package via email. Use the Field Tagger to use dynamic email addresses. --></help>
+        <label><!-- BCC --></label>
+        <name>Loop__CI_BCC__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will default the &apos;CC&apos; field when delivering the Document Package via email. Use the Field Tagger to use dynamic email addresses. --></help>
+        <label><!-- CC --></label>
+        <name>Loop__CI_CC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Library --></label>
+        <name>Loop__Content_Workspace__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDP File Template --></label>
+        <name>Loop__DDP_File_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocGen Package --></label>
+        <name>Loop__DDP__c</name>
+        <relationshipLabel><!-- Delivery Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping Id --></label>
+        <name>Loop__Data_Mapping_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping Name --></label>
+        <name>Loop__Data_Mapping_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Mapping --></label>
+        <name>Loop__Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <help><!-- Decryption is currently only supported with CipherCloud. Contact Drawloop to enable this for your organization. --></help>
+        <label><!-- Decryption Required --></label>
+        <name>Loop__Decryption_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Data --></label>
+        <name>Loop__Delivery_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text entered here will be displayed when users hover over this option&apos;s info icon. --></help>
+        <label><!-- Help Text --></label>
+        <name>Loop__Description_Hover__c</name>
+    </fields>
+    <fields>
+        <help><!-- This option prevents all recipients from using the Print, Sign, and Fax option during the signing process. --></help>
+        <label><!-- Disable Sign on Paper --></label>
+        <name>Loop__Disable_Wet_Sign__c</name>
+    </fields>
+    <fields>
+        <help><!-- You can use Box share links in your email templates. Use the appropriate tags from the Field Tagger. --></help>
+        <label><!-- Use Box Links --></label>
+        <name>Loop__Email_Doc_Links__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use a DDP File or Salesforce Email Template for email deliveries. --></help>
+        <label><!-- Email Template --></label>
+        <name>Loop__Email_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow 1st recipient to suggest revisions --></label>
+        <name>Loop__Enable_Revisions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypted Token --></label>
+        <name>Loop__Encrypted_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enforce Signer Visibility --></label>
+        <name>Loop__EnforceSignerVisibility__c</name>
+    </fields>
+    <fields>
+        <help><!-- The FTP domain where you wish to store the document including any subfolders (e.g. ftp.yoursite.com/folder1/folder2/). The folders can be made dynamic using the Field Tagger. --></help>
+        <label><!-- FTP Domain --></label>
+        <name>Loop__FTPDomain__c</name>
+    </fields>
+    <fields>
+        <help><!-- The user name for your FTP domain. --></help>
+        <label><!-- Username --></label>
+        <name>Loop__FTPUserName__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTP --></label>
+        <name>Loop__FTP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if your Email Text includes HTML markup. --></help>
+        <label><!-- HTML Email --></label>
+        <name>Loop__HTML_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Host Signing for the First Signer --></label>
+        <name>Loop__Hosted_Signing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checking this option will remove the contact or lead reference on the email page. --></help>
+        <label><!-- Internal Email --></label>
+        <name>Loop__Internal_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Loop__Language__c</name>
+        <picklistValues>
+            <masterLabel>Chinese Simplified (China)</masterLabel>
+            <translation><!-- Chinese Simplified (China) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish (Denmark)</masterLabel>
+            <translation><!-- Danish (Denmark) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch (Netherlands)</masterLabel>
+            <translation><!-- Dutch (Netherlands) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (United States)</masterLabel>
+            <translation><!-- English (United States) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish (Finland)</masterLabel>
+            <translation><!-- Finnish (Finland) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French (France)</masterLabel>
+            <translation><!-- French (France) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German (Germany)</masterLabel>
+            <translation><!-- German (Germany) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic (Iceland)</masterLabel>
+            <translation><!-- Icelandic (Iceland) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian (Italy)</masterLabel>
+            <translation><!-- Italian (Italy) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese (Japan)</masterLabel>
+            <translation><!-- Japanese (Japan) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian (Norway)</masterLabel>
+            <translation><!-- Norwegian (Norway) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Portugal)</masterLabel>
+            <translation><!-- Portuguese (Portugal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian (Russia)</masterLabel>
+            <translation><!-- Russian (Russia) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Spain)</masterLabel>
+            <translation><!-- Spanish (Spain) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish (Sweden)</masterLabel>
+            <translation><!-- Swedish (Sweden) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Limit Availability --></label>
+        <name>Loop__Limit_Availability__c</name>
+        <picklistValues>
+            <masterLabel>Hidden</masterLabel>
+            <translation><!-- Hidden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Only</masterLabel>
+            <translation><!-- Mass Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Mass Only</masterLabel>
+            <translation><!-- Non-Mass Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Loop__Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>Loop__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Order --></label>
+        <name>Loop__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- OrgWideEmailAddress --></label>
+        <name>Loop__OrgWideEmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org-Wide Email Id --></label>
+        <name>Loop__OrgWideEmailId__c</name>
+    </fields>
+    <fields>
+        <label><!-- OrgWideEmailName --></label>
+        <name>Loop__OrgWideEmailName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org-Wide Email --></label>
+        <name>Loop__Org_Wide_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Output Type --></label>
+        <name>Loop__Output__c</name>
+        <picklistValues>
+            <masterLabel>Originals</masterLabel>
+            <translation><!-- Originals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation><!-- PDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF and Originals</masterLabel>
+            <translation><!-- PDF and Originals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate PDFs</masterLabel>
+            <translation><!-- Separate PDFs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If no option is selected, the default is Enhanced. --></help>
+        <label><!-- PDF Option --></label>
+        <name>Loop__PDF_Option__c</name>
+        <picklistValues>
+            <masterLabel>Basic</masterLabel>
+            <translation><!-- Basic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enhanced</masterLabel>
+            <translation><!-- Enhanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF/A</masterLabel>
+            <translation><!-- PDF/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF/A Basic</masterLabel>
+            <translation><!-- PDF/A Basic --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use the Field Tagger to make this value dynamic. --></help>
+        <label><!-- Password --></label>
+        <name>Loop__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password required to view PDF --></label>
+        <name>Loop__PasswordonPDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password required to sign --></label>
+        <name>Loop__PasswordtoSign__c</name>
+    </fields>
+    <fields>
+        <help><!-- Format the parameters as if on a query string (paramName=smplVal&amp;p2=sV2). This can be made dynamic using tags from the Field Tagger. --></help>
+        <label><!-- Post Parameters --></label>
+        <name>Loop__PostParameters__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text entered here will be displayed if there is a preview step. --></help>
+        <label><!-- Preview Step Help Text --></label>
+        <name>Loop__Preview_Step_Help_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Queue Folder Id --></label>
+        <name>Loop__Queue_Folder_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- A URL used to redirect 3rd party processes. --></help>
+        <label><!-- Redirect URL --></label>
+        <name>Loop__Redirect_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remind Recipient to Sign --></label>
+        <name>Loop__Remind_Recipient__c</name>
+        <picklistValues>
+            <masterLabel>Every Day, Until Signed</masterLabel>
+            <translation><!-- Every Day, Until Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Week, Until Signed</masterLabel>
+            <translation><!-- Every Week, Until Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation><!-- Never --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Document Package file will be stored in Salesforce as an attachment, activity history, or LOOP Storage document on the originating object. --></help>
+        <label><!-- Require Document Storage --></label>
+        <name>Loop__RequireOutputAttachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>Loop__SMTPDomain__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>Loop__SMTPUserName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Loop__SMTP_Password__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, the transfer will be done over SSL. --></help>
+        <label><!-- Secure --></label>
+        <name>Loop__SSL__c</name>
+    </fields>
+    <fields>
+        <label><!-- I also need to sign this document --></label>
+        <name>Loop__SenderSigns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signature Order --></label>
+        <name>Loop__Signature_Order__c</name>
+        <picklistValues>
+            <masterLabel>I sign, then the Recipient signs</masterLabel>
+            <translation><!-- I sign, then the Recipient signs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recipient signs, then I sign</masterLabel>
+            <translation><!-- Recipient signs, then I sign --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signature Type --></label>
+        <name>Loop__Signature_Type__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print, Sign, Fax</masterLabel>
+            <translation><!-- Print, Sign, Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Written Signature</masterLabel>
+            <translation><!-- Written Signature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-Signature</masterLabel>
+            <translation><!-- e-Signature --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Automatically send the Document Package to its destination (no PDF preview). --></help>
+        <label><!-- Auto Send --></label>
+        <name>Loop__SkipPreview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Data --></label>
+        <name>Loop__Storage_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type the folder structure for where you want to store the output. You can use the Field Tagger to dynamically determine your folders. Example: folder/sub folder/last folder --></help>
+        <label><!-- Storage Folder --></label>
+        <name>Loop__Storage_Folder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Location --></label>
+        <name>Loop__Storage_Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- This option allows the user to add or move signatures and other signing options on the file before sending out to the recipients. --></help>
+        <label><!-- Signing Preview and Edit --></label>
+        <name>Loop__Tag_Before_Sending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Template Id --></label>
+        <name>Loop__Template__c</name>
+    </fields>
+    <fields>
+        <help><!-- If returning an original Word document, this option will turn on tracking within the file. --></help>
+        <label><!-- Turn Tracking On --></label>
+        <name>Loop__TurnTrackingOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Loop__Type__c</name>
+        <picklistValues>
+            <masterLabel>Area Mail</masterLabel>
+            <translation><!-- Area Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter</masterLabel>
+            <translation><!-- Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postcard</masterLabel>
+            <translation><!-- Postcard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print</masterLabel>
+            <translation><!-- Print --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If unchecked, the user does not see the processing screen while the Document Package is being generated. --></help>
+        <label><!-- Wait for document to process --></label>
+        <name>Loop__Wait__c</name>
+    </fields>
+    <fields>
+        <label><!-- WorkspaceId --></label>
+        <name>Loop__WorkspaceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- WorkspaceName --></label>
+        <name>Loop__WorkspaceName__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, users will be able to change the subject and email text when running a Document Package. --></help>
+        <label><!-- Allow Subject and Email Changes --></label>
+        <name>Loop__dsAllowEmailCustomizations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma-semicolon delimited string: each field separated by a semicolon, each parameter per field separated by a comma. E.g. &quot;custmFld1Name, custmFld1Val; custmFld2Name, &lt;&lt;Account_Id&gt;&gt;&quot;. This value is dynamic, see the associated help topic. --></help>
+        <label><!-- Custom Envelope Fields --></label>
+        <name>Loop__dsCustomFields__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use the Field Tagger to make this dynamic. --></help>
+        <label><!-- Email Text --></label>
+        <name>Loop__dsEmailText__c</name>
+    </fields>
+    <fields>
+        <help><!-- Expire signing in # days. 0 days will never expire. --></help>
+        <label><!-- Days till Signing Expires --></label>
+        <name>Loop__dsExpireAfter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Warn of expiration # days prior to expiration. --></help>
+        <label><!-- Warn of Expiration --></label>
+        <name>Loop__dsExpireWarn__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, the user will be able to change the defaults for the expirations and reminders. --></help>
+        <label><!-- Allow Remind and Expire Changes --></label>
+        <name>Loop__dsExposeExpirations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Send Reminder in # days. 0 days will not send a reminder. --></help>
+        <label><!-- Reminder Delay --></label>
+        <name>Loop__dsReminderDelay__c</name>
+    </fields>
+    <fields>
+        <help><!-- Repeat reminder every # days until complete. --></help>
+        <label><!-- Reminder Frequency --></label>
+        <name>Loop__dsReminderFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use the Field Tagger to make this dynamic. Examples: &quot;Quote &lt;&lt;Opportunity_Quote_Num&gt;&gt;&quot; or &quot;&lt;&lt;Account_Name&gt;&gt; Proposal&quot;. --></help>
+        <label><!-- Subject --></label>
+        <name>Loop__dsSubject__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Template Id from the DocuSign Console. When using a Template Id, the roles of the recipients in the template must match the roles of the recipients in the related list below. --></help>
+        <label><!-- Template Id --></label>
+        <name>Loop__dsTemplateId__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Allows you to run a DocGen Package to be attached to a record. --></description>
+        <label><!-- Attach --></label>
+        <name>Loop__Attach</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to Content Delivery --></description>
+        <label><!-- Content Delivery --></label>
+        <name>Loop__ContentDelivery</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to DocuSign --></description>
+        <label><!-- DocuSign --></label>
+        <name>Loop__DocuSign</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Allows the DocGen Package to be sent to the DocGen Queue tab --></description>
+        <label><!-- DocGen Queue --></label>
+        <name>Loop__Document_Queue</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to download this DocGen Package --></description>
+        <label><!-- Download --></label>
+        <name>Loop__Download</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to Adobe Sign / Nintex Sign --></description>
+        <label><!-- Adobe Sign / Nintex Sign --></label>
+        <name>Loop__EchoSign</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create a Delivery Option to route the DocGen Package via email. --></description>
+        <label><!-- Email --></label>
+        <name>Loop__Email</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to any HTTP Service --></description>
+        <label><!-- HTTP Service --></label>
+        <name>Loop__HTTP_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Allows the DocGen Package to be sent to the LOOP tab --></description>
+        <label><!-- LOOP --></label>
+        <name>Loop__LOOP</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to Lob --></description>
+        <label><!-- Lob (Deprecated) --></label>
+        <name>Loop__Lob</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to a Nintex Workflow Cloud External Start workflow --></description>
+        <label><!-- Start Nintex Workflow --></label>
+        <name>Loop__NWC_External_Start</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to automatically email this DocGen Package through a 3rd party email account --></description>
+        <label><!-- SMTP Service --></label>
+        <name>Loop__SMTPService</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to Sertifi --></description>
+        <label><!-- Sertifi --></label>
+        <name>Loop__Sertifi</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to SignNow --></description>
+        <label><!-- SignNow --></label>
+        <name>Loop__SignNow</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Create an option to route this DocGen Package to e-SignLive --></description>
+        <label><!-- e-SignLive --></label>
+        <name>Loop__e_SignLive</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The Lob record type is deprecated. --></errorMessage>
+        <name>Loop__Deprecate_Lob</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Custom_Delete --></label>
+        <name>Loop__Custom_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Field_Tagger --></label>
+        <name>Loop__Field_Tagger</name>
+    </webLinks>
+</CustomObjectTranslation>

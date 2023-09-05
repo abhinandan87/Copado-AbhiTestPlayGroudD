@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>AdditionalCaseFields__c.EscalationReason__c</field>
+    </columns>
+    <columns>
+        <field>AdditionalCaseFields__c.EscalationAction__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Onboarding,Case.CustomerCare,Case.Implementation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AdditionalCaseFields__c.EscalationReason__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Incident,Praise,Prioritization,Quality of Response,Security Breach,Service Incident,Turnaround Times</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ashwajit Singh,saumya singh,Deepak Dutt,Hiren Mathur,nisha khurana,Grand Total,Rishabh Kumar,shikha kanwar,Amitpreet Singh,Eshan Singh,Tej Pratap Sohi,Khushbu Srivastava,Jitesh Jangid,Divesh Singh,Mohammad Shahzeb,Pooja Verma,Aashi Garg,Bharat Pathak,Dimple Kapoor</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>MW CS escalation cases</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseCustomEntity$AdditionalCaseFields__c@AdditionalCaseFields__c.EscalatedTo__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>OWNER</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Axivas Product Design Pre-Sales</name>
+    <queueMembers>
+        <users>
+            <user>angela.clayton@ihsmarkit.com</user>
+            <user>antoan.michev@ihsmarkit.com</user>
+            <user>blagoja.petrovski@ihsmarkit.com</user>
+            <user>claudia.ng@ihsmarkit.com</user>
+            <user>mohamadfauzan.binch@ihsmarkit.com</user>
+            <user>trinh.nguyen@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

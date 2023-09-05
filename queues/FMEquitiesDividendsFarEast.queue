@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>dividendsapac@ihsmarkit.com</email>
+    <name>FM | Dividends | APAC</name>
+    <queueMembers>
+        <users>
+            <user>ankita.narwal@ihsmarkit.com</user>
+            <user>benito.ting@ihsmarkit.com</user>
+            <user>chongjun.wong@ihsmarkit.com</user>
+            <user>gourahari.bebortha@ihsmarkit.com</user>
+            <user>hyeyoung.jo@ihsmarkit.com</user>
+            <user>ian.vanderhorn@ihsmarkit.com</user>
+            <user>karmun.fan@ihsmarkit.com</user>
+            <user>maojun.ye@ihsmarkit.com</user>
+            <user>marvyn.hoi@ihsmarkit.com</user>
+            <user>qianwen.ruan@ihsmarkit.com</user>
+            <user>selim.baek@ihsmarkit.com</user>
+            <user>seolin.park@ihsmarkit.com</user>
+            <user>shivam.amla@ihsmarkit.com</user>
+            <user>sophie.cortesbernabe@ihsmarkit.com</user>
+            <user>surneet.bhatia@ihsmarkit.com</user>
+            <user>timothy.whitehead@ihsmarkit.com</user>
+            <user>will.hopkins@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Referral State</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Referral States</value>
+    </caseValues>
+    <fields>
+        <label><!-- IHS State Code --></label>
+        <name>IHS_State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- IHS State Name --></label>
+        <name>IHS_State_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indices State Code --></label>
+        <name>Indices_State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indices State Name --></label>
+        <name>Indices_State_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- MI State Code --></label>
+        <name>MI_State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- MI State Name --></label>
+        <name>MI_State_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Platts Name --></label>
+        <name>Platts_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Platts State Code --></label>
+        <name>Platts_State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ratings State Code --></label>
+        <name>Ratings_State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ratings State Name --></label>
+        <name>Ratings_State_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Country --></label>
+        <name>Referral_Country__c</name>
+        <relationshipLabel><!-- Referral States --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

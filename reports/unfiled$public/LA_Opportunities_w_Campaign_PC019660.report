@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_86001499</developerName>
+        <masterLabel>SAM Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OPP.OWNER_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amy Fuller-Riley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Bruce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tiffany Aspinall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Simmons</sourceValue>
+            </sourceValues>
+            <value>SAM Team</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_12433517</developerName>
+        <masterLabel>Teams</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OPP.OWNER_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amy Fuller-Riley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Walter Bruce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tiffany Aspinall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Simmons</sourceValue>
+            </sourceValues>
+            <value>SAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jeff Benton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Travis Hagler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Derek Gonsuron</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James McCarthy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christina Allen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Hernandez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robin Fernandez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jim Conway</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ryan Marshall</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Benjamin Rattner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nino Pepper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nail Christian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nelson Armstrong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jay Wininger</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandon DeMarsico</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andy Quintero</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sabrina Ousmaal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alex Blizzard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steven McKenzie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patrick Gideon</sourceValue>
+            </sourceValues>
+            <value>Southern</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Leisha Archie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel Heuston</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kathy Maher</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kevin Blake</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brandon Jones</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nancy Strabala</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Van Nest</sourceValue>
+            </sourceValues>
+            <value>Northern</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Diane Braaten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Caroline Wilson</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gina Gurung</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Julie Harper</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oliva Unarce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sheila Whitten</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eric Hards</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aaron Gardner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Arena</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dominik Rozwadowski</sourceValue>
+            </sourceValues>
+            <value>Canadian</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Campaign.CampaignNumber__c</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>OPP.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityOwner__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Amount__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>INFLUENCE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>OPP.DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>BucketField_12433517</field>
+    </columns>
+    <columns>
+        <field>OPP.STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonCode__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.LostReasonDescription__c</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>Opportunity.TotalSalesPriceRollup__c.CONVERT * INFLUENCE</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Campaign Sales Value</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>TEST</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Opportunitynum__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OP0000823771,OP0000941094,OP0001037202,OP0001104323,OP0001110012,OP0001205747,OP0001225979,OP0001311891,OP0001338155,OP0001345074,OP0001346527,OP0001353399,OP0001358011,OP0001359556,OP0001359586,OP0001362192,OP0001364367,OP0001367547,OP0001368266,OP0001368336,OP0001368419,OP0001370847,OP0001371740,OP0001371819,OP0001374198,OP0001376386,OP0001377590,OP0001378664,OP0001378675,OP0001379697,OP0001380302,OP0001381345,OP0001382800,OP0001383950,OP0001383952,OP0001384387,OP0001387752,OP0001388185,OP0001389265,OP0001391511,OP0001391960,OP0001396155,OP0001402824,OP0001406340,OP0001406373,OP0001412036,OP0001413779,OP0001417205,OP0001418647,OP0001420368,OP0001424209,OP0001433817,OP0001436470,OP0001436500,OP0001437779,OP0001439148,OP0001440063,OP0001440474,OP0001441883,OP0001441983,OP0001447933,OP0001448076,OP0001449641,OP0001450133,OP0001451222,OP0001451694,OP0001453991,OP0001454595,OP0001454723,OP0001456955,OP0001457459,OP0001461325,OP0001461908,OP0001463261,OP0001464154,OP0001464789,OP0001465021,OP0001465441,OP0001468016,OP0001468042</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Opportunitynum__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OP0001468110,OP0001468550,OP0001468588,OP0001469462,OP0001469867,OP0001469878,OP0001470275,OP0001470297,OP0001470338,OP0001470664,OP0001470698,OP0001470715,OP0001470976,OP0001471017,OP0001471530,OP0001471534 OP0001471732,OP0001471941,OP0001471961,OP0001472056,OP0001472068,OP0001472104,OP0001472178,OP0001472221,OP0001472475,OP0001472488,OP0001472833,OP0001472963,OP0001472965,OP0001473073,OP0001473697,OP0001473706 OP0001473710,OP0001473723,OP0001474074,OP0001474631,OP0001474643,OP0001474977,OP0001475009,OP0001475015,OP0001475064,OP0001475131,OP0001475496,OP0001475500,OP0001475575,OP0001475578,OP0001475606,OP0001475609 OP0001476370,OP0001476418,OP0001476440,OP0001476724,OP0001476727,OP0001476798,OP0001477139,OP0001477153,OP0001477162,OP0001477187,OP0001477500,OP0001477519,OP0001477810,OP0001479069,OP0001479378,OP0001479689,OP0001480030,OP0001480339,OP0001480358,OP0001480394,OP0001480617,OP0001480620,OP0001480639,OP0001480663,OP0001480686,OP0001480703,OP0001480717,OP0001481053,OP0001481080,OP0001481081,OP0001481085,OP0001481107</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Opportunitynum__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OP0001481497,OP0001481511,OP0001482005,OP0001482028,OP0001482455,OP0001482853,OP0001482883,OP0001482889,OP0001482907,OP0001482915,OP0001483280,OP0001483777,OP0001484172,OP0001484174,OP0001484226,OP0001484245,OP0001484304,OP0001485148,OP0001485179,OP0001485213,OP0001485575,OP0001485643,OP0001485648,OP0001485721,OP0001486212,OP0001486297,OP0001486315,OP0001486369,OP0001486373,OP0001486374,OP0001486816,OP0001486873,OP0001486938,OP0001487292,OP0001487343,OP0001487406,OP0001487410,OP0001487732,OP0001487855,OP0001488270,OP0001488757,OP0001488786,OP0001488801,OP0001488821,OP0001488858,OP0001489593,OP0001489624,OP0001489843,OP0001489845,OP0001490073,OP0001490270,OP0001490869,OP0001490931,OP0001490940,OP0001490943,OP0001490950,OP0001490973,OP0001490981,OP0001490990,OP0001491298,OP0001491337,OP0001491342,OP0001491696,OP0001491787 OP0001491833,OP0001492113,OP0001492187,OP0001492222,OP0001492235,OP0001492246,OP0001492278,OP0001492516,OP0001492679,OP0001492681,OP0001492700,OP0001492710,OP0001492721,OP0001492723,OP0001493210,OP0001493212</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Opportunitynum__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OP0001493563,OP0001493574,OP0001493583,OP0001493598,OP0001493614,OP0001493946,OP0001493954,OP0001494124,OP0001494139,OP0001494357,OP0001494403,OP0001494410,OP0001494414,OP0001494559,OP0001495024,OP0001495060 OP0001495071,OP0001495217,OP0001495569,OP0001495643,OP0001495768,OP0001495793,OP0001496562,OP0001496915,OP0001496939,OP0001496954,OP0001496981,OP0001497167,OP0001497169,OP0001497381,OP0001497423,OP0001497487 OP0001497528,OP0001497653,OP0001497967,OP0001498004,OP0001498076,OP0001498462,OP0001498513,OP0001499304,OP0001499416,OP0001499437,OP0001499847,OP0001499994,OP0001500707,OP0001500741,OP0001500762,OP0001500802 OP0001500803,OP0001501557,OP0001501582,OP0001501600,OP0001502006,OP0001502375,OP0001502427,OP0001502448,OP0001502811,OP0001502834,OP0001503224,OP0001503245,OP0001503262,OP0001503310,OP0001503586,OP0001503636 OP0001503640,OP0001503964,OP0001504000,OP0001504030,OP0001504097,OP0001504475,OP0001504495,OP0001504499,OP0001505116,OP0001505399,OP0001505446,OP0001505462,OP0001505494,OP0001506022,OP0001506232,OP0001506421 OP0001506458,OP0001506491,OP0001506776,OP0001507191,OP0001507223,OP0001507235,OP0001507365,OP0001508342,OP0001508883,OP0001508909,OP0001508950,OP0001509465,OP0001509980,OP0001509989,OP0001510462</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>LA - Opportunities w/ Campaigns</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomizableCampaignInfluence</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>INFLUENCE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+</Report>

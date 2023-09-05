@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>mk-loanreferencedata@markit.com</email>
+    <name>FM | Loan Ref Data | New Asset Request</name>
+    <queueMembers>
+        <users>
+            <user>amydawn.curtis@markit.com.prod</user>
+            <user>birupaksha.das@ihsmarkit.com</user>
+            <user>blake.lee@ihsmarkit.com</user>
+            <user>garima.bisht@ihsmarkit.com</user>
+            <user>manasvi.pathak@ihsmarkit.com</user>
+            <user>manjeet.kaur@ihsmarkit.com</user>
+            <user>marnie.merrill@ihsmarkit.com</user>
+            <user>mason.addy@ihsmarkit.com</user>
+            <user>mayank.bhatia@ihsmarkit.com</user>
+            <user>praveen.kumar@ihsmarkit.com</user>
+            <user>rachel.min@ihsmarkit.com</user>
+            <user>samir.singh@markit.com.prod</user>
+            <user>shivendu.srivastava@ihsmarkit.com</user>
+            <user>sneha.khosla@ihsmarkit.com</user>
+            <user>sumitkumar.mishra@ihsmarkit.com</user>
+            <user>vinay.goyal@ihsmarkit.com</user>
+            <user>vipin.gupta@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

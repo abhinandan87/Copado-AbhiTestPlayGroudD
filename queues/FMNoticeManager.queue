@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Notice Manager</name>
+    <queueMembers>
+        <users>
+            <user>abhay.kalia@ihsmarkit.com</user>
+            <user>andrew.eisen@ihsmarkit.com</user>
+            <user>anjana.mishra@ihsmarkit.com</user>
+            <user>ankur.bhardwaj@ihsmarkit.com</user>
+            <user>ashish.aneja@ihsmarkit.com</user>
+            <user>ashkan.halvaei@ihsmarkit.com.prod</user>
+            <user>bryce.may@markit.com.prod</user>
+            <user>cory.hinchey@ihsmarkit.com</user>
+            <user>david.dong@ihsmarkit.com</user>
+            <user>deepak.singh@ihsmarkit.com</user>
+            <user>genevieve.paganini@ihsmarkit.com</user>
+            <user>gina.giraldo@ihsmarkit.com</user>
+            <user>gurpreet.randhawa@ihsmarkit.com</user>
+            <user>jasveer.singh@ihsmarkit.com</user>
+            <user>jeremy.reed@ihsmarkit.com</user>
+            <user>kay.huyen@ihsmarkit.com</user>
+            <user>kyle.cox@ihsmarkit.com</user>
+            <user>michael.english@ihsmarkit.com</user>
+            <user>priyanka.tiwari@ihsmarkit.com</user>
+            <user>rajesh.rana@ihsmarkit.com.prod</user>
+            <user>shahzad.niazi@ihsmarkit.com</user>
+            <user>stacey.blackford@markit.com.prod</user>
+            <user>stephanie.rawlinson@ihsmarkit.com</user>
+            <user>vinay.shetti@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

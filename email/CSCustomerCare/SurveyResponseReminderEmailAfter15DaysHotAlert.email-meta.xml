@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC-5863: Survey Response Email After 15 Days</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Survey Response Reminder Email After 15 Days Hot Alert</name>
+    <style>none</style>
+    <subject>Your {!SurveyResponse__c.RecordType} Survey Response {!SurveyResponse__c.Name} has been open for {!SurveyResponse__c.Age__c} Days - Reminder</subject>
+    <textOnly>Dear {!SurveyResponse__c.OwnerFullName},
+
+You have a {!SurveyResponse__c.RecordType} Survey Response Hot Alert that has been open for {!SurveyResponse__c.Age__c} days.
+
+This is an automated reminder to inform you that you have 15 days remaining to close out the Survey Response. You are required to close the loop with the customer and close out the Survey Response Hot Alert in Salesforce within the 30 Day SLA.
+
+Details of the Survey Response are as follows:
+
+Survey Response: {!SurveyResponse__c.Name}
+Survey Response Owner: {!SurveyResponse__c.OwnerFullName}
+Survey Type: {!SurveyResponse__c.RecordType}
+Account: {!SurveyResponse__c.Account__c}
+Contact: {!SurveyResponse__c.Contact__c}
+URL: {!SurveyResponse__c.Link}
+
+If you have any questions or concerns, please contact the Customer Experience Team: CustomerExperience@ihsmarkit.com.
+
+Kind regards,
+Customer Experience Team | Sphere</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

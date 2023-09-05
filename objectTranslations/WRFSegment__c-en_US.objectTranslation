@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Segment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Segments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Data File Name --></label>
+        <name>DataFileName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deployment Date --></label>
+        <name>DeploymentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desired Quantity --></label>
+        <name>DesiredQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Opt Out File Name --></label>
+        <name>EmailOptOutFileName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Opt Out File Quantity --></label>
+        <name>EmailOptOutFileQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- From Text (up to 50 characters) --></help>
+        <label><!-- From Text --></label>
+        <name>FromText__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTML Creative File Name --></label>
+        <name>HTMLCreativeFileName__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Vendor Performing Suppression. If Production Performing Suppression, this can remain blank. --></help>
+        <label><!-- Name/Address Suppression File Name --></label>
+        <name>NameAddressSuppressionFileName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name/Address Suppression File Quantity --></label>
+        <name>NameAddressSuppressionFileQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Segment Details --></label>
+        <name>OtherSegmentDetails__c</name>
+    </fields>
+    <fields>
+        <help><!-- Other Special Instructions or Requirements (Please provide details) --></help>
+        <label><!-- Other Special Instructions --></label>
+        <name>OtherSpecialInstructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pre-Text Header (up to 60 characters) --></help>
+        <label><!-- Pre-Text Header --></label>
+        <name>PreTextHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity In Data file --></label>
+        <name>QuantityInDatafile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Subject Line (up to 60 characters) --></help>
+        <label><!-- Subject Line --></label>
+        <name>SubjectLine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Request Form --></label>
+        <name>WorkRequestForm__c</name>
+        <relationshipLabel><!-- Segments --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

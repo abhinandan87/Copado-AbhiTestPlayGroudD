@@ -1,0 +1,5 @@
+<design:component >
+	<design:attribute name="pageSize" label="Page Size" description="Please enter the number of links to be displayed" />
+    <design:attribute name="domain" label="Domain" description="Please enter the domain of the links" /> 
+    <design:attribute name="title" label="Title" description="Please enter a title" /> 
+</design:component>

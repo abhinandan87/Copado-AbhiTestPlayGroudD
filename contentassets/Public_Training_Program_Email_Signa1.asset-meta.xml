@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>Public_Training_Program_Email_Signa1</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>Public Training Program Email Signature - Smaller.gif</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

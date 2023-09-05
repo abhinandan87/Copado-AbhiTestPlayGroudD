@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.NumberOfLicenses__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Licenses__c</field>
+    </columns>
+    <columns>
+        <field>Contact.ProductUsageLast30days__c</field>
+    </columns>
+    <columns>
+        <field>Contact.ProductUsageLast60days__c</field>
+    </columns>
+    <columns>
+        <field>Contact.ProductUsageLast90days__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Product Usage 30/60/90, use filters with Product Group names to extract contact list.</description>
+    <format>Tabular</format>
+    <name>Product License Usage (30/60/90)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactCustomEntity$ProductLoginContactAssociation__c@ProductLoginContactAssociation__c.ProductLogin__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

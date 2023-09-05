@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Counterparty Manager ToU</name>
+    <style>none</style>
+    <subject>Counterparty Manager ToU</subject>
+    <textOnly>Thank you for your recent enquiry for more information in regards to our updated Terms of Use (ToU) in Counterparty Manager.
+
+As I am sure you are aware, we recently released new functionalities within Counterparty Manager and in line with that we have also updated our licensing terms. The updates reflect the new sub products available and the greater efficiencies across the IHS Markit infrastructure that we have achieved which includes the need to avoid duplication of data entries into IHS Markit’s regulatory and compliance related platforms.
+
+The main changes in the ToU are in regards to:
+(a) incorporating KYC license terms which are only applicable to you if you consume KYC profiles; and
+(b) broadening the disclosure of data and redistributing data within Counterparty Manager’s sub platforms or IHS Markits’ regulatory and compliance related platforms - to help create efficiencies and reduce over cycle times, while maintaining the disclosure of documentation uploaded on Counterparty Manager on a permissioning basis.
+
+You can easily accept the terms by again logging into the Counterparty Manager platform using your login details and clicking the accept button.
+
+However if you have any more questions we would be more than happy to help.
+
+Regards
+The Counterparty Manager Team
+UK + 44 (0) 207 260 2102
+US +1-212-488-4049
+APAC +65 6922 4258</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

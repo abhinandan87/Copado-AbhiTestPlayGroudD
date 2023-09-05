@@ -1,0 +1,113 @@
+<aura:component controller="ProductSelectionController"  implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <!-- Declare variables -->
+    <aura:attribute name="oppyId" type="String" access="global" />
+    <aura:attribute name="lstProductsSelected" type="List" />
+    <aura:attribute name="lstCurrentProductsSelected" type="List" />
+    <aura:attribute name="isChangeLegalEntity" type="Boolean" default="false" access="global" />
+    <aura:attribute name="isBack" type="Boolean" access="global" />
+    <aura:attribute name="isCheck" type="Boolean" default="false" />
+    <aura:attribute name="recommendedLegalEntity" type="String" />
+    <aura:attribute name="lstRecommendedLegalEntity" type="LegalEntity__c[]" />
+    <aura:attribute name="requestedLegalEntity" type="String" />
+    <aura:attribute name="lstRequestedLegalEntity" type="LegalEntity__c[]" />
+    <aura:attribute name="selectedProductIds" type="String[]"/>
+    <aura:attribute name="legalEntityName" type="String"/>
+    <aura:attribute name="legalEntity" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:registerEvent name="onBackEvent" type="c:productSearchBackEvent" />
+    <aura:registerEvent name="proceedEvent" type="c:productSelected"/>
+    <aura:handler name="proceedEvent" event="c:productSelected" action="{!c.proceed}" />
+    <aura:handler name="backEvent" event="c:productSearchBackEvent" action="{!c.back}" />
+    <aura:attribute name="isException" type="Boolean" access="global" />
+    <aura:attribute name="countryTerritory" type="String" />
+    <aura:attribute name="lstMaterialCodes" type="String[]"/>
+    <aura:attribute name="materialCodes" type="String"/>
+    <aura:attribute name="requestReason" type="String"/>
+    <aura:attribute name="dollarValue" type="decimal"/>
+    <aura:attribute name="productsRemoved" type="Boolean" access="global" default="false" />
+    <aura:registerEvent name="modalCloseEvent" type="c:modalCloseEvt"/>
+    <!--SFDC-5500 Change Start-->
+    <aura:attribute name="lstProductsAdded" type="OPSWrapper[]"/>
+    <!--SFDC-5500 Change End-->
+    <!-- Variable declaration ends -->
+    <ltng:require styles="{!$Resource.multilineToastCSS}" />
+	
+    <aura:if isTrue="{!v.isBack}">
+            <c:productEditPage oppyId="{!v.oppyId}" 
+                               productIds="{!v.selectedProductIds}"
+                               legalEntity="{!v.legalEntity}"
+                               legalEntityName="{!v.legalEntityName}" />   
+    </aura:if>
+    <aura:if isTrue="{!!v.isBack}"> 
+    <lightning:card >
+        
+        <lightning:layout horizontalAlign="center" verticalAlign="end">
+            <p class="slds-text-heading--large">Select Legal Entity</p>
+        </lightning:layout>
+        
+        <div class="slds-size--1-of-1 slds-p-horizontal_small">
+            <p>{!$Label.c.RecommendedLegalEntityHeader}</p>
+        </div>
+        <div class="slds-size--1-of-1 slds-p-horizontal_small slds-text-color_error">
+            <p>{!$Label.c.RecommendedLegalEntityNote}</p>
+        </div>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-3">
+                <lightning:select name="recommendedLegalEntity"  value="{!v.recommendedLegalEntity}" disabled="{!v.isCheck}" >
+                    	<option value="--None--">--None--</option>
+                    	<aura:iteration var="recLegalEntity" items="{!v.lstRecommendedLegalEntity}" >
+                            <option value="{!recLegalEntity.Id}" selected="{!recLegalEntity.Id == v.recommendedLegalEntity}">{!recLegalEntity.Name}</option>
+                    	</aura:iteration>
+                </lightning:select>
+            	<br></br><br></br><br></br>
+        		<lightning:input type="checkbox" label="{!$Label.c.ExceptionCheckboxLabel}" name="exceptionCheckbox" onchange="{!c.onChange}"></lightning:input>
+            </div>
+        </div>
+        <br></br>
+        <aura:if isTrue="{!v.isCheck}">
+        	<div class="slds-size--1-of-1 slds-p-horizontal_small slds-text-color_error">
+            	<p>{!$Label.c.ExceptionInformativeMessage}</p>
+        	</div>
+    	</aura:if>
+        <br></br>
+        
+        <aura:if isTrue="{!v.isException}"> 
+    	<lightning:card >
+        
+        	<lightning:layout horizontalAlign="center" verticalAlign="end">
+            	<p class="slds-text-heading--large">Offline Exception Details Form</p>
+        	</lightning:layout>
+            
+            <!-- Spinner declaration -->
+    		<lightning:spinner variant="brand" size="large" class="slds-hide" aura:id="loadSpinner" />
+    		<!-- Spinner Ends -->
+        	
+        	<div class="slds-grid slds-wrap">
+            	<div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-3">
+                    <lightning:input type="text" label="Reason for the Request" name="requestReason" value="{!v.requestReason}" required="true"></lightning:input>
+                	<lightning:select name="requestedLegalEntity" aura:id="requestedLegalEntity" value="{!v.requestedLegalEntity}" label="Requested Legal Entity" required="true" >
+                    	<option value="--None--">--None--</option>
+                    	<aura:iteration var="reqLegalEntity" items="{!v.lstRequestedLegalEntity}" >
+                            <option value="{!reqLegalEntity.Id}">{!reqLegalEntity.Name}</option>
+                    	</aura:iteration>
+                	</lightning:select>
+                    <lightning:input type="number" label="US Dollar Value (For approval purpose only)" name="dollarValue" value="{!v.dollarValue}" required="true" formatter="currency" step="0.01"></lightning:input>
+                    <lightning:input type="text" label="Country/Territory" name="countryTerritory" value="{!v.countryTerritory}" disabled="true" required="true"></lightning:input>
+                    <lightning:input type="text" label="SAP Product Codes" name="productCodes" value="{!v.materialCodes}" disabled="true" required="true"></lightning:input>
+           	 	</div>
+        	</div>
+    	</lightning:card>
+    	</aura:if>
+    <!-- Docked footer starts-->
+    <div class="slds-m-top_xx-large slds-docked-form-footer">
+    	<lightning:layout horizontalAlign="space" verticalAlign="end">
+    		<lightning:button variant="brand" label="Back" iconName="utility:chevronleft" iconPosition="left" onclick="{!c.onBack}" disabled="{!v.isChangeLegalEntity == true || v.productsRemoved == true}"/>
+    		<lightning:button variant="brand" label="Proceed" iconName="utility:chevronright" iconPosition="right" onclick="{!c.onProceed}" disabled="{!v.recommendedLegalEntity == '--None--' || v.lstRecommendedLegalEntity == null || v.isCheck == true}"  />
+            <lightning:button variant="brand" label="Save" iconName="utility:save" iconPosition="right" onclick="{!c.onSave}" aura:id="save" disabled="{!!v.isCheck}" />
+    		<lightning:button variant="brand" label="Cancel" iconName="utility:close" iconPosition="right" onclick="{!c.cancel}" disabled="{!v.productsRemoved == true}" />
+    	</lightning:layout>
+    </div>
+    <!-- Docked footer ends-->
+    </lightning:card>
+    </aura:if>
+</aura:component>

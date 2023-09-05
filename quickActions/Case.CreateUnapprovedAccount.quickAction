@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC1-965 &amp; SFDC1-638 create an unapproved account from Account Governance case
+SFDC1-10485 add Phone, Website and Institution Type</description>
+    <fieldOverrides>
+        <field>AccountCountry__c</field>
+        <formula>IF (Case.Country__c != null, Case.Country__c, 
+IF (Case.ContactReference__c != null,  Case.ContactReference__r.ContactCountry__c, null)
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>BillingCity</field>
+        <formula>IF (Case.City__c != null, Case.City__c, 
+IF (Case.ContactReference__c != null, Case.ContactReference__r.MailingCity, &apos;&apos;)
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>BillingCountryCode</field>
+        <formula>IF (Case.Country__c != null, Case.Country__r.CountryCode__c,
+IF (Case.CaseReference__c != null, 
+Case.CaseReference__r.ContactCountryCode__c, &apos;&apos;))</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>BillingPostalCode</field>
+        <formula>IF (Case.Postal__c != null, Case.Postal__c,
+IF (Case.ContactReference__c != null,  Case.ContactReference__r.MailingPostalCode, &apos;&apos;)
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>BillingStreet</field>
+        <formula>IF (Case.Address1__c != null, Case.Address1__c + BR() +  Case.Address2__c,
+IF (Case.ContactReference__c != null, Case.ContactReference__r.MailingStreet, &apos;&apos;)
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>DataGovernanceStatus__c</field>
+        <literalValue>Unapproved</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>IF (Case.AccountName__c != null, Case.AccountName__c,
+IF (Case.CaseReference__c != null, Case.CaseReference__r.AccountName__c, &apos;&apos;)
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>OwnerId</field>
+        <formula>Case.CreatedById</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Phone</field>
+        <formula>Case.PhoneNumber__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Website</field>
+        <formula>Case.Website__c</formula>
+    </fieldOverrides>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Type</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Phone</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>InstitutionType__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>BillingAddress</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Status__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Industry</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Website</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>ExternalOrgType__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <standardLabel>New</standardLabel>
+    <successMessage>New Account in unapproved status has been created</successMessage>
+    <targetObject>Account</targetObject>
+    <targetParentField>SourceCase__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

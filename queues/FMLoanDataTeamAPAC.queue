@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Loan Data Team | APAC</name>
+    <queueMembers>
+        <users>
+            <user>ben.evans@ihsmarkit.com</user>
+            <user>bharat.parameswaran@ihsmarkit.com</user>
+            <user>dane.quigley@ihsmarkit.com</user>
+            <user>gaurav.garg@ihsmarkit.com</user>
+            <user>hanish.chhabra@ihsmarkit.com</user>
+            <user>jeremy.reed@ihsmarkit.com</user>
+            <user>joseph.jin@ihsmarkit.com</user>
+            <user>matthias.cheong@ihsmarkit.com</user>
+            <user>mayank.bhatia@ihsmarkit.com</user>
+            <user>neha.tiwari@ihsmarkit.com</user>
+            <user>rahul.bhatia@ihsmarkit.com</user>
+            <user>rahul.singh@ihsmarkit.com</user>
+            <user>ravi.jaysawal@ihsmarkit.com</user>
+            <user>rory.mcswiggan@ihsmarkit.com</user>
+            <user>simon.ng@ihsmarkit.com</user>
+            <user>vijay.mogha@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

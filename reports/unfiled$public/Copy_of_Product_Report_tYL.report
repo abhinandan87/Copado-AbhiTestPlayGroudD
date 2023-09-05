@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>CUSTOMER_PRODUCT_ID</field>
+    </columns>
+    <columns>
+        <field>FAMILY</field>
+    </columns>
+    <columns>
+        <field>Product2.MaterialCode__c</field>
+    </columns>
+    <columns>
+        <field>Product2.ProductID18Character__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>((1 OR 2) OR 3) OR 4</booleanFilter>
+        <criteriaItems>
+            <column>NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Dividend Forecasting,Exchange Traded Products,Corporate Actions,Securities Finance,Credit Risk Factors,Cybersecurity Factors,Dividend Forecast Factors,ESG Factors,Sector Rotation Model,Short Sentiment Factor Suite,Short Squeeze Model,Social Media Indicators,Agency Commissions Paid,Analyst Coverage,Bank Profiles,Buyside Contacts,Buyside Profile,Call/Puts Database,Corporate Compensation,Corporate Directors,Corporate Officers,Corporation Investment Profile,Credit Union Profile,GP - Financial Sponsor,Equity Cost Basis,Equity Deals Database,Expedited Mutual Fund Portfolios,EU Net Shorts,Financial Sponsor Profile,Fund Assets Under Management,Fund Commissions,Fund Holdings Portfolio Analytics,Fund Profiles,Investor Assets Under Management,Investor Contact Information,Institution - 13F Filings,Insurance Companies – France,Investor Cost Basis,Investor Hierarchy,Investor Portfolio Analytics,Municipal Deals Database,Municipality Portfolios,Mutual Funds – Poland,Ownership by Contact Person,Ownership of other money types,Pension Funds,Private Company Profiles,Proxy Meetings and Proposals,Proxy Results (8-K),Proxy Voting (N-PX),Proxy Voting Results,Research Firm Profiles,Sell Side Contacts,Credit Default Swaps,Commodities,Cross Asset Liquidity,Equities,Fair Value,Fixed Income,Foreign Exchange (FX),Interest Rates</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Equity Derivatives,FX,Corporate and Sovereign,Securitized Products,Municipal Bonds,Loans,Credit Default Swaps,CDS reference data,Fixed Income and Equity reference data,Loan reference data,Alternative Scenarios for IFRS9 and CECL,As Reported Data,Banking Risk,Commodity Price Data,Comparative Industry,Country Risk,Country Risk Evaluation &amp; Simulation Tools (CREST),Economic Forecast Monitor,Economics Analytics - Historical Data,Foresight Security Planning,Global Construction,Global Consumer,Global Link Model (GLM),Halifax House Price Index,Industry Forecast Monitor,Industry Scenario Service,PharmOnline International (POLI),Purchasing Managers’ Index (PMI),US Construction,US Consumer,US Macro Economic,US Regional,Sector Risk Ratings,Sovereign Risk,World Markets Healthcare,World Markets Pricing and Reimbursement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>,Governance,Research,Equity and ETF Data,Research Signals,Ipreo,Capital Markets,Fund,Holdings,People,and Research,OTC,Cash and Derivative Market,Reference Data,ECR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.SubBusinessLine__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>PVR,GMG: Equities,ECR</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Product2.ProductGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of Product_Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductList</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

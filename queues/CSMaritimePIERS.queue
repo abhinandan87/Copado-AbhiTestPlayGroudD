@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CS | Maritime | PIERS</name>
+    <queueMembers>
+        <users>
+            <user>alex.dong@ihsmarkit.com</user>
+            <user>brendan.neary@ihsmarkit.com</user>
+            <user>chris.eow@ihsmarkit.com</user>
+            <user>jackie.fryman@ihsmarkit.com</user>
+            <user>jeremy.domballe@ihsmarkit.com</user>
+            <user>jim.grausso@ihsmarkit.com</user>
+            <user>michelle.wong@ihsmarkit.com.prod</user>
+            <user>mike.wiman@ihsmarkit.com</user>
+            <user>mona.zhou@ihsmarkit.com</user>
+            <user>renate.dirks@ihsmarkit.com</user>
+            <user>tim.mclaughlin@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

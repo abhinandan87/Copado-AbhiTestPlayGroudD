@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_70111436</developerName>
+        <masterLabel>Contract Number</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ApexLogger__c.LogParentRecordName__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_19164446</developerName>
+        <masterLabel>Fixed Fee Schedule Record</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ApexLogger__c.LogRecordName__c</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ApexLogger__c.ErrorDescription__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_70111436</field>
+    </columns>
+    <columns>
+        <field>BucketField_19164446</field>
+    </columns>
+    <currency>USD</currency>
+    <description>SFDC-1763: Report to display the errors logged via batch class to calculate contract&apos;s current value.</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ApexLogger__c.ClassName__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>BatchCalculateContractCurrentValue</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Contract Current Annual Val Batch Errors</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ApexLogger__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>S1 Response</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>S1 Responses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Email --></label>
+        <name>Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push Updates --></label>
+        <name>Push_Updates__c</name>
+    </fields>
+    <fields>
+        <label><!-- S1 Request --></label>
+        <name>S1_Request__c</name>
+        <relationshipLabel><!-- S1 Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Incoming</masterLabel>
+            <translation><!-- Incoming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outgoing</masterLabel>
+            <translation><!-- Outgoing --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- A new Response cannot be created for closed request --></errorMessage>
+        <name>Restrict_Create_on_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The response can only be updated when the status is &apos;New&apos; --></errorMessage>
+        <name>Restrict_Updates</name>
+    </validationRules>
+</CustomObjectTranslation>

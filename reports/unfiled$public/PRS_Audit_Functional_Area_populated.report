@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalCaseFields__c.Product__c</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalCaseFields__c.PRSAssigned__c</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalCaseFields__c.ProductReleaseSpecialist__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Shows all cases where the additional case field functional area are populated</description>
+    <filter>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Aftermarket Management,Auto Consulting,Auto Consulting DND,Auto Multi Channel Marketing,Auto Other,Commercial Account File,Forecasting,LV Sales,N America Market Reporting,Recall,Recall Postage,TIPNET,VIN Solutions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>AUTOS | Analytical Solutions - EU,AUTOS | GPHD Americas,AUTOS | GPHD UK,AUTOS | GPHD DE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.FunctionalArea__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Assembly,Custom Geography,Dealer,Data Capture,Data Quality,ETL Services,Source Data,Name Standardization,Product Release Specialist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.Product__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>VINtelligence 3.0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$AdditionalCaseFields__c.FunctionalArea__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PRS Audit-Functional Area populated</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2019-09-18</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-06-24</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalCaseFields__c.OnboardingSubType__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FM | MW| Onboarding</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Onboarding</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.OnboardingSubType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,New Client,New Product,New Fund/Entity,Regulatory Reporting,Clearing,SEF,Bunched Orders,Create API,Create Fixed Session,Create Leased Line,Create MQ connection,CLS,Netting Sync,Gatechecking,Equity Matching,Credit Matching,Credit EAD,Packages,Standardized FIX,TS3 Installation,TS4 Installation,Account Type Conversion,Consolidation/M&amp;A,Fund Transfer,Platform Migration,Direct to Hosted,Hosted to Standardized FIX,Custom DB Migration,Fix Proxy DB Migration,FPML DB Migration,RTNS DB Migration,Traiana DB Migration,Fund/Entity Rename,Client Rename,KYC Refresh,Other Contracts/Notices,Repaper,MiFID II,TS3 to TS4,UTI USI Upgrade,Vendor Feed Upgrade,Fund De-activation,Client De-activation</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>IS Prod Unassigned Queue</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

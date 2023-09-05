@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$ActivityDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$RecordType</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$TaskSubtype</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Status</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$PrivacyLevel__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$MeetingNote__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Id</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Activities linked to opportunities with either Christopher Pashley, Chris Walsh or Ross Hunt as the Account Managers</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$AccountManagers__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Christopher Pashley,Pashley Christopher,Chris Walsh,Ross Hunt</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Team Pashley Opportunity Activities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunitiesWithActivities__c</reportType>
+    <roleHierarchyFilter>GlobalAccess</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CURNEXTFY</interval>
+    </timeFrameFilter>
+</Report>

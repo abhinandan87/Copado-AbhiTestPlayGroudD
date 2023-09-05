@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Case.ProductGroup__c</field>
+    </columns>
+    <columns>
+        <field>Case.DevelopmentSystemID__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>FK_$AdditionalCaseFields__c.Component__c</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT_CREATED_BY</field>
+    </columns>
+    <columns>
+        <field>COMMENT_CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>This Report is only to view to Commented Cases from App support.</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.BusinessGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Client Services,Engineering Services,FX Application Support,Implementation Services,MIS,Application Support Buyside</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COMMENT_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_YEAR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_COMMENT_CREATED_BY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ajay Mundhra,Ankur Goel,Chun Kheat Khoo,Dianne Jeong,FM | MSERV Engineering Services,Gayathri Maganti1,Gopal Sharma,Gunjan Sehgal,Hariharan Suresh,Jean-Marc Thomas-Jones,Jessie Liu,Milo Hong,Muhammad asif Zafar,Paras Jain,Rajeswari Vadivel,Rashmi Ramagiri,Sonia Chauhan,Syairah Ibrahim,Vaibhav Khera,Venkata Kiran Thammina,Yeongseon Cho,Yida Zhang,Dominic Adshead,Haris Anwar,James Craven,Ken Tat Lim,Prithvindra Maganti,Simon Harmel,Xi Chen,Yiling Koh,FM | MSERV MIS,JitendraSingh Bisht</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Ajay Mundhra,Ankur Goel,Chun Kheat Khoo,Dianne Jeong,FM | MSERV Engineering Services,Gayathri Maganti1,Gopal Sharma,Gunjan Sehgal,Hariharan Suresh,Jean-Marc Thomas-Jones,Jessie Liu,Milo Hong,Muhammad asif Zafar,Paras Jain,Rajeswari Vadivel,Rashmi Ramagiri,Sonia Chauhan,Syairah Ibrahim,Vaibhav Khera,Venkata Kiran Thammina,Yeongseon Cho,Yida Zhang,Dominic Adshead,Haris Anwar,James Craven,Ken Tat Lim,Prithvindra Maganti,Simon Harmel,Xi Chen,Yiling Koh,FM | MSERV MIS,JitendraSingh Bisht</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$AdditionalCaseFields__c.BusinessGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AS_Current Year_Commented_Cases</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

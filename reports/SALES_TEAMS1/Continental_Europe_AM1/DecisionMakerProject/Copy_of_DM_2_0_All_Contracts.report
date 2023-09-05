@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Opportunitynum__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contracts__r$ContractNumber</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Contact</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contracts__r$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$RecordType</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contracts__r$Status</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Amount</field>
+    </columns>
+    <currency>USD</currency>
+    <description>This report shows the primary decision maker associated with the Grooper contract.</description>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Contracts__r$ContractNumber</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>00604738,00602511,00603729,00604945,00604958,00605146,00605170,00605192,00605196,00605225,00605234,00605238,00605240,00605269,00605296,00605362,00605366,00605368,00605416,00605439,00605474,00605484,00605595,00605597,00605630,00605674,00605734,00605813,00605953,00605958,00606025,00606067,00606097,00606101,00606113,00606337,00606604,00606708,00606805,00606853,0,00586024,00586555,00586780,00588118,00591411,00596437,00599175,00600550,00600901,00601540,00601844,00601888,00603287,00606038,00606321,00606341,00606910,00606918,00606922,00607017,00607065,00607098,07316222,20210221,20210412,20210413,20210414,00578545,00605092,00606532</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>DM 2.0 - All Contracts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunitywithContracts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

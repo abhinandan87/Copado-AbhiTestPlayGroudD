@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Opportunitynum__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>OP0001508304,OP0001508305,OP0001508844,OP0001510836,OP0001511287,OP0001512186,OP0000563014,OP0000588978,OP0000563685,OP0000563696,OP0000590378,OP0001462758,OP0001464754,OP0001375987,OP0001376439,OP0001376443,OP0001379360,OP0001514342,OP0001515727,OP0001516910,OP0001384189,OP0001388032,OP0001538518,OP0001239839,OP0001234736,OP0001234737,OP0001239384,OP0001239019,OP0001238156,OP0000640099,OP0000641300,OP0000641481,OP0001387284,OP0001392477,OP0001521218,OP0001524176,OP0001525842,OP0001525470,OP0001525468,OP0001526235,OP0001527533,OP0001528842,OP0000591769,OP0000596105,OP0000596245,OP0000596357,OP0001101214,OP0001099492,OP0001531948,OP0001532924,OP0001532358,OP0001532373,OP0001533290,OP0001534012,OP0001108722,OP0001536273,OP0001537647,OP0001538190,OP0001538390,OP0001538387,OP0001538385,OP0001539704,OP0001468060,OP0001469583,OP0001469999,OP0001476305,OP0001470645,OP0001394363,OP0001394369,OP0001395884,OP0001266737,OP0001275323,OP0001276027,OP0001279531,OP0001279544,OP0001290464,OP0001288553,OP0001306078,OP0001306612,OP0001115605,OP0001120596,OP0001395903,OP0001405160,OP0001399965,OP0001312587,OP0001314070,OP0001315800,OP0001322694,OP0001321753,OP0001328026,OP0001327325,OP0001471928,OP0001473577,OP0001474246,OP0001473686,OP0001476321,OP0001476323,OP0001400990,OP0001406294,OP0001407162,OP0001482008,OP0001484326</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.PKIDAccount__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Report 1 - Sourav</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

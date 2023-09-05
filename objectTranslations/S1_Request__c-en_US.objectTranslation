@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>S1 Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>S1 Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account CAPIQ ID --></label>
+        <name>Account_CAPIQ_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>Account_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- S1 Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Client Activity (External)</masterLabel>
+            <translation><!-- Client Activity (External) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education (Internal)</masterLabel>
+            <translation><!-- Education (Internal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expert Insights &amp; Idea Generation (Internal)</masterLabel>
+            <translation><!-- Expert Insights &amp; Idea Generation (Internal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Events</masterLabel>
+            <translation><!-- Marketing Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource/Materials (External)</masterLabel>
+            <translation><!-- Resource/Materials (External) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Completed Date --></label>
+        <name>Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the division for which the request is being created. --></help>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>Automotive</masterLabel>
+            <translation><!-- Automotive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering Solutions</masterLabel>
+            <translation><!-- Engineering Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Services</masterLabel>
+            <translation><!-- Financial Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>Industry__c</name>
+        <picklistValues>
+            <masterLabel>Communication Services</masterLabel>
+            <translation><!-- Communication Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Discretionary</masterLabel>
+            <translation><!-- Consumer Discretionary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Staples</masterLabel>
+            <translation><!-- Consumer Staples --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financials</masterLabel>
+            <translation><!-- Financials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Care</masterLabel>
+            <translation><!-- Health Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrials</masterLabel>
+            <translation><!-- Industrials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Technology</masterLabel>
+            <translation><!-- Information Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Materials</masterLabel>
+            <translation><!-- Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please check if the Account or Opportunity selection is not applicable to this request --></help>
+        <label><!-- Not applicable? --></label>
+        <name>Not_applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select an opportunity related to the account. --></errorMessage>
+        </lookupFilter>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- S1 Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Push Updates --></label>
+        <name>Push_Updates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested By --></label>
+        <name>Requested_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor Email --></label>
+        <name>Requestor_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please uncheck the &apos;Not Applicable&apos; checkbox, if Account or Opportunity is selected --></errorMessage>
+        <name>Account_and_Oppy_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To proceed, please check the Not Applicable checkbox if Account or Opportunity is not selected --></errorMessage>
+        <name>Account_and_Oppy_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The request can only be updated when status is &apos;New&apos; --></errorMessage>
+        <name>Restrict_Updates</name>
+    </validationRules>
+</CustomObjectTranslation>

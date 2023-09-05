@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_12584398</developerName>
+        <masterLabel>Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CAMPAIGN_TYPE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales Led (Not Marketing Related)</sourceValue>
+            </sourceValues>
+            <value>Sales</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Advertising (Online/Offline Including Social)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Direct Mail</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Third-Party Event / Tradeshow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IHS Markit Hosted Event (Excludes Paid Gate Events)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IHS Markit Paid Gate Event</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Webcast / Webinar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Social Media (Excludes Advertising)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Parent Campaign (Multiple Types)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Product Brochures &amp; Infographics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Public Relations</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Website/E-commerce (Not Related to Another Type)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partner/Affiliate</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Customer Care</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Outbound Telemarketing/Teleprospecting (Cold Calling)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Inbound Telemarketing/Teleprospecting (Incoming Phone Calls)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Led</sourceValue>
+            </sourceValues>
+            <value>Marketing</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Unique</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>CAMPAIGN_ID</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_12584398</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>CAMPAIGN_TYPE</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>CAMPAIGN_ID</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>Campaign.CampaignNumber__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>12/1/2020 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_12584398</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CAMPAIGN_TYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Campaigns CFY</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignList</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

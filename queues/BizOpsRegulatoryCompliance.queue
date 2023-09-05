@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>BizOps | Regulatory &amp; Compliance</name>
+    <queueMembers>
+        <users>
+            <user>adam.daneke@ihsmarkit.com</user>
+            <user>deepankar.garg@ihsmarkit.com</user>
+            <user>kundan.kumar@ihsmarkit.com</user>
+            <user>michele.morgan@ihsmarkit.com</user>
+            <user>priti.mishra@ihsmarkit.com</user>
+            <user>saurabhkumar.agrahari@ihsmarkit.com</user>
+            <user>shweta.gupta1@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

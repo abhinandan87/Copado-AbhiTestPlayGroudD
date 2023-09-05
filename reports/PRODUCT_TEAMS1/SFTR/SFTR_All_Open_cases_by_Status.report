@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_40648822</developerName>
+        <masterLabel>Final Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Re-opened</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Active Waiting for info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - 3rd Party</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - Internal Team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Approvals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Requester</sourceValue>
+            </sourceValues>
+            <value>Waiting</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_5744672</developerName>
+        <masterLabel>Status (Final)</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Assigned</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>On Hold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Re-opened</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Assigned to HD Associate</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Active Waiting for info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - 3rd Party</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting - Internal Team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Approvals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Info</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting on Requester</sourceValue>
+            </sourceValues>
+            <value>Waiting</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed - Canceled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Resolved</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Referral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Resolved by 3rd Party</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Resolved by Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Resolved by IHS Markit</sourceValue>
+            </sourceValues>
+            <value>Closed</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_33320452</developerName>
+        <masterLabel>Status 1</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <value>New</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Re-opened</sourceValue>
+            </sourceValues>
+            <value>Re-Opened</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>In Progress</sourceValue>
+            </sourceValues>
+            <value>In Progress</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting - Customer</sourceValue>
+            </sourceValues>
+            <value>Waiting Customer</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting - Internal Team</sourceValue>
+            </sourceValues>
+            <value>Waiting - Internal Team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting - 3rd Party</sourceValue>
+            </sourceValues>
+            <value>Waiting - 3rd Party</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Average</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>AGE</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_33320452</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>BucketField_5744672</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>David Williams,Jonathan Tsang,Bill Tsang,Que Phuong Dufournet,Hamza Shah,Shreeya Patel,Majid Azaim,Tori Ogundimu,Miguel Coral,Sahil Nangia,Vijayendra Agarwal,Tushar Suri,Atul Panwar,Manya Gupta,Bhavya Khanna,Dishant Sharma,Biswaraj Paul Choudhury,Mishika Gandhi,Daniel Oluyemi,Biswaraj Paul,Biswaraj Paulchoudh,Biswaraj Choudhury,Ravi Navath,Andrew Hibberd,Surneet Bhatia,Pierre Simonet,Abhishek Yadav,Tushar Gupta,Prachi Bhatt,FM | SFTR | Client Services,Rashid Ali,Gargi Nagar,Barbara Sobocinska,Deepak Ranjan,Daniel Gualtieri,Samuel Chan,Eraldo Palamani,Matthew Thomas,Kajal Sharma,Paridhi Garg,Colette Naughton</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,New,In Progress,Assigned,On Hold,Re-opened,Active Waiting for info,Assigned to HD Associate,Customer Responded,Delete,Duplicate,Entered Ticket,Reassigned,Referral,Researching,Resolved/Completed,Resolved/No Response,Waiting - 3rd Party,Waiting - Customer,Waiting - Internal Team,Waiting on Approvals,Waiting on Info,Waiting on Requester,Trial Approved,Contract Signed,Connectivity,Live,Escalated,Testing,User Access Granted,Initial Delivery Complete,Install Complete,Welcome Package Sent,Validated,Validated PO Pending,Validated-POD Pending,Rejected,Canceled,Moved to Tier2 Support,Updated,Merged</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SFTR</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_33320452</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SFTR All Open cases by Status</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2022-10-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-07-13</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fixed Fee Schedule Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fixed Fee Schedule Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Auto-Renewal --></label>
+        <name>AutoRenewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only visible to Contract Management and System Admin --></help>
+        <label><!-- Billing Date --></label>
+        <name>BillingDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract Line Item --></help>
+        <label><!-- Contract Line Item --></label>
+        <name>ContractLineItem__c</name>
+        <relationshipLabel><!-- Fixed Fee Schedule Line Item --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Related Contract --></help>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+        <relationshipLabel><!-- Contract Line Item Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Represents if schedule is valid for current fiscal year --></help>
+        <label><!-- Current --></label>
+        <name>Current__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount Amount --></help>
+        <label><!-- Discount Amount --></label>
+        <name>DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount % --></help>
+        <label><!-- Discount% --></label>
+        <name>DiscountPercent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount Type --></help>
+        <label><!-- Discount Type --></label>
+        <name>DiscountType__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation><!-- Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Discount</masterLabel>
+            <translation><!-- No Discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage</masterLabel>
+            <translation><!-- Percentage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- External List Price --></help>
+        <label><!-- External List Price --></label>
+        <name>ExternalListPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Installment Year --></help>
+        <label><!-- Installment Year --></label>
+        <name>InstallmentYear__c</name>
+    </fields>
+    <fields>
+        <help><!-- Installment Year --></help>
+        <label><!-- zzzInstallment Year --></label>
+        <name>InstallmentYears__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the system id (unfriendly) referencing the source record and is populated via migrating system --></help>
+        <label><!-- LegacyID --></label>
+        <name>LegacyID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract Line Item&apos;s Material Code --></help>
+        <label><!-- Material Code --></label>
+        <name>MaterialCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto generated ID to identify opportunity schedule with the fixed fee line item. This is the id of the opportunity from which the price increase was triggered --></help>
+        <label><!-- Price Increase Id --></label>
+        <name>PriceIncreaseId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Sales Price --></help>
+        <label><!-- Total Sales Price --></label>
+        <name>SalesPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- When a new Contract Line Item Schedule record is created, the Status field should be set to &quot;Active&quot; --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>History</masterLabel>
+            <translation><!-- History --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Incorrect Currency Code, Please Refer to the Contract and Update Accordingly --></errorMessage>
+        <name>ContractCurrencyCheck</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select the contract related to this fixed fee line. --></errorMessage>
+        <name>CorrectContractNumberOnCLIS</name>
+    </validationRules>
+</CustomObjectTranslation>

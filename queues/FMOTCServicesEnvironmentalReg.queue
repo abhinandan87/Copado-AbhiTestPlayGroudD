@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@salesforce.com</email>
+    <name>FM | OTC Services | Environmental Reg</name>
+    <queueMembers>
+        <users>
+            <user>abhishek.dabb@ihsmarkit.com</user>
+            <user>alexa.schatzmann@ihsmarkit.com</user>
+            <user>andrea.aranguren@ihsmarkit.com</user>
+            <user>devon.walton@ihsmarkit.com.prod</user>
+            <user>jacqueline.maldonado@ihsmarkit.com</user>
+            <user>joanne.hochheiser@ihsmarkit.com</user>
+            <user>kathy.benini@ihsmarkit.com</user>
+            <user>keith.corr@ihsmarkit.com</user>
+            <user>magdalena.pampillo@ihsmarkit.com.prod</user>
+            <user>moulik.wadhwa@ihsmarkit.com</user>
+            <user>narendra.kumar@ihsmarkit.com</user>
+            <user>nayiri.boyadjian@ihsmarkit.com</user>
+            <user>poornima.dobriyal@ihsmarkit.com</user>
+            <user>shalini.singhi@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

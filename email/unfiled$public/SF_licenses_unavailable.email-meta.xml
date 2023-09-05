@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SF user licenses unavailable</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SF licenses unavailable</name>
+    <style>none</style>
+    <subject>RE: {!Case.Subject}</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Good day!
+We do not have any Salesforce licenses available now. We are proactively working towards granting you access to the same.
+
+You will receive an email with a link to an online form you must fill in before we grant you access. You will be notified when you are assigned the license.
+
+Thank you for your patience.
+
+Regards,
+{!Case.OwnerFullName}
+Salesforce Configuration Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

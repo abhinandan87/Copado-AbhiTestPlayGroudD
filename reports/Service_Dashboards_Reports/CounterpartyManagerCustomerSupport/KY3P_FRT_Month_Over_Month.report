@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>PRIORITY</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>MT.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>ACTUAL_ELPSD_TIME_MINS</field>
+    </columns>
+    <columns>
+        <field>CM.TARGET_DATE</field>
+    </columns>
+    <columns>
+        <field>CM.COMPLETION_DATE</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>CASE(MONTH(DATEVALUE(CREATED_DATE)),1,&quot;02. January&quot;,2,&quot;03. February&quot;,3,&quot;04. March&quot;,4,&quot;05. April&quot;,5,&quot;06. May&quot;,6,&quot;07. June&quot;,7,&quot;08. July&quot;,8,&quot;09. August&quot;,9,&quot;10. September&quot;,10,&quot;11.October&quot;,11,&quot;12.November&quot;,12,&quot;01.December&quot;,&quot;None&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Month</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Aashray Pandey,Ankita Girdhar,Arushi Agarwal,Harsh Sathwara,Lakshay Jain,Mirza Aslam Baig,Nidhi Parasher.Shekhar Harshvardhan,Shirsh Kumar,Shubhendu Gupta,Shweta Sachdeva,Vandana Chawla,Vikrant Sharma,Yeshi Chauhan,Christine Bradford,Mical Ghebrehiwot,Forrest Nettles,Mackenzie Murdock,Farha Burnett,Meghan Del Castillo,Avita Barnes,Samantha Kluesner,Alma Carillo,Julio Chavez,Susan Guerra</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>First Response Time</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$AdditionalCaseFields__c.IssueArea__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Vendor Outreach</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed - Canceled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CONTACT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Aashray Pandey,Ankita Girdhar,Arushi Agarwal,Harsh Sathwara,Lakshay Jain,Mirza Aslam Baig,Nidhi Parasher,Shekhar Harshvardhan,Shirsh Kumar,Shubhendu Gupta,Shweta Sachdeva,Vandana Chawla,Vikrant Sharma,Yeshi Chauhan,Christine Bradford,Mical Ghebrehiwot,Forrest Nettles,Mackenzie Murdock,Farah Habeeb-Burnett,Meghan Del Castillo,Avita Barnes,Samantha Kluesner,Alma Carillo,Julio Chavez</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>KY3P FRT - Month Over Month</name>
+    <params>
+        <name>units</name>
+        <value>m</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseMilestone@Case.AdditionalFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CASE_NUMBER</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

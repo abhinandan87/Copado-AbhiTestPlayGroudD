@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set is to view Adoption Analytics Dashboards</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Tableau CRM Adoption Analytics IHS Markit</label>
+    <license>EinsteinAnalyticsPlusPsl</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AdoptionAnalyticsUser</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageTemplatedApp</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>UseTemplatedApp</name>
+    </userPermissions>
+</PermissionSet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>mk-auctionsupportanalysts@markit.com</email>
+    <name>FM | Auction</name>
+    <queueMembers>
+        <users>
+            <user>abhishek.dabb@ihsmarkit.com</user>
+            <user>alexa.schatzmann@ihsmarkit.com</user>
+            <user>joanne.hochheiser@ihsmarkit.com</user>
+            <user>julie.gareton@ihsmarkit.com</user>
+            <user>nayiri.boyadjian@ihsmarkit.com</user>
+            <user>poornima.dobriyal@ihsmarkit.com</user>
+            <user>rashi.dungale@ihsmarkit.com</user>
+            <user>shalini.singhi@ihsmarkit.com</user>
+            <user>shivani.kapoor@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,72 @@
+<template>
+    <lightning-layout multiple-rows="true" class='slds-grid'>
+
+        <template for:each={divisions} for:item="division">
+            <lightning-layout-item key={division.Id}
+                                   class="slds-col
+                                   slds-large-size_1-of-3
+                                   slds-medium-size_1-of-1
+                                   slds-small-size_1-of-1
+                                   slds-p-around_x-small
+                                   division-card__container">
+                <!-- Name of the account -->
+                <div class="border">
+                    <span class="slds-text-heading_medium title-font slds-size_1-of-1 slds-p-bottom_x-small">
+                        {division.Display_Name__c}
+                    </span>
+                    <lightning-layout multiple-rows="true" class="slds-grid">
+                        <!-- ACV Field -->
+                        <lightning-layout-item class="slds-size_3-of-8 slds-float_left">
+                            <span class="slds-text-heading_small subheading-font slds-grid">ACV</span>
+                            <c-summary-main-field class="slds-grid"
+                                                  record-map={accountMap}
+                                                  field-name={division.ACV_Field_Name__c}
+                                                  style-field={division.ACV_Color_Field__c}>
+                            </c-summary-main-field>
+                        </lightning-layout-Item>
+                        <!-- NPS Field -->
+                        <lightning-layout-item class="slds-size_2-of-8 slds-float_left">
+                            <span class="slds-text-heading_small subheading-font slds-grid">NPS</span>
+                            <c-summary-main-field class="slds-grid"
+                                                  record-map={accountMap}
+                                                  field-name={division.NPS_Field_Name__c}
+                                                  style-field={division.NPS_Color_Field__c}>
+                            </c-summary-main-field>
+                        </lightning-layout-item>
+                        <!-- Manager Field -->
+                        <lightning-layout-item class="slds-size_3-of-8">
+                            <div class="slds-grid">
+                                <span class="slds-text-heading_small subheading-font slds-col slds-size_1-of-4 slds-align-top">AM</span>
+                                <div class="slds-col slds-size_2-of-4 slds-align-top">
+                                    <c-summary-main-field record-map={accountMap}
+                                                          field-name="Email__c"
+                                                          parent-name={division.Manager_Field_Name__c}
+                                                          is-parent="true"
+                                                          is-email="true">
+                                    </c-summary-main-field>
+                                </div>
+                                <div class="slds-col slds-size_2-of-4 slds-align-top">
+                                    <c-summary-main-field record-map={accountMap}
+                                                          field-name="Phone__c"
+                                                          parent-name={division.Manager_Field_Name__c}
+                                                          is-parent="true"
+                                                          is-phone="true">
+                                    </c-summary-main-field>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-align-top">
+                                <c-summary-main-field record-map={accountMap}
+                                                      class="overflow-name_font"
+                                                      field-name="Name"
+                                                      parent-name={division.Manager_Field_Name__c}
+                                                      is-parent="true"
+                                                      is-name="true">
+                                </c-summary-main-field>
+                            </div>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </div>
+            </lightning-layout-Item>
+        </template>
+    </lightning-layout>
+</template>

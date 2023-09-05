@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Advanced Optional --></label>
+        <name>Loop__Advanced_Optional__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advanced Section --></label>
+        <name>Loop__Advanced_Section__c</name>
+        <picklistValues>
+            <masterLabel>Excluded If</masterLabel>
+            <translation><!-- Excluded If --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Included If</masterLabel>
+            <translation><!-- Included If --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bookmark --></label>
+        <name>Loop__Bookmark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compare Field --></label>
+        <name>Loop__Compare_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compare Type --></label>
+        <name>Loop__Compare_Type__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation><!-- contains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>does not contain</masterLabel>
+            <translation><!-- does not contain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>endswith</masterLabel>
+            <translation><!-- endswith --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation><!-- equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater</masterLabel>
+            <translation><!-- greater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater equal</masterLabel>
+            <translation><!-- greater equal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less</masterLabel>
+            <translation><!-- less --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less equal</masterLabel>
+            <translation><!-- less equal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equal</masterLabel>
+            <translation><!-- not equal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>startswith</masterLabel>
+            <translation><!-- startswith --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compare Value --></label>
+        <name>Loop__Compare_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocGen Package --></label>
+        <name>Loop__DDP__c</name>
+        <relationshipLabel><!-- DocGen Package Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Loop__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document ID --></label>
+        <name>Loop__Document_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email As --></label>
+        <name>Loop__Email_As__c</name>
+        <picklistValues>
+            <masterLabel>Attachment</masterLabel>
+            <translation><!-- Attachment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Body</masterLabel>
+            <translation><!-- Email Body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Body and Attachment</masterLabel>
+            <translation><!-- Email Body and Attachment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Example: Sheet1!A:B; Sheet1!2:3; Sheet2!1:4; Sheet Three!A:A --></help>
+        <label><!-- Excel Print Titles --></label>
+        <name>Loop__Excel_Print_Titles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excel Sheets Option --></label>
+        <name>Loop__Excel_Sheets_Option__c</name>
+        <picklistValues>
+            <masterLabel>Exclude</masterLabel>
+            <translation><!-- Exclude --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Include</masterLabel>
+            <translation><!-- Include --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is a comma delimited list of Excel Sheet names to include in the output of this file. --></help>
+        <label><!-- Excel Sheets --></label>
+        <name>Loop__Excel_Sheets__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a JSON list of operations and their arguments to be performed on this file. Contact Drawloop for more information on this feature. --></help>
+        <label><!-- File Operations --></label>
+        <name>Loop__File_Operations__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Page --></label>
+        <name>Loop__First_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Page --></label>
+        <name>Loop__Last_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Name --></label>
+        <name>Loop__Long_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge with Previous --></label>
+        <name>Loop__Merge_with_Previous__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optional --></label>
+        <name>Loop__Optional__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Loop__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pause to Edit --></label>
+        <name>Loop__Pause_to_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReportIds --></label>
+        <name>Loop__ReportIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section Label --></label>
+        <name>Loop__Section_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only use this option if your document is static, i.e. there is no data being merged into this document. --></help>
+        <label><!-- Skip Document Processing --></label>
+        <name>Loop__Skip_Processing__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this file can be re-ordered with the previous file by the user on the Document Package selection page. --></help>
+        <label><!-- Sort with Previous --></label>
+        <name>Loop__Sort_with_Previous__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type2 --></label>
+        <name>Loop__Type2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Loop__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vf Parameters --></label>
+        <name>Loop__Vf_Parameters__c</name>
+    </fields>
+</CustomObjectTranslation>

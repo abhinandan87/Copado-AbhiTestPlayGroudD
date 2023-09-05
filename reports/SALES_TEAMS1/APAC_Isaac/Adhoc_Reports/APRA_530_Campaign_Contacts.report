@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.PKIDAccount__c</field>
+    </columns>
+    <columns>
+        <field>Account.UltimateParent__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY_CODE</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>CONTACT_OWNER</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All contacts from a list of accounts for the APRA 530 Campaign</description>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Account.PKIDAccount__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Act1087685,Act1109633,Act1123322,Act1087780,Act1098927,Act1099108,Act1088132,Act1099206,Act1087463,Act1098758,Act1124281,Act1094638,Act1127709,Act1121537,Act1509059,Act1554452,Act1542218,Act1093122,Act1137503,Act1615725,Act1647296,Act1086456,Act1541814,Act1106737,Act1137521,Act1096557,Act1545066,Act1094111,Act1536911,Act1541897,Act1087142</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,AustralianSuper Pty Ltd,Commonwealth Superannuation Corporation,Aware Super Pty Ltd,Australian Retirement Trust,AMP,BT Funds Management Limited,Unisuper Limited,Colonial First State Investments Limited,Retail Employees Superannuation Pty. Limited,H.E.S.T. Australia Ltd.,CBUS,Host-Plus Pty. Limited,EquipSuper,I.O.O.F. Investment Management Limited,Mercer Superannuation (Australia) Limited,Macquarie Investment Management Ltd,Spirit Super,Telstra Super Pty Ltd,CARE Super Pty Ltd,Equity Trustees Superannuation Limited,Netwealth Investments Limited,Avanteos Investments Limited,Vision Super Pty Ltd,LGIAsuper Trustee,Active Super,Commonwealth Bank Officers Superannuation Corporation Pty Limited,NGS Super Pty Limited,hub24,AUSCOAL Superannuation Pty Ltd,Statewide Superannuation Pty Ltd (merging hostplus),SCS Super Pty. Limited,Diversa Trustees Limited,Total Risk Management Pty Limited (russell),Electricity Supply Industry Superannuation (QLD) Ltd,Qantas Superannuation Limited,PostSuper Pty Ltd,L.U.C.R.F. Pty. Ltd.,Suncorp Portfolio Services Limited,Media Super Limited,T W U Nominees Pty Ltd,Energy Industries Superannuation Scheme Pty Ltd,Prime Super Pty Ltd,Maritime Super Pty Limited,BUSS (Queensland) Pty Ltd,ANZ Staff Superannuation (Australia) Pty. Limited</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Legal Super Pty Ltd,Perpetual Superannuation Limited,Australian Ethical Superannuation Pty Ltd,Oasis Fund Management Limited,First Super Pty Limited,Club Plus Superannuation Pty Ltd,IS INDUSTRY FUND PTY LTD,AvSuper Pty Ltd,Australian Meat Industry Superannuation Pty Ltd,Guild Trustee Services Pty. Limited,Alcoa of Australia Retirement Plan Pty Ltd,ClearView Life Nominees Pty Limited,Christian Super Pty Limited,Fiducian Portfolio Services Limited,Rei Superannuation Fund Pty Limited,Mercy Super Pty Ltd,bendigo and adeliade bank,TAL Superannuation Limited,NESS Super Pty Ltd,Meat Industry Employees Superannuation Fund Pty. Ltd.,Fire and Emergency Services Superannuation Board,V.I.S. Nominees Pty. Limited,BOC Superannuation Pty Ltd,Towers Watson Superannuation Pty Ltd,LCA NOMINEES PTY. LTD.,BEST Superannuation Pty Ltd,CCSL Limited,Challenger Retirement and Investment Services Limited,Holden Employees Superannuation Fund Pty Ltd,Wycomp Pty. Limited,NSW Fire Brigades Superannuation Pty Limited</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Active</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>APRA 530 Campaign Contacts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

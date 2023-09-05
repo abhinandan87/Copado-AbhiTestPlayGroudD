@@ -1,0 +1,17 @@
+Dear {!Contact.FirstName},
+<br><br>
+
+Good day!<br>
+
+The status of this case is now: Closed
+<br><br>
+
+We were unable to resolve your query because the information you provided on your first request (detailed below) was incomplete. We tried to contact you on multiple occasions, but we did not receive the other information we requested. 
+<br><br>
+If your inquiry is still an issue that requires our help, please raise a new request to salesforce@ihsmarkit.com
+
+<br><br>
+
+Regards,<br>
+{!Case.OwnerFullName}<br>
+Salesforce Helpdesk

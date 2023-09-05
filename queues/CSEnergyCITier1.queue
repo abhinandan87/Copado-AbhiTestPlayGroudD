@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>CC | Commodity Insights</name>
+    <queueMembers>
+        <users>
+            <user>akbarrehan.mirza@ihsmarkit.com</user>
+            <user>chelley.james@ihsmarkit.com</user>
+            <user>hasan.ahmed@ihsmarkit.com</user>
+            <user>jessica.ho@ihsmarkit.com</user>
+            <user>keith.ina@ihsmarkit.com</user>
+            <user>khairulanuar.ismail@ihsmarkit.com</user>
+            <user>kim.toten@ihsmarkit.com</user>
+            <user>miaoyin.ng@ihsmarkit.com</user>
+            <user>najahnadhira.bintidorohid@ihsmarkit.com</user>
+            <user>yijing.neoh@ihsmarkit.com</user>
+            <user>niknurfarhana.rosla@ihsmarkit.com</user>
+            <user>shakir.salmi@ihsmarkit.com</user>
+            <user>syaza.putri@ihsmarkit.com</user>
+            <user>tariq.norshahrin@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

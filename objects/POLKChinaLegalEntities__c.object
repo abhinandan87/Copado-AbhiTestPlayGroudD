@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>SFDC1-9252 This custom setting contains name of legal entities valid for POLK China users</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>LegalEntityName__c</fullName>
+        <description>SFDC1-9252 This field contains name of legal entity valid for POLK China users</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please populate legal entity name</inlineHelpText>
+        <label>Legal Entity Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>POLK China - Legal Entities</label>
+    <visibility>Public</visibility>
+</CustomObject>

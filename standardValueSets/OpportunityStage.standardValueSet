@@ -2,93 +2,160 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Prospecting</fullName>
+        <fullName>1-Open</fullName>
         <default>false</default>
-        <label>Prospecting</label>
+        <description>SFDC1-2157  Sales Stages for the Forecasting Placeholder Opportunity Type</description>
+        <label>1-Open</label>
         <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>10</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Qualification</fullName>
-        <default>false</default>
-        <label>Qualification</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>10</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Needs Analysis</fullName>
-        <default>false</default>
-        <label>Needs Analysis</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>20</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Value Proposition</fullName>
-        <default>false</default>
-        <label>Value Proposition</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>50</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Id. Decision Makers</fullName>
-        <default>false</default>
-        <label>Id. Decision Makers</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>60</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Perception Analysis</fullName>
-        <default>false</default>
-        <label>Perception Analysis</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>70</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Proposal/Price Quote</fullName>
-        <default>false</default>
-        <label>Proposal/Price Quote</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>75</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Negotiation/Review</fullName>
-        <default>false</default>
-        <label>Negotiation/Review</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
+        <forecastCategory>Forecast</forecastCategory>
         <probability>90</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Closed Won</fullName>
+        <fullName>1-Sales Qualified</fullName>
         <default>false</default>
-        <label>Closed Won</label>
+        <label>1-Sales Qualified</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>1</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>2-Need Confirmed</fullName>
+        <default>false</default>
+        <label>2-Need Confirmed</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>3-Proposal Development</fullName>
+        <default>false</default>
+        <label>3-Proposal Development</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>25</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>3-Renewal Pending</fullName>
+        <default>false</default>
+        <label>3-Renewal Pending</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>80</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>4.1-Proposal/Quote Delivery</fullName>
+        <default>false</default>
+        <label>4.1-Proposal/Quote Delivery</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>4.2-Verbal Commit</fullName>
+        <default>false</default>
+        <label>4.2-Verbal Commit</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>75</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>5-Contracting</fullName>
+        <default>false</default>
+        <label>5-Contracting</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>5-Renewal Contracting</fullName>
+        <default>false</default>
+        <label>5-Renewal Contracting</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>80</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>7-Revisit-No Decision</fullName>
+        <default>false</default>
+        <label>7-Revisit-No Decision</label>
+        <closed>false</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>6W-Closed Won</fullName>
+        <default>false</default>
+        <label>6W-Closed Won</label>
         <closed>true</closed>
         <forecastCategory>Closed</forecastCategory>
         <probability>100</probability>
         <won>true</won>
     </standardValue>
     <standardValue>
-        <fullName>Closed Lost</fullName>
+        <fullName>6W-Renewal Won</fullName>
         <default>false</default>
-        <label>Closed Lost</label>
+        <label>6W-Renewal Won</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>6W-Forecasting Placeholder</fullName>
+        <default>false</default>
+        <description>SFDC1-2157 Sales Stages for the Forecasting Placeholder Opportunity Type</description>
+        <label>6W-Forecasting Placeholder</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>6L-Closed Lost</fullName>
+        <default>false</default>
+        <label>6L-Closed Lost</label>
         <closed>true</closed>
         <forecastCategory>Omitted</forecastCategory>
         <probability>0</probability>
         <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>6L-Renewal Lost</fullName>
+        <default>false</default>
+        <label>6L-Renewal Lost</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>6L-Forecasting Placeholder</fullName>
+        <default>false</default>
+        <description>SFDC1-2157 Sales Stages for the Forecasting Placeholder Opportunity Type</description>
+        <label>6L-Forecasting Placeholder</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>6WP-Closed Won/Order Processed</fullName>
+        <default>false</default>
+        <description>SFDC1-6858 New sales stage for new business, renewal and gratis oppty</description>
+        <label>6WP-Closed Won/Order Processed</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
     </standardValue>
 </StandardValueSet>

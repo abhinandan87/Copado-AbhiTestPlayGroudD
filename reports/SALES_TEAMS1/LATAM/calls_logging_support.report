@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CDF1</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Activity.SubType__c</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>START_DATE_TIME</field>
+    </columns>
+    <columns>
+        <field>END_DATE_TIME</field>
+    </columns>
+    <columns>
+        <field>LOCATION</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>ACTIVITY_ID</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Activity.NotesCompleted__c</field>
+    </columns>
+    <columns>
+        <field>WHO_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY</field>
+    </columns>
+    <columns>
+        <field>EVENT_SUBTYPE</field>
+    </columns>
+    <columns>
+        <field>Activity.PrivacyLevel__c</field>
+    </columns>
+    <columns>
+        <field>Activity.MeetingNote__c</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(CONTAINS(TEXT(Activity.SubType__c), &quot;Proposal&quot;), &quot;Proposal&quot;, CASE(TASK_TYPE,
+    &quot;Call&quot;, &quot;Call&quot;,
+    &quot;Customer Call&quot;, &quot;Call&quot;,
+    &quot;Call - client demo&quot;, &quot;Call&quot;,
+    &quot;Call - client training&quot;, &quot;Call&quot;,
+    
+    &quot;Proposal Acceptance Call&quot;, &quot;Proposal&quot;,
+    &quot;Proposal Accepted meeting&quot;, &quot;Proposal&quot;,
+    &quot;Proposal Delivery Call&quot;, &quot;Proposal&quot;,
+    &quot;Proposal Delivery meeting&quot;, &quot;Proposal&quot;,
+
+    &quot;In Person Meeting&quot;, &quot;Meeting&quot;,
+    &quot;Meeting&quot;, &quot;Meeting&quot;,
+    &quot;Client Visit&quot;, &quot;Meeting&quot;,
+    &quot;Online Customer Meeting&quot;, &quot;Meeting&quot;,
+    &quot;Quarterly Check In&quot;, &quot;Meeting&quot;,
+    &quot;Meeting Face to Face&quot;, &quot;Meeting&quot;,
+    &quot;Meeting Virtual&quot;, &quot;Meeting&quot;,
+    
+    &quot;&quot;, &quot;Blank&quot;,
+    &quot;Email&quot;, &quot;Blank&quot;,
+    &quot;Verification&quot;, &quot;Blank&quot;,
+    &quot;Project Work&quot;, &quot;Blank&quot;,
+    &quot;Training&quot;, &quot;Blank&quot;,
+    &quot;Consulting Lead&quot;, &quot;Blank&quot;,
+    &quot;Internal Call&quot;, &quot;Blank&quot;,
+    &quot;Triage&quot;, &quot;Blank&quot;,
+    &quot;4212&quot;, &quot;Blank&quot;,
+    &quot;Meeting&quot;
+)
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>ENR Activity Type</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>ENR Task and Event Activities</description>
+    <filter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7) AND 8 AND 9 AND 10</booleanFilter>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Alena Barford,Alena Barford - OP1,Alexey Gurevich,Amy Fuller-Riley,Amy Singer,Anthony Potter,John Lee,Asheesh Singh,Benjamin Rattner,Chase Willett,Chris Kiser,Diane Braaten,Don Bari,Duncan Fisher,Eduardo Mechereffe,Gang Hao,Graham Helfrick,Isoaki Iwasawa,Jeff Benton,Jennafer Marchetti,Jorgie Ong,Karen Moore,Kim Whipple,Kok Hoe Yong,Terence Yong,Lawrence Jackson,Lawrence Jackson - OP1,Lee Shiong Lew,Leisha Archie,Leisha Archie - FD,Lindsey Bernard,Mark Eramo,Martyn Smith,Matthew Bax,Michael Delgado,Mohammad Kurdi,Nishat Rezvi,Nishat Rezvi - OP1,Reda Semmah,Sarah Danan,Smarco Ho,Susan Beury,Tatyana Ustyantseva,Tobias Webb,Tze Yan Lo,Xu Wang,Mike Zyglicki,Bret Nelson,Perline Tan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>BAU,Internal Call,Internal Meeting,Internal Training</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CDF1</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Blank</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.PrivacyLevel__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Personal appointment,Internal meeting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Place Holder - IHS Markit Internal Employees</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>[Outreach] [Email]</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Andy Ranson,Chas Reese,Deanise Moi,Lindsey Bernard,Mohd Afiq Bin Mohd Rafidi,Perline Tan,Ryan Johnson,Sooi Phing Chee</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DUE_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>12/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>DUE_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>1/1/2023 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Eduardo Mechereffe</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TASK_TYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>calls logging support</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>DUE_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

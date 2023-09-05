@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>no-replycrm@ihsmarkit.com</email>
+    <name>FM | Reference Data Support</name>
+    <queueMembers>
+        <users>
+            <user>andrew.eisen@ihsmarkit.com</user>
+            <user>ashkan.halvaei@ihsmarkit.com.prod</user>
+            <user>deepak.singh@ihsmarkit.com</user>
+            <user>gurpreet.randhawa@ihsmarkit.com</user>
+            <user>jd.singh@ihsmarkit.com</user>
+            <user>jeremy.reed@ihsmarkit.com</user>
+            <user>kay.huyen@ihsmarkit.com</user>
+            <user>rajesh.rana@ihsmarkit.com.prod</user>
+            <user>suvidha.anjutgi@ihsmarkit.com</user>
+            <user>vinay.shetti@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SurveyResponse__c</sobjectType>
+    </queueSobject>
+</Queue>

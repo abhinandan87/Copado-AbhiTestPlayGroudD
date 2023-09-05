@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>datalake-support_dataonboarding@ihsmarkit.com</email>
+    <name>Data Lake Catalogue Onboarding</name>
+    <queueMembers>
+        <users>
+            <user>anna.ballantyne@ihsmarkit.com</user>
+            <user>anthonie.joubert@ihsmarkit.com</user>
+            <user>christelle.cronje@ihsmarkit.com.prod</user>
+            <user>craig.zolan@ihsmarkit.com</user>
+            <user>jamie.gallagher@ihsmarkit.com</user>
+            <user>jim.goundry@ihsmarkit.com</user>
+            <user>lucian.dietsche@ihsmarkit.com</user>
+            <user>nehal.kenia@ihsmarkit.com</user>
+            <user>neil.wilson@ihsmarkit.com</user>
+            <user>rupert.jackson@ihsmarkit.com</user>
+            <user>thomas.goodfellow@ihsmarkit.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

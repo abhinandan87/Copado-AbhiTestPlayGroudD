@@ -1,0 +1,120 @@
+<template>
+    <lightning-card>
+        <c-wrf-country-section-header section-header='Data Type Selection'></c-wrf-country-section-header>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_4-of-12">
+                <lightning-combobox label="Data Type" options={dataTypeOptions} value={dataType} variant="label-inline"
+                    onchange={handleDataTypeChange}>
+                </lightning-combobox>
+            </div>
+
+            <div class="slds-col slds-size_10-of-12"></div>
+            <div class="slds-col slds-size_4-of-12">
+                <template if:false={dataTypeSelected}>
+                    <div class="slds-notify slds-notify_alert slds-alert_warning" role="alert">
+                        <lightning-icon icon-name="utility:warning" alternative-text="Warning!" title="Warning">
+                        </lightning-icon>
+                        Please select a data type to continue with market selection.
+                    </div>
+                </template>
+            </div>
+        </div>
+        <c-wrf-country-section-header section-header='Region Selections'>
+        </c-wrf-country-section-header>
+        <template if:true={dataTypeSelected}>
+            <c-wrf-country-region-selection region-options={regionOptions} list-regions={listRegions}
+                onselectionchange={handleSelection}></c-wrf-country-region-selection>
+        </template>
+        <template if:false={dataTypeSelected}>
+            <div class="slds-notify slds-notify_alert slds-alert_warning slds-text-heading_small slds-size_4-of-12"
+                role="alert">
+                <lightning-icon icon-name="utility:warning" alternative-text="Warning!" title="Warning">
+                </lightning-icon>
+                You cannot filter regions until you select a data type.
+
+            </div>
+        </template>
+        <c-wrf-country-section-header section-header='Country/Territory Selections'>
+        </c-wrf-country-section-header>
+        <template if:true={dataTypeSelected}>
+            <template if:true={countrySelections}>
+
+            </template>
+        <div style="z-index: 1;position: sticky;top: -18px;">   <!--Added for SFDC-4656-->
+            <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+                <div class={headerWithCenterStyleClass}>
+                    Country/Territory
+                </div>
+                <template for:each={listGeos} for:item="geo">
+                    <div key={geo} class={headerWithCenterStyleClass}>
+                        {geo}
+                    </div>
+                </template>
+                <div class={headerWithCenterStyleClass}>
+                    Comments
+                </div>
+            </div>
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </template>
+
+            <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+                <div key={geo} class={headerStyleClass}>.</div>
+                <template for:each={listGeos} for:item="geo">
+                    <div key={geo} class={headerStyleClass}>
+                        <div data-id={geo} key={geo} class="demo-only demo-only--sizing slds-grid slds-wrap">
+                            <template for:each={listVehicleTypes} for:item="vt" for:index="index">
+                                <div key={vt} class={rowStyleClass} style="cursor:pointer">
+                                    <c-wrf-vehicle-type-header key={index} geo={geo} vehicle-type={vt}
+                                        onheaderclick={handleHeaderClick}></c-wrf-vehicle-type-header>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+                <div key={geo} class={headerStyleClass}>.</div>
+            </div>
+            </div>
+            <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+                <template for:each={filteredResults} for:item="option">
+                    <div key={option.Name} data-id={option.Name} class={headerWithNoCustomStyle}
+                        onclick={handleCountryNameClick} style="cursor:pointer">
+                        <p key={option}>{option.displayName}</p>
+                    </div>
+                    <template if:true={refreshGrid}>
+                        <template for:each={option.values} for:item="geo">
+                            <div key={option} class={headerWithNoCustomStyle}>
+                                <div key={option} class="demo-only demo-only--sizing slds-grid slds-wrap">
+                                    <template for:each={geo.values} for:item="vt">
+                                        <div key={vt} class={rowDataStyleClass}>
+                                            <lightning-input data-id={vt.vehicleKey} type='checkbox' checked={vt.value}
+                                                disabled={vt.Disabled} onchange={handleCheckboxChange}>
+                                            </lightning-input>
+                                            <!--c-wrf-country-input-selection vt={vt} geo={geo.Name} country={option.Name}
+                                            refresh-grid={refreshChildGrid} oncheckchange={handleSelectionChange}>
+                                        </c-wrf-country-input-selection-->
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+                    </template>
+                    <div key={option} class={headerWithNoCustomStyle}>
+                        <lightning-input data-id={option.Name} type="Text" value={option.Comments__c} variant="label-hidden" onchange={handleCommentChange}>
+                        </lightning-input>
+                    </div>
+                </template>
+            </div>
+            <!-- Button group: simple buttons -->
+            <div class="slds-docked-form-footer">
+                <!-- Button group: simple buttons -->
+                <lightning-button-group class="slds-align_absolute-center slds-p-around_x-small">
+                    <button class="slds-button slds-button_brand" title="Save Country Selections"
+                        onclick={submitDetails}>Save Country Selections</button>
+                    <button class="slds-button slds-button_neutral" title="Close"
+                        onclick={handleModalClose}>Close</button>
+                </lightning-button-group>
+            </div>
+        </template>
+    </lightning-card>
+</template>

@@ -2,27 +2,39 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Contacted</fullName>
-        <default>false</default>
-        <label>Contacted</label>
-        <converted>false</converted>
-    </standardValue>
-    <standardValue>
-        <fullName>Open</fullName>
+        <fullName>Prioritized</fullName>
         <default>true</default>
-        <label>Open</label>
+        <label>Prioritized</label>
         <converted>false</converted>
     </standardValue>
     <standardValue>
-        <fullName>Qualified</fullName>
+        <fullName>Pre-SalesWorking</fullName>
         <default>false</default>
-        <label>Qualified</label>
+        <label>Pre-Sales Working</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre-SalesQualified</fullName>
+        <default>false</default>
+        <label>Pre-Sales Qualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>SalesWorking</fullName>
+        <default>false</default>
+        <label>Sales Working</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Converted</fullName>
+        <default>false</default>
+        <label>Converted</label>
         <converted>true</converted>
     </standardValue>
     <standardValue>
-        <fullName>Unqualified</fullName>
+        <fullName>Disqualify</fullName>
         <default>false</default>
-        <label>Unqualified</label>
+        <label>Disqualify</label>
         <converted>false</converted>
     </standardValue>
 </StandardValueSet>

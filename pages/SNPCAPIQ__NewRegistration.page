@@ -1,0 +1,49 @@
+<apex:page controller="SNPCAPIQ.NewRegistrationController">
+    <c:IncludeResources_v1 ></c:IncludeResources_v1>
+    
+    <div class="snp snp-setup">
+        <div class="snp-panel">
+            <div class="snp-container15 clearfix">
+                <c:Help styleClass="right" />
+                <div class="snp-logo">
+                    <img alt="S&P Capital IQ" src="{!URLFOR($Resource.SnP_resources, 'img/snp-logo35.png')}"/>
+                </div>
+            </div>
+
+            <div class="snp-search-tabs snp-disable-loader">
+                <ul>
+                    <li><a href="#tabSetup">Setup</a></li>
+                    <li><a href="#tabBatchConfig">Batch Config</a></li>
+                    <li><a href="#tabFeatures">Features</a></li>
+                </ul>
+
+                <div id="tabSetup">
+                    <div class="snp-panel-title">Please click the button below to re-register S&amp;P Capital IQ application</div>
+                    <apex:outputPanel id="registrationPanel" styleClass="snp-container15">
+                        <apex:pageMessage severity="warning" strength="1" summary="{!message}" rendered="{!NOT(status)}" />
+                        <apex:pageMessage severity="confirm" strength="1" summary="{!message}" rendered="{!IF(status && message != '', true, false)}" />
+                        <apex:form rendered="{!Sandbox}">
+                            <apex:commandButton action="{!registration}" id="registration" value="Renew Registration" status="pageLoader" rerender="registrationPanel" styleClass="snp-btn snp-btn-large"/>
+                        </apex:form>
+                    </apex:outputPanel>
+                </div>
+                <div id="tabBatchConfig">
+                    <c:BatchConfig />
+                </div>
+                <div id="tabFeatures">
+                    <c:ConfigFeatures />
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        $$(function() {
+            $$('.snp-search-tabs').tabs({
+                active: {!IF(Sandbox, 0, 1)}
+            });
+        });
+    </script>
+</apex:page>

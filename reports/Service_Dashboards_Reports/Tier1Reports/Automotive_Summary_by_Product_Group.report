@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <currency>GBP</currency>
+    <filter>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Data Lake,LV Sales IMR,AutoTechInsight,LV Ptrain,Auto Multi Channel Marketing,LV Sales,Component Forecasting,Recall,VIN Solutions,N America Market Reporting,MHCV,LV Production,Forecasting,Auto Events/Training,Auto Advisory,Auto Conferences,World Markets Automotive,Auto Consulting,Dealer Network Planning,MHCV Advisory,Aftermarket Management,International Marketing Report,Commercial Account File,Aftersales Marketing,Auto Consulting DND,Recall Postage,TIPNET,Auto Other,Auto Technology,VIS,PolkDealerMarketing.com,Polk Audiences,Polk Data Hygiene,Polk Data Enhancements,Polk Market Research,Polk Demand Signals,Expert Connect-Auto,Auto EnterpriseEyeQ</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.CustomerCare</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.ProductGroup__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Automotive | Summary by Product Group</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList@Case.ProductFamily__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2021-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-01-01</startDate>
+    </timeFrameFilter>
+</Report>

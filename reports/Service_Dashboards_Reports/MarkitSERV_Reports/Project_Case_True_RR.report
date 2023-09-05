@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case.AdditionalCaseFields__r$Name</field>
+    </columns>
+    <columns>
+        <field>Case.AdditionalCaseFields__r$LongTermProjectType__c</field>
+    </columns>
+    <columns>
+        <field>Case$Subject</field>
+    </columns>
+    <columns>
+        <field>Case$Owner</field>
+    </columns>
+    <columns>
+        <field>Case$ClosedDate</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Project Case True</description>
+    <filter>
+        <criteriaItems>
+            <column>Case$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>hemant kumar,Aakash Sharma,Kawal Nain Singh,Karan Malhotra,Nikhita Rahul Bhandarkar,Amar Naik,Kavya sridhar,Prerna Panwar,Arun Sikri,Eti Kapoor,Kawaljeet Singh Sudan,Mukul Jain,Rupal Sood,Rohit Arora,Zarrin Zuberi,Aditya Singh</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$AdditionalFields__c.LongTermProjectType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>True</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Project Case True RR</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseandAdditionalCaseFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Case$Owner</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case$ClosedDate</dateColumn>
+        <endDate>2022-04-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-04-01</startDate>
+    </timeFrameFilter>
+</Report>

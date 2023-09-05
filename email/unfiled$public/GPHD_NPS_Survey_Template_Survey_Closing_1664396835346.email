@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{Case.CaseNumber}}}&nbsp;Survey Alert - Survey Period Closing Soon<br />
+<br />
+The survey period for this case is about to close and there is no customer follow-up update listed in the case.<br />
+<br />
+You received this email because of an NPS customer generated survey response highlighting an issue with a product or service. This customer is either associated with an account or product you oversee.<br />
+<br />
+<b>Case Link:<br />
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b>https://ihsmarkit.lightning.force.com/lightning/r/Case/{{{Case.Id}}}/view<br />
+<br />
+<b>Next Steps:</b><br />
+Please follow-up with the customer in the next seven days to get their feedback as to what led to their survey rating and enter a summary of the follow-up in the Case Resolution.<br />
+<br />
+Once completed, you can then mark the Case Status as Closed using "Documentation Provided" as the Closed Reason.<br />
+<br />
+<br />
+<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Regards,</span></span><br />
+<br />
+<span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:10.0pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="font-size:14px;">Global Product Help Desk<br />
+Product_Helpdesk@ihsmarkit.c</span>om</span></span></span></span><br />
+<span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:9.0pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#d6002a">S&amp;P Global</span></span></span></b><b> </b><span style="font-size:9.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:black">&nbsp;| </span></span></span><span style="font-size:9.0pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:black">Mobility </span></span></span></span></span><br />
+&nbsp;
+</body></html>

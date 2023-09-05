@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_76009321</developerName>
+        <masterLabel>Age</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.CaseAgeBusinessDays__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>5</to>
+            </sourceValues>
+            <value>&lt;1 Week</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>5</from>
+                <to>10</to>
+            </sourceValues>
+            <value>&lt;2 weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>10</from>
+                <to>20</to>
+            </sourceValues>
+            <value>&lt;4 weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>20</from>
+            </sourceValues>
+            <value>&gt;4 weeks</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_18933829</developerName>
+        <masterLabel>Query age</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case.CaseAgeBusinessDays__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>5</to>
+            </sourceValues>
+            <value>&lt;1 week</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>5</from>
+                <to>10</to>
+            </sourceValues>
+            <value>&lt;2 weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>10</from>
+                <to>20</to>
+            </sourceValues>
+            <value>&lt;4 weeks</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>20</from>
+            </sourceValues>
+            <value>&gt;4 weeks</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_34494377</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>David Ta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Bisse</sourceValue>
+            </sourceValues>
+            <value>Onboarding</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Edward Plante</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Swati Gangwani</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Wutoh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alexander Carratt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vincent Dammann</sourceValue>
+            </sourceValues>
+            <value>Operations</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ryan Bransfield</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Vera</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephanie Ginsberg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel DeWitt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Janet Burke</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christos Gardikis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alexandra Pilet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christopher Perry</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kenyon Scales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matteo Buschittari</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Montel Hardy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Huerfano</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Rennard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mateja Spat</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jack Love</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kah Ghim Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chris Zhang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Laura Merce Bermudez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FM | TCA</sourceValue>
+            </sourceValues>
+            <value>Support</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bill O&apos;Shea</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Savannah Lansing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Richter</sourceValue>
+            </sourceValues>
+            <value>Business</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Aaron Ching</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aaron Tang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aman Kumar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anmol Singh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bo Yuan Ng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chayan Bhattacharjee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Haqimi Ashaari</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Iris Karabatos</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ivan Kravic</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mark Quejado</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Babnish Bhatia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Esma Agzanay</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shanthosh Rama</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pooja Madan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Divya Baghele</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ankit Jain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Edward Gordon</sourceValue>
+            </sourceValues>
+            <value>Customer Care</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Kartik Arthanat</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anh Thai</sourceValue>
+            </sourceValues>
+            <value>Product</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sidhant Kalra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Idunn Rhoades</sourceValue>
+            </sourceValues>
+            <value>Sales &amp; Order Mgmt</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Case.CaseAgeBusinessDays__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>CASE_COMMENT</field>
+    </columns>
+    <columns>
+        <field>BucketField_18933829</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Trading Analytics  - Totaly product cy</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4) AND 5 AND 6 AND (7 OR 8 OR 9 OR 10 OR 11)</booleanFilter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Delete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.PreviousQueue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>TCA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>TCA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.ProductGroup__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Transaction Cost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>merged</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Duplicate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Thai</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Arthanat</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Janani</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Roger Barber</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Sridevi</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_34494377</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Trading Analytics  - Totaly product cy</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>

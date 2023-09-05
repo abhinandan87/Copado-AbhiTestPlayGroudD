@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Line Name --></label>
+        <name>BusinessLineName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Line --></label>
+        <name>BusinessLine__c</name>
+        <relationshipLabel><!-- Sales Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Business Segment --></label>
+        <name>InternalBusinessSegment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Sales Plan --></label>
+        <name>MonthlySalesPlan__c</name>
+        <relationshipLabel><!-- Sales Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Plan Period --></label>
+        <name>Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group Name --></label>
+        <name>ProductGroupName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group --></label>
+        <name>ProductGroup__c</name>
+        <relationshipLabel><!-- Sales Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>AMER</masterLabel>
+            <translation><!-- AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Business Line Name --></label>
+        <name>SubBusinessLineName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Business Line --></label>
+        <name>SubBusinessLine__c</name>
+        <relationshipLabel><!-- Sales Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Recurring</masterLabel>
+            <translation><!-- Non-Recurring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recurring</masterLabel>
+            <translation><!-- Recurring --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,23 @@
+<apex:page standardController="Account" extensions="SNPCAPIQ.AccountInfoController" title="S&P Capital IQ Details">
+ 
+            
+            <style type="text/css">
+                body{
+                
+                margin-top:12pt;
+                margin-bottom:12pt;
+                margin-left:18pt;
+                margin-right:18pt;
+                }
+
+               
+            </style>      
+            
+  
+    <c:IncludeResources_v1 ></c:IncludeResources_v1>
+    
+    <!-- Updated by Khawaja Awais on 03/22/2021 : User story # 3365249 [MI APP] Design- MI Corporate Profile click-through -->
+    <c:CompanyInfo sfObject="{!sObj}" companyIdProp="{!companyId}" isFullScreenProp="{!isFullScreen}" 
+        accountModel="{!acModel}" miCompanyIdProp="{!miCompanyId}"/>
+      
+</apex:page>

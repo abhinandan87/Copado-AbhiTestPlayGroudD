@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$Subject</field>
+    </columns>
+    <columns>
+        <field>Case$SuppliedEmail</field>
+    </columns>
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Status</field>
+    </columns>
+    <columns>
+        <field>Case$PreviousQueue__c</field>
+    </columns>
+    <columns>
+        <field>Case$CurrentQueue__c</field>
+    </columns>
+    <columns>
+        <field>Case$Origin</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>Undeliverable MCPM Support cases</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseandAdditionalCaseFields__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case$CreatedDate</dateColumn>
+        <endDate>2020-04-18</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-04-17</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>US 5496291: Custom Metadata to Store Configurational Changes for RFA apex classes</description>
+    <fields>
+        <fullName>Division_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to store the name of the division i.e. division sent from field</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Division Name</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Email_Body_Prefix__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Define the email body to be appended before response</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Email Body Prefix</label>
+        <length>5000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Email_Subject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>define the subject of email to be sent</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Email Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Filter_String__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Filter applied to Request and response objects when querying the data to sync</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Filter String</label>
+        <length>1000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>From_Email_Address__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Email address to be used while sending notification emails to the Request owner, this address should be configured as an Organization-Wide Address</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>From Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to store all the fields to be synced with hub (existing fields can be removed but to add new fields wrapper needs to be updated)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Request Fields</label>
+        <length>2000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Request_Object_API__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to store the API name for request Object</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Request Object API</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Response_Child_API__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to store the API name of the child relationship response</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Response Child API</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Response_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to store all the fields to be synced with the hub (existing fields can be removed but to add new fields wrapper needs to be updated)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Response Fields</label>
+        <length>2000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Response_Object_API__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to store Response object API name</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Response Object API</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_Email_Notification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>if checked, Email notifications will be sent on Rest API execution</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Send Email Notification</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Divisions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Sub Divisions</label>
+        <length>2000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>To_Email_Address__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Email address to send the notifications in case of success and failure</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>To Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>S1 RFA Configuration</label>
+    <pluralLabel>S1 RFA Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

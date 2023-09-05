@@ -1,0 +1,64 @@
+<template>
+    <lightning-layout
+        vertical-align="center"
+        class="slds-var-m-horizontal_x-small"
+    > 
+        <lightning-layout-item size="1">
+          <!--  <template if:false={isFirstPage}> -->
+            <lightning-badge size="small" label={totalCount}></lightning-badge>
+          <!--  </template> -->
+        </lightning-layout-item>
+        <lightning-layout-item size="9" class="nav-info">
+                <lightning-button-icon
+                    class="previous"
+                    icon-name="utility:chevronleft"
+                    onclick={handlePrevious}
+                    disabled={isFirstPage}
+                    variant="brand"
+                    size="x-small" 
+                ><label></label></lightning-button-icon>
+                <!--  {totalItemCount} products • page {currentPageNumber} of {totalPages} -->
+                <lightning-badge 
+                    size="small" 
+                    class="slds-var-m-left_x-small slds-var-m-right_x-small" 
+                    label={pageDtl} ></lightning-badge>
+                <lightning-button-icon
+                    class="next"
+                    icon-name="utility:chevronright"
+                    onclick={handleNext}
+                    disabled={isLastPage}
+                    variant="brand"
+                    size="x-small" 
+                ></lightning-button-icon>
+        </lightning-layout-item>
+        <lightning-layout-item size="2">
+           <!-- <template if:false={isLastPage}> -->
+            <div class="slds-text-align_right">
+                <strong>Page Size </strong>
+                <select class="selectClass slds-var-m-left_x-small" name="PageSize" onchange={handlePageSizeChange}>
+                    <option data-id="1" value="1" title="shows 1 record per page">1</option>
+                    <option data-id="5" value="5" title="shows 5 records per page">5</option>
+                    <option data-id="10" value="10" title="shows 10 records per page">10</option>
+                    <option data-id="15" value="15" title="shows 15 records per page">15</option>
+                    <option data-id="25" value="25" title="shows 25 records per page">25</option>
+                </select>
+          <!--  <lightning-combobox
+            name="PageSize"                                                       
+            value={pageSize}            
+            label="Page Size"                
+            options={pageRecords}  
+            onchange={handlePageSizeChange}                       
+        ></lightning-combobox> -->
+            </div>  
+<!-- </template> -->
+        </lightning-layout-item>
+    </lightning-layout>
+   <!-- <lightning-layout
+        vertical-align="center"
+        horizontal-align="right"
+    >
+        <lightning-layout-item >
+            <lightning-combobox></lightning-combobox>
+        </lightning-layout-item>
+    </lightning-layout> -->
+</template>

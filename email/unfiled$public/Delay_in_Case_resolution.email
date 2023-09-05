@@ -1,0 +1,13 @@
+Dear {!Contact.FirstName},
+<br><br>
+Good day!<br><br>
+This update is regarding the case {!Case.CaseNumber} you raised with us.
+<br><br>
+It’s going to take some time to resolve the issue you have been facing. We are working proactively to provide you with a solution at the earliest.
+<br><br>
+We will keep you posted on this. Thanks for your patience.
+<br><br>
+
+Regards,<br>
+{!Case.OwnerFullName}<br>
+Salesforce Helpdesk

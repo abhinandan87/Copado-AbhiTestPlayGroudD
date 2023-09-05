@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_80157605</developerName>
+        <masterLabel>Sales Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER_ROLE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales:Edward Soon Reportees</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Edward Soon</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales:Michael Hutto</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Michael Shea</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Michael Shea Reportees</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Mike Haggerty</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Mike Haggerty Reportees</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Inactive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Jason Tuthill</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Jason Tuthill Reportees</sourceValue>
+            </sourceValues>
+            <value>NA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sales:Peter Gotke</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales:Peter Gotke Reportees</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_38127875</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>ASSIGNED</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Jim Coley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neslihan Yegul</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vasiliki Koutoupi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Faizal (Michael) Hussain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charlene Braganza Morris</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephen Slayton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Taylor</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Duane Lapus</sourceValue>
+            </sourceValues>
+            <value>Team Coley</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>ASSIGNED</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>DUE_DATE</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>TASK_TYPE</field>
+    </columns>
+    <columns>
+        <field>Activity.Product__c</field>
+    </columns>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <field>LEAD</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Meeting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>IHS Markit Limited</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>stefan nicodemou</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Jim Coley,Faizal (Michael) Hussain,Charlene Braganza Morris,Andrew O&apos;rourke,Duane Lapus,John Taylor,Michael Hussain,Neslihan Yegul,Stephen Slayton,Vasiliki Koutoupi,Anthony Danzilo,Andy Luten,Askalane Souffiane,Jackie Harr,Kate Henson,Leila Bouhafs,Ronald DiPietro,Jed Dean,Koyes Uddin,Russell Holmes,Thomas Addison,carolyn crawford,Hannah Walker,Stephanie Rawlinson,Angela Baker,Brian Sulkies,Denise Conn,Diana Siwik,James Vettese,Louis Bearn,Vismayra Estevez,Kelly Anderson,Jeremy Dahlquist,Ozzie Polanco,Stuart Smith,Tamara Miles,Kelly Sanchez,Dorothy Luk,Claire Tung,Nathan Eason,Gavin Rhodes,Marta Gambarini,Katherine Blansett,Eugenio Fortes,Elliot Green,Samuele Demartini,Eric Lesner,Richmond Donnelly,Morgan Burch,Kara Graves,Elvin Rodriguez,Kevin Seery,Paul Darnell,George Zhang,Yuko Takayama,Muiz Roslan,Nazrul Adenan,Shamala Mani</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>michael stewart</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>FiscalQuarter</dateGranularity>
+        <field>DUE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_38127875</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Solutions CM Team Meetings YTD by Quarte</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>e</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

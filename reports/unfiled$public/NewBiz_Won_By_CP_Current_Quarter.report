@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OpportunityLineItem.FirstYear__c.CONVERT</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Opportunity.ChannelPartner__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.FirstYear__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ProductOwner__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ContractStartDate__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.ContractEndDate__c</field>
+    </columns>
+    <columns>
+        <field>FORECAST_CATEGORY</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>QUANTITY</field>
+    </columns>
+    <columns>
+        <field>SERVICE_MONTH</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_CUSTOMER_ID</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Status__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_ACTIVE</field>
+    </columns>
+    <columns>
+        <field>ROLLUP_DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Account.Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(Opportunity.LegalEntity__c=&quot;IHS Markit Global Sarl&quot;, OpportunityLineItem.FirstYear__c.CONVERT,
+
+IF(Opportunity.OpportunityRecordType__c=&quot;New Business&quot;, 
+	CASE(Opportunity.ChannelPartner__c, 
+		&quot;NATIONAL CONSULTING BUREAU&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;National Consulting Bureau&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES (TWOS)&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES LLC&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ADVANCED CONSTRUCTION TECHNOLOGY SERVICES - QATAR&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Services Lebanon&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Service Company KSA LLC&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Banhill Nigeria Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Bateman Watling &amp; Associates (Pty) Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;BATEMAN WATLING &amp; ASSOCIATES&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Cadoc SARL&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;MERCURY PAS LIMITED&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ONLINE BILGI HIZMETLERI EGITIM VE YAYINCILIK SANAYI TICARET AS&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Teldan Information Systems Ltd&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Alex Centre for Multimedia &amp; Libraries&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Logiser Sa&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+	OpportunityLineItem.FirstYear__c.CONVERT), 
+
+	CASE(Opportunity.BillToClientName__c, 
+		&quot;NATIONAL CONSULTING BUREAU&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;National Consulting Bureau&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES (TWOS)&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;TRANS WORLD OIL SOURCES LLC&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0,
+		&quot;ADVANCED CONSTRUCTION TECHNOLOGY SERVICES - QATAR&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Services Lebanon&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ADVANCED CONSTRUCTION TECHNOLOGY SERVICES (ACTS)&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Advanced Construction Technology Service Company KSA LLC&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Banhill Nigeria Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Bateman Watling &amp; Associates (Pty) Ltd&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;BATEMAN WATLING &amp; ASSOCIATES&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Cadoc SARL&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;MERCURY PAS LIMITED&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;MERCURY PAS LTD&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ONLINE BILGI HIZMETLERI EGITIM VE YAYINCILIK SANAYI TICARET AS&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Teldan Information Systems Ltd&quot;,OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;Alex Centre for Multimedia &amp; Libraries&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;ALEX CENTER FOR MULTIMEDIA &amp; LIBRARIES&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+		&quot;LOGISER SA&quot;, OpportunityLineItem.FirstYear__c.CONVERT*0.85,
+	OpportunityLineItem.FirstYear__c.CONVERT)))</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>ADH/First Year value NET</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>FORECAST_CATEGORY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Omitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Opportunity.InnerYear,Opportunity.Renewal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>6W-Closed Won,6W-Renewal Won,6WP-Closed Won/Order Processed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Winback__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ContractStartDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_FISCAL_QUARTER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Adel Hallak,Nourane Mahmoud,Nicola Tame,Rachid El Jaouhari</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ContractStartDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_FISCAL_QUARTER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Adel Hallak,Nourane Mahmoud,Nicola Tame,Rachid El Jaouhari</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ContractStartDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_FISCAL_QUARTER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Adel Hallak,Nourane Mahmoud,Nicola Tame,Rachid El Jaouhari</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ChannelPartner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ContractStartDate__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_FISCAL_QUARTER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.OpportunityOwner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Adel Hallak,Nourane Mahmoud,Nicola Tame,Rachid El Jaouhari</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.ChannelPartner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Opportunitynum__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NewBiz Won By CP Q2-2022</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>OpportunityLineItem.ContractStartDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

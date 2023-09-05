@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTRACT_NUMBER</field>
+    </columns>
+    <columns>
+        <field>Contract.LegacyReference__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Contract.ContractStatus__c</field>
+    </columns>
+    <columns>
+        <field>Contract.ContractOwner__c</field>
+    </columns>
+    <columns>
+        <field>Contract.BillingFrequency__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Contract.EffectiveDate__c</field>
+    </columns>
+    <columns>
+        <field>Contract.RenewalDate__c</field>
+    </columns>
+    <columns>
+        <field>Contract.ProductFamily__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>ORRC all contract numbers</description>
+    <filter>
+        <criteriaItems>
+            <column>Contract.ProductFamily__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Counterparty Manager,know your customer,CTI-,know your third party</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>ORRC all contracts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContractList@Account.AdditionalAccountFields__c</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contract.ContractOwner__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>START_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

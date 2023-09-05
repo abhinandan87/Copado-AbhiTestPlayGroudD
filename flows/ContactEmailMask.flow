@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>IsThisSandbox</name>
+        <label>Is this a Sandbox</label>
+        <locationX>248</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>ProductionInstance</defaultConnectorLabel>
+        <rules>
+            <name>SandboxInstance</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetOrganizationRecord.IsSandbox</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ValidateEmailBelongsToIHSMSPGlobal</targetReference>
+            </connector>
+            <label>Sandbox Instance</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ValidateEmailBelongsToIHSMSPGlobal</name>
+        <label>Validate Email belongs to IHSM/SP Global</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <defaultConnector>
+            <targetReference>UpdateEmailToMaskedValue</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>MaskEmail</defaultConnectorLabel>
+        <rules>
+            <name>VaildEmail</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Email</leftValueReference>
+                <operator>EndsWith</operator>
+                <rightValue>
+                    <stringValue>ihsmarkit.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email</leftValueReference>
+                <operator>EndsWith</operator>
+                <rightValue>
+                    <stringValue>spglobal.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email</leftValueReference>
+                <operator>EndsWith</operator>
+                <rightValue>
+                    <stringValue>.sandbox</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Vaild Email</label>
+        </rules>
+    </decisions>
+    <description>5113026 - Enforce Masking and Restrict External Emails in Lower Environments [IHSM]</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>MaskedEmail</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Email} + &quot;.sandbox&quot;</expression>
+    </formulas>
+    <interviewLabel>Contact Email Mask {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contact Email Mask</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>GetOrganizationRecord</name>
+        <label>Get Organization Record</label>
+        <locationX>248</locationX>
+        <locationY>311</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IsThisSandbox</targetReference>
+        </connector>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Organization</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>IsSandbox</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>UpdateEmailToMaskedValue</name>
+        <label>Update Email to Masked Value</label>
+        <locationX>182</locationX>
+        <locationY>671</locationY>
+        <inputAssignments>
+            <field>Email</field>
+            <value>
+                <elementReference>MaskedEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>122</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetOrganizationRecord</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Email</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

@@ -1,0 +1,4 @@
+<apex:page standardController="RocketDocs__Proposal_Request__c" extensions="RocketDocs.CancelProposalController" action="{!cancelProposalInit}">
+    <!-- This page redirects user back to the Proposal Request Page -->
+    <apex:pageMessages ></apex:pageMessages>
+</apex:page>

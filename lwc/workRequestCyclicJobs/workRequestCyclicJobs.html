@@ -1,0 +1,45 @@
+<template>
+    <div class="slds-theme_default">
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+        <div class="slds-text-heading_small">
+            <h2>Creating {totalRecords} Copies Of Your Job - There is no Undo</h2>
+        </div>
+        <div class="slds-card__header slds-text-heading_small slds-p-around_x-small slds-grid slds-theme_alt-inverse">
+            Overview</div>
+        <template if:true={isCyclic}>
+            <c-cyclic-plc-job record-id={recordId} list-fields={listCyclicFields}></c-cyclic-plc-job>
+        </template>
+        <template if:false={isCyclic}>
+            <c-cyclic-plc-job record-id={recordId} list-fields={listMultipartFields}></c-cyclic-plc-job>
+        </template>
+
+        <div class="slds-card__header slds-text-heading_small slds-p-around_x-small slds-grid slds-theme_alt-inverse">
+            Jobs To be Created</div>
+
+        <!-- Button group: simple buttons -->
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap slds-theme_shade">
+            <template for:each={listLabels} for:item="label" for:index="index">
+                <div key={label} class={styleClass}>
+                    <div class="slds-m-around_xx-small">
+                        {label}
+                    </div>
+                </div>
+            </template>
+        </div>
+        <template for:each={plcJobs} for:item="plcJob">
+            <c-plc-job-edit-row key={plcjob} plc-job={plcJob} list-fields={listFields} onsuccess={handleSuccess}>
+            </c-plc-job-edit-row>
+        </template>
+
+        <div class="slds-docked-form-footer">
+            <!-- Button group: simple buttons -->
+            <lightning-button-group class="slds-align_absolute-center slds-p-around_x-small">
+                <button class="slds-button slds-button_brand" title="Create Jobs" onclick={handleSave}>Create
+                    Jobs</button>
+                <button class="slds-button slds-button_neutral" title="Cancel" onclick={closeModal}>Cancel</button>
+            </lightning-button-group>
+        </div>
+    </div>
+</template>

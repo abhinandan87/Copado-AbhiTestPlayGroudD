@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>SNPCAPIQ__Account__c</name>
+        <relationshipLabel><!-- S&amp;P Capital IQ Financials --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Capital Expenditure --></label>
+        <name>SNPCAPIQ__Capital_Expenditure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash From Financing --></label>
+        <name>SNPCAPIQ__Cash_From_Financing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash From Investing --></label>
+        <name>SNPCAPIQ__Cash_From_Investing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash From Operations --></label>
+        <name>SNPCAPIQ__Cash_From_Operations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>SNPCAPIQ__Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBITDA --></label>
+        <name>SNPCAPIQ__EBITDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBIT --></label>
+        <name>SNPCAPIQ__EBIT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filing Date --></label>
+        <name>SNPCAPIQ__Filing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Period Id --></label>
+        <name>SNPCAPIQ__Financial_Period_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fiscal Period Ending --></label>
+        <name>SNPCAPIQ__Fiscal_Period_Ending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Profit --></label>
+        <name>SNPCAPIQ__Gross_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Levered Free Cash Flow --></label>
+        <name>SNPCAPIQ__Levered_Free_Cash_Flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net EPS Basic --></label>
+        <name>SNPCAPIQ__Net_EPS_Basic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net EPS Diluted --></label>
+        <name>SNPCAPIQ__Net_EPS_Diluted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Income --></label>
+        <name>SNPCAPIQ__Net_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Property Plant &amp; Equipment --></label>
+        <name>SNPCAPIQ__Net_Property_Plant_Equipment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Operating Expenses --></label>
+        <name>SNPCAPIQ__Other_Operating_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restatement Type --></label>
+        <name>SNPCAPIQ__Restatement_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return on Assets --></label>
+        <name>SNPCAPIQ__Return_on_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return on Equity --></label>
+        <name>SNPCAPIQ__Return_on_Equity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return on Total Capital --></label>
+        <name>SNPCAPIQ__Return_on_Total_Capital__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenues --></label>
+        <name>SNPCAPIQ__Revenues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tangible Book Value --></label>
+        <name>SNPCAPIQ__Tangible_Book_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Assets --></label>
+        <name>SNPCAPIQ__Total_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash And Short --></label>
+        <name>SNPCAPIQ__Total_Cash_And_Short__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Common Equity --></label>
+        <name>SNPCAPIQ__Total_Common_Equity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Current Assets --></label>
+        <name>SNPCAPIQ__Total_Current_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Current Liabilities --></label>
+        <name>SNPCAPIQ__Total_Current_Liabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Equity --></label>
+        <name>SNPCAPIQ__Total_Equity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Liabilities --></label>
+        <name>SNPCAPIQ__Total_Liabilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Preferred Equity --></label>
+        <name>SNPCAPIQ__Total_Preferred_Equity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue --></label>
+        <name>SNPCAPIQ__Total_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unlevered Free Cash Flow --></label>
+        <name>SNPCAPIQ__Unlevered_Free_Cash_Flow__c</name>
+    </fields>
+</CustomObjectTranslation>
